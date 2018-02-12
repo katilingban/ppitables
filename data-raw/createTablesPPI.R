@@ -24,6 +24,7 @@ get_ppi_table <- function(pdf, n, limits, expand = TRUE) {
   if(expand == TRUE) {
     for(i in 1:length(temp)) {
       temp_row <- str_replace(temp[i], pattern = " - ", replacement = "-")
+      temp_row <- str_replace_all(temp[i], pattern = "%", replacement = "")
       x <- str_split(temp_row, pattern = " ", simplify = TRUE)
       x <- x[x != ""]
       x <- as.numeric(x)
@@ -124,6 +125,21 @@ devtools::use_data(ppiMatrixAFG, overwrite = TRUE)
 
 ################################################################################
 #
+# Angola
+#
+################################################################################
+
+agoDF <- get_ppi_table(pdf = "data-raw/pdf/angola.pdf", n = 4, limits = 5:24)
+names(agoDF) <- c("score", "nl100", "nl150", "nl200", "half100", "ppp125",
+                  "ppp200", "ppp250", "ppp500")
+agoDF$score <- 0:100
+row.names(agoDF) <- 0:100
+ppiMatrixAGO <- agoDF
+devtools::use_data(ppiMatrixAGO, overwrite = TRUE)
+
+
+################################################################################
+#
 # Bangladesh
 #
 ################################################################################
@@ -131,11 +147,215 @@ devtools::use_data(ppiMatrixAFG, overwrite = TRUE)
 bgdDF1 <- get_ppi_table(pdf = "data-raw/pdf/bangladesh.pdf", n = 3, limits = 6:25)
 bgdDF2 <- get_ppi_table(pdf = "data-raw/pdf/bangladesh.pdf", n = 4, limits = 6:25)
 bgdDF <- data.frame(bgdDF1, bgdDF2[ , 2:6])
-names(bgdDF) <- c("score", "nl", "nu100", "nu150", "nu150", "nu200", "extreme", "ppp125", "ppp175", "ppp200")
+names(bgdDF) <- c("score", "nl", "nu100", "nu150", "nu200", "extreme", "ppp125",
+                  "ppp175", "ppp200", "ppp250")
 bgdDF$score <- 0:100
 row.names(bgdDF) <- 0:100
 ppiMatrixBGD <- bgdDF
 devtools::use_data(ppiMatrixBGD, overwrite = TRUE)
+
+
+################################################################################
+#
+# Benin
+#
+################################################################################
+
+benDF <- get_ppi_table(pdf = "data-raw/pdf/benin.pdf", n = 2, limits = 6:25)
+names(benDF) <- c("score", "nl100", "nl150", "nl200", "extreme", "ppp125", "ppp250")
+benDF$score <- 0:100
+row.names(benDF) <- 0:100
+ppiMatrixBEN <- benDF
+devtools::use_data(ppiMatrixBEN, overwrite = TRUE)
+
+
+################################################################################
+#
+# Bolivia
+#
+################################################################################
+
+bolDF1 <- get_ppi_table(pdf = "data-raw/pdf/bolivia.pdf", n = 3, limits = 7:26)
+bolDF2 <- get_ppi_table(pdf = "data-raw/pdf/bolivia.pdf", n = 4, limits = 8:27)
+bolDF <- data.frame(bolDF1, bolDF2[ , 2:6])
+names(bolDF) <- c("score", "nlFood", "nl100", "nl150", "nl200", "half100",
+                  "ppp125", "ppp200", "ppp250", "ppp500", "ppp844")
+bolDF$score <- 0:100
+row.names(bolDF) <- 0:100
+ppiMatrixBOL <- bolDF
+devtools::use_data(ppiMatrixBOL, overwrite = TRUE)
+
+
+################################################################################
+#
+# Brazil
+#
+################################################################################
+
+braDF1 <- get_ppi_table(pdf = "data-raw/pdf/brazil.pdf", n = 2, limits = 8:27)
+braDF2 <- get_ppi_table(pdf = "data-raw/pdf/brazil.pdf", n = 3, limits = 8:27)
+braDF3 <- get_ppi_table(pdf = "data-raw/pdf/brazil.pdf", n = 4, limits = 7:26)
+braDF <- data.frame(braDF1, braDF2[ , 2:7], braDF3[ , 2:7])
+braDF <- braDF[ , c(1:2, 4, 6, 8, 10, 12, 14, 16, 18)]
+
+names(braDF) <- c("score",
+                  "belowHalfWage",
+                  "belowQtrWage",
+                  "belowOneWage",
+                  "belowTwoWage",
+                  "extreme",
+                  "ppp125",
+                  "ppp250",
+                  "ppp375",
+                  "ppp500")
+
+braDF$score <- 0:100
+row.names(braDF) <- 0:100
+
+ppiMatrixBRA <- braDF
+devtools::use_data(ppiMatrixBRA, overwrite = TRUE)
+
+
+################################################################################
+#
+# Burkina Faso
+#
+################################################################################
+
+bfaDF <- get_ppi_table(pdf = "data-raw/pdf/burkina_faso.pdf", n = 4, limits = 6:39, expand = FALSE)
+names(bfaDF) <- rep(c("score", "nl100"), 3)
+
+bfaDF <- rbind(bfaDF[,1:2], bfaDF[,3:4], bfaDF[,5:6])
+bfaDF <- bfaDF[1:101, ]
+
+nl150 <- get_ppi_table(pdf = "data-raw/pdf/burkina_faso.pdf", n = 6, limits = 6:39, expand = FALSE)
+names(nl150) <- rep(c("score", "nl150"), 3)
+
+nl150 <- rbind(nl150[,1:2], nl150[,3:4], nl150[,5:6])
+nl150 <- nl150[1:101, ]
+
+nl200 <- get_ppi_table(pdf = "data-raw/pdf/burkina_faso.pdf", n = 8, limits = 6:39, expand = FALSE)
+names(nl200) <- rep(c("score", "nl200"), 3)
+
+nl200 <- rbind(nl200[,1:2], nl200[,3:4], nl200[,5:6])
+nl200 <- nl200[1:101, ]
+
+ppp100 <- get_ppi_table(pdf = "data-raw/pdf/burkina_faso.pdf", n = 10, limits = 6:39, expand = FALSE)
+names(ppp100) <- rep(c("score", "ppp100"), 3)
+
+ppp100 <- rbind(ppp100[,1:2], ppp100[,3:4], ppp100[,5:6])
+ppp100 <- ppp100[1:101, ]
+
+ppp190 <- get_ppi_table(pdf = "data-raw/pdf/burkina_faso.pdf", n = 12, limits = 6:39, expand = FALSE)
+names(ppp190) <- rep(c("score", "ppp190"), 3)
+
+ppp190 <- rbind(ppp190[,1:2], ppp190[,3:4], ppp190[,5:6])
+ppp190 <- ppp190[1:101, ]
+
+ppp320 <- get_ppi_table(pdf = "data-raw/pdf/burkina_faso.pdf", n = 14, limits = 6:39, expand = FALSE)
+names(ppp320) <- rep(c("score", "ppp320"), 3)
+
+ppp320 <- rbind(ppp320[,1:2], ppp320[,3:4], ppp320[,5:6])
+ppp320 <- ppp320[1:101, ]
+
+ppp550 <- get_ppi_table(pdf = "data-raw/pdf/burkina_faso.pdf", n = 16, limits = 6:39, expand = FALSE)
+names(ppp550) <- rep(c("score", "ppp550"), 3)
+
+ppp550 <- rbind(ppp550[,1:2], ppp550[,3:4], ppp550[,5:6])
+ppp550 <- ppp550[1:101, ]
+
+ppp125 <- get_ppi_table(pdf = "data-raw/pdf/burkina_faso.pdf", n = 18, limits = 6:39, expand = FALSE)
+names(ppp125) <- rep(c("score", "ppp125"), 3)
+
+ppp125 <- rbind(ppp125[,1:2], ppp125[,3:4], ppp125[,5:6])
+ppp125 <- ppp125[1:101, ]
+
+ppp250 <- get_ppi_table(pdf = "data-raw/pdf/burkina_faso.pdf", n = 20, limits = 6:39, expand = FALSE)
+names(ppp250) <- rep(c("score", "ppp250"), 3)
+
+ppp250 <- rbind(ppp250[,1:2], ppp250[,3:4], ppp250[,5:6])
+ppp250 <- ppp250[1:101, ]
+
+ppp500 <- get_ppi_table(pdf = "data-raw/pdf/burkina_faso.pdf", n = 22, limits = 6:39, expand = FALSE)
+names(ppp500) <- rep(c("score", "ppp500"), 3)
+
+ppp500 <- rbind(ppp500[,1:2], ppp500[,3:4], ppp500[,5:6])
+ppp500 <- ppp500[1:101, ]
+
+percentile20 <- get_ppi_table(pdf = "data-raw/pdf/burkina_faso.pdf", n = 24, limits = 6:39, expand = FALSE)
+names(percentile20) <- rep(c("score", "percentile20"), 3)
+
+percentile20 <- rbind(percentile20[,1:2], percentile20[,3:4], percentile20[,5:6])
+percentile20 <- percentile20[1:101, ]
+
+percentile40 <- get_ppi_table(pdf = "data-raw/pdf/burkina_faso.pdf", n = 26, limits = 6:39, expand = FALSE)
+names(percentile40) <- rep(c("score", "percentile40"), 3)
+
+percentile40 <- rbind(percentile40[,1:2], percentile40[,3:4], percentile40[,5:6])
+percentile40 <- percentile40[1:101, ]
+
+percentile60 <- get_ppi_table(pdf = "data-raw/pdf/burkina_faso.pdf", n = 28, limits = 6:39, expand = FALSE)
+names(percentile60) <- rep(c("score", "percentile60"), 3)
+
+percentile60 <- rbind(percentile60[,1:2], percentile60[,3:4], percentile60[,5:6])
+percentile60 <- percentile60[1:101, ]
+
+percentile80 <- get_ppi_table(pdf = "data-raw/pdf/burkina_faso.pdf", n = 30, limits = 6:39, expand = FALSE)
+names(percentile80) <- rep(c("score", "percentile80"), 3)
+
+percentile80 <- rbind(percentile80[,1:2], percentile80[,3:4], percentile80[,5:6])
+percentile80 <- percentile80[1:101, ]
+
+#bfaDF <- merge(bfaDF, nl100)
+bfaDF <- merge(bfaDF, nl150)
+bfaDF <- merge(bfaDF, nl200)
+bfaDF <- merge(bfaDF, ppp125)
+bfaDF <- merge(bfaDF, ppp250)
+bfaDF <- merge(bfaDF, ppp500)
+bfaDF <- merge(bfaDF, ppp100)
+bfaDF <- merge(bfaDF, ppp190)
+bfaDF <- merge(bfaDF, ppp320)
+bfaDF <- merge(bfaDF, ppp550)
+bfaDF <- merge(bfaDF, percentile20)
+bfaDF <- merge(bfaDF, percentile40)
+bfaDF <- merge(bfaDF, percentile60)
+bfaDF <- merge(bfaDF, percentile80)
+
+ppiMatrixBFA <- bfaDF
+
+devtools::use_data(ppiMatrixBFA, overwrite = TRUE)
+
+
+################################################################################
+#
+# Cambodia
+#
+################################################################################
+
+khmDF <- get_ppi_table(pdf = "data-raw/pdf/cambodia.pdf", n = 3, limits = 9:28)
+names(khmDF) <- c("score", "nl100", "nl150", "nl200", "median", "ppp125", "ppp200",
+                  "ppp250", "ppp500")
+khmDF$score <- 0:100
+row.names(khmDF) <- 0:100
+
+ppiMatrixKHM_wb <- khmDF
+devtools::use_data(ppiMatrixKHM_wb, overwrite = TRUE)
+
+khmDF <- get_ppi_table(pdf = "data-raw/pdf/cambodia.pdf", n = 4, limits = 7:26)
+names(khmDF) <- c("score", "nl100", "nl150", "nl200", "ppp125", "ppp250")
+khmDF$score <- 0:100
+row.names(khmDF) <- 0:100
+
+ppiMatrixKHM <- khmDF
+devtools::use_data(ppiMatrixKHM, overwrite = TRUE)
+
+khmDF <- get_ppi_table(pdf = "data-raw/pdf/cambodia.pdf", n = 5, limits = 9:28)
+names(khmDF) <- c("score", "nl100", "nl150", "nl200", "median", "ppp125", "ppp200", "ppp250", "ppp500")
+khmDF$score <- 0:100
+row.names(khmDF) <- 0:100
+
+ppiMatrixKHM_gov <- khmDF
+devtools::use_data(ppiMatrixKHM_gov, overwrite = TRUE)
 
 
 ################################################################################
@@ -150,7 +370,7 @@ ghaDF1 <- get_ppi_table(pdf = "data-raw/pdf/ghana.pdf", n = 3, limits = 9:28)
 ghaDF2 <- get_ppi_table(pdf = "data-raw/pdf/ghana.pdf", n = 4, limits = 7:26)
 ghaDF3 <- get_ppi_table(pdf = "data-raw/pdf/ghana.pdf", n = 5, limits = 7:26)
 ghaDF <- data.frame(ghaDF1, ghaDF2[ , 2:6], ghaDF3[ , 2:3])
-names(ghaDF) <- c("score", "nlFood", "ppp100", "nl150", "nl200", "half100", "ppp125",
+names(ghaDF) <- c("score", "nlFood", "nl100", "nl150", "nl200", "half100", "ppp125",
                   "ppp200", "ppp250", "ppp375", "ppp500", "ppp190", "ppp310")
 ghaDF$score <- 0:100
 row.names(ghaDF) <- 0:100
@@ -172,7 +392,7 @@ devtools::use_data(ppiMatrixGHA_b, overwrite = TRUE)
 # Legacy definition poverty lines
 #
 ghaDF <- get_ppi_table(pdf = "data-raw/pdf/ghana.pdf", n = 8, limits = 9:28)
-names(ghaDF) <- c("nlFood", "ppp100", "nl150", "nl200", "ppp125", "ppp250", "ppp375")
+names(ghaDF) <- c("score", "nlFood", "nl100", "nl150", "nl200", "ppp125", "ppp250", "ppp375")
 ghaDF$score <- 0:100
 row.names(ghaDF) <- 0:100
 ppiMatrixGHA <- ghaDF
@@ -189,7 +409,7 @@ kenDF1 <- get_ppi_table(pdf = "data-raw/pdf/kenya.pdf", n = 2, limits = 5:24)
 kenDF2 <- get_ppi_table(pdf = "data-raw/pdf/kenya.pdf", n = 3, limits = 7:26)
 kenDF3 <- get_ppi_table(pdf = "data-raw/pdf/kenya.pdf", n = 4, limits = 7:26)
 kenDF <- data.frame(kenDF1, kenDF2[ , 2:5], kenDF3[ , 2:3])
-names(kenDF) <- c("score", "nlFood", "ppp100", "nl150", "extreme", "ppp125",
+names(kenDF) <- c("score", "nlFood", "nl100", "nl150", "extreme", "ppp125",
                   "ppp250", "ppp400", "ppp844", "ppp190", "ppp310")
 kenDF$score <- 0:100
 row.names(kenDF) <- 0:100
