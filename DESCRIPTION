@@ -13,6 +13,7 @@ Description: The Poverty Probability Index (PPI) is a poverty measurement tool
     only a narrow margin. This package contains country-specific lookup data tables
     used as reference to determine the poverty likelihood of a household based
     on their score from the PPI questionnaire.
+Depends: R (>= 2.10)
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
