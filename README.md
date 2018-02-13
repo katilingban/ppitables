@@ -3,6 +3,11 @@
 
 # ppitables
 
+[![Travis-CI Build
+Status](https://travis-ci.org/validmeasures/ppitables.svg?branch=master)](https://travis-ci.org/validmeasures/ppitables)
+[![AppVeyor Build
+Status](https://ci.appveyor.com/api/projects/status/github/validmeasures/ppitables?branch=master&svg=true)](https://ci.appveyor.com/project/validmeasures/ppitables)
+
 The goal of ppitables is to …
 
 ## Installation
