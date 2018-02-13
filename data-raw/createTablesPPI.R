@@ -781,6 +781,42 @@ devtools::use_data(ppiMatrixMWI, overwrite = TRUE)
 
 ################################################################################
 #
+# Mali
+#
+################################################################################
+
+nl100 <- get_ppi_table(pdf = "data-raw/pdf/mali.pdf", n = 53, limits = 6:25)
+names(nl100) <- c("score", "nl100")
+nl100$score <- 0:100
+
+nlFood <- get_ppi_table(pdf = "data-raw/pdf/mali.pdf", n = 63, limits = 6:25)
+names(nlFood) <- c("score", "nlFood")
+nlFood$score <- 0:100
+
+extreme <- get_ppi_table(pdf = "data-raw/pdf/mali.pdf", n = 68, limits = 6:25)
+names(extreme) <- c("score", "extreme")
+extreme$score <- 0:100
+
+ppp125 <- get_ppi_table(pdf = "data-raw/pdf/mali.pdf", n = 77, limits = 6:25)
+names(ppp125) <- c("score", "ppp125")
+extreme$score <- 0:100
+
+ppp250 <- get_ppi_table(pdf = "data-raw/pdf/mali.pdf", n = 84, limits = 6:25)
+names(ppp250) <- c("score", "ppp250")
+extreme$score <- 0:100
+
+mliDF <- data.frame(nl100, nlFood[ , 2], extreme[ , 2], ppp125[ , 2], ppp250[ , 2])
+names(mliDF) <- c("score", "nl100", "nlFood", "extreme", "ppp125", "ppp250")
+
+
+ppiMatrixMLI <- mliDF
+devtools::use_data(ppiMatrixMLI, overwrite = TRUE)
+
+
+
+
+################################################################################
+#
 # Mozambique
 #
 ################################################################################

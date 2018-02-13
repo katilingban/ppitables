@@ -609,6 +609,22 @@ create_doc(country = "Malawi", ccode = "MWI", data = ppiMatrixMWI, varList = var
 
 ################################################################################
 #
+# Mali
+#
+################################################################################
+
+varList <- c("PPI score",
+             "National poverty line (100)",
+             "Food poverty line",
+             "USAID extreme poverty",
+             "Below $1.25 per day purchasing power parity (2005)",
+             "Below $2.50 per day purchasing power parity (2005)")
+
+create_doc(country = "Mali", ccode = "MLI", data = ppiMatrixMLI, varList = varList)
+
+
+################################################################################
+#
 # Mozambique
 #
 ################################################################################
