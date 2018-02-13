@@ -625,6 +625,25 @@ create_doc(country = "Mali", ccode = "MLI", data = ppiMatrixMLI, varList = varLi
 
 ################################################################################
 #
+# Morocco
+#
+################################################################################
+
+varList <- c("PPI score",
+             "National poverty line (100)",
+             "National poverty line (150)",
+             "National poverty line (200)",
+             "USAID extreme poverty",
+             "Below $1.25 per day purchasing power parity (2005)",
+             "Below $2.50 per day purchasing power parity (2005)",
+             "Below $3.75 per day purchasing power parity (2005)",
+             "Below $5.00 per day purchasing power parity (2005)")
+
+create_doc(country = "Morocco", ccode = "MAR", data = ppiMatrixMAR, varList = varList)
+
+
+################################################################################
+#
 # Mozambique
 #
 ################################################################################
@@ -639,6 +658,40 @@ varList <- c("PPI score",
 
 create_doc(country = "Mozambique", ccode = "MOZ", data = ppiMatrixMOZ, varList = varList)
 
+
+################################################################################
+#
+# Myanmar
+#
+################################################################################
+
+varList <- c("PPI score",
+             "Food poverty line",
+             "National poverty line (100)",
+             "National poverty line (150)",
+             "National poverty line (200)",
+             "USAID extreme poverty",
+             "Below $1.25 per day purchasing power parity (2005)",
+             "Below $2.50 per day purchasing power parity (2005)")
+
+create_doc(country = "Myanmar", ccode = "MMR", data = ppiMatrixMMR, varList = varList)
+
+################################################################################
+#
+# Namibia
+#
+################################################################################
+
+varList <- c("PPI score",
+             "Food poverty line",
+             "National poverty line (100)",
+             "National poverty line (150)",
+             "National poverty line (200)",
+             "USAID extreme poverty",
+             "Below $1.25 per day purchasing power parity (2005)",
+             "Below $2.50 per day purchasing power parity (2005)")
+
+create_doc(country = "Namibia", ccode = "NAM", data = ppiMatrixNAM, varList = varList)
 
 ################################################################################
 #

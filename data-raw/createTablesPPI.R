@@ -813,6 +813,47 @@ ppiMatrixMLI <- mliDF
 devtools::use_data(ppiMatrixMLI, overwrite = TRUE)
 
 
+################################################################################
+#
+# Mongolia
+#
+################################################################################
+
+mngDF1 <- get_ppi_table(pdf = "data-raw/pdf/mongolia.pdf", n = 3, limits = 7:26)
+
+
+################################################################################
+#
+# Morocco
+#
+################################################################################
+
+marDF1 <- get_ppi_table(pdf = "data-raw/pdf/morocco.pdf", n = 3, limits = 6:25)
+marDF2 <- get_ppi_table(pdf = "data-raw/pdf/morocco.pdf", n = 4, limits = 6:25)
+marDF <- data.frame(marDF1, marDF2[ , 2:4])
+names(marDF) <- c("score", "nl100", "nl150", "nl200", "extreme", "ppp125",
+                  "ppp250", "ppp375", "ppp500")
+marDF$score <- 0:100
+row.names(marDF) <- 0:100
+
+ppiMatrixMAR <- marDF
+devtools::use_data(ppiMatrixMAR, overwrite = TRUE)
+
+################################################################################
+#
+# Myanmar
+#
+################################################################################
+
+mmrDF <- get_ppi_table(pdf = "data-raw/pdf/myanmar.pdf", n = 4, limits = 5:24)
+names(marDF) <- c("score", "nlFood", "nl100", "nl150", "nl200", "extreme",
+                  "ppp125", "ppp250")
+mmrDF$score <- 0:100
+row.names(mmrDF) <- 0:100
+
+ppiMatrixMMR <- mmrDF
+devtools::use_data(ppiMatrixMMR, overwrite = TRUE)
+
 
 
 ################################################################################
@@ -831,6 +872,22 @@ mozDF$score <- 0:100
 row.names(mozDF) <- 0:100
 ppiMatrixMOZ <- mozDF
 devtools::use_data(ppiMatrixMOZ, overwrite = TRUE)
+
+
+################################################################################
+#
+# Namibia
+#
+################################################################################
+
+namDF <- get_ppi_table(pdf = "data-raw/pdf/namibia.pdf", n = 4, limits = 5:24)
+names(namDF) <- c("score", "nlFood", "nl100", "nl150", "nl200", "extreme",
+                  "ppp125", "ppp250")
+namDF$score <- 0:100
+row.names(namDF) <- 0:100
+
+ppiMatrixNAM <- namDF
+devtools::use_data(ppiMatrixNAM, overwrite = TRUE)
 
 
 ################################################################################
