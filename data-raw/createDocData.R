@@ -693,6 +693,116 @@ varList <- c("PPI score",
 
 create_doc(country = "Namibia", ccode = "NAM", data = ppiMatrixNAM, varList = varList)
 
+
+################################################################################
+#
+# Nepal - new
+#
+################################################################################
+
+varList <- c("PPI score",
+             "Food poverty line",
+             "National poverty line (100)",
+             "National poverty line (150)",
+             "National poverty line (200)",
+             "USAID extreme poverty",
+             "Below $1.25 per day purchasing power parity (2005)",
+             "Below $2.00 per day purchasing power parity (2005)",
+             "Below $2.50 per day purchasing power parity (2005)")
+
+create_doc(country = "Nepal", ccode = "NPL_a", data = ppiMatrixNPL_a, varList = varList)
+
+
+################################################################################
+#
+# Nepal - legacy
+#
+################################################################################
+
+varList <- c("PPI score",
+             "National poverty line (100)",
+             "Below $1.25 per day purchasing power parity (2005)",
+             "Below $2.50 per day purchasing power parity (2005)")
+
+create_doc(country = "Nepal", ccode = "NPL", data = ppiMatrixNPL, varList = varList)
+
+
+################################################################################
+#
+# Nicaragua
+#
+################################################################################
+
+varList <- c("PPI score",
+             "Food poverty line",
+             "National poverty line (100)",
+             "National poverty line (150)",
+             "National poverty line (200)",
+             "USAID extreme poverty",
+             "Below $1.25 per day purchasing power parity (2005)",
+             "Below $2.50 per day purchasing power parity (2005)",
+             "Below $3.75 per day purchasing power parity (2005)",
+             "Below $8.00 per day purchasing power parity (2005)")
+
+create_doc(country = "Nicaragua", ccode = "NIC", data = ppiMatrixNIC, varList = varList)
+
+
+################################################################################
+#
+# Niger
+#
+################################################################################
+
+varList <- c("PPI score",
+             "Food poverty line",
+             "National poverty line (100)",
+             "National poverty line (150)",
+             "National poverty line (200)",
+             "USAID extreme poverty",
+             "Below $1.25 per day purchasing power parity (2005)",
+             "Below $2.00 per day purchasing power parity (2005)",
+             "Below $2.50 per day purchasing power parity (2005)")
+
+create_doc(country = "Niger", ccode = "NER", data = ppiMatrixNER, varList = varList)
+
+
+################################################################################
+#
+# Paraguay
+#
+################################################################################
+
+varList <- c("PPI score",
+             "Food poverty line",
+             "National poverty line (100)",
+             "National poverty line (150)",
+             "National poverty line (200)",
+             "USAID extreme poverty",
+             "Below $1.25 per day purchasing power parity (2005)",
+             "Below $2.50 per day purchasing power parity (2005)")
+
+create_doc(country = "Paraguay", ccode = "PRY", data = ppiMatrixPRY, varList = varList)
+
+
+################################################################################
+#
+# Peru
+#
+################################################################################
+
+varList <- c("PPI score",
+             "Food poverty line",
+             "National poverty line (100)",
+             "National poverty line (150)",
+             "National poverty line (200)",
+             "USAID extreme poverty",
+             "Below $1.25 per day purchasing power parity (2005)",
+             "Below $2.50 per day purchasing power parity (2005)",
+             "Below $3.75 per day purchasing power parity (2005)")
+
+create_doc(country = "Peru", ccode = "PER", data = ppiMatrixPER, varList = varList)
+
+
 ################################################################################
 #
 # Zambia

@@ -839,6 +839,7 @@ row.names(marDF) <- 0:100
 ppiMatrixMAR <- marDF
 devtools::use_data(ppiMatrixMAR, overwrite = TRUE)
 
+
 ################################################################################
 #
 # Myanmar
@@ -846,14 +847,13 @@ devtools::use_data(ppiMatrixMAR, overwrite = TRUE)
 ################################################################################
 
 mmrDF <- get_ppi_table(pdf = "data-raw/pdf/myanmar.pdf", n = 4, limits = 5:24)
-names(marDF) <- c("score", "nlFood", "nl100", "nl150", "nl200", "extreme",
+names(mmrDF) <- c("score", "nlFood", "nl100", "nl150", "nl200", "extreme",
                   "ppp125", "ppp250")
 mmrDF$score <- 0:100
 row.names(mmrDF) <- 0:100
 
 ppiMatrixMMR <- mmrDF
 devtools::use_data(ppiMatrixMMR, overwrite = TRUE)
-
 
 
 ################################################################################
@@ -888,6 +888,123 @@ row.names(namDF) <- 0:100
 
 ppiMatrixNAM <- namDF
 devtools::use_data(ppiMatrixNAM, overwrite = TRUE)
+
+
+################################################################################
+#
+# Nepal - new
+#
+################################################################################
+
+nplDF1 <- get_ppi_table(pdf = "data-raw/pdf/nepal.pdf", n = 3, limits = 6:25)
+nplDF2 <- get_ppi_table(pdf = "data-raw/pdf/nepal.pdf", n = 4, limits = 6:25)
+
+nplDF <- data.frame(nplDF1, nplDF2[, 2:4])
+names(nplDF) <- c("score", "nlFood", "nl100", "nl150", "nl200", "extreme",
+                  "ppp125", "ppp200", "ppp250")
+
+nplDF$score <- 0:100
+row.names(nplDF) <- 0:100
+
+ppiMatrixNPL_a <- nplDF
+devtools::use_data(ppiMatrixNPL_a, overwrite = TRUE)
+
+#
+# Legacy
+#
+nplDF3 <- get_ppi_table(pdf = "data-raw/pdf/nepal.pdf", n = 5, limits = 7:26)
+names(nplDF3) <- c("score", "nl100", "ppp125", "ppp250")
+nplDF3$score <- 0:100
+row.names(nplDF3) <- 0:100
+
+ppiMatrixNPL <- nplDF3
+devtools::use_data(ppiMatrixNPL, overwrite = TRUE)
+
+
+################################################################################
+#
+# Nicaragua
+#
+################################################################################
+
+nicDF <- get_ppi_table(pdf = "data-raw/pdf/nicaragua.pdf", n = 4, limits = 5:24)
+names(nicDF) <- c("score", "nlFood", "nl100", "nl150", "nl200", "extreme",
+                  "ppp125", "ppp250", "ppp375", "ppp800")
+nicDF$score <- 0:100
+row.names(nicDF) <- 0:100
+
+ppiMatrixNIC <- nicDF
+devtools::use_data(ppiMatrixNIC, overwrite = TRUE)
+
+
+################################################################################
+#
+# Niger
+#
+################################################################################
+
+nerDF<- get_ppi_table(pdf = "data-raw/pdf/niger.pdf", n = 4, limits = 5:24)
+names(nerDF) <- c("score", "nlFood", "nl100", "nl150", "nl200", "extreme",
+                  "ppp125", "ppp200", "ppp250")
+
+nerDF$score <- 0:100
+row.names(nerDF) <- 0:100
+
+ppiMatrixNER <- nerDF
+devtools::use_data(ppiMatrixNER, overwrite = TRUE)
+
+
+################################################################################
+#
+# Palestine
+#
+################################################################################
+
+pseDF <- get_ppi_table(pdf = "data-raw/pdf/palestine.pdf", n = 4, limits = 5:24)
+names(pseDF) <- c("score", "deep", "nl100", "nl150", "nl200", "median", "ppp125",
+                  "ppp200", "ppp250", "ppp375", "ppp500")
+pseDF$score <- 0:100
+row.names(pseDF) <- 0:100
+
+ppiMatrixPSE <- pseDF
+devtools::use_data(ppiMatrixPSE, overwrite = TRUE)
+
+
+################################################################################
+#
+# Paraguay
+#
+################################################################################
+
+pryDF1 <- get_ppi_table(pdf = "data-raw/pdf/paraguay.pdf", n = 3, limits = 8:27)
+pryDF2 <- get_ppi_table(pdf = "data-raw/pdf/paraguay.pdf", n = 4, limits = 6:25)
+pryDF <- data.frame(pryDF1, pryDF2[ , 2:4])
+names(pryDF) <- c("score", "nlFood", "nl100", "nl150", "nl200", "extreme",
+                  "ppp125", "ppp250")
+
+pryDF$score <- 0:100
+row.names(pryDF) <- 0:100
+
+ppiMatrixPRY <- pryDF
+devtools::use_data(ppiMatrixPRY, overwrite = TRUE)
+
+
+################################################################################
+#
+# Peru
+#
+################################################################################
+
+perDF1 <- get_ppi_table(pdf = "data-raw/pdf/peru.pdf", n = 3, limits = 8:27)
+perDF2 <- get_ppi_table(pdf = "data-raw/pdf/peru.pdf", n = 4, limits = 6:25)
+perDF <- data.frame(perDF1, perDF2[ , 2:5])
+names(perDF) <- c("score", "nlFood", "nl100", "nl150", "nl200", "extreme",
+                  "ppp125", "ppp250", "ppp375")
+perDF$score <- 0:100
+row.names(perDF) <- 0:100
+
+ppiMatrixPER <- perDF
+devtools::use_data(ppiMatrixPER, overwrite = TRUE)
 
 
 ################################################################################
