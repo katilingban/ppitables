@@ -788,7 +788,180 @@ devtools::use_data(ppiMatrixHND, overwrite = TRUE)
 #
 ################################################################################
 
-indDF1 <- get_ppi_table(pdf = "data-raw/pdf/india.pdf", n = 3, limits = 9:28)
+indDF1 <- str_split(pdf_text("data-raw/pdf/india.pdf")[3], "\n")[[1]][9:28]
+indDF2 <- str_split(pdf_text("data-raw/pdf/india.pdf")[4], "\n")[[1]][9:28]
+indDF3 <- str_split(pdf_text("data-raw/pdf/india.pdf")[5], "\n")[[1]][8:27]
+indDF4 <- str_split(pdf_text("data-raw/pdf/india.pdf")[6], "\n")[[1]][8:27]
+indDF5 <- str_split(pdf_text("data-raw/pdf/india.pdf")[7], "\n")[[1]][8:27]
+
+get_vars <- function(x, pattern, n = 5) {
+
+  x <- str_split(x, pattern = pattern)[[1]]
+  x <- x[x != ""]
+
+}
+
+temp <- sapply(indDF1, FUN = get_vars, pattern = " ")
+
+y <- NULL
+
+for(i in 1:length(temp)) {
+
+  x <- temp[[i]]
+  x <- as.numeric(x)
+  x <- tail(x, 10)
+
+  z <- NULL
+
+  for(j in 1:5){
+
+    z <- data.frame(rbind(z, x))
+
+  }
+
+  y <- data.frame(rbind(y, z))
+
+}
+
+y1 <- data.frame(rbind(y, y[100, ]))
+
+names(y1) <- c("saxena", "ppp108", "ppp216", "saxena", "ppp108", "ppp81", "ppp135", "ppp162", "ppp216", "tendulkar")
+
+#
+#
+#
+temp <- sapply(indDF2, FUN = get_vars, pattern = " ")
+
+y <- NULL
+
+for(i in 1:length(temp)) {
+
+  x <- temp[[i]]
+  x <- as.numeric(x)
+  x <- tail(x, 6)
+
+  z <- NULL
+
+  for(j in 1:5){
+
+    z <- data.frame(rbind(z, x))
+
+  }
+
+  y <- data.frame(rbind(y, z))
+
+}
+
+y2 <- data.frame(rbind(y, y[100, ]))
+
+names(y2) <- c("tendulkar100", "tendulkar150", "tendulkar200", "ppp125", "ppp188", "ppp250")
+
+#
+#
+#
+temp <- sapply(indDF3, FUN = get_vars, pattern = " ")
+
+y <- NULL
+
+for(i in 1:length(temp)) {
+
+  x <- temp[[i]]
+  x <- as.numeric(x)
+  x <- tail(x, 6)
+
+  z <- NULL
+
+  for(j in 1:5){
+
+    z <- data.frame(rbind(z, x))
+
+  }
+
+  y <- data.frame(rbind(y, z))
+
+}
+
+y3 <- data.frame(rbind(y, y[100, ]))
+
+names(y3) <- c("rangarajan100", "rangarajan150", "rangarajan200", "half100", "rbiUrban", "rbiRural")
+
+#
+#
+#
+temp <- sapply(indDF4, FUN = get_vars, pattern = " ")
+
+y <- NULL
+
+for(i in 1:length(temp)) {
+
+  x <- temp[[i]]
+  x <- as.numeric(x)
+  x <- tail(x, 4)
+
+  z <- NULL
+
+  for(j in 1:5){
+
+    z <- data.frame(rbind(z, x))
+
+  }
+
+  y <- data.frame(rbind(y, z))
+
+}
+
+y4 <- data.frame(rbind(y, y[100, ]))
+
+names(y4) <- c("ppp190", "ppp310", "ppp380", "ppp400")
+
+
+#
+#
+#
+temp <- sapply(indDF5, FUN = get_vars, pattern = " ")
+
+y <- NULL
+
+for(i in 1:length(temp)) {
+
+  x <- temp[[i]]
+  x <- as.numeric(x)
+  x <- tail(x, 5)
+
+  z <- NULL
+
+  for(j in 1:5){
+
+    z <- data.frame(rbind(z, x))
+
+  }
+
+  y <- data.frame(rbind(y, z))
+
+}
+
+y5 <- data.frame(rbind(y, y[100, ]))
+
+names(y5) <- c("percentile20", "percentile40", "percentile50", "percentile60", "percentile80")
+
+
+ppiMatrixIND_r59 <- data.frame("score" = 0:100, y1[, 1:3])
+row.names(ppiMatrixIND_r59) <- 0:100
+devtools::use_data(ppiMatrixIND_r59, overwrite = TRUE)
+
+ppiMatrixIND_r62 <- data.frame("score" = 0:100, y1[, 4:9])
+row.names(ppiMatrixIND_r62) <- 0:100
+devtools::use_data(ppiMatrixIND_r62, overwrite = TRUE)
+
+ppiMatrixIND_r66 <- data.frame("score" = 0:100, "tendulkar" = y1[, 10], y2)
+row.names(ppiMatrixIND_r66) <- 0:100
+devtools::use_data(ppiMatrixIND_r66, overwrite = TRUE)
+
+ppiMatrixIND_r68 <- data.frame("score" = 0:100, y3, y4, y5)
+row.names(ppiMatrixIND_r68) <- 0:100
+devtools::use_data(ppiMatrixIND_r68, overwrite = TRUE)
+
+
 
 
 ################################################################################
@@ -842,6 +1015,59 @@ row.names(civDF) <- 0:100
 
 ppiMatrixCIV <- civDF
 devtools::use_data(ppiMatrixCIV, overwrite = TRUE)
+
+
+################################################################################
+#
+# Jordan
+#
+################################################################################
+
+nl100 <- get_ppi_table(pdf = "data-raw/pdf/jordan.pdf", n = 65, limits = 6:25)
+names(nl100) <- c("score", "nl100")
+nl100$score <- 0:100
+
+nl150 <- get_ppi_table(pdf = "data-raw/pdf/jordan.pdf", n = 75, limits = 6:25)
+names(nl150) <- c("score", "nl150")
+nl150$score <- 0:100
+
+nl200 <- get_ppi_table(pdf = "data-raw/pdf/jordan.pdf", n = 81, limits = 6:25)
+names(nl200) <- c("score", "nl200")
+nl200$score <- 0:100
+
+nl250 <- get_ppi_table(pdf = "data-raw/pdf/jordan.pdf", n = 87, limits = 6:25)
+names(nl250) <- c("score", "nl250")
+nl250$score <- 0:100
+
+extreme <- get_ppi_table(pdf = "data-raw/pdf/jordan.pdf", n = 93, limits = 6:25)
+names(extreme) <- c("score", "extreme")
+extreme$score <- 0:100
+
+ppp125 <- get_ppi_table(pdf = "data-raw/pdf/jordan.pdf", n = 99, limits = 6:25)
+names(ppp125) <- c("score", "ppp125")
+ppp125$score <- 0:100
+
+ppp250 <- get_ppi_table(pdf = "data-raw/pdf/jordan.pdf", n = 105, limits = 6:25)
+names(ppp250) <- c("score", "ppp250")
+ppp250$score <- 0:100
+
+ppp375 <- get_ppi_table(pdf = "data-raw/pdf/jordan.pdf", n = 111, limits = 6:25)
+names(ppp375) <- c("score", "ppp375")
+ppp375$score <- 0:100
+
+ppp500 <- get_ppi_table(pdf = "data-raw/pdf/jordan.pdf", n = 117, limits = 6:25)
+names(ppp500) <- c("score", "ppp500")
+ppp500$score <- 0:100
+
+jorDF <- data.frame(nl100, nl150[ , 2], nl200[ , 2], nl250[ , 2], extreme[ , 2],
+                    ppp125[ , 2], ppp250[ , 2], ppp375[ , 2], ppp500[ , 2])
+
+names(jorDF) <- c("score", "nl100", "nl150", "nl200", "nl250", "extreme",
+                  "ppp125", "ppp250", "ppp375", "ppp500")
+
+ppiMatrixJOR <- jorDF
+devtools::use_data(ppiMatrixJOR, overwrite = TRUE)
+
 
 
 ################################################################################

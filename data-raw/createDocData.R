@@ -522,6 +522,82 @@ create_doc(country = "Honduras", ccode = "HND", data = ppiMatrixHND, varList = v
 
 ################################################################################
 #
+# India - R59
+#
+################################################################################
+
+varList <- c("PPI score",
+             "National saxena",
+             "Below $1.08 per day purchasing power parity (1993)",
+             "Below $2.16 per day purchasing power parity (1993)")
+
+create_doc(country = "India", ccode = "IND_r59", data = ppiMatrixIND_r59, varList = varList)
+
+
+################################################################################
+#
+# India - R62
+#
+################################################################################
+
+varList <- c("PPI score",
+             "National saxena",
+             "Below $1.08 per day purchasing power parity (1993)",
+             "Below $0.81 per day purchasing power parity (1993)",
+             "Below $1.35 per day purchasing power parity (1993)",
+             "Below $1.62 per day purchasing power parity (1993)",
+             "Below $2.16 per day purchasing power parity (1993)")
+
+create_doc(country = "India", ccode = "IND_r62", data = ppiMatrixIND_r62, varList = varList)
+
+
+################################################################################
+#
+# India - R66
+#
+################################################################################
+
+varList <- c("PPI score",
+             "National tendulkar",
+             "National tendulkar (100)",
+             "National tendulkar (150)",
+             "National tendulkar (200)",
+             "Below $1.25 per day purchasing power parity (2005)",
+             "Below $1.88 per day purchasing power parity (2005)",
+             "Below $2.50 per day purchasing power parity (2005)",
+             "Below $1.25 per day purchasing power parity (2005)")
+
+create_doc(country = "India", ccode = "IND_r66", data = ppiMatrixIND_r66, varList = varList)
+
+
+################################################################################
+#
+# India - R68
+#
+################################################################################
+
+varList <- c("PPI score",
+             "National rangarajan (100)",
+             "National rangarajan (150)",
+             "National rangarajan (200)",
+             "Poorest half below 100 national",
+             "RBI urban",
+             "RBI rural",
+             "Below $1.90 per day purchasing power parity (2011)",
+             "Below $3.10 per day purchasing power parity (2011)",
+             "Below $3.80 per day purchasing power parity (2011)",
+             "Below $4.00 per day purchasing power parity (2011)",
+             "Below 20th percentile poverty line",
+             "Below 40th percentile poverty line",
+             "Below 50th percentile poverty line",
+             "Below 60th percentile poverty line",
+             "Below 80th percentile poverty line")
+
+create_doc(country = "India", ccode = "IND_r68", data = ppiMatrixIND_r68, varList = varList)
+
+
+################################################################################
+#
 # Indonesia - legacy
 #
 ################################################################################
@@ -551,6 +627,26 @@ varList <- c("PPI score",
              "Below $3.10 per day purchasing power parity (2011)")
 
 create_doc(country = "Indonesia", ccode = "IDN_a", data = ppiMatrixIDN_a, varList = varList)
+
+
+################################################################################
+#
+# Jordan
+#
+################################################################################
+
+varList <- c("PPI score",
+             "National poverty line (100)",
+             "National poverty line (150)",
+             "National poverty line (200)",
+             "National poverty line (250)",
+             "USAID extreme poverty",
+             "Below $1.25 per day purchasing power parity (2005)",
+             "Below $2.50 per day purchasing power parity (2005)",
+             "Below $3.75 per day purchasing power parity (2005)",
+             "Below $5.00 per day purchasing power parity (2005)")
+
+create_doc(country = "Jordan", ccode = "JOR", data = ppiMatrixJOR, varList = varList)
 
 
 ################################################################################
