@@ -351,7 +351,8 @@ ppiMatrixKHM <- khmDF
 devtools::use_data(ppiMatrixKHM, overwrite = TRUE)
 
 khmDF <- get_ppi_table(pdf = "data-raw/pdf/cambodia.pdf", n = 5, limits = 9:28)
-names(khmDF) <- c("score", "nl100", "nl150", "nl200", "median", "ppp125", "ppp200", "ppp250", "ppp500")
+names(khmDF) <- c("score", "nl100", "nl150", "nl200", "median", "ppp125", "ppp200",
+                  "ppp250", "ppp500")
 khmDF$score <- 0:100
 row.names(khmDF) <- 0:100
 
@@ -366,7 +367,8 @@ devtools::use_data(ppiMatrixKHM_gov, overwrite = TRUE)
 ################################################################################
 
 cmrDF <- get_ppi_table(pdf = "data-raw/pdf/cameroon.pdf", n = 4, limits = 5:24)
-names(cmrDF) <- c("score", "nl100", "nl150", "nl200", "extreme", "ppp125", "ppp200", "ppp250")
+names(cmrDF) <- c("score", "nl100", "nl150", "nl200", "extreme", "ppp125",
+                  "ppp200", "ppp250")
 cmrDF$score <- 0:100
 row.names(cmrDF) <- 0:100
 
@@ -580,21 +582,107 @@ devtools::use_data(ppiMatrixGHA, overwrite = TRUE)
 #
 ################################################################################
 
-gtmDF1 <- get_ppi_table(pdf = "data-raw/pdf/guatemala.pdf", n = 3, limits = 7:26)
-gtmDF2 <- get_ppi_table(pdf = "data-raw/pdf/guatemala.pdf", n = 4, limits = 7:26)
-gtmDF3 <- get_ppi_table(pdf = "data-raw/pdf/guatemala.pdf", n = 5, limits = 8:27)
-
 gtmDF1 <- str_split(pdf_text("data-raw/pdf/guatemala.pdf")[3], "\n")[[1]][7:26]
+gtmDF2 <- str_split(pdf_text("data-raw/pdf/guatemala.pdf")[4], "\n")[[1]][7:26]
+gtmDF3 <- str_split(pdf_text("data-raw/pdf/guatemala.pdf")[5], "\n")[[1]][8:27]
 
-get_vars <- function(x, pattern, n) {
+get_vars <- function(x, pattern, n = 5) {
 
   x <- str_split(x, pattern = pattern)[[1]]
   x <- x[x != ""]
 
 }
 
-test <- sapply(gtmDF1, FUN = get_vars, pattern = " ", n = 5)
-#test <- data.frame(test)
+temp <- sapply(gtmDF1, FUN = get_vars, pattern = " ")
+
+y <- NULL
+
+for(i in 1:length(temp)) {
+
+  x <- temp[[i]]
+  x <- as.numeric(x)
+  x <- tail(x, 5)
+
+  z <- NULL
+
+  for(j in 1:5){
+
+    z <- data.frame(rbind(z, x))
+
+  }
+
+  y <- data.frame(rbind(y, z))
+
+}
+
+y1 <- data.frame(rbind(y, y[100, ]))
+
+names(y1) <- c("nlFood", "nl100", "nl150", "nl200", "half100")
+
+#
+#
+#
+temp <- sapply(gtmDF2, FUN = get_vars, pattern = " ")
+
+y <- NULL
+
+for(i in 1:length(temp)) {
+
+  x <- temp[[i]]
+  x <- as.numeric(x)
+  x <- tail(x, 6)
+
+  z <- NULL
+
+  for(j in 1:5){
+
+    z <- data.frame(rbind(z, x))
+
+  }
+
+  y <- data.frame(rbind(y, z))
+
+}
+
+y2 <- data.frame(rbind(y, y[100, ]))
+
+names(y2) <- c("ppp125", "ppp200", "ppp250", "ppp500", "ppp190", "ppp310")
+
+#
+#
+#
+temp <- sapply(gtmDF3, FUN = get_vars, pattern = " ")
+
+y <- NULL
+
+for(i in 1:length(temp)) {
+
+  x <- temp[[i]]
+  x <- as.numeric(x)
+  x <- tail(x, 5)
+
+  z <- NULL
+
+  for(j in 1:5){
+
+    z <- data.frame(rbind(z, x))
+
+  }
+
+  y <- data.frame(rbind(y, z))
+
+}
+
+y3 <- data.frame(rbind(y, y[100, ]))
+
+names(y3) <- c("percentile20", "percentile40", "percentile50", "percentile60", "percentile80")
+
+gtmDF <- data.frame("score" = 0:100, y1, y2, y3)
+row.names(gtmDF) <- 0:100
+
+ppiMatrixGTM <- gtmDF
+devtools::use_data(ppiMatrixGTM, overwrite = TRUE)
+
 
 
 ################################################################################
@@ -603,7 +691,76 @@ test <- sapply(gtmDF1, FUN = get_vars, pattern = " ", n = 5)
 #
 ################################################################################
 
-htiDF <- get_ppi_table(pdf = "data-raw/pdf/haiti.pdf", n = 3, limits = 7:26)
+htiDF1 <- str_split(pdf_text("data-raw/pdf/haiti.pdf")[3], "\n")[[1]][7:26]
+htiDF2 <- str_split(pdf_text("data-raw/pdf/haiti.pdf")[4], "\n")[[1]][8:27]
+
+get_vars <- function(x, pattern, n = 5) {
+
+  x <- str_split(x, pattern = pattern)[[1]]
+  x <- x[x != ""]
+
+}
+
+temp <- sapply(htiDF1, FUN = get_vars, pattern = " ")
+
+y <- NULL
+
+for(i in 1:length(temp)) {
+
+  x <- temp[[i]]
+  x <- as.numeric(x)
+  x <- tail(x, 5)
+
+  z <- NULL
+
+  for(j in 1:5){
+
+    z <- data.frame(rbind(z, x))
+
+  }
+
+  y <- data.frame(rbind(y, z))
+
+}
+
+y1 <- data.frame(rbind(y, y[100, ]))
+
+names(y1) <- c("nlFood", "nl100", "nl150", "nl200", "half100")
+
+#
+#
+#
+temp <- sapply(htiDF2, FUN = get_vars, pattern = " ")
+
+y <- NULL
+
+for(i in 1:length(temp)) {
+
+  x <- temp[[i]]
+  x <- as.numeric(x)
+  x <- tail(x, 4)
+
+  z <- NULL
+
+  for(j in 1:5){
+
+    z <- data.frame(rbind(z, x))
+
+  }
+
+  y <- data.frame(rbind(y, z))
+
+}
+
+y2 <- data.frame(rbind(y, y[100, ]))
+
+names(y2) <- c("ppp125", "ppp200", "ppp250", "ppp500")
+
+htiDF <- data.frame("score" = 0:100, y1, y2)
+row.names(htiDF) <- 0:100
+
+ppiMatrixHTI <- htiDF
+devtools::use_data(ppiMatrixHTI, overwrite = TRUE)
 
 
 ################################################################################
