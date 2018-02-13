@@ -405,6 +405,37 @@ devtools::use_data(ppiMatrixCOL, overwrite = TRUE)
 
 ################################################################################
 #
+# Dominican Republic
+#
+################################################################################
+
+domDF1 <- get_ppi_table(pdf = "data-raw/pdf/dominican_republic.pdf", n = 2, limits = 6:25)
+domDF1 <- domDF1[ , c(1:2, 4)]
+
+domDF2 <- get_ppi_table(pdf = "data-raw/pdf/dominican_republic.pdf", n = 3, limits = 6:25)
+domDF2 <- domDF2[ , c(1:2, 4)]
+
+domDF3 <- get_ppi_table(pdf = "data-raw/pdf/dominican_republic.pdf", n = 4, limits = 6:25)
+domDF3 <- domDF3[ , c(1:2, 4)]
+
+domDF4 <- get_ppi_table(pdf = "data-raw/pdf/dominican_republic.pdf", n = 5, limits = 6:25)
+domDF4 <- domDF4[ , c(1:2, 4)]
+
+domDF5 <- get_ppi_table(pdf = "data-raw/pdf/dominican_republic.pdf", n = 6, limits = 6:25)
+domDF5 <- domDF5[ , c(1:2, 4)]
+
+domDF <- data.frame(domDF1, domDF2[, 2:3], domDF3[, 2:3], domDF4[, 2:3], domDF5[, 2:3])
+names(domDF) <- c("score", "nl50", "nl75", "nl100", "nl150", "extreme", "nl200",
+                  "ppp125", "ppp250", "ppp375", "ppp500")
+domDF$score <- 0:100
+row.names(domDF) <- 0:100
+
+ppiMatrixDOM <- domDF
+devtools::use_data(ppiMatrixDOM, overwrite = TRUE)
+
+
+################################################################################
+#
 # Ghana
 #
 ################################################################################

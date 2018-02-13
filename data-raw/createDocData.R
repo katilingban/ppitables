@@ -290,6 +290,27 @@ create_doc(country = "Colombia", ccode = "COL", data = ppiMatrixCOL, varList = v
 
 ################################################################################
 #
+# Dominican Republic
+#
+################################################################################
+
+varList <- c("PPI score",
+             "National poverty line (50)",
+             "National poverty line (75)",
+             "National poverty line (100)",
+             "National poverty line (150)",
+             "USAID extreme poverty",
+             "National poverty line (200)",
+             "Below $1.25 per day purchasing power parity (2005)",
+             "Below $2.50 per day purchasing power parity (2005)",
+             "Below $3.75 per day purchasing power parity (2005)",
+             "Below $5.00 per day purchasing power parity (2005)")
+
+create_doc(country = "Dominican Republic", ccode = "DOM", data = ppiMatrixDOM, varList = varList)
+
+
+################################################################################
+#
 # Ghana - legacy scores
 #
 ################################################################################
