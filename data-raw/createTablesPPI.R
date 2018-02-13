@@ -379,6 +379,28 @@ devtools::use_data(ppiMatrixCMR, overwrite = TRUE)
 #
 ################################################################################
 
+colDF1 <- get_ppi_table(pdf = "data-raw/pdf/colombia.pdf", n = 2, limits = 8:27)
+colDF2 <- get_ppi_table(pdf = "data-raw/pdf/colombia.pdf", n = 3, limits = 8:27)
+colDF3 <- get_ppi_table(pdf = "data-raw/pdf/colombia.pdf", n = 4, limits = 6:25)
+colDF <- data.frame(colDF1, colDF2[ , 2:6], colDF3[ , 2:3])
+names(colDF) <- c("score", "nlFood", "nl100", "nl150", "nl200", "half100",
+                  "ppp125", "ppp250", "ppp375", "ppp500", "ppp190", "ppp310")
+colDF$score <- 0:100
+row.names(colDF) <- 0:100
+
+ppiMatrixCOL_a <- colDF
+devtools::use_data(ppiMatrixCOL_a, overwrite = TRUE)
+
+colDF4 <- get_ppi_table(pdf = "data-raw/pdf/colombia.pdf", n = 5, limits = 9:28)
+colDF5 <- get_ppi_table(pdf = "data-raw/pdf/colombia.pdf", n = 6, limits = 7:26)
+colDF <- data.frame(colDF4, colDF5[ , 2:6])
+names(colDF) <- c("score", "nlFood", "nl100", "nl150", "nl200", "extreme", "ppp125",
+                  "ppp250", "ppp375", "ppp500")
+colDF$score <- 0:100
+row.names(colDF) <- 0:100
+
+ppiMatrixCOL <- colDF
+devtools::use_data(ppiMatrixCOL, overwrite = TRUE)
 
 
 ################################################################################

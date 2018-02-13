@@ -245,6 +245,49 @@ varList <- c("PPI score",
 
 create_doc(country = "Cameroon", ccode = "CMR", data = ppiMatrixCMR, varList = varList)
 
+
+################################################################################
+#
+# Colombia - new scoring
+#
+################################################################################
+
+varList <- c("PPI score",
+             "Food poverty line",
+             "National poverty line (100)",
+             "National poverty line (150)",
+             "National poverty line (200)",
+             "Poorest half below 100 national",
+             "Below $1.25 per day purchasing power parity (2005)",
+             "Below $2.50 per day purchasing power parity (2005)",
+             "Below $3.75 per day purchasing power parity (2005)",
+             "Below $5.00 per day purchasing power parity (2005)",
+             "Below $1.90 per day purchasing power parity (2011)",
+             "Below $3.10 per day purchasing power parity (2011)")
+
+create_doc(country = "Colombia", ccode = "COL_a", data = ppiMatrixCOL_a, varList = varList)
+
+
+################################################################################
+#
+# Colombia - legacy
+#
+################################################################################
+
+varList <- c("PPI score",
+             "Food poverty line",
+             "National poverty line (100)",
+             "National poverty line (150)",
+             "National poverty line (200)",
+             "USAID extreme poverty",
+             "Below $1.25 per day purchasing power parity (2005)",
+             "Below $2.50 per day purchasing power parity (2005)",
+             "Below $3.75 per day purchasing power parity (2005)",
+             "Below $5.00 per day purchasing power parity (2005)")
+
+create_doc(country = "Colombia", ccode = "COL", data = ppiMatrixCOL, varList = varList)
+
+
 ################################################################################
 #
 # Ghana - legacy scores
@@ -386,3 +429,6 @@ varList <- c("PPI score",
              "Below 80th percentile poverty line")
 
 create_doc(country = "Zambia", ccode = "ZMB", data = ppiMatrixZMB, varList = varList)
+
+
+
