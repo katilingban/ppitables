@@ -1477,3 +1477,128 @@ NULL
 #
 ################################################################################
 "ppiMatrixHTI"
+
+
+################################################################################
+#
+#' ppiMatrixIND_r59
+#'
+#' Poverty Probability Index (PPI) lookup table for India
+#'
+#' @format A data frame with 4 columns and 101 rows:
+#' \describe{
+#' \item{\code{score}}{PPI score}
+#' \item{\code{saxena}}{National saxena}
+#' \item{\code{ppp108}}{Below $1.08 per day purchasing power parity (1993)}
+#' \item{\code{ppp216}}{Below $2.16 per day purchasing power parity (1993)}
+#' }
+#' @source \url{www.povertyindex.org}
+#'
+#
+################################################################################
+"ppiMatrixIND_r59"
+
+################################################################################
+#
+#' ppiMatrixIND_r62
+#'
+#' Poverty Probability Index (PPI) lookup table for India
+#'
+#' @format A data frame with 7 columns and 101 rows:
+#' \describe{
+#' \item{\code{score}}{PPI score}
+#' \item{\code{saxena}}{National saxena}
+#' \item{\code{ppp108}}{Below $1.08 per day purchasing power parity (1993)}
+#' \item{\code{ppp81}}{Below $0.81 per day purchasing power parity (1993)}
+#' \item{\code{ppp135}}{Below $1.35 per day purchasing power parity (1993)}
+#' \item{\code{ppp162}}{Below $1.62 per day purchasing power parity (1993)}
+#' \item{\code{ppp216}}{Below $2.16 per day purchasing power parity (1993)}
+#' }
+#' @source \url{www.povertyindex.org}
+#'
+#
+################################################################################
+"ppiMatrixIND_r62"
+
+################################################################################
+#
+#' ppiMatrixIND_r66
+#'
+#' Poverty Probability Index (PPI) lookup table for India
+#'
+#' @format A data frame with 8 columns and 101 rows:
+#' \describe{
+#' \item{\code{score}}{PPI score}
+#' \item{\code{tendulkar}}{National tendulkar}
+#' \item{\code{tendulkar100}}{National tendulkar (100\%)}
+#' \item{\code{tendulkar150}}{National tendulkar (150\%)}
+#' \item{\code{tendulkar200}}{National tendulkar (200\%)}
+#' \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}
+#' \item{\code{ppp188}}{Below $1.88 per day purchasing power parity (2005)}
+#' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
+#' }
+#' @source \url{www.povertyindex.org}
+#'
+#
+################################################################################
+"ppiMatrixIND_r66"
+
+
+
+
+################################################################################
+#
+#' ppiMatrixIND_r68
+#'
+#' Poverty Probability Index (PPI) lookup table for India
+#'
+#' @format A data frame with 16 columns and 101 rows:
+#' \describe{
+#' \item{\code{score}}{PPI score}
+#' \item{\code{rangarajan100}}{National rangarajan (100\%)}
+#' \item{\code{rangarajan150}}{National rangarajan (150\%)}
+#' \item{\code{rangarajan200}}{National rangarajan (200\%)}
+#' \item{\code{half100}}{Poorest half below 100\% national}
+#' \item{\code{rbiUrban}}{RBI urban}
+#' \item{\code{rbiRural}}{RBI rural}
+#' \item{\code{ppp190}}{Below $1.90 per day purchasing power parity (2011)}
+#' \item{\code{ppp310}}{Below $3.10 per day purchasing power parity (2011)}
+#' \item{\code{ppp380}}{Below $3.80 per day purchasing power parity (2011)}
+#' \item{\code{ppp400}}{Below $4.00 per day purchasing power parity (2011)}
+#' \item{\code{percentile20}}{Below 20th percentile poverty line}
+#' \item{\code{percentile40}}{Below 40th percentile poverty line}
+#' \item{\code{percentile50}}{Below 50th percentile poverty line}
+#' \item{\code{percentile60}}{Below 60th percentile poverty line}
+#' \item{\code{percentile80}}{Below 80th percentile poverty line}
+#' }
+#' @source \url{www.povertyindex.org}
+#'
+#
+################################################################################
+"ppiMatrixIND_r68"
+
+
+################################################################################
+#
+#' ppiMatrixJOR
+#'
+#' Poverty Probability Index (PPI) lookup table for Jordan
+#'
+#' @format A data frame with 10 columns and 101 rows:
+#' \describe{
+#' \item{\code{score}}{PPI score}
+#' \item{\code{nl100}}{National poverty line (100\%)}
+#' \item{\code{nl150}}{National poverty line (150\%)}
+#' \item{\code{nl200}}{National poverty line (200\%)}
+#' \item{\code{nl250}}{National poverty line (250\%)}
+#' \item{\code{extreme}}{USAID extreme poverty}
+#' \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}
+#' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
+#' \item{\code{ppp375}}{Below $3.75 per day purchasing power parity (2005)}
+#' \item{\code{ppp500}}{Below $5.00 per day purchasing power parity (2005)}
+#' }
+#' @source \url{www.povertyindex.org}
+#'
+#
+################################################################################
+"ppiMatrixJOR"
