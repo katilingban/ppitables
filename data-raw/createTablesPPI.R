@@ -732,6 +732,20 @@ devtools::use_data(ppiMatrixMDG, overwrite = TRUE)
 
 ################################################################################
 #
+# Malawi
+#
+################################################################################
+
+mwiDF1 <- get_ppi_table(pdf = "data-raw/pdf/malawi.pdf", n = 4, limits = 8:27)
+mwiDF2 <- get_ppi_table(pdf = "data-raw/pdf/malawi.pdf", n = 5, limits = 6:25)
+mwiDF3 <- get_ppi_table(pdf = "data-raw/pdf/malawi.pdf", n = 6, limits = 8:27)
+mwiDF4 <- get_ppi_table(pdf = "data-raw/pdf/malawi.pdf", n = 7, limits = 6:25)
+mwiDF5 <- get_ppi_table(pdf = "data-raw/pdf/malawi.pdf", n = 8, limits = 6:25)
+
+
+
+################################################################################
+#
 # Mozambique
 #
 ################################################################################
