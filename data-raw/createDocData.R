@@ -230,6 +230,23 @@ create_doc(country = "Cambodia", ccode = "KHM", data = ppiMatrixKHM, varList = v
 
 ################################################################################
 #
+# Cameroon
+#
+################################################################################
+
+varList <- c("PPI score",
+             "National poverty line (100)",
+             "National poverty line (150)",
+             "National poverty line (200)",
+             "USAID extreme poverty",
+             "Below $1.25 per day purchasing power parity (2005)",
+             "Below $2.00 per day purchasing power parity (2005)",
+             "Below $2.50 per day purchasing power parity (2005)")
+
+create_doc(country = "Cameroon", ccode = "CMR", data = ppiMatrixCMR, varList = varList)
+
+################################################################################
+#
 # Ghana - legacy scores
 #
 ################################################################################

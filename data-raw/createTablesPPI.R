@@ -360,6 +360,21 @@ devtools::use_data(ppiMatrixKHM_gov, overwrite = TRUE)
 
 ################################################################################
 #
+# Cameroon
+#
+################################################################################
+
+cmrDF <- get_ppi_table(pdf = "data-raw/pdf/cameroon.pdf", n = 4, limits = 5:24)
+names(cmrDF) <- c("score", "nl100", "nl150", "nl200", "extreme", "ppp125", "ppp200", "ppp250")
+cmrDF$score <- 0:100
+row.names(cmrDF) <- 0:100
+
+ppiMatrixCMR <- cmrDF
+devtools::use_data(ppiMatrixCMR, overwrite = TRUE)
+
+
+################################################################################
+#
 # Ghana
 #
 ################################################################################
