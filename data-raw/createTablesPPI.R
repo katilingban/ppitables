@@ -738,10 +738,45 @@ devtools::use_data(ppiMatrixMDG, overwrite = TRUE)
 
 mwiDF1 <- get_ppi_table(pdf = "data-raw/pdf/malawi.pdf", n = 4, limits = 8:27)
 mwiDF2 <- get_ppi_table(pdf = "data-raw/pdf/malawi.pdf", n = 5, limits = 6:25)
+
+#
+# PBM definition
+#
+mwiDF <- data.frame(mwiDF1, mwiDF2[ , 2:8])
+names(mwiDF) <- c("score", "nlFood", "nl100", "nl150", "nl200", "half100", "ppp125",
+                  "ppp200", "ppp250", "ppp500", "ppp844", "ppp190", "ppp310")
+mwiDF$score <- 0:100
+row.names(mwiDF) <- 0:100
+
+ppiMatrixMWI_pbm <- mwiDF
+devtools::use_data(ppiMatrixMWI_pbm, overwrite = TRUE)
+
+#
+# Government definition
+#
 mwiDF3 <- get_ppi_table(pdf = "data-raw/pdf/malawi.pdf", n = 6, limits = 8:27)
 mwiDF4 <- get_ppi_table(pdf = "data-raw/pdf/malawi.pdf", n = 7, limits = 6:25)
 mwiDF5 <- get_ppi_table(pdf = "data-raw/pdf/malawi.pdf", n = 8, limits = 6:25)
 
+mwiDF <- data.frame(mwiDF3, mwiDF4[ , 2:8], mwiDF5[ , 1])
+names(mwiDF) <- c("score", "nlFood", "nl100", "nl150", "nl200", "half100", "ppp125",
+                  "ppp200", "ppp250", "ppp500", "ppp844", "ppp190", "ppp310", "ppp1000")
+mwiDF$score <- 0:100
+row.names(mwiDF) <- 0:100
+
+ppiMatrixMWI_gov <- mwiDF
+devtools::use_data(ppiMatrixMWI_gov, overwrite = TRUE)
+
+#
+# Old definition
+#
+mwiDF <- data.frame(mwiDF1[ , 1], mwiDF5[ , 2:3])
+names(mwiDF) <- c("score", "ppp125", "ppp250")
+mwiDF$score <- 0:100
+row.names(mwiDF) <- 0:100
+
+ppiMatrixMWI <- mwiDF
+devtools::use_data(ppiMatrixMWI, overwrite = TRUE)
 
 
 ################################################################################

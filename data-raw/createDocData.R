@@ -508,24 +508,6 @@ create_doc(country = "Indonesia", ccode = "IDN_a", data = ppiMatrixIDN_a, varLis
 
 ################################################################################
 #
-# Ivory Coast
-#
-################################################################################
-
-varList <- c("PPI score",
-             "National poverty line (100)",
-             "National poverty line (150)",
-             "National poverty line (200)",
-             "USAID extreme poverty",
-             "Below $1.25 per day purchasing power parity (2005)",
-             "Below $2.00 per day purchasing power parity (2005)",
-             "Below $2.50 per day purchasing power parity (2005)",
-             "Below $8.00 per day purchasing power parity (2005)")
-
-create_doc(country = "Ivory Coast", ccode = "CIV", data = ppiMatrixCIV, varList = varList)
-
-################################################################################
-#
 # Kenya
 #
 ################################################################################
@@ -563,6 +545,66 @@ varList <- c("PPI score",
              "Below $5.00 per day purchasing power parity (2005)")
 
 create_doc(country = "Madagascar", ccode = "MDG", data = ppiMatrixMDG, varList = varList)
+
+
+################################################################################
+#
+# Malawi - PBM definition
+#
+################################################################################
+
+varList <- c("PPI score",
+             "Food poverty line",
+             "National poverty line (100)",
+             "National poverty line (150)",
+             "National poverty line (200)",
+             "Poorest half below 100 national",
+             "Below $1.25 per day purchasing power parity (2005)",
+             "Below $2.00 per day purchasing power parity (2005)",
+             "Below $2.50 per day purchasing power parity (2005)",
+             "Below $5.00 per day purchasing power parity (2005)",
+             "Below $8.44 per day purchasing power parity (2005)",
+             "Below $1.90 per day purchasing power parity (2011)",
+             "Below $3.10 per day purchasing power parity (2011)")
+
+create_doc(country = "Malawi", ccode = "MWI_pbm", data = ppiMatrixMWI_pbm, varList = varList)
+
+
+################################################################################
+#
+# Malawi - government definition
+#
+################################################################################
+
+varList <- c("PPI score",
+             "Food poverty line",
+             "National poverty line (100)",
+             "National poverty line (150)",
+             "National poverty line (200)",
+             "Poorest half below 100 national",
+             "Below $1.25 per day purchasing power parity (2005)",
+             "Below $2.00 per day purchasing power parity (2005)",
+             "Below $2.50 per day purchasing power parity (2005)",
+             "Below $5.00 per day purchasing power parity (2005)",
+             "Below $8.44 per day purchasing power parity (2005)",
+             "Below $1.90 per day purchasing power parity (2011)",
+             "Below $3.10 per day purchasing power parity (2011)",
+             "Below $10.00 per day purchasing power parity (2011)")
+
+create_doc(country = "Malawi", ccode = "MWI_gov", data = ppiMatrixMWI_gov, varList = varList)
+
+
+################################################################################
+#
+# Malawi - legacy
+#
+################################################################################
+
+varList <- c("PPI score",
+             "Below $1.25 per day purchasing power parity (2005)",
+             "Below $2.50 per day purchasing power parity (2005)")
+
+create_doc(country = "Malawi", ccode = "MWI", data = ppiMatrixMWI, varList = varList)
 
 
 ################################################################################
