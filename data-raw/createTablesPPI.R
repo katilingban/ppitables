@@ -34,6 +34,7 @@ get_ppi_table <- function(pdf, n, limits, expand = TRUE) {
       for(j in 1:5) {
         tempDF[j, ] <- x
       }
+
       ppiDF <- data.frame(rbind(ppiDF, tempDF))
     }
     ppiDF <- data.frame(rbind(ppiDF, ppiDF[100, ]))
@@ -436,6 +437,104 @@ devtools::use_data(ppiMatrixDOM, overwrite = TRUE)
 
 ################################################################################
 #
+# Ecuador
+#
+################################################################################
+
+ecuDF1 <- get_ppi_table(pdf = "data-raw/pdf/ecuador.pdf", n = 3, limits = 7:26)
+ecuDF2 <- get_ppi_table(pdf = "data-raw/pdf/ecuador.pdf", n = 4, limits = 8:27)
+
+################################################################################
+#
+# Egypt
+#
+################################################################################
+
+egyDF1 <- get_ppi_table(pdf = "data-raw/pdf/egypt.pdf", n = 2, limits = 8:27)
+egyDF1 <- egyDF1[ , c(1:2, 4)]
+
+egyDF2 <- get_ppi_table(pdf = "data-raw/pdf/egypt.pdf", n = 3, limits = 6:25)
+egyDF2 <- egyDF2[ , c(1:2, 4)]
+
+egyDF3 <- get_ppi_table(pdf = "data-raw/pdf/egypt.pdf", n = 4, limits = 6:25)
+egyDF3 <- egyDF3[ , c(1:2, 4, 6)]
+
+egyDF <- data.frame(egyDF1, egyDF2[ , 2:3], egyDF3[ , 2:4])
+names(egyDF) <- c("score", "nu100", "nl100", "nlFood", "extreme", "ppp125",
+                  "ppp250", "ppp375")
+
+egyDF$score <- 0:100
+row.names(egyDF) <- 0:100
+
+ppiMatrixEGY <- egyDF
+devtools::use_data(ppiMatrixEGY, overwrite = TRUE)
+
+
+################################################################################
+#
+# El Salvador
+#
+################################################################################
+
+slvDF1 <- get_ppi_table(pdf = "data-raw/pdf/el_salvador.pdf", n = 2, limits = 10:29)
+slvDF1 <- slvDF1[ , c(1:2, 4, 6)]
+
+slvDF2 <- get_ppi_table(pdf = "data-raw/pdf/el_salvador.pdf", n = 3, limits = 6:25)
+slvDF2 <- slvDF2[ , c(1:2, 4)]
+
+slvDF3 <- get_ppi_table(pdf = "data-raw/pdf/el_salvador.pdf", n = 4, limits = 8:27)
+slvDF3 <- slvDF3[ , c(1:2, 4, 6)]
+
+slvDF <- data.frame(slvDF1, slvDF2[ , 2:3], slvDF3[ , 2:4])
+names(slvDF) <- c("score", "nl100", "nlFood", "nl150", "nl200", "extreme",
+                  "ppp125", "ppp250", "ppp375")
+
+slvDF$score <- 0:100
+row.names(slvDF) <- 0:100
+
+ppiMatrixSLV <- slvDF
+devtools::use_data(ppiMatrixSLV, overwrite = TRUE)
+
+
+################################################################################
+#
+# Ethiopia
+#
+################################################################################
+
+ethDF1 <- get_ppi_table(pdf = "data-raw/pdf/ethiopia.pdf", n = 4, limits = 6:25)
+ethDF2 <- get_ppi_table(pdf = "data-raw/pdf/ethiopia.pdf", n = 5, limits = 6:25)
+ethDF3 <- get_ppi_table(pdf = "data-raw/pdf/ethiopia.pdf", n = 6, limits = 7:26)
+ethDF <- data.frame(ethDF1, ethDF2[ , 2:11], ethDF3[ , 2:7])
+names(ethDF) <- c("score", "nlFood", "nl100", "nl150", "nl200", "ppp100", "ppp125",
+                  "ppp175", "ppp200", "ppp250", "ppp500", "ppp190", "ppp310", "ppp380",
+                  "ppp400", "half100", "percentile20", "percentile40", "percentile50",
+                  "percentile60", "percentile80")
+ethDF$score <- 0:100
+row.names(ethDF) <- 0:100
+
+ppiMatrixETH <- ethDF
+devtools::use_data(ppiMatrixETH, overwrite = TRUE)
+
+
+################################################################################
+#
+# Fiji
+#
+################################################################################
+
+fjiDF <- get_ppi_table(pdf = "data-raw/pdf/fiji.pdf", n = 4, limits = 5:24)
+names(fjiDF) <- c("score", "nl100", "nl150", "nl200", "median", "ppp125", "ppp200",
+                  "ppp250")
+fjiDF$score <- 0:100
+row.names(fjiDF) <- 0:100
+
+ppiMatrixFJI <- fjiDF
+devtools::use_data(ppiMatrixFJI, overwrite = TRUE)
+
+
+################################################################################
+#
 # Ghana
 #
 ################################################################################
@@ -477,6 +576,119 @@ devtools::use_data(ppiMatrixGHA, overwrite = TRUE)
 
 ################################################################################
 #
+# Guatemala
+#
+################################################################################
+
+gtmDF1 <- get_ppi_table(pdf = "data-raw/pdf/guatemala.pdf", n = 3, limits = 7:26)
+gtmDF2 <- get_ppi_table(pdf = "data-raw/pdf/guatemala.pdf", n = 4, limits = 7:26)
+gtmDF3 <- get_ppi_table(pdf = "data-raw/pdf/guatemala.pdf", n = 5, limits = 8:27)
+
+gtmDF1 <- str_split(pdf_text("data-raw/pdf/guatemala.pdf")[3], "\n")[[1]][7:26]
+
+get_vars <- function(x, pattern, n) {
+
+  x <- str_split(x, pattern = pattern)[[1]]
+  x <- x[x != ""]
+
+}
+
+test <- sapply(gtmDF1, FUN = get_vars, pattern = " ", n = 5)
+#test <- data.frame(test)
+
+
+################################################################################
+#
+# Haiti
+#
+################################################################################
+
+htiDF <- get_ppi_table(pdf = "data-raw/pdf/haiti.pdf", n = 3, limits = 7:26)
+
+
+################################################################################
+#
+# Honduras
+#
+################################################################################
+
+hndDF1 <- get_ppi_table(pdf = "data-raw/pdf/honduras.pdf", n = 2, limits = 6:25)
+hndDF1 <- hndDF1[ , c(1:2, 4, 6)]
+
+hndDF2 <- get_ppi_table(pdf = "data-raw/pdf/honduras.pdf", n = 3, limits = 8:27)
+hndDF2 <- hndDF2[ , c(1:2, 4, 6)]
+
+hndDF <- data.frame(hndDF1, hndDF2[ , 2:4])
+names(hndDF) <- c("score", "nl100", "nlFood", "extreme", "ppp125", "ppp250", "ppp375")
+
+ppiMatrixHND <- hndDF
+devtools::use_data(ppiMatrixHND, overwrite = TRUE)
+
+
+################################################################################
+#
+# India - legacy R59
+#
+################################################################################
+
+indDF1 <- get_ppi_table(pdf = "data-raw/pdf/india.pdf", n = 3, limits = 9:28)
+
+
+################################################################################
+#
+# Indonesia - new
+#
+################################################################################
+
+idnDF1 <- get_ppi_table(pdf = "data-raw/pdf/indonesia.pdf", n = 3, limits = 6:25)
+idnDF2 <- get_ppi_table(pdf = "data-raw/pdf/indonesia.pdf", n = 4, limits = 7:26)
+idnDF3 <- get_ppi_table(pdf = "data-raw/pdf/indonesia.pdf", n = 5, limits = 7:26)
+idnDF4 <- get_ppi_table(pdf = "data-raw/pdf/indonesia.pdf", n = 6, limits = 6:25)
+
+
+idnDF <- data.frame(idnDF1, idnDF2[ , 2:3], idnDF4[ , 2:3])
+names(idnDF) <- c("score", "nl100", "nl150", "nl200", "extreme", "ppp125", "ppp250",
+                  "ppp190", "ppp310")
+idnDF$score <- 0:100
+row.names(idnDF) <- 0:100
+
+ppiMatrixIDN_a <- idnDF
+devtools::use_data(ppiMatrixIDN_a, overwrite = TRUE)
+
+
+################################################################################
+#
+# Indonesia - legacy
+#
+################################################################################
+
+idnDF <- data.frame(idnDF2[ , c(1, 4:6)])
+names(idnDF) <- c("score", "nl100", "ppp125", "ppp250")
+idnDF$score <- 0:100
+row.names(idnDF) <- 0:100
+
+ppiMatrixIDN <- idnDF
+devtools::use_data(ppiMatrixIDN, overwrite = TRUE)
+
+
+################################################################################
+#
+# Ivory Coast
+#
+################################################################################
+
+civDF <- get_ppi_table(pdf = "data-raw/pdf/ivory_coast.pdf", n = 4, limits = 5:24)
+names(civDF) <- c("score", "nl100", "nl150", "nl200", "extreme", "ppp125", "ppp200",
+                  "ppp250", "ppp800")
+civDF$score <- 0:100
+row.names(civDF) <- 0:100
+
+ppiMatrixCIV <- civDF
+devtools::use_data(ppiMatrixCIV, overwrite = TRUE)
+
+
+################################################################################
+#
 # Kenya
 #
 ################################################################################
@@ -491,6 +703,16 @@ kenDF$score <- 0:100
 row.names(kenDF) <- 0:100
 ppiMatrixKEN <- kenDF
 devtools::use_data(ppiMatrixKEN, overwrite = TRUE)
+
+
+################################################################################
+#
+# Kyrgyzstan
+#
+################################################################################
+
+kgzDF <- get_ppi_table(pdf = "data-raw/pdf/kyrgyzstan.pdf", n = 3, limits = 8:27)
+
 
 
 ################################################################################
