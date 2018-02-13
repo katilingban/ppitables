@@ -1418,3 +1418,62 @@ NULL
 #
 ################################################################################
 "ppiMatrixYEM"
+
+
+################################################################################
+#
+#' ppiMatrixGTM
+#'
+#' Poverty Probability Index (PPI) lookup table for Guatemala
+#'
+#' @format A data frame with 17 columns and 101 rows:
+#' \describe{
+#' \item{\code{score}}{PPI score}
+#' \item{\code{nlFood}}{Food poverty line}
+#' \item{\code{nl100}}{National poverty line (100\%)}
+#' \item{\code{nl150}}{National poverty line (150\%)}
+#' \item{\code{nl200}}{National poverty line (200\%)}
+#' \item{\code{half100}}{Poorest half below 100\% national}
+#' \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}
+#' \item{\code{ppp200}}{Below $2.00 per day purchasing power parity (2005)}
+#' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
+#' \item{\code{ppp500}}{Below $5.00 per day purchasing power parity (2005)}
+#' \item{\code{ppp190}}{Below $1.90 per day purchasing power parity (2011)}
+#' \item{\code{ppp310}}{Below $3.10 per day purchasing power parity (2011)}
+#' \item{\code{percentile20}}{Below 20th percentile poverty line}
+#' \item{\code{percentile40}}{Below 40th percentile poverty line}
+#' \item{\code{percentile50}}{Below 50th percentile poverty line}
+#' \item{\code{percentile60}}{Below 60th percentile poverty line}
+#' \item{\code{percentile80}}{Below 80th percentile poverty line}
+#' }
+#' @source \url{www.povertyindex.org}
+#'
+#
+################################################################################
+"ppiMatrixGTM"
+
+
+################################################################################
+#
+#' ppiMatrixHTI
+#'
+#' Poverty Probability Index (PPI) lookup table for Haiti
+#'
+#' @format A data frame with 10 columns and 101 rows:
+#' \describe{
+#' \item{\code{score}}{PPI score}
+#' \item{\code{nlFood}}{Food poverty line}
+#' \item{\code{nl100}}{National poverty line (100\%)}
+#' \item{\code{nl150}}{National poverty line (150\%)}
+#' \item{\code{nl200}}{National poverty line (200\%)}
+#' \item{\code{half100}}{Poorest half below 100\% national}
+#' \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}
+#' \item{\code{ppp200}}{Below $2.00 per day purchasing power parity (2005)}
+#' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
+#' \item{\code{ppp500}}{Below $5.00 per day purchasing power parity (2005)}
+#' }
+#' @source \url{www.povertyindex.org}
+#'
+#
+################################################################################
+"ppiMatrixHTI"
