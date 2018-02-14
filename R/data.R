@@ -886,55 +886,6 @@ NULL
 ################################################################################
 "ppiMatrixMAR"
 
-################################################################################
-#
-#' ppiMatrixMMR
-#'
-#' Poverty Probability Index (PPI) lookup table for Myanmar
-#'
-#' @format A data frame with 9 columns and 101 rows:
-#' \describe{
-#' \item{\code{X1}}{PPI score}
-#' \item{\code{X2}}{Food poverty line}
-#' \item{\code{X3}}{National poverty line (100\%)}
-#' \item{\code{X4}}{National poverty line (150\%)}
-#' \item{\code{X5}}{National poverty line (200\%)}
-#' \item{\code{X6}}{USAID extreme poverty}
-#' \item{\code{X7}}{Below $1.25 per day purchasing power parity (2005)}
-#' \item{\code{X8}}{Below $2.50 per day purchasing power parity (2005)}
-#' \item{\code{score}}{NA}
-#' }
-#' @source \url{www.povertyindex.org}
-#'
-#
-################################################################################
-"ppiMatrixMMR"
-
-
-################################################################################
-#
-#' ppiMatrixNAM
-#'
-#' Poverty Probability Index (PPI) lookup table for Namibia
-#'
-#' @format A data frame with 9 columns and 101 rows:
-#' \describe{
-#' \item{\code{score}}{PPI score}
-#' \item{\code{nlFood}}{Food poverty line}
-#' \item{\code{nl100}}{National poverty line (100\%)}
-#' \item{\code{nl150}}{National poverty line (150\%)}
-#' \item{\code{nl200}}{National poverty line (200\%)}
-#' \item{\code{extreme}}{USAID extreme poverty}
-#' \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}
-#' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
-#' \item{\code{NA}}{NA}
-#' }
-#' @source \url{www.povertyindex.org}
-#'
-#
-################################################################################
-"ppiMatrixNAM"
-
 
 ################################################################################
 #
@@ -1029,6 +980,8 @@ NULL
 #
 ################################################################################
 "ppiMatrixNER"
+
+
 
 
 ################################################################################
@@ -1627,3 +1580,79 @@ NULL
 #
 ################################################################################
 "ppiMatrixKGZ"
+
+
+################################################################################
+#
+#' ppiMatrixNAM
+#'
+#' Poverty Probability Index (PPI) lookup table for Namibia
+#'
+#' @format A data frame with 9 columns and 101 rows:
+#' \describe{
+#' \item{\code{score}}{PPI score}
+#' \item{\code{nl100}}{National lower poverty line (100\%)}
+#' \item{\code{nu100}}{National upper poverty line (100\%)}
+#' \item{\code{nu150}}{National upper poverty line (150\%)}
+#' \item{\code{nu200}}{National upper poverty line (200\%)}
+#' \item{\code{extreme}}{USAID extreme poverty}
+#' \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}
+#' \item{\code{ppp200}}{Below $2.00 per day purchasing power parity (2005)}
+#' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
+#' }
+#' @source \url{www.povertyindex.org}
+#'
+#
+################################################################################
+"ppiMatrixNAM"
+
+
+################################################################################
+#
+#' ppiMatrixPSE
+#'
+#' Poverty Probability Index (PPI) lookup table for Palestine
+#'
+#' @format A data frame with 11 columns and 101 rows:
+#' \describe{
+#' \item{\code{score}}{PPI score}
+#' \item{\code{deep}}{Deep poverty}
+#' \item{\code{nl100}}{National poverty line (100\%)}
+#' \item{\code{nl150}}{National poverty line (150\%)}
+#' \item{\code{nl200}}{National poverty line (200\%)}
+#' \item{\code{median}}{Poorest half below 100\% national}
+#' \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}
+#' \item{\code{ppp200}}{Below $2.00 per day purchasing power parity (2005)}
+#' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
+#' \item{\code{ppp375}}{Below $3.75 per day purchasing power parity (2005)}
+#' \item{\code{ppp500}}{Below $5.00 per day purchasing power parity (2005)}
+#' }
+#' @source \url{www.povertyindex.org}
+#'
+#
+################################################################################
+"ppiMatrixPSE"
+ 
+ 
+################################################################################
+# 
+#' ppiMatrixMMR  
+#' 
+#' Poverty Probability Index (PPI) lookup table for Myanmar  
+#' 
+#' @format A data frame with 8 columns and 101 rows:  
+#' \describe{ 
+#' \item{\code{score}}{PPI score}  
+#' \item{\code{nlFood}}{Food poverty line}  
+#' \item{\code{nl100}}{National poverty line (100)}  
+#' \item{\code{nl150}}{National poverty line (150)}  
+#' \item{\code{nl200}}{National poverty line (200)}  
+#' \item{\code{extreme}}{USAID extreme poverty}  
+#' \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}  
+#' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}  
+#' } 
+#' @source \url{www.povertyindex.org}  
+#' 
+# 
+################################################################################ 
+"ppiMatrixMMR"
