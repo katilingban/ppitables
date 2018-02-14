@@ -374,7 +374,7 @@ varList <- c("PPI score",
              "Below 60th percentile poverty line",
              "Below 80th percentile poverty line")
 
-create_doc(country = "Ethipia", ccode = "ETH", data = ppiMatrixETH, varList = varList)
+create_doc(country = "Ethiopia", ccode = "ETH", data = ppiMatrixETH, varList = varList)
 
 
 ################################################################################
@@ -1116,7 +1116,7 @@ varList <- c("PPI score",
              "Below $1.90 per day purchasing power parity (2011)",
              "Below $3.10 per day purchasing power parity (2011)")
 
-create_doc(country = "Philppines", ccode = "PHL_a", data = ppiMatrixPHL_a, varList = varList)
+create_doc(country = "Philippines", ccode = "PHL_a", data = ppiMatrixPHL_a, varList = varList)
 
 
 ################################################################################

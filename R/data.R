@@ -613,7 +613,7 @@ NULL
 #
 #' ppiMatrixETH
 #'
-#' Poverty Probability Index (PPI) lookup table for Ethipia
+#' Poverty Probability Index (PPI) lookup table for Ethiopia
 #'
 #' @format A data frame with 21 columns and 101 rows:
 #' \describe{
@@ -1058,7 +1058,7 @@ NULL
 #
 #' ppiMatrixPHL_a
 #'
-#' Poverty Probability Index (PPI) lookup table for Philppines
+#' Poverty Probability Index (PPI) lookup table for Philippines
 #'
 #' @format A data frame with 11 columns and 101 rows:
 #' \describe{
