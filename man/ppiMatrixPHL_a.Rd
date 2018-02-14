@@ -25,6 +25,6 @@
 ppiMatrixPHL_a
 }
 \description{
-Poverty Probability Index (PPI) lookup table for Philppines
+Poverty Probability Index (PPI) lookup table for Philippines
 }
 \keyword{datasets}

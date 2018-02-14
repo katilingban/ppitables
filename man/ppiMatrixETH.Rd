@@ -35,6 +35,6 @@
 ppiMatrixETH
 }
 \description{
-Poverty Probability Index (PPI) lookup table for Ethipia
+Poverty Probability Index (PPI) lookup table for Ethiopia
 }
 \keyword{datasets}
