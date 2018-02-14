@@ -1231,9 +1231,176 @@ extreme$score <- 0:100
 mliDF <- data.frame(nl100, nlFood[ , 2], extreme[ , 2], ppp125[ , 2], ppp250[ , 2])
 names(mliDF) <- c("score", "nl100", "nlFood", "extreme", "ppp125", "ppp250")
 
-
 ppiMatrixMLI <- mliDF
 devtools::use_data(ppiMatrixMLI, overwrite = TRUE)
+
+
+################################################################################
+#
+# Mexico
+#
+################################################################################
+
+mexDF1 <- str_split(pdf_text("data-raw/pdf/mexico.pdf")[3], "\n")[[1]][7:26]
+mexDF2 <- str_split(pdf_text("data-raw/pdf/mexico.pdf")[4], "\n")[[1]][6:25]
+mexDF3 <- str_split(pdf_text("data-raw/pdf/mexico.pdf")[5], "\n")[[1]][8:27]
+mexDF4 <- str_split(pdf_text("data-raw/pdf/mexico.pdf")[6], "\n")[[1]][8:27]
+mexDF5 <- str_split(pdf_text("data-raw/pdf/mexico.pdf")[7], "\n")[[1]][8:27]
+
+get_vars <- function(x, pattern, n = 5) {
+
+  x <- str_split(x, pattern = pattern)[[1]]
+  x <- x[x != ""]
+
+}
+
+temp <- sapply(mexDF1, FUN = get_vars, pattern = " ")
+
+y <- NULL
+
+for(i in 1:length(temp)) {
+
+  x <- temp[[i]]
+  x <- as.numeric(x)
+  x <- tail(x, 5)
+
+  z <- NULL
+
+  for(j in 1:5){
+
+    z <- data.frame(rbind(z, x))
+
+  }
+
+  y <- data.frame(rbind(y, z))
+
+}
+
+y1 <- data.frame(rbind(y, y[100, ]))
+
+names(y1) <- c("nl100", "nu100", "nu150", "nu200", "half100")
+#
+#
+#
+temp <- sapply(mexDF2, FUN = get_vars, pattern = " ")
+
+y <- NULL
+
+for(i in 1:length(temp)) {
+
+  x <- temp[[i]]
+  x <- as.numeric(x)
+  x <- tail(x, 6)
+
+  z <- NULL
+
+  for(j in 1:5){
+
+    z <- data.frame(rbind(z, x))
+
+  }
+
+  y <- data.frame(rbind(y, z))
+
+}
+
+y2 <- data.frame(rbind(y, y[100, ]))
+
+names(y2) <- c("ppp125", "ppp200", "ppp250", "ppp500", "ppp190", "ppp310")
+#
+#
+#
+temp <- sapply(mexDF3, FUN = get_vars, pattern = " ")
+
+y <- NULL
+
+for(i in 1:length(temp)) {
+
+  x <- temp[[i]]
+  x <- as.numeric(x)
+  x <- tail(x, 5)
+
+  z <- NULL
+
+  for(j in 1:5){
+
+    z <- data.frame(rbind(z, x))
+
+  }
+
+  y <- data.frame(rbind(y, z))
+
+}
+
+y3 <- data.frame(rbind(y, y[100, ]))
+
+names(y3) <- c("percentile20", "percentile40", "percentile50", "percentile60", "percentile80")
+
+ppiMatrixMEX_a <- data.frame("score" = 0:100, y1, y2, y3)
+row.names(ppiMatrixMEX)
+devtools::use_data(ppiMatrixMEX_a, overwrite = TRUE)
+
+#
+#
+#
+temp <- sapply(mexDF4, FUN = get_vars, pattern = " ")
+
+y <- NULL
+
+for(i in 1:length(temp)) {
+
+  x <- temp[[i]]
+  x <- as.numeric(x)
+  x <- tail(x, 5)
+
+  z <- NULL
+
+  for(j in 1:5){
+
+    z <- data.frame(rbind(z, x))
+
+  }
+
+  y <- data.frame(rbind(y, z))
+
+}
+
+y4 <- data.frame(rbind(y, y[100, ]))
+
+names(y4) <- c("nlFood", "nlCapability", "nl100", "nl125", "nl150")
+#
+#
+#
+temp <- sapply(mexDF5, FUN = get_vars, pattern = " ")
+
+y <- NULL
+
+for(i in 1:length(temp)) {
+
+  x <- temp[[i]]
+  x <- as.numeric(x)
+  x <- tail(x, 2)
+
+  z <- NULL
+
+  for(j in 1:5){
+
+    z <- data.frame(rbind(z, x))
+
+  }
+
+  y <- data.frame(rbind(y, z))
+
+}
+
+y5 <- data.frame(rbind(y, y[100, ]))
+
+names(y5) <- c("ppp125", "ppp250")
+
+ppiMatrixMEX <- data.frame("score" = 0:100, y4, y5)
+row.names(ppiMatrixMEX) <- 0:100
+devtools::use_data(ppiMatrixMEX, overwrite = TRUE)
+
 
 
 ################################################################################
@@ -1242,7 +1409,132 @@ devtools::use_data(ppiMatrixMLI, overwrite = TRUE)
 #
 ################################################################################
 
-mngDF1 <- get_ppi_table(pdf = "data-raw/pdf/mongolia.pdf", n = 3, limits = 7:26)
+mngDF1 <- str_split(pdf_text("data-raw/pdf/mongolia.pdf")[3], "\n")[[1]][7:26]
+mngDF2 <- str_split(pdf_text("data-raw/pdf/mongolia.pdf")[4], "\n")[[1]][8:27]
+mngDF3 <- str_split(pdf_text("data-raw/pdf/mongolia.pdf")[5], "\n")[[1]][8:27]
+mngDF4 <- str_split(pdf_text("data-raw/pdf/mongolia.pdf")[6], "\n")[[1]][7:26]
+
+get_vars <- function(x, pattern, n = 5) {
+
+  x <- str_split(x, pattern = pattern)[[1]]
+  x <- x[x != ""]
+
+}
+
+temp <- sapply(mngDF1, FUN = get_vars, pattern = " ")
+
+y <- NULL
+
+for(i in 1:length(temp)) {
+
+  x <- temp[[i]]
+  x <- as.numeric(x)
+  x <- tail(x, 4)
+
+  z <- NULL
+
+  for(j in 1:5){
+
+    z <- data.frame(rbind(z, x))
+
+  }
+
+  y <- data.frame(rbind(y, z))
+
+}
+
+y1 <- data.frame(rbind(y, y[100, ]))
+
+names(y1) <- c("nl100", "nl150", "nl200", "half100")
+#
+#
+#
+temp <- sapply(mngDF2, FUN = get_vars, pattern = " ")
+
+y <- NULL
+
+for(i in 1:length(temp)) {
+
+  x <- temp[[i]]
+  x <- as.numeric(x)
+  x <- tail(x, 4)
+
+  z <- NULL
+
+  for(j in 1:5){
+
+    z <- data.frame(rbind(z, x))
+
+  }
+
+  y <- data.frame(rbind(y, z))
+
+}
+
+y2 <- data.frame(rbind(y, y[100, ]))
+
+names(y2) <- c("ppp125", "ppp200", "ppp250", "ppp500")
+#
+#
+#
+temp <- sapply(mngDF3, FUN = get_vars, pattern = " ")
+
+y <- NULL
+
+for(i in 1:length(temp)) {
+
+  x <- temp[[i]]
+  x <- as.numeric(x)
+  x <- tail(x, 4)
+
+  z <- NULL
+
+  for(j in 1:5){
+
+    z <- data.frame(rbind(z, x))
+
+  }
+
+  y <- data.frame(rbind(y, z))
+
+}
+
+y3 <- data.frame(rbind(y, y[100, ]))
+
+names(y3) <- c("ppp190", "ppp310", "ppp380", "ppp400")
+
+#
+#
+#
+temp <- sapply(mngDF4, FUN = get_vars, pattern = " ")
+
+y <- NULL
+
+for(i in 1:length(temp)) {
+
+  x <- temp[[i]]
+  x <- as.numeric(x)
+  x <- tail(x, 5)
+
+  z <- NULL
+
+  for(j in 1:5){
+
+    z <- data.frame(rbind(z, x))
+
+  }
+
+  y <- data.frame(rbind(y, z))
+
+}
+
+y4 <- data.frame(rbind(y, y[100, ]))
+
+names(y4) <- c("percentile20", "percentile40", "percentile50", "percentile60", "percentile80")
+
+ppiMatrixMNG <- data.frame("score" = 0:100, y1, y2, y3, y4)
+row.names(ppiMatrixMNG) <- 0:100
+devtools::use_data(ppiMatrixMNG, overwrite = TRUE)
 
 
 ################################################################################
@@ -1375,6 +1667,111 @@ row.names(nerDF) <- 0:100
 
 ppiMatrixNER <- nerDF
 devtools::use_data(ppiMatrixNER, overwrite = TRUE)
+
+
+################################################################################
+#
+# Nigeria
+#
+################################################################################
+
+ngaDF1 <- str_split(pdf_text("data-raw/pdf/sri_lanka.pdf")[3], "\n")[[1]][7:26]
+ngaDF2 <- str_split(pdf_text("data-raw/pdf/sri_lanka.pdf")[4], "\n")[[1]][8:27]
+ngaDF3 <- str_split(pdf_text("data-raw/pdf/sri_lanka.pdf")[5], "\n")[[1]][8:27]
+
+get_vars <- function(x, pattern, n = 5) {
+
+  x <- str_split(x, pattern = pattern)[[1]]
+  x <- x[x != ""]
+
+}
+
+temp <- sapply(ngaDF1, FUN = get_vars, pattern = " ")
+
+y <- NULL
+
+for(i in 1:length(temp)) {
+
+  x <- temp[[i]]
+  x <- as.numeric(x)
+  x <- tail(x, 5)
+
+  z <- NULL
+
+  for(j in 1:5){
+
+    z <- data.frame(rbind(z, x))
+
+  }
+
+  y <- data.frame(rbind(y, z))
+
+}
+
+y1 <- data.frame(rbind(y, y[100, ]))
+
+names(y1) <- c("nlFood", "nl100", "nl150", "nl200", "half100")
+#
+#
+#
+temp <- sapply(ngaDF2, FUN = get_vars, pattern = " ")
+
+y <- NULL
+
+for(i in 1:length(temp)) {
+
+  x <- temp[[i]]
+  x <- as.numeric(x)
+  x <- tail(x, 5)
+
+  z <- NULL
+
+  for(j in 1:5){
+
+    z <- data.frame(rbind(z, x))
+
+  }
+
+  y <- data.frame(rbind(y, z))
+
+}
+
+y2 <- data.frame(rbind(y, y[100, ]))
+
+names(y2) <- c("ppp125", "ppp200", "ppp250", "ppp400", "ppp500")
+#
+#
+#
+temp <- sapply(ngaDF3, FUN = get_vars, pattern = " ")
+
+y <- NULL
+
+for(i in 1:length(temp)) {
+
+  x <- temp[[i]]
+  x <- as.numeric(x)
+  x <- tail(x, 2)
+
+  z <- NULL
+
+  for(j in 1:5){
+
+    z <- data.frame(rbind(z, x))
+
+  }
+
+  y <- data.frame(rbind(y, z))
+
+}
+
+y3 <- data.frame(rbind(y, y[100, ]))
+
+names(y3) <- c("ppp190", "ppp310")
+
+ppiMatrixNGA <- data.frame("score" = 0:100, y1, y2, y3)
+row.names(ppiMatrixNGA) <- 0:100
+devtools::use_data(ppiMatrixNGA, overwrite = TRUE)
+
 
 
 ################################################################################
@@ -1581,6 +1978,110 @@ devtools::use_data(ppiMatrixSLE, overwrite = TRUE)
 
 ################################################################################
 #
+# Sri Lanka
+#
+################################################################################
+
+lkaDF1 <- str_split(pdf_text("data-raw/pdf/sri_lanka.pdf")[3], "\n")[[1]][8:27]
+lkaDF2 <- str_split(pdf_text("data-raw/pdf/sri_lanka.pdf")[4], "\n")[[1]][9:28]
+lkaDF3 <- str_split(pdf_text("data-raw/pdf/sri_lanka.pdf")[5], "\n")[[1]][6:25]
+
+get_vars <- function(x, pattern, n = 5) {
+
+  x <- str_split(x, pattern = pattern)[[1]]
+  x <- x[x != ""]
+
+}
+
+temp <- sapply(lkaDF1, FUN = get_vars, pattern = " ")
+
+y <- NULL
+
+for(i in 1:length(temp)) {
+
+  x <- temp[[i]]
+  x <- as.numeric(x)
+  x <- tail(x, 4)
+
+  z <- NULL
+
+  for(j in 1:5){
+
+    z <- data.frame(rbind(z, x))
+
+  }
+
+  y <- data.frame(rbind(y, z))
+
+}
+
+y1 <- data.frame(rbind(y, y[100, ]))
+
+names(y1) <- c("nl100", "nl150", "nl200", "half100")
+#
+#
+#
+temp <- sapply(lkaDF2, FUN = get_vars, pattern = " ")
+
+y <- NULL
+
+for(i in 1:length(temp)) {
+
+  x <- temp[[i]]
+  x <- as.numeric(x)
+  x <- tail(x, 6)
+
+  z <- NULL
+
+  for(j in 1:5){
+
+    z <- data.frame(rbind(z, x))
+
+  }
+
+  y <- data.frame(rbind(y, z))
+
+}
+
+y2 <- data.frame(rbind(y, y[100, ]))
+
+names(y2) <- c("ppp125", "ppp200", "ppp250", "ppp500", "ppp190", "ppp310")
+#
+#
+#
+temp <- sapply(lkaDF3, FUN = get_vars, pattern = " ")
+
+y <- NULL
+
+for(i in 1:length(temp)) {
+
+  x <- temp[[i]]
+  x <- as.numeric(x)
+  x <- tail(x, 5)
+
+  z <- NULL
+
+  for(j in 1:5){
+
+    z <- data.frame(rbind(z, x))
+
+  }
+
+  y <- data.frame(rbind(y, z))
+
+}
+
+y3 <- data.frame(rbind(y, y[100, ]))
+
+names(y3) <- c("percentile20", "percentile40", "percentile50", "percentile60", "percentile80")
+
+ppiMatrixLKA <- data.frame("score" = 0:100, y1, y2, y3)
+row.names(ppiMatrixLKA) <- 0:100
+devtools::use_data(ppiMatrixLKA, overwrite = TRUE)
+
+
+################################################################################
+#
 # South Africa
 #
 ################################################################################
@@ -1611,7 +2112,102 @@ devtools::use_data(ppiMatrixZAF, overwrite = TRUE)
 #
 ################################################################################
 
-lkaDF1 <- get_ppi_table(pdf = "data-raw/pdf/sri_lanka.pdf", n = 3, limits = 8:27)
+lkaDF1 <- str_split(pdf_text("data-raw/pdf/sri_lanka.pdf")[3], "\n")[[1]][8:27]
+lkaDF2 <- str_split(pdf_text("data-raw/pdf/sri_lanka.pdf")[4], "\n")[[1]][9:28]
+lkaDF3 <- str_split(pdf_text("data-raw/pdf/sri_lanka.pdf")[5], "\n")[[1]][6:25]
+
+get_vars <- function(x, pattern, n = 5) {
+
+  x <- str_split(x, pattern = pattern)[[1]]
+  x <- x[x != ""]
+
+}
+
+temp <- sapply(lkaDF1, FUN = get_vars, pattern = " ")
+
+y <- NULL
+
+for(i in 1:length(temp)) {
+
+  x <- temp[[i]]
+  x <- as.numeric(x)
+  x <- tail(x, 5)
+
+  z <- NULL
+
+  for(j in 1:5){
+
+    z <- data.frame(rbind(z, x))
+
+  }
+
+  y <- data.frame(rbind(y, z))
+
+}
+
+y1 <- data.frame(rbind(y, y[100, ]))
+
+names(y1) <- c("nlFood", "nl100", "nl150", "nl200", "half100")
+#
+#
+#
+temp <- sapply(lkaDF2, FUN = get_vars, pattern = " ")
+
+y <- NULL
+
+for(i in 1:length(temp)) {
+
+  x <- temp[[i]]
+  x <- as.numeric(x)
+  x <- tail(x, 5)
+
+  z <- NULL
+
+  for(j in 1:5){
+
+    z <- data.frame(rbind(z, x))
+
+  }
+
+  y <- data.frame(rbind(y, z))
+
+}
+
+y2 <- data.frame(rbind(y, y[100, ]))
+
+names(y2) <- c("ppp125", "ppp200", "ppp250", "ppp400", "ppp500")
+#
+#
+#
+temp <- sapply(lkaDF3, FUN = get_vars, pattern = " ")
+
+y <- NULL
+
+for(i in 1:length(temp)) {
+
+  x <- temp[[i]]
+  x <- as.numeric(x)
+  x <- tail(x, 2)
+
+  z <- NULL
+
+  for(j in 1:5){
+
+    z <- data.frame(rbind(z, x))
+
+  }
+
+  y <- data.frame(rbind(y, z))
+
+}
+
+y3 <- data.frame(rbind(y, y[100, ]))
+
+names(y3) <- c("ppp190", "ppp310")
+
+ppiMatrixLKA <- data.frame("score" = 0:100, y1, y2, y3)
+row.names(ppiMatrixLKA) <- 0:100
+devtools::use_data(ppiMatrixLKA, overwrite = TRUE)
 
 
 ################################################################################
@@ -1662,6 +2258,140 @@ devtools::use_data(ppiMatrixSYR, overwrite = TRUE)
 
 ################################################################################
 #
+# Tanzania
+#
+################################################################################
+
+tzaDF1 <- str_split(pdf_text("data-raw/pdf/tanzania.pdf")[3], "\n")[[1]][7:26]
+tzaDF2 <- str_split(pdf_text("data-raw/pdf/tanzania.pdf")[4], "\n")[[1]][8:27]
+tzaDF3 <- str_split(pdf_text("data-raw/pdf/tanzania.pdf")[5], "\n")[[1]][8:27]
+tzaDF4 <- str_split(pdf_text("data-raw/pdf/tanzania.pdf")[6], "\n")[[1]][10:29]
+
+get_vars <- function(x, pattern, n = 5) {
+
+  x <- str_split(x, pattern = pattern)[[1]]
+  x <- x[x != ""]
+
+}
+
+temp <- sapply(tzaDF1, FUN = get_vars, pattern = " ")
+
+y <- NULL
+
+for(i in 1:length(temp)) {
+
+  x <- temp[[i]]
+  x <- as.numeric(x)
+  x <- tail(x, 4)
+
+  z <- NULL
+
+  for(j in 1:5){
+
+    z <- data.frame(rbind(z, x))
+
+  }
+
+  y <- data.frame(rbind(y, z))
+
+}
+
+y1 <- data.frame(rbind(y, y[100, ]))
+
+names(y1) <- c("nlFood", "nl100", "nl150", "nl200")
+#
+#
+#
+temp <- sapply(tzaDF2, FUN = get_vars, pattern = " ")
+
+y <- NULL
+
+for(i in 1:length(temp)) {
+
+  x <- temp[[i]]
+  x <- as.numeric(x)
+  x <- tail(x, 4)
+
+  z <- NULL
+
+  for(j in 1:5){
+
+    z <- data.frame(rbind(z, x))
+
+  }
+
+  y <- data.frame(rbind(y, z))
+
+}
+
+y2 <- data.frame(rbind(y, y[100, ]))
+
+names(y2) <- c("ppp125", "ppp200", "ppp250", "ppp500")
+#
+#
+#
+temp <- sapply(tzaDF3, FUN = get_vars, pattern = " ")
+
+y <- NULL
+
+for(i in 1:length(temp)) {
+
+  x <- temp[[i]]
+  x <- as.numeric(x)
+  x <- tail(x, 4)
+
+  z <- NULL
+
+  for(j in 1:5){
+
+    z <- data.frame(rbind(z, x))
+
+  }
+
+  y <- data.frame(rbind(y, z))
+
+}
+
+y3 <- data.frame(rbind(y, y[100, ]))
+
+names(y3) <- c("ppp190", "ppp310", "ppp380", "ppp400")
+
+#
+#
+#
+temp <- sapply(tzaDF4, FUN = get_vars, pattern = " ")
+
+y <- NULL
+
+for(i in 1:length(temp)) {
+
+  x <- temp[[i]]
+  x <- as.numeric(x)
+  x <- tail(x, 6)
+
+  z <- NULL
+
+  for(j in 1:5){
+
+    z <- data.frame(rbind(z, x))
+
+  }
+
+  y <- data.frame(rbind(y, z))
+
+}
+
+y4 <- data.frame(rbind(y, y[100, ]))
+
+names(y4) <- c("half100", "percentile20", "percentile40", "percentile50", "percentile60", "percentile80")
+
+ppiMatrixTZA <- data.frame("score" = 0:100, y1, y2, y3, y4)
+row.names(ppiMatrixTZA) <- 0:100
+devtools::use_data(ppiMatrixTZA, overwrite = TRUE)
+
+
+################################################################################
+#
 # Tajikistan
 #
 ################################################################################
@@ -1691,6 +2421,110 @@ row.names(tlsDF) <- 0:100
 
 ppiMatrixTLS <- tlsDF
 devtools::use_data(ppiMatrixTLS, overwrite = TRUE)
+
+
+################################################################################
+#
+# Uganda
+#
+################################################################################
+
+ugaDF1 <- str_split(pdf_text("data-raw/pdf/uganda.pdf")[3], "\n")[[1]][7:26]
+ugaDF2 <- str_split(pdf_text("data-raw/pdf/uganda.pdf")[4], "\n")[[1]][8:27]
+ugaDF3 <- str_split(pdf_text("data-raw/pdf/uganda.pdf")[5], "\n")[[1]][8:27]
+
+get_vars <- function(x, pattern, n = 5) {
+
+  x <- str_split(x, pattern = pattern)[[1]]
+  x <- x[x != ""]
+
+}
+
+temp <- sapply(ugaDF1, FUN = get_vars, pattern = " ")
+
+y <- NULL
+
+for(i in 1:length(temp)) {
+
+  x <- temp[[i]]
+  x <- as.numeric(x)
+  x <- tail(x, 4)
+
+  z <- NULL
+
+  for(j in 1:5){
+
+    z <- data.frame(rbind(z, x))
+
+  }
+
+  y <- data.frame(rbind(y, z))
+
+}
+
+y1 <- data.frame(rbind(y, y[100, ]))
+
+names(y1) <- c("nl100", "nl150", "nl200", "half100")
+#
+#
+#
+temp <- sapply(ugaDF2, FUN = get_vars, pattern = " ")
+
+y <- NULL
+
+for(i in 1:length(temp)) {
+
+  x <- temp[[i]]
+  x <- as.numeric(x)
+  x <- tail(x, 6)
+
+  z <- NULL
+
+  for(j in 1:5){
+
+    z <- data.frame(rbind(z, x))
+
+  }
+
+  y <- data.frame(rbind(y, z))
+
+}
+
+y2 <- data.frame(rbind(y, y[100, ]))
+
+names(y2) <- c("ppp125", "ppp200", "ppp250", "ppp400", "ppp500", "ppp844")
+#
+#
+#
+temp <- sapply(ugaDF3, FUN = get_vars, pattern = " ")
+
+y <- NULL
+
+for(i in 1:length(temp)) {
+
+  x <- temp[[i]]
+  x <- as.numeric(x)
+  x <- tail(x, 2)
+
+  z <- NULL
+
+  for(j in 1:5){
+
+    z <- data.frame(rbind(z, x))
+
+  }
+
+  y <- data.frame(rbind(y, z))
+
+}
+
+y3 <- data.frame(rbind(y, y[100, ]))
+
+names(y3) <- c("ppp190", "ppp310")
+
+ppiMatrixUGA <- data.frame("score" = 0:100, y1, y2, y3)
+row.names(ppiMatrixUGA) <- 0:100
+devtools::use_data(ppiMatrixUGA, overwrite = TRUE)
 
 
 ################################################################################

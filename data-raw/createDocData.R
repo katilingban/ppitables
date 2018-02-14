@@ -786,6 +786,79 @@ create_doc(country = "Mali", ccode = "MLI", data = ppiMatrixMLI, varList = varLi
 
 ################################################################################
 #
+# Mexico - legacy
+#
+################################################################################
+
+varList <- c("PPI score",
+             "Food poverty line",
+             "Capabilities",
+             "National poverty line (100)",
+             "National poverty line (125)",
+             "National poverty line (150)",
+             "Below $1.25 per day purchasing power parity (2005)",
+             "Below $2.50 per day purchasing power parity (2005)")
+
+create_doc(country = "Mexico", ccode = "MEX", data = ppiMatrixMEX, varList = varList)
+
+
+################################################################################
+#
+# Mexico - new
+#
+################################################################################
+
+varList <- c("PPI score",
+             "National lower poverty line (100)",
+             "National upper poverty line (100)",
+             "National upper poverty line (150)",
+             "National upper poverty line (200)",
+             "Poorest half below 100 national",
+             "Below $1.25 per day purchasing power parity (2005)",
+             "Below $2.00 per day purchasing power parity (2005)",
+             "Below $2.50 per day purchasing power parity (2005)",
+             "Below $5.00 per day purchasing power parity (2005)",
+             "Below $1.90 per day purchasing power parity (2011)",
+             "Below $3.10 per day purchasing power parity (2011)",
+             "Below 20th percentile poverty line",
+             "Below 40th percentile poverty line",
+             "Below 50th percentile poverty line",
+             "Below 60th percentile poverty line",
+             "Below 80th percentile poverty line")
+
+create_doc(country = "Mexico", ccode = "MEX_a", data = ppiMatrixMEX_a, varList = varList)
+
+
+################################################################################
+#
+# Mongolia
+#
+################################################################################
+
+varList <- c("PPI score",
+             "National poverty line (100)",
+             "National poverty line (150)",
+             "National poverty line (200)",
+             "Poorest half below 100 national",
+             "Below $1.25 per day purchasing power parity (2005)",
+             "Below $2.00 per day purchasing power parity (2005)",
+             "Below $2.50 per day purchasing power parity (2005)",
+             "Below $5.00 per day purchasing power parity (2005)",
+             "Below $1.90 per day purchasing power parity (2011)",
+             "Below $3.10 per day purchasing power parity (2011)",
+             "Below $3.80 per day purchasing power parity (2011)",
+             "Below $4.00 per day purchasing power parity (2011)",
+             "Below 20th percentile poverty line",
+             "Below 40th percentile poverty line",
+             "Below 50th percentile poverty line",
+             "Below 60th percentile poverty line",
+             "Below 80th percentile poverty line")
+
+create_doc(country = "Mongolia", ccode = "MNG", data = ppiMatrixMNG, varList = varList)
+
+
+################################################################################
+#
 # Morocco
 #
 ################################################################################
@@ -926,6 +999,29 @@ varList <- c("PPI score",
              "Below $2.50 per day purchasing power parity (2005)")
 
 create_doc(country = "Niger", ccode = "NER", data = ppiMatrixNER, varList = varList)
+
+
+################################################################################
+#
+# Nigeria
+#
+################################################################################
+
+varList <- c("PPI score",
+             "Food poverty line",
+             "National poverty line (100)",
+             "National poverty line (150)",
+             "National poverty line (200)",
+             "Poorest half below 100 national",
+             "Below $1.25 per day purchasing power parity (2005)",
+             "Below $2.00 per day purchasing power parity (2005)",
+             "Below $2.50 per day purchasing power parity (2005)",
+             "Below $4.00 per day purchasing power parity (2005)",
+             "Below $5.00 per day purchasing power parity (2005)",
+             "Below $1.90 per day purchasing power parity (2011)",
+             "Below $3.10 per day purchasing power parity (2011)")
+
+create_doc(country = "Nigeria", ccode = "NGA", data = ppiMatrixNGA, varList = varList)
 
 
 ################################################################################
@@ -1118,6 +1214,32 @@ create_doc(country = "Sierra Leone", ccode = "SLE", data = ppiMatrixSLE, varList
 
 ################################################################################
 #
+# Sri Lanka
+#
+################################################################################
+
+varList <- c("PPI score",
+             "National poverty line (100)",
+             "National poverty line (150)",
+             "National poverty line (200)",
+             "Poorest half below 100 national",
+             "Below $1.25 per day purchasing power parity (2005)",
+             "Below $2.00 per day purchasing power parity (2005)",
+             "Below $2.50 per day purchasing power parity (2005)",
+             "Below $5.00 per day purchasing power parity (2005)",
+             "Below $1.90 per day purchasing power parity (2011)",
+             "Below $3.10 per day purchasing power parity (2011)",
+             "Below 20th percentile poverty line",
+             "Below 40th percentile poverty line",
+             "Below 50th percentile poverty line",
+             "Below 60th percentile poverty line",
+             "Below 80th percentile poverty line")
+
+create_doc(country = "Sri Lanka", ccode = "LKA", data = ppiMatrixLKA, varList = varList)
+
+
+################################################################################
+#
 # South Africa
 #
 ################################################################################
@@ -1150,6 +1272,35 @@ varList <- c("PPI score",
              "Below $5.00 per day purchasing power parity (2005)")
 
 create_doc(country = "Syria", ccode = "SYR", data = ppiMatrixSYR, varList = varList)
+
+
+################################################################################
+#
+# Tanzania
+#
+################################################################################
+
+varList <- c("PPI score",
+             "Food poverty line",
+             "National poverty line (100)",
+             "National poverty line (150)",
+             "National poverty line (200)",
+             "Below $1.25 per day purchasing power parity (2005)",
+             "Below $2.00 per day purchasing power parity (2005)",
+             "Below $2.50 per day purchasing power parity (2005)",
+             "Below $5.00 per day purchasing power parity (2005)",
+             "Below $1.90 per day purchasing power parity (2011)",
+             "Below $3.10 per day purchasing power parity (2011)",
+             "Below $3.80 per day purchasing power parity (2011)",
+             "Below $4.00 per day purchasing power parity (2011)",
+             "Poorest half below 100 national",
+             "Below 20th percentile poverty line",
+             "Below 40th percentile poverty line",
+             "Below 50th percentile poverty line",
+             "Below 60th percentile poverty line",
+             "Below 80th percentile poverty line")
+
+create_doc(country = "Tanzania", ccode = "TZA", data = ppiMatrixTZA, varList = varList)
 
 
 ################################################################################
@@ -1187,6 +1338,29 @@ varList <- c("PPI score",
              "Below $2.50 per day purchasing power parity (2005)")
 
 create_doc(country = "Timor Leste", ccode = "TLS", data = ppiMatrixTLS, varList = varList)
+
+
+################################################################################
+#
+# Uganda
+#
+################################################################################
+
+varList <- c("PPI score",
+             "National poverty line (100)",
+             "National poverty line (150)",
+             "National poverty line (200)",
+             "Poorest half below 100 national",
+             "Below $1.25 per day purchasing power parity (2005)",
+             "Below $2.00 per day purchasing power parity (2005)",
+             "Below $2.50 per day purchasing power parity (2005)",
+             "Below $4.00 per day purchasing power parity (2005)",
+             "Below $5.00 per day purchasing power parity (2005)",
+             "Below $8.44 per day purchasing power parity (2005)",
+             "Below $1.90 per day purchasing power parity (2011)",
+             "Below $3.10 per day purchasing power parity (2011)")
+
+create_doc(country = "Uganda", ccode = "UGA", data = ppiMatrixUGA, varList = varList)
 
 
 ################################################################################
