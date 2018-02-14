@@ -1094,7 +1094,47 @@ devtools::use_data(ppiMatrixKEN, overwrite = TRUE)
 #
 ################################################################################
 
-kgzDF <- get_ppi_table(pdf = "data-raw/pdf/kyrgyzstan.pdf", n = 3, limits = 8:27)
+kgzDF1 <- str_split(pdf_text("data-raw/pdf/kyrgyzstan.pdf")[3], "\n")[[1]][8:27]
+
+get_vars <- function(x, pattern, n = 5) {
+
+  x <- str_split(x, pattern = pattern)[[1]]
+  x <- x[x != ""]
+
+}
+
+temp <- sapply(kgzDF1, FUN = get_vars, pattern = " ")
+
+y <- NULL
+
+for(i in 1:length(temp)) {
+
+  x <- temp[[i]]
+  x <- as.numeric(x)
+  x <- tail(x, 8)
+
+  z <- NULL
+
+  for(j in 1:5){
+
+    z <- data.frame(rbind(z, x))
+
+  }
+
+  y <- data.frame(rbind(y, z))
+
+}
+
+y1 <- data.frame(rbind(y, y[100, ]))
+
+names(y1) <- c("nl100", "nl150", "nl200", "median", "ppp125", "ppp200",
+               "ppp250", "ppp500")
+
+kgzDF <- data.frame("score" = 0:100, y1)
+row.names(kgzDF) <- 0:100
+
+ppiMatrixKGZ <- kgzDF
+devtools::use_data(ppiMatrixKGZ, overwrite = TRUE)
 
 
 

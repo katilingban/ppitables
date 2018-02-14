@@ -672,6 +672,24 @@ create_doc(country = "Kenya", ccode = "KEN", data = ppiMatrixKEN, varList = varL
 
 ################################################################################
 #
+# Kyrgyzstan
+#
+################################################################################
+
+varList <- c("PPI score",
+             "National poverty line (100)",
+             "National poverty line (150)",
+             "National poverty line (200)",
+             "Poorest half below 100 national",
+             "Below $1.25 per day purchasing power parity (2005)",
+             "Below $2.00 per day purchasing power parity (2005)",
+             "Below $2.50 per day purchasing power parity (2005)",
+             "Below $5.00 per day purchasing power parity (2005)")
+
+create_doc(country = "Kyrgyzstan", ccode = "KGZ", data = ppiMatrixKGZ, varList = varList)
+
+################################################################################
+#
 # Madagascar
 #
 ################################################################################
