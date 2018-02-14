@@ -844,12 +844,13 @@ create_doc(country = "Myanmar", ccode = "MMR", data = ppiMatrixMMR, varList = va
 ################################################################################
 
 varList <- c("PPI score",
-             "Food poverty line",
-             "National poverty line (100)",
-             "National poverty line (150)",
-             "National poverty line (200)",
+             "National lower poverty line (100)",
+             "National upper poverty line (100)",
+             "National upper poverty line (150)",
+             "National upper poverty line (200)",
              "USAID extreme poverty",
              "Below $1.25 per day purchasing power parity (2005)",
+             "Below $2.00 per day purchasing power parity (2005)",
              "Below $2.50 per day purchasing power parity (2005)")
 
 create_doc(country = "Namibia", ccode = "NAM", data = ppiMatrixNAM, varList = varList)
@@ -925,6 +926,27 @@ varList <- c("PPI score",
              "Below $2.50 per day purchasing power parity (2005)")
 
 create_doc(country = "Niger", ccode = "NER", data = ppiMatrixNER, varList = varList)
+
+
+################################################################################
+#
+# Palestine
+#
+################################################################################
+
+varList <- c("PPI score",
+             "Deep poverty",
+             "National poverty line (100)",
+             "National poverty line (150)",
+             "National poverty line (200)",
+             "Poorest half below 100 national",
+             "Below $1.25 per day purchasing power parity (2005)",
+             "Below $2.00 per day purchasing power parity (2005)",
+             "Below $2.50 per day purchasing power parity (2005)",
+             "Below $3.75 per day purchasing power parity (2005)",
+             "Below $5.00 per day purchasing power parity (2005)")
+
+create_doc(country = "Palestine", ccode = "PSE", data = ppiMatrixPSE, varList = varList)
 
 
 ################################################################################

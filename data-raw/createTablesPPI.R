@@ -1304,8 +1304,8 @@ devtools::use_data(ppiMatrixMOZ, overwrite = TRUE)
 ################################################################################
 
 namDF <- get_ppi_table(pdf = "data-raw/pdf/namibia.pdf", n = 4, limits = 5:24)
-names(namDF) <- c("score", "nlFood", "nl100", "nl150", "nl200", "extreme",
-                  "ppp125", "ppp250")
+names(namDF) <- c("score", "nl100", "nu100", "nu150", "nu200", "extreme",
+                  "ppp125", "ppp200", "ppp250")
 namDF$score <- 0:100
 row.names(namDF) <- 0:100
 
