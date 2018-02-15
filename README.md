@@ -22,7 +22,7 @@ documentation of the `PPI` found at <https://www.povertyindex.org>.
 
 ## Installation
 
-You can install `ppitables` from github with:
+You can install `ppitables` from GitHub with:
 
 ``` r
 # install.packages("devtools")
