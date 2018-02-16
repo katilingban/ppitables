@@ -215,7 +215,16 @@ Following are the available PPI country tables from the `ppitables` package. Thi
 | 36. `ppiMatrixNIC`          | PPI for Nicaragua based on Nicaragua’s 2009 Living  |
 |                             | Standards Measurement Survey                        |
 +-----------------------------+-----------------------------------------------------+
-| 37. `ppiMatrixNPL`          | PPI for Nepal
+| 37. `ppiMatrixNPL`          | PPI for Nepal using legacy poverty definition lines |
++-----------------------------+-----------------------------------------------------+
+|     `ppiMatrixNPL_a`        | PPI for Nepal using new poverty definition lines    |
++-----------------------------+-----------------------------------------------------+
+| 38. `ppiMatrixPER`          | PPI for Peru based on Peru’s 2010 National Household|
+|                             | Survey                                              |
++-----------------------------+-----------------------------------------------------+
+| 39. `ppiMatrixPHL`          | PPI for the Philippines based on Philippines 2009   |
+|                             | FIES/LFS.                                           |
++-----------------------------+-----------------------------------------------------+
 
 
 

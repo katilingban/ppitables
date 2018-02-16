@@ -342,7 +342,23 @@ the PPI [site](https://www.povertyindex.org).
 <td><ol start="37" type="1">
 <li><code>ppiMatrixNPL</code></li>
 </ol></td>
-<td>PPI for Nepal</td>
+<td>PPI for Nepal using legacy poverty definition lines</td>
+</tr>
+<tr class="odd">
+<td><pre><code>`ppiMatrixNPL_a`</code></pre></td>
+<td>PPI for Nepal using new poverty definition lines</td>
+</tr>
+<tr class="even">
+<td><ol start="38" type="1">
+<li><code>ppiMatrixPER</code></li>
+</ol></td>
+<td>PPI for Peru based on Peru’s 2010 National Household Survey</td>
+</tr>
+<tr class="odd">
+<td><ol start="39" type="1">
+<li><code>ppiMatrixPHL</code></li>
+</ol></td>
+<td>PPI for the Philippines based on Philippines 2009 FIES/LFS.</td>
 </tr>
 </tbody>
 </table>
