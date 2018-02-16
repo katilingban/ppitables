@@ -261,13 +261,13 @@ the PPI [site](https://www.povertyindex.org).
 <td>PPI for Morocco based on Morocco’s 2007 Households Living Standards Survey</td>
 </tr>
 <tr class="even">
-<td><ol start="26" type="1">
+<td><ol start="27" type="1">
 <li><code>ppiMatrixMDG</code></li>
 </ol></td>
 <td>PPI for Madagascar based on Madagascar’s 2010 Periodic Household Survey</td>
 </tr>
 <tr class="odd">
-<td><ol start="27" type="1">
+<td><ol start="28" type="1">
 <li><code>ppiMatrixMEX</code></li>
 </ol></td>
 <td>PPI for Mexico based on Mexico’s Encuesta Nacional de Ingresos y Gastos de los Hogares de 2014 using legacy definitions of poverty</td>
@@ -277,31 +277,31 @@ the PPI [site](https://www.povertyindex.org).
 <td>PPI for Mexico based on Mexico’s Encuesta Nacional de Ingresos y Gastos de los Hogares de 2014 using new definitions of poverty</td>
 </tr>
 <tr class="odd">
-<td><ol start="28" type="1">
+<td><ol start="29" type="1">
 <li><code>ppiMatrixMLI</code></li>
 </ol></td>
 <td>PPI for Mali based on Mali’s 2001 Poverty Evalution Survey</td>
 </tr>
 <tr class="even">
-<td><ol start="29" type="1">
+<td><ol start="30" type="1">
 <li><code>ppiMatrixMMR</code></li>
 </ol></td>
 <td>PPI for Myanmar based on Myanmar’s 2009/10 Integrated Household Living Conditions Assessment</td>
 </tr>
 <tr class="odd">
-<td><ol start="30" type="1">
+<td><ol start="31" type="1">
 <li><code>ppiMatrixMNG</code></li>
 </ol></td>
 <td>PPI for Mongolia based on Mongolia’s 2014 Household Socio-Economic Survey</td>
 </tr>
 <tr class="even">
-<td><ol start="31" type="1">
+<td><ol start="32" type="1">
 <li><code>ppiMatrixMOZ</code></li>
 </ol></td>
 <td>PPI for Mozambique based on 2008/9 Household Budget Survey</td>
 </tr>
 <tr class="odd">
-<td><ol start="32" type="1">
+<td><ol start="33" type="1">
 <li><code>ppiMatrixMWI</code></li>
 </ol></td>
 <td>PPI for Malawi based on Malawi’s 2010/11 Integrated Household Survey using legacy poverty definitions</td>
@@ -315,31 +315,31 @@ the PPI [site](https://www.povertyindex.org).
 <td>PPI for Malawi based on Malawi’s 2010/11 Integrated Household Survey using PBM poverty definitions</td>
 </tr>
 <tr class="even">
-<td><ol start="33" type="1">
+<td><ol start="34" type="1">
 <li><code>ppiMatrixNAM</code></li>
 </ol></td>
 <td>PPI for Namibia based on Namibia’s 2009/10 Household Income and Expenditure Survey</td>
 </tr>
 <tr class="odd">
-<td><ol start="34" type="1">
+<td><ol start="35" type="1">
 <li><code>ppiMatrixNER</code></li>
 </ol></td>
 <td>PPI for Niger based on Niger’s 2007/8 National Household Budget and Expenditure Survey</td>
 </tr>
 <tr class="even">
-<td><ol start="35" type="1">
+<td><ol start="36" type="1">
 <li><code>ppiMatrixNGA</code></li>
 </ol></td>
 <td>PPI for Nigeria based on Nigeria’s 2012/13 General Household Panel Survey</td>
 </tr>
 <tr class="odd">
-<td><ol start="36" type="1">
+<td><ol start="37" type="1">
 <li><code>ppiMatrixNIC</code></li>
 </ol></td>
 <td>PPI for Nicaragua based on Nicaragua’s 2009 Living Standards Measurement Survey</td>
 </tr>
 <tr class="even">
-<td><ol start="37" type="1">
+<td><ol start="38" type="1">
 <li><code>ppiMatrixNPL</code></li>
 </ol></td>
 <td>PPI for Nepal using legacy poverty definition lines</td>
@@ -349,115 +349,115 @@ the PPI [site](https://www.povertyindex.org).
 <td>PPI for Nepal using new poverty definition lines</td>
 </tr>
 <tr class="even">
-<td><ol start="38" type="1">
+<td><ol start="39" type="1">
 <li><code>ppiMatrixPER</code></li>
 </ol></td>
 <td>PPI for Peru based on Peru’s 2010 National Household Survey</td>
 </tr>
 <tr class="odd">
-<td><ol start="39" type="1">
+<td><ol start="40" type="1">
 <li><code>ppiMatrixPHL</code></li>
 </ol></td>
 <td>PPI for the Philippines based on Philippines 2009 FIES/LFS.</td>
 </tr>
 <tr class="even">
-<td><ol start="40" type="1">
+<td><ol start="41" type="1">
 <li><code>ppiMatrixPRY</code></li>
 </ol></td>
 <td>PPI for Paraguay based on Paraguay’s 2011 EPH</td>
 </tr>
 <tr class="odd">
-<td><ol start="41" type="1">
+<td><ol start="42" type="1">
 <li><code>ppiMatrixPSE</code></li>
 </ol></td>
 <td>PPI for Palestine based on Palestine’s 2011 Expenditure and Consumption Survey</td>
 </tr>
 <tr class="even">
-<td><ol start="42" type="1">
+<td><ol start="43" type="1">
 <li><code>ppiMatrixROU</code></li>
 </ol></td>
 <td>PPI for Romania based on the 2007 HBS</td>
 </tr>
 <tr class="odd">
-<td><ol start="43" type="1">
+<td><ol start="44" type="1">
 <li><code>ppiMatrixRUS</code></li>
 </ol></td>
 <td>PPI for Russia based on 2007 HBS</td>
 </tr>
 <tr class="even">
-<td><ol start="44" type="1">
+<td><ol start="45" type="1">
 <li><code>ppiMatrixRWA</code></li>
 </ol></td>
 <td>PPI for Rwanda based on Rwanda’s 2010/11 Integrated Household Living Standards Survey</td>
 </tr>
 <tr class="odd">
-<td><ol start="45" type="1">
+<td><ol start="46" type="1">
 <li><code>ppiMatrixSEN</code></li>
 </ol></td>
 <td>PPI for Senegal based on Senegal’s 2005/6 Enquête de Suivi de la Pauvreté au Sénégal (ESPS)</td>
 </tr>
 <tr class="even">
-<td><ol start="46" type="1">
+<td><ol start="47" type="1">
 <li><code>ppiMatrixSLE</code></li>
 </ol></td>
 <td>PPI for Sierra Leone based on Sierra Leone’s 2003/4 HIS</td>
 </tr>
 <tr class="odd">
-<td><ol start="47" type="1">
+<td><ol start="48" type="1">
 <li><code>ppiMatrixSLV</code></li>
 </ol></td>
 <td>PPI for El Salvador based on the 2008 EHPM</td>
 </tr>
 <tr class="even">
-<td><ol start="48" type="1">
+<td><ol start="49" type="1">
 <li><code>ppiMatrixSYR</code></li>
 </ol></td>
 <td>PPI for Syria based on Syria’s 2006/7 Household Income and Expenditure Survey</td>
 </tr>
 <tr class="odd">
-<td><ol start="49" type="1">
+<td><ol start="50" type="1">
 <li><code>ppiMatrixTJK</code></li>
 </ol></td>
 <td>PPI for Tajikistan based on 2007 data</td>
 </tr>
 <tr class="even">
-<td><ol start="50" type="1">
+<td><ol start="51" type="1">
 <li><code>ppiMatrixTLS</code></li>
 </ol></td>
 <td>PPI for Timor Leste based on Timor-Leste’s 2007 Survey of Living Standards</td>
 </tr>
 <tr class="odd">
-<td><ol start="51" type="1">
+<td><ol start="52" type="1">
 <li><code>ppiMatrixTZA</code></li>
 </ol></td>
 <td>PPI for Tanzania based on Tanzania’s 2011/12 Household Budget Survey</td>
 </tr>
 <tr class="even">
-<td><ol start="52" type="1">
+<td><ol start="53" type="1">
 <li><code>ppiMatrixUGA</code></li>
 </ol></td>
 <td>PPI for Uganda based on Uganda’s 2012/13 National Household Survey</td>
 </tr>
 <tr class="odd">
-<td><ol start="53" type="1">
+<td><ol start="54" type="1">
 <li><code>ppiMatrixVNM</code></li>
 </ol></td>
 <td>PPI for Vietnam based on the 2006 VHLSS</td>
 </tr>
 <tr class="even">
-<td><ol start="54" type="1">
+<td><ol start="55" type="1">
 <li><code>ppiMatrixYEM</code></li>
 </ol></td>
 <td>PPI for Yemen based on 2005/06 HBS</td>
 </tr>
 <tr class="odd">
-<td><ol start="55" type="1">
+<td><ol start="56" type="1">
 <li><code>ppiMatrixZAF</code></li>
 </ol></td>
 <td>PPI for South Africa based on the 2005/6 IES</td>
 </tr>
 <tr class="even">
-<td><ol start="56" type="1">
+<td><ol start="57" type="1">
 <li><code>ppiMatrixZMB</code></li>
 </ol></td>
 <td>PPIi for Zambia based on Zambia’s 2015 Living Conditions Monitoring Survey (LCMS)</td>

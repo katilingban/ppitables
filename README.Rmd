@@ -170,10 +170,10 @@ Following are the available PPI country tables from the `ppitables` package. Thi
 | 26. `ppiMatrixMAR`          | PPI for Morocco based on Morocco’s 2007 Households  |
 |                             | Living Standards Survey                             |
 +-----------------------------+-----------------------------------------------------+
-| 26. `ppiMatrixMDG`          | PPI for Madagascar based on Madagascar’s 2010       |
+| 27. `ppiMatrixMDG`          | PPI for Madagascar based on Madagascar’s 2010       |
 |                             | Periodic Household Survey                           |
 +-----------------------------+-----------------------------------------------------+
-| 27. `ppiMatrixMEX`          | PPI for Mexico based on Mexico's Encuesta Nacional  |
+| 28. `ppiMatrixMEX`          | PPI for Mexico based on Mexico's Encuesta Nacional  |
 |                             | de Ingresos y Gastos de los Hogares de 2014 using   |
 |                             | legacy definitions of poverty                       |
 +-----------------------------+-----------------------------------------------------+
@@ -181,19 +181,19 @@ Following are the available PPI country tables from the `ppitables` package. Thi
 |                             | de Ingresos y Gastos de los Hogares de 2014 using   |
 |                             | new definitions of poverty                          |
 +-----------------------------+-----------------------------------------------------+
-| 28. `ppiMatrixMLI`          | PPI for Mali based on Mali's 2001 Poverty Evalution |
+| 29. `ppiMatrixMLI`          | PPI for Mali based on Mali's 2001 Poverty Evalution |
 |                             | Survey                                              |
 +-----------------------------+-----------------------------------------------------+
-| 29. `ppiMatrixMMR`          | PPI for Myanmar based on Myanmar’s 2009/10          |
+| 30. `ppiMatrixMMR`          | PPI for Myanmar based on Myanmar’s 2009/10          |
 |                             | Integrated Household Living Conditions Assessment   |
 +-----------------------------+-----------------------------------------------------+
-| 30. `ppiMatrixMNG`          | PPI for Mongolia based on Mongolia’s 2014 Household |
+| 31. `ppiMatrixMNG`          | PPI for Mongolia based on Mongolia’s 2014 Household |
 |                             | Socio-Economic Survey                               |
 +-----------------------------+-----------------------------------------------------+
-| 31. `ppiMatrixMOZ`          | PPI for Mozambique based on 2008/9 Household Budget |
+| 32. `ppiMatrixMOZ`          | PPI for Mozambique based on 2008/9 Household Budget |
 |                             | Survey                                              |
 +-----------------------------+-----------------------------------------------------+
-| 32. `ppiMatrixMWI`          | PPI for Malawi based on Malawi's 2010/11 Integrated |
+| 33. `ppiMatrixMWI`          | PPI for Malawi based on Malawi's 2010/11 Integrated |
 |                             | Household Survey using legacy poverty definitions   |
 +-----------------------------+-----------------------------------------------------+
 |     `ppiMatrixMWI_gov`      | PPI for Malawi based on Malawi's 2010/11 Integrated |
@@ -203,69 +203,69 @@ Following are the available PPI country tables from the `ppitables` package. Thi
 |     `ppiMatrixMWI_pbm`      | PPI for Malawi based on Malawi's 2010/11 Integrated |
 |                             | Household Survey using PBM poverty definitions      |
 +-----------------------------+-----------------------------------------------------+
-| 33. `ppiMatrixNAM`          | PPI for Namibia based on Namibia’s 2009/10 Household|
+| 34. `ppiMatrixNAM`          | PPI for Namibia based on Namibia’s 2009/10 Household|
 |                             | Income and Expenditure Survey                       |
 +-----------------------------+-----------------------------------------------------+
-| 34. `ppiMatrixNER`          | PPI for Niger based on Niger’s 2007/8 National      |
+| 35. `ppiMatrixNER`          | PPI for Niger based on Niger’s 2007/8 National      |
 |                             | Household Budget and Expenditure Survey             |
 +-----------------------------+-----------------------------------------------------+
-| 35. `ppiMatrixNGA`          | PPI for Nigeria based on Nigeria’s 2012/13 General  |
+| 36. `ppiMatrixNGA`          | PPI for Nigeria based on Nigeria’s 2012/13 General  |
 |                             | Household Panel Survey                              |
 +-----------------------------+-----------------------------------------------------+
-| 36. `ppiMatrixNIC`          | PPI for Nicaragua based on Nicaragua’s 2009 Living  |
+| 37. `ppiMatrixNIC`          | PPI for Nicaragua based on Nicaragua’s 2009 Living  |
 |                             | Standards Measurement Survey                        |
 +-----------------------------+-----------------------------------------------------+
-| 37. `ppiMatrixNPL`          | PPI for Nepal using legacy poverty definition lines |
+| 38. `ppiMatrixNPL`          | PPI for Nepal using legacy poverty definition lines |
 +-----------------------------+-----------------------------------------------------+
 |     `ppiMatrixNPL_a`        | PPI for Nepal using new poverty definition lines    |
 +-----------------------------+-----------------------------------------------------+
-| 38. `ppiMatrixPER`          | PPI for Peru based on Peru’s 2010 National Household|
+| 39. `ppiMatrixPER`          | PPI for Peru based on Peru’s 2010 National Household|
 |                             | Survey                                              |
 +-----------------------------+-----------------------------------------------------+
-| 39. `ppiMatrixPHL`          | PPI for the Philippines based on Philippines 2009   |
+| 40. `ppiMatrixPHL`          | PPI for the Philippines based on Philippines 2009   |
 |                             | FIES/LFS.                                           |
 +-----------------------------+-----------------------------------------------------+
-| 40. `ppiMatrixPRY`          | PPI for Paraguay based on Paraguay’s 2011 EPH       |
+| 41. `ppiMatrixPRY`          | PPI for Paraguay based on Paraguay’s 2011 EPH       |
 +-----------------------------+-----------------------------------------------------+
-| 41. `ppiMatrixPSE`          | PPI for Palestine based on Palestine's 2011         |
+| 42. `ppiMatrixPSE`          | PPI for Palestine based on Palestine's 2011         |
 |                             | Expenditure and Consumption Survey                  |
 +-----------------------------+-----------------------------------------------------+
-| 42. `ppiMatrixROU`          | PPI for Romania based on the 2007 HBS               |
+| 43. `ppiMatrixROU`          | PPI for Romania based on the 2007 HBS               |
 +-----------------------------+-----------------------------------------------------+
-| 43. `ppiMatrixRUS`          | PPI for Russia based on 2007 HBS                    |
+| 44. `ppiMatrixRUS`          | PPI for Russia based on 2007 HBS                    |
 +-----------------------------+-----------------------------------------------------+
-| 44. `ppiMatrixRWA`          | PPI for Rwanda based on Rwanda’s 2010/11 Integrated |
+| 45. `ppiMatrixRWA`          | PPI for Rwanda based on Rwanda’s 2010/11 Integrated |
 |                             | Household Living Standards Survey                   |
 +-----------------------------+-----------------------------------------------------+
-| 45. `ppiMatrixSEN`          | PPI for Senegal based on Senegal's 2005/6 Enquête de|
+| 46. `ppiMatrixSEN`          | PPI for Senegal based on Senegal's 2005/6 Enquête de|
 |                             | Suivi de la Pauvreté au Sénégal (ESPS)              |
 +-----------------------------+-----------------------------------------------------+
-| 46. `ppiMatrixSLE`          | PPI for Sierra Leone based on Sierra Leone's 2003/4 |
+| 47. `ppiMatrixSLE`          | PPI for Sierra Leone based on Sierra Leone's 2003/4 |
 |                             | HIS                                                 |
 +-----------------------------+-----------------------------------------------------+
-| 47. `ppiMatrixSLV`          | PPI for El Salvador based on the 2008 EHPM          |
+| 48. `ppiMatrixSLV`          | PPI for El Salvador based on the 2008 EHPM          |
 +-----------------------------+-----------------------------------------------------+
-| 48. `ppiMatrixSYR`          | PPI for Syria based on Syria's 2006/7 Household     |
+| 49. `ppiMatrixSYR`          | PPI for Syria based on Syria's 2006/7 Household     |
 |                             | Income and Expenditure Survey                       |
 +-----------------------------+-----------------------------------------------------+
-| 49. `ppiMatrixTJK`          | PPI for Tajikistan based on 2007 data               |
+| 50. `ppiMatrixTJK`          | PPI for Tajikistan based on 2007 data               |
 +-----------------------------+-----------------------------------------------------+
-| 50. `ppiMatrixTLS`          | PPI for Timor Leste based on Timor-Leste’s 2007     |
+| 51. `ppiMatrixTLS`          | PPI for Timor Leste based on Timor-Leste’s 2007     |
 |                             | Survey of Living Standards                          |
 +-----------------------------+-----------------------------------------------------+
-| 51. `ppiMatrixTZA`          | PPI for Tanzania based on Tanzania’s 2011/12        |
+| 52. `ppiMatrixTZA`          | PPI for Tanzania based on Tanzania’s 2011/12        |
 |                             | Household Budget Survey                             |
 +-----------------------------+-----------------------------------------------------+
-| 52. `ppiMatrixUGA`          | PPI for Uganda based on Uganda's 2012/13 National   |
+| 53. `ppiMatrixUGA`          | PPI for Uganda based on Uganda's 2012/13 National   |
 |                             | Household Survey                                    |
 +-----------------------------+-----------------------------------------------------+
-| 53. `ppiMatrixVNM`          | PPI for Vietnam based on the 2006 VHLSS             |
+| 54. `ppiMatrixVNM`          | PPI for Vietnam based on the 2006 VHLSS             |
 +-----------------------------+-----------------------------------------------------+
-| 54. `ppiMatrixYEM`          | PPI for Yemen based on 2005/06 HBS                  |
+| 55. `ppiMatrixYEM`          | PPI for Yemen based on 2005/06 HBS                  |
 +-----------------------------+-----------------------------------------------------+
-| 55. `ppiMatrixZAF`          | PPI for South Africa based on the 2005/6 IES        |
+| 56. `ppiMatrixZAF`          | PPI for South Africa based on the 2005/6 IES        |
 +-----------------------------+-----------------------------------------------------+
-| 56. `ppiMatrixZMB`          | PPIi for Zambia based on Zambia’s 2015 Living       |
+| 57. `ppiMatrixZMB`          | PPIi for Zambia based on Zambia’s 2015 Living       |
 |                             | Conditions Monitoring Survey (LCMS)                 |
 +-----------------------------+-----------------------------------------------------+
 
