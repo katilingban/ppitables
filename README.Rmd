@@ -225,6 +225,51 @@ Following are the available PPI country tables from the `ppitables` package. Thi
 | 39. `ppiMatrixPHL`          | PPI for the Philippines based on Philippines 2009   |
 |                             | FIES/LFS.                                           |
 +-----------------------------+-----------------------------------------------------+
+| 40. `ppiMatrixPRY`          | PPI for Paraguay based on Paraguay’s 2011 EPH       |
++-----------------------------+-----------------------------------------------------+
+| 41. `ppiMatrixPSE`          | PPI for Palestine based on Palestine's 2011         |
+|                             | Expenditure and Consumption Survey                  |
++-----------------------------+-----------------------------------------------------+
+| 42. `ppiMatrixROU`          | PPI for Romania based on the 2007 HBS               |
++-----------------------------+-----------------------------------------------------+
+| 43. `ppiMatrixRUS`          | PPI for Russia based on 2007 HBS                    |
++-----------------------------+-----------------------------------------------------+
+| 44. `ppiMatrixRWA`          | PPI for Rwanda based on Rwanda’s 2010/11 Integrated |
+|                             | Household Living Standards Survey                   |
++-----------------------------+-----------------------------------------------------+
+| 45. `ppiMatrixSEN`          | PPI for Senegal based on Senegal's 2005/6 Enquête de|
+|                             | Suivi de la Pauvreté au Sénégal (ESPS)              |
++-----------------------------+-----------------------------------------------------+
+| 46. `ppiMatrixSLE`          | PPI for Sierra Leone based on Sierra Leone's 2003/4 |
+|                             | HIS                                                 |
++-----------------------------+-----------------------------------------------------+
+| 47. `ppiMatrixSLV`          | PPI for El Salvador based on the 2008 EHPM          |
++-----------------------------+-----------------------------------------------------+
+| 48. `ppiMatrixSYR`          | PPI for Syria based on Syria's 2006/7 Household     |
+|                             | Income and Expenditure Survey                       |
++-----------------------------+-----------------------------------------------------+
+| 49. `ppiMatrixTJK`          | PPI for Tajikistan based on 2007 data               |
++-----------------------------+-----------------------------------------------------+
+| 50. `ppiMatrixTLS`          | PPI for Timor Leste based on Timor-Leste’s 2007     |
+|                             | Survey of Living Standards                          |
++-----------------------------+-----------------------------------------------------+
+| 51. `ppiMatrixTZA`          | PPI for Tanzania based on Tanzania’s 2011/12        |
+|                             | Household Budget Survey                             |
++-----------------------------+-----------------------------------------------------+
+| 52. `ppiMatrixUGA`          | PPI for Uganda based on Uganda's 2012/13 National   |
+|                             | Household Survey                                    |
++-----------------------------+-----------------------------------------------------+
+| 53. `ppiMatrixVNM`          | PPI for Vietnam based on the 2006 VHLSS             |
++-----------------------------+-----------------------------------------------------+
+| 54. `ppiMatrixYEM`          | PPI for Yemen based on 2005/06 HBS                  |
++-----------------------------+-----------------------------------------------------+
+| 55. `ppiMatrixZAF`          | PPI for South Africa based on the 2005/6 IES        |
++-----------------------------+-----------------------------------------------------+
+| 56. `ppiMatrixZMB`          | PPIi for Zambia based on Zambia’s 2015 Living       |
+|                             | Conditions Monitoring Survey (LCMS)                 |
++-----------------------------+-----------------------------------------------------+
+
+
 
 
 
