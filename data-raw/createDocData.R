@@ -50,7 +50,7 @@ varList <- c("PPI score",
              "Below $1.25 per day purchasing power parity (2005)",
              "Below $2.50 per day purchasing power parity (2005)")
 
-create_doc(country = "Afghanistan", ccode = "AFG", data = ppiMatrixAFG, varList = varList)
+create_doc(country = "Afghanistan", ccode = "AFG", year = "2012", data = ppiAFG2012, varList = varList)
 
 
 ################################################################################
