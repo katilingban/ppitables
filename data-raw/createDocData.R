@@ -6,6 +6,7 @@
 
 create_doc <- function(country,
                        ccode,
+                       year,
                        data,
                        varList,
                        source = "www.povertyindex.org") {
@@ -16,7 +17,7 @@ create_doc <- function(country,
   cat(" \n")
   cat("################################################################################\n")
   cat("# \n")
-  cat(paste("#' ppiMatrix", ccode, sep = ""), " \n")
+  cat(paste("#' ppi", ccode, year, sep = ""), " \n")
   cat("#' \n")
   cat(paste("#' Poverty Probability Index (PPI) lookup table for ", country, sep = ""), " \n")
   cat("#' \n")
@@ -30,7 +31,7 @@ create_doc <- function(country,
   cat("#' \n")
   cat("# \n")
   cat("################################################################################ \n")
-  cat(paste("\"ppiMatrix", ccode, "\"", sep = ""))
+  cat(paste("\"ppi", ccode, year, "\"", sep = ""))
   sink()
 }
 
@@ -327,7 +328,7 @@ varList <- c("PPI score",
              "Below $5.00 per day purchasing power parity (2005)",
              "Below $8.44 per day purchasing power parity (2005)")
 
-create_doc(country = "Ecuador", ccode = "ECU", data = ppiECU2015, varList = varList)
+create_doc(country = "Ecuador", ccode = "ECU", year = "2015", data = ppiECU2015, varList = varList)
 
 
 ################################################################################
