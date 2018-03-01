@@ -444,8 +444,8 @@ names(cmrDF) <- c("score", "nl100", "nl150", "nl200", "extreme", "ppp125",
 cmrDF$score <- 0:100
 row.names(cmrDF) <- 0:100
 
-ppiCMR <- cmrDF
-devtools::use_data(ppiCMR, overwrite = TRUE)
+ppiCMR2013 <- cmrDF
+devtools::use_data(ppiCMR2013, overwrite = TRUE)
 
 
 ################################################################################
