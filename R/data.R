@@ -28,3 +28,19 @@ NULL
 #' 
 #' Poverty Probability Index (PPI) lookup table for Afghanistan  
 #' 
+ 
+ 
+################################################################################
+# 
+#' ppiAFG2012  
+#' 
+#' Poverty Probability Index (PPI) lookup table for Afghanistan  
+#' 
+ 
+ 
+################################################################################
+# 
+#' ppiAFG2012  
+#' 
+#' Poverty Probability Index (PPI) lookup table for Afghanistan  
+#' 
