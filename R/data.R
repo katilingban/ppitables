@@ -19,28 +19,178 @@
 NULL
 
 
+################################################################################
+#
+#' ppiAFG2012
+#'
+#' Poverty Probability Index (PPI) lookup table for Afghanistan
+#'
+#' @format A data frame with 7 columns and 101 rows:
+#' \describe{
+#' \item{\code{score}}{PPI score}
+#' \item{\code{nl}}{National poverty line}
+#' \item{\code{nu150}}{National poverty line (150)}
+#' \item{\code{nu200}}{National poverty line (200)}
+#' \item{\code{extreme}}{USAID extreme poverty}
+#' \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}
+#' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
+#' }
+#' @source \url{www.povertyindex.org}
+#'
+#
+################################################################################
+"ppiAFG2012"
+
 
  
  
 ################################################################################
 # 
-#' ppiAFG2012  
+#' ppiAGO2015  
 #' 
-#' Poverty Probability Index (PPI) lookup table for Afghanistan  
+#' Poverty Probability Index (PPI) lookup table for Angola  
 #' 
- 
+#' @format A data frame with 9 columns and 101 rows:  
+#' \describe{ 
+#' \item{\code{score}}{PPI score}  
+#' \item{\code{nl100}}{National poverty line (100)}  
+#' \item{\code{nl150}}{National poverty line (150)}  
+#' \item{\code{nl200}}{National poverty line (200)}  
+#' \item{\code{half100}}{Poorest half below 100 national}  
+#' \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}  
+#' \item{\code{ppp200}}{Below $2.00 per day purchasing power parity (2005)}  
+#' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}  
+#' \item{\code{ppp500}}{Below $5.00 per day purchasing power parity (2005)}  
+#' } 
+#' @source \url{www.povertyindex.org}  
+#' 
+# 
+################################################################################ 
+"ppiAGO2015" 
  
 ################################################################################
 # 
-#' ppiAFG2012  
+#' ppiBGD2013  
 #' 
-#' Poverty Probability Index (PPI) lookup table for Afghanistan  
+#' Poverty Probability Index (PPI) lookup table for Bangladesh  
 #' 
- 
+#' @format A data frame with 10 columns and 101 rows:  
+#' \describe{ 
+#' \item{\code{score}}{PPI score}  
+#' \item{\code{nl}}{National lower poverty line}  
+#' \item{\code{nu100}}{National upper poverty line (100)}  
+#' \item{\code{nu150}}{National upper poverty line (150)}  
+#' \item{\code{nu200}}{National upper poverty line (200)}  
+#' \item{\code{extreme}}{USAID extreme poverty}  
+#' \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}  
+#' \item{\code{ppp175}}{Below $1.75 per day purchasing power parity (2005)}  
+#' \item{\code{ppp200}}{Below $2.00 per day purchasing power parity (2005)}  
+#' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}  
+#' } 
+#' @source \url{www.povertyindex.org}  
+#' 
+# 
+################################################################################ 
+"ppiBGD2013" 
  
 ################################################################################
 # 
-#' ppiAFG2012  
+#' ppiBOL2015  
 #' 
-#' Poverty Probability Index (PPI) lookup table for Afghanistan  
+#' Poverty Probability Index (PPI) lookup table for Bolivia  
 #' 
+#' @format A data frame with 10 columns and 101 rows:  
+#' \describe{ 
+#' \item{\code{score}}{PPI score}  
+#' \item{\code{nl100}}{Food poverty line}  
+#' \item{\code{nl150}}{National poverty line (100)}  
+#' \item{\code{nl200}}{National poverty line (150)}  
+#' \item{\code{half100}}{National poverty line (200)}  
+#' \item{\code{ppp125}}{Poorest half below 100 national}  
+#' \item{\code{ppp200}}{Below $1.25 per day purchasing power parity (2005)}  
+#' \item{\code{ppp250}}{Below $2.00 per day purchasing power parity (2005)}  
+#' \item{\code{ppp500}}{Below $2.50 per day purchasing power parity (2005)}  
+#' \item{\code{ppp844}}{Below $5.00 per day purchasing power parity (2005)}  
+#' } 
+#' @source \url{www.povertyindex.org}  
+#' 
+# 
+################################################################################ 
+"ppiBOL2015" 
+ 
+################################################################################
+# 
+#' ppiBEN2012  
+#' 
+#' Poverty Probability Index (PPI) lookup table for Benin  
+#' 
+#' @format A data frame with 7 columns and 101 rows:  
+#' \describe{ 
+#' \item{\code{score}}{PPI score}  
+#' \item{\code{nl100}}{National poverty line (100)}  
+#' \item{\code{nl150}}{National poverty line (150)}  
+#' \item{\code{nl200}}{National poverty line (200)}  
+#' \item{\code{extreme}}{USAID extreme poverty}  
+#' \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}  
+#' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}  
+#' } 
+#' @source \url{www.povertyindex.org}  
+#' 
+# 
+################################################################################ 
+"ppiBEN2012" 
+ 
+################################################################################
+# 
+#' ppiBRA2010  
+#' 
+#' Poverty Probability Index (PPI) lookup table for Brazil  
+#' 
+#' @format A data frame with 10 columns and 101 rows:  
+#' \describe{ 
+#' \item{\code{score}}{PPI score}  
+#' \item{\code{belowHalfWage}}{Below the half minimum wage line}  
+#' \item{\code{belowQtrWage}}{Below the quarter minimum wage line}  
+#' \item{\code{belowOneWage}}{Below the one minimum wage line}  
+#' \item{\code{belowTwoWage}}{Below the two minimum wage line}  
+#' \item{\code{extreme}}{USAID extreme poverty}  
+#' \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}  
+#' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}  
+#' \item{\code{ppp375}}{Below $3.75 per day purchasing power parity (2005)}  
+#' \item{\code{ppp500}}{Below $5.00 per day purchasing power parity (2005)}  
+#' } 
+#' @source \url{www.povertyindex.org}  
+#' 
+# 
+################################################################################ 
+"ppiBRA2010" 
+ 
+################################################################################
+# 
+#' ppiBFA2017  
+#' 
+#' Poverty Probability Index (PPI) lookup table for Burkina Faso  
+#' 
+#' @format A data frame with 15 columns and 101 rows:  
+#' \describe{ 
+#' \item{\code{score}}{PPI score}  
+#' \item{\code{nl100}}{National poverty line (100)}  
+#' \item{\code{nl150}}{National poverty line (150)}  
+#' \item{\code{nl200}}{National poverty line (200)}  
+#' \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}  
+#' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}  
+#' \item{\code{ppp500}}{Below $5.00 per day purchasing power parity (2005)}  
+#' \item{\code{ppp100}}{Below $1.00 per day purchasing power parity (2011)}  
+#' \item{\code{ppp190}}{Below $1.90 per day purchasing power parity (2011)}  
+#' \item{\code{ppp320}}{Below $3.20 per day purchasing power parity (2011)}  
+#' \item{\code{ppp550}}{Below $5.50 per day purchasing power parity (2011)}  
+#' \item{\code{percentile20}}{Below 20th percentile poverty line}  
+#' \item{\code{percentile40}}{Below 40th percentile poverty line}  
+#' \item{\code{percentile60}}{Below 60th percentile poverty line}  
+#' \item{\code{percentile80}}{Below 80th percentile poverty line}  
+#' } 
+#' @source \url{www.povertyindex.org}  
+#' 
+# 
+################################################################################ 
+"ppiBFA2017"
