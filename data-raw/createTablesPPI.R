@@ -443,8 +443,77 @@ devtools::use_data(ppiMatrixDOM, overwrite = TRUE)
 #
 ################################################################################
 
-ecuDF1 <- get_ppi_table(pdf = "data-raw/pdf/ecuador.pdf", n = 3, limits = 7:26)
-ecuDF2 <- get_ppi_table(pdf = "data-raw/pdf/ecuador.pdf", n = 4, limits = 8:27)
+ecuDF1 <- str_split(pdf_text(pdf = "data-raw/pdf/ecuador.pdf")[3], "\n")[[1]][7:26]
+ecuDF2 <- str_split(pdf_text(pdf = "data-raw/pdf/ecuador.pdf")[4], "\n")[[1]][8:27]
+
+get_vars <- function(x, pattern, n = 5) {
+
+  x <- str_split(x, pattern = pattern)[[1]]
+  x <- x[x != ""]
+
+}
+
+temp <- sapply(ecuDF1, FUN = get_vars, pattern = " ")
+
+y <- NULL
+
+for(i in 1:length(temp)) {
+
+  x <- temp[[i]]
+  x <- as.numeric(x)
+  x <- tail(x, 5)
+
+  z <- NULL
+
+  for(j in 1:5){
+
+    z <- data.frame(rbind(z, x))
+
+  }
+
+  y <- data.frame(rbind(y, z))
+
+}
+
+y1 <- data.frame(rbind(y, y[100, ]))
+
+names(y1) <- c("nlFood", "nl100", "nl150", "nl200", "half100")
+
+#
+#
+#
+temp <- sapply(ecuDF2, FUN = get_vars, pattern = " ")
+
+y <- NULL
+
+for(i in 1:length(temp)) {
+
+  x <- temp[[i]]
+  x <- as.numeric(x)
+  x <- tail(x, 6)
+
+  z <- NULL
+
+  for(j in 1:5){
+
+    z <- data.frame(rbind(z, x))
+
+  }
+
+  y <- data.frame(rbind(y, z))
+
+}
+
+y2 <- data.frame(rbind(y, y[100, ]))
+
+names(y2) <- c("ppp125", "ppp200", "ppp250", "ppp500", "ppp844")
+
+ecuDF <- data.frame("score" = 0:100, y1, y2)
+row.names(ecuDF) <- 0:100
+
+ppiECU2015 <- ecuDF
+devtools::use_data(ppiECU2015, overwrite = TRUE)
+
 
 ################################################################################
 #
