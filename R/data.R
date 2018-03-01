@@ -216,4 +216,191 @@ NULL
 #' 
 # 
 ################################################################################ 
-"ppiCMR2013"
+"ppiCMR2013" 
+ 
+################################################################################
+# 
+#' ppiCOL2018_a  
+#' 
+#' Poverty Probability Index (PPI) lookup table for Colombia  
+#' 
+#' @format A data frame with 12 columns and 101 rows:  
+#' \describe{ 
+#' \item{\code{score}}{PPI score}  
+#' \item{\code{nlFood}}{Food poverty line}  
+#' \item{\code{nl100}}{National poverty line (100)}  
+#' \item{\code{nl150}}{National poverty line (150)}  
+#' \item{\code{nl200}}{National poverty line (200)}  
+#' \item{\code{half100}}{Poorest half below 100 national}  
+#' \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}  
+#' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}  
+#' \item{\code{ppp375}}{Below $3.75 per day purchasing power parity (2005)}  
+#' \item{\code{ppp500}}{Below $5.00 per day purchasing power parity (2005)}  
+#' \item{\code{ppp190}}{Below $1.90 per day purchasing power parity (2011)}  
+#' \item{\code{ppp310}}{Below $3.10 per day purchasing power parity (2011)}  
+#' } 
+#' @source \url{www.povertyindex.org}  
+#' 
+# 
+################################################################################ 
+"ppiCOL2018_a" 
+ 
+################################################################################
+# 
+#' ppiCOL2018  
+#' 
+#' Poverty Probability Index (PPI) lookup table for Colombia  
+#' 
+#' @format A data frame with 10 columns and 101 rows:  
+#' \describe{ 
+#' \item{\code{score}}{PPI score}  
+#' \item{\code{nlFood}}{Food poverty line}  
+#' \item{\code{nl100}}{National poverty line (100)}  
+#' \item{\code{nl150}}{National poverty line (150)}  
+#' \item{\code{nl200}}{National poverty line (200)}  
+#' \item{\code{extreme}}{USAID extreme poverty}  
+#' \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}  
+#' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}  
+#' \item{\code{ppp375}}{Below $3.75 per day purchasing power parity (2005)}  
+#' \item{\code{ppp500}}{Below $5.00 per day purchasing power parity (2005)}  
+#' } 
+#' @source \url{www.povertyindex.org}  
+#' 
+# 
+################################################################################ 
+"ppiCOL2018" 
+ 
+################################################################################
+# 
+#' ppiDOM2010  
+#' 
+#' Poverty Probability Index (PPI) lookup table for Dominican Republic  
+#' 
+#' @format A data frame with 11 columns and 101 rows:  
+#' \describe{ 
+#' \item{\code{score}}{PPI score}  
+#' \item{\code{nl50}}{National poverty line (50)}  
+#' \item{\code{nl75}}{National poverty line (75)}  
+#' \item{\code{nl100}}{National poverty line (100)}  
+#' \item{\code{nl150}}{National poverty line (150)}  
+#' \item{\code{extreme}}{USAID extreme poverty}  
+#' \item{\code{nl200}}{National poverty line (200)}  
+#' \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}  
+#' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}  
+#' \item{\code{ppp375}}{Below $3.75 per day purchasing power parity (2005)}  
+#' \item{\code{ppp500}}{Below $5.00 per day purchasing power parity (2005)}  
+#' } 
+#' @source \url{www.povertyindex.org}  
+#' 
+# 
+################################################################################ 
+"ppiDOM2010" 
+ 
+################################################################################
+# 
+#' ppiECU2015  
+#' 
+#' Poverty Probability Index (PPI) lookup table for Ecuador  
+#' 
+#' @format A data frame with 11 columns and 101 rows:  
+#' \describe{ 
+#' \item{\code{score}}{PPI score}  
+#' \item{\code{nlFood}}{Food poverty line}  
+#' \item{\code{nl100}}{National poverty line (100)}  
+#' \item{\code{nl150}}{National poverty line (150)}  
+#' \item{\code{nl200}}{National poverty line (200)}  
+#' \item{\code{half100}}{Poorest half below 100 national}  
+#' \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}  
+#' \item{\code{ppp200}}{Below $2.00 per day purchasing power parity (2005)}  
+#' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}  
+#' \item{\code{ppp500}}{Below $5.00 per day purchasing power parity (2005)}  
+#' \item{\code{ppp844}}{Below $8.44 per day purchasing power parity (2005)}  
+#' } 
+#' @source \url{www.povertyindex.org}  
+#' 
+# 
+################################################################################ 
+"ppiECU2015" 
+ 
+################################################################################
+# 
+#' ppiEGY2010  
+#' 
+#' Poverty Probability Index (PPI) lookup table for Egypt  
+#' 
+#' @format A data frame with 8 columns and 101 rows:  
+#' \describe{ 
+#' \item{\code{score}}{PPI score}  
+#' \item{\code{nu100}}{National upper poverty line (100)}  
+#' \item{\code{nl100}}{National lower poverty line (100)}  
+#' \item{\code{nlFood}}{Food poverty line}  
+#' \item{\code{extreme}}{USAID extreme poverty}  
+#' \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}  
+#' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}  
+#' \item{\code{ppp375}}{Below $3.75 per day purchasing power parity (2005)}  
+#' } 
+#' @source \url{www.povertyindex.org}  
+#' 
+# 
+################################################################################ 
+"ppiEGY2010" 
+ 
+################################################################################
+# 
+#' ppiSLV2010  
+#' 
+#' Poverty Probability Index (PPI) lookup table for El Salvador  
+#' 
+#' @format A data frame with 9 columns and 101 rows:  
+#' \describe{ 
+#' \item{\code{score}}{PPI score}  
+#' \item{\code{nl100}}{National poverty line (100)}  
+#' \item{\code{nlFood}}{Food poverty line}  
+#' \item{\code{nl150}}{National poverty line (150)}  
+#' \item{\code{nl200}}{National poverty line (200)}  
+#' \item{\code{extreme}}{USAID extreme poverty}  
+#' \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}  
+#' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}  
+#' \item{\code{ppp375}}{Below $3.75 per day purchasing power parity (2005)}  
+#' } 
+#' @source \url{www.povertyindex.org}  
+#' 
+# 
+################################################################################ 
+"ppiSLV2010" 
+ 
+################################################################################
+# 
+#' ppiETH2016  
+#' 
+#' Poverty Probability Index (PPI) lookup table for Ethiopia  
+#' 
+#' @format A data frame with 21 columns and 101 rows:  
+#' \describe{ 
+#' \item{\code{score}}{PPI score}  
+#' \item{\code{nlFood}}{Food poverty line}  
+#' \item{\code{nl100}}{National poverty line (100)}  
+#' \item{\code{nl150}}{National poverty line (150)}  
+#' \item{\code{nl200}}{National poverty line (200)}  
+#' \item{\code{ppp100}}{Below $1.00 per day purchasing power parity (2005)}  
+#' \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}  
+#' \item{\code{ppp175}}{Below $1.75 per day purchasing power parity (2005)}  
+#' \item{\code{ppp200}}{Below $2.00 per day purchasing power parity (2005)}  
+#' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}  
+#' \item{\code{ppp500}}{Below $5.00 per day purchasing power parity (2005)}  
+#' \item{\code{ppp190}}{Below $1.90 per day purchasing power parity (2011)}  
+#' \item{\code{ppp310}}{Below $3.10 per day purchasing power parity (2011)}  
+#' \item{\code{ppp380}}{Below $3.80 per day purchasing power parity (2011)}  
+#' \item{\code{ppp400}}{Below $4.00 per day purchasing power parity (2011)}  
+#' \item{\code{half100}}{Poorest half below 100 national}  
+#' \item{\code{percentile20}}{Below 20th percentile poverty line}  
+#' \item{\code{percentile40}}{Below 40th percentile poverty line}  
+#' \item{\code{percentile50}}{Below 50th percentile poverty line}  
+#' \item{\code{percentile60}}{Below 60th percentile poverty line}  
+#' \item{\code{percentile80}}{Below 80th percentile poverty line}  
+#' } 
+#' @source \url{www.povertyindex.org}  
+#' 
+# 
+################################################################################ 
+"ppiETH2016"
