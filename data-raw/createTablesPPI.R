@@ -463,8 +463,8 @@ names(colDF) <- c("score", "nlFood", "nl100", "nl150", "nl200", "half100",
 colDF$score <- 0:100
 row.names(colDF) <- 0:100
 
-ppiCOL_a <- colDF
-devtools::use_data(ppiCOL_a, overwrite = TRUE)
+ppiCOL2018_a <- colDF
+devtools::use_data(ppiCOL2018_a, overwrite = TRUE)
 
 colDF4 <- get_ppi_table(pdf = "data-raw/pdf/colombia.pdf", n = 5, limits = 9:28)
 colDF5 <- get_ppi_table(pdf = "data-raw/pdf/colombia.pdf", n = 6, limits = 7:26)
@@ -474,8 +474,8 @@ names(colDF) <- c("score", "nlFood", "nl100", "nl150", "nl200", "extreme", "ppp1
 colDF$score <- 0:100
 row.names(colDF) <- 0:100
 
-ppiCOL <- colDF
-devtools::use_data(ppiCOL, overwrite = TRUE)
+ppiCOL2018 <- colDF
+devtools::use_data(ppiCOL2018, overwrite = TRUE)
 
 
 ################################################################################
@@ -505,8 +505,8 @@ names(domDF) <- c("score", "nl50", "nl75", "nl100", "nl150", "extreme", "nl200",
 domDF$score <- 0:100
 row.names(domDF) <- 0:100
 
-ppiDOM <- domDF
-devtools::use_data(ppiDOM, overwrite = TRUE)
+ppiDOM2010 <- domDF
+devtools::use_data(ppiDOM2010, overwrite = TRUE)
 
 
 ################################################################################
@@ -609,8 +609,8 @@ names(egyDF) <- c("score", "nu100", "nl100", "nlFood", "extreme", "ppp125",
 egyDF$score <- 0:100
 row.names(egyDF) <- 0:100
 
-ppiEGY <- egyDF
-devtools::use_data(ppiEGY, overwrite = TRUE)
+ppiEGY2010 <- egyDF
+devtools::use_data(ppiEGY2010, overwrite = TRUE)
 
 
 ################################################################################
@@ -635,8 +635,8 @@ names(slvDF) <- c("score", "nl100", "nlFood", "nl150", "nl200", "extreme",
 slvDF$score <- 0:100
 row.names(slvDF) <- 0:100
 
-ppiSLV <- slvDF
-devtools::use_data(ppiSLV, overwrite = TRUE)
+ppiSLV2010 <- slvDF
+devtools::use_data(ppiSLV2010, overwrite = TRUE)
 
 
 ################################################################################
@@ -656,8 +656,8 @@ names(ethDF) <- c("score", "nlFood", "nl100", "nl150", "nl200", "ppp100", "ppp12
 ethDF$score <- 0:100
 row.names(ethDF) <- 0:100
 
-ppiETH <- ethDF
-devtools::use_data(ppiETH, overwrite = TRUE)
+ppiETH2016 <- ethDF
+devtools::use_data(ppiETH2016, overwrite = TRUE)
 
 
 ################################################################################
