@@ -506,9 +506,9 @@ for(i in 1:length(temp)) {
 
 y2 <- data.frame(rbind(y, y[100, ]))
 
-names(y2) <- c("ppp125", "ppp200", "ppp250", "ppp500", "ppp844")
+names(y2) <- c("score", "ppp125", "ppp200", "ppp250", "ppp500", "ppp844")
 
-ecuDF <- data.frame("score" = 0:100, y1, y2)
+ecuDF <- data.frame("score" = 0:100, y1, y2[, 2:6])
 row.names(ecuDF) <- 0:100
 
 ppiECU2015 <- ecuDF
