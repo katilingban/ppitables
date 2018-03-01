@@ -119,9 +119,9 @@ afgDF$score <- 0:100
 
 row.names(afgDF) <- 0:100
 
-ppiMatrixAFG <- afgDF
+ppiAFG2012 <- afgDF
 
-devtools::use_data(ppiMatrixAFG, overwrite = TRUE)
+devtools::use_data(ppiAFG2012, overwrite = TRUE)
 
 
 ################################################################################
@@ -135,8 +135,8 @@ names(agoDF) <- c("score", "nl100", "nl150", "nl200", "half100", "ppp125",
                   "ppp200", "ppp250", "ppp500")
 agoDF$score <- 0:100
 row.names(agoDF) <- 0:100
-ppiMatrixAGO <- agoDF
-devtools::use_data(ppiMatrixAGO, overwrite = TRUE)
+ppiAGO2015 <- agoDF
+devtools::use_data(ppiAGO2015, overwrite = TRUE)
 
 
 ################################################################################
@@ -152,8 +152,8 @@ names(bgdDF) <- c("score", "nl", "nu100", "nu150", "nu200", "extreme", "ppp125",
                   "ppp175", "ppp200", "ppp250")
 bgdDF$score <- 0:100
 row.names(bgdDF) <- 0:100
-ppiMatrixBGD <- bgdDF
-devtools::use_data(ppiMatrixBGD, overwrite = TRUE)
+ppiBGD2013 <- bgdDF
+devtools::use_data(ppiBGD2013, overwrite = TRUE)
 
 
 ################################################################################
@@ -166,8 +166,8 @@ benDF <- get_ppi_table(pdf = "data-raw/pdf/benin.pdf", n = 2, limits = 6:25)
 names(benDF) <- c("score", "nl100", "nl150", "nl200", "extreme", "ppp125", "ppp250")
 benDF$score <- 0:100
 row.names(benDF) <- 0:100
-ppiMatrixBEN <- benDF
-devtools::use_data(ppiMatrixBEN, overwrite = TRUE)
+ppiBEN2012 <- benDF
+devtools::use_data(ppiBEN2012, overwrite = TRUE)
 
 
 ################################################################################
@@ -176,15 +176,87 @@ devtools::use_data(ppiMatrixBEN, overwrite = TRUE)
 #
 ################################################################################
 
-bolDF1 <- get_ppi_table(pdf = "data-raw/pdf/bolivia.pdf", n = 3, limits = 7:26)
-bolDF2 <- get_ppi_table(pdf = "data-raw/pdf/bolivia.pdf", n = 4, limits = 8:27)
-bolDF <- data.frame(bolDF1, bolDF2[ , 2:6])
-names(bolDF) <- c("score", "nlFood", "nl100", "nl150", "nl200", "half100",
-                  "ppp125", "ppp200", "ppp250", "ppp500", "ppp844")
-bolDF$score <- 0:100
+bolDF1 <- str_split(pdf_text(pdf = "data-raw/pdf/bolivia.pdf")[3], "\n")[[1]][7:26]
+bolDF2 <- str_split(pdf_text(pdf = "data-raw/pdf/bolivia.pdf")[4], "\n")[[1]][8:27]
+
+get_vars <- function(x, pattern, n = 5) {
+
+  x <- str_split(x, pattern = pattern)[[1]]
+  x <- x[x != ""]
+
+}
+
+temp <- sapply(bolDF1, FUN = get_vars, pattern = " ")
+
+y <- NULL
+
+for(i in 1:length(temp)) {
+
+  x <- temp[[i]]
+  x <- as.numeric(x)
+  x <- tail(x, 5)
+
+  z <- NULL
+
+  for(j in 1:5){
+
+    z <- data.frame(rbind(z, x))
+
+  }
+
+  y <- data.frame(rbind(y, z))
+
+}
+
+y1 <- data.frame(rbind(y, y[100, ]))
+
+names(y1) <- c("nlFood", "nl100", "nl150", "nl200", "half100")
+
+#
+#
+#
+temp <- sapply(bolDF2, FUN = get_vars, pattern = " ")
+
+y <- NULL
+
+for(i in 1:length(temp)) {
+
+  x <- temp[[i]]
+  x <- as.numeric(x)
+  x <- tail(x, 6)
+
+  z <- NULL
+
+  for(j in 1:5){
+
+    z <- data.frame(rbind(z, x))
+
+  }
+
+  y <- data.frame(rbind(y, z))
+
+}
+
+y2 <- data.frame(rbind(y, y[100, ]))
+
+names(y2) <- c("score", "ppp125", "ppp200", "ppp250", "ppp500", "ppp844")
+
+bolDF <- data.frame("score" = 0:100, y1, y2[, 2:6])
 row.names(bolDF) <- 0:100
-ppiMatrixBOL <- bolDF
-devtools::use_data(ppiMatrixBOL, overwrite = TRUE)
+
+ppiBOL2015 <- bolDF
+devtools::use_data(ppiBOL2015, overwrite = TRUE)
+
+
+#bolDF1 <- get_ppi_table(pdf = "data-raw/pdf/bolivia.pdf", n = 3, limits = 7:26)
+#bolDF2 <- get_ppi_table(pdf = "data-raw/pdf/bolivia.pdf", n = 4, limits = 8:27)
+#bolDF <- data.frame(bolDF1, bolDF2[ , 2:6])
+#names(bolDF) <- c("score", "nlFood", "nl100", "nl150", "nl200", "half100",
+#                  "ppp125", "ppp200", "ppp250", "ppp500", "ppp844")
+#bolDF$score <- 0:100
+#row.names(bolDF) <- 0:100
+#ppiBOL2015 <- bolDF
+#devtools::use_data(ppiBOL2015, overwrite = TRUE)
 
 
 ################################################################################
@@ -213,8 +285,8 @@ names(braDF) <- c("score",
 braDF$score <- 0:100
 row.names(braDF) <- 0:100
 
-ppiMatrixBRA <- braDF
-devtools::use_data(ppiMatrixBRA, overwrite = TRUE)
+ppiBRA2010 <- braDF
+devtools::use_data(ppiBRA2010, overwrite = TRUE)
 
 
 ################################################################################
@@ -322,9 +394,9 @@ bfaDF <- merge(bfaDF, percentile40)
 bfaDF <- merge(bfaDF, percentile60)
 bfaDF <- merge(bfaDF, percentile80)
 
-ppiMatrixBFA <- bfaDF
+ppiBFA2017 <- bfaDF
 
-devtools::use_data(ppiMatrixBFA, overwrite = TRUE)
+devtools::use_data(ppiBFA2017, overwrite = TRUE)
 
 
 ################################################################################
@@ -339,16 +411,16 @@ names(khmDF) <- c("score", "nl100", "nl150", "nl200", "median", "ppp125", "ppp20
 khmDF$score <- 0:100
 row.names(khmDF) <- 0:100
 
-ppiMatrixKHM_wb <- khmDF
-devtools::use_data(ppiMatrixKHM_wb, overwrite = TRUE)
+ppiKHM_wb <- khmDF
+devtools::use_data(ppiKHM_wb, overwrite = TRUE)
 
 khmDF <- get_ppi_table(pdf = "data-raw/pdf/cambodia.pdf", n = 4, limits = 7:26)
 names(khmDF) <- c("score", "nl100", "nl150", "nl200", "ppp125", "ppp250")
 khmDF$score <- 0:100
 row.names(khmDF) <- 0:100
 
-ppiMatrixKHM <- khmDF
-devtools::use_data(ppiMatrixKHM, overwrite = TRUE)
+ppiKHM <- khmDF
+devtools::use_data(ppiKHM, overwrite = TRUE)
 
 khmDF <- get_ppi_table(pdf = "data-raw/pdf/cambodia.pdf", n = 5, limits = 9:28)
 names(khmDF) <- c("score", "nl100", "nl150", "nl200", "median", "ppp125", "ppp200",
@@ -356,8 +428,8 @@ names(khmDF) <- c("score", "nl100", "nl150", "nl200", "median", "ppp125", "ppp20
 khmDF$score <- 0:100
 row.names(khmDF) <- 0:100
 
-ppiMatrixKHM_gov <- khmDF
-devtools::use_data(ppiMatrixKHM_gov, overwrite = TRUE)
+ppiKHM_gov <- khmDF
+devtools::use_data(ppiKHM_gov, overwrite = TRUE)
 
 
 ################################################################################
@@ -372,8 +444,8 @@ names(cmrDF) <- c("score", "nl100", "nl150", "nl200", "extreme", "ppp125",
 cmrDF$score <- 0:100
 row.names(cmrDF) <- 0:100
 
-ppiMatrixCMR <- cmrDF
-devtools::use_data(ppiMatrixCMR, overwrite = TRUE)
+ppiCMR <- cmrDF
+devtools::use_data(ppiCMR, overwrite = TRUE)
 
 
 ################################################################################
@@ -391,8 +463,8 @@ names(colDF) <- c("score", "nlFood", "nl100", "nl150", "nl200", "half100",
 colDF$score <- 0:100
 row.names(colDF) <- 0:100
 
-ppiMatrixCOL_a <- colDF
-devtools::use_data(ppiMatrixCOL_a, overwrite = TRUE)
+ppiCOL_a <- colDF
+devtools::use_data(ppiCOL_a, overwrite = TRUE)
 
 colDF4 <- get_ppi_table(pdf = "data-raw/pdf/colombia.pdf", n = 5, limits = 9:28)
 colDF5 <- get_ppi_table(pdf = "data-raw/pdf/colombia.pdf", n = 6, limits = 7:26)
@@ -402,8 +474,8 @@ names(colDF) <- c("score", "nlFood", "nl100", "nl150", "nl200", "extreme", "ppp1
 colDF$score <- 0:100
 row.names(colDF) <- 0:100
 
-ppiMatrixCOL <- colDF
-devtools::use_data(ppiMatrixCOL, overwrite = TRUE)
+ppiCOL <- colDF
+devtools::use_data(ppiCOL, overwrite = TRUE)
 
 
 ################################################################################
@@ -433,8 +505,8 @@ names(domDF) <- c("score", "nl50", "nl75", "nl100", "nl150", "extreme", "nl200",
 domDF$score <- 0:100
 row.names(domDF) <- 0:100
 
-ppiMatrixDOM <- domDF
-devtools::use_data(ppiMatrixDOM, overwrite = TRUE)
+ppiDOM <- domDF
+devtools::use_data(ppiDOM, overwrite = TRUE)
 
 
 ################################################################################
@@ -537,8 +609,8 @@ names(egyDF) <- c("score", "nu100", "nl100", "nlFood", "extreme", "ppp125",
 egyDF$score <- 0:100
 row.names(egyDF) <- 0:100
 
-ppiMatrixEGY <- egyDF
-devtools::use_data(ppiMatrixEGY, overwrite = TRUE)
+ppiEGY <- egyDF
+devtools::use_data(ppiEGY, overwrite = TRUE)
 
 
 ################################################################################
@@ -563,8 +635,8 @@ names(slvDF) <- c("score", "nl100", "nlFood", "nl150", "nl200", "extreme",
 slvDF$score <- 0:100
 row.names(slvDF) <- 0:100
 
-ppiMatrixSLV <- slvDF
-devtools::use_data(ppiMatrixSLV, overwrite = TRUE)
+ppiSLV <- slvDF
+devtools::use_data(ppiSLV, overwrite = TRUE)
 
 
 ################################################################################
@@ -584,8 +656,8 @@ names(ethDF) <- c("score", "nlFood", "nl100", "nl150", "nl200", "ppp100", "ppp12
 ethDF$score <- 0:100
 row.names(ethDF) <- 0:100
 
-ppiMatrixETH <- ethDF
-devtools::use_data(ppiMatrixETH, overwrite = TRUE)
+ppiETH <- ethDF
+devtools::use_data(ppiETH, overwrite = TRUE)
 
 
 ################################################################################
@@ -600,8 +672,8 @@ names(fjiDF) <- c("score", "nl100", "nl150", "nl200", "median", "ppp125", "ppp20
 fjiDF$score <- 0:100
 row.names(fjiDF) <- 0:100
 
-ppiMatrixFJI <- fjiDF
-devtools::use_data(ppiMatrixFJI, overwrite = TRUE)
+ppiFJI <- fjiDF
+devtools::use_data(ppiFJI, overwrite = TRUE)
 
 
 ################################################################################
@@ -620,8 +692,8 @@ names(ghaDF) <- c("score", "nlFood", "nl100", "nl150", "nl200", "half100", "ppp1
                   "ppp200", "ppp250", "ppp375", "ppp500", "ppp190", "ppp310")
 ghaDF$score <- 0:100
 row.names(ghaDF) <- 0:100
-ppiMatrixGHA_a <- ghaDF
-devtools::use_data(ppiMatrixGHA_a, overwrite = TRUE)
+ppiGHA_a <- ghaDF
+devtools::use_data(ppiGHA_a, overwrite = TRUE)
 #
 # New definition 2005 PPP and 2011 poverty lines (deflated with the change in
 # 100% of national poverty line)
@@ -632,8 +704,8 @@ ghaDF <- data.frame(ghaDF1, ghaDF2[ , 2:3])
 names(ghaDF) <- c("score", "ppp125", "ppp200", "ppp250", "ppp375", "ppp500", "ppp190", "ppp310")
 ghaDF$score <- 0:100
 row.names(ghaDF) <- 0:100
-ppiMatrixGHA_b <- ghaDF
-devtools::use_data(ppiMatrixGHA_b, overwrite = TRUE)
+ppiGHA_b <- ghaDF
+devtools::use_data(ppiGHA_b, overwrite = TRUE)
 #
 # Legacy definition poverty lines
 #
@@ -641,8 +713,8 @@ ghaDF <- get_ppi_table(pdf = "data-raw/pdf/ghana.pdf", n = 8, limits = 9:28)
 names(ghaDF) <- c("score", "nlFood", "nl100", "nl150", "nl200", "ppp125", "ppp250", "ppp375")
 ghaDF$score <- 0:100
 row.names(ghaDF) <- 0:100
-ppiMatrixGHA <- ghaDF
-devtools::use_data(ppiMatrixGHA, overwrite = TRUE)
+ppiGHA <- ghaDF
+devtools::use_data(ppiGHA, overwrite = TRUE)
 
 
 ################################################################################
@@ -749,8 +821,8 @@ names(y3) <- c("percentile20", "percentile40", "percentile50", "percentile60", "
 gtmDF <- data.frame("score" = 0:100, y1, y2, y3)
 row.names(gtmDF) <- 0:100
 
-ppiMatrixGTM <- gtmDF
-devtools::use_data(ppiMatrixGTM, overwrite = TRUE)
+ppiGTM <- gtmDF
+devtools::use_data(ppiGTM, overwrite = TRUE)
 
 
 
@@ -828,8 +900,8 @@ names(y2) <- c("ppp125", "ppp200", "ppp250", "ppp500")
 htiDF <- data.frame("score" = 0:100, y1, y2)
 row.names(htiDF) <- 0:100
 
-ppiMatrixHTI <- htiDF
-devtools::use_data(ppiMatrixHTI, overwrite = TRUE)
+ppiHTI <- htiDF
+devtools::use_data(ppiHTI, overwrite = TRUE)
 
 
 ################################################################################
@@ -847,8 +919,8 @@ hndDF2 <- hndDF2[ , c(1:2, 4, 6)]
 hndDF <- data.frame(hndDF1, hndDF2[ , 2:4])
 names(hndDF) <- c("score", "nl100", "nlFood", "extreme", "ppp125", "ppp250", "ppp375")
 
-ppiMatrixHND <- hndDF
-devtools::use_data(ppiMatrixHND, overwrite = TRUE)
+ppiHND <- hndDF
+devtools::use_data(ppiHND, overwrite = TRUE)
 
 
 ################################################################################
@@ -1014,21 +1086,21 @@ y5 <- data.frame(rbind(y, y[100, ]))
 names(y5) <- c("percentile20", "percentile40", "percentile50", "percentile60", "percentile80")
 
 
-ppiMatrixIND_r59 <- data.frame("score" = 0:100, y1[, 1:3])
-row.names(ppiMatrixIND_r59) <- 0:100
-devtools::use_data(ppiMatrixIND_r59, overwrite = TRUE)
+ppiIND_r59 <- data.frame("score" = 0:100, y1[, 1:3])
+row.names(ppiIND_r59) <- 0:100
+devtools::use_data(ppiIND_r59, overwrite = TRUE)
 
-ppiMatrixIND_r62 <- data.frame("score" = 0:100, y1[, 4:9])
-row.names(ppiMatrixIND_r62) <- 0:100
-devtools::use_data(ppiMatrixIND_r62, overwrite = TRUE)
+ppiIND_r62 <- data.frame("score" = 0:100, y1[, 4:9])
+row.names(ppiIND_r62) <- 0:100
+devtools::use_data(ppiIND_r62, overwrite = TRUE)
 
-ppiMatrixIND_r66 <- data.frame("score" = 0:100, "tendulkar" = y1[, 10], y2)
-row.names(ppiMatrixIND_r66) <- 0:100
-devtools::use_data(ppiMatrixIND_r66, overwrite = TRUE)
+ppiIND_r66 <- data.frame("score" = 0:100, "tendulkar" = y1[, 10], y2)
+row.names(ppiIND_r66) <- 0:100
+devtools::use_data(ppiIND_r66, overwrite = TRUE)
 
-ppiMatrixIND_r68 <- data.frame("score" = 0:100, y3, y4, y5)
-row.names(ppiMatrixIND_r68) <- 0:100
-devtools::use_data(ppiMatrixIND_r68, overwrite = TRUE)
+ppiIND_r68 <- data.frame("score" = 0:100, y3, y4, y5)
+row.names(ppiIND_r68) <- 0:100
+devtools::use_data(ppiIND_r68, overwrite = TRUE)
 
 
 
@@ -1051,8 +1123,8 @@ names(idnDF) <- c("score", "nl100", "nl150", "nl200", "extreme", "ppp125", "ppp2
 idnDF$score <- 0:100
 row.names(idnDF) <- 0:100
 
-ppiMatrixIDN_a <- idnDF
-devtools::use_data(ppiMatrixIDN_a, overwrite = TRUE)
+ppiIDN_a <- idnDF
+devtools::use_data(ppiIDN_a, overwrite = TRUE)
 
 
 ################################################################################
@@ -1066,8 +1138,8 @@ names(idnDF) <- c("score", "nl100", "ppp125", "ppp250")
 idnDF$score <- 0:100
 row.names(idnDF) <- 0:100
 
-ppiMatrixIDN <- idnDF
-devtools::use_data(ppiMatrixIDN, overwrite = TRUE)
+ppiIDN <- idnDF
+devtools::use_data(ppiIDN, overwrite = TRUE)
 
 
 ################################################################################
@@ -1082,8 +1154,8 @@ names(civDF) <- c("score", "nl100", "nl150", "nl200", "extreme", "ppp125", "ppp2
 civDF$score <- 0:100
 row.names(civDF) <- 0:100
 
-ppiMatrixCIV <- civDF
-devtools::use_data(ppiMatrixCIV, overwrite = TRUE)
+ppiCIV <- civDF
+devtools::use_data(ppiCIV, overwrite = TRUE)
 
 
 ################################################################################
@@ -1134,8 +1206,8 @@ jorDF <- data.frame(nl100, nl150[ , 2], nl200[ , 2], nl250[ , 2], extreme[ , 2],
 names(jorDF) <- c("score", "nl100", "nl150", "nl200", "nl250", "extreme",
                   "ppp125", "ppp250", "ppp375", "ppp500")
 
-ppiMatrixJOR <- jorDF
-devtools::use_data(ppiMatrixJOR, overwrite = TRUE)
+ppiJOR <- jorDF
+devtools::use_data(ppiJOR, overwrite = TRUE)
 
 
 
@@ -1153,8 +1225,8 @@ names(kenDF) <- c("score", "nlFood", "nl100", "nl150", "extreme", "ppp125",
                   "ppp250", "ppp400", "ppp844", "ppp190", "ppp310")
 kenDF$score <- 0:100
 row.names(kenDF) <- 0:100
-ppiMatrixKEN <- kenDF
-devtools::use_data(ppiMatrixKEN, overwrite = TRUE)
+ppiKEN <- kenDF
+devtools::use_data(ppiKEN, overwrite = TRUE)
 
 
 ################################################################################
@@ -1202,8 +1274,8 @@ names(y1) <- c("nl100", "nl150", "nl200", "median", "ppp125", "ppp200",
 kgzDF <- data.frame("score" = 0:100, y1)
 row.names(kgzDF) <- 0:100
 
-ppiMatrixKGZ <- kgzDF
-devtools::use_data(ppiMatrixKGZ, overwrite = TRUE)
+ppiKGZ <- kgzDF
+devtools::use_data(ppiKGZ, overwrite = TRUE)
 
 
 
@@ -1218,8 +1290,8 @@ names(mdgDF) <- c("score", "nlFood", "ppp100", "nl150", "nl200", "half100",
                   "ppp125", "ppp200", "ppp250", "ppp500")
 mdgDF$score <- 0:100
 row.names(mdgDF) <- 0:100
-ppiMatrixMDG <- mdgDF
-devtools::use_data(ppiMatrixMDG, overwrite = TRUE)
+ppiMDG <- mdgDF
+devtools::use_data(ppiMDG, overwrite = TRUE)
 
 
 ################################################################################
@@ -1240,8 +1312,8 @@ names(mwiDF) <- c("score", "nlFood", "nl100", "nl150", "nl200", "half100", "ppp1
 mwiDF$score <- 0:100
 row.names(mwiDF) <- 0:100
 
-ppiMatrixMWI_pbm <- mwiDF
-devtools::use_data(ppiMatrixMWI_pbm, overwrite = TRUE)
+ppiMWI_pbm <- mwiDF
+devtools::use_data(ppiMWI_pbm, overwrite = TRUE)
 
 #
 # Government definition
@@ -1256,8 +1328,8 @@ names(mwiDF) <- c("score", "nlFood", "nl100", "nl150", "nl200", "half100", "ppp1
 mwiDF$score <- 0:100
 row.names(mwiDF) <- 0:100
 
-ppiMatrixMWI_gov <- mwiDF
-devtools::use_data(ppiMatrixMWI_gov, overwrite = TRUE)
+ppiMWI_gov <- mwiDF
+devtools::use_data(ppiMWI_gov, overwrite = TRUE)
 
 #
 # Old definition
@@ -1267,8 +1339,8 @@ names(mwiDF) <- c("score", "ppp125", "ppp250")
 mwiDF$score <- 0:100
 row.names(mwiDF) <- 0:100
 
-ppiMatrixMWI <- mwiDF
-devtools::use_data(ppiMatrixMWI, overwrite = TRUE)
+ppiMWI <- mwiDF
+devtools::use_data(ppiMWI, overwrite = TRUE)
 
 
 ################################################################################
@@ -1300,8 +1372,8 @@ extreme$score <- 0:100
 mliDF <- data.frame(nl100, nlFood[ , 2], extreme[ , 2], ppp125[ , 2], ppp250[ , 2])
 names(mliDF) <- c("score", "nl100", "nlFood", "extreme", "ppp125", "ppp250")
 
-ppiMatrixMLI <- mliDF
-devtools::use_data(ppiMatrixMLI, overwrite = TRUE)
+ppiMLI <- mliDF
+devtools::use_data(ppiMLI, overwrite = TRUE)
 
 
 ################################################################################
@@ -1405,9 +1477,9 @@ y3 <- data.frame(rbind(y, y[100, ]))
 
 names(y3) <- c("percentile20", "percentile40", "percentile50", "percentile60", "percentile80")
 
-ppiMatrixMEX_a <- data.frame("score" = 0:100, y1, y2, y3)
-row.names(ppiMatrixMEX)
-devtools::use_data(ppiMatrixMEX_a, overwrite = TRUE)
+ppiMEX_a <- data.frame("score" = 0:100, y1, y2, y3)
+row.names(ppiMEX)
+devtools::use_data(ppiMEX_a, overwrite = TRUE)
 
 #
 #
@@ -1466,9 +1538,9 @@ y5 <- data.frame(rbind(y, y[100, ]))
 
 names(y5) <- c("ppp125", "ppp250")
 
-ppiMatrixMEX <- data.frame("score" = 0:100, y4, y5)
-row.names(ppiMatrixMEX) <- 0:100
-devtools::use_data(ppiMatrixMEX, overwrite = TRUE)
+ppiMEX <- data.frame("score" = 0:100, y4, y5)
+row.names(ppiMEX) <- 0:100
+devtools::use_data(ppiMEX, overwrite = TRUE)
 
 
 
@@ -1601,9 +1673,9 @@ y4 <- data.frame(rbind(y, y[100, ]))
 
 names(y4) <- c("percentile20", "percentile40", "percentile50", "percentile60", "percentile80")
 
-ppiMatrixMNG <- data.frame("score" = 0:100, y1, y2, y3, y4)
-row.names(ppiMatrixMNG) <- 0:100
-devtools::use_data(ppiMatrixMNG, overwrite = TRUE)
+ppiMNG <- data.frame("score" = 0:100, y1, y2, y3, y4)
+row.names(ppiMNG) <- 0:100
+devtools::use_data(ppiMNG, overwrite = TRUE)
 
 
 ################################################################################
@@ -1620,8 +1692,8 @@ names(marDF) <- c("score", "nl100", "nl150", "nl200", "extreme", "ppp125",
 marDF$score <- 0:100
 row.names(marDF) <- 0:100
 
-ppiMatrixMAR <- marDF
-devtools::use_data(ppiMatrixMAR, overwrite = TRUE)
+ppiMAR <- marDF
+devtools::use_data(ppiMAR, overwrite = TRUE)
 
 
 ################################################################################
@@ -1636,8 +1708,8 @@ names(mmrDF) <- c("score", "nlFood", "nl100", "nl150", "nl200", "extreme",
 mmrDF$score <- 0:100
 row.names(mmrDF) <- 0:100
 
-ppiMatrixMMR <- mmrDF
-devtools::use_data(ppiMatrixMMR, overwrite = TRUE)
+ppiMMR <- mmrDF
+devtools::use_data(ppiMMR, overwrite = TRUE)
 
 
 ################################################################################
@@ -1654,8 +1726,8 @@ mozDF <- get_ppi_table(pdf = "data-raw/pdf/mozambique.pdf", n = 3, limits = 5:24
 names(mozDF) <- c("score", "ppp100", "nl150", "nl200", "extreme", "ppp125", "ppp250")
 mozDF$score <- 0:100
 row.names(mozDF) <- 0:100
-ppiMatrixMOZ <- mozDF
-devtools::use_data(ppiMatrixMOZ, overwrite = TRUE)
+ppiMOZ <- mozDF
+devtools::use_data(ppiMOZ, overwrite = TRUE)
 
 
 ################################################################################
@@ -1670,8 +1742,8 @@ names(namDF) <- c("score", "nl100", "nu100", "nu150", "nu200", "extreme",
 namDF$score <- 0:100
 row.names(namDF) <- 0:100
 
-ppiMatrixNAM <- namDF
-devtools::use_data(ppiMatrixNAM, overwrite = TRUE)
+ppiNAM <- namDF
+devtools::use_data(ppiNAM, overwrite = TRUE)
 
 
 ################################################################################
@@ -1690,8 +1762,8 @@ names(nplDF) <- c("score", "nlFood", "nl100", "nl150", "nl200", "extreme",
 nplDF$score <- 0:100
 row.names(nplDF) <- 0:100
 
-ppiMatrixNPL_a <- nplDF
-devtools::use_data(ppiMatrixNPL_a, overwrite = TRUE)
+ppiNPL_a <- nplDF
+devtools::use_data(ppiNPL_a, overwrite = TRUE)
 
 #
 # Legacy
@@ -1701,8 +1773,8 @@ names(nplDF3) <- c("score", "nl100", "ppp125", "ppp250")
 nplDF3$score <- 0:100
 row.names(nplDF3) <- 0:100
 
-ppiMatrixNPL <- nplDF3
-devtools::use_data(ppiMatrixNPL, overwrite = TRUE)
+ppiNPL <- nplDF3
+devtools::use_data(ppiNPL, overwrite = TRUE)
 
 
 ################################################################################
@@ -1717,8 +1789,8 @@ names(nicDF) <- c("score", "nlFood", "nl100", "nl150", "nl200", "extreme",
 nicDF$score <- 0:100
 row.names(nicDF) <- 0:100
 
-ppiMatrixNIC <- nicDF
-devtools::use_data(ppiMatrixNIC, overwrite = TRUE)
+ppiNIC <- nicDF
+devtools::use_data(ppiNIC, overwrite = TRUE)
 
 
 ################################################################################
@@ -1734,8 +1806,8 @@ names(nerDF) <- c("score", "nlFood", "nl100", "nl150", "nl200", "extreme",
 nerDF$score <- 0:100
 row.names(nerDF) <- 0:100
 
-ppiMatrixNER <- nerDF
-devtools::use_data(ppiMatrixNER, overwrite = TRUE)
+ppiNER <- nerDF
+devtools::use_data(ppiNER, overwrite = TRUE)
 
 
 ################################################################################
@@ -1837,9 +1909,9 @@ y3 <- data.frame(rbind(y, y[100, ]))
 
 names(y3) <- c("ppp190", "ppp310")
 
-ppiMatrixNGA <- data.frame("score" = 0:100, y1, y2, y3)
-row.names(ppiMatrixNGA) <- 0:100
-devtools::use_data(ppiMatrixNGA, overwrite = TRUE)
+ppiNGA <- data.frame("score" = 0:100, y1, y2, y3)
+row.names(ppiNGA) <- 0:100
+devtools::use_data(ppiNGA, overwrite = TRUE)
 
 
 
@@ -1855,8 +1927,8 @@ names(pseDF) <- c("score", "deep", "nl100", "nl150", "nl200", "median", "ppp125"
 pseDF$score <- 0:100
 row.names(pseDF) <- 0:100
 
-ppiMatrixPSE <- pseDF
-devtools::use_data(ppiMatrixPSE, overwrite = TRUE)
+ppiPSE <- pseDF
+devtools::use_data(ppiPSE, overwrite = TRUE)
 
 
 ################################################################################
@@ -1874,8 +1946,8 @@ names(pryDF) <- c("score", "nlFood", "nl100", "nl150", "nl200", "extreme",
 pryDF$score <- 0:100
 row.names(pryDF) <- 0:100
 
-ppiMatrixPRY <- pryDF
-devtools::use_data(ppiMatrixPRY, overwrite = TRUE)
+ppiPRY <- pryDF
+devtools::use_data(ppiPRY, overwrite = TRUE)
 
 
 ################################################################################
@@ -1892,8 +1964,8 @@ names(perDF) <- c("score", "nlFood", "nl100", "nl150", "nl200", "extreme",
 perDF$score <- 0:100
 row.names(perDF) <- 0:100
 
-ppiMatrixPER <- perDF
-devtools::use_data(ppiMatrixPER, overwrite = TRUE)
+ppiPER <- perDF
+devtools::use_data(ppiPER, overwrite = TRUE)
 
 
 ################################################################################
@@ -1907,8 +1979,8 @@ names(phlDF) <- c("score", "nl100", "ppp125", "ppp250", "ppp500", "ppp432")
 phlDF$score <- 0:100
 row.names(phlDF) <- 0:100
 
-ppiMatrixPHL <- phlDF
-devtools::use_data(ppiMatrixPHL)
+ppiPHL <- phlDF
+devtools::use_data(ppiPHL)
 
 
 ################################################################################
@@ -1926,8 +1998,8 @@ names(phlDF) <- c("score", "nl100", "nl150", "nl200", "median", "ppp125", "ppp20
 phlDF$score <- 0:100
 row.names(phlDF) <- 0:100
 
-ppiMatrixPHL_a <- phlDF
-devtools::use_data(ppiMatrixPHL_a, overwrite = TRUE)
+ppiPHL_a <- phlDF
+devtools::use_data(ppiPHL_a, overwrite = TRUE)
 
 
 ################################################################################
@@ -1952,8 +2024,8 @@ names(rouDF) <- c("score", "nl100", "nl150", "nl200", "extreme", "ppp250",
 rouDF$score <- 0:100
 row.names(rouDF) <- 0:100
 
-ppiMatrixROU <- rouDF
-devtools::use_data(ppiMatrixROU, overwrite = TRUE)
+ppiROU <- rouDF
+devtools::use_data(ppiROU, overwrite = TRUE)
 
 
 ################################################################################
@@ -1968,8 +2040,8 @@ names(rusDF) <- c("score", "nl100", "extreme", "ppp625")
 rusDF$score <- 0:100
 row.names(rusDF) <- 0:100
 
-ppiMatrixRUS <- rusDF
-devtools::use_data(ppiMatrixRUS, overwrite = TRUE)
+ppiRUS <- rusDF
+devtools::use_data(ppiRUS, overwrite = TRUE)
 
 
 ################################################################################
@@ -1986,8 +2058,8 @@ names(rwaDF) <- c("score", "nlFood", "nl100", "nl150", "nl200", "half100",
 rwaDF$score <- 0:100
 row.names(rwaDF) <- 0:100
 
-ppiMatrixRWA <- rwaDF
-devtools::use_data(ppiMatrixRWA, overwrite = TRUE)
+ppiRWA <- rwaDF
+devtools::use_data(ppiRWA, overwrite = TRUE)
 
 
 ################################################################################
@@ -2015,8 +2087,8 @@ names(senDF) <- c("score", "nl100", "nlFood", "extreme", "nl75", "nl125", "nl150
 senDF$score <- 0:100
 row.names(senDF) <- 0:100
 
-ppiMatrixSEN <- senDF
-devtools::use_data(ppiMatrixSEN, overwrite = TRUE)
+ppiSEN <- senDF
+devtools::use_data(ppiSEN, overwrite = TRUE)
 
 
 ################################################################################
@@ -2041,8 +2113,8 @@ names(sleDF) <- c("score", "nl100", "nlFood", "nl75", "nl150", "extreme",
 sleDF$score <- 0:100
 row.names(sleDF) <- 0:100
 
-ppiMatrixSLE <- sleDF
-devtools::use_data(ppiMatrixSLE, overwrite = TRUE)
+ppiSLE <- sleDF
+devtools::use_data(ppiSLE, overwrite = TRUE)
 
 
 ################################################################################
@@ -2144,9 +2216,9 @@ y3 <- data.frame(rbind(y, y[100, ]))
 
 names(y3) <- c("percentile20", "percentile40", "percentile50", "percentile60", "percentile80")
 
-ppiMatrixLKA <- data.frame("score" = 0:100, y1, y2, y3)
-row.names(ppiMatrixLKA) <- 0:100
-devtools::use_data(ppiMatrixLKA, overwrite = TRUE)
+ppiLKA <- data.frame("score" = 0:100, y1, y2, y3)
+row.names(ppiLKA) <- 0:100
+devtools::use_data(ppiLKA, overwrite = TRUE)
 
 
 ################################################################################
@@ -2171,8 +2243,8 @@ names(zafDF) <- c("score", "nl100", "nlFood", "extreme", "nu100", "ppp125", "ppp
 zafDF$score <- 0:100
 row.names(zafDF) <- 0:100
 
-ppiMatrixZAF <- zafDF
-devtools::use_data(ppiMatrixZAF, overwrite = TRUE)
+ppiZAF <- zafDF
+devtools::use_data(ppiZAF, overwrite = TRUE)
 
 
 ################################################################################
@@ -2274,9 +2346,9 @@ y3 <- data.frame(rbind(y, y[100, ]))
 
 names(y3) <- c("ppp190", "ppp310")
 
-ppiMatrixLKA <- data.frame("score" = 0:100, y1, y2, y3)
-row.names(ppiMatrixLKA) <- 0:100
-devtools::use_data(ppiMatrixLKA, overwrite = TRUE)
+ppiLKA <- data.frame("score" = 0:100, y1, y2, y3)
+row.names(ppiLKA) <- 0:100
+devtools::use_data(ppiLKA, overwrite = TRUE)
 
 
 ################################################################################
@@ -2321,8 +2393,8 @@ names(syrDF) <- c("score", "nu100", "nl100", "nu150", "nu200", "ppp250", "ppp375
 syrDF$score <- 0:100
 row.names(syrDF) <- 0:100
 
-ppiMatrixSYR <- syrDF
-devtools::use_data(ppiMatrixSYR, overwrite = TRUE)
+ppiSYR <- syrDF
+devtools::use_data(ppiSYR, overwrite = TRUE)
 
 
 ################################################################################
@@ -2454,9 +2526,9 @@ y4 <- data.frame(rbind(y, y[100, ]))
 
 names(y4) <- c("half100", "percentile20", "percentile40", "percentile50", "percentile60", "percentile80")
 
-ppiMatrixTZA <- data.frame("score" = 0:100, y1, y2, y3, y4)
-row.names(ppiMatrixTZA) <- 0:100
-devtools::use_data(ppiMatrixTZA, overwrite = TRUE)
+ppiTZA <- data.frame("score" = 0:100, y1, y2, y3, y4)
+row.names(ppiTZA) <- 0:100
+devtools::use_data(ppiTZA, overwrite = TRUE)
 
 
 ################################################################################
@@ -2473,8 +2545,8 @@ names(tjkDF) <- c("score", "nlFood", "nl100", "nl150", "nl200", "median",
 tjkDF$score <- 0:100
 row.names(tjkDF) <- 0:100
 
-ppiMatrixTJK <- tjkDF
-devtools::use_data(ppiMatrixTJK, overwrite = TRUE)
+ppiTJK <- tjkDF
+devtools::use_data(ppiTJK, overwrite = TRUE)
 
 
 ################################################################################
@@ -2488,8 +2560,8 @@ names(tlsDF) <- c("score", "nl100", "nu100", "nu150", "nu200", "extreme", "ppp12
 tlsDF$score <- 0:100
 row.names(tlsDF) <- 0:100
 
-ppiMatrixTLS <- tlsDF
-devtools::use_data(ppiMatrixTLS, overwrite = TRUE)
+ppiTLS <- tlsDF
+devtools::use_data(ppiTLS, overwrite = TRUE)
 
 
 ################################################################################
@@ -2591,9 +2663,9 @@ y3 <- data.frame(rbind(y, y[100, ]))
 
 names(y3) <- c("ppp190", "ppp310")
 
-ppiMatrixUGA <- data.frame("score" = 0:100, y1, y2, y3)
-row.names(ppiMatrixUGA) <- 0:100
-devtools::use_data(ppiMatrixUGA, overwrite = TRUE)
+ppiUGA <- data.frame("score" = 0:100, y1, y2, y3)
+row.names(ppiUGA) <- 0:100
+devtools::use_data(ppiUGA, overwrite = TRUE)
 
 
 ################################################################################
@@ -2617,8 +2689,8 @@ names(vnmDF) <- c("score", "nl100", "nlFood", "extreme", "ppp125", "ppp175",
 vnmDF$score <- 0:100
 row.names(vnmDF) <- 0:100
 
-ppiMatrixVNM <- vnmDF
-devtools::use_data(ppiMatrixVNM, overwrite = TRUE)
+ppiVNM <- vnmDF
+devtools::use_data(ppiVNM, overwrite = TRUE)
 
 
 ################################################################################
@@ -2643,8 +2715,8 @@ names(yemDF) <- c("score", "nl100", "nlFood", "extreme", "ppp125", "ppp250",
 yemDF$score <- 0:100
 row.names(yemDF) <- 0:100
 
-ppiMatrixYEM <- yemDF
-devtools::use_data(ppiMatrixYEM, overwrite = TRUE)
+ppiYEM <- yemDF
+devtools::use_data(ppiYEM, overwrite = TRUE)
 
 
 ################################################################################
@@ -2766,6 +2838,6 @@ zmbDF <- merge(zmbDF, percentile40)
 zmbDF <- merge(zmbDF, percentile60)
 zmbDF <- merge(zmbDF, percentile80)
 
-ppiMatrixZMB <- zmbDF
+ppiZMB <- zmbDF
 
-devtools::use_data(ppiMatrixZMB, overwrite = TRUE)
+devtools::use_data(ppiZMB, overwrite = TRUE)
