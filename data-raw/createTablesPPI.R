@@ -672,8 +672,8 @@ names(fjiDF) <- c("score", "nl100", "nl150", "nl200", "median", "ppp125", "ppp20
 fjiDF$score <- 0:100
 row.names(fjiDF) <- 0:100
 
-ppiFJI <- fjiDF
-devtools::use_data(ppiFJI, overwrite = TRUE)
+ppiFJI2014 <- fjiDF
+devtools::use_data(ppiFJI2014, overwrite = TRUE)
 
 
 ################################################################################
@@ -684,37 +684,243 @@ devtools::use_data(ppiFJI, overwrite = TRUE)
 #
 # New-definition poverty lines and 2005 PPP and 2011 PPP (deflated with Ghana's CPI)
 #
-ghaDF1 <- get_ppi_table(pdf = "data-raw/pdf/ghana.pdf", n = 3, limits = 9:28)
-ghaDF2 <- get_ppi_table(pdf = "data-raw/pdf/ghana.pdf", n = 4, limits = 7:26)
-ghaDF3 <- get_ppi_table(pdf = "data-raw/pdf/ghana.pdf", n = 5, limits = 7:26)
-ghaDF <- data.frame(ghaDF1, ghaDF2[ , 2:6], ghaDF3[ , 2:3])
-names(ghaDF) <- c("score", "nlFood", "nl100", "nl150", "nl200", "half100", "ppp125",
-                  "ppp200", "ppp250", "ppp375", "ppp500", "ppp190", "ppp310")
-ghaDF$score <- 0:100
+ghaDF1 <- str_split(pdf_text("data-raw/pdf/ghana.pdf")[3], "\n")[[1]][9:28]
+ghaDF2 <- str_split(pdf_text("data-raw/pdf/ghana.pdf")[4], "\n")[[1]][7:26]
+ghaDF3 <- str_split(pdf_text("data-raw/pdf/ghana.pdf")[5], "\n")[[1]][7:26]
+
+get_vars <- function(x, pattern, n = 5) {
+
+  x <- str_split(x, pattern = pattern)[[1]]
+  x <- x[x != ""]
+
+}
+
+temp <- sapply(ghaDF1, FUN = get_vars, pattern = " ")
+
+y <- NULL
+
+for(i in 1:length(temp)) {
+
+  x <- temp[[i]]
+  x <- as.numeric(x)
+  x <- tail(x, 5)
+
+  z <- NULL
+
+  for(j in 1:5){
+
+    z <- data.frame(rbind(z, x))
+
+  }
+
+  y <- data.frame(rbind(y, z))
+
+}
+
+y1 <- data.frame(rbind(y, y[100, ]))
+
+names(y1) <- c("nlFood", "nl100", "nl150", "nl200", "half100")
+#
+#
+#
+temp <- sapply(ghaDF2, FUN = get_vars, pattern = " ")
+
+y <- NULL
+
+for(i in 1:length(temp)) {
+
+  x <- temp[[i]]
+  x <- as.numeric(x)
+  x <- tail(x, 5)
+
+  z <- NULL
+
+  for(j in 1:5){
+
+    z <- data.frame(rbind(z, x))
+
+  }
+
+  y <- data.frame(rbind(y, z))
+
+}
+
+y2 <- data.frame(rbind(y, y[100, ]))
+
+names(y2) <- c("ppp125", "ppp200", "ppp250", "ppp375", "ppp500")
+#
+#
+#
+temp <- sapply(ghaDF3, FUN = get_vars, pattern = " ")
+
+y <- NULL
+
+for(i in 1:length(temp)) {
+
+  x <- temp[[i]]
+  x <- as.numeric(x)
+  x <- tail(x, 2)
+
+  z <- NULL
+
+  for(j in 1:5){
+
+    z <- data.frame(rbind(z, x))
+
+  }
+
+  y <- data.frame(rbind(y, z))
+
+}
+
+y3 <- data.frame(rbind(y, y[100, ]))
+
+names(y3) <- c("ppp190", "ppp310")
+
+ghaDF <- data.frame("score" = 0:100, y1, y2, y3)
 row.names(ghaDF) <- 0:100
-ppiGHA_a <- ghaDF
-devtools::use_data(ppiGHA_a, overwrite = TRUE)
+
+ppiGHA2015_a <- ghaDF
+devtools::use_data(ppiGHA2015_a, overwrite = TRUE)
 #
 # New definition 2005 PPP and 2011 poverty lines (deflated with the change in
 # 100% of national poverty line)
 #
-ghaDF1 <- get_ppi_table(pdf = "data-raw/pdf/ghana.pdf", n = 6, limits = 7:26)
-ghaDF2 <- get_ppi_table(pdf = "data-raw/pdf/ghana.pdf", n = 7, limits = 7:26)
-ghaDF <- data.frame(ghaDF1, ghaDF2[ , 2:3])
-names(ghaDF) <- c("score", "ppp125", "ppp200", "ppp250", "ppp375", "ppp500", "ppp190", "ppp310")
-ghaDF$score <- 0:100
+ghaDF1 <- str_split(pdf_text("data-raw/pdf/ghana.pdf")[6], "\n")[[1]][7:26]
+ghaDF2 <- str_split(pdf_text("data-raw/pdf/ghana.pdf")[7], "\n")[[1]][7:26]
+#
+#
+#
+temp <- sapply(ghaDF1, FUN = get_vars, pattern = " ")
+
+y <- NULL
+
+for(i in 1:length(temp)) {
+
+  x <- temp[[i]]
+  x <- as.numeric(x)
+  x <- tail(x, 5)
+
+  z <- NULL
+
+  for(j in 1:5){
+
+    z <- data.frame(rbind(z, x))
+
+  }
+
+  y <- data.frame(rbind(y, z))
+
+}
+
+y1 <- data.frame(rbind(y, y[100, ]))
+
+names(y1) <- c("ppp125", "ppp200", "ppp250", "ppp375", "ppp500")
+#
+#
+#
+temp <- sapply(ghaDF2, FUN = get_vars, pattern = " ")
+
+y <- NULL
+
+for(i in 1:length(temp)) {
+
+  x <- temp[[i]]
+  x <- as.numeric(x)
+  x <- tail(x, 2)
+
+  z <- NULL
+
+  for(j in 1:5){
+
+    z <- data.frame(rbind(z, x))
+
+  }
+
+  y <- data.frame(rbind(y, z))
+
+}
+
+y2 <- data.frame(rbind(y, y[100, ]))
+
+names(y2) <- c("ppp190", "ppp310")
+
+ghaDF <- data.frame("score" = 0:100, y1, y2)
 row.names(ghaDF) <- 0:100
-ppiGHA_b <- ghaDF
-devtools::use_data(ppiGHA_b, overwrite = TRUE)
+
+ppiGHA2015_b <- ghaDF
+devtools::use_data(ppiGHA2015_b, overwrite = TRUE)
+#
+# Legacy definitions
+#
+ghaDF <- str_split(pdf_text("data-raw/pdf/ghana.pdf")[8], "\n")[[1]][9:28]
+#
+#
+#
+temp <- sapply(ghaDF, FUN = get_vars, pattern = " ")
+
+y <- NULL
+
+for(i in 1:length(temp)) {
+
+  x <- temp[[i]]
+  x <- as.numeric(x)
+  x <- tail(x, 7)
+
+  z <- NULL
+
+  for(j in 1:5){
+
+    z <- data.frame(rbind(z, x))
+
+  }
+
+  y <- data.frame(rbind(y, z))
+
+}
+
+y1 <- data.frame(rbind(y, y[100, ]))
+
+names(y1) <- c("nlFood", "nl100", "nl150", "nl200", "ppp125", "ppp250", "ppp375")
+
+ghaDF <- data.frame("score" = 0:100, y1)
+row.names(ghaDF) <- 0:100
+
+ppiGHA2015_b <- ghaDF
+devtools::use_data(ppiGHA2015_b, overwrite = TRUE)
+
+
+#ghaDF1 <- get_ppi_table(pdf = "data-raw/pdf/ghana.pdf", n = 3, limits = 9:28)
+#ghaDF2 <- get_ppi_table(pdf = "data-raw/pdf/ghana.pdf", n = 4, limits = 7:26)
+#ghaDF3 <- get_ppi_table(pdf = "data-raw/pdf/ghana.pdf", n = 5, limits = 7:26)
+#ghaDF <- data.frame(ghaDF1, ghaDF2[ , 2:6], ghaDF3[ , 2:3])
+#names(ghaDF) <- c("score", "nlFood", "nl100", "nl150", "nl200", "half100", "ppp125",
+#                  "ppp200", "ppp250", "ppp375", "ppp500", "ppp190", "ppp310")
+#ghaDF$score <- 0:100
+#row.names(ghaDF) <- 0:100
+#ppiGHA2015_a <- ghaDF
+#devtools::use_data(ppiGHA2015_a, overwrite = TRUE)
+#
+# New definition 2005 PPP and 2011 poverty lines (deflated with the change in
+# 100% of national poverty line)
+#
+#ghaDF1 <- get_ppi_table(pdf = "data-raw/pdf/ghana.pdf", n = 6, limits = 7:26)
+#ghaDF2 <- get_ppi_table(pdf = "data-raw/pdf/ghana.pdf", n = 7, limits = 7:26)
+#ghaDF <- data.frame(ghaDF1, ghaDF2[ , 2:3])
+#names(ghaDF) <- c("score", "ppp125", "ppp200", "ppp250", "ppp375", "ppp500", "ppp190", "ppp310")
+#ghaDF$score <- 0:100
+#row.names(ghaDF) <- 0:100
+#ppiGHA2015_b <- ghaDF
+#devtools::use_data(ppiGHA2015_b, overwrite = TRUE)
 #
 # Legacy definition poverty lines
 #
-ghaDF <- get_ppi_table(pdf = "data-raw/pdf/ghana.pdf", n = 8, limits = 9:28)
-names(ghaDF) <- c("score", "nlFood", "nl100", "nl150", "nl200", "ppp125", "ppp250", "ppp375")
-ghaDF$score <- 0:100
-row.names(ghaDF) <- 0:100
-ppiGHA <- ghaDF
-devtools::use_data(ppiGHA, overwrite = TRUE)
+#ghaDF <- get_ppi_table(pdf = "data-raw/pdf/ghana.pdf", n = 8, limits = 9:28)
+#names(ghaDF) <- c("score", "nlFood", "nl100", "nl150", "nl200", "ppp125", "ppp250", "ppp375")
+#ghaDF$score <- 0:100
+#row.names(ghaDF) <- 0:100
+#ppiGHA2015 <- ghaDF
+#devtools::use_data(ppiGHA2015, overwrite = TRUE)
 
 
 ################################################################################
@@ -821,8 +1027,8 @@ names(y3) <- c("percentile20", "percentile40", "percentile50", "percentile60", "
 gtmDF <- data.frame("score" = 0:100, y1, y2, y3)
 row.names(gtmDF) <- 0:100
 
-ppiGTM <- gtmDF
-devtools::use_data(ppiGTM, overwrite = TRUE)
+ppiGTM2016 <- gtmDF
+devtools::use_data(ppiGTM2016, overwrite = TRUE)
 
 
 
@@ -900,8 +1106,8 @@ names(y2) <- c("ppp125", "ppp200", "ppp250", "ppp500")
 htiDF <- data.frame("score" = 0:100, y1, y2)
 row.names(htiDF) <- 0:100
 
-ppiHTI <- htiDF
-devtools::use_data(ppiHTI, overwrite = TRUE)
+ppiHTI2016 <- htiDF
+devtools::use_data(ppiHTI2016, overwrite = TRUE)
 
 
 ################################################################################
@@ -919,8 +1125,8 @@ hndDF2 <- hndDF2[ , c(1:2, 4, 6)]
 hndDF <- data.frame(hndDF1, hndDF2[ , 2:4])
 names(hndDF) <- c("score", "nl100", "nlFood", "extreme", "ppp125", "ppp250", "ppp375")
 
-ppiHND <- hndDF
-devtools::use_data(ppiHND, overwrite = TRUE)
+ppiHND2010 <- hndDF
+devtools::use_data(ppiHND2010, overwrite = TRUE)
 
 
 ################################################################################
@@ -1086,23 +1292,21 @@ y5 <- data.frame(rbind(y, y[100, ]))
 names(y5) <- c("percentile20", "percentile40", "percentile50", "percentile60", "percentile80")
 
 
-ppiIND_r59 <- data.frame("score" = 0:100, y1[, 1:3])
-row.names(ppiIND_r59) <- 0:100
-devtools::use_data(ppiIND_r59, overwrite = TRUE)
+ppiIND2016_r59 <- data.frame("score" = 0:100, y1[, 1:3])
+row.names(ppiIND2016_r59) <- 0:100
+devtools::use_data(ppiIND2016_r59, overwrite = TRUE)
 
-ppiIND_r62 <- data.frame("score" = 0:100, y1[, 4:9])
-row.names(ppiIND_r62) <- 0:100
-devtools::use_data(ppiIND_r62, overwrite = TRUE)
+ppiIND2016_r62 <- data.frame("score" = 0:100, y1[, 4:9])
+row.names(ppiIND2016_r62) <- 0:100
+devtools::use_data(ppiIND2016_r62, overwrite = TRUE)
 
-ppiIND_r66 <- data.frame("score" = 0:100, "tendulkar" = y1[, 10], y2)
-row.names(ppiIND_r66) <- 0:100
-devtools::use_data(ppiIND_r66, overwrite = TRUE)
+ppiIND2016_r66 <- data.frame("score" = 0:100, "tendulkar" = y1[, 10], y2)
+row.names(ppiIND2016_r66) <- 0:100
+devtools::use_data(ppiIND2016_r66, overwrite = TRUE)
 
-ppiIND_r68 <- data.frame("score" = 0:100, y3, y4, y5)
-row.names(ppiIND_r68) <- 0:100
-devtools::use_data(ppiIND_r68, overwrite = TRUE)
-
-
+ppiIND2016_r68 <- data.frame("score" = 0:100, y3, y4, y5)
+row.names(ppiIND2016_r68) <- 0:100
+devtools::use_data(ppiIND2016_r68, overwrite = TRUE)
 
 
 ################################################################################
@@ -1123,8 +1327,8 @@ names(idnDF) <- c("score", "nl100", "nl150", "nl200", "extreme", "ppp125", "ppp2
 idnDF$score <- 0:100
 row.names(idnDF) <- 0:100
 
-ppiIDN_a <- idnDF
-devtools::use_data(ppiIDN_a, overwrite = TRUE)
+ppiIDN2012_a <- idnDF
+devtools::use_data(ppiIDN2012_a, overwrite = TRUE)
 
 
 ################################################################################
@@ -1138,8 +1342,8 @@ names(idnDF) <- c("score", "nl100", "ppp125", "ppp250")
 idnDF$score <- 0:100
 row.names(idnDF) <- 0:100
 
-ppiIDN <- idnDF
-devtools::use_data(ppiIDN, overwrite = TRUE)
+ppiIDN2012 <- idnDF
+devtools::use_data(ppiIDN2012, overwrite = TRUE)
 
 
 ################################################################################
@@ -1154,8 +1358,8 @@ names(civDF) <- c("score", "nl100", "nl150", "nl200", "extreme", "ppp125", "ppp2
 civDF$score <- 0:100
 row.names(civDF) <- 0:100
 
-ppiCIV <- civDF
-devtools::use_data(ppiCIV, overwrite = TRUE)
+ppiCIV2013 <- civDF
+devtools::use_data(ppiCIV2013, overwrite = TRUE)
 
 
 ################################################################################
@@ -1206,9 +1410,8 @@ jorDF <- data.frame(nl100, nl150[ , 2], nl200[ , 2], nl250[ , 2], extreme[ , 2],
 names(jorDF) <- c("score", "nl100", "nl150", "nl200", "nl250", "extreme",
                   "ppp125", "ppp250", "ppp375", "ppp500")
 
-ppiJOR <- jorDF
-devtools::use_data(ppiJOR, overwrite = TRUE)
-
+ppiJOR2010 <- jorDF
+devtools::use_data(ppiJOR2010, overwrite = TRUE)
 
 
 ################################################################################
@@ -1217,16 +1420,115 @@ devtools::use_data(ppiJOR, overwrite = TRUE)
 #
 ################################################################################
 
-kenDF1 <- get_ppi_table(pdf = "data-raw/pdf/kenya.pdf", n = 2, limits = 5:24)
-kenDF2 <- get_ppi_table(pdf = "data-raw/pdf/kenya.pdf", n = 3, limits = 7:26)
-kenDF3 <- get_ppi_table(pdf = "data-raw/pdf/kenya.pdf", n = 4, limits = 7:26)
-kenDF <- data.frame(kenDF1, kenDF2[ , 2:5], kenDF3[ , 2:3])
-names(kenDF) <- c("score", "nlFood", "nl100", "nl150", "extreme", "ppp125",
-                  "ppp250", "ppp400", "ppp844", "ppp190", "ppp310")
-kenDF$score <- 0:100
+kenDF1 <- str_split(pdf_text("data-raw/pdf/kenya.pdf")[2], "\n")[[1]][5:24]
+kenDF2 <- str_split(pdf_text("data-raw/pdf/kenya.pdf")[3], "\n")[[1]][7:26]
+kenDF3 <- str_split(pdf_text("data-raw/pdf/kenya.pdf")[4], "\n")[[1]][7:26]
+
+get_vars <- function(x, pattern, n = 5) {
+
+  x <- str_split(x, pattern = pattern)[[1]]
+  x <- x[x != ""]
+
+}
+
+temp <- sapply(kenDF1, FUN = get_vars, pattern = " ")
+
+y <- NULL
+
+for(i in 1:length(temp)) {
+
+  x <- temp[[i]]
+  x <- as.numeric(x)
+  x <- tail(x, 4)
+
+  z <- NULL
+
+  for(j in 1:5){
+
+    z <- data.frame(rbind(z, x))
+
+  }
+
+  y <- data.frame(rbind(y, z))
+
+}
+
+y1 <- data.frame(rbind(y, y[100, ]))
+
+names(y1) <- c("nlFood", "nl100", "nl150", "extreme")
+#
+#
+#
+temp <- sapply(kenDF2, FUN = get_vars, pattern = " ")
+
+y <- NULL
+
+for(i in 1:length(temp)) {
+
+  x <- temp[[i]]
+  x <- as.numeric(x)
+  x <- tail(x, 4)
+
+  z <- NULL
+
+  for(j in 1:5){
+
+    z <- data.frame(rbind(z, x))
+
+  }
+
+  y <- data.frame(rbind(y, z))
+
+}
+
+y2 <- data.frame(rbind(y, y[100, ]))
+
+names(y2) <- c("ppp125", "ppp250", "ppp400", "ppp844")
+#
+#
+#
+temp <- sapply(kenDF3, FUN = get_vars, pattern = " ")
+
+y <- NULL
+
+for(i in 1:length(temp)) {
+
+  x <- temp[[i]]
+  x <- as.numeric(x)
+  x <- tail(x, 2)
+
+  z <- NULL
+
+  for(j in 1:5){
+
+    z <- data.frame(rbind(z, x))
+
+  }
+
+  y <- data.frame(rbind(y, z))
+
+}
+
+y3 <- data.frame(rbind(y, y[100, ]))
+
+names(y3) <- c("ppp190", "ppp310")
+
+kenDF <- data.frame("score" = 0:100, y1, y2, y3)
 row.names(kenDF) <- 0:100
-ppiKEN <- kenDF
-devtools::use_data(ppiKEN, overwrite = TRUE)
+
+ppiKEN2011 <- kenDF
+devtools::use_data(ppiKEN2011, overwrite = TRUE)
+
+#kenDF1 <- get_ppi_table(pdf = "data-raw/pdf/kenya.pdf", n = 2, limits = 5:24)
+#kenDF2 <- get_ppi_table(pdf = "data-raw/pdf/kenya.pdf", n = 3, limits = 7:26)
+#kenDF3 <- get_ppi_table(pdf = "data-raw/pdf/kenya.pdf", n = 4, limits = 7:26)
+#kenDF <- data.frame(kenDF1, kenDF2[ , 2:5], kenDF3[ , 2:3])
+#names(kenDF) <- c("score", "nlFood", "nl100", "nl150", "extreme", "ppp125",
+#                  "ppp250", "ppp400", "ppp844", "ppp190", "ppp310")
+#kenDF$score <- 0:100
+#row.names(kenDF) <- 0:100
+#ppiKEN2011 <- kenDF
+#devtools::use_data(ppiKEN2011, overwrite = TRUE)
 
 
 ################################################################################

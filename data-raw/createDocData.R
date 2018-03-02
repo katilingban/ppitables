@@ -415,9 +415,7 @@ varList <- c("PPI score",
              "Below $2.00 per day purchasing power parity (2005)",
              "Below $2.50 per day purchasing power parity (2005)")
 
-create_doc(country = "Fiji", ccode = "FJI", data = ppiFJI, varList = varList)
-
-
+create_doc(country = "Fiji", ccode = "FJI", year = "2014", data = ppiFJI2014, varList = varList)
 
 
 ################################################################################
@@ -435,7 +433,7 @@ varList <- c("PPI score",
              "Below $2.50 per day purchasing power parity (2005)",
              "Below $2.75 per day purchasing power parity (2005)")
 
-create_doc(country = "Ghana", ccode = "GHA", data = ppiGHA, varList = varList)
+create_doc(country = "Ghana", ccode = "GHA", year = "2015", data = ppiGHA2015, varList = varList)
 
 
 ################################################################################
@@ -458,7 +456,7 @@ varList <- c("PPI score",
              "Below $1.90 per day purchasing power parity (2011)",
              "Below $3.10 per day purchasing power parity (2011)")
 
-create_doc(country = "Ghana", ccode = "GHA_a", data = ppiGHA_a, varList = varList)
+create_doc(country = "Ghana", ccode = "GHA", year = "2015", suffix = "_a", data = ppiGHA2015_a, varList = varList)
 
 
 ################################################################################
@@ -476,7 +474,7 @@ varList <- c("PPI score",
              "Below $1.90 per day purchasing power parity (2011)",
              "Below $3.10 per day purchasing power parity (2011)")
 
-create_doc(country = "Ghana", ccode = "GHA_b", data = ppiGHA_b, varList = varList)
+create_doc(country = "Ghana", ccode = "GHA", year = "2015", suffix = "_b", data = ppiGHA2015_b, varList = varList)
 
 
 ################################################################################
@@ -503,7 +501,7 @@ varList <- c("PPI score",
              "Below 60th percentile poverty line",
              "Below 80th percentile poverty line")
 
-create_doc(country = "Guatemala", ccode = "GTM", data = ppiGTM, varList = varList)
+create_doc(country = "Guatemala", ccode = "GTM", year = "2016", data = ppiGTM2016, varList = varList)
 
 
 ################################################################################
@@ -523,7 +521,7 @@ varList <- c("PPI score",
              "Below $2.50 per day purchasing power parity (2005)",
              "Below $5.00 per day purchasing power parity (2005)")
 
-create_doc(country = "Haiti", ccode = "HTI", data = ppiHTI, varList = varList)
+create_doc(country = "Haiti", ccode = "HTI", year = "2016", data = ppiHTI2016, varList = varList)
 
 
 ################################################################################
@@ -540,7 +538,7 @@ varList <- c("PPI score",
              "Below $2.50 per day purchasing power parity (2005)",
              "Below $3.75 per day purchasing power parity (2005)")
 
-create_doc(country = "Honduras", ccode = "HND", data = ppiHND, varList = varList)
+create_doc(country = "Honduras", ccode = "HND", year = "2010", data = ppiHND2010, varList = varList)
 
 
 ################################################################################
@@ -554,7 +552,7 @@ varList <- c("PPI score",
              "Below $1.08 per day purchasing power parity (1993)",
              "Below $2.16 per day purchasing power parity (1993)")
 
-create_doc(country = "India", ccode = "IND_r59", data = ppiIND_r59, varList = varList)
+create_doc(country = "India", ccode = "IND", year = "2016", suffix = "_r59", data = ppiIND2016_r59, varList = varList)
 
 
 ################################################################################
@@ -571,7 +569,7 @@ varList <- c("PPI score",
              "Below $1.62 per day purchasing power parity (1993)",
              "Below $2.16 per day purchasing power parity (1993)")
 
-create_doc(country = "India", ccode = "IND_r62", data = ppiIND_r62, varList = varList)
+create_doc(country = "India", ccode = "IND", year = "2016", suffix = "_r62", data = ppiIND2016_r62, varList = varList)
 
 
 ################################################################################
@@ -590,7 +588,7 @@ varList <- c("PPI score",
              "Below $2.50 per day purchasing power parity (2005)",
              "Below $1.25 per day purchasing power parity (2005)")
 
-create_doc(country = "India", ccode = "IND_r66", data = ppiIND_r66, varList = varList)
+create_doc(country = "India", ccode = "IND", year = "2016", suffix = "_r66", data = ppiIND2016_r66, varList = varList)
 
 
 ################################################################################
@@ -616,7 +614,7 @@ varList <- c("PPI score",
              "Below 60th percentile poverty line",
              "Below 80th percentile poverty line")
 
-create_doc(country = "India", ccode = "IND_r68", data = ppiIND_r68, varList = varList)
+create_doc(country = "India", ccode = "IND", year = "2016", suffix = "_r68", data = ppiIND2016_r68, varList = varList)
 
 
 ################################################################################
@@ -630,7 +628,7 @@ varList <- c("PPI score",
              "Below $1.25 per day purchasing power parity (2005)",
              "Below $2.50 per day purchasing power parity (2005)")
 
-create_doc(country = "Indonesia", ccode = "IDN", data = ppiIDN, varList = varList)
+create_doc(country = "Indonesia", ccode = "IDN", year = "2012", data = ppiIDN2012, varList = varList)
 
 
 ################################################################################
@@ -649,7 +647,26 @@ varList <- c("PPI score",
              "Below $1.90 per day purchasing power parity (2011)",
              "Below $3.10 per day purchasing power parity (2011)")
 
-create_doc(country = "Indonesia", ccode = "IDN_a", data = ppiIDN_a, varList = varList)
+create_doc(country = "Indonesia", ccode = "IDN", year = "2012", suffix = "_a", data = ppiIDN2012_a, varList = varList)
+
+
+################################################################################
+#
+# Ivory Coast
+#
+################################################################################
+
+varList <- c("PPI score",
+             "National poverty line (100)",
+             "National poverty line (150)",
+             "National poverty line (200)",
+             "USAID extreme poverty",
+             "Below $1.25 per day purchasing power parity (2005)",
+             "Below $2.00 per day purchasing power parity (2005)",
+             "Below $2.50 per day purchasing power parity (2011)",
+             "Below $8.00 per day purchasing power parity (2011)")
+
+create_doc(country = "Ivory Coast", ccode = "CIV", year = "2013", data = ppiCIV2013, varList = varList)
 
 
 ################################################################################
@@ -669,7 +686,7 @@ varList <- c("PPI score",
              "Below $3.75 per day purchasing power parity (2005)",
              "Below $5.00 per day purchasing power parity (2005)")
 
-create_doc(country = "Jordan", ccode = "JOR", data = ppiJOR, varList = varList)
+create_doc(country = "Jordan", ccode = "JOR", year = "2010", data = ppiJOR2010, varList = varList)
 
 
 ################################################################################
@@ -690,7 +707,7 @@ varList <- c("PPI score",
              "Below $1.90 per day purchasing power parity (2011)",
              "Below $3.10 per day purchasing power parity (2011)")
 
-create_doc(country = "Kenya", ccode = "KEN", data = ppiKEN, varList = varList)
+create_doc(country = "Kenya", ccode = "KEN", year = "2011", data = ppiKEN2011, varList = varList)
 
 
 ################################################################################
