@@ -8,9 +8,9 @@
 \describe{
 \item{\code{score}}{PPI score}
 \item{\code{tendulkar}}{National tendulkar}
-\item{\code{tendulkar100}}{National tendulkar (100)}
-\item{\code{tendulkar150}}{National tendulkar (150)}
-\item{\code{tendulkar200}}{National tendulkar (200)}
+\item{\code{tendulkar100}}{National tendulkar (100\%)}
+\item{\code{tendulkar150}}{National tendulkar (150\%)}
+\item{\code{tendulkar200}}{National tendulkar (200\%)}
 \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}
 \item{\code{ppp188}}{Below $1.88 per day purchasing power parity (2005)}
 \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
@@ -22,6 +22,7 @@
 ppiIND2016_r66
 }
 \description{
-Poverty Probability Index (PPI) lookup table for India
+Poverty Probability Index (PPI) lookup table for India using r66 poverty
+definitions
 }
 \keyword{datasets}

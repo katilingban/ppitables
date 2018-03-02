@@ -8,9 +8,9 @@
 \describe{
 \item{\code{score}}{PPI score}
 \item{\code{nlFood}}{Food poverty line}
-\item{\code{nl100}}{National poverty line (100)}
-\item{\code{nl150}}{National poverty line (150)}
-\item{\code{nl200}}{National poverty line (200)}
+\item{\code{nl100}}{National poverty line (100\%)}
+\item{\code{nl150}}{National poverty line (150\%)}
+\item{\code{nl200}}{National poverty line (200\%)}
 \item{\code{ppp100}}{Below $1.00 per day purchasing power parity (2005)}
 \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}
 \item{\code{ppp175}}{Below $1.75 per day purchasing power parity (2005)}

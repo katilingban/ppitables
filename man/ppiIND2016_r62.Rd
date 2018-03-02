@@ -21,6 +21,7 @@
 ppiIND2016_r62
 }
 \description{
-Poverty Probability Index (PPI) lookup table for India
+Poverty Probability Index (PPI) lookup table for India using r62 poverty
+definitions
 }
 \keyword{datasets}

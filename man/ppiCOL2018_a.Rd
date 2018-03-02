@@ -8,10 +8,10 @@
 \describe{
 \item{\code{score}}{PPI score}
 \item{\code{nlFood}}{Food poverty line}
-\item{\code{nl100}}{National poverty line (100)}
-\item{\code{nl150}}{National poverty line (150)}
-\item{\code{nl200}}{National poverty line (200)}
-\item{\code{half100}}{Poorest half below 100 national}
+\item{\code{nl100}}{National poverty line (100\%)}
+\item{\code{nl150}}{National poverty line (150\%)}
+\item{\code{nl200}}{National poverty line (200\%)}
+\item{\code{half100}}{Poorest half below 100\% national}
 \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}
 \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
 \item{\code{ppp375}}{Below $3.75 per day purchasing power parity (2005)}
@@ -26,6 +26,7 @@
 ppiCOL2018_a
 }
 \description{
-Poverty Probability Index (PPI) lookup table for Colombia
+Poverty Probability Index (PPI) lookup table for Colombia using new poverty
+definitions
 }
 \keyword{datasets}

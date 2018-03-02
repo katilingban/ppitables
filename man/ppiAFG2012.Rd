@@ -8,8 +8,8 @@
 \describe{
 \item{\code{score}}{PPI score}
 \item{\code{nl}}{National poverty line}
-\item{\code{nu150}}{National poverty line (150)}
-\item{\code{nu200}}{National poverty line (200)}
+\item{\code{nu150}}{National poverty line (150\%)}
+\item{\code{nu200}}{National poverty line (200\%)}
 \item{\code{extreme}}{USAID extreme poverty}
 \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}
 \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}

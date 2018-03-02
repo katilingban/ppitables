@@ -7,10 +7,10 @@
 \format{A data frame with 16 columns and 101 rows:
 \describe{
 \item{\code{score}}{PPI score}
-\item{\code{rangarajan100}}{National rangarajan (100)}
-\item{\code{rangarajan150}}{National rangarajan (150)}
-\item{\code{rangarajan200}}{National rangarajan (200)}
-\item{\code{half100}}{Poorest half below 100 national}
+\item{\code{rangarajan100}}{National rangarajan (100\%)}
+\item{\code{rangarajan150}}{National rangarajan (150\%)}
+\item{\code{rangarajan200}}{National rangarajan (200\%)}
+\item{\code{half100}}{Poorest half below 100\% national}
 \item{\code{rbiUrban}}{RBI urban}
 \item{\code{rbiRural}}{RBI rural}
 \item{\code{ppp190}}{Below $1.90 per day purchasing power parity (2011)}
@@ -30,6 +30,7 @@
 ppiIND2016_r68
 }
 \description{
-Poverty Probability Index (PPI) lookup table for India
+Poverty Probability Index (PPI) lookup table for India using r68 poverty
+definitions
 }
 \keyword{datasets}

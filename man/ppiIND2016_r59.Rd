@@ -18,6 +18,7 @@
 ppiIND2016_r59
 }
 \description{
-Poverty Probability Index (PPI) lookup table for India
+Poverty Probability Index (PPI) lookup table for India using r59 poverty
+definitions
 }
 \keyword{datasets}
