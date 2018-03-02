@@ -431,7 +431,7 @@ varList <- c("PPI score",
              "National poverty line (200)",
              "Below $1.25 per day purchasing power parity (2005)",
              "Below $2.50 per day purchasing power parity (2005)",
-             "Below $2.75 per day purchasing power parity (2005)")
+             "Below $3.75 per day purchasing power parity (2005)")
 
 create_doc(country = "Ghana", ccode = "GHA", year = "2015", data = ppiGHA2015, varList = varList)
 

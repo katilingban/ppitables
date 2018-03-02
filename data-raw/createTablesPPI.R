@@ -886,8 +886,8 @@ names(y1) <- c("nlFood", "nl100", "nl150", "nl200", "ppp125", "ppp250", "ppp375"
 ghaDF <- data.frame("score" = 0:100, y1)
 row.names(ghaDF) <- 0:100
 
-ppiGHA2015_b <- ghaDF
-devtools::use_data(ppiGHA2015_b, overwrite = TRUE)
+ppiGHA2015 <- ghaDF
+devtools::use_data(ppiGHA2015, overwrite = TRUE)
 
 
 #ghaDF1 <- get_ppi_table(pdf = "data-raw/pdf/ghana.pdf", n = 3, limits = 9:28)

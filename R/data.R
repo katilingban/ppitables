@@ -1826,73 +1826,73 @@ NULL
 "ppiZMB2017"
 
 
- 
- 
+
+
 ################################################################################
-# 
-#' ppiKHM2015_wb  
-#' 
-#' Poverty Probability Index (PPI) lookup table for Cambodia  
-#' 
-#' @format A data frame with 9 columns and 101 rows:  
-#' \describe{ 
-#' \item{\code{score}}{PPI score}  
-#' \item{\code{nl100}}{National poverty line (100)}  
-#' \item{\code{nl150}}{National poverty line (150)}  
-#' \item{\code{nl200}}{National poverty line (200)}  
-#' \item{\code{median}}{Median poverty line}  
-#' \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}  
-#' \item{\code{ppp200}}{Below $2.00 per day purchasing power parity (2005)}  
-#' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}  
-#' \item{\code{ppp500}}{Below $5.00 per day purchasing power parity (2005)}  
-#' } 
-#' @source \url{www.povertyindex.org}  
-#' 
-# 
-################################################################################ 
-"ppiKHM2015_wb" 
- 
+#
+#' ppiKHM2015_wb
+#'
+#' Poverty Probability Index (PPI) lookup table for Cambodia
+#'
+#' @format A data frame with 9 columns and 101 rows:
+#' \describe{
+#' \item{\code{score}}{PPI score}
+#' \item{\code{nl100}}{National poverty line (100)}
+#' \item{\code{nl150}}{National poverty line (150)}
+#' \item{\code{nl200}}{National poverty line (200)}
+#' \item{\code{median}}{Median poverty line}
+#' \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}
+#' \item{\code{ppp200}}{Below $2.00 per day purchasing power parity (2005)}
+#' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
+#' \item{\code{ppp500}}{Below $5.00 per day purchasing power parity (2005)}
+#' }
+#' @source \url{www.povertyindex.org}
+#'
+#
 ################################################################################
-# 
-#' ppiKHM2015_gov  
-#' 
-#' Poverty Probability Index (PPI) lookup table for Cambodia  
-#' 
-#' @format A data frame with 9 columns and 101 rows:  
-#' \describe{ 
-#' \item{\code{score}}{PPI score}  
-#' \item{\code{nl100}}{National poverty line (100)}  
-#' \item{\code{nl150}}{National poverty line (150)}  
-#' \item{\code{nl200}}{National poverty line (200)}  
-#' \item{\code{median}}{Median poverty line}  
-#' \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}  
-#' \item{\code{ppp200}}{Below $2.00 per day purchasing power parity (2005)}  
-#' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}  
-#' \item{\code{ppp500}}{Below $5.00 per day purchasing power parity (2005)}  
-#' } 
-#' @source \url{www.povertyindex.org}  
-#' 
-# 
-################################################################################ 
-"ppiKHM2015_gov" 
- 
+"ppiKHM2015_wb"
+
 ################################################################################
-# 
-#' ppiKHM2015  
-#' 
-#' Poverty Probability Index (PPI) lookup table for Cambodia  
-#' 
-#' @format A data frame with 6 columns and 101 rows:  
-#' \describe{ 
-#' \item{\code{score}}{PPI score}  
-#' \item{\code{nl100}}{National poverty line (100)}  
-#' \item{\code{nl150}}{National poverty line (150)}  
-#' \item{\code{nl200}}{National poverty line (200)}  
-#' \item{\code{ppp125}}{Below $1.25 per day purchasing power poverty (2005)}  
-#' \item{\code{ppp250}}{Below $2.50 per day purchasing power poverty (2005)}  
-#' } 
-#' @source \url{www.povertyindex.org}  
-#' 
-# 
-################################################################################ 
+#
+#' ppiKHM2015_gov
+#'
+#' Poverty Probability Index (PPI) lookup table for Cambodia
+#'
+#' @format A data frame with 9 columns and 101 rows:
+#' \describe{
+#' \item{\code{score}}{PPI score}
+#' \item{\code{nl100}}{National poverty line (100)}
+#' \item{\code{nl150}}{National poverty line (150)}
+#' \item{\code{nl200}}{National poverty line (200)}
+#' \item{\code{median}}{Median poverty line}
+#' \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}
+#' \item{\code{ppp200}}{Below $2.00 per day purchasing power parity (2005)}
+#' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
+#' \item{\code{ppp500}}{Below $5.00 per day purchasing power parity (2005)}
+#' }
+#' @source \url{www.povertyindex.org}
+#'
+#
+################################################################################
+"ppiKHM2015_gov"
+
+################################################################################
+#
+#' ppiKHM2015
+#'
+#' Poverty Probability Index (PPI) lookup table for Cambodia
+#'
+#' @format A data frame with 6 columns and 101 rows:
+#' \describe{
+#' \item{\code{score}}{PPI score}
+#' \item{\code{nl100}}{National poverty line (100)}
+#' \item{\code{nl150}}{National poverty line (150)}
+#' \item{\code{nl200}}{National poverty line (200)}
+#' \item{\code{ppp125}}{Below $1.25 per day purchasing power poverty (2005)}
+#' \item{\code{ppp250}}{Below $2.50 per day purchasing power poverty (2005)}
+#' }
+#' @source \url{www.povertyindex.org}
+#'
+#
+################################################################################
 "ppiKHM2015"
