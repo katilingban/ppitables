@@ -411,16 +411,16 @@ names(khmDF) <- c("score", "nl100", "nl150", "nl200", "median", "ppp125", "ppp20
 khmDF$score <- 0:100
 row.names(khmDF) <- 0:100
 
-ppiKHM_wb <- khmDF
-devtools::use_data(ppiKHM_wb, overwrite = TRUE)
+ppiKHM2015_wb <- khmDF
+devtools::use_data(ppiKHM2015_wb, overwrite = TRUE)
 
 khmDF <- get_ppi_table(pdf = "data-raw/pdf/cambodia.pdf", n = 4, limits = 7:26)
 names(khmDF) <- c("score", "nl100", "nl150", "nl200", "ppp125", "ppp250")
 khmDF$score <- 0:100
 row.names(khmDF) <- 0:100
 
-ppiKHM <- khmDF
-devtools::use_data(ppiKHM, overwrite = TRUE)
+ppiKHM2015 <- khmDF
+devtools::use_data(ppiKHM2015, overwrite = TRUE)
 
 khmDF <- get_ppi_table(pdf = "data-raw/pdf/cambodia.pdf", n = 5, limits = 9:28)
 names(khmDF) <- c("score", "nl100", "nl150", "nl200", "median", "ppp125", "ppp200",
@@ -428,8 +428,8 @@ names(khmDF) <- c("score", "nl100", "nl150", "nl200", "median", "ppp125", "ppp20
 khmDF$score <- 0:100
 row.names(khmDF) <- 0:100
 
-ppiKHM_gov <- khmDF
-devtools::use_data(ppiKHM_gov, overwrite = TRUE)
+ppiKHM2015_gov <- khmDF
+devtools::use_data(ppiKHM2015_gov, overwrite = TRUE)
 
 
 ################################################################################

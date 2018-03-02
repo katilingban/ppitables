@@ -192,7 +192,7 @@ varList <- c("PPI score",
              "Below $2.50 per day purchasing power parity (2005)",
              "Below $5.00 per day purchasing power parity (2005)")
 
-create_doc(country = "Cambodia", ccode = "KHM_wb", year = "2015", data = ppiKHM2015_wb, varList = varList)
+create_doc(country = "Cambodia", ccode = "KHM", year = "2015", suffix = "_wb", data = ppiKHM2015_wb, varList = varList)
 
 
 ################################################################################
@@ -211,7 +211,7 @@ varList <- c("PPI score",
              "Below $2.50 per day purchasing power parity (2005)",
              "Below $5.00 per day purchasing power parity (2005)")
 
-create_doc(country = "Cambodia", ccode = "KHM_gov", year = "2015", data = ppiKHM2015_gov, varList = varList)
+create_doc(country = "Cambodia", ccode = "KHM", year = "2015", suffix = "_gov", data = ppiKHM2015_gov, varList = varList)
 
 
 ################################################################################
@@ -227,7 +227,7 @@ varList <- c("PPI score",
              "Below $1.25 per day purchasing power poverty (2005)",
              "Below $2.50 per day purchasing power poverty (2005)")
 
-create_doc(country = "Cambodia", ccode = "KHM", data = ppiKHM, varList = varList)
+create_doc(country = "Cambodia", ccode = "KHM", year = "2015", data = ppiKHM2015, varList = varList)
 
 
 ################################################################################
