@@ -2256,6 +2256,70 @@ row.names(ppiNGA2015) <- 0:100
 devtools::use_data(ppiNGA2015, overwrite = TRUE)
 
 
+################################################################################
+#
+# Pakistan
+#
+################################################################################
+
+nl100 <- get_ppi_table(pdf = "data-raw/pdf/pakistan.pdf", n = 105, limits = 6:25, expand = TRUE)
+names(nl100) <- c("score", "nl100")
+nl100$score <- 0:100
+row.names(nl100) <- 0:100
+
+nl50 <- get_ppi_table(pdf = "data-raw/pdf/pakistan.pdf", n = 118, limits = 6:25, expand = TRUE)
+names(nl50) <- c("score", "nl50")
+nl50$score <- 0:100
+row.names(nl50) <- 0:100
+
+nl75 <- get_ppi_table(pdf = "data-raw/pdf/pakistan.pdf", n = 125, limits = 6:25, expand = TRUE)
+names(nl75) <- c("score", "nl75")
+nl75$score <- 0:100
+row.names(nl75) <- 0:100
+
+nl125 <- get_ppi_table(pdf = "data-raw/pdf/pakistan.pdf", n = 132, limits = 6:25, expand = TRUE)
+names(nl125) <- c("score", "nl125")
+nl125$score <- 0:100
+row.names(nl125) <- 0:100
+
+nl200 <- get_ppi_table(pdf = "data-raw/pdf/pakistan.pdf", n = 139, limits = 6:25, expand = TRUE)
+names(nl200) <- c("score", "nl200")
+nl200$score <- 0:100
+row.names(nl200) <- 0:100
+
+extreme <- get_ppi_table(pdf = "data-raw/pdf/pakistan.pdf", n = 146, limits = 6:25, expand = TRUE)
+names(extreme) <- c("score", "extreme")
+extreme$score <- 0:100
+row.names(extreme) <- 0:100
+
+ppp125 <- get_ppi_table(pdf = "data-raw/pdf/pakistan.pdf", n = 153, limits = 6:25, expand = TRUE)
+names(ppp125) <- c("score", "ppp125")
+ppp125$score <- 0:100
+row.names(ppp125) <- 0:100
+
+ppp250 <- get_ppi_table(pdf = "data-raw/pdf/pakistan.pdf", n = 160, limits = 6:25, expand = TRUE)
+names(ppp250) <- c("score", "ppp250")
+ppp250$score <- 0:100
+row.names(ppp250) <- 0:100
+
+ppp375 <- get_ppi_table(pdf = "data-raw/pdf/pakistan.pdf", n = 167, limits = 6:25, expand = TRUE)
+names(ppp375) <- c("score", "ppp375")
+ppp375$score <- 0:100
+row.names(ppp375) <- 0:100
+
+pakDF <- merge(nl100, nl50)
+pakDF <- merge(pakDF, nl75)
+pakDF <- merge(pakDF, nl125)
+pakDF <- merge(pakDF, nl200)
+pakDF <- merge(pakDF, extreme)
+pakDF <- merge(pakDF, ppp125)
+pakDF <- merge(pakDF, ppp250)
+pakDF <- merge(pakDF, ppp375)
+
+ppiPAK2009 <- pakDF
+
+devtools::use_data(ppiPAK2009, overwrite = TRUE)
+
 
 ################################################################################
 #

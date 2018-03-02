@@ -1088,6 +1088,27 @@ create_doc(country = "Palestine", ccode = "PSE", year = "2014", data = ppiPSE201
 
 ################################################################################
 #
+# Pakistan
+#
+################################################################################
+
+varList <- c("PPI score",
+             "National poverty line (100)",
+             "National poverty line (50)",
+             "National poverty line (75)",
+             "National poverty line (125)",
+             "National poverty line (200)",
+             "USAID extreme poverty",
+             "Poorest half below 100 national",
+             "Below $1.25 per day purchasing power parity (2005)",
+             "Below $2.50 per day purchasing power parity (2005)",
+             "Below $3.75 per day purchasing power parity (2005)")
+
+create_doc(country = "Pakistan", ccode = "PAK", year = "2009", data = ppiPAK2009, varList = varList)
+
+
+################################################################################
+#
 # Paraguay
 #
 ################################################################################
