@@ -33,9 +33,9 @@ library(ppitables)
 ## Usage
 
 The `ppitables` package contains PPI lookup tables for the 60
-countries\[^\*\] where PPI can currently be calculated. To be able to
-use the lookup tables in `ppitables` appropriately, you need to be aware
-of the naming syntax used for the tables for each country. The name for
+countries\[1\] where PPI can currently be calculated. To be able to use
+the lookup tables in `ppitables` appropriately, you need to be aware of
+the naming syntax used for the tables for each country. The name for
 each table will always have three fixed or constant components as
 follows:
 
@@ -564,8 +564,8 @@ the PPI [site](https://www.povertyindex.org).
 </tbody>
 </table>
 
-\[^8\] Only 59 country PPI tables are shown here and available via the
-package. There is no lookup table for China because the China Poverty
-Scorecard is an expert-based scorecard. See
-[this](https://www.povertyindex.org/china-expert-based-poverty-scorecard)
-for futher explanation.
+1.  Only 59 country PPI tables are shown here and available via the
+    package. There is no lookup table for China because the China
+    Poverty Scorecard is an expert-based scorecard. See
+    [this](https://www.povertyindex.org/china-expert-based-poverty-scorecard)
+    for futher explanation.
