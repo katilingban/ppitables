@@ -1,3 +1,7 @@
+# `ppitables` v0.1.2
+This is an updated release of `ppitables` as part of the CRAN submission process. In this release, I have added examples of usage for each of the country PPI table.
+
+
 # `ppitables` v0.1.1
 This is an updated release of `ppitables` as part of the CRAN submission process. I have implemented the following changes:
 
