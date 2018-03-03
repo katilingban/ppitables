@@ -1,5 +1,28 @@
-## Resubmission - 2 March 2018
-This is resubmission. In this version, the following changes have been made based
+# Resubmission - 3 March 2018
+This is a resubmission. In this version, I have added examples on usage of each
+of the country PPI tables as suggested by CRAN.
+
+I have run checks given all these changes with results below:
+
+## Test environments
+* local OS X install, R 3.4.3
+* ubuntu 12.04 (on travis-ci), R 3.4.2
+* local ubuntu 16.04 install, R 3.4.3
+* win-builder (devel and release)
+* windows (on appveyor), R 3.4.3
+
+## R CMD check results
+
+0 errors | 0 warnings | 1 note
+
+* This is a new release.
+
+## Reverse dependencies
+This is a new release, so there are no reverse/downstream dependencies.
+
+
+# Resubmission - 2 March 2018
+This is a resubmission. In this version, the following changes have been made based
 on CRAN comments made to previous submission:
 
 * "this country-specific references for the PPI will change over time, right? 
