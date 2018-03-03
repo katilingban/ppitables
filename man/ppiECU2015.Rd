@@ -27,4 +27,25 @@ ppiECU2015
 \description{
 Poverty Probability Index (PPI) lookup table for Ecuador
 }
+\examples{
+  # Access Ecuador PPI table
+  ppiECU2015
+
+  # Given a specific PPI score (from 0 - 100), get the row of poverty
+  # probabilities from PPI table it corresponds to
+  ppiScore <- 50
+  ppiECU2015[ppiECU2015$score == ppiScore, ]
+
+  # Use subset() function to get the row of poverty probabilities corresponding
+  # to specific PPI score
+  ppiScore <- 50
+  subset(ppiECU2015, score == ppiScore)
+
+  # Given a specific PPI score (from 0 - 100), get a poverty probability
+  # based on a specific poverty definition. In this example, the national
+  # poverty line definition
+  ppiScore <- 50
+  ppiECU2015[ppiECU2015$score == ppiScore, "nl100"]
+
+}
 \keyword{datasets}

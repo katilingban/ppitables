@@ -25,4 +25,25 @@ ppiGHA2015_b
 Poverty Probability Index (PPI) lookup table for Ghana using poverty
 definitions deflated with the change in 100% of national poverty line
 }
+\examples{
+  # Access Ghana PPI table
+  ppiGHA2015_b
+
+  # Given a specific PPI score (from 0 - 100), get the row of poverty
+  # probabilities from PPI table it corresponds to
+  ppiScore <- 50
+  ppiGHA2015_b[ppiGHA2015_b$score == ppiScore, ]
+
+  # Use subset() function to get the row of poverty probabilities corresponding
+  # to specific PPI score
+  ppiScore <- 50
+  subset(ppiGHA2015_b, score == ppiScore)
+
+  # Given a specific PPI score (from 0 - 100), get a poverty probability
+  # based on a specific poverty definition. In this example, the below $1.25
+  # per day purchasing power parity (2005)
+  ppiScore <- 50
+  ppiGHA2015_b[ppiGHA2015_b$score == ppiScore, "ppp125"]
+
+}
 \keyword{datasets}

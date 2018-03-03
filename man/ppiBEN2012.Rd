@@ -23,4 +23,25 @@ ppiBEN2012
 \description{
 Poverty Probability Index (PPI) lookup table for Benin
 }
+\examples{
+  # Access Benin PPI table
+  ppiBEN2012
+
+  # Given a specific PPI score (from 0 - 100), get the row of poverty
+  # probabilities from PPI table it corresponds to
+  ppiScore <- 50
+  ppiBEN2012[ppiBEN2012$score == ppiScore, ]
+
+  # Use subset() function to get the row of poverty probabilities corresponding
+  # to specific PPI score
+  ppiScore <- 50
+  subset(ppiBEN2012, score == ppiScore)
+
+  # Given a specific PPI score (from 0 - 100), get a poverty probability
+  # based on a specific poverty definition. In this example, the USAID
+  # extreme poverty definition
+  ppiScore <- 50
+  ppiBEN2012[ppiBEN2012$score == ppiScore, "extreme"]
+
+}
 \keyword{datasets}
