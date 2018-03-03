@@ -6,9 +6,6 @@
 [![Project Status: Active – The project has reached a stable, usable
 state and is being actively
 developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
-[![CRAN](https://img.shields.io/cran/v/ppitables.svg)](https://CRAN.R-project.org/package=ppitables)
-[![CRAN](https://img.shields.io/cran/l/ppitables.svg)](https://github.com/validmeasures/ppitables/blob/master/LICENSE.md)
-[![CRAN](http://cranlogs.r-pkg.org/badges/ppitables)](https://CRAN.R-project.org/package=ppitables)
 [![Travis-CI Build
 Status](https://travis-ci.org/validmeasures/ppitables.svg?branch=master)](https://travis-ci.org/validmeasures/ppitables)
 [![AppVeyor Build
@@ -426,7 +423,7 @@ the PPI [site](https://www.povertyindex.org).
 <li><code>ppiPAK2009</code></li>
 </ol></td>
 <td>PPI for Pakistan using Pakistan 2005/6 Social and Living Standards Measurement Survey</td>
-<td></td>
+<td>2009</td>
 </tr>
 <tr class="even">
 <td><ol start="41" type="1">
@@ -563,6 +560,8 @@ the PPI [site](https://www.povertyindex.org).
 </tr>
 </tbody>
 </table>
+
+### Notes
 
 1.  Only 59 country PPI tables are shown here and available via the
     package. There is no lookup table for China because the China

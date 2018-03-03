@@ -14,9 +14,6 @@ knitr::opts_chunk$set(
 
 # ppitables: Lookup tables to generate poverty likelihoods and rates using the Poverty Probability Index (PPI)
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
-[![CRAN](https://img.shields.io/cran/v/ppitables.svg)](https://CRAN.R-project.org/package=ppitables)
-[![CRAN](https://img.shields.io/cran/l/ppitables.svg)](https://github.com/validmeasures/ppitables/blob/master/LICENSE.md)
-[![CRAN](http://cranlogs.r-pkg.org/badges/ppitables)](https://CRAN.R-project.org/package=ppitables)
 [![Travis-CI Build Status](https://travis-ci.org/validmeasures/ppitables.svg?branch=master)](https://travis-ci.org/validmeasures/ppitables)
 [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/validmeasures/ppitables?branch=master&svg=true)](https://ci.appveyor.com/project/validmeasures/ppitables)
 
@@ -227,7 +224,7 @@ Following are the available PPI country tables from the `ppitables` package. Thi
 +-----------------------------+-----------------------------------------------------+----------------------+
 |     `ppiNPL2013_a`          | PPI for Nepal using new poverty definition lines    | 2013                 |
 +-----------------------------+-----------------------------------------------------+----------------------+
-| 40. `ppiPAK2009`            | PPI for Pakistan using Pakistan 2005/6 Social and   |                      |
+| 40. `ppiPAK2009`            | PPI for Pakistan using Pakistan 2005/6 Social and   | 2009                 |
 |                             | Living Standards Measurement Survey                 |                      |
 +-----------------------------+-----------------------------------------------------+----------------------+
 | 41. `ppiPER2012`            | PPI for Peru based on Peru’s 2010 National Household| 2012                 |
@@ -281,6 +278,7 @@ Following are the available PPI country tables from the `ppitables` package. Thi
 +-----------------------------+-----------------------------------------------------+----------------------+
 
 
+### Notes
 [^1]: Only 59 country PPI tables are shown here and available via the package. There is no lookup table for China because the China Poverty Scorecard is an expert-based scorecard. See [this](https://www.povertyindex.org/china-expert-based-poverty-scorecard) for futher explanation.
 
 
