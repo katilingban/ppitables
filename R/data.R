@@ -35,7 +35,29 @@ NULL
 #' \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}
 #' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
 #' }
+#'
+#' @examples
+#'   # Access Afghanistan PPI table
+#'   ppiAFG2012
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiAFG2012[ppiAFG2012$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiAFG2012, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the USAID
+#'   # extreme poverty definition
+#'   ppiScore <- 50
+#'   ppiAFG2012[ppiAFG2012$score == ppiScore, "extreme"]
+#'
 #' @source \url{www.povertyindex.org}
+#'
 #'
 #
 ################################################################################
@@ -60,6 +82,27 @@ NULL
 #' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
 #' \item{\code{ppp500}}{Below $5.00 per day purchasing power parity (2005)}
 #' }
+#'
+#' @examples
+#'   # Access Angola PPI table
+#'   ppiAGO2015
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiAGO2015[ppiAGO2015$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiAGO2015, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # poverty line definition
+#'   ppiScore <- 50
+#'   ppiAGO2015[ppiAGO2015$score == ppiScore, "extreme"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -86,6 +129,27 @@ NULL
 #' \item{\code{ppp200}}{Below $2.00 per day purchasing power parity (2005)}
 #' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
 #' }
+#'
+#' @examples
+#'   # Access Bangladesh PPI table
+#'   ppiBGD2013
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiBGD2013[ppiBGD2013$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiBGD2013, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the USAID
+#'   # extreme poverty definition
+#'   ppiScore <- 50
+#'   ppiBGD2013[ppiBGD2013$score == ppiScore, "extreme"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -112,6 +176,27 @@ NULL
 #' \item{\code{ppp500}}{Below $2.50 per day purchasing power parity (2005)}
 #' \item{\code{ppp844}}{Below $5.00 per day purchasing power parity (2005)}
 #' }
+#'
+#' @examples
+#'   # Access Bolivia PPI table
+#'   ppiBOL2015
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiBOL2015[ppiBOL2015$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiBOL2015, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the food
+#'   # poverty line definition
+#'   ppiScore <- 50
+#'   ppiBOL2015[ppiBOL2015$score == ppiScore, "nlFood"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -135,6 +220,27 @@ NULL
 #' \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}
 #' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
 #' }
+#'
+#' @examples
+#'   # Access Benin PPI table
+#'   ppiBEN2012
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiBEN2012[ppiBEN2012$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiBEN2012, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the USAID
+#'   # extreme poverty definition
+#'   ppiScore <- 50
+#'   ppiBEN2012[ppiBEN2012$score == ppiScore, "extreme"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -161,6 +267,27 @@ NULL
 #' \item{\code{ppp375}}{Below $3.75 per day purchasing power parity (2005)}
 #' \item{\code{ppp500}}{Below $5.00 per day purchasing power parity (2005)}
 #' }
+#'
+#' @examples
+#'   # Access Brazil PPI table
+#'   ppiBRA2010
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiBRA2010[ppiBRA2010$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiBRA2010, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the USAID
+#'   # extreme poverty definition
+#'   ppiScore <- 50
+#'   ppiBRA2010[ppiBRA2010$score == ppiScore, "extreme"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -192,6 +319,27 @@ NULL
 #' \item{\code{percentile60}}{Below 60th percentile poverty line}
 #' \item{\code{percentile80}}{Below 80th percentile poverty line}
 #' }
+#'
+#' @examples
+#'   # Access Burkina Faso PPI table
+#'   ppiBFA2017
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiBFA2017[ppiBFA2017$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiBFA2017, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # poverty line definition
+#'   ppiScore <- 50
+#'   ppiBFA2017[ppiBFA2017$score == ppiScore, "nl100"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -216,6 +364,27 @@ NULL
 #' \item{\code{ppp200}}{Below $2.00 per day purchasing power parity (2005)}
 #' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
 #' }
+#'
+#' @examples
+#'   # Access Cameroon PPI table
+#'   ppiCMR2013
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiCMR2013[ppiCMR2013$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiCMR2013, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the USAID
+#'   # extreme poverty definition
+#'   ppiScore <- 50
+#'   ppiCMR2013[ppiCMR2013$score == ppiScore, "extreme"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -245,6 +414,27 @@ NULL
 #' \item{\code{ppp190}}{Below $1.90 per day purchasing power parity (2011)}
 #' \item{\code{ppp310}}{Below $3.10 per day purchasing power parity (2011)}
 #' }
+#'
+#' @examples
+#'   # Access Colombia PPI table
+#'   ppiCOL2018_a
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiCOL2018_a[ppiCOL2018_a$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiCOL2018_a, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # poverty line definition
+#'   ppiScore <- 50
+#'   ppiCOL2018_a[ppiCOL2018_a$score == ppiScore, "nl100"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -272,6 +462,27 @@ NULL
 #' \item{\code{ppp375}}{Below $3.75 per day purchasing power parity (2005)}
 #' \item{\code{ppp500}}{Below $5.00 per day purchasing power parity (2005)}
 #' }
+#'
+#' @examples
+#'   # Access Colombia PPI table
+#'   ppiCOL2018
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiCOL2018[ppiCOL2018$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiCOL2018, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the USAID
+#'   # extreme poverty definition
+#'   ppiScore <- 50
+#'   ppiCOL2018[ppiCOL2018$score == ppiScore, "extreme"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -299,6 +510,27 @@ NULL
 #' \item{\code{ppp375}}{Below $3.75 per day purchasing power parity (2005)}
 #' \item{\code{ppp500}}{Below $5.00 per day purchasing power parity (2005)}
 #' }
+#'
+#' @examples
+#'   # Access Dominican Republic PPI table
+#'   ppiDOM2010
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiDOM2010[ppiDOM2010$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiDOM2010, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the USAID
+#'   # extreme poverty definition
+#'   ppiScore <- 50
+#'   ppiDOM2010[ppiDOM2010$score == ppiScore, "extreme"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -326,6 +558,27 @@ NULL
 #' \item{\code{ppp500}}{Below $5.00 per day purchasing power parity (2005)}
 #' \item{\code{ppp844}}{Below $8.44 per day purchasing power parity (2005)}
 #' }
+#'
+#' @examples
+#'   # Access Ecuador PPI table
+#'   ppiECU2015
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiECU2015[ppiECU2015$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiECU2015, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # poverty line definition
+#'   ppiScore <- 50
+#'   ppiECU2015[ppiECU2015$score == ppiScore, "nl100"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -350,6 +603,27 @@ NULL
 #' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
 #' \item{\code{ppp375}}{Below $3.75 per day purchasing power parity (2005)}
 #' }
+#'
+#' @examples
+#'   # Access Egypt PPI table
+#'   ppiEGY2010
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiEGY2010[ppiEGY2010$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiEGY2010, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the USAID
+#'   # extreme poverty definition
+#'   ppiScore <- 50
+#'   ppiEGY2010[ppiEGY2010$score == ppiScore, "extreme"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -375,6 +649,27 @@ NULL
 #' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
 #' \item{\code{ppp375}}{Below $3.75 per day purchasing power parity (2005)}
 #' }
+#'
+#' @examples
+#'   # Access El Salvador PPI table
+#'   ppiSLV2010
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiSLV2010[ppiSLV2010$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiSLV2010, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the USAID
+#'   # extreme poverty definition
+#'   ppiScore <- 50
+#'   ppiSLV2010[ppiSLV2010$score == ppiScore, "extreme"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -412,6 +707,27 @@ NULL
 #' \item{\code{percentile60}}{Below 60th percentile poverty line}
 #' \item{\code{percentile80}}{Below 80th percentile poverty line}
 #' }
+#'
+#' @examples
+#'   # Access Ethiopia PPI table
+#'   ppiETH2016
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiETH2016[ppiETH2016$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiETH2016, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # poverty line definition
+#'   ppiScore <- 50
+#'   ppiETH2016[ppiETH2016$score == ppiScore, "nl100"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -436,6 +752,27 @@ NULL
 #' \item{\code{ppp200}}{Below $2.00 per day purchasing power parity (2005)}
 #' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
 #' }
+#'
+#' @examples
+#'   # Access Fiji PPI table
+#'   ppiFJI2014
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiFJI2014[ppiFJI2014$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiFJI2014, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # poverty line definition
+#'   ppiScore <- 50
+#'   ppiFJI2014[ppiFJI2014$score == ppiScore, "nl100"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -461,6 +798,27 @@ NULL
 #' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
 #' \item{\code{ppp375}}{Below $2.75 per day purchasing power parity (2005)}
 #' }
+#'
+#' @examples
+#'   # Access Ghana PPI table
+#'   ppiGHA2015
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiGHA2015[ppiGHA2015$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiGHA2015, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # poverty line definition
+#'   ppiScore <- 50
+#'   ppiGHA2015[ppiGHA2015$score == ppiScore, "nl100"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -491,6 +849,27 @@ NULL
 #' \item{\code{ppp190}}{Below $1.90 per day purchasing power parity (2011)}
 #' \item{\code{ppp310}}{Below $3.10 per day purchasing power parity (2011)}
 #' }
+#'
+#' @examples
+#'   # Access Ghana PPI table
+#'   ppiGHA2015_a
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiGHA2015_a[ppiGHA2015_a$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiGHA2015_a, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # poverty line definition
+#'   ppiScore <- 50
+#'   ppiGHA2015_a[ppiGHA2015_a$score == ppiScore, "nl100"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -516,6 +895,27 @@ NULL
 #' \item{\code{ppp190}}{Below $1.90 per day purchasing power parity (2011)}
 #' \item{\code{ppp310}}{Below $3.10 per day purchasing power parity (2011)}
 #' }
+#'
+#' @examples
+#'   # Access Ghana PPI table
+#'   ppiGHA2015_b
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiGHA2015_b[ppiGHA2015_b$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiGHA2015_b, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the below $1.25
+#'   # per day purchasing power parity (2005)
+#'   ppiScore <- 50
+#'   ppiGHA2015_b[ppiGHA2015_b$score == ppiScore, "ppp125"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -549,6 +949,27 @@ NULL
 #' \item{\code{percentile60}}{Below 60th percentile poverty line}
 #' \item{\code{percentile80}}{Below 80th percentile poverty line}
 #' }
+#'
+#' @examples
+#'   # Access Guatemala PPI table
+#'   ppiGTM2016
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiGTM2016[ppiGTM2016$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiGTM2016, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # poverty line definition
+#'   ppiScore <- 50
+#'   ppiGTM2016[ppiGTM2016$score == ppiScore, "nl100"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -572,6 +993,27 @@ NULL
 #' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
 #' \item{\code{ppp375}}{Below $3.75 per day purchasing power parity (2005)}
 #' }
+#'
+#' @examples
+#'   # Access Honduras PPI table
+#'   ppiHND2010
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiHND2010[ppiHND2010$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiHND2010, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the USAID
+#'   # extreme poverty definition
+#'   ppiScore <- 50
+#'   ppiHND2010[ppiHND2010$score == ppiScore, "extreme"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -598,6 +1040,27 @@ NULL
 #' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
 #' \item{\code{ppp500}}{Below $5.00 per day purchasing power parity (2005)}
 #' }
+#'
+#' @examples
+#'   # Access Haiti PPI table
+#'   ppiHTI2016
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiHTI2016[ppiHTI2016$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiHTI2016, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # poverty line definition
+#'   ppiScore <- 50
+#'   ppiHTI2016[ppiHTI2016$score == ppiScore, "nl100"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -619,6 +1082,27 @@ NULL
 #' \item{\code{ppp108}}{Below $1.08 per day purchasing power parity (1993)}
 #' \item{\code{ppp216}}{Below $2.16 per day purchasing power parity (1993)}
 #' }
+#'
+#' @examples
+#'   # Access India PPI table
+#'   ppiIND2016_r59
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiIND2016_r59[ppiIND2016_r59$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiIND2016_r59, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the saxena
+#'   # poverty definition
+#'   ppiScore <- 50
+#'   ppiIND2016_r59[ppiIND2016_r59$score == ppiScore, "saxena"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -643,6 +1127,27 @@ NULL
 #' \item{\code{ppp162}}{Below $1.62 per day purchasing power parity (1993)}
 #' \item{\code{ppp216}}{Below $2.16 per day purchasing power parity (1993)}
 #' }
+#'
+#' @examples
+#'   # Access India PPI table
+#'   ppiIND2016_r62
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiIND2016_r62[ppiIND2016_r62$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiIND2016_r62, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # saxena poverty definition
+#'   ppiScore <- 50
+#'   ppiIND2016_r62[ppiIND2016_r62$score == ppiScore, "saxena"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -668,6 +1173,27 @@ NULL
 #' \item{\code{ppp188}}{Below $1.88 per day purchasing power parity (2005)}
 #' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
 #' }
+#'
+#' @examples
+#'   # Access India PPI table
+#'   ppiIND2016_r66
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiIND2016_r66[ppiIND2016_r66$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiIND2016_r66, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # tendulkar poverty definition
+#'   ppiScore <- 50
+#'   ppiIND2016_r66[ppiIND2016_r66$score == ppiScore, "tendulkar"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -701,6 +1227,27 @@ NULL
 #' \item{\code{percentile60}}{Below 60th percentile poverty line}
 #' \item{\code{percentile80}}{Below 80th percentile poverty line}
 #' }
+#'
+#' @examples
+#'   # Access India PPI table
+#'   ppiIND2016_r68
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiIND2016_r68[ppiIND2016_r68$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiIND2016_r68, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # rangarajan poverty definition
+#'   ppiScore <- 50
+#'   ppiIND2016_r68[ppiIND2016_r68$score == ppiScore, "rangarajan100"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -722,6 +1269,27 @@ NULL
 #' \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}
 #' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
 #' }
+#'
+#' @examples
+#'   # Access Indonesia PPI table
+#'   ppiIDN2012
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiIDN2012[ppiIDN2012$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiIDN2012, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # poverty line definition
+#'   ppiScore <- 50
+#'   ppiIDN2012[ppiIDN2012$score == ppiScore, "nl100"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -748,6 +1316,27 @@ NULL
 #' \item{\code{ppp190}}{Below $1.90 per day purchasing power parity (2011)}
 #' \item{\code{ppp310}}{Below $3.10 per day purchasing power parity (2011)}
 #' }
+#'
+#' @examples
+#'   # Access Indonesia PPI table
+#'   ppiIDN2012_a
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiIDN2012_a[ppiIDN2012_a$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiIDN2012_a, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the USAID
+#'   # extreme poverty definition
+#'   ppiScore <- 50
+#'   ppiIDN2012_a[ppiIDN2012_a$score == ppiScore, "extreme"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -773,6 +1362,27 @@ NULL
 #' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2011)}
 #' \item{\code{ppp800}}{Below $8.00 per day purchasing power parity (2011)}
 #' }
+#'
+#' @examples
+#'   # Access Ivory Coast PPI table
+#'   ppiCIV2013
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiCIV2013[ppiCIV2013$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiCIV2013, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the USAID
+#'   # extreme poverty definition
+#'   ppiScore <- 50
+#'   ppiCIV2013[ppiCIV2013$score == ppiScore, "extreme"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -799,6 +1409,27 @@ NULL
 #' \item{\code{ppp375}}{Below $3.75 per day purchasing power parity (2005)}
 #' \item{\code{ppp500}}{Below $5.00 per day purchasing power parity (2005)}
 #' }
+#'
+#' @examples
+#'   # Access Jordan PPI table
+#'   ppiJOR2010
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiJOR2010[ppiJOR2010$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiJOR2010, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the USAID
+#'   # extreme poverty definition
+#'   ppiScore <- 50
+#'   ppiJOR2010[ppiJOR2010$score == ppiScore, "extreme"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -826,6 +1457,27 @@ NULL
 #' \item{\code{ppp190}}{Below $1.90 per day purchasing power parity (2011)}
 #' \item{\code{ppp310}}{Below $3.10 per day purchasing power parity (2011)}
 #' }
+#'
+#' @examples
+#'   # Access Kenya PPI table
+#'   ppiKEN2011
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiKEN2011[ppiKEN2011$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiKEN2011, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the USAID
+#'   # extreme poverty definition
+#'   ppiScore <- 50
+#'   ppiKEN2011[ppiKEN2011$score == ppiScore, "extreme"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -851,6 +1503,27 @@ NULL
 #' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
 #' \item{\code{ppp500}}{Below $5.00 per day purchasing power parity (2005)}
 #' }
+#'
+#' @examples
+#'   # Access Kyrgyzstan PPI table
+#'   ppiKGZ2015
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiKGZ2015[ppiKGZ2015$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiKGZ2015, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # poverty line definition
+#'   ppiScore <- 50
+#'   ppiKGZ2015[ppiKGZ2015$score == ppiScore, "nl100"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -876,6 +1549,27 @@ NULL
 #' \item{\code{ppp250}}{Below $2.00 per day purchasing power parity (2005)}
 #' \item{\code{ppp500}}{Below $2.50 per day purchasing power parity (2005)}
 #' }
+#'
+#' @examples
+#'   # Access Madagascar PPI table
+#'   ppiMDG2015
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiMDG2015[ppiMDG2015$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiMDG2015, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # poverty line definition
+#'   ppiScore <- 50
+#'   ppiMDG2015[ppiMDG2015$score == ppiScore, "nl100"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -907,6 +1601,27 @@ NULL
 #' \item{\code{ppp310}}{Below $3.10 per day purchasing power parity (2011)}
 #' \item{\code{ppp1000}}{Below $10.00 per day purchasing power parity (2011)}
 #' }
+#'
+#' @examples
+#'   # Access Malawi PPI table
+#'   ppiMWI2015_gov
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiMWI2015_gov[ppiMWI2015_gov$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiMWI2015_gov, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # poverty line definition
+#'   ppiScore <- 50
+#'   ppiMWI2015_gov[ppiMWI2015_gov$score == ppiScore, "nl100"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -927,6 +1642,27 @@ NULL
 #' \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}
 #' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
 #' }
+#'
+#' @examples
+#'   # Access Malawi PPI table
+#'   ppiMWI2015
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiMWI2015[ppiMWI2015$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiMWI2015, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, below $1.25
+#'   # purchasing power parity (2005)
+#'   ppiScore <- 50
+#'   ppiMWI2015[ppiMWI2015$score == ppiScore, "ppp125"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -957,6 +1693,27 @@ NULL
 #' \item{\code{ppp190}}{Below $1.90 per day purchasing power parity (2011)}
 #' \item{\code{ppp310}}{Below $3.10 per day purchasing power parity (2011)}
 #' }
+#'
+#' @examples
+#'   # Access Malawi PPI table
+#'   ppiMWI2015_pbm
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiMWI2015_pbm[ppiMWI2015_pbm$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiMWI2015_pbm, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # poverty line definition
+#'   ppiScore <- 50
+#'   ppiMWI2015_pbm[ppiMWI2015_pbm$score == ppiScore, "nl100"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -979,6 +1736,27 @@ NULL
 #' \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}
 #' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
 #' }
+#'
+#' @examples
+#'   # Access Mali PPI table
+#'   ppiMLI2010
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiMLI2010[ppiMLI2010$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiMLI2010, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # poverty line definition
+#'   ppiScore <- 50
+#'   ppiMLI2010[ppiMLI2010$score == ppiScore, "nl100"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -1013,6 +1791,27 @@ NULL
 #' \item{\code{percentile60}}{Below 60th percentile poverty line}
 #' \item{\code{percentile80}}{Below 80th percentile poverty line}
 #' }
+#'
+#' @examples
+#'   # Access Mexico PPI table
+#'   ppiMEX2017_a
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiMEX2017_a[ppiMEX2017_a$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiMEX2017_a, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # poverty line definition
+#'   ppiScore <- 50
+#'   ppiMEX2017_a[ppiMEX2017_a$score == ppiScore, "nl100"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -1038,6 +1837,27 @@ NULL
 #' \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}
 #' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
 #' }
+#'
+#' @examples
+#'   # Access Mexico PPI table
+#'   ppiMEX2017
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiMEX2017[ppiMEX2017$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiMEX2017, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # poverty line definition
+#'   ppiScore <- 50
+#'   ppiMEX2017[ppiMEX2017$score == ppiScore, "nl100"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -1072,6 +1892,27 @@ NULL
 #' \item{\code{percentile60}}{Below 60th percentile poverty line}
 #' \item{\code{percentile80}}{Below 80th percentile poverty line}
 #' }
+#'
+#' @examples
+#'   # Access Mongolia PPI table
+#'   ppiMNG2016
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiMNG2016[ppiMNG2016$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiMNG2016, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # poverty line definition
+#'   ppiScore <- 50
+#'   ppiMNG2016[ppiMNG2016$score == ppiScore, "nl100"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -1097,6 +1938,27 @@ NULL
 #' \item{\code{ppp375}}{Below $3.75 per day purchasing power parity (2005)}
 #' \item{\code{ppp500}}{Below $5.00 per day purchasing power parity (2005)}
 #' }
+#'
+#' @examples
+#'   # Access Morocco PPI table
+#'   ppiMAR2013
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiMAR2013[ppiMAR2013$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiMAR2013, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # poverty line definition
+#'   ppiScore <- 50
+#'   ppiMAR2013[ppiMAR2013$score == ppiScore, "nl100"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -1121,6 +1983,27 @@ NULL
 #' \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}
 #' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
 #' }
+#'
+#' @examples
+#'   # Access Myanmar PPI table
+#'   ppiMMR2012
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiMMR2012[ppiMMR2012$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiMMR2012, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # poverty line definition
+#'   ppiScore <- 50
+#'   ppiMMR2012[ppiMMR2012$score == ppiScore, "nl100"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -1144,6 +2027,27 @@ NULL
 #' \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}
 #' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
 #' }
+#'
+#' @examples
+#'   # Access Mozambique PPI table
+#'   ppiMOZ2013
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiMOZ2013[ppiMOZ2013$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiMOZ2013, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # poverty line definition
+#'   ppiScore <- 50
+#'   ppiMOZ2013[ppiMOZ2013$score == ppiScore, "nl100"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -1169,6 +2073,27 @@ NULL
 #' \item{\code{ppp200}}{Below $2.00 per day purchasing power parity (2005)}
 #' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
 #' }
+#'
+#' @examples
+#'   # Access Namibia PPI table
+#'   ppiNAM2013
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiNAM2013[ppiNAM2013$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiNAM2013, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # poverty line definition
+#'   ppiScore <- 50
+#'   ppiNAM2013[ppiNAM2013$score == ppiScore, "nl100"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -1195,6 +2120,27 @@ NULL
 #' \item{\code{ppp200}}{Below $2.00 per day purchasing power parity (2005)}
 #' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
 #' }
+#'
+#' @examples
+#'   # Access Nepal PPI table
+#'   ppiNPL2013_a
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiNPL2013_a[ppiNPL2013_a$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiNPL2013_a, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # poverty line definition
+#'   ppiScore <- 50
+#'   ppiNPL2013_a[ppiNPL2013_a$score == ppiScore, "nl100"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -1216,6 +2162,27 @@ NULL
 #' \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}
 #' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
 #' }
+#'
+#' @examples
+#'   # Access Nepal PPI table
+#'   ppiNPL2013
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiNPL2013[ppiNPL2013$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiNPL2013, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # poverty line definition
+#'   ppiScore <- 50
+#'   ppiNPL2013[ppiNPL2013$score == ppiScore, "nl100"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -1242,6 +2209,27 @@ NULL
 #' \item{\code{ppp375}}{Below $3.75 per day purchasing power parity (2005)}
 #' \item{\code{ppp800}}{Below $8.00 per day purchasing power parity (2005)}
 #' }
+#'
+#' @examples
+#'   # Access Nicaragua PPI table
+#'   ppiNIC2013
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiNIC2013[ppiNIC2013$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiNIC2013, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # poverty line definition
+#'   ppiScore <- 50
+#'   ppiNIC2013[ppiNIC2013$score == ppiScore, "nl100"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -1267,6 +2255,27 @@ NULL
 #' \item{\code{ppp200}}{Below $2.00 per day purchasing power parity (2005)}
 #' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
 #' }
+#'
+#' @examples
+#'   # Access Niger PPI table
+#'   ppiNER2013
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiNER2013[ppiNER2013$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiNER2013, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # poverty line definition
+#'   ppiScore <- 50
+#'   ppiNER2013[ppiNER2013$score == ppiScore, "nl100"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -1296,6 +2305,27 @@ NULL
 #' \item{\code{ppp190}}{Below $1.90 per day purchasing power parity (2011)}
 #' \item{\code{ppp310}}{Below $3.10 per day purchasing power parity (2011)}
 #' }
+#'
+#' @examples
+#'   # Access Nigeria PPI table
+#'   ppiNGA2015
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiNGA2015[ppiNGA2015$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiNGA2015, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # poverty line definition
+#'   ppiScore <- 50
+#'   ppiNGA2015[ppiNGA2015$score == ppiScore, "nl100"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -1323,6 +2353,27 @@ NULL
 #' \item{\code{ppp375}}{Below $3.75 per day purchasing power parity (2005)}
 #' \item{\code{ppp500}}{Below $5.00 per day purchasing power parity (2005)}
 #' }
+#'
+#' @examples
+#'   # Access Palestine PPI table
+#'   ppiPSE2014
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiPSE2014[ppiPSE2014$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiPSE2014, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # poverty line definition
+#'   ppiScore <- 50
+#'   ppiPSE2014[ppiPSE2014$score == ppiScore, "nl100"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -1347,6 +2398,27 @@ NULL
 #' \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}
 #' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
 #' }
+#'
+#' @examples
+#'   # Access Paraguay PPI table
+#'   ppiPRY2012
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiPRY2012[ppiPRY2012$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiPRY2012, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # poverty line definition
+#'   ppiScore <- 50
+#'   ppiPRY2012[ppiPRY2012$score == ppiScore, "nl100"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -1372,6 +2444,27 @@ NULL
 #' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
 #' \item{\code{ppp375}}{Below $3.75 per day purchasing power parity (2005)}
 #' }
+#'
+#' @examples
+#'   # Access Peru PPI table
+#'   ppiPER2012
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiPER2012[ppiPER2012$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiPER2012, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # poverty line definition
+#'   ppiScore <- 50
+#'   ppiPER2012[ppiPER2012$score == ppiScore, "nl100"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -1395,6 +2488,27 @@ NULL
 #' \item{\code{ppp500}}{Below $5.00 per day purchasing power parity (2005)}
 #' \item{\code{ppp432}}{Below $4.32 per day purchasing power parity (1993)}
 #' }
+#'
+#' @examples
+#'   # Access Philippines PPI table
+#'   ppiPHL2014
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiPHL2014[ppiPHL2014$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiPHL2014, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # poverty line definition
+#'   ppiScore <- 50
+#'   ppiPHL2014[ppiPHL2014$score == ppiScore, "nl100"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -1423,6 +2537,27 @@ NULL
 #' \item{\code{ppp190}}{Below $1.90 per day purchasing power parity (2011)}
 #' \item{\code{ppp310}}{Below $3.10 per day purchasing power parity (2011)}
 #' }
+#'
+#' @examples
+#'   # Access Philippines PPI table
+#'   ppiPHL2014_a
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiPHL2014_a[ppiPHL2014_a$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiPHL2014_a, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # poverty line definition
+#'   ppiScore <- 50
+#'   ppiPHL2014_a[ppiPHL2014_a$score == ppiScore, "nl100"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -1448,6 +2583,27 @@ NULL
 #' \item{\code{ppp500}}{Below $5.00 per day purchasing power parity (2005)}
 #' \item{\code{laeken}}{Laeken poverty line}
 #' }
+#'
+#' @examples
+#'   # Access Romania PPI table
+#'   ppiROU2009
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiROU2009[ppiROU2009$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiROU2009, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # poverty line definition
+#'   ppiScore <- 50
+#'   ppiROU2009[ppiROU2009$score == ppiScore, "nl100"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -1468,6 +2624,27 @@ NULL
 #' \item{\code{extreme}}{USAID extreme poverty}
 #' \item{\code{ppp625}}{Below $6.25 per day purchasing power parity (2005)}
 #' }
+#'
+#' @examples
+#'   # Access Russia PPI table
+#'   ppiRUS2010
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiRUS2010[ppiRUS2010$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiRUS2010, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # poverty line definition
+#'   ppiScore <- 50
+#'   ppiRUS2010[ppiRUS2010$score == ppiScore, "nl100"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -1495,6 +2672,27 @@ NULL
 #' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
 #' \item{\code{ppp375}}{Below $3.75 per day purchasing power parity (2005)}
 #' }
+#'
+#' @examples
+#'   # Access Senegal PPI table
+#'   ppiSEN2009
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiSEN2009[ppiSEN2009$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiSEN2009, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # poverty line definition
+#'   ppiScore <- 50
+#'   ppiSEN2009[ppiSEN2009$score == ppiScore, "nl100"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -1522,6 +2720,27 @@ NULL
 #' \item{\code{ppp500}}{Below $5.00 per day purchasing power parity (2005)}
 #' \item{\code{ppp844}}{Below $8.44 per day purchasing power parity (2005)}
 #' }
+#'
+#' @examples
+#'   # Access Rwanda PPI table
+#'   ppiRWA2016
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiRWA2016[ppiRWA2016$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiRWA2016, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # poverty line definition
+#'   ppiScore <- 50
+#'   ppiRWA2016[ppiRWA2016$score == ppiScore, "nl100"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -1546,6 +2765,27 @@ NULL
 #' \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}
 #' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
 #' }
+#'
+#' @examples
+#'   # Access Sierra Leone PPI table
+#'   ppiSLE2011
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiSLE2011[ppiSLE2011$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiSLE2011, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # poverty line definition
+#'   ppiScore <- 50
+#'   ppiSLE2011[ppiSLE2011$score == ppiScore, "nl100"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -1578,6 +2818,27 @@ NULL
 #' \item{\code{percentile60}}{Below 60th percentile poverty line}
 #' \item{\code{percentile80}}{Below 80th percentile poverty line}
 #' }
+#'
+#' @examples
+#'   # Access Sri Lanka PPI table
+#'   ppiLKA2016
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiLKA2016[ppiLKA2016$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiLKA2016, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # poverty line definition
+#'   ppiScore <- 50
+#'   ppiLKA2016[ppiLKA2016$score == ppiScore, "nl100"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -1602,6 +2863,27 @@ NULL
 #' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
 #' \item{\code{ppp400}}{Below $4.00 per day purchasing power parity (2005)}
 #' }
+#'
+#' @examples
+#'   # Access South Africa PPI table
+#'   ppiZAF2009
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiZAF2009[ppiZAF2009$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiZAF2009, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # poverty line definition
+#'   ppiScore <- 50
+#'   ppiZAF2009[ppiZAF2009$score == ppiScore, "nl100"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -1626,6 +2908,27 @@ NULL
 #' \item{\code{ppp375}}{Below $3.75 per day purchasing power parity (2005)}
 #' \item{\code{ppp500}}{Below $5.00 per day purchasing power parity (2005)}
 #' }
+#'
+#' @examples
+#'   # Access Syria PPI table
+#'   ppiSYR2010
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiSYR2010[ppiSYR2010$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiSYR2010, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # poverty line definition
+#'   ppiScore <- 50
+#'   ppiSYR2010[ppiSYR2010$score == ppiScore, "nl100"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -1661,6 +2964,27 @@ NULL
 #' \item{\code{percentile60}}{Below 60th percentile poverty line}
 #' \item{\code{percentile80}}{Below 80th percentile poverty line}
 #' }
+#'
+#' @examples
+#'   # Access Tanzania PPI table
+#'   ppiTZA2016
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiTZA2016[ppiTZA2016$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiTZA2016, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # poverty line definition
+#'   ppiScore <- 50
+#'   ppiTZA2016[ppiTZA2016$score == ppiScore, "nl100"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -1686,6 +3010,27 @@ NULL
 #' \item{\code{ppp200}}{Below $2.00 per day purchasing power parity (2005)}
 #' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
 #' }
+#'
+#' @examples
+#'   # Access Tajikistan PPI table
+#'   ppiTJK2015
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiTJK2015[ppiTJK2015$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiTJK2015, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # poverty line definition
+#'   ppiScore <- 50
+#'   ppiTJK2015[ppiTJK2015$score == ppiScore, "nl100"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -1710,6 +3055,27 @@ NULL
 #' \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}
 #' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
 #' }
+#'
+#' @examples
+#'   # Access Timor Leste PPI table
+#'   ppiTLS2013
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiTLS2013[ppiTLS2013$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiTLS2013, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # poverty line definition
+#'   ppiScore <- 50
+#'   ppiTLS2013[ppiTLS2013$score == ppiScore, "nl100"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -1739,6 +3105,27 @@ NULL
 #' \item{\code{ppp190}}{Below $1.90 per day purchasing power parity (2011)}
 #' \item{\code{ppp310}}{Below $3.10 per day purchasing power parity (2011)}
 #' }
+#'
+#' @examples
+#'   # Access Uganda PPI table
+#'   ppiUGA2015
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiUGA2015[ppiUGA2015$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiUGA2015, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # poverty line definition
+#'   ppiScore <- 50
+#'   ppiUGA2015[ppiUGA2015$score == ppiScore, "nl100"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -1763,6 +3150,27 @@ NULL
 #' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
 #' \item{\code{molisa}}{MOLISA poverty line}
 #' }
+#'
+#' @examples
+#'   # Access Vietnam PPI table
+#'   ppiVNM2009
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiVNM2009[ppiVNM2009$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiVNM2009, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # poverty line definition
+#'   ppiScore <- 50
+#'   ppiVNM2009[ppiVNM2009$score == ppiScore, "nl100"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -1787,6 +3195,27 @@ NULL
 #' \item{\code{ppp300}}{Below $3.00 per day purchasing power parity (2005)}
 #' \item{\code{ppp400}}{Below $4.00 per day purchasing power parity (2005)}
 #' }
+#'
+#' @examples
+#'   # Access Yemen PPI table
+#'   ppiYEM2009
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiYEM2009[ppiYEM2009$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiYEM2009, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # poverty line definition
+#'   ppiScore <- 50
+#'   ppiYEM2009[ppiYEM2009$score == ppiScore, "nl100"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -1819,6 +3248,27 @@ NULL
 #' \item{\code{percentile60}}{Below 60th percentile poverty line}
 #' \item{\code{percentile80}}{Below 80th percentile poverty line}
 #' }
+#'
+#' @examples
+#'   # Access Zambia PPI table
+#'   ppiZMB2017
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiZMB2017[ppiZMB2017$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiZMB2017, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # poverty line definition
+#'   ppiScore <- 50
+#'   ppiZMB2017[ppiZMB2017$score == ppiScore, "nl100"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -1846,6 +3296,27 @@ NULL
 #' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
 #' \item{\code{ppp500}}{Below $5.00 per day purchasing power parity (2005)}
 #' }
+#'
+#' @examples
+#'   # Access Cambodia PPI table
+#'   ppiKHM2015_wb
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiKHM2015_wb[ppiKHM2015_wb$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiKHM2015_wb, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # poverty line definition
+#'   ppiScore <- 50
+#'   ppiKHM2015_wb[ppiKHM2015_wb$score == ppiScore, "nl100"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
@@ -1870,11 +3341,33 @@ NULL
 #' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
 #' \item{\code{ppp500}}{Below $5.00 per day purchasing power parity (2005)}
 #' }
+#'
+#' @examples
+#'   # Access Cambodia PPI table
+#'   ppiKHM2015_gov
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiKHM2015_gov[ppiKHM2015_gov$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiKHM2015_gov, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # poverty line definition
+#'   ppiScore <- 50
+#'   ppiKHM2015_gov[ppiKHM2015_gov$score == ppiScore, "nl100"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
 ################################################################################
 "ppiKHM2015_gov"
+
 
 ################################################################################
 #
@@ -1891,34 +3384,76 @@ NULL
 #' \item{\code{ppp125}}{Below $1.25 per day purchasing power poverty (2005)}
 #' \item{\code{ppp250}}{Below $2.50 per day purchasing power poverty (2005)}
 #' }
+#'
+#' @examples
+#'   # Access Cambodia PPI table
+#'   ppiKHM2015
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiKHM2015[ppiKHM2015$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiKHM2015, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # poverty line definition
+#'   ppiScore <- 50
+#'   ppiKHM2015[ppiKHM2015$score == ppiScore, "nl100"]
+#'
 #' @source \url{www.povertyindex.org}
 #'
 #
 ################################################################################
 "ppiKHM2015"
- 
- 
+
+
 ################################################################################
-# 
-#' ppiPAK2009  
-#' 
-#' Poverty Probability Index (PPI) lookup table for Pakistan  
-#' 
-#' @format A data frame with 10 columns and 101 rows:  
-#' \describe{ 
-#' \item{\code{score}}{PPI score}  
-#' \item{\code{nl100}}{National poverty line (100)}  
-#' \item{\code{nl50}}{National poverty line (50)}  
-#' \item{\code{nl75}}{National poverty line (75)}  
-#' \item{\code{nl125}}{National poverty line (125)}  
-#' \item{\code{nl200}}{National poverty line (200)}  
-#' \item{\code{extreme}}{USAID extreme poverty}  
-#' \item{\code{ppp125}}{Poorest half below 100 national}  
-#' \item{\code{ppp250}}{Below $1.25 per day purchasing power parity (2005)}  
-#' \item{\code{ppp375}}{Below $2.50 per day purchasing power parity (2005)}  
-#' } 
-#' @source \url{www.povertyindex.org}  
-#' 
-# 
-################################################################################ 
+#
+#' ppiPAK2009
+#'
+#' Poverty Probability Index (PPI) lookup table for Pakistan
+#'
+#' @format A data frame with 10 columns and 101 rows:
+#' \describe{
+#' \item{\code{score}}{PPI score}
+#' \item{\code{nl100}}{National poverty line (100)}
+#' \item{\code{nl50}}{National poverty line (50)}
+#' \item{\code{nl75}}{National poverty line (75)}
+#' \item{\code{nl125}}{National poverty line (125)}
+#' \item{\code{nl200}}{National poverty line (200)}
+#' \item{\code{extreme}}{USAID extreme poverty}
+#' \item{\code{ppp125}}{Poorest half below 100 national}
+#' \item{\code{ppp250}}{Below $1.25 per day purchasing power parity (2005)}
+#' \item{\code{ppp375}}{Below $2.50 per day purchasing power parity (2005)}
+#' }
+#'
+#' @examples
+#'   # Access Pakistan PPI table
+#'   ppiPAK2009
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiPAK2009[ppiPAK2009$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiPAK2009, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the national
+#'   # poverty line definition
+#'   ppiScore <- 50
+#'   ppiPAK2009[ppiPAK2009$score == ppiScore, "nl100"]
+#'
+#' @source \url{www.povertyindex.org}
+#'
+#
+################################################################################
 "ppiPAK2009"
