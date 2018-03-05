@@ -27,13 +27,19 @@ Lookup tables for estimating the likelihood of poverty using the `Poverty Probab
 
 ## Installation
 
+You can install `ppitables` from CRAN with:
+
+```{r cran, eval = FALSE}
+install.packages("ppitables")
+library(ppitables)
+```
+
 You can install `ppitables` from GitHub with:
 
 ```{r gh-installation, eval = FALSE}
 # install.packages("devtools")
 devtools::install_github("validmeasures/ppitables")
 library(ppitables)
-
 ```
 
 

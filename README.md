@@ -23,6 +23,13 @@ documentation of the `PPI` found at <https://www.povertyindex.org>.
 
 ## Installation
 
+You can install `ppitables` from CRAN with:
+
+``` r
+install.packages("ppitables")
+library(ppitables)
+```
+
 You can install `ppitables` from GitHub with:
 
 ``` r
