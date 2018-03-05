@@ -19,6 +19,8 @@ knitr::opts_chunk$set(
 [![CRAN](http://cranlogs.r-pkg.org/badges/ppitables)](https://CRAN.R-project.org/package=ppitables)
 [![Travis-CI Build Status](https://travis-ci.org/validmeasures/ppitables.svg?branch=master)](https://travis-ci.org/validmeasures/ppitables)
 [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/validmeasures/ppitables?branch=master&svg=true)](https://ci.appveyor.com/project/validmeasures/ppitables)
+[![DOI](https://zenodo.org/badge/121277287.svg)](https://zenodo.org/badge/latestdoi/121277287)
+
 
 Lookup tables for estimating the likelihood of poverty using the `Poverty Probability Index` (previously called `Progress out of Poverty Index`) or `PPI` from country-specific indicators collected from cross-sectional surveys. This lookup table is extracted from documentation of the `PPI` found at [https://www.povertyindex.org](https://www.povertyindex.org).
 
