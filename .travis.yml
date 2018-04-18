@@ -6,6 +6,21 @@ warnings_are_errors: true
 sudo: false
 cache: packages
 
+before_script:
+  - Rscript -e 'install.packages("pkgdown")'
+
+script:
+  - Rscript -e 'pkgdown::build_site()'
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  on:
+    branch: master
+  local_dir: docs
+  fqdn: validmeasures.org
+
 r_github_packages:
   - r-lib/covr
 
