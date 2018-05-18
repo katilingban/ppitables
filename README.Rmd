@@ -84,7 +84,7 @@ Following are the available PPI country tables from the `ppitables` package. Thi
 | 5. `ppiBGD2013`             | PPI for Bangladesh using Bangaldesh's 2010 HIES     | 2013                 |
 |                             | Survey                                              |                      |
 +-----------------------------+-----------------------------------------------------+----------------------+
-| 6. `ppiBOL2015  `           | PPI for Bolivia using Bolivia’s 2013 Household      | 2015                 |
+| 6. `ppiBOL2015`             | PPI for Bolivia using Bolivia’s 2013 Household      | 2015                 |
 |                             | Survey                                              |                      |
 +-----------------------------+-----------------------------------------------------+----------------------+
 | 7. `ppiBRA2010`             | PPI for Brazil based on the 2008 PNAD               | 2010                 |
@@ -99,7 +99,7 @@ Following are the available PPI country tables from the `ppitables` package. Thi
 |                             | Integrada de Hogares. This table uses the legacy    |                      |
 |                             | poverty cutoffs.                                    |                      |
 +-----------------------------+-----------------------------------------------------+----------------------+
-|    `ppiCOL2018_a`           | PPI for Colombia based on Colombia's 2009 Encuesta  | 2018                 |
+| `ppiCOL2018_a`              | PPI for Colombia based on Colombia's 2009 Encuesta  | 2018                 |
 |                             | Integrada de Hogares. This table uses the new       |                      |
 |                             | poverty cutoffs for Colombia.                       |                      |
 +-----------------------------+-----------------------------------------------------+----------------------+
@@ -121,11 +121,11 @@ Following are the available PPI country tables from the `ppitables` package. Thi
 | 16. `ppiGHA2015`            | PPI for Ghana based on Ghana’s 2012/13 Living       | 2015                 |
 |                             | Standards Survey using legacy poverty lines         |                      |
 +-----------------------------+-----------------------------------------------------+----------------------+
-|     `ppiGHA2015_a`          | PPI for Ghana based on Ghana’s 2012/13 Living       | 2015                 |
+| `ppiGHA2015_a`              | PPI for Ghana based on Ghana’s 2012/13 Living       | 2015                 |
 |                             | Standards Survey using the new-definition poverty   |                      |
 |                             | lines deflated with Ghana's CPI                     |                      |
 +-----------------------------+-----------------------------------------------------+----------------------+
-|     `ppiGHA2015_b`          | PPI for Ghana based on Ghana’s 2012/13 Living       | 2015                 |
+| `ppiGHA2015_b`              | PPI for Ghana based on Ghana’s 2012/13 Living       | 2015                 |
 |                             | Standards Survey using the new-definition poverty   |                      |
 |                             | lines deflated with the change in 100% of national  |                      |
 |                             | poverty line                                        |                      |
@@ -141,22 +141,22 @@ Following are the available PPI country tables from the `ppitables` package. Thi
 | 20. `ppiIDN2012`            | PPI for Indonesia based on data from 2010 using     | 2012                 |
 |                             | legacy poverty lines                                |                      |
 +-----------------------------+-----------------------------------------------------+----------------------+
-|     `ppiIDN2012`            | PPI for Indonesia based on data from 2010 using new | 2012                 |
+| `ppiIDN2012_a`              | PPI for Indonesia based on data from 2010 using new | 2012                 |
 |                             | definition poverty lines                            |                      |
 +-----------------------------+-----------------------------------------------------+----------------------+
 | 21. `ppiIND2016_r59`        | PPI for India using India’s 2011/12 Socio-Economic  | 2016                 |
 |                             | using the R59 legacy poverty lines using MRP        |                      |
 |                             | consumption                                         |                      |
 +-----------------------------+-----------------------------------------------------+----------------------+
-|     `ppiIND2016_r62`        | PPI for India using India’s 2011/12 Socio-Economic  | 2016                 |
+| `ppiIND2016_r62`            | PPI for India using India’s 2011/12 Socio-Economic  | 2016                 |
 |                             | using the R59 legacy poverty lines using MRP        |                      |
 |                             | consumption                                         |                      |
 +-----------------------------+-----------------------------------------------------+----------------------+
-|     `ppiIND2016_r66`        | PPI for India using India’s 2011/12 Socio-Economic  | 2016                 |
+| `ppiIND2016_r66`            | PPI for India using India’s 2011/12 Socio-Economic  | 2016                 |
 |                             | using the R66 legacy poverty lines using MRP        |                      |
 |                             | consumption                                         |                      |
 +-----------------------------+-----------------------------------------------------+----------------------+
-|     `ppiIND2016_r68`        | PPI for India using India’s 2011/12 Socio-Economic  | 2016                 |
+| `ppiIND2016_r68`            | PPI for India using India’s 2011/12 Socio-Economic  | 2016                 |
 |                             | using the R68 new poverty lines using MRP           |                      |
 |                             | consumption                                         |                      |
 +-----------------------------+-----------------------------------------------------+----------------------+
@@ -173,11 +173,11 @@ Following are the available PPI country tables from the `ppitables` package. Thi
 |                             | Socio-Economic Survey based using legacy poverty    |                      |
 |                             | lines                                               |                      |
 +-----------------------------+-----------------------------------------------------+----------------------+
-|     `ppiKHM2015_gov`        | PPI for Cambodia using Cambodia’s 2011              | 2015                 |
+| `ppiKHM2015_gov`            | PPI for Cambodia using Cambodia’s 2011              | 2015                 |
 |                             | Socio-Economic Survey based using government        |                      |
 |                             | definition poverty lines                            |                      |
 +-----------------------------+-----------------------------------------------------+----------------------+
-|     `ppiKHM2015_wb`         | PPI for Cambodia using Cambodia’s 2011              | 2015                 |
+| `ppiKHM2015_wb`             | PPI for Cambodia using Cambodia’s 2011              | 2015                 |
 |                             | Socio-Economic Survey based using World Bank        |                      |
 |                             | definition poverty lines                            |                      |
 +-----------------------------+-----------------------------------------------------+----------------------+
@@ -194,7 +194,7 @@ Following are the available PPI country tables from the `ppitables` package. Thi
 |                             | de Ingresos y Gastos de los Hogares de 2014 using   |                      |
 |                             | legacy definitions of poverty                       |                      |
 +-----------------------------+-----------------------------------------------------+----------------------+
-|     `ppiMEX2017_a`          | PPI for Mexico based on Mexico's Encuesta Nacional  | 2017                 |
+| `ppiMEX2017_a`              | PPI for Mexico based on Mexico's Encuesta Nacional  | 2017                 |
 |                             | de Ingresos y Gastos de los Hogares de 2014 using   |                      |
 |                             | new definitions of poverty                          |                      |
 +-----------------------------+-----------------------------------------------------+----------------------+
@@ -213,11 +213,11 @@ Following are the available PPI country tables from the `ppitables` package. Thi
 | 34. `ppiMWI2015`            | PPI for Malawi based on Malawi's 2010/11 Integrated | 2015                 |
 |                             | Household Survey using legacy poverty definitions   |                      |
 +-----------------------------+-----------------------------------------------------+----------------------+
-|     `ppiMWI2015_gov`        | PPI for Malawi based on Malawi's 2010/11 Integrated | 2015                 |
+| `ppiMWI2015_gov`            | PPI for Malawi based on Malawi's 2010/11 Integrated | 2015                 |
 |                             | Household Survey using government poverty           |                      |
 |                             | definitions                                         |                      |
 +-----------------------------+-----------------------------------------------------+----------------------+
-|     `ppiMWI2015_pbm`        | PPI for Malawi based on Malawi's 2010/11 Integrated | 2015                 |
+| `ppiMWI2015_pbm`            | PPI for Malawi based on Malawi's 2010/11 Integrated | 2015                 |
 |                             | Household Survey using PBM poverty definitions      |                      |
 +-----------------------------+-----------------------------------------------------+----------------------+
 | 35. `ppiNAM2013`            | PPI for Namibia based on Namibia’s 2009/10 Household| 2013                 |
@@ -234,7 +234,7 @@ Following are the available PPI country tables from the `ppitables` package. Thi
 +-----------------------------+-----------------------------------------------------+----------------------+
 | 39. `ppiNPL2013`            | PPI for Nepal using legacy poverty definition lines | 2013                 |
 +-----------------------------+-----------------------------------------------------+----------------------+
-|     `ppiNPL2013_a`          | PPI for Nepal using new poverty definition lines    | 2013                 |
+| `ppiNPL2013_a`              | PPI for Nepal using new poverty definition lines    | 2013                 |
 +-----------------------------+-----------------------------------------------------+----------------------+
 | 40. `ppiPAK2009`            | PPI for Pakistan using Pakistan 2005/6 Social and   | 2009                 |
 |                             | Living Standards Measurement Survey                 |                      |

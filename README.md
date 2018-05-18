@@ -210,12 +210,12 @@ the PPI [site](https://www.povertyindex.org).
 <td>2015</td>
 </tr>
 <tr class="even">
-<td><pre><code>`ppiGHA2015_a`</code></pre></td>
+<td><code>ppiGHA2015_a</code></td>
 <td>PPI for Ghana based on Ghana’s 2012/13 Living Standards Survey using the new-definition poverty lines deflated with Ghana’s CPI</td>
 <td>2015</td>
 </tr>
 <tr class="odd">
-<td><pre><code>`ppiGHA2015_b`</code></pre></td>
+<td><code>ppiGHA2015_b</code></td>
 <td>PPI for Ghana based on Ghana’s 2012/13 Living Standards Survey using the new-definition poverty lines deflated with the change in 100% of national poverty line</td>
 <td>2015</td>
 </tr>
@@ -248,7 +248,7 @@ the PPI [site](https://www.povertyindex.org).
 <td>2012</td>
 </tr>
 <tr class="even">
-<td><pre><code>`ppiIDN2012`</code></pre></td>
+<td><code>ppiIDN2012_a</code></td>
 <td>PPI for Indonesia based on data from 2010 using new definition poverty lines</td>
 <td>2012</td>
 </tr>
@@ -260,17 +260,17 @@ the PPI [site](https://www.povertyindex.org).
 <td>2016</td>
 </tr>
 <tr class="even">
-<td><pre><code>`ppiIND2016_r62`</code></pre></td>
+<td><code>ppiIND2016_r62</code></td>
 <td>PPI for India using India’s 2011/12 Socio-Economic using the R59 legacy poverty lines using MRP consumption</td>
 <td>2016</td>
 </tr>
 <tr class="odd">
-<td><pre><code>`ppiIND2016_r66`</code></pre></td>
+<td><code>ppiIND2016_r66</code></td>
 <td>PPI for India using India’s 2011/12 Socio-Economic using the R66 legacy poverty lines using MRP consumption</td>
 <td>2016</td>
 </tr>
 <tr class="even">
-<td><pre><code>`ppiIND2016_r68`</code></pre></td>
+<td><code>ppiIND2016_r68</code></td>
 <td>PPI for India using India’s 2011/12 Socio-Economic using the R68 new poverty lines using MRP consumption</td>
 <td>2016</td>
 </tr>
@@ -303,12 +303,12 @@ the PPI [site](https://www.povertyindex.org).
 <td>2015</td>
 </tr>
 <tr class="odd">
-<td><pre><code>`ppiKHM2015_gov`</code></pre></td>
+<td><code>ppiKHM2015_gov</code></td>
 <td>PPI for Cambodia using Cambodia’s 2011 Socio-Economic Survey based using government definition poverty lines</td>
 <td>2015</td>
 </tr>
 <tr class="even">
-<td><pre><code>`ppiKHM2015_wb`</code></pre></td>
+<td><code>ppiKHM2015_wb</code></td>
 <td>PPI for Cambodia using Cambodia’s 2011 Socio-Economic Survey based using World Bank definition poverty lines</td>
 <td>2015</td>
 </tr>
@@ -341,7 +341,7 @@ the PPI [site](https://www.povertyindex.org).
 <td>2017</td>
 </tr>
 <tr class="odd">
-<td><pre><code>`ppiMEX2017_a`</code></pre></td>
+<td><code>ppiMEX2017_a</code></td>
 <td>PPI for Mexico based on Mexico’s Encuesta Nacional de Ingresos y Gastos de los Hogares de 2014 using new definitions of poverty</td>
 <td>2017</td>
 </tr>
@@ -381,12 +381,12 @@ the PPI [site](https://www.povertyindex.org).
 <td>2015</td>
 </tr>
 <tr class="odd">
-<td><pre><code>`ppiMWI2015_gov`</code></pre></td>
+<td><code>ppiMWI2015_gov</code></td>
 <td>PPI for Malawi based on Malawi’s 2010/11 Integrated Household Survey using government poverty definitions</td>
 <td>2015</td>
 </tr>
 <tr class="even">
-<td><pre><code>`ppiMWI2015_pbm`</code></pre></td>
+<td><code>ppiMWI2015_pbm</code></td>
 <td>PPI for Malawi based on Malawi’s 2010/11 Integrated Household Survey using PBM poverty definitions</td>
 <td>2015</td>
 </tr>
@@ -426,7 +426,7 @@ the PPI [site](https://www.povertyindex.org).
 <td>2013</td>
 </tr>
 <tr class="even">
-<td><pre><code>`ppiNPL2013_a`</code></pre></td>
+<td><code>ppiNPL2013_a</code></td>
 <td>PPI for Nepal using new poverty definition lines</td>
 <td>2013</td>
 </tr>
