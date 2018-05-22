@@ -3287,9 +3287,9 @@ NULL
 #' @format A data frame with 9 columns and 101 rows:
 #' \describe{
 #' \item{\code{score}}{PPI score}
-#' \item{\code{nl100}}{National poverty line (100)}
-#' \item{\code{nl150}}{National poverty line (150)}
-#' \item{\code{nl200}}{National poverty line (200)}
+#' \item{\code{nl100}}{National poverty line (100\%)}
+#' \item{\code{nl150}}{National poverty line (150\%)}
+#' \item{\code{nl200}}{National poverty line (200\%)}
 #' \item{\code{median}}{Median poverty line}
 #' \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}
 #' \item{\code{ppp200}}{Below $2.00 per day purchasing power parity (2005)}
@@ -3332,9 +3332,9 @@ NULL
 #' @format A data frame with 9 columns and 101 rows:
 #' \describe{
 #' \item{\code{score}}{PPI score}
-#' \item{\code{nl100}}{National poverty line (100)}
-#' \item{\code{nl150}}{National poverty line (150)}
-#' \item{\code{nl200}}{National poverty line (200)}
+#' \item{\code{nl100}}{National poverty line (100\%)}
+#' \item{\code{nl150}}{National poverty line (150\%)}
+#' \item{\code{nl200}}{National poverty line (200\%)}
 #' \item{\code{median}}{Median poverty line}
 #' \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}
 #' \item{\code{ppp200}}{Below $2.00 per day purchasing power parity (2005)}
@@ -3378,9 +3378,9 @@ NULL
 #' @format A data frame with 6 columns and 101 rows:
 #' \describe{
 #' \item{\code{score}}{PPI score}
-#' \item{\code{nl100}}{National poverty line (100)}
-#' \item{\code{nl150}}{National poverty line (150)}
-#' \item{\code{nl200}}{National poverty line (200)}
+#' \item{\code{nl100}}{National poverty line (100\%)}
+#' \item{\code{nl150}}{National poverty line (150\%)}
+#' \item{\code{nl200}}{National poverty line (200\%)}
 #' \item{\code{ppp125}}{Below $1.25 per day purchasing power poverty (2005)}
 #' \item{\code{ppp250}}{Below $2.50 per day purchasing power poverty (2005)}
 #' }
@@ -3421,11 +3421,11 @@ NULL
 #' @format A data frame with 10 columns and 101 rows:
 #' \describe{
 #' \item{\code{score}}{PPI score}
-#' \item{\code{nl100}}{National poverty line (100)}
-#' \item{\code{nl50}}{National poverty line (50)}
-#' \item{\code{nl75}}{National poverty line (75)}
-#' \item{\code{nl125}}{National poverty line (125)}
-#' \item{\code{nl200}}{National poverty line (200)}
+#' \item{\code{nl100}}{National poverty line (100\%)}
+#' \item{\code{nl50}}{National poverty line (50\%)}
+#' \item{\code{nl75}}{National poverty line (75\%)}
+#' \item{\code{nl125}}{National poverty line (125\%)}
+#' \item{\code{nl200}}{National poverty line (200\%)}
 #' \item{\code{extreme}}{USAID extreme poverty}
 #' \item{\code{ppp125}}{Poorest half below 100 national}
 #' \item{\code{ppp250}}{Below $1.25 per day purchasing power parity (2005)}
@@ -3457,3 +3457,70 @@ NULL
 #
 ################################################################################
 "ppiPAK2009"
+
+
+################################################################################
+#
+#' ppiCIV2018
+#'
+#' Poverty Probability Index (PPI) lookup table for Ivory Coast
+#'
+#' @format A data frame with 15 columns and 101 rows:
+#' \describe{
+#' \item{\code{score}}{PPI score}
+#' \item{\code{nl100}}{National poverty line (100\%)}
+#' \item{\code{nl150}}{National poverty line (150\%)}
+#' \item{\code{nl200}}{National poverty line (200\%)}
+#' \item{\code{ppp125}}{Below $1.00 per day purchasing power parity (2011)}
+#' \item{\code{ppp250}}{Below $1.90 per day purchasing power parity (2011)}
+#' \item{\code{ppp500}}{Below $3.20 per day purchasing power parity (2011)}
+#' \item{\code{ppp100}}{Below $5.50 per day purchasing power parity (2011)}
+#' \item{\code{ppp190}}{Below $1.25 per day purchasing power parity (2005)}
+#' \item{\code{ppp320}}{Below $2.50 per day purchasing power parity (2005)}
+#' \item{\code{ppp550}}{Below $5.00 per day purchasing power parity (2005)}
+#' \item{\code{percentile20}}{Below 20th percentile poverty line}
+#' \item{\code{percentile40}}{Below 40th percentile poverty line}
+#' \item{\code{percentile60}}{Below 60th percentile poverty line}
+#' \item{\code{percentile80}}{Below 80th percentile poverty line}
+#' }
+#' @source \url{www.povertyindex.org}
+#'
+#
+################################################################################
+"ppiCIV2018"
+
+
+
+################################################################################
+#
+#' ppiPER2018
+#'
+#' Poverty Probability Index (PPI) lookup table for Peru
+#'
+#' @format A data frame with 19 columns and 101 rows:
+#' \describe{
+#' \item{\code{score}}{PPI score}
+#' \item{\code{extreme}}{Extreme national poverty line}
+#' \item{\code{nl100}}{National poverty line (100\%)}
+#' \item{\code{nl150}}{National poverty line (150\%)}
+#' \item{\code{nl200}}{National poverty line (200\%)}
+#' \item{\code{ppp190}}{Below $1.90 per day purchasing power parity (2011)}
+#' \item{\code{ppp320}}{Below $3.20 per day purchasing power parity (2011)}
+#' \item{\code{ppp550}}{Below $5.50 per day purchasing power parity (2011)}
+#' \item{\code{ppp800}}{Below $8.00 per day purchasing power parity (2011)}
+#' \item{\code{ppp1100}}{Below $11.00 per day purchasing power parity (2011)}
+#' \item{\code{ppp1500}}{Below $15.00 per day purchasing power parity (2011)}
+#' \item{\code{ppp2170}}{Below $21.70 per day purchasing power parity (2011)}
+#' \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}
+#' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
+#' \item{\code{ppp500}}{Below $5.00 per day purchasing power parity (2005)}
+#' \item{\code{percentile20}}{Below 20th percentile poverty line}
+#' \item{\code{percentile40}}{Below 40th percentile poverty line}
+#' \item{\code{percentile60}}{Below 60th percentile poverty line}
+#' \item{\code{percentile80}}{Below 80th percentile poverty line}
+#' }
+#' @source \url{www.povertyindex.org}
+#'
+#
+################################################################################
+"ppiPER2018"
