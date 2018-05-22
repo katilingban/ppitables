@@ -1348,7 +1348,7 @@ devtools::use_data(ppiIDN2012, overwrite = TRUE)
 
 ################################################################################
 #
-# Ivory Coast
+# Ivory Coast - Simple Poverty Scorecard
 #
 ################################################################################
 
@@ -1360,6 +1360,115 @@ row.names(civDF) <- 0:100
 
 ppiCIV2013 <- civDF
 devtools::use_data(ppiCIV2013, overwrite = TRUE)
+
+
+################################################################################
+#
+# Ivory Coast - PPI
+#
+################################################################################
+
+civDF <- get_ppi_table(pdf = "data-raw/pdf/ivory_coast_ppi_2018.pdf", n = 5, limits = 6:39, expand = FALSE)
+names(civDF) <- rep(c("score", "nl100"), 3)
+
+civDF <- rbind(civDF[,1:2], civDF[,3:4], civDF[,5:6])
+civDF <- civDF[1:101, ]
+
+nl150 <- get_ppi_table(pdf = "data-raw/pdf/ivory_coast_ppi_2018.pdf", n = 8, limits = 6:39, expand = FALSE)
+names(nl150) <- rep(c("score", "nl150"), 3)
+
+nl150 <- rbind(nl150[,1:2], nl150[,3:4], nl150[,5:6])
+nl150 <- nl150[1:101, ]
+
+nl200 <- get_ppi_table(pdf = "data-raw/pdf/ivory_coast_ppi_2018.pdf", n = 11, limits = 6:39, expand = FALSE)
+names(nl200) <- rep(c("score", "nl200"), 3)
+
+nl200 <- rbind(nl200[,1:2], nl200[,3:4], nl200[,5:6])
+nl200 <- nl200[1:101, ]
+
+ppp100 <- get_ppi_table(pdf = "data-raw/pdf/ivory_coast_ppi_2018.pdf", n = 14, limits = 6:39, expand = FALSE)
+names(ppp100) <- rep(c("score", "ppp100"), 3)
+
+ppp100 <- rbind(ppp100[,1:2], ppp100[,3:4], ppp100[,5:6])
+ppp100 <- ppp100[1:101, ]
+
+ppp190 <- get_ppi_table(pdf = "data-raw/pdf/ivory_coast_ppi_2018.pdf", n = 17, limits = 6:39, expand = FALSE)
+names(ppp190) <- rep(c("score", "ppp190"), 3)
+
+ppp190 <- rbind(ppp190[,1:2], ppp190[,3:4], ppp190[,5:6])
+ppp190 <- ppp190[1:101, ]
+
+ppp320 <- get_ppi_table(pdf = "data-raw/pdf/ivory_coast_ppi_2018.pdf", n = 20, limits = 6:39, expand = FALSE)
+names(ppp320) <- rep(c("score", "ppp320"), 3)
+
+ppp320 <- rbind(ppp320[,1:2], ppp320[,3:4], ppp320[,5:6])
+ppp320 <- ppp320[1:101, ]
+
+ppp550 <- get_ppi_table(pdf = "data-raw/pdf/ivory_coast_ppi_2018.pdf", n = 23, limits = 6:39, expand = FALSE)
+names(ppp550) <- rep(c("score", "ppp550"), 3)
+
+ppp550 <- rbind(ppp550[,1:2], ppp550[,3:4], ppp550[,5:6])
+ppp550 <- ppp550[1:101, ]
+
+ppp125 <- get_ppi_table(pdf = "data-raw/pdf/ivory_coast_ppi_2018.pdf", n = 26, limits = 6:39, expand = FALSE)
+names(ppp125) <- rep(c("score", "ppp125"), 3)
+
+ppp125 <- rbind(ppp125[,1:2], ppp125[,3:4], ppp125[,5:6])
+ppp125 <- ppp125[1:101, ]
+
+ppp250 <- get_ppi_table(pdf = "data-raw/pdf/ivory_coast_ppi_2018.pdf", n = 29, limits = 6:39, expand = FALSE)
+names(ppp250) <- rep(c("score", "ppp250"), 3)
+
+ppp250 <- rbind(ppp250[,1:2], ppp250[,3:4], ppp250[,5:6])
+ppp250 <- ppp250[1:101, ]
+
+ppp500 <- get_ppi_table(pdf = "data-raw/pdf/ivory_coast_ppi_2018.pdf", n = 32, limits = 6:39, expand = FALSE)
+names(ppp500) <- rep(c("score", "ppp500"), 3)
+
+ppp500 <- rbind(ppp500[,1:2], ppp500[,3:4], ppp500[,5:6])
+ppp500 <- ppp500[1:101, ]
+
+percentile20 <- get_ppi_table(pdf = "data-raw/pdf/ivory_coast_ppi_2018.pdf", n = 35, limits = 7:40, expand = FALSE)
+names(percentile20) <- rep(c("score", "percentile20"), 3)
+
+percentile20 <- rbind(percentile20[,1:2], percentile20[,3:4], percentile20[,5:6])
+percentile20 <- percentile20[1:101, ]
+
+percentile40 <- get_ppi_table(pdf = "data-raw/pdf/ivory_coast_ppi_2018.pdf", n = 38, limits = 7:40, expand = FALSE)
+names(percentile40) <- rep(c("score", "percentile40"), 3)
+
+percentile40 <- rbind(percentile40[,1:2], percentile40[,3:4], percentile40[,5:6])
+percentile40 <- percentile40[1:101, ]
+
+percentile60 <- get_ppi_table(pdf = "data-raw/pdf/ivory_coast_ppi_2018.pdf", n = 41, limits = 7:40, expand = FALSE)
+names(percentile60) <- rep(c("score", "percentile60"), 3)
+
+percentile60 <- rbind(percentile60[,1:2], percentile60[,3:4], percentile60[,5:6])
+percentile60 <- percentile60[1:101, ]
+
+percentile80 <- get_ppi_table(pdf = "data-raw/pdf/ivory_coast_ppi_2018.pdf", n = 44, limits = 7:40, expand = FALSE)
+names(percentile80) <- rep(c("score", "percentile80"), 3)
+
+percentile80 <- rbind(percentile80[,1:2], percentile80[,3:4], percentile80[,5:6])
+percentile80 <- percentile80[1:101, ]
+
+civDF <- merge(civDF, nl150)
+civDF <- merge(civDF, nl200)
+civDF <- merge(civDF, ppp125)
+civDF <- merge(civDF, ppp250)
+civDF <- merge(civDF, ppp500)
+civDF <- merge(civDF, ppp100)
+civDF <- merge(civDF, ppp190)
+civDF <- merge(civDF, ppp320)
+civDF <- merge(civDF, ppp550)
+civDF <- merge(civDF, percentile20)
+civDF <- merge(civDF, percentile40)
+civDF <- merge(civDF, percentile60)
+civDF <- merge(civDF, percentile80)
+
+ppiCIV2018 <- civDF
+
+devtools::use_data(ppiCIV2018, overwrite = TRUE)
 
 
 ################################################################################
