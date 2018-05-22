@@ -7,11 +7,11 @@
 \format{A data frame with 10 columns and 101 rows:
 \describe{
 \item{\code{score}}{PPI score}
-\item{\code{nl100}}{National poverty line (100)}
-\item{\code{nl50}}{National poverty line (50)}
-\item{\code{nl75}}{National poverty line (75)}
-\item{\code{nl125}}{National poverty line (125)}
-\item{\code{nl200}}{National poverty line (200)}
+\item{\code{nl100}}{National poverty line (100\%)}
+\item{\code{nl50}}{National poverty line (50\%)}
+\item{\code{nl75}}{National poverty line (75\%)}
+\item{\code{nl125}}{National poverty line (125\%)}
+\item{\code{nl200}}{National poverty line (200\%)}
 \item{\code{extreme}}{USAID extreme poverty}
 \item{\code{ppp125}}{Poorest half below 100 national}
 \item{\code{ppp250}}{Below $1.25 per day purchasing power parity (2005)}
