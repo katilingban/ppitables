@@ -2543,70 +2543,79 @@ names(ppp800) <- rep(c("score", "ppp800"), 3)
 ppp800 <- rbind(ppp800[,1:2], ppp800[,3:4], ppp800[,5:6])
 ppp800 <- ppp800[1:101, ]
 
-ppp1100 <- get_ppi_table(pdf = "data-raw/pdf/peru_ppi_2018.pdf", n = 26, limits = 6:39, expand = FALSE)
+ppp1100 <- get_ppi_table(pdf = "data-raw/pdf/peru_ppi_2018.pdf", n = 29, limits = 6:39, expand = FALSE)
 names(ppp1100) <- rep(c("score", "ppp1100"), 3)
 
 ppp1100 <- rbind(ppp1100[,1:2], ppp1100[,3:4], ppp1100[,5:6])
 ppp1100 <- ppp1100[1:101, ]
 
-ppp1500 <- get_ppi_table(pdf = "data-raw/pdf/peru_ppi_2018.pdf", n = 26, limits = 6:39, expand = FALSE)
+ppp1500 <- get_ppi_table(pdf = "data-raw/pdf/peru_ppi_2018.pdf", n = 32, limits = 6:39, expand = FALSE)
 names(ppp1500) <- rep(c("score", "ppp1500"), 3)
 
 ppp1500 <- rbind(ppp1500[,1:2], ppp1500[,3:4], ppp1500[,5:6])
 ppp1500 <- ppp1500[1:101, ]
 
-ppp2170 <- get_ppi_table(pdf = "data-raw/pdf/peru_ppi_2018.pdf", n = 26, limits = 6:39, expand = FALSE)
+ppp2170 <- get_ppi_table(pdf = "data-raw/pdf/peru_ppi_2018.pdf", n = 35, limits = 6:39, expand = FALSE)
 names(ppp2170) <- rep(c("score", "ppp2170"), 3)
 
 ppp2170 <- rbind(ppp2170[,1:2], ppp2170[,3:4], ppp2170[,5:6])
 ppp2170 <- ppp2170[1:101, ]
 
+ppp125 <- get_ppi_table(pdf = "data-raw/pdf/peru_ppi_2018.pdf", n = 38, limits = 6:39, expand = FALSE)
+names(ppp125) <- rep(c("score", "ppp125"), 3)
 
-ppp250 <- get_ppi_table(pdf = "data-raw/pdf/peru_ppi_2018.pdf", n = 29, limits = 6:39, expand = FALSE)
+ppp125 <- rbind(ppp125[,1:2], ppp125[,3:4], ppp125[,5:6])
+ppp125 <- ppp125[1:101, ]
+
+ppp250 <- get_ppi_table(pdf = "data-raw/pdf/peru_ppi_2018.pdf", n = 41, limits = 6:39, expand = FALSE)
 names(ppp250) <- rep(c("score", "ppp250"), 3)
 
 ppp250 <- rbind(ppp250[,1:2], ppp250[,3:4], ppp250[,5:6])
 ppp250 <- ppp250[1:101, ]
 
-ppp500 <- get_ppi_table(pdf = "data-raw/pdf/peru_ppi_2018.pdf", n = 32, limits = 6:39, expand = FALSE)
+ppp500 <- get_ppi_table(pdf = "data-raw/pdf/peru_ppi_2018.pdf", n = 44, limits = 6:39, expand = FALSE)
 names(ppp500) <- rep(c("score", "ppp500"), 3)
 
 ppp500 <- rbind(ppp500[,1:2], ppp500[,3:4], ppp500[,5:6])
 ppp500 <- ppp500[1:101, ]
 
-percentile20 <- get_ppi_table(pdf = "data-raw/pdf/peru_ppi_2018.pdf", n = 35, limits = 7:40, expand = FALSE)
+percentile20 <- get_ppi_table(pdf = "data-raw/pdf/peru_ppi_2018.pdf", n = 47, limits = 6:39, expand = FALSE)
 names(percentile20) <- rep(c("score", "percentile20"), 3)
 
 percentile20 <- rbind(percentile20[,1:2], percentile20[,3:4], percentile20[,5:6])
 percentile20 <- percentile20[1:101, ]
 
-percentile40 <- get_ppi_table(pdf = "data-raw/pdf/peru_ppi_2018.pdf", n = 38, limits = 7:40, expand = FALSE)
+percentile40 <- get_ppi_table(pdf = "data-raw/pdf/peru_ppi_2018.pdf", n = 50, limits = 6:39, expand = FALSE)
 names(percentile40) <- rep(c("score", "percentile40"), 3)
 
 percentile40 <- rbind(percentile40[,1:2], percentile40[,3:4], percentile40[,5:6])
 percentile40 <- percentile40[1:101, ]
 
-percentile60 <- get_ppi_table(pdf = "data-raw/pdf/peru_ppi_2018.pdf", n = 41, limits = 7:40, expand = FALSE)
+percentile60 <- get_ppi_table(pdf = "data-raw/pdf/peru_ppi_2018.pdf", n = 53, limits = 6:39, expand = FALSE)
 names(percentile60) <- rep(c("score", "percentile60"), 3)
 
 percentile60 <- rbind(percentile60[,1:2], percentile60[,3:4], percentile60[,5:6])
 percentile60 <- percentile60[1:101, ]
 
-percentile80 <- get_ppi_table(pdf = "data-raw/pdf/peru_ppi_2018.pdf", n = 44, limits = 7:40, expand = FALSE)
+percentile80 <- get_ppi_table(pdf = "data-raw/pdf/peru_ppi_2018.pdf", n = 56, limits = 6:39, expand = FALSE)
 names(percentile80) <- rep(c("score", "percentile80"), 3)
 
 percentile80 <- rbind(percentile80[,1:2], percentile80[,3:4], percentile80[,5:6])
 percentile80 <- percentile80[1:101, ]
 
+perDF <- merge(perDF, nl100)
 perDF <- merge(perDF, nl150)
 perDF <- merge(perDF, nl200)
-perDF <- merge(perDF, ppp125)
-perDF <- merge(perDF, ppp250)
-perDF <- merge(perDF, ppp500)
-perDF <- merge(perDF, ppp100)
 perDF <- merge(perDF, ppp190)
 perDF <- merge(perDF, ppp320)
 perDF <- merge(perDF, ppp550)
+perDF <- merge(perDF, ppp800)
+perDF <- merge(perDF, ppp1100)
+perDF <- merge(perDF, ppp1500)
+perDF <- merge(perDF, ppp2170)
+perDF <- merge(perDF, ppp125)
+perDF <- merge(perDF, ppp250)
+perDF <- merge(perDF, ppp500)
 perDF <- merge(perDF, percentile20)
 perDF <- merge(perDF, percentile40)
 perDF <- merge(perDF, percentile60)
