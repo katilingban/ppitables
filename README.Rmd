@@ -46,7 +46,7 @@ library(ppitables)
 
 ## Usage
 
-The `ppitables` package contains PPI lookup tables for the 60 countries[^1] where PPI can currently be calculated. To be able to use the lookup tables in `ppitables` appropriately, you need to be aware of the naming syntax used for the tables for each country. The name for each table will always have three fixed or constant components as follows:
+The `ppitables` package contains PPI lookup tables for the 61 countries[^1] where PPI can currently be calculated. To be able to use the lookup tables in `ppitables` appropriately, you need to be aware of the naming syntax used for the tables for each country. The name for each table will always have three fixed or constant components as follows:
 
 ```{r naming, eval = FALSE}
 ppiXXXYYYY
@@ -62,237 +62,251 @@ These three components are joined together without any spaces or gaps.
 
 Some country lookup tables may have additional components to their name which are added after the year separated with an underscore. These usually signify that a lookup table released on a particular year has a subset table in which the poverty likelihoods for a given `PPI` score are reported based on a different poverty definition or cut-off. This additional component to the table name is usually a character value or alphanumeric and is usually country-specific. To know more about what this additional component to some `PPI` tables refer to, read the index table below of the `PPI` tables available in this package. 
 
-Following are the available PPI country tables from the `ppitables` package. This is updated as at 27 February 2018 using information from the PPI [site](https://www.povertyindex.org).
+Following are the available PPI country tables from the `ppitables` package. This is updated as at 23 May 2018 using information from the PPI [site](https://www.povertyindex.org).
 
 
 ### List of PPI country tables
 
-+-----------------------------+-----------------------------------------------------+----------------------+
-| **PPI Country Table Name**  |  **Description**                                    | **PPI Release Date** |
-+=============================+=====================================================+======================+
-| 1. `ppiAFG2012`             | PPI for Afghanistan based on 2007/8 National Risk   | 2012                 |
-|                             | and Vulnerability Survey (NRVA)                     |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 2. `ppiAGO2015`             | PPI for Angola based on the 2008/2009 Household     | 2015                 |
-|                             | Living Standards Survey                             |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 3. `ppiBEN2012`             | PPI for Benin based on 2010 data                    | 2012                 |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 4. `ppiBFA2017`             | PPI for Burkina Faso using Burkina Faso’s 2014      | 2017                 |
-|                             | Enquête Multisectorielle Continue (EMC) Survey      |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 5. `ppiBGD2013`             | PPI for Bangladesh using Bangaldesh's 2010 HIES     | 2013                 |
-|                             | Survey                                              |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 6. `ppiBOL2015`             | PPI for Bolivia using Bolivia’s 2013 Household      | 2015                 |
-|                             | Survey                                              |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 7. `ppiBRA2010`             | PPI for Brazil based on the 2008 PNAD               | 2010                 |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 8. `ppiCIV2013`             | PPI for Ivory Coast using the Ivory Coast's 2008    | 2013                 |
-|                             | Household Living Standards Survey                   |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 9. `ppiCMR2013`             | PPI for Cameroon using Cameroon’s 2007 Household    | 2013                 |
-|                             | Survey                                              |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-|10. `ppiCOL2018`             | PPI for Colombia based on Colombia’s 2009 Encuesta  | 2018                 |
-|                             | Integrada de Hogares. This table uses the legacy    |                      |
-|                             | poverty cutoffs.                                    |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| `ppiCOL2018_a`              | PPI for Colombia based on Colombia's 2009 Encuesta  | 2018                 |
-|                             | Integrada de Hogares. This table uses the new       |                      |
-|                             | poverty cutoffs for Colombia.                       |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 11. `ppiDOM2010`            | PPI for Dominican Republic based on the 2007        | 2010                 |
-|                             | Encuesta Nacional de Ingresos y Gastos de los       |                      |
-|                             | Hogares (ENIGH)                                     |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 12. `ppiECU2015`            | PPI for Ecuador based on the 2013 Living Standards  | 2015                 |
-|                             | Survey                                              |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 13. `ppiEGY2010`            | PPI for Egypt based on the 2004/5 HIECS             | 2010                 |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 14. `ppiETH2016`            | PPI for Ethiopia based on Ethiopia’s 2010/11        | 2016                 |
-|                             | Household Consumption and Expenditure Survey        |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 15. `ppiFJI2014`            | PPI for Fiji based on Fiji’s 2008/9 Household Income| 2014                 |
-|                             | and Expenditure Survey                              |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 16. `ppiGHA2015`            | PPI for Ghana based on Ghana’s 2012/13 Living       | 2015                 |
-|                             | Standards Survey using legacy poverty lines         |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| `ppiGHA2015_a`              | PPI for Ghana based on Ghana’s 2012/13 Living       | 2015                 |
-|                             | Standards Survey using the new-definition poverty   |                      |
-|                             | lines deflated with Ghana's CPI                     |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| `ppiGHA2015_b`              | PPI for Ghana based on Ghana’s 2012/13 Living       | 2015                 |
-|                             | Standards Survey using the new-definition poverty   |                      |
-|                             | lines deflated with the change in 100% of national  |                      |
-|                             | poverty line                                        |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 17. `ppiGTM2016`            | PPI for Guatemala based on Guatemala’s 2014         | 2016                 |
-|                             | Household Living Standards Survey                   |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 18. `ppiHND2010`            | PPI for Honduras based on the 2007 EPHPM            | 2010                 |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 19. `ppiHTI2016`            | PPI for Haiti based on Haiti’s 2012 Post-Earthquake | 2016                 |
-|                             | Living Standards Survey                             |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 20. `ppiIDN2012`            | PPI for Indonesia based on data from 2010 using     | 2012                 |
-|                             | legacy poverty lines                                |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| `ppiIDN2012_a`              | PPI for Indonesia based on data from 2010 using new | 2012                 |
-|                             | definition poverty lines                            |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 21. `ppiIND2016_r59`        | PPI for India using India’s 2011/12 Socio-Economic  | 2016                 |
-|                             | using the R59 legacy poverty lines using MRP        |                      |
-|                             | consumption                                         |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| `ppiIND2016_r62`            | PPI for India using India’s 2011/12 Socio-Economic  | 2016                 |
-|                             | using the R59 legacy poverty lines using MRP        |                      |
-|                             | consumption                                         |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| `ppiIND2016_r66`            | PPI for India using India’s 2011/12 Socio-Economic  | 2016                 |
-|                             | using the R66 legacy poverty lines using MRP        |                      |
-|                             | consumption                                         |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| `ppiIND2016_r68`            | PPI for India using India’s 2011/12 Socio-Economic  | 2016                 |
-|                             | using the R68 new poverty lines using MRP           |                      |
-|                             | consumption                                         |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 22. `ppiJOR2010`            | PPI for Jordan using Jordan’s 2006 Household Income | 2010                 |
-|                             | and Expenditure Survey                              |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 23. `ppi2011KEN`            | PPI for Kenya using Kenya’s 2005/06 Integrated      | 2011                 |
-|                             | Household Budget Survey                             |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 24. `ppiKGZ2015`            | PPI for Kyrgyzstan Kyrgyz Republic’s 2012 Integrated| 2015                 |
-|                             | Household Survey                                    |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 25. `ppiKHM2105`            | PPI for Cambodia using Cambodia’s 2011              | 2015                 |
-|                             | Socio-Economic Survey based using legacy poverty    |                      |
-|                             | lines                                               |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| `ppiKHM2015_gov`            | PPI for Cambodia using Cambodia’s 2011              | 2015                 |
-|                             | Socio-Economic Survey based using government        |                      |
-|                             | definition poverty lines                            |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| `ppiKHM2015_wb`             | PPI for Cambodia using Cambodia’s 2011              | 2015                 |
-|                             | Socio-Economic Survey based using World Bank        |                      |
-|                             | definition poverty lines                            |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 26. `ppiLKA2016`            | PPI for Sri Lanka using Sri Lanka’s 2012/13         | 2016                 |
-|                             | Household Income and Expenditure Survey             |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 27. `ppiMAR2013`            | PPI for Morocco based on Morocco’s 2007 Households  | 2013                 |
-|                             | Living Standards Survey                             |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 28. `ppiMDG2015`            | PPI for Madagascar based on Madagascar’s 2010       | 2015                 |
-|                             | Periodic Household Survey                           |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 29. `ppiMEX2017`            | PPI for Mexico based on Mexico's Encuesta Nacional  | 2017                 |
-|                             | de Ingresos y Gastos de los Hogares de 2014 using   |                      |
-|                             | legacy definitions of poverty                       |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| `ppiMEX2017_a`              | PPI for Mexico based on Mexico's Encuesta Nacional  | 2017                 |
-|                             | de Ingresos y Gastos de los Hogares de 2014 using   |                      |
-|                             | new definitions of poverty                          |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 30. `ppiMLI2010`            | PPI for Mali based on Mali's 2001 Poverty Evalution | 2010                 |
-|                             | Survey                                              |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 31. `ppiMMR2012`            | PPI for Myanmar based on Myanmar’s 2009/10          | 2012                 |
-|                             | Integrated Household Living Conditions Assessment   |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 32. `ppiMNG2016`            | PPI for Mongolia based on Mongolia’s 2014 Household | 2016                 |
-|                             | Socio-Economic Survey                               |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 33. `ppiMOZ2013`            | PPI for Mozambique based on 2008/9 Household Budget | 2013                 |
-|                             | Survey                                              |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 34. `ppiMWI2015`            | PPI for Malawi based on Malawi's 2010/11 Integrated | 2015                 |
-|                             | Household Survey using legacy poverty definitions   |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| `ppiMWI2015_gov`            | PPI for Malawi based on Malawi's 2010/11 Integrated | 2015                 |
-|                             | Household Survey using government poverty           |                      |
-|                             | definitions                                         |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| `ppiMWI2015_pbm`            | PPI for Malawi based on Malawi's 2010/11 Integrated | 2015                 |
-|                             | Household Survey using PBM poverty definitions      |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 35. `ppiNAM2013`            | PPI for Namibia based on Namibia’s 2009/10 Household| 2013                 |
-|                             | Income and Expenditure Survey                       |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 36. `ppiNER2013`            | PPI for Niger based on Niger’s 2007/8 National      | 2013                 |
-|                             | Household Budget and Expenditure Survey             |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 37. `ppiNGA2015`            | PPI for Nigeria based on Nigeria’s 2012/13 General  | 2015                 |
-|                             | Household Panel Survey                              |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 38. `ppiNIC2013`            | PPI for Nicaragua based on Nicaragua’s 2009 Living  | 2013                 |
-|                             | Standards Measurement Survey                        |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 39. `ppiNPL2013`            | PPI for Nepal using legacy poverty definition lines | 2013                 |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| `ppiNPL2013_a`              | PPI for Nepal using new poverty definition lines    | 2013                 |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 40. `ppiPAK2009`            | PPI for Pakistan using Pakistan 2005/6 Social and   | 2009                 |
-|                             | Living Standards Measurement Survey                 |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 41. `ppiPER2012`            | PPI for Peru based on Peru’s 2010 National Household| 2012                 |
-|                             | Survey                                              |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 42. `ppiPHL2014`            | PPI for the Philippines based on Philippines 2009   | 2014                 |
-|                             | FIES/LFS.                                           |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 43. `ppiPRY2012`            | PPI for Paraguay based on Paraguay’s 2011 EPH       | 2012                 |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 44. `ppiPSE2014`            | PPI for Palestine based on Palestine's 2011         | 2014                 |
-|                             | Expenditure and Consumption Survey                  |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 45. `ppiROU2009`            | PPI for Romania based on the 2007 HBS               | 2009                 |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 46. `ppiRUS2010`            | PPI for Russia based on 2007 HBS                    | 2010                 |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 47. `ppiRWA2016`            | PPI for Rwanda based on Rwanda’s 2010/11 Integrated | 2016                 |
-|                             | Household Living Standards Survey                   |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 48. `ppiSEN2009`            | PPI for Senegal based on Senegal's 2005/6 Enquête de| 2009                 |
-|                             | Suivi de la Pauvreté au Sénégal (ESPS)              |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 49. `ppiSLE2011`            | PPI for Sierra Leone based on Sierra Leone's 2003/4 | 2011                 |
-|                             | HIS                                                 |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 50. `ppiSLV2010`            | PPI for El Salvador based on the 2008 EHPM          | 2010                 |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 51. `ppiSYR2010`            | PPI for Syria based on Syria's 2006/7 Household     | 2010                 |
-|                             | Income and Expenditure Survey                       |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 52. `ppiTJK2015`            | PPI for Tajikistan based on 2007 data               | 2015                 |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 53. `ppiTLS2013`            | PPI for Timor Leste based on Timor-Leste’s 2007     | 2013                 |
-|                             | Survey of Living Standards                          |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 54. `ppiTZA2016`            | PPI for Tanzania based on Tanzania’s 2011/12        | 2016                 |
-|                             | Household Budget Survey                             |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 55. `ppiUGA2015`            | PPI for Uganda based on Uganda's 2012/13 National   | 2015                 |
-|                             | Household Survey                                    |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 56. `ppiVNM2009`            | PPI for Vietnam based on the 2006 VHLSS             | 2009                 |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 57. `ppiYEM2009`            | PPI for Yemen based on 2005/06 HBS                  | 2009                 |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 58. `ppiZAF2009`            | PPI for South Africa based on the 2005/6 IES        | 2009                 |
-+-----------------------------+-----------------------------------------------------+----------------------+
-| 59. `ppiZMB2017`            | PPIi for Zambia based on Zambia’s 2015 Living       | 2017                 |
-|                             | Conditions Monitoring Survey (LCMS)                 |                      |
-+-----------------------------+-----------------------------------------------------+----------------------+
++-----+-----------------+-----------------------------------------------------+-----------------+
+|     | **PPI Country   | **Description**                                     | **PPI Release   |
+|     | Table Name**    |                                                     | Date**          |
++====:+=================+=====================================================+:===============:+
+| 1.  | `ppiAFG2012`    | PPI for Afghanistan based on 2007/8 National Risk   | 2012            |
+|     |                 | and Vulnerability Survey (NRVA)                     |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 2.  | `ppiAGO2015`    | PPI for Angola based on the 2008/2009 Household     | 2015            |
+|     |                 | Living Standards Survey                             |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 3.  | `ppiBEN2012`    | PPI for Benin based on 2010 data                    | 2012            |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 4.  | `ppiBFA2017`    | PPI for Burkina Faso using Burkina Faso’s 2014      | 2017            |
+|     |                 | Enquête Multisectorielle Continue (EMC) Survey      |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 5.  | `ppiBGD2013`    | PPI for Bangladesh using Bangaldesh's 2010 HIES     | 2013            |
+|     |                 | Survey                                              |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 6.  | `ppiBOL2015`    | PPI for Bolivia using Bolivia’s 2013 Household      | 2015            |
+|     |                 | Survey                                              |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 7.  | `ppiBRA2010`    | PPI for Brazil based on the 2008 PNAD               | 2010            |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 8.  | `ppiCIV2013`    | PPI for Ivory Coast using the Ivory Coast's 2008    | 2013            |
+|     |                 | Household Living Standards Survey                   |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+|     | `ppiCIV2018`    | PPI for Ivory Coast using the Ivory Coast's 2015    | 2018            |
+|     |                 | Enquête sur le Niveau de Vie des Ménages            |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 9.  | `ppiCMR2013`    | PPI for Cameroon using Cameroon’s 2007 Household    | 2013            |
+|     |                 | Survey                                              |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 10. | `ppiCOL2012`    | PPI for Colombia based on Colombia’s 2009 Encuesta  | 2012            |
+|     |                 | Integrada de Hogares. This table uses the old       |                 |
+|     |                 | poverty definitions.                                |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+|     | `ppiCOL2012_a`  | PPI for Colombia based on Colombia's 2009 Encuesta  | 2012            |
+|     |                 | Integrada de Hogares. This table uses the new       |                 |
+|     |                 | poverty definitions for Colombia.                   |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+|     | `ppiCOL2018`    | PPI for Colombia based on Colombia's 2016 Gran      | 2018            |
+|     |                 | Encuesta Integrada de Hogares (GEIH)                |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 11. | `ppiDOM2010`    | PPI for Dominican Republic based on the 2007        | 2010            |
+|     |                 | Encuesta Nacional de Ingresos y Gastos de los       |                 |
+|     |                 | Hogares (ENIGH)                                     |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 12. | `ppiECU2015`    | PPI for Ecuador based on the 2013 Living Standards  | 2015            |
+|     |                 | Survey                                              |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 13. | `ppiEGY2010`    | PPI for Egypt based on the 2004/5 HIECS             | 2010            |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 14. | `ppiETH2016`    | PPI for Ethiopia based on Ethiopia’s 2010/11        | 2016            |
+|     |                 | Household Consumption and Expenditure Survey        |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 15. | `ppiFJI2014`    | PPI for Fiji based on Fiji’s 2008/9 Household Income| 2014            |
+|     |                 | and Expenditure Survey                              |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 16. | `ppiGHA2015`    | PPI for Ghana based on Ghana’s 2012/13 Living       | 2015            |
+|     |                 | Standards Survey using legacy poverty lines         |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+|     | `ppiGHA2015_a`  | PPI for Ghana based on Ghana’s 2012/13 Living       | 2015            |
+|     |                 | Standards Survey using the new-definition poverty   |                 |
+|     |                 | lines deflated with Ghana's CPI                     |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+|     | `ppiGHA2015_b`  | PPI for Ghana based on Ghana’s 2012/13 Living       | 2015            |
+|     |                  Standards Survey using the new-definition poverty   |                  |
+|     |                 | lines deflated with the change in 100% of national  |                 |
+|     |                 | poverty line                                        |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 17. | `ppiGTM2016`    | PPI for Guatemala based on Guatemala’s 2014         | 2016            |
+|     |                 | Household Living Standards Survey                   |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 18. | `ppiHND2010`    | PPI for Honduras based on the 2007 EPHPM            | 2010            |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 19. | `ppiHTI2016`    | PPI for Haiti based on Haiti’s 2012 Post-Earthquake | 2016            |
+|     |                 | Living Standards Survey                             |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 20. | `ppiIDN2012`    | PPI for Indonesia based on data from 2010 using     | 2012            |
+|     |                 | legacy poverty lines                                |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+|     | `ppiIDN2012_a`  | PPI for Indonesia based on data from 2010 using new | 2012            |
+|     |                 | definition poverty lines                            |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 21. | `ppiIND2016_r59`| PPI for India using India’s 2011/12 Socio-Economic  | 2016            |
+|     |                 | using the R59 legacy poverty lines using MRP        |                 |
+|     |                 | consumption                                         |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+|     | `ppiIND2016_r62`| PPI for India using India’s 2011/12 Socio-Economic  | 2016            |
+|     |                 | using the R59 legacy poverty lines using MRP        |                 |
+|     |                 | consumption                                         |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+|     | `ppiIND2016_r66`| PPI for India using India’s 2011/12 Socio-Economic  | 2016            |
+|     |                 | using the R66 legacy poverty lines using MRP        |                 |
+|     |                 | consumption                                         |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+|     | `ppiIND2016_r68`| PPI for India using India’s 2011/12 Socio-Economic  | 2016            |
+|     |                 | using the R68 new poverty lines using MRP           |                 |
+|     |                 | consumption                                         |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 22. | `ppiJOR2010`    | PPI for Jordan using Jordan’s 2006 Household Income | 2010            |
+|     |                 | and Expenditure Survey                              |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 23. | `ppi2011KEN`    | PPI for Kenya using Kenya’s 2005/06 Integrated      | 2011            |
+|     |                 | Household Budget Survey                             |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 24. | `ppiKGZ2015`    | PPI for Kyrgyzstan Kyrgyz Republic’s 2012 Integrated| 2015            |
+|     |                 | Household Survey                                    |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 25. | `ppiKHM2105`    | PPI for Cambodia using Cambodia’s 2011              | 2015            |
+|     |                 | Socio-Economic Survey based using legacy poverty    |                 |
+|     |                 | lines                                               |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+|     | `ppiKHM2015_gov`| PPI for Cambodia using Cambodia’s 2011              | 2015            |
+|     |                 | Socio-Economic Survey based using government        |                 |
+|     |                 | definition poverty lines                            |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+|     | `ppiKHM2015_wb` | PPI for Cambodia using Cambodia’s 2011              | 2015            |
+|     |                 | Socio-Economic Survey based using World Bank        |                 |
+|     |                 | definition poverty lines                            |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 26. | `ppiLKA2016`    | PPI for Sri Lanka using Sri Lanka’s 2012/13         | 2016            |
+|     |                 | Household Income and Expenditure Survey             |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 27. | `ppiMAR2013`    | PPI for Morocco based on Morocco’s 2007 Households  | 2013            |
+|     |                 | Living Standards Survey                             |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 28. | `ppiMDG2015`    | PPI for Madagascar based on Madagascar’s 2010       | 2015            |
+|     |                 | Periodic Household Survey                           |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 29. | `ppiMEX2017`    | PPI for Mexico based on Mexico's Encuesta Nacional  | 2017            |
+|     |                 | de Ingresos y Gastos de los Hogares de 2014 using   |                 |
+|     |                 | legacy definitions of poverty                       |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+|     | `ppiMEX2017_a`  | PPI for Mexico based on Mexico's Encuesta Nacional  | 2017            |
+|     |                 | de Ingresos y Gastos de los Hogares de 2014 using   |                 |
+|     |                 | new definitions of poverty                          |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 30. | `ppiMLI2010`    | PPI for Mali based on Mali's 2001 Poverty Evalution | 2010            |
+|     |                 | Survey                                              |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 31. | `ppiMMR2012`    | PPI for Myanmar based on Myanmar’s 2009/10          | 2012            |
+|     |                 | Integrated Household Living Conditions Assessment   |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 32. | `ppiMNG2016`    | PPI for Mongolia based on Mongolia’s 2014 Household | 2016            |
+|     |                 | Socio-Economic Survey                               |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 33. | `ppiMOZ2013`    | PPI for Mozambique based on 2008/9 Household Budget | 2013            |
+|     |                 | Survey                                              |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 34. | `ppiMWI2015`    | PPI for Malawi based on Malawi's 2010/11 Integrated | 2015            |
+|     |                 | Household Survey using legacy poverty definitions   |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+|     | `ppiMWI2015_gov`| PPI for Malawi based on Malawi's 2010/11 Integrated | 2015            |
+|     |                 | Household Survey using government poverty           |                 |
+|     |                 | definitions                                         |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+|     | `ppiMWI2015_pbm`| PPI for Malawi based on Malawi's 2010/11 Integrated | 2015            |
+|     |                 | Household Survey using PBM poverty definitions      |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 35. | `ppiNAM2013`    | PPI for Namibia based on Namibia’s 2009/10 Household| 2013            |
+|     |                 | Income and Expenditure Survey                       |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 36. | `ppiNER2013`    | PPI for Niger based on Niger’s 2007/8 National      | 2013            |
+|     |                 | Household Budget and Expenditure Survey             |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 37. | `ppiNGA2015`    | PPI for Nigeria based on Nigeria’s 2012/13 General  | 2015            |
+|     |                 | Household Panel Survey                              |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 38. | `ppiNIC2013`    | PPI for Nicaragua based on Nicaragua’s 2009 Living  | 2013            |
+|     |                 | Standards Measurement Survey                        |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 39. | `ppiNPL2013`    | PPI for Nepal using legacy poverty definition lines | 2013            |
++-----+-----------------+-----------------------------------------------------+-----------------+
+|     | `ppiNPL2013_a`  | PPI for Nepal using new poverty definition lines    | 2013            |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 40. | `ppiPAK2009`    | PPI for Pakistan using Pakistan 2005/6 Social and   | 2009            |
+|     |                 | Living Standards Measurement Survey                 |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 41. | `ppiPER2012`    | PPI for Peru based on Peru’s 2010 National Household| 2012            |
+|     |                 | Survey                                              |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+|     | `ppiPER2018`    | PPI for Peru based on Peru's 2016 Encuesta Nacional | 2018            |
+|     |                 | de Hogares sobre Condiciones de Vida y Pobreza      |                 |
+|     |                 | (ENAHO)                                             |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 42. | `ppiPHL2014`    | PPI for the Philippines based on Philippines' 2009  | 2014            |
+|     |                 | FIES/LFS.                                           |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+|     | `ppiPHL2018`    | PPI for the Philippines based on Philippines' 2015  | 2018            |
+|     |                 | Family Income and Expenditure Survey (FIES)         |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 43. | `ppiPRY2012`    | PPI for Paraguay based on Paraguay’s 2011 EPH       | 2012            |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 44. | `ppiPSE2014`    | PPI for Palestine based on Palestine's 2011         | 2014            |
+|     |                 | Expenditure and Consumption Survey                  |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 45. | `ppiROU2009`    | PPI for Romania based on the 2007 HBS               | 2009            |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 46. | `ppiRUS2010`    | PPI for Russia based on 2007 HBS                    | 2010            |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 47. | `ppiRWA2016`    | PPI for Rwanda based on Rwanda’s 2010/11 Integrated | 2016            |
+|     |                 | Household Living Standards Survey                   |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 48. | `ppiSEN2009`    | PPI for Senegal based on Senegal's 2005/6 Enquête de| 2009            |
+|     |                 | Suivi de la Pauvreté au Sénégal (ESPS)              |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 49. | `ppiSLE2011`    | PPI for Sierra Leone based on Sierra Leone's 2003/4 | 2011            |
+|     |                 | HIS                                                 |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 50. | `ppiSLV2010`    | PPI for El Salvador based on the 2008 EHPM          | 2010            |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 51. | `ppiSYR2010`    | PPI for Syria based on Syria's 2006/7 Household     | 2010            |
+|     |                 | Income and Expenditure Survey                       |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 52. | `ppiTJK2015`    | PPI for Tajikistan based on 2007 data               | 2015            |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 53. | `ppiTLS2013`    | PPI for Timor Leste based on Timor-Leste’s 2007     | 2013            |
+|     |                 | Survey of Living Standards                          |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 54. | `ppiTZA2016`    | PPI for Tanzania based on Tanzania’s 2011/12        | 2016            |
+|     |                 | Household Budget Survey                             |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 55. | `ppiTGO2018`    | PPI for Togo based on Togo’s 2015 Questionnaire des | 2018            |
+|     |                 | Indicateurs de Base du Bien-être (QUIBB)            |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 56. | `ppiUGA2015`    | PPI for Uganda based on Uganda's 2012/13 National   | 2015            |
+|     |                 | Household Survey                                    |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 57. | `ppiVNM2009`    | PPI for Vietnam based on the 2006 VHLSS             | 2009            |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 58. | `ppiYEM2009`    | PPI for Yemen based on 2005/06 HBS                  | 2009            |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 59. | `ppiZAF2009`    | PPI for South Africa based on the 2005/6 IES        | 2009            |
++-----+-----------------+-----------------------------------------------------+-----------------+
+| 60. | `ppiZMB2017`    | PPIi for Zambia based on Zambia’s 2015 Living       | 2017            |
+|     |                 | Conditions Monitoring Survey (LCMS)                 |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
 
 
 ### Notes
-[^1]: Only 59 country PPI tables are shown here and available via the package. There is no lookup table for China because the China Poverty Scorecard is an expert-based scorecard. See [this](https://www.povertyindex.org/china-expert-based-poverty-scorecard) for futher explanation.
-
-
-
+[^1]: Only 60 country PPI tables are shown here and available via the package. There is no lookup table for China because the China Poverty Scorecard is an expert-based scorecard. See [this](https://www.povertyindex.org/china-expert-based-poverty-scorecard) for futher explanation.
 

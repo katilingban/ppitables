@@ -463,8 +463,8 @@ names(colDF) <- c("score", "nlFood", "nl100", "nl150", "nl200", "half100",
 colDF$score <- 0:100
 row.names(colDF) <- 0:100
 
-ppiCOL2018_a <- colDF
-devtools::use_data(ppiCOL2018_a, overwrite = TRUE)
+ppiCOL2012_a <- colDF
+devtools::use_data(ppiCOL2012_a, overwrite = TRUE)
 
 colDF4 <- get_ppi_table(pdf = "data-raw/pdf/colombia.pdf", n = 5, limits = 9:28)
 colDF5 <- get_ppi_table(pdf = "data-raw/pdf/colombia.pdf", n = 6, limits = 7:26)
@@ -474,7 +474,150 @@ names(colDF) <- c("score", "nlFood", "nl100", "nl150", "nl200", "extreme", "ppp1
 colDF$score <- 0:100
 row.names(colDF) <- 0:100
 
+ppiCOL2012 <- colDF
+devtools::use_data(ppiCOL2012, overwrite = TRUE)
+
+
+################################################################################
+#
+# Colombia - ppi - 2018
+#
+################################################################################
+
+colDF <- get_ppi_table(pdf = "data-raw/pdf/colombia_ppi_2018.pdf", n = 4, limits = 6:39, expand = FALSE)
+names(colDF) <- rep(c("score", "nl100"), 3)
+
+colDF <- rbind(colDF[,1:2], colDF[,3:4], colDF[,5:6])
+colDF <- colDF[1:101, ]
+
+extreme <- get_ppi_table(pdf = "data-raw/pdf/colombia_ppi_2018.pdf", n = 6, limits = 7:40, expand = FALSE)
+names(extreme) <- rep(c("score", "extreme"), 3)
+
+extreme <- rbind(extreme[,1:2], extreme[,3:4], extreme[,5:6])
+extreme <- extreme[1:101, ]
+
+nl150 <- get_ppi_table(pdf = "data-raw/pdf/colombia_ppi_2018.pdf", n = 8, limits = 6:39, expand = FALSE)
+names(nl150) <- rep(c("score", "nl150"), 3)
+
+nl150 <- rbind(nl150[,1:2], nl150[,3:4], nl150[,5:6])
+nl150 <- nl150[1:101, ]
+
+nl200 <- get_ppi_table(pdf = "data-raw/pdf/colombia_ppi_2018.pdf", n = 10, limits = 6:39, expand = FALSE)
+names(nl200) <- rep(c("score", "nl200"), 3)
+
+nl200 <- rbind(nl200[,1:2], nl200[,3:4], nl200[,5:6])
+nl200 <- nl200[1:101, ]
+
+#ppp100 <- get_ppi_table(pdf = "data-raw/pdf/colombia_ppi_2018.pdf", n = 10, limits = 6:39, expand = FALSE)
+#names(ppp100) <- rep(c("score", "ppp100"), 3)
+
+#ppp100 <- rbind(ppp100[,1:2], ppp100[,3:4], ppp100[,5:6])
+#ppp100 <- ppp100[1:101, ]
+
+ppp190 <- get_ppi_table(pdf = "data-raw/pdf/colombia_ppi_2018.pdf", n = 12, limits = 6:39, expand = FALSE)
+names(ppp190) <- rep(c("score", "ppp190"), 3)
+
+ppp190 <- rbind(ppp190[,1:2], ppp190[,3:4], ppp190[,5:6])
+ppp190 <- ppp190[1:101, ]
+
+ppp320 <- get_ppi_table(pdf = "data-raw/pdf/colombia_ppi_2018.pdf", n = 14, limits = 6:39, expand = FALSE)
+names(ppp320) <- rep(c("score", "ppp320"), 3)
+
+ppp320 <- rbind(ppp320[,1:2], ppp320[,3:4], ppp320[,5:6])
+ppp320 <- ppp320[1:101, ]
+
+ppp550 <- get_ppi_table(pdf = "data-raw/pdf/colombia_ppi_2018.pdf", n = 16, limits = 6:39, expand = FALSE)
+names(ppp550) <- rep(c("score", "ppp550"), 3)
+
+ppp550 <- rbind(ppp550[,1:2], ppp550[,3:4], ppp550[,5:6])
+ppp550 <- ppp550[1:101, ]
+
+ppp800 <- get_ppi_table(pdf = "data-raw/pdf/colombia_ppi_2018.pdf", n = 18, limits = 6:39, expand = FALSE)
+names(ppp800) <- rep(c("score", "ppp800"), 3)
+
+ppp800 <- rbind(ppp800[,1:2], ppp800[,3:4], ppp800[,5:6])
+ppp800 <- ppp800[1:101, ]
+
+ppp1100 <- get_ppi_table(pdf = "data-raw/pdf/colombia_ppi_2018.pdf", n = 20, limits = 6:39, expand = FALSE)
+names(ppp1100) <- rep(c("score", "ppp1100"), 3)
+
+ppp1100 <- rbind(ppp1100[,1:2], ppp1100[,3:4], ppp1100[,5:6])
+ppp1100 <- ppp1100[1:101, ]
+
+ppp1500 <- get_ppi_table(pdf = "data-raw/pdf/colombia_ppi_2018.pdf", n = 22, limits = 6:39, expand = FALSE)
+names(ppp1500) <- rep(c("score", "ppp1500"), 3)
+
+ppp1500 <- rbind(ppp1500[,1:2], ppp1500[,3:4], ppp1500[,5:6])
+ppp1500 <- ppp1500[1:101, ]
+
+ppp2170 <- get_ppi_table(pdf = "data-raw/pdf/colombia_ppi_2018.pdf", n = 24, limits = 6:39, expand = FALSE)
+names(ppp2170) <- rep(c("score", "ppp2170"), 3)
+
+ppp2170 <- rbind(ppp2170[,1:2], ppp2170[,3:4], ppp2170[,5:6])
+ppp2170 <- ppp2170[1:101, ]
+
+ppp125 <- get_ppi_table(pdf = "data-raw/pdf/colombia_ppi_2018.pdf", n = 26, limits = 6:39, expand = FALSE)
+names(ppp125) <- rep(c("score", "ppp125"), 3)
+
+ppp125 <- rbind(ppp125[,1:2], ppp125[,3:4], ppp125[,5:6])
+ppp125 <- ppp125[1:101, ]
+
+ppp250 <- get_ppi_table(pdf = "data-raw/pdf/colombia_ppi_2018.pdf", n = 28, limits = 6:39, expand = FALSE)
+names(ppp250) <- rep(c("score", "ppp250"), 3)
+
+ppp250 <- rbind(ppp250[,1:2], ppp250[,3:4], ppp250[,5:6])
+ppp250 <- ppp250[1:101, ]
+
+ppp500 <- get_ppi_table(pdf = "data-raw/pdf/colombia_ppi_2018.pdf", n = 30, limits = 6:39, expand = FALSE)
+names(ppp500) <- rep(c("score", "ppp500"), 3)
+
+ppp500 <- rbind(ppp500[,1:2], ppp500[,3:4], ppp500[,5:6])
+ppp500 <- ppp500[1:101, ]
+
+percentile20 <- get_ppi_table(pdf = "data-raw/pdf/colombia_ppi_2018.pdf", n = 32, limits = 6:39, expand = FALSE)
+names(percentile20) <- rep(c("score", "percentile20"), 3)
+
+percentile20 <- rbind(percentile20[,1:2], percentile20[,3:4], percentile20[,5:6])
+percentile20 <- percentile20[1:101, ]
+
+percentile40 <- get_ppi_table(pdf = "data-raw/pdf/colombia_ppi_2018.pdf", n = 34, limits = 6:39, expand = FALSE)
+names(percentile40) <- rep(c("score", "percentile40"), 3)
+
+percentile40 <- rbind(percentile40[,1:2], percentile40[,3:4], percentile40[,5:6])
+percentile40 <- percentile40[1:101, ]
+
+percentile60 <- get_ppi_table(pdf = "data-raw/pdf/colombia_ppi_2018.pdf", n = 36, limits = 6:39, expand = FALSE)
+names(percentile60) <- rep(c("score", "percentile60"), 3)
+
+percentile60 <- rbind(percentile60[,1:2], percentile60[,3:4], percentile60[,5:6])
+percentile60 <- percentile60[1:101, ]
+
+percentile80 <- get_ppi_table(pdf = "data-raw/pdf/colombia_ppi_2018.pdf", n = 38, limits = 6:39, expand = FALSE)
+names(percentile80) <- rep(c("score", "percentile80"), 3)
+
+percentile80 <- rbind(percentile80[,1:2], percentile80[,3:4], percentile80[,5:6])
+percentile80 <- percentile80[1:101, ]
+
+colDF <- merge(colDF, extreme)
+colDF <- merge(colDF, nl150)
+colDF <- merge(colDF, nl200)
+colDF <- merge(colDF, ppp190)
+colDF <- merge(colDF, ppp320)
+colDF <- merge(colDF, ppp550)
+colDF <- merge(colDF, ppp800)
+colDF <- merge(colDF, ppp1100)
+colDF <- merge(colDF, ppp1500)
+colDF <- merge(colDF, ppp2170)
+colDF <- merge(colDF, ppp125)
+colDF <- merge(colDF, ppp250)
+colDF <- merge(colDF, ppp500)
+colDF <- merge(colDF, percentile20)
+colDF <- merge(colDF, percentile40)
+colDF <- merge(colDF, percentile60)
+colDF <- merge(colDF, percentile80)
+
 ppiCOL2018 <- colDF
+
 devtools::use_data(ppiCOL2018, overwrite = TRUE)
 
 
