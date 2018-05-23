@@ -122,8 +122,20 @@ PPI [site](https://www.povertyindex.org).
 <td style="text-align: right;"><ol start="4" type="1">
 <li></li>
 </ol></td>
+<td><code>ppiBFA2011</code></td>
+<td>PPI for Burkina Faso using Burkina Faso’s 2003 Household Living Standards Survey</td>
+<td style="text-align: center;">2011</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"></td>
+<td><code>ppiBFA2014</code></td>
+<td>PPI for Burkina Faso using Burkina Faso’s 2014 Permanent Multi-Sector Survey</td>
+<td style="text-align: center;">2017</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"></td>
 <td><code>ppiBFA2017</code></td>
-<td>PPI for Burkina Faso using Burkina Faso’s 2014 Enquête Multisectorielle Continue (EMC) Survey</td>
+<td>PPI for Burkina Faso using Burkina Faso’s 2014 Enquête Multisectorielle Continue (EMC) based on IPA’s new approach to PPI calculation</td>
 <td style="text-align: center;">2017</td>
 </tr>
 <tr class="odd">
