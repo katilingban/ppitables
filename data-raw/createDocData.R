@@ -153,7 +153,53 @@ create_doc(country = "Brazil", ccode = "BRA", year = "2010", data = ppiBRA2010, 
 
 ################################################################################
 #
-# Burkina Faso
+# Burkina Faso - 2011
+#
+################################################################################
+
+varList <- c("PPI score",
+             "National poverty line (100)",
+             "National poverty line (50)",
+             "National poverty line (75)",
+             "National poverty line (150)",
+             "USAID extreme poverty",
+             "Below $1.25 per day purchasing power parity (2005)",
+             "Below $2.50 per day purchasing power parity (2005)")
+
+create_doc(country = "Burkina Faso", ccode = "BFA", year = "2011",  data = ppiBFA2011, varList = varList)
+
+
+################################################################################
+#
+# Burkina Faso - 2014
+#
+################################################################################
+
+varList <- c("PPI score",
+             "Food poverty line",
+             "National poverty line (100)",
+             "National poverty line (150)",
+             "National poverty line (200)",
+             "Below $1.00 per day purchasing power parity (2005)",
+             "Below $1.25 per day purchasing power parity (2005)",
+             "Below $2.50 per day purchasing power parity (2005)",
+             "Below $5.00 per day purchasing power parity (2005)",
+             "Below $8.44 per day purchasing power parity (2005)",
+             "Below $1.90 per day purchasing power parity (2011)",
+             "Below $3.10 per day purchasing power parity (2011)",
+             "Median poverty line",
+             "Below 20th percentile poverty line",
+             "Below 40th percentile poverty line",
+             "Below 50th percentile poverty line",
+             "Below 60th percentile poverty line",
+             "Below 80th percentile poverty line")
+
+create_doc(country = "Burkina Faso", ccode = "BFA", year = "2014",  data = ppiBFA2014, varList = varList)
+
+
+################################################################################
+#
+# Burkina Faso - 2017
 #
 ################################################################################
 
@@ -1597,7 +1643,72 @@ create_doc(country = "Yemen", ccode = "YEM", year = "2009", data = ppiYEM2009, v
 
 ################################################################################
 #
-# Zambia
+# Zambia - Göttingen - 2013
+#
+################################################################################
+
+varList <- c("PPI score",
+             "Food poverty line",
+             "National poverty line (100)",
+             "National poverty line (150)",
+             "National poverty line (200)",
+             "USAID extreme poverty",
+             "Below $1.25 per day purchasing power parity (2005)",
+             "Below $2.00 per day purchasing power parity (2005)",
+             "Below $2.50 per day purchasing power parity (2005)")
+
+create_doc(country = "Zambia", ccode = "ZMB", year = "2013_got", data = ppiZMB2013_got, varList = varList)
+
+
+################################################################################
+#
+# Zambia - Göttingen - 2013
+#
+################################################################################
+
+varList <- c("PPI score",
+             "Food poverty line",
+             "National poverty line (100)",
+             "National poverty line (150)",
+             "National poverty line (200)",
+             "USAID extreme poverty",
+             "Below $1.25 per day purchasing power parity (2005)",
+             "Below $2.00 per day purchasing power parity (2005)",
+             "Below $2.50 per day purchasing power parity (2005)")
+
+create_doc(country = "Zambia", ccode = "ZMB", year = "2013_cso", data = ppiZMB2013_cso, varList = varList)
+
+
+################################################################################
+#
+# Zambia - legacy - 2017
+#
+################################################################################
+
+varList <- c("PPI score",
+             "Food poverty line",
+             "National poverty line (100)",
+             "National poverty line (150)",
+             "National poverty line (200)",
+             "Below $1.25 per day purchasing power parity (2005)",
+             "Below $2.00 per day purchasing power parity (2005)",
+             "Below $2.50 per day purchasing power parity (2005)",
+             "Below $5.00 per day purchasing power parity (2005)",
+             "Below $1.90 per day purchasing power parity (2011)",
+             "Below $3.10 per day purchasing power parity (2011)",
+             "Median poverty line",
+             "Below 20th percentile poverty line",
+             "Below 50th percentile poverty line",
+             "Below 40th percentile poverty line",
+             "Below 60th percentile poverty line",
+             "Below 80th percentile poverty line")
+
+create_doc(country = "Zambia", ccode = "ZMB", year = "2017", data = ppiZMB2017, varList = varList)
+
+
+################################################################################
+#
+# Zambia - ppi - 2017
 #
 ################################################################################
 
@@ -1618,7 +1729,9 @@ varList <- c("PPI score",
              "Below 60th percentile poverty line",
              "Below 80th percentile poverty line")
 
-create_doc(country = "Zambia", ccode = "ZMB", year = "2017", data = ppiZMB2017, varList = varList)
+create_doc(country = "Zambia", ccode = "ZMB", year = "2017_a", data = ppiZMB2017_a, varList = varList)
+
+
 
 
 

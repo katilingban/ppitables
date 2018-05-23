@@ -79,8 +79,15 @@ Following are the available PPI country tables from the `ppitables` package. Thi
 +-----+-----------------+-----------------------------------------------------+-----------------+
 | 3.  | `ppiBEN2012`    | PPI for Benin based on 2010 data                    | 2012            |
 +-----+-----------------+-----------------------------------------------------+-----------------+
-| 4.  | `ppiBFA2017`    | PPI for Burkina Faso using Burkina Faso’s 2014      | 2017            |
-|     |                 | Enquête Multisectorielle Continue (EMC) Survey      |                 |
+| 4.  | `ppiBFA2011`    | PPI for Burkina Faso using Burkina Faso's 2003      | 2011            |
+|     |                 | Household Living Standards Survey                   |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+|     | `ppiBFA2014`    | PPI for Burkina Faso using Burkina Faso's 2014      | 2017            |
+|     |                 | Permanent Multi-Sector Survey                       |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+|     | `ppiBFA2017`    | PPI for Burkina Faso using Burkina Faso’s 2014      | 2017            |
+|     |                 | Enquête Multisectorielle Continue (EMC) based on    |                 |
+|     |                 | IPA's new approach to PPI calculation               |                 |
 +-----+-----------------+-----------------------------------------------------+-----------------+
 | 5.  | `ppiBGD2013`    | PPI for Bangladesh using Bangaldesh's 2010 HIES     | 2013            |
 |     |                 | Survey                                              |                 |
@@ -302,8 +309,21 @@ Following are the available PPI country tables from the `ppitables` package. Thi
 +-----+-----------------+-----------------------------------------------------+-----------------+
 | 59. | `ppiZAF2009`    | PPI for South Africa based on the 2005/6 IES        | 2009            |
 +-----+-----------------+-----------------------------------------------------+-----------------+
-| 60. | `ppiZMB2017`    | PPIi for Zambia based on Zambia’s 2015 Living       | 2017            |
-|     |                 | Conditions Monitoring Survey (LCMS)                 |                 |
+| 60. | `ppiZMB2013_got`| PPI for Zambia based on Zambia's 2010 Living        | 2013            |
+|     |                 | Conditions Monitoring Survey (LCMS) using Göttingen |                 |
+|     |                 | poverty definitions                                 |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+|     | `ppiZMB2013_cso`| PPI for Zambia based on Zambia's 2010 Living        | 2013            |
+|     |                 | Conditions Monitoring Survey (LCMS) using CSO       |                 |
+|     |                 | poverty definitions                                 |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+|     | `ppiZMB2017`    | PPI for Zambia based on Zambia's 2015 Living        | 2017            |
+|     |                 | Conditions Monitoring Survey (LCMS) using legacy    |                 |
+|     |                 | poverty definitions                                 |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+|     | `ppiZMB2017_a`  | PPI for Zambia based on Zambia’s 2015 Living        | 2017            |
+|     |                 | Conditions Monitoring Survey (LCMS) using new PPI   |                 |
+|     |                 | calculation approach                                |                 |
 +-----+-----------------+-----------------------------------------------------+-----------------+
 
 
