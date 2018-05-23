@@ -3843,7 +3843,60 @@ devtools::use_data(ppiYEM2009, overwrite = TRUE)
 
 ################################################################################
 #
-# Zambia
+# Zambia - 2013 - Göttingen
+#
+################################################################################
+
+zmbDF <- get_ppi_table(pdf = "http://www.simplepovertyscorecard.com/ZMB_2010_ENG.pdf",
+                       n = 4, limits = 5:24, expand = TRUE)
+names(zmbDF) <- c("score", "food", "nl100", "nl150", "nl200", "extreme", "ppp125", "ppp200", "ppp250")
+
+ppiZMB2013_got <- zmbDF
+devtools::use_data(ppiZMB2013_got, overwrite = TRUE)
+
+
+################################################################################
+#
+# Zambia - 2013 - CSO
+#
+################################################################################
+
+zmbDF <- get_ppi_table(pdf = "http://www.simplepovertyscorecard.com/ZMB_2010_ENG.pdf",
+                       n = 5, limits = 5:24, expand = TRUE)
+names(zmbDF) <- c("score", "food", "nl100", "nl150", "nl200", "extreme", "ppp125", "ppp200", "ppp250")
+
+ppiZMB2013_cso <- zmbDF
+devtools::use_data(ppiZMB2013_cso, overwrite = TRUE)
+
+
+################################################################################
+#
+# Zambia - Legacy
+#
+################################################################################
+
+zmbDF1 <- get_ppi_table(pdf = "http://www.simplepovertyscorecard.com/ZMB_2015_ENG.pdf",
+                        n = 4, limits = 6:25, expand = TRUE)
+names(zmbDF1) <- c("score", "food", "nl100", "nl150", "nl200")
+
+zmbDF2 <- get_ppi_table(pdf = "http://www.simplepovertyscorecard.com/ZMB_2015_ENG.pdf",
+                        n = 5, limits = 6:25, expand = TRUE)
+names(zmbDF2) <- c("score", "ppp125", "ppp200", "ppp250", "ppp500", "ppp190", "ppp310")
+
+zmbDF3 <- get_ppi_table(pdf = "http://www.simplepovertyscorecard.com/ZMB_2015_ENG.pdf",
+                        n = 6, limits = 6:25, expand = TRUE)
+names(zmbDF3) <- c("score", "median", "percentile20", "percentile40", "percentile50", "percentile60", "percentile80")
+
+zmbDF <- merge(zmbDF1, zmbDF2)
+zmbDF <- merge(zmbDF, zmbDF3)
+
+ppiZMB2017 <- zmbDF
+devtools::use_data(ppiZMB2017, overwrite = TRUE)
+
+
+################################################################################
+#
+# Zambia - 2017
 #
 ################################################################################
 
@@ -3960,6 +4013,6 @@ zmbDF <- merge(zmbDF, percentile40)
 zmbDF <- merge(zmbDF, percentile60)
 zmbDF <- merge(zmbDF, percentile80)
 
-ppiZMB2017 <- zmbDF
+ppiZMB2017_a <- zmbDF
 
-devtools::use_data(ppiZMB2017, overwrite = TRUE)
+devtools::use_data(ppiZMB2017_a, overwrite = TRUE)
