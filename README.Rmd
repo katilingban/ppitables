@@ -309,8 +309,21 @@ Following are the available PPI country tables from the `ppitables` package. Thi
 +-----+-----------------+-----------------------------------------------------+-----------------+
 | 59. | `ppiZAF2009`    | PPI for South Africa based on the 2005/6 IES        | 2009            |
 +-----+-----------------+-----------------------------------------------------+-----------------+
-| 60. | `ppiZMB2017`    | PPIi for Zambia based on Zambia’s 2015 Living       | 2017            |
-|     |                 | Conditions Monitoring Survey (LCMS)                 |                 |
+| 60. | `ppiZMB2013_got`| PPI for Zambia based on Zambia's 2010 Living        | 2013            |
+|     |                 | Conditions Monitoring Survey (LCMS) using Göttingen |                 |
+|     |                 | poverty definitions                                 |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+|     | `ppiZMB2013_cso`| PPI for Zambia based on Zambia's 2010 Living        | 2013            |
+|     |                 | Conditions Monitoring Survey (LCMS) using CSO       |                 |
+|     |                 | poverty definitions                                 |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+|     | `ppiZMB2017`    | PPI for Zambia based on Zambia's 2015 Living        | 2017            |
+|     |                 | Conditions Monitoring Survey (LCMS) using legacy    |                 |
+|     |                 | poverty definitions                                 |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+|     | `ppiZMB2017_a`  | PPI for Zambia based on Zambia’s 2015 Living        | 2017            |
+|     |                 | Conditions Monitoring Survey (LCMS) using new PPI   |                 |
+|     |                 | calculation approach                                |                 |
 +-----+-----------------+-----------------------------------------------------+-----------------+
 
 

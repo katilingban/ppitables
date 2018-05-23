@@ -684,8 +684,26 @@ PPI [site](https://www.povertyindex.org).
 <td style="text-align: right;"><ol start="60" type="1">
 <li></li>
 </ol></td>
+<td><code>ppiZMB2013_got</code></td>
+<td>PPI for Zambia based on Zambia’s 2010 Living Conditions Monitoring Survey (LCMS) using Göttingen poverty definitions</td>
+<td style="text-align: center;">2013</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"></td>
+<td><code>ppiZMB2013_cso</code></td>
+<td>PPI for Zambia based on Zambia’s 2010 Living Conditions Monitoring Survey (LCMS) using CSO poverty definitions</td>
+<td style="text-align: center;">2013</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"></td>
 <td><code>ppiZMB2017</code></td>
-<td>PPIi for Zambia based on Zambia’s 2015 Living Conditions Monitoring Survey (LCMS)</td>
+<td>PPI for Zambia based on Zambia’s 2015 Living Conditions Monitoring Survey (LCMS) using legacy poverty definitions</td>
+<td style="text-align: center;">2017</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"></td>
+<td><code>ppiZMB2017_a</code></td>
+<td>PPI for Zambia based on Zambia’s 2015 Living Conditions Monitoring Survey (LCMS) using new PPI calculation approach</td>
 <td style="text-align: center;">2017</td>
 </tr>
 </tbody>
