@@ -9,3 +9,4 @@
 ^LICENSE\.md$
 ^docs$
 ^netlify\.toml$
+^revdep$

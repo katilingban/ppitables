@@ -1,7 +1,7 @@
 Package: ppitables
 Type: Package
 Title: Lookup Tables to Generate Poverty Likelihoods and Rates using the Poverty Probability Index (PPI)
-Version: 0.1.2
+Version: 0.2.0
 Authors@R: person("Ernest", "Guevarra", comment = c(ORCID = "0000-0002-4887-4415"), 
                   email = "ernestgmd@gmail.com", role = c("aut", "cre"))
 Description: The Poverty Probability Index (PPI) is a poverty measurement tool 
