@@ -38,6 +38,8 @@ get_ppi_table <- function(pdf, n, limits, expand = TRUE) {
       ppiDF <- data.frame(rbind(ppiDF, tempDF))
     }
     ppiDF <- data.frame(rbind(ppiDF, ppiDF[100, ]))
+
+    ppiDF[ , 1] <- 0:100
   }
 
   if(expand == FALSE) {
@@ -291,7 +293,78 @@ devtools::use_data(ppiBRA2010, overwrite = TRUE)
 
 ################################################################################
 #
-# Burkina Faso
+# Burkina Faso - 2011
+#
+################################################################################
+
+bfaDF <- get_ppi_table(pdf = "http://www.simplepovertyscorecard.com/BFA_2003_ENG.pdf",
+                       n = 67, limits = 6:25, expand = TRUE)
+names(bfaDF) <- c("score", "nl100")
+
+nl50 <- get_ppi_table(pdf = "http://www.simplepovertyscorecard.com/BFA_2003_ENG.pdf",
+                       n = 77, limits = 6:25, expand = TRUE)
+names(nl50) <- c("score", "nl50")
+
+nl75 <- get_ppi_table(pdf = "http://www.simplepovertyscorecard.com/BFA_2003_ENG.pdf",
+                       n = 83, limits = 6:25, expand = TRUE)
+names(nl75) <- c("score", "nl75")
+
+nl150 <- get_ppi_table(pdf = "http://www.simplepovertyscorecard.com/BFA_2003_ENG.pdf",
+                      n = 89, limits = 6:25, expand = TRUE)
+names(nl150) <- c("score", "nl150")
+
+extreme <- get_ppi_table(pdf = "http://www.simplepovertyscorecard.com/BFA_2003_ENG.pdf",
+                         n = 95, limits = 6:25, expand = TRUE)
+names(extreme) <- c("score", "extreme")
+
+ppp125 <- get_ppi_table(pdf = "http://www.simplepovertyscorecard.com/BFA_2003_ENG.pdf",
+                       n = 101, limits = 6:25, expand = TRUE)
+names(ppp125) <- c("score", "ppp125")
+
+ppp250 <- get_ppi_table(pdf = "http://www.simplepovertyscorecard.com/BFA_2003_ENG.pdf",
+                        n = 107, limits = 6:25, expand = TRUE)
+names(ppp250) <- c("score", "ppp250")
+
+bfaDF <- merge(bfaDF, nl50)
+bfaDF <- merge(bfaDF, nl75)
+bfaDF <- merge(bfaDF, nl150)
+bfaDF <- merge(bfaDF, extreme)
+bfaDF <- merge(bfaDF, ppp125)
+bfaDF <- merge(bfaDF, ppp250)
+
+ppiBFA2011 <- bfaDF
+devtools::use_data(ppiBFA2011, overwrite = TRUE)
+
+
+
+################################################################################
+#
+# Burkina Faso - 2014
+#
+################################################################################
+
+bfaDF1 <- get_ppi_table(pdf = "http://www.simplepovertyscorecard.com/BFA_2014_ENG.pdf",
+                        n = 4, limits = 7:26, expand = TRUE)
+names(bfaDF1) <- c("score", "food", "nl100", "nl150", "nl200")
+
+bfaDF2 <- get_ppi_table(pdf = "http://www.simplepovertyscorecard.com/BFA_2014_ENG.pdf",
+                        n = 5, limits = 7:26, expand = TRUE)
+names(bfaDF2) <- c("score", "ppp125", "ppp200", "ppp250", "ppp500", "ppp844", "ppp190", "ppp310")
+
+bfaDF3 <- get_ppi_table(pdf = "http://www.simplepovertyscorecard.com/BFA_2014_ENG.pdf",
+                        n = 6, limits = 7:26, expand = TRUE)
+names(bfaDF3) <- c("score", "median", "percentile20", "percentile40", "percentile50", "percentile60", "percentile80")
+
+bfaDF <- merge(bfaDF1, bfaDF2)
+bfaDF <- merge(bfaDF, bfaDF3)
+
+ppiBFA2014 <- bfaDF
+devtools::use_data(ppiBFA2014, overwrite = TRUE)
+
+
+################################################################################
+#
+# Burkina Faso - ppi - 2017
 #
 ################################################################################
 
