@@ -681,7 +681,7 @@ PPI [site](https://www.povertyindex.org).
 
 ### Notes
 
-1.  Only 59 country PPI tables are shown here and available via the
+1.  Only 60 country PPI tables are shown here and available via the
     package. There is no lookup table for China because the China
     Poverty Scorecard is an expert-based scorecard. See
     [this](https://www.povertyindex.org/china-expert-based-poverty-scorecard)
