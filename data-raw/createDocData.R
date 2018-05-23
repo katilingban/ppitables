@@ -267,7 +267,7 @@ varList <- c("PPI score",
              "Below $1.90 per day purchasing power parity (2011)",
              "Below $3.10 per day purchasing power parity (2011)")
 
-create_doc(country = "Colombia", ccode = "COL", year = "2018", suffix = "_a", data = ppiCOL2018_a, varList = varList)
+create_doc(country = "Colombia", ccode = "COL", year = "2012", suffix = "_a", data = ppiCOL2012_a, varList = varList)
 
 
 ################################################################################
@@ -287,7 +287,35 @@ varList <- c("PPI score",
              "Below $3.75 per day purchasing power parity (2005)",
              "Below $5.00 per day purchasing power parity (2005)")
 
-create_doc(country = "Colombia", ccode = "COL", year = "2018", data = ppiCOL2018, varList = varList)
+create_doc(country = "Colombia", ccode = "COL", year = "2012", data = ppiCOL2012, varList = varList)
+
+
+################################################################################
+#
+# Colombia - 2018
+#
+################################################################################
+
+varList <- c("PPI score",
+             "National poverty line (100)",
+             "Extreme national poverty line",
+             "National poverty line (150)",
+             "National poverty line (200)",
+             "Below $1.90 per day purchasing power parity (2011)",
+             "Below $3.20 per day purchasing power parity (2011)",
+             "Below $5.50 per day purchasing power parity (2011)",
+             "Below $8.00 per day purchasing power parity (2011)",
+             "Below $15.00 per day purchasing power parity (2011)",
+             "Below $21.70 per day purchasing power parity (2011)",
+             "Below $1.25 per day purchasing power parity (2005)",
+             "Below $2.50 per day purchasing power parity (2005)",
+             "Below $5.00 per day purchasing power parity (2005)",
+             "Below 20th percentile poverty line",
+             "Below 40th percentile poverty line",
+             "Below 60th percentile poverty line",
+             "Below 80th percentile poverty line")
+
+create_doc(country = "Colombia", ccode = "COL", year = "2018",  data = ppiCOL2018, varList = varList)
 
 
 ################################################################################
