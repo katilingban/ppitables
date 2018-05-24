@@ -10,3 +10,4 @@
 ^docs$
 ^netlify\.toml$
 ^revdep$
+^codecov\.yml$
