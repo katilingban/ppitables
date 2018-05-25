@@ -16,7 +16,8 @@ Status](https://travis-ci.org/validmeasures/ppitables.svg?branch=master)](https:
 Status](https://ci.appveyor.com/api/projects/status/github/validmeasures/ppitables?branch=master&svg=true)](https://ci.appveyor.com/project/validmeasures/ppitables)
 [![Coverage
 Status](https://img.shields.io/codecov/c/github/validmeasures/ppitables/master.svg)](https://codecov.io/github/validmeasures/ppitables?branch=master)
-[![DOI](https://zenodo.org/badge/121277287.svg)](https://zenodo.org/badge/latestdoi/121277287)
+[![DOI - All
+Versions](https://zenodo.org/badge/DOI/10.5281/zenodo.1188982.svg)](https://doi.org/10.5281/zenodo.1188982)
 
 Lookup tables for estimating the likelihood of poverty using the
 `Poverty Probability Index` (previously called `Progress out of Poverty
