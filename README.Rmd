@@ -25,7 +25,6 @@ library(ppitables)
 [![Coverage Status](https://img.shields.io/codecov/c/github/validmeasures/ppitables/master.svg)](https://codecov.io/github/validmeasures/ppitables?branch=master)
 [![DOI](https://zenodo.org/badge/121277287.svg)](https://zenodo.org/badge/latestdoi/121277287)
 
-
 Lookup tables for estimating the likelihood of poverty using the `Poverty Probability Index` (previously called `Progress out of Poverty Index`) or `PPI` from country-specific indicators collected from cross-sectional surveys. This lookup table is extracted from documentation of the `PPI` found at [https://www.povertyindex.org](https://www.povertyindex.org).
 
 
