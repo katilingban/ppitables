@@ -3,7 +3,6 @@
 \docType{data}
 \name{ppiZMB2013_cso}
 \alias{ppiZMB2013_cso}
-\alias{ppiZMB2013_cso}
 \title{ppiZMB2013_cso}
 \format{A data frame with 9 columns and 101 rows:
 \describe{
@@ -19,17 +18,11 @@
 }}
 \source{
 \url{www.povertyindex.org}
-
-\url{www.povertyindex.org}
 }
 \usage{
 ppiZMB2013_cso
-
-ppiZMB2013_cso
 }
 \description{
-Poverty Probability Index (PPI) lookup table for Zambia
-
 Poverty Probability Index (PPI) lookup table for Zambia
 }
 \keyword{datasets}
