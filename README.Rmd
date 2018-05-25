@@ -4,12 +4,14 @@ output: github_document
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-```{r, echo = FALSE}
+```{r, include = FALSE, echo = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
   fig.path = "man/figures/README-"
 )
+devtools::install_github("validmeaures/ppitables")
+library(ppitables)
 ```
 
 # ppitables: Lookup tables to generate poverty likelihoods and rates using the Poverty Probability Index (PPI)
@@ -326,6 +328,38 @@ Following are the available PPI country tables from the `ppitables` package. Thi
 |     |                 | Conditions Monitoring Survey (LCMS) using new PPI   |                 |
 |     |                 | calculation approach                                |                 |
 +-----+-----------------+-----------------------------------------------------+-----------------+
+
+This list of available PPI country tables can be retrieved in R using the `find_table()` function. View the complete list using the following command in R:
+
+```{r, eval = TRUE}
+find_table()
+```
+
+View the list of PPI country tables for Africa using the following command in R:
+
+```{r, eval = TRUE}
+find_table(region = "Africa")
+```
+
+View the list of PPI country tables in Zambia using the the following command in R:
+
+```{r, eval = TRUE}
+find_table(country = "Zambia")
+```
+
+To extract the actual PPI tables, the `get_table()` function can be used. The `get_table()` function wraps around the `find_table()` function to make a search for a specific PPI table and then extracts the table/s and puts them together into a tidy data frame.
+
+For example, to get the actual PPI tables for all countries with PPI tables, the following command can be used in R:
+
+```{r, eval = TRUE}
+get_table()
+```
+
+To get the actual PPI tables for all countries with PPI tables in Africa, the following command can be used in R:
+
+```{r, eval = TRUE}
+get_table(region = "Africa")
+```
 
 
 ### Notes
