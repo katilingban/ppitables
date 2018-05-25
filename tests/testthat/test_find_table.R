@@ -22,3 +22,8 @@ test_that("produces error", {
   expect_warning(find_table(region = "Asia", country = "philippines"),
                  "philippines not in the list of countries with PPI tables. Check country name spelling and/or check that philippines is in the list of countries with PPI tables. Returning NULL results for philippines")
 })
+
+test_that("produces error", {
+  expect_warning(find_table(region = "Asia", country = "Nepal", type = "ipa"),
+                 "ipa not in the list of calculation types for the given country/ies. Check type ipa is in the list of calculation types for the given country/ies. Returning NULL results for type ipa")
+})
