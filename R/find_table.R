@@ -84,9 +84,9 @@ find_table <- function(region = levels(steer$region),
   #
   # Create search output of PPI tables list
   #
-  table_list <- as.tibble(steer[steer$region %in% region &
-                                steer$country %in% country &
-                                steer$type %in% type, ])
+  table_list <- tibble::as.tibble(steer[steer$region %in% region &
+                                  steer$country %in% country &
+                                  steer$type %in% type, ])
   #
   # Retrun search output
   #
