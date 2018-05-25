@@ -8,7 +8,7 @@ Latin American and the Carribean,Brazil,2008,2010,PPI for Brazil based on the 20
 Africa,Burkina Faso,2003,2011,PPI for Burkina Faso using Burkina Faso’s 2003 Household Living Standards Survey,sps,ppiBFA2011
 Africa,Burkina Faso,2014,2017,PPI for Burkina Faso using Burkina Faso’s 2014 Permanent Multi-Sector Survey,sps,ppiBFA2014
 Africa,Burkina Faso,2014,2017,PPI for Burkina Faso using Burkina Faso’s 2014 Enquête Multisectorielle Continue (EMC) based on IPA’s new approach to PPI calculation,ipa,ppiBFA2017
-Asia,Cambodia,2011,2015,PPI for Cambodia using Cambodia’s 2011 Socio-Economic Survey based using legacy poverty lines,sps,ppiKHM2105
+Asia,Cambodia,2011,2015,PPI for Cambodia using Cambodia’s 2011 Socio-Economic Survey based using legacy poverty lines,sps,ppiKHM2015
 Asia,Cambodia,2011,2015,PPI for Cambodia using Cambodia’s 2011 Socio-Economic Survey based using government definition poverty lines,sps,ppiKHM2015_gov
 Asia,Cambodia,2011,2015,PPI for Cambodia using Cambodia’s 2011 Socio-Economic Survey based using World Bank definition poverty lines,sps,ppiKHM2015_wb
 Africa,Cameroon,2007,2013,PPI for Cameroon using Cameroon’s 2007 Household Survey,sps,ppiCMR2013
@@ -36,7 +36,7 @@ Asia,India,2011,2016,PPI for India using India’s 2011/12 Socio-Economic using th
 Asia,Indonesia,2010,2012,PPI for Indonesia based on data from 2010 using legacy poverty lines,sps,ppiIDN2012
 Asia,Indonesia,2010,2012,PPI for Indonesia based on data from 2010 using new definition poverty lines,sps,ppiIDN2012_a
 Middle East and North Africa,Jordan,2006,2010,PPI for Jordan using Jordan’s 2006 Household Income and Expenditure Survey,sps,ppiJOR2010
-Africa,Kenya,2005,2011,PPI for Kenya using Kenya’s 2005/06 Integrated Household Budget Survey,sps,ppi2011KEN
+Africa,Kenya,2005,2011,PPI for Kenya using Kenya’s 2005/06 Integrated Household Budget Survey,sps,ppiKEN2011
 Asia,Kyrgyz Republic,2012,2015,PPI for Kyrgyzstan Kyrgyz Republic’s 2012 Integrated Household Survey,sps,ppiKGZ2015
 Africa,Madagascar,2010,2015,PPI for Madagascar based on Madagascar’s 2010 Periodic Household Survey,sps,ppiMDG2015
 Africa,Malawi,2010,2015,PPI for Malawi based on Malawi’s 2010/11 Integrated Household Survey using legacy poverty definitions,sps,ppiMWI2015
