@@ -1,3 +1,21 @@
+# pptables 0.2.0
+
+This is the second CRAN release of `ppitables`. In this release, I added:
+
+* updates to documentation
+
+* new PPI tables for Ivory Coast, Togo, Philippines and Peru using the new
+PPI calculation approach developed by the International Poverty Alliance (IPA)
+
+* update PPI tables for Colombia, Burkina Faso and Zambia
+
+* added `find_table()` which allows user to do a search query for specific PPI
+tables
+
+* added `get_table()` which creates a tidy format data frame of user-specified
+PPI tables.
+
+
 # ppitables 0.1.2
 This is an updated release of `ppitables` as part of the CRAN submission process. In this release, I have added examples of usage for each of the country PPI table.
 
