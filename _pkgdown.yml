@@ -1,0 +1,6 @@
+title: ppitables
+url: https://validmeasures.org/ppitables
+template:
+  params:
+    bootswatch: sandstone
+    #ganalytics: UA-102485058-4
