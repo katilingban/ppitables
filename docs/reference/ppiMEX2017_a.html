@@ -11,8 +11,8 @@
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
+<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/sandstone/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 <!-- Font Awesome icons -->
@@ -21,9 +21,11 @@
 <!-- clipboard.js -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js" integrity="sha384-cV+rhyOuRHc9Ub/91rihWcGmMmCXDeksTtCihMupQHSsi8GIIRDG0ThDc3HGQFJ3" crossorigin="anonymous"></script>
 
+<!-- sticky kit -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js" integrity="sha256-c4Rlo1ZozqTPE2RLuvbusY3+SU1pQaJC0TjuhygMipw=" crossorigin="anonymous"></script>
+
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
-<script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
 
 
@@ -33,6 +35,7 @@
 <meta property="og:description" content="Poverty Probability Index (PPI) lookup table for Mexico using new poverty
 definitions" />
 <meta name="twitter:card" content="summary" />
+
 
 
 <!-- mathjax -->
@@ -59,7 +62,7 @@ definitions" />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">ppitables</a>
-        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">0.2.0</span>
+        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">0.2.0.9000</span>
       </span>
     </div>
 
@@ -200,6 +203,49 @@ definitions</p>
 #&gt; 55     55   9.5  36.4  63.8  80.3    10.0    1.9    4.5    6.0   24.7    3.3
 #&gt; 56     56   9.5  36.4  63.8  80.3    10.0    1.9    4.5    6.0   24.7    3.3
 #&gt; 57     57   9.5  36.4  63.8  80.3    10.0    1.9    4.5    6.0   24.7    3.3
+#&gt; 58     58   9.5  36.4  63.8  80.3    10.0    1.9    4.5    6.0   24.7    3.3
+#&gt; 59     59   9.5  36.4  63.8  80.3    10.0    1.9    4.5    6.0   24.7    3.3
+#&gt; 60     60   6.8  31.3  55.0  72.2     6.6    1.5    3.1    4.4   18.9    2.4
+#&gt; 61     61   6.8  31.3  55.0  72.2     6.6    1.5    3.1    4.4   18.9    2.4
+#&gt; 62     62   6.8  31.3  55.0  72.2     6.6    1.5    3.1    4.4   18.9    2.4
+#&gt; 63     63   6.8  31.3  55.0  72.2     6.6    1.5    3.1    4.4   18.9    2.4
+#&gt; 64     64   6.8  31.3  55.0  72.2     6.6    1.5    3.1    4.4   18.9    2.4
+#&gt; 65     65   5.2  24.1  47.0  63.7     4.9    1.0    2.1    3.6   15.3    1.5
+#&gt; 66     66   5.2  24.1  47.0  63.7     4.9    1.0    2.1    3.6   15.3    1.5
+#&gt; 67     67   5.2  24.1  47.0  63.7     4.9    1.0    2.1    3.6   15.3    1.5
+#&gt; 68     68   5.2  24.1  47.0  63.7     4.9    1.0    2.1    3.6   15.3    1.5
+#&gt; 69     69   5.2  24.1  47.0  63.7     4.9    1.0    2.1    3.6   15.3    1.5
+#&gt; 70     70   4.3  20.3  37.2  54.1     3.9    0.9    2.1    3.1   11.1    1.5
+#&gt; 71     71   4.3  20.3  37.2  54.1     3.9    0.9    2.1    3.1   11.1    1.5
+#&gt; 72     72   4.3  20.3  37.2  54.1     3.9    0.9    2.1    3.1   11.1    1.5
+#&gt; 73     73   4.3  20.3  37.2  54.1     3.9    0.9    2.1    3.1   11.1    1.5
+#&gt; 74     74   4.3  20.3  37.2  54.1     3.9    0.9    2.1    3.1   11.1    1.5
+#&gt; 75     75   2.5  13.2  30.3  44.4     2.3    0.7    1.5    1.9    7.1    1.1
+#&gt; 76     76   2.5  13.2  30.3  44.4     2.3    0.7    1.5    1.9    7.1    1.1
+#&gt; 77     77   2.5  13.2  30.3  44.4     2.3    0.7    1.5    1.9    7.1    1.1
+#&gt; 78     78   2.5  13.2  30.3  44.4     2.3    0.7    1.5    1.9    7.1    1.1
+#&gt; 79     79   2.5  13.2  30.3  44.4     2.3    0.7    1.5    1.9    7.1    1.1
+#&gt; 80     80   2.0   9.1  19.9  31.7     1.5    0.5    0.9    1.3    5.0    0.7
+#&gt; 81     81   2.0   9.1  19.9  31.7     1.5    0.5    0.9    1.3    5.0    0.7
+#&gt; 82     82   2.0   9.1  19.9  31.7     1.5    0.5    0.9    1.3    5.0    0.7
+#&gt; 83     83   2.0   9.1  19.9  31.7     1.5    0.5    0.9    1.3    5.0    0.7
+#&gt; 84     84   2.0   9.1  19.9  31.7     1.5    0.5    0.9    1.3    5.0    0.7
+#&gt; 85     85   1.4   6.2  15.6  27.8     1.2    0.5    0.8    1.1    4.1    0.6
+#&gt; 86     86   1.4   6.2  15.6  27.8     1.2    0.5    0.8    1.1    4.1    0.6
+#&gt; 87     87   1.4   6.2  15.6  27.8     1.2    0.5    0.8    1.1    4.1    0.6
+#&gt; 88     88   1.4   6.2  15.6  27.8     1.2    0.5    0.8    1.1    4.1    0.6
+#&gt; 89     89   1.4   6.2  15.6  27.8     1.2    0.5    0.8    1.1    4.1    0.6
+#&gt; 90     90   1.3   4.5  12.0  20.0     1.2    0.5    0.8    1.1    2.6    0.6
+#&gt; 91     91   1.3   4.5  12.0  20.0     1.2    0.5    0.8    1.1    2.6    0.6
+#&gt; 92     92   1.3   4.5  12.0  20.0     1.2    0.5    0.8    1.1    2.6    0.6
+#&gt; 93     93   1.3   4.5  12.0  20.0     1.2    0.5    0.8    1.1    2.6    0.6
+#&gt; 94     94   1.3   4.5  12.0  20.0     1.2    0.5    0.8    1.1    2.6    0.6
+#&gt; 95     95   0.8   3.2   7.5  13.4     0.8    0.2    0.4    0.7    1.7    0.3
+#&gt; 96     96   0.8   3.2   7.5  13.4     0.8    0.2    0.4    0.7    1.7    0.3
+#&gt; 97     97   0.8   3.2   7.5  13.4     0.8    0.2    0.4    0.7    1.7    0.3
+#&gt; 98     98   0.8   3.2   7.5  13.4     0.8    0.2    0.4    0.7    1.7    0.3
+#&gt; 99     99   0.8   3.2   7.5  13.4     0.8    0.2    0.4    0.7    1.7    0.3
+#&gt; 100   100   0.8   3.2   7.5  13.4     0.8    0.2    0.4    0.7    1.7    0.3
 #&gt;     ppp310 percentile20 percentile40 percentile50 percentile60 percentile80
 #&gt; 0     75.6         86.9         96.6         99.4        100.0        100.0
 #&gt; 1     75.6         86.9         96.6         99.4        100.0        100.0
@@ -259,7 +305,49 @@ definitions</p>
 #&gt; 55     7.5          7.3         19.2         28.5         39.8         75.4
 #&gt; 56     7.5          7.3         19.2         28.5         39.8         75.4
 #&gt; 57     7.5          7.3         19.2         28.5         39.8         75.4
-#&gt;  [ reached getOption("max.print") -- omitted 43 rows ]</div><div class='input'>
+#&gt; 58     7.5          7.3         19.2         28.5         39.8         75.4
+#&gt; 59     7.5          7.3         19.2         28.5         39.8         75.4
+#&gt; 60     5.6          3.9         13.3         21.6         33.5         65.6
+#&gt; 61     5.6          3.9         13.3         21.6         33.5         65.6
+#&gt; 62     5.6          3.9         13.3         21.6         33.5         65.6
+#&gt; 63     5.6          3.9         13.3         21.6         33.5         65.6
+#&gt; 64     5.6          3.9         13.3         21.6         33.5         65.6
+#&gt; 65     4.6          2.8         10.0         15.8         25.5         57.2
+#&gt; 66     4.6          2.8         10.0         15.8         25.5         57.2
+#&gt; 67     4.6          2.8         10.0         15.8         25.5         57.2
+#&gt; 68     4.6          2.8         10.0         15.8         25.5         57.2
+#&gt; 69     4.6          2.8         10.0         15.8         25.5         57.2
+#&gt; 70     3.6          2.7          8.1         11.4         19.8         46.3
+#&gt; 71     3.6          2.7          8.1         11.4         19.8         46.3
+#&gt; 72     3.6          2.7          8.1         11.4         19.8         46.3
+#&gt; 73     3.6          2.7          8.1         11.4         19.8         46.3
+#&gt; 74     3.6          2.7          8.1         11.4         19.8         46.3
+#&gt; 75     2.3          1.8          3.9          6.5         13.0         36.1
+#&gt; 76     2.3          1.8          3.9          6.5         13.0         36.1
+#&gt; 77     2.3          1.8          3.9          6.5         13.0         36.1
+#&gt; 78     2.3          1.8          3.9          6.5         13.0         36.1
+#&gt; 79     2.3          1.8          3.9          6.5         13.0         36.1
+#&gt; 80     1.4          1.1          3.0          5.2          8.7         25.2
+#&gt; 81     1.4          1.1          3.0          5.2          8.7         25.2
+#&gt; 82     1.4          1.1          3.0          5.2          8.7         25.2
+#&gt; 83     1.4          1.1          3.0          5.2          8.7         25.2
+#&gt; 84     1.4          1.1          3.0          5.2          8.7         25.2
+#&gt; 85     1.2          1.0          2.6          3.4          5.5         18.8
+#&gt; 86     1.2          1.0          2.6          3.4          5.5         18.8
+#&gt; 87     1.2          1.0          2.6          3.4          5.5         18.8
+#&gt; 88     1.2          1.0          2.6          3.4          5.5         18.8
+#&gt; 89     1.2          1.0          2.6          3.4          5.5         18.8
+#&gt; 90     1.2          1.0          2.3          2.5          4.2         16.1
+#&gt; 91     1.2          1.0          2.3          2.5          4.2         16.1
+#&gt; 92     1.2          1.0          2.3          2.5          4.2         16.1
+#&gt; 93     1.2          1.0          2.3          2.5          4.2         16.1
+#&gt; 94     1.2          1.0          2.3          2.5          4.2         16.1
+#&gt; 95     0.7          0.7          1.4          1.6          2.9          9.1
+#&gt; 96     0.7          0.7          1.4          1.6          2.9          9.1
+#&gt; 97     0.7          0.7          1.4          1.6          2.9          9.1
+#&gt; 98     0.7          0.7          1.4          1.6          2.9          9.1
+#&gt; 99     0.7          0.7          1.4          1.6          2.9          9.1
+#&gt; 100    0.7          0.7          1.4          1.6          2.9          9.1</div><div class='input'>
   <span class='co'># Given a specific PPI score (from 0 - 100), get the row of poverty</span>
   <span class='co'># probabilities from PPI table it corresponds to</span>
   <span class='no'>ppiScore</span> <span class='kw'>&lt;-</span> <span class='fl'>50</span>

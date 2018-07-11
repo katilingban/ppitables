@@ -11,8 +11,8 @@
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
+<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/sandstone/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 <!-- Font Awesome icons -->
@@ -21,9 +21,11 @@
 <!-- clipboard.js -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js" integrity="sha384-cV+rhyOuRHc9Ub/91rihWcGmMmCXDeksTtCihMupQHSsi8GIIRDG0ThDc3HGQFJ3" crossorigin="anonymous"></script>
 
+<!-- sticky kit -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js" integrity="sha256-c4Rlo1ZozqTPE2RLuvbusY3+SU1pQaJC0TjuhygMipw=" crossorigin="anonymous"></script>
+
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
-<script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
 
 
@@ -33,6 +35,7 @@
 <meta property="og:description" content="Poverty Probability Index (PPI) lookup table for Malawi using government
 poverty definitions" />
 <meta name="twitter:card" content="summary" />
+
 
 
 <!-- mathjax -->
@@ -59,7 +62,7 @@ poverty definitions" />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">ppitables</a>
-        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">0.2.0</span>
+        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">0.2.0.9000</span>
       </span>
     </div>
 
@@ -210,6 +213,36 @@ poverty definitions</p>
 #&gt; 68     68    2.2  12.4  34.1  53.0     2.2   30.5   63.3   77.0   95.8   98.4
 #&gt; 69     69    2.2  12.4  34.1  53.0     2.2   30.5   63.3   77.0   95.8   98.4
 #&gt; 70     70    1.0   6.5  23.3  38.3     0.7   20.8   48.3   62.4   90.6   97.4
+#&gt; 71     71    1.0   6.5  23.3  38.3     0.7   20.8   48.3   62.4   90.6   97.4
+#&gt; 72     72    1.0   6.5  23.3  38.3     0.7   20.8   48.3   62.4   90.6   97.4
+#&gt; 73     73    1.0   6.5  23.3  38.3     0.7   20.8   48.3   62.4   90.6   97.4
+#&gt; 74     74    1.0   6.5  23.3  38.3     0.7   20.8   48.3   62.4   90.6   97.4
+#&gt; 75     75    0.6   5.3  17.7  31.2     0.6   15.8   39.2   52.1   87.0   95.7
+#&gt; 76     76    0.6   5.3  17.7  31.2     0.6   15.8   39.2   52.1   87.0   95.7
+#&gt; 77     77    0.6   5.3  17.7  31.2     0.6   15.8   39.2   52.1   87.0   95.7
+#&gt; 78     78    0.6   5.3  17.7  31.2     0.6   15.8   39.2   52.1   87.0   95.7
+#&gt; 79     79    0.6   5.3  17.7  31.2     0.6   15.8   39.2   52.1   87.0   95.7
+#&gt; 80     80    0.4   2.7  11.5  24.5     0.4    9.7   34.0   44.8   82.4   93.5
+#&gt; 81     81    0.4   2.7  11.5  24.5     0.4    9.7   34.0   44.8   82.4   93.5
+#&gt; 82     82    0.4   2.7  11.5  24.5     0.4    9.7   34.0   44.8   82.4   93.5
+#&gt; 83     83    0.4   2.7  11.5  24.5     0.4    9.7   34.0   44.8   82.4   93.5
+#&gt; 84     84    0.4   2.7  11.5  24.5     0.4    9.7   34.0   44.8   82.4   93.5
+#&gt; 85     85    0.0   1.1   3.7  13.3     0.0    3.7   15.9   23.6   73.3   90.8
+#&gt; 86     86    0.0   1.1   3.7  13.3     0.0    3.7   15.9   23.6   73.3   90.8
+#&gt; 87     87    0.0   1.1   3.7  13.3     0.0    3.7   15.9   23.6   73.3   90.8
+#&gt; 88     88    0.0   1.1   3.7  13.3     0.0    3.7   15.9   23.6   73.3   90.8
+#&gt; 89     89    0.0   1.1   3.7  13.3     0.0    3.7   15.9   23.6   73.3   90.8
+#&gt; 90     90    0.0   1.1   2.4   8.8     0.0    2.1   11.2   15.3   57.8   80.0
+#&gt; 91     91    0.0   1.1   2.4   8.8     0.0    2.1   11.2   15.3   57.8   80.0
+#&gt; 92     92    0.0   1.1   2.4   8.8     0.0    2.1   11.2   15.3   57.8   80.0
+#&gt; 93     93    0.0   1.1   2.4   8.8     0.0    2.1   11.2   15.3   57.8   80.0
+#&gt; 94     94    0.0   1.1   2.4   8.8     0.0    2.1   11.2   15.3   57.8   80.0
+#&gt; 95     95    0.0   0.0   0.0   0.6     0.0    0.0    3.4   10.1   49.6   69.1
+#&gt; 96     96    0.0   0.0   0.0   0.6     0.0    0.0    3.4   10.1   49.6   69.1
+#&gt; 97     97    0.0   0.0   0.0   0.6     0.0    0.0    3.4   10.1   49.6   69.1
+#&gt; 98     98    0.0   0.0   0.0   0.6     0.0    0.0    3.4   10.1   49.6   69.1
+#&gt; 99     99    0.0   0.0   0.0   0.6     0.0    0.0    3.4   10.1   49.6   69.1
+#&gt; 100   100    0.0   0.0   0.0   0.6     0.0    0.0    3.4   10.1   49.6   69.1
 #&gt;     ppp190 ppp310 ppp1000
 #&gt; 0    100.0  100.0   100.0
 #&gt; 1    100.0  100.0   100.0
@@ -282,7 +315,36 @@ poverty definitions</p>
 #&gt; 68    43.6   77.3    98.8
 #&gt; 69    43.6   77.3    98.8
 #&gt; 70    31.1   62.5    97.8
-#&gt;  [ reached getOption("max.print") -- omitted 30 rows ]</div><div class='input'>
+#&gt; 71    31.1   62.5    97.8
+#&gt; 72    31.1   62.5    97.8
+#&gt; 73    31.1   62.5    97.8
+#&gt; 74    31.1   62.5    97.8
+#&gt; 75    24.5   52.6    96.4
+#&gt; 76    24.5   52.6    96.4
+#&gt; 77    24.5   52.6    96.4
+#&gt; 78    24.5   52.6    96.4
+#&gt; 79    24.5   52.6    96.4
+#&gt; 80    18.0   47.1    95.8
+#&gt; 81    18.0   47.1    95.8
+#&gt; 82    18.0   47.1    95.8
+#&gt; 83    18.0   47.1    95.8
+#&gt; 84    18.0   47.1    95.8
+#&gt; 85     9.4   23.6    92.6
+#&gt; 86     9.4   23.6    92.6
+#&gt; 87     9.4   23.6    92.6
+#&gt; 88     9.4   23.6    92.6
+#&gt; 89     9.4   23.6    92.6
+#&gt; 90     6.1   15.3    85.4
+#&gt; 91     6.1   15.3    85.4
+#&gt; 92     6.1   15.3    85.4
+#&gt; 93     6.1   15.3    85.4
+#&gt; 94     6.1   15.3    85.4
+#&gt; 95     0.6   10.1    72.5
+#&gt; 96     0.6   10.1    72.5
+#&gt; 97     0.6   10.1    72.5
+#&gt; 98     0.6   10.1    72.5
+#&gt; 99     0.6   10.1    72.5
+#&gt; 100    0.6   10.1    72.5</div><div class='input'>
   <span class='co'># Given a specific PPI score (from 0 - 100), get the row of poverty</span>
   <span class='co'># probabilities from PPI table it corresponds to</span>
   <span class='no'>ppiScore</span> <span class='kw'>&lt;-</span> <span class='fl'>50</span>
