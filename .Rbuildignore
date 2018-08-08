@@ -11,3 +11,5 @@
 ^netlify\.toml$
 ^revdep$
 ^codecov\.yml$
+^_pkgdown\.yml$
+^docs/$
