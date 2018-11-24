@@ -1,4 +1,17 @@
-# pptables 0.2.0
+# ppitables 0.3.0
+
+This is the third CRAN release of `ppitables`. In this release, I added:
+
+* new PPI tables for Kenya and Senegal using the new PPI calculation approach 
+developed by the International Poverty Alliance (IPA)
+
+* changed license to MIT
+
+* updated `steer` data that serves as an index to the tables to include the new
+PPI tables
+
+
+# ppitables 0.2.0
 
 This is the second CRAN release of `ppitables`. In this release, I added:
 
