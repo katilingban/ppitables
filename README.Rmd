@@ -10,7 +10,6 @@ knitr::opts_chunk$set(
   comment = "#>",
   fig.path = "man/figures/README-"
 )
-devtools::install_github("validmeaures/ppitables")
 library(ppitables)
 ```
 
