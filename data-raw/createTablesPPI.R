@@ -53,6 +53,7 @@ get_ppi_table <- function(pdf, n, limits, category, expand = TRUE) {
     }
   }
 
+  #return(ppiDF)
   names(ppiDF) <- rep(c("score", category), 3)
 
   ppi <- rbind(ppiDF[ , 1:2], ppiDF[ , 3:4], ppiDF[ , 5:6])
@@ -71,7 +72,7 @@ get_ppi_table <- function(pdf, n, limits, category, expand = TRUE) {
 #
 #
 #
-#  }
+#
 #}
 
 
@@ -1877,6 +1878,51 @@ devtools::use_data(ppiKEN2011, overwrite = TRUE)
 
 ################################################################################
 #
+# Kenya - PPI
+#
+################################################################################
+
+kenDF <- get_ppi_table(pdf = "data-raw/pdf/kenya_ppi_2018.pdf", n = 5, limits = 6:39, category = "nl100", expand = FALSE)
+nlFood <- get_ppi_table(pdf = "data-raw/pdf/kenya_ppi_2018.pdf", n = 8, limits = 6:39, category = "nlFood", expand = FALSE)
+nl150 <- get_ppi_table(pdf = "data-raw/pdf/kenya_ppi_2018.pdf", n = 11, limits = 6:39, category = "nl150", expand = FALSE)
+nl200 <- get_ppi_table(pdf = "data-raw/pdf/kenya_ppi_2018.pdf", n = 14, limits = 6:39, category = "nl200", expand = FALSE)
+ppp100 <- get_ppi_table(pdf = "data-raw/pdf/kenya_ppi_2018.pdf", n = 17, limits = 6:39, category = "ppp100", expand = FALSE)
+ppp190 <- get_ppi_table(pdf = "data-raw/pdf/kenya_ppi_2018.pdf", n = 20, limits = 6:39, category = "ppp190", expand = FALSE)
+ppp320 <- get_ppi_table(pdf = "data-raw/pdf/kenya_ppi_2018.pdf", n = 23, limits = 6:39, category = "ppp320", expand = FALSE)
+ppp550 <- get_ppi_table(pdf = "data-raw/pdf/kenya_ppi_2018.pdf", n = 26, limits = 6:39, category = "ppp550", expand = FALSE)
+ppp800 <- get_ppi_table(pdf = "data-raw/pdf/kenya_ppi_2018.pdf", n = 29, limits = 6:39, category = "ppp800", expand = FALSE)
+ppp125 <- get_ppi_table(pdf = "data-raw/pdf/kenya_ppi_2018.pdf", n = 32, limits = 6:39, category = "ppp125", expand = FALSE)
+ppp250 <- get_ppi_table(pdf = "data-raw/pdf/kenya_ppi_2018.pdf", n = 35, limits = 6:39, category = "ppp250", expand = FALSE)
+ppp500 <- get_ppi_table(pdf = "data-raw/pdf/kenya_ppi_2018.pdf", n = 38, limits = 6:39, category = "ppp500", expand = FALSE)
+percentile20 <- get_ppi_table(pdf = "data-raw/pdf/kenya_ppi_2018.pdf", n = 41, limits = 6:39, category = "percentile20", expand = FALSE)
+percentile40 <- get_ppi_table(pdf = "data-raw/pdf/kenya_ppi_2018.pdf", n = 44, limits = 6:39, category = "percentile40", expand = FALSE)
+percentile60 <- get_ppi_table(pdf = "data-raw/pdf/kenya_ppi_2018.pdf", n = 47, limits = 6:39, category = "percentile60", expand = FALSE)
+percentile80 <- get_ppi_table(pdf = "data-raw/pdf/kenya_ppi_2018.pdf", n = 50, limits = 6:39, category = "percentile80", expand = FALSE)
+
+kenDF <- merge(kenDF, nlFood)
+kenDF <- merge(kenDF, nl150)
+kenDF <- merge(kenDF, nl200)
+kenDF <- merge(kenDF, ppp100)
+kenDF <- merge(kenDF, ppp190)
+kenDF <- merge(kenDF, ppp320)
+kenDF <- merge(kenDF, ppp550)
+kenDF <- merge(kenDF, ppp800)
+kenDF <- merge(kenDF, ppp125)
+kenDF <- merge(kenDF, ppp250)
+kenDF <- merge(kenDF, ppp500)
+kenDF <- merge(kenDF, percentile20)
+kenDF <- merge(kenDF, percentile40)
+kenDF <- merge(kenDF, percentile60)
+kenDF <- merge(kenDF, percentile80)
+
+ppiKEN2018 <- kenDF
+
+devtools::use_data(ppiKEN2018, overwrite = TRUE)
+
+
+
+################################################################################
+#
 # Kyrgyzstan
 #
 ################################################################################
@@ -3144,7 +3190,6 @@ percentile40 <- get_ppi_table(pdf = "data-raw/pdf/senegal_ppi_2018.pdf", n = 28,
 percentile60 <- get_ppi_table(pdf = "data-raw/pdf/senegal_ppi_2018.pdf", n = 30, limits = 6:39, category = "percentile60", expand = FALSE)
 percentile80 <- get_ppi_table(pdf = "data-raw/pdf/senegal_ppi_2018.pdf", n = 32, limits = 6:39, category = "percentile80", expand = FALSE)
 
-senDF <- merge(senDF, nl100)
 senDF <- merge(senDF, nlFood)
 senDF <- merge(senDF, nl150)
 senDF <- merge(senDF, nl200)
