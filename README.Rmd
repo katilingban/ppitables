@@ -65,7 +65,7 @@ These three components are joined together without any spaces or gaps.
 
 Some country lookup tables may have additional components to their name which are added after the year separated with an underscore. These usually signify that a lookup table released on a particular year has a subset table in which the poverty likelihoods for a given `PPI` score are reported based on a different poverty definition or cut-off. This additional component to the table name is usually a character value or alphanumeric and is usually country-specific. To know more about what this additional component to some `PPI` tables refer to, read the index table below of the `PPI` tables available in this package. 
 
-Following are the available PPI country tables from the `ppitables` package. This is updated as at 23 May 2018 using information from the PPI [site](https://www.povertyindex.org).
+Following are the available PPI country tables from the `ppitables` package. This is updated as at 23 November 2018 using information from the PPI [site](https://www.povertyindex.org).
 
 
 ### List of PPI country tables
@@ -180,7 +180,10 @@ Following are the available PPI country tables from the `ppitables` package. Thi
 | 22. | `ppiJOR2010`    | PPI for Jordan using Jordan’s 2006 Household Income | 2010            |
 |     |                 | and Expenditure Survey                              |                 |
 +-----+-----------------+-----------------------------------------------------+-----------------+
-| 23. | `ppi2011KEN`    | PPI for Kenya using Kenya’s 2005/06 Integrated      | 2011            |
+| 23. | `ppiKEN2011`    | PPI for Kenya using Kenya’s 2005/06 Integrated      | 2011            |
+|     |                 | Household Budget Survey                             |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+|     | `ppiKEN2018`    | PPI for Kenya using Kenya's 2015 Integrated         | 2018            |
 |     |                 | Household Budget Survey                             |                 |
 +-----+-----------------+-----------------------------------------------------+-----------------+
 | 24. | `ppiKGZ2015`    | PPI for Kyrgyzstan Kyrgyz Republic’s 2012 Integrated| 2015            |
@@ -282,6 +285,9 @@ Following are the available PPI country tables from the `ppitables` package. Thi
 |     |                 | Household Living Standards Survey                   |                 |
 +-----+-----------------+-----------------------------------------------------+-----------------+
 | 48. | `ppiSEN2009`    | PPI for Senegal based on Senegal's 2005/6 Enquête de| 2009            |
+|     |                 | Suivi de la Pauvreté au Sénégal (ESPS)              |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+|     | `ppiSEN2018`    | PPI for Senegal based on Senegal's 2011 Enquête de  | 2018            |
 |     |                 | Suivi de la Pauvreté au Sénégal (ESPS)              |                 |
 +-----+-----------------+-----------------------------------------------------+-----------------+
 | 49. | `ppiSLE2011`    | PPI for Sierra Leone based on Sierra Leone's 2003/4 | 2011            |
