@@ -13,7 +13,7 @@ library(stringr)
 #
 ################################################################################
 
-get_ppi_table <- function(pdf, n, limits, expand = TRUE) {
+get_ppi_table <- function(pdf, n, limits, category, expand = TRUE) {
 
   ppi <- pdf_text(pdf = pdf)
   temp <- str_split(ppi[n], pattern = "\n")
@@ -52,8 +52,27 @@ get_ppi_table <- function(pdf, n, limits, expand = TRUE) {
       ppiDF <- data.frame(rbind(ppiDF, x))
     }
   }
-  return(ppiDF)
+
+  names(ppiDF) <- rep(c("score", category), 3)
+
+  ppi <- rbind(ppiDF[ , 1:2], ppiDF[ , 3:4], ppiDF[ , 5:6])
+
+  ppi <- ppi[1:101, ]
+
+  row.names(ppi) <- NULL
+
+  return(ppi)
 }
+
+
+#get_all_tables <- function(pdf, pages, limits, categories) {
+#  for(i in pages) {
+#    get_ppi_table(pdf = pdf, n = i, limits = limits, category = categories[pages == i], expand = TRUE)
+#
+#
+#
+#  }
+#}
 
 
 
@@ -3101,6 +3120,49 @@ row.names(senDF) <- 0:100
 
 ppiSEN2009 <- senDF
 devtools::use_data(ppiSEN2009, overwrite = TRUE)
+
+
+################################################################################
+#
+# Senegal - PPI
+#
+################################################################################
+
+senDF <- get_ppi_table(pdf = "data-raw/pdf/senegal_ppi_2018.pdf", n = 4, limits = 6:39, category = "nl100", expand = FALSE)
+nlFood <- get_ppi_table(pdf = "data-raw/pdf/senegal_ppi_2018.pdf", n = 6, limits = 6:39, category = "nlFood", expand = FALSE)
+nl150 <- get_ppi_table(pdf = "data-raw/pdf/senegal_ppi_2018.pdf", n = 8, limits = 6:39, category = "nl150", expand = FALSE)
+nl200 <- get_ppi_table(pdf = "data-raw/pdf/senegal_ppi_2018.pdf", n = 10, limits = 6:39, category = "nl200", expand = FALSE)
+ppp100 <- get_ppi_table(pdf = "data-raw/pdf/senegal_ppi_2018.pdf", n = 12, limits = 6:39, category = "ppp100", expand = FALSE)
+ppp190 <- get_ppi_table(pdf = "data-raw/pdf/senegal_ppi_2018.pdf", n = 14, limits = 6:39, category = "ppp190", expand = FALSE)
+ppp320 <- get_ppi_table(pdf = "data-raw/pdf/senegal_ppi_2018.pdf", n = 16, limits = 6:39, category = "ppp320", expand = FALSE)
+ppp550 <- get_ppi_table(pdf = "data-raw/pdf/senegal_ppi_2018.pdf", n = 18, limits = 6:39, category = "ppp550", expand = FALSE)
+ppp125 <- get_ppi_table(pdf = "data-raw/pdf/senegal_ppi_2018.pdf", n = 20, limits = 6:39, category = "ppp125", expand = FALSE)
+ppp250 <- get_ppi_table(pdf = "data-raw/pdf/senegal_ppi_2018.pdf", n = 22, limits = 6:39, category = "ppp250", expand = FALSE)
+ppp500 <- get_ppi_table(pdf = "data-raw/pdf/senegal_ppi_2018.pdf", n = 24, limits = 6:39, category = "ppp500", expand = FALSE)
+percentile20 <- get_ppi_table(pdf = "data-raw/pdf/senegal_ppi_2018.pdf", n = 26, limits = 6:39, category = "percentile20", expand = FALSE)
+percentile40 <- get_ppi_table(pdf = "data-raw/pdf/senegal_ppi_2018.pdf", n = 28, limits = 6:39, category = "percentile40", expand = FALSE)
+percentile60 <- get_ppi_table(pdf = "data-raw/pdf/senegal_ppi_2018.pdf", n = 30, limits = 6:39, category = "percentile60", expand = FALSE)
+percentile80 <- get_ppi_table(pdf = "data-raw/pdf/senegal_ppi_2018.pdf", n = 32, limits = 6:39, category = "percentile80", expand = FALSE)
+
+senDF <- merge(senDF, nl100)
+senDF <- merge(senDF, nlFood)
+senDF <- merge(senDF, nl150)
+senDF <- merge(senDF, nl200)
+senDF <- merge(senDF, ppp100)
+senDF <- merge(senDF, ppp190)
+senDF <- merge(senDF, ppp320)
+senDF <- merge(senDF, ppp550)
+senDF <- merge(senDF, ppp125)
+senDF <- merge(senDF, ppp250)
+senDF <- merge(senDF, ppp500)
+senDF <- merge(senDF, percentile20)
+senDF <- merge(senDF, percentile40)
+senDF <- merge(senDF, percentile60)
+senDF <- merge(senDF, percentile80)
+
+ppiSEN2018 <- senDF
+
+devtools::use_data(ppiSEN2018, overwrite = TRUE)
 
 
 ################################################################################

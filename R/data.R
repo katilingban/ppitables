@@ -3671,3 +3671,35 @@
 #
 ################################################################################
 "ppiZMB2013_got"
+ 
+ 
+################################################################################
+# 
+#' ppiSEN2018  
+#' 
+#' Poverty Probability Index (PPI) lookup table for Senegal  
+#' 
+#' @format A data frame with 16 columns and 101 rows:  
+#' \describe{ 
+#' \item{\code{score}}{PPI score}  
+#' \item{\code{nl100}}{National poverty line (100)}  
+#' \item{\code{nlFood}}{Food poverty line}  
+#' \item{\code{nl150}}{USAID extreme poverty}  
+#' \item{\code{nl200}}{National poverty line (75)}  
+#' \item{\code{ppp100}}{National poverty line (125)}  
+#' \item{\code{ppp190}}{National poverty line (150)}  
+#' \item{\code{ppp320}}{National poverty line (200)}  
+#' \item{\code{ppp550}}{Below $1.25 per day purchasing power parity (2005)}  
+#' \item{\code{ppp125}}{Below $2.50 per day purchasing power parity (2005)}  
+#' \item{\code{ppp250}}{Below $3.75 per day purchasing power parity (2005)}  
+#' \item{\code{ppp500}}{Below 20th percentile poverty line}  
+#' \item{\code{percentile20}}{Below 40th percentile poverty line}  
+#' \item{\code{percentile40}}{Below 60th percentile poverty line}  
+#' \item{\code{percentile60}}{Below 80th percentile poverty line}  
+#' \item{\code{percentile80}}{NA}  
+#' } 
+#' @source \url{www.povertyindex.org}  
+#' 
+# 
+################################################################################ 
+"ppiSEN2018"

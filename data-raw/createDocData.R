@@ -1406,7 +1406,34 @@ varList <- c("PPI score",
              "National poverty line (200)",
              "Below $1.25 per day purchasing power parity (2005)",
              "Below $2.50 per day purchasing power parity (2005)",
-             "Below $3.75 per day purchasing power parity (2005)")
+             "Below $3.75 per day purchasing power parity (2005)",
+             "Below 20th percentile poverty line",
+             "Below 40th percentile poverty line",
+             "Below 60th percentile poverty line",
+             "Below 80th percentile poverty line")
+
+create_doc(country = "Senegal", ccode = "SEN", year = "2018", data = ppiSEN2018, varList = varList)
+
+
+################################################################################
+#
+# Senegal - PPI
+#
+################################################################################
+
+varList <- c("PPI score",
+             "National poverty line (100)",
+             "Food poverty line",
+             "National poverty line (150)",
+             "National poverty line (200)",
+             "Below $1.00 per day purchasing power parity (2011)",
+             "Below $1.90 per day purchasing power parity (2011)",
+             "Below $3.20 per day purchasing power parity (2011)",
+             "Below $5.50 per day purchasing power parity (2011)",
+             "Below $1.25 per day purchasing power parity (2005)",
+             "Below $2.50 per day purchasing power parity (2005)",
+             "Below $5.00 per day purchasing power parity (2005)",
+             )
 
 create_doc(country = "Senegal", ccode = "SEN", year = "2009", data = ppiSEN2009, varList = varList)
 
