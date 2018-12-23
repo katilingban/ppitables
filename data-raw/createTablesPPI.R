@@ -747,6 +747,48 @@ devtools::use_data(ppiDOM2010, overwrite = TRUE)
 
 ################################################################################
 #
+# Dominican Republix - PPI
+#
+################################################################################
+
+domDF <- get_ppi_table(pdf = "data-raw/pdf/dominican_republic_ppi_2018.pdf", n = 5, limits = 6:39, category = "nl100", expand = FALSE)
+nl150 <- get_ppi_table(pdf = "data-raw/pdf/dominican_republic_ppi_2018.pdf", n = 8, limits = 6:39, category = "nlFood", expand = FALSE)
+nl200 <- get_ppi_table(pdf = "data-raw/pdf/dominican_republic_ppi_2018.pdf", n = 11, limits = 6:39, category = "nl150", expand = FALSE)
+ppp320 <- get_ppi_table(pdf = "data-raw/pdf/dominican_republic_ppi_2018.pdf", n = 14, limits = 6:39, category = "ppp320", expand = FALSE)
+ppp550 <- get_ppi_table(pdf = "data-raw/pdf/dominican_republic_ppi_2018.pdf", n = 17, limits = 6:39, category = "ppp550", expand = FALSE)
+ppp800 <- get_ppi_table(pdf = "data-raw/pdf/dominican_republic_ppi_2018.pdf", n = 20, limits = 6:39, category = "ppp800", expand = FALSE)
+ppp1100 <- get_ppi_table(pdf = "data-raw/pdf/dominican_republic_ppi_2018.pdf", n = 23, limits = 6:39, category = "ppp1100", expand = FALSE)
+ppp1500 <- get_ppi_table(pdf = "data-raw/pdf/dominican_republic_ppi_2018.pdf", n = 26, limits = 6:39, category = "ppp1500", expand = FALSE)
+ppp2170 <- get_ppi_table(pdf = "data-raw/pdf/dominican_republic_ppi_2018.pdf", n = 29, limits = 6:39, category = "ppp2170", expand = FALSE)
+ppp250 <- get_ppi_table(pdf = "data-raw/pdf/dominican_republic_ppi_2018.pdf", n = 32, limits = 6:39, category = "ppp250", expand = FALSE)
+ppp500 <- get_ppi_table(pdf = "data-raw/pdf/dominican_republic_ppi_2018.pdf", n = 35, limits = 6:39, category = "ppp500", expand = FALSE)
+percentile20 <- get_ppi_table(pdf = "data-raw/pdf/dominican_republic_ppi_2018.pdf", n = 38, limits = 6:39, category = "percentile20", expand = FALSE)
+percentile40 <- get_ppi_table(pdf = "data-raw/pdf/dominican_republic_ppi_2018.pdf", n = 41, limits = 6:39, category = "percentile40", expand = FALSE)
+percentile60 <- get_ppi_table(pdf = "data-raw/pdf/dominican_republic_ppi_2018.pdf", n = 44, limits = 6:39, category = "percentile60", expand = FALSE)
+percentile80 <- get_ppi_table(pdf = "data-raw/pdf/dominican_republic_ppi_2018.pdf", n = 47, limits = 6:39, category = "percentile80", expand = FALSE)
+
+domDF <- merge(domDF, nl150)
+domDF <- merge(domDF, nl200)
+domDF <- merge(domDF, ppp320)
+domDF <- merge(domDF, ppp550)
+domDF <- merge(domDF, ppp800)
+domDF <- merge(domDF, ppp1100)
+domDF <- merge(domDF, ppp1500)
+domDF <- merge(domDF, ppp2170)
+domDF <- merge(domDF, ppp250)
+domDF <- merge(domDF, ppp500)
+domDF <- merge(domDF, percentile20)
+domDF <- merge(domDF, percentile40)
+domDF <- merge(domDF, percentile60)
+domDF <- merge(domDF, percentile80)
+
+ppiDOM2018 <- domDF
+
+usethis::use_data(ppiDOM2018, overwrite = TRUE)
+
+
+################################################################################
+#
 # Ecuador
 #
 ################################################################################
