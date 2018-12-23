@@ -8,6 +8,9 @@ Encuesta Nacional de Fuerza de Trabajo (ENFT)
 
 * new package hex sticker
 
+* updated `steer` data that serves as an index to the tables to include the new
+PPI tables
+
 # ppitables 0.3.0
 
 This is the third CRAN release of `ppitables`. In this release, I added:
