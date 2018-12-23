@@ -1,3 +1,16 @@
+# ppitables 0.4.0
+
+This is the fourth CRAN release of `ppitables`. In this release, I added:
+
+* new PPI tables for Dominican Republic using the new PPI calculation approach
+developed by the International Poverty Alliance (IPA) based on data from the
+Encuesta Nacional de Fuerza de Trabajo (ENFT)
+
+* new package hex sticker
+
+* updated `steer` data that serves as an index to the tables to include the new
+PPI tables
+
 # ppitables 0.3.0
 
 This is the third CRAN release of `ppitables`. In this release, I added:

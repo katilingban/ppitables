@@ -387,6 +387,32 @@ create_doc(country = "Dominican Republic", ccode = "DOM", year = "2010", data = 
 
 ################################################################################
 #
+# Dominican Republic - PPI
+#
+################################################################################
+
+varList <- c("PPI score",
+             "National poverty line (100)",
+             "National poverty line (150)",
+             "National poverty line (200)",
+             "Below $3.20 per day purchasing power parity (2011)",
+             "Below $5.50 per day purchasing power parity (2011)",
+             "Below $8.00 per day purchasing power parity (2011)",
+             "Below $11.00 per day purchasing power parity (2011)",
+             "Below $15.00 per day purchasing power parity (2011)",
+             "Below $21.70 per day purchasing power parity (2011)",
+             "Below $2.50 per day purchasing power parity (2005)",
+             "Below $5.00 per day purchasing power parity (2005)",
+             "Below 20th percentile poverty line",
+             "Below 40th percentile poverty line",
+             "Below 60th percentile poverty line",
+             "Below 80th percentile poverty line")
+
+create_doc(country = "Dominican Republic", ccode = "DOM", year = "2018", data = ppiDOM2018, varList = varList)
+
+
+################################################################################
+#
 # Ecuador
 #
 ################################################################################
