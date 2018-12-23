@@ -123,6 +123,9 @@ Following are the available PPI country tables from the `ppitables` package. Thi
 |     |                 | Encuesta Nacional de Ingresos y Gastos de los       |                 |
 |     |                 | Hogares (ENIGH)                                     |                 |
 +-----+-----------------+-----------------------------------------------------+-----------------+
+|     | `ppiDOM2018`    | PPI for Dominican Republic based on the 2016        | 2018            |
+|     |                 | Encuesta Nacional de Fuerza de Trabajo (ENFT)       |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
 | 12. | `ppiECU2015`    | PPI for Ecuador based on the 2013 Living Standards  | 2015            |
 |     |                 | Survey                                              |                 |
 +-----+-----------------+-----------------------------------------------------+-----------------+
