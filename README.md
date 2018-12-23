@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# ppitables: Lookup tables to generate poverty likelihoods and rates using the Poverty Probability Index (PPI)
+# ppitables: Lookup tables to generate poverty likelihoods and rates using the Poverty Probability Index (PPI) <img src="man/figures/ppitables.png" width="150" align="right" />
 
 [![Project Status: Active – The project has reached a stable, usable
 state and is being actively
