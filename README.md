@@ -77,7 +77,7 @@ this additional component to some `PPI` tables refer to, read the index
 table below of the `PPI` tables available in this package.
 
 Following are the available PPI country tables from the `ppitables`
-package. This is updated as at 23 November 2018 using information from
+package. This is updated as at 31 December 2018 using information from
 the PPI [site](https://www.povertyindex.org).
 
 ### List of PPI country tables
@@ -737,7 +737,7 @@ command in R:
 
 ``` r
 find_table()
-#> # A tibble: 82 x 7
+#> # A tibble: 85 x 7
 #>    region   country  survey_year release_year description    type  filename
 #>  * <fct>    <fct>          <int>        <int> <fct>          <fct> <fct>   
 #>  1 Asia     Afghani…        2007         2012 PPI for Afgha… sps   ppiAFG2…
@@ -750,7 +750,7 @@ find_table()
 #>  8 Africa   Burkina…        2014         2017 PPI for Burki… sps   ppiBFA2…
 #>  9 Africa   Burkina…        2014         2017 PPI for Burki… ipa   ppiBFA2…
 #> 10 Asia     Cambodia        2011         2015 PPI for Cambo… sps   ppiKHM2…
-#> # ... with 72 more rows
+#> # ... with 75 more rows
 ```
 
 View the list of PPI country tables for Africa using the following
@@ -758,7 +758,7 @@ command in R:
 
 ``` r
 find_table(region = "Africa")
-#> # A tibble: 33 x 7
+#> # A tibble: 35 x 7
 #>    region country  survey_year release_year description      type  filename
 #>  * <fct>  <fct>          <int>        <int> <fct>            <fct> <fct>   
 #>  1 Africa Angola          2008         2015 PPI for Angola … sps   ppiAGO2…
@@ -771,7 +771,7 @@ find_table(region = "Africa")
 #>  8 Africa Cote d'…        2015         2018 PPI for Ivory C… ipa   ppiCIV2…
 #>  9 Africa Ethiopia        2010         2016 PPI for Ethiopi… sps   ppiETH2…
 #> 10 Africa Ghana           2012         2015 PPI for Ghana b… sps   ppiGHA2…
-#> # ... with 23 more rows
+#> # ... with 25 more rows
 ```
 
 View the list of PPI country tables in Zambia using the the following
@@ -798,7 +798,7 @@ tables, the following command can be used in R:
 
 ``` r
 get_table()
-#> # A tibble: 77,871 x 7
+#> # A tibble: 82,517 x 7
 #>    country     release_year filename   type  score poverty_definition   ppi
 #>    <fct>       <fct>        <fct>      <fct> <dbl> <chr>              <dbl>
 #>  1 Afghanistan 2012         ppiAFG2012 sps       0 nl                 100  
@@ -811,7 +811,7 @@ get_table()
 #>  8 Afghanistan 2012         ppiAFG2012 sps       7 nl                  68.8
 #>  9 Afghanistan 2012         ppiAFG2012 sps       8 nl                  68.8
 #> 10 Afghanistan 2012         ppiAFG2012 sps       9 nl                  68.8
-#> # ... with 77,861 more rows
+#> # ... with 82,507 more rows
 ```
 
 To get the actual PPI tables for all countries with PPI tables in
@@ -819,7 +819,7 @@ Africa, the following command can be used in R:
 
 ``` r
 get_table(region = "Africa")
-#> # A tibble: 34,239 x 7
+#> # A tibble: 37,370 x 7
 #>    country release_year filename   type  score poverty_definition   ppi
 #>    <fct>   <fct>        <fct>      <fct> <dbl> <chr>              <dbl>
 #>  1 Angola  2015         ppiAGO2015 sps       0 nl100                100
@@ -832,7 +832,7 @@ get_table(region = "Africa")
 #>  8 Angola  2015         ppiAGO2015 sps       7 nl100                100
 #>  9 Angola  2015         ppiAGO2015 sps       8 nl100                100
 #> 10 Angola  2015         ppiAGO2015 sps       9 nl100                100
-#> # ... with 34,229 more rows
+#> # ... with 37,360 more rows
 ```
 
 ### Notes
