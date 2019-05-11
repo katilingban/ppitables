@@ -7,10 +7,10 @@
 \format{A data frame with 17 columns and 101 rows:
 \describe{
 \item{\code{score}}{PPI score}
-\item{\code{nl100}}{National poverty line (100)}
+\item{\code{nl100}}{National poverty line (100\%)}
 \item{\code{nlFood}}{Food poverty line}
-\item{\code{nl150}}{National poverty line (150)}
-\item{\code{nl200}}{National poverty line (200)}
+\item{\code{nl150}}{National poverty line (150\%)}
+\item{\code{nl200}}{National poverty line (200\%)}
 \item{\code{ppp100}}{Below $1.00 per day purchasing power parity (2011)}
 \item{\code{ppp190}}{Below $1.90 per day purchasing power parity (2011)}
 \item{\code{ppp320}}{Below $3.20 per day purchasing power parity (2011)}
