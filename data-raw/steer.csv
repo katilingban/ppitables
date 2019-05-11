@@ -27,7 +27,7 @@ Asia,Fiji,2008,2014,PPI for Fiji based on Fiji 2008/9 Household Income and Expen
 Africa,Ghana,2012,2015,PPI for Ghana based on Ghana 2012/13 Living Standards Survey using legacy poverty lines,sps,ppiGHA2015
 Africa,Ghana,2012,2015,PPI for Ghana based on Ghana 2012/13 Living Standards Survey using the new-definition poverty lines deflated with Ghana CPI,sps,ppiGHA2015_a
 Africa,Ghana,2012,2015,PPI for Ghana based on Ghana 2012/13 Living Standards Survey using the new-definition poverty | lines deflated with the change in 100% of national poverty line,sps,ppiGHA2015_b
-Africa,Ghana,2016,2019,PPI for Ghana based on Ghana 2016/2017 Living Standards Survey,ipa,ppiGhana2019
+Africa,Ghana,2016,2019,PPI for Ghana based on Ghana 2016/2017 Living Standards Survey,ipa,ppiGHA2019
 Latin American and the Carribean,Guatemala,2014,2016,PPI for Guatemala based on Guatemala 2014 Household Living Standards Survey,sps,ppiGTM2016
 Latin American and the Carribean,Haiti,2012,2016,PPI for Haiti based on Haiti 2012 Post-Earthquake Living Standards Survey,sps,ppiHTI2016
 Latin American and the Carribean,Honduras,2007,2010,PPI for Honduras based on the 2007 EPHPM,sps,ppiHND2010
