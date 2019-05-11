@@ -2,22 +2,45 @@
 
 |field    |value                        |
 |:--------|:----------------------------|
-|version  |R version 3.5.1 (2018-07-02) |
-|os       |macOS High Sierra 10.13.6    |
-|system   |x86_64, darwin15.6.0         |
+|version  |R version 3.6.0 (2019-04-26) |
+|os       |Ubuntu 16.04.6 LTS           |
+|system   |x86_64, linux-gnu            |
 |ui       |RStudio                      |
-|language |(EN)                         |
+|language |en_GB:en                     |
 |collate  |en_GB.UTF-8                  |
 |ctype    |en_GB.UTF-8                  |
 |tz       |Europe/London                |
-|date     |2018-12-23                   |
+|date     |2019-05-11                   |
 
 # Dependencies
 
-|package   |old   |new        |Δ  |
-|:---------|:-----|:----------|:--|
-|ppitables |0.3.0 |0.4.0.9000 |*  |
-|pillar    |NA    |1.3.1      |*  |
+|package    |old      |new        |Δ  |
+|:----------|:--------|:----------|:--|
+|ppitables  |0.4.0    |0.5.0.9000 |*  |
+|assertthat |0.2.1    |0.2.1      |   |
+|backports  |1.1.4    |1.1.4      |   |
+|BH         |1.69.0-1 |1.69.0-1   |   |
+|cli        |1.1.0    |1.1.0      |   |
+|crayon     |1.3.4    |1.3.4      |   |
+|digest     |0.6.18   |0.6.18     |   |
+|dplyr      |0.8.0.1  |0.8.0.1    |   |
+|fansi      |0.4.0    |0.4.0      |   |
+|glue       |1.3.1    |1.3.1      |   |
+|magrittr   |1.5      |1.5        |   |
+|pillar     |1.4.0    |1.4.0      |   |
+|pkgconfig  |2.0.2    |2.0.2      |   |
+|plogr      |0.2.0    |0.2.0      |   |
+|purrr      |0.3.2    |0.3.2      |   |
+|R6         |2.4.0    |2.4.0      |   |
+|Rcpp       |1.0.1    |1.0.1      |   |
+|rlang      |0.3.4    |0.3.4      |   |
+|stringi    |1.4.3    |1.4.3      |   |
+|tibble     |2.1.1    |2.1.1      |   |
+|tidyr      |0.8.3    |0.8.3      |   |
+|tidyselect |0.2.5    |0.2.5      |   |
+|utf8       |1.1.4    |1.1.4      |   |
+|vctrs      |0.1.0    |0.1.0      |   |
+|zeallot    |0.1.0    |0.1.0      |   |
 
 # Revdeps
 
