@@ -3658,9 +3658,9 @@
 #' \describe{
 #' \item{\code{score}}{PPI score}
 #' \item{\code{food}}{Food poverty line}
-#' \item{\code{nl100}}{National poverty line (100)}
-#' \item{\code{nl150}}{National poverty line (150)}
-#' \item{\code{nl200}}{National poverty line (200)}
+#' \item{\code{nl100}}{National poverty line (100\%)}
+#' \item{\code{nl150}}{National poverty line (150\%)}
+#' \item{\code{nl200}}{National poverty line (200\%)}
 #' \item{\code{extreme}}{USAID extreme poverty}
 #' \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}
 #' \item{\code{ppp200}}{Below $2.00 per day purchasing power parity (2005)}
@@ -3682,10 +3682,10 @@
 #' @format A data frame with 17 columns and 101 rows:
 #' \describe{
 #' \item{\code{score}}{PPI score}
-#' \item{\code{nl100}}{National poverty line (100)}
+#' \item{\code{nl100}}{National poverty line (100\%)}
 #' \item{\code{nlFood}}{Food poverty line}
-#' \item{\code{nl150}}{National poverty line (150)}
-#' \item{\code{nl200}}{National poverty line (200)}
+#' \item{\code{nl150}}{National poverty line (150\%)}
+#' \item{\code{nl200}}{National poverty line (200\%)}
 #' \item{\code{ppp100}}{Below $1.00 per day purchasing power parity (2011)}
 #' \item{\code{ppp190}}{Below $1.90 per day purchasing power parity (2011)}
 #' \item{\code{ppp320}}{Below $3.20 per day purchasing power parity (2011)}
@@ -3704,66 +3704,103 @@
 #
 ################################################################################
 "ppiKEN2018"
- 
- 
+
+
 ################################################################################
-# 
-#' ppiSEN2018  
-#' 
-#' Poverty Probability Index (PPI) lookup table for Senegal  
-#' 
-#' @format A data frame with 16 columns and 101 rows:  
-#' \describe{ 
-#' \item{\code{score}}{PPI score}  
-#' \item{\code{nl100}}{National poverty line (100)}  
-#' \item{\code{nlFood}}{Food poverty line}  
-#' \item{\code{nl150}}{National poverty line (150)}  
-#' \item{\code{nl200}}{National poverty line (200)}  
-#' \item{\code{ppp100}}{Below $1.00 per day purchasing power parity (2011)}  
-#' \item{\code{ppp190}}{Below $1.90 per day purchasing power parity (2011)}  
-#' \item{\code{ppp320}}{Below $3.20 per day purchasing power parity (2011)}  
-#' \item{\code{ppp550}}{Below $5.50 per day purchasing power parity (2011)}  
-#' \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}  
-#' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}  
-#' \item{\code{ppp500}}{Below $5.00 per day purchasing power parity (2005)}  
-#' \item{\code{percentile20}}{Below 20th percentile poverty line}  
-#' \item{\code{percentile40}}{Below 40th percentile poverty line}  
-#' \item{\code{percentile60}}{Below 60th percentile poverty line}  
-#' \item{\code{percentile80}}{Below 80th percentile poverty line}  
-#' } 
-#' @source \url{www.povertyindex.org}  
-#' 
-# 
-################################################################################ 
-"ppiSEN2018" 
- 
+#
+#' ppiSEN2018
+#'
+#' Poverty Probability Index (PPI) lookup table for Senegal
+#'
+#' @format A data frame with 16 columns and 101 rows:
+#' \describe{
+#' \item{\code{score}}{PPI score}
+#' \item{\code{nl100}}{National poverty line (100\%)}
+#' \item{\code{nlFood}}{Food poverty line}
+#' \item{\code{nl150}}{National poverty line (150\%)}
+#' \item{\code{nl200}}{National poverty line (200\%)}
+#' \item{\code{ppp100}}{Below $1.00 per day purchasing power parity (2011)}
+#' \item{\code{ppp190}}{Below $1.90 per day purchasing power parity (2011)}
+#' \item{\code{ppp320}}{Below $3.20 per day purchasing power parity (2011)}
+#' \item{\code{ppp550}}{Below $5.50 per day purchasing power parity (2011)}
+#' \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}
+#' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
+#' \item{\code{ppp500}}{Below $5.00 per day purchasing power parity (2005)}
+#' \item{\code{percentile20}}{Below 20th percentile poverty line}
+#' \item{\code{percentile40}}{Below 40th percentile poverty line}
+#' \item{\code{percentile60}}{Below 60th percentile poverty line}
+#' \item{\code{percentile80}}{Below 80th percentile poverty line}
+#' }
+#' @source \url{www.povertyindex.org}
+#'
+#
 ################################################################################
-# 
-#' ppiDOM2018  
-#' 
-#' Poverty Probability Index (PPI) lookup table for Dominican Republic  
-#' 
-#' @format A data frame with 16 columns and 101 rows:  
-#' \describe{ 
-#' \item{\code{score}}{PPI score}  
-#' \item{\code{nl100}}{National poverty line (100)}  
-#' \item{\code{nlFood}}{National poverty line (150)}  
-#' \item{\code{nl150}}{National poverty line (200)}  
-#' \item{\code{ppp320}}{Below $3.20 per day purchasing power parity (2011)}  
-#' \item{\code{ppp550}}{Below $5.50 per day purchasing power parity (2011)}  
-#' \item{\code{ppp800}}{Below $8.00 per day purchasing power parity (2011)}  
-#' \item{\code{ppp1100}}{Below $11.00 per day purchasing power parity (2011)}  
-#' \item{\code{ppp1500}}{Below $15.00 per day purchasing power parity (2011)}  
-#' \item{\code{ppp2170}}{Below $21.70 per day purchasing power parity (2011)}  
-#' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}  
-#' \item{\code{ppp500}}{Below $5.00 per day purchasing power parity (2005)}  
-#' \item{\code{percentile20}}{Below 20th percentile poverty line}  
-#' \item{\code{percentile40}}{Below 40th percentile poverty line}  
-#' \item{\code{percentile60}}{Below 60th percentile poverty line}  
-#' \item{\code{percentile80}}{Below 80th percentile poverty line}  
-#' } 
-#' @source \url{www.povertyindex.org}  
-#' 
-# 
-################################################################################ 
+"ppiSEN2018"
+
+################################################################################
+#
+#' ppiDOM2018
+#'
+#' Poverty Probability Index (PPI) lookup table for Dominican Republic
+#'
+#' @format A data frame with 16 columns and 101 rows:
+#' \describe{
+#' \item{\code{score}}{PPI score}
+#' \item{\code{nl100}}{National poverty line (100\%)}
+#' \item{\code{nlFood}}{National poverty line (150\%)}
+#' \item{\code{nl150}}{National poverty line (200\%)}
+#' \item{\code{ppp320}}{Below $3.20 per day purchasing power parity (2011)}
+#' \item{\code{ppp550}}{Below $5.50 per day purchasing power parity (2011)}
+#' \item{\code{ppp800}}{Below $8.00 per day purchasing power parity (2011)}
+#' \item{\code{ppp1100}}{Below $11.00 per day purchasing power parity (2011)}
+#' \item{\code{ppp1500}}{Below $15.00 per day purchasing power parity (2011)}
+#' \item{\code{ppp2170}}{Below $21.70 per day purchasing power parity (2011)}
+#' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
+#' \item{\code{ppp500}}{Below $5.00 per day purchasing power parity (2005)}
+#' \item{\code{percentile20}}{Below 20th percentile poverty line}
+#' \item{\code{percentile40}}{Below 40th percentile poverty line}
+#' \item{\code{percentile60}}{Below 60th percentile poverty line}
+#' \item{\code{percentile80}}{Below 80th percentile poverty line}
+#' }
+#' @source \url{www.povertyindex.org}
+#'
+#
+################################################################################
 "ppiDOM2018"
+
+
+################################################################################
+#
+#' ppiGHA2019
+#'
+#' Poverty Probability Index (PPI) lookup table for Ghana
+#'
+#' @format A data frame with 20 columns and 101 rows:
+#' \describe{
+#' \item{\code{score}}{PPI score}
+#' \item{\code{nl100}}{National poverty line (100\%)}
+#' \item{\code{extreme}}{Extreme poverty line}
+#' \item{\code{nl150}}{National poverty line (150\%)}
+#' \item{\code{nl200}}{National poverty line (200\%)}
+#' \item{\code{ppp100}}{Below $1.00 per day purchasing power parity (2011)}
+#' \item{\code{ppp190}}{Below $1.90 per day purchasing power parity (2011)}
+#' \item{\code{ppp320}}{Below $3.20 per day purchasing power parity (2011)}
+#' \item{\code{ppp550}}{Below $5.50 per day purchasing power parity (2011)}
+#' \item{\code{ppp800}}{Below $8.00 per day purchasing power parity (2011)}
+#' \item{\code{ppp1100}}{Below $11.00 per day purchasing power parity (2011)}
+#' \item{\code{ppp1500}}{Below $15.00 per day purchasing power parity (2011)}
+#' \item{\code{ppp2170}}{Below $21.70 per day purchasing power parity (2011)}
+#' \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}
+#' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
+#' \item{\code{ppp500}}{Below $5.00 per day purchasing power parity (2005)}
+#' \item{\code{percentile20}}{Below 20th percentile poverty line}
+#' \item{\code{percentile40}}{Below 40th percentile poverty line}
+#' \item{\code{percentile60}}{Below 50th percentile poverty line}
+#' \item{\code{percentile80}}{Below 60th percentile poverty line}
+#' }
+#' @source \url{www.povertyindex.org}
+#'
+#
+################################################################################
+"ppiGHA2019"
+
