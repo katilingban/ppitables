@@ -1,3 +1,14 @@
+# ppitables 0.5.0
+
+This is the fifth CRAN release of `ppitables`. In this release, I added:
+
+* new PPI tables for Ghana using the new PPI calculation approach developed by 
+the International Poverty Alliance (IPA) based on data from the 2016/2017 Ghana
+Living Standards Survey.
+
+* updated `steer` data that serves as an index to the tables to include the new
+PPI tables
+
 # ppitables 0.4.0
 
 This is the fourth CRAN release of `ppitables`. In this release, I added:
