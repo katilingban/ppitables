@@ -2,7 +2,7 @@
 % Please edit documentation in R/find_table.R
 \name{find_table}
 \alias{find_table}
-\title{find_table}
+\title{Search for PPI table by specifying region, country and/or calculation type.}
 \usage{
 find_table(region = levels(steer$region),
   country = as.character(steer$country[steer$region \%in\% region]),

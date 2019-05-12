@@ -3,7 +3,7 @@
 \docType{data}
 \name{ppiZMB2013_got}
 \alias{ppiZMB2013_got}
-\title{ppiZMB2013_got}
+\title{Poverty Probability Index (PPI) lookup table for Zambia}
 \format{A data frame with 9 columns and 101 rows:
 \describe{
 \item{\code{score}}{PPI score}

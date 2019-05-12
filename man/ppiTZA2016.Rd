@@ -3,7 +3,7 @@
 \docType{data}
 \name{ppiTZA2016}
 \alias{ppiTZA2016}
-\title{ppiTZA2016}
+\title{Poverty Probability Index (PPI) lookup table for Tanzania}
 \format{A data frame with 19 columns and 101 rows:
 \describe{
 \item{\code{score}}{PPI score}

@@ -3,7 +3,7 @@
 \docType{data}
 \name{ppiNIC2013}
 \alias{ppiNIC2013}
-\title{ppiNIC2013}
+\title{Poverty Probability Index (PPI) lookup table for Nicaragua}
 \format{A data frame with 10 columns and 101 rows:
 \describe{
 \item{\code{score}}{PPI score}

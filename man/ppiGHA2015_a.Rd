@@ -3,7 +3,8 @@
 \docType{data}
 \name{ppiGHA2015_a}
 \alias{ppiGHA2015_a}
-\title{ppiGHA2015_a}
+\title{Poverty Probability Index (PPI) lookup table for Ghana using poverty
+definitions deflated with Ghana's CPI}
 \format{A data frame with 13 columns and 101 rows:
 \describe{
 \item{\code{score}}{PPI score}

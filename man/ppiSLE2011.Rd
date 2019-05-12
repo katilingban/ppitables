@@ -3,7 +3,7 @@
 \docType{data}
 \name{ppiSLE2011}
 \alias{ppiSLE2011}
-\title{ppiSLE2011}
+\title{Poverty Probability Index (PPI) lookup table for Sierra Leone}
 \format{A data frame with 8 columns and 101 rows:
 \describe{
 \item{\code{score}}{PPI score}

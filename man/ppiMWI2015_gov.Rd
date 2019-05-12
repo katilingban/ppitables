@@ -3,7 +3,8 @@
 \docType{data}
 \name{ppiMWI2015_gov}
 \alias{ppiMWI2015_gov}
-\title{ppiMWI2015_gov}
+\title{Poverty Probability Index (PPI) lookup table for Malawi using government
+poverty definitions}
 \format{A data frame with 14 columns and 101 rows:
 \describe{
 \item{\code{score}}{PPI score}

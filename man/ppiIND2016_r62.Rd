@@ -3,7 +3,8 @@
 \docType{data}
 \name{ppiIND2016_r62}
 \alias{ppiIND2016_r62}
-\title{ppiIND2016_r62}
+\title{Poverty Probability Index (PPI) lookup table for India using r62 poverty
+definitions}
 \format{A data frame with 7 columns and 101 rows:
 \describe{
 \item{\code{score}}{PPI score}

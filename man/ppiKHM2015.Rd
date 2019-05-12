@@ -3,7 +3,7 @@
 \docType{data}
 \name{ppiKHM2015}
 \alias{ppiKHM2015}
-\title{ppiKHM2015}
+\title{Poverty Probability Index (PPI) lookup table for Cambodia}
 \format{A data frame with 6 columns and 101 rows:
 \describe{
 \item{\code{score}}{PPI score}

@@ -3,7 +3,8 @@
 \docType{data}
 \name{ppiNPL2013_a}
 \alias{ppiNPL2013_a}
-\title{ppiNPL2013_a}
+\title{Poverty Probability Index (PPI) lookup table for Nepal using new poverty
+definitions}
 \format{A data frame with 9 columns and 101 rows:
 \describe{
 \item{\code{score}}{PPI score}

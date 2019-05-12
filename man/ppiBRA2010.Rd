@@ -3,7 +3,7 @@
 \docType{data}
 \name{ppiBRA2010}
 \alias{ppiBRA2010}
-\title{ppiBRA2010}
+\title{Poverty Probability Index (PPI) lookup table for Brazil}
 \format{A data frame with 10 columns and 101 rows:
 \describe{
 \item{\code{score}}{PPI score}

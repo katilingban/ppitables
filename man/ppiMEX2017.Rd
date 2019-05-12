@@ -3,7 +3,8 @@
 \docType{data}
 \name{ppiMEX2017}
 \alias{ppiMEX2017}
-\title{ppiMEX2017}
+\title{Poverty Probability Index (PPI) lookup table for Mexico using legacy
+definitions}
 \format{A data frame with 8 columns and 101 rows:
 \describe{
 \item{\code{score}}{PPI score}

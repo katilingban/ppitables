@@ -3,7 +3,7 @@
 \docType{data}
 \name{ppiROU2009}
 \alias{ppiROU2009}
-\title{ppiROU2009}
+\title{Poverty Probability Index (PPI) lookup table for Romania}
 \format{A data frame with 9 columns and 101 rows:
 \describe{
 \item{\code{score}}{PPI score}

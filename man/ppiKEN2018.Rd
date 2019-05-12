@@ -3,7 +3,7 @@
 \docType{data}
 \name{ppiKEN2018}
 \alias{ppiKEN2018}
-\title{ppiKEN2018}
+\title{Poverty Probability Index (PPI) lookup table for Kenya}
 \format{A data frame with 17 columns and 101 rows:
 \describe{
 \item{\code{score}}{PPI score}

@@ -3,7 +3,7 @@
 \docType{data}
 \name{ppiTLS2013}
 \alias{ppiTLS2013}
-\title{ppiTLS2013}
+\title{Poverty Probability Index (PPI) lookup table for Timor Leste}
 \format{A data frame with 8 columns and 101 rows:
 \describe{
 \item{\code{score}}{PPI score}

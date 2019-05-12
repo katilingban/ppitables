@@ -2,7 +2,7 @@
 % Please edit documentation in R/get_table.R
 \name{get_table}
 \alias{get_table}
-\title{get_table}
+\title{Get PPI table/s based on a specified PPI table/s search output}
 \usage{
 get_table(region = levels(steer$region),
   country = as.character(steer$country[steer$region \%in\% region]),
