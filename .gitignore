@@ -4,3 +4,8 @@
 .Ruserdata
 /revdep/.cache.rds
 .DS_Store
+/revdep/checks
+/revdep/checks.noindex
+/revdep/data.sqlite
+/revdep/library
+/revdep/library.noindex
