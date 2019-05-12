@@ -1,7 +1,5 @@
 ################################################################################
 #
-#' ppiAFG2012
-#'
 #' Poverty Probability Index (PPI) lookup table for Afghanistan
 #'
 #' @format A data frame with 7 columns and 101 rows:
@@ -45,8 +43,6 @@
 
 ################################################################################
 #
-#' ppiAGO2015
-#'
 #' Poverty Probability Index (PPI) lookup table for Angola
 #'
 #' @format A data frame with 9 columns and 101 rows:
@@ -91,8 +87,6 @@
 
 ################################################################################
 #
-#' ppiBGD2013
-#'
 #' Poverty Probability Index (PPI) lookup table for Bangladesh
 #'
 #' @format A data frame with 10 columns and 101 rows:
@@ -138,8 +132,6 @@
 
 ################################################################################
 #
-#' ppiBOL2015
-#'
 #' Poverty Probability Index (PPI) lookup table for Bolivia
 #'
 #' @format A data frame with 10 columns and 101 rows:
@@ -185,8 +177,6 @@
 
 ################################################################################
 #
-#' ppiBEN2012
-#'
 #' Poverty Probability Index (PPI) lookup table for Benin
 #'
 #' @format A data frame with 7 columns and 101 rows:
@@ -229,8 +219,6 @@
 
 ################################################################################
 #
-#' ppiBRA2010
-#'
 #' Poverty Probability Index (PPI) lookup table for Brazil
 #'
 #' @format A data frame with 10 columns and 101 rows:
@@ -276,8 +264,6 @@
 
 ################################################################################
 #
-#' ppiBFA2017
-#'
 #' Poverty Probability Index (PPI) lookup table for Burkina Faso
 #'
 #' @format A data frame with 15 columns and 101 rows:
@@ -328,8 +314,6 @@
 
 ################################################################################
 #
-#' ppiCMR2013
-#'
 #' Poverty Probability Index (PPI) lookup table for Cameroon
 #'
 #' @format A data frame with 8 columns and 101 rows:
@@ -373,8 +357,6 @@
 
 ################################################################################
 #
-#' ppiDOM2010
-#'
 #' Poverty Probability Index (PPI) lookup table for Dominican Republic
 #'
 #' @format A data frame with 11 columns and 101 rows:
@@ -421,8 +403,6 @@
 
 ################################################################################
 #
-#' ppiECU2015
-#'
 #' Poverty Probability Index (PPI) lookup table for Ecuador
 #'
 #' @format A data frame with 11 columns and 101 rows:
@@ -469,8 +449,6 @@
 
 ################################################################################
 #
-#' ppiEGY2010
-#'
 #' Poverty Probability Index (PPI) lookup table for Egypt
 #'
 #' @format A data frame with 8 columns and 101 rows:
@@ -514,8 +492,6 @@
 
 ################################################################################
 #
-#' ppiSLV2010
-#'
 #' Poverty Probability Index (PPI) lookup table for El Salvador
 #'
 #' @format A data frame with 9 columns and 101 rows:
@@ -560,8 +536,6 @@
 
 ################################################################################
 #
-#' ppiETH2016
-#'
 #' Poverty Probability Index (PPI) lookup table for Ethiopia
 #'
 #' @format A data frame with 21 columns and 101 rows:
@@ -618,8 +592,6 @@
 
 ################################################################################
 #
-#' ppiFJI2014
-#'
 #' Poverty Probability Index (PPI) lookup table for Fiji
 #'
 #' @format A data frame with 8 columns and 101 rows:
@@ -663,8 +635,6 @@
 
 ################################################################################
 #
-#' ppiGHA2015
-#'
 #' Poverty Probability Index (PPI) lookup table for Ghana based on legacy
 #' definitions
 #'
@@ -709,8 +679,6 @@
 
 ################################################################################
 #
-#' ppiGHA2015_a
-#'
 #' Poverty Probability Index (PPI) lookup table for Ghana using poverty
 #' definitions deflated with Ghana's CPI
 #'
@@ -757,13 +725,10 @@
 ################################################################################
 "ppiGHA2015_a"
 
-
 ################################################################################
 #
-#' ppiGHA2015_b
-#'
 #' Poverty Probability Index (PPI) lookup table for Ghana using poverty
-#' definitions deflated with the change in 100% of national poverty line
+#' definitions deflated with the change in 100\% of national poverty line
 #'
 #' @format A data frame with 8 columns and 101 rows:
 #' \describe{
@@ -806,8 +771,6 @@
 
 ################################################################################
 #
-#' ppiGTM2016
-#'
 #' Poverty Probability Index (PPI) lookup table for Guatemala
 #'
 #' @format A data frame with 17 columns and 101 rows:
@@ -860,8 +823,6 @@
 
 ################################################################################
 #
-#' ppiHND2010
-#'
 #' Poverty Probability Index (PPI) lookup table for Honduras
 #'
 #' @format A data frame with 7 columns and 101 rows:
@@ -904,8 +865,6 @@
 
 ################################################################################
 #
-#' ppiHTI2016
-#'
 #' Poverty Probability Index (PPI) lookup table for Haiti
 #'
 #' @format A data frame with 10 columns and 101 rows:
@@ -951,8 +910,6 @@
 
 ################################################################################
 #
-#' ppiIND2016_r59
-#'
 #' Poverty Probability Index (PPI) lookup table for India using r59 poverty
 #' definitions
 #'
@@ -993,8 +950,6 @@
 
 ################################################################################
 #
-#' ppiIND2016_r62
-#'
 #' Poverty Probability Index (PPI) lookup table for India using r62 poverty
 #' definitions
 #'
@@ -1038,8 +993,6 @@
 
 ################################################################################
 #
-#' ppiIND2016_r66
-#'
 #' Poverty Probability Index (PPI) lookup table for India using r66 poverty
 #' definitions
 #'
@@ -1084,8 +1037,6 @@
 
 ################################################################################
 #
-#' ppiIND2016_r68
-#'
 #' Poverty Probability Index (PPI) lookup table for India using r68 poverty
 #' definitions
 #'
@@ -1138,8 +1089,6 @@
 
 ################################################################################
 #
-#' ppiIDN2012
-#'
 #' Poverty Probability Index (PPI) lookup table for Indonesia using legacy
 #' poverty definitions
 #'
@@ -1180,8 +1129,6 @@
 
 ################################################################################
 #
-#' ppiIDN2012_a
-#'
 #' Poverty Probability Index (PPI) lookup table for Indonesia using new
 #' poverty definitions
 #'
@@ -1227,8 +1174,6 @@
 
 ################################################################################
 #
-#' ppiCIV2013
-#'
 #' Poverty Probability Index (PPI) lookup table for Ivory Coast
 #'
 #' @format A data frame with 9 columns and 101 rows:
@@ -1273,8 +1218,6 @@
 
 ################################################################################
 #
-#' ppiJOR2010
-#'
 #' Poverty Probability Index (PPI) lookup table for Jordan
 #'
 #' @format A data frame with 10 columns and 101 rows:
@@ -1320,8 +1263,6 @@
 
 ################################################################################
 #
-#' ppiKEN2011
-#'
 #' Poverty Probability Index (PPI) lookup table for Kenya
 #'
 #' @format A data frame with 11 columns and 101 rows:
@@ -1368,8 +1309,6 @@
 
 ################################################################################
 #
-#' ppiKGZ2015
-#'
 #' Poverty Probability Index (PPI) lookup table for Kyrgyzstan
 #'
 #' @format A data frame with 9 columns and 101 rows:
@@ -1414,8 +1353,6 @@
 
 ################################################################################
 #
-#' ppiMDG2015
-#'
 #' Poverty Probability Index (PPI) lookup table for Madagascar
 #'
 #' @format A data frame with 9 columns and 101 rows:
@@ -1460,8 +1397,6 @@
 
 ################################################################################
 #
-#' ppiMWI2015_gov
-#'
 #' Poverty Probability Index (PPI) lookup table for Malawi using government
 #' poverty definitions
 #'
@@ -1512,8 +1447,6 @@
 
 ################################################################################
 #
-#' ppiMWI2015
-#'
 #' Poverty Probability Index (PPI) lookup table for Malawi using legacy
 #' poverty definitions
 #'
@@ -1553,8 +1486,6 @@
 
 ################################################################################
 #
-#' ppiMWI2015_pbm
-#'
 #' Poverty Probability Index (PPI) lookup table for Malawi using PBM poverty
 #' definitions
 #'
@@ -1604,8 +1535,6 @@
 
 ################################################################################
 #
-#' ppiMLI2010
-#'
 #' Poverty Probability Index (PPI) lookup table for Mali
 #'
 #' @format A data frame with 6 columns and 101 rows:
@@ -1647,8 +1576,6 @@
 
 ################################################################################
 #
-#' ppiMEX2017_a
-#'
 #' Poverty Probability Index (PPI) lookup table for Mexico using new poverty
 #' definitions
 #'
@@ -1702,8 +1629,6 @@
 
 ################################################################################
 #
-#' ppiMEX2017
-#'
 #' Poverty Probability Index (PPI) lookup table for Mexico using legacy
 #' definitions
 #'
@@ -1748,8 +1673,6 @@
 
 ################################################################################
 #
-#' ppiMNG2016
-#'
 #' Poverty Probability Index (PPI) lookup table for Mongolia
 #'
 #' @format A data frame with 18 columns and 101 rows:
@@ -1803,8 +1726,6 @@
 
 ################################################################################
 #
-#' ppiMAR2013
-#'
 #' Poverty Probability Index (PPI) lookup table for Morocco
 #'
 #' @format A data frame with 9 columns and 101 rows:
@@ -1849,8 +1770,6 @@
 
 ################################################################################
 #
-#' ppiMMR2012
-#'
 #' Poverty Probability Index (PPI) lookup table for Myanmar
 #'
 #' @format A data frame with 8 columns and 101 rows:
@@ -1894,8 +1813,6 @@
 
 ################################################################################
 #
-#' ppiMOZ2013
-#'
 #' Poverty Probability Index (PPI) lookup table for Mozambique
 #'
 #' @format A data frame with 7 columns and 101 rows:
@@ -1938,8 +1855,6 @@
 
 ################################################################################
 #
-#' ppiNAM2013
-#'
 #' Poverty Probability Index (PPI) lookup table for Namibia
 #'
 #' @format A data frame with 9 columns and 101 rows:
@@ -1984,8 +1899,6 @@
 
 ################################################################################
 #
-#' ppiNPL2013_a
-#'
 #' Poverty Probability Index (PPI) lookup table for Nepal using new poverty
 #' definitions
 #'
@@ -2031,8 +1944,6 @@
 
 ################################################################################
 #
-#' ppiNPL2013
-#'
 #' Poverty Probability Index (PPI) lookup table for Nepal using legacy poverty
 #' definitions
 #'
@@ -2073,8 +1984,6 @@
 
 ################################################################################
 #
-#' ppiNIC2013
-#'
 #' Poverty Probability Index (PPI) lookup table for Nicaragua
 #'
 #' @format A data frame with 10 columns and 101 rows:
@@ -2120,8 +2029,6 @@
 
 ################################################################################
 #
-#' ppiNER2013
-#'
 #' Poverty Probability Index (PPI) lookup table for Niger
 #'
 #' @format A data frame with 9 columns and 101 rows:
@@ -2166,8 +2073,6 @@
 
 ################################################################################
 #
-#' ppiNGA2015
-#'
 #' Poverty Probability Index (PPI) lookup table for Nigeria
 #'
 #' @format A data frame with 13 columns and 101 rows:
@@ -2216,8 +2121,6 @@
 
 ################################################################################
 #
-#' ppiPSE2014
-#'
 #' Poverty Probability Index (PPI) lookup table for Palestine
 #'
 #' @format A data frame with 11 columns and 101 rows:
@@ -2264,8 +2167,6 @@
 
 ################################################################################
 #
-#' ppiPRY2012
-#'
 #' Poverty Probability Index (PPI) lookup table for Paraguay
 #'
 #' @format A data frame with 8 columns and 101 rows:
@@ -2309,8 +2210,6 @@
 
 ################################################################################
 #
-#' ppiPER2012
-#'
 #' Poverty Probability Index (PPI) lookup table for Peru
 #'
 #' @format A data frame with 9 columns and 101 rows:
@@ -2355,8 +2254,6 @@
 
 ################################################################################
 #
-#' ppiPHL2014
-#'
 #' Poverty Probability Index (PPI) lookup table for Philippines using legacy
 #' poverty definitions
 #'
@@ -2399,8 +2296,6 @@
 
 ################################################################################
 #
-#' ppiPHL2014_a
-#'
 #' Poverty Probability Index (PPI) lookup table for Philippines using new
 #' poverty definitions
 #'
@@ -2448,8 +2343,6 @@
 
 ################################################################################
 #
-#' ppiROU2009
-#'
 #' Poverty Probability Index (PPI) lookup table for Romania
 #'
 #' @format A data frame with 9 columns and 101 rows:
@@ -2494,8 +2387,6 @@
 
 ################################################################################
 #
-#' ppiRUS2010
-#'
 #' Poverty Probability Index (PPI) lookup table for Russia
 #'
 #' @format A data frame with 4 columns and 101 rows:
@@ -2535,8 +2426,6 @@
 
 ################################################################################
 #
-#' ppiSEN2009
-#'
 #' Poverty Probability Index (PPI) lookup table for Senegal
 #'
 #' @format A data frame with 11 columns and 101 rows:
@@ -2583,8 +2472,6 @@
 
 ################################################################################
 #
-#' ppiRWA2016
-#'
 #' Poverty Probability Index (PPI) lookup table for Rwanda
 #'
 #' @format A data frame with 11 columns and 101 rows:
@@ -2631,8 +2518,6 @@
 
 ################################################################################
 #
-#' ppiSLE2011
-#'
 #' Poverty Probability Index (PPI) lookup table for Sierra Leone
 #'
 #' @format A data frame with 8 columns and 101 rows:
@@ -2676,8 +2561,6 @@
 
 ################################################################################
 #
-#' ppiLKA2016
-#'
 #' Poverty Probability Index (PPI) lookup table for Sri Lanka
 #'
 #' @format A data frame with 16 columns and 101 rows:
@@ -2729,8 +2612,6 @@
 
 ################################################################################
 #
-#' ppiZAF2009
-#'
 #' Poverty Probability Index (PPI) lookup table for South Africa
 #'
 #' @format A data frame with 8 columns and 101 rows:
@@ -2774,8 +2655,6 @@
 
 ################################################################################
 #
-#' ppiSYR2010
-#'
 #' Poverty Probability Index (PPI) lookup table for Syria
 #'
 #' @format A data frame with 8 columns and 101 rows:
@@ -2819,8 +2698,6 @@
 
 ################################################################################
 #
-#' ppiTZA2016
-#'
 #' Poverty Probability Index (PPI) lookup table for Tanzania
 #'
 #' @format A data frame with 19 columns and 101 rows:
@@ -2875,8 +2752,6 @@
 
 ################################################################################
 #
-#' ppiTJK2015
-#'
 #' Poverty Probability Index (PPI) lookup table for Tajikistan
 #'
 #' @format A data frame with 9 columns and 101 rows:
@@ -2921,8 +2796,6 @@
 
 ################################################################################
 #
-#' ppiTLS2013
-#'
 #' Poverty Probability Index (PPI) lookup table for Timor Leste
 #'
 #' @format A data frame with 8 columns and 101 rows:
@@ -2966,8 +2839,6 @@
 
 ################################################################################
 #
-#' ppiUGA2015
-#'
 #' Poverty Probability Index (PPI) lookup table for Uganda
 #'
 #' @format A data frame with 13 columns and 101 rows:
@@ -3016,8 +2887,6 @@
 
 ################################################################################
 #
-#' ppiVNM2009
-#'
 #' Poverty Probability Index (PPI) lookup table for Vietnam
 #'
 #' @format A data frame with 8 columns and 101 rows:
@@ -3061,8 +2930,6 @@
 
 ################################################################################
 #
-#' ppiYEM2009
-#'
 #' Poverty Probability Index (PPI) lookup table for Yemen
 #'
 #' @format A data frame with 8 columns and 101 rows:
@@ -3106,8 +2973,6 @@
 
 ################################################################################
 #
-#' ppiKHM2015_wb
-#'
 #' Poverty Probability Index (PPI) lookup table for Cambodia
 #'
 #' @format A data frame with 9 columns and 101 rows:
@@ -3151,8 +3016,6 @@
 
 ################################################################################
 #
-#' ppiKHM2015_gov
-#'
 #' Poverty Probability Index (PPI) lookup table for Cambodia
 #'
 #' @format A data frame with 9 columns and 101 rows:
@@ -3197,8 +3060,6 @@
 
 ################################################################################
 #
-#' ppiKHM2015
-#'
 #' Poverty Probability Index (PPI) lookup table for Cambodia
 #'
 #' @format A data frame with 6 columns and 101 rows:
@@ -3240,8 +3101,6 @@
 
 ################################################################################
 #
-#' ppiPAK2009
-#'
 #' Poverty Probability Index (PPI) lookup table for Pakistan
 #'
 #' @format A data frame with 10 columns and 101 rows:
@@ -3287,8 +3146,6 @@
 
 ################################################################################
 #
-#' ppiCIV2018
-#'
 #' Poverty Probability Index (PPI) lookup table for Ivory Coast
 #'
 #' @format A data frame with 15 columns and 101 rows:
@@ -3319,8 +3176,6 @@
 
 ################################################################################
 #
-#' ppiPER2018
-#'
 #' Poverty Probability Index (PPI) lookup table for Peru
 #'
 #' @format A data frame with 19 columns and 101 rows:
@@ -3354,8 +3209,6 @@
 
 ################################################################################
 #
-#' ppiPHL2018
-#'
 #' Poverty Probability Index (PPI) lookup table for Philippines
 #'
 #' @format A data frame with 18 columns and 101 rows:
@@ -3387,8 +3240,6 @@
 
 ################################################################################
 #
-#' ppiTGO2018
-#'
 #' Poverty Probability Index (PPI) lookup table for Togo
 #'
 #' @format A data frame with 15 columns and 101 rows:
@@ -3417,8 +3268,6 @@
 
 ################################################################################
 #
-#' ppiCOL2012_a
-#'
 #' Poverty Probability Index (PPI) lookup table for Colombia
 #'
 #' @format A data frame with 12 columns and 101 rows:
@@ -3444,8 +3293,6 @@
 
 ################################################################################
 #
-#' ppiCOL2012
-#'
 #' Poverty Probability Index (PPI) lookup table for Colombia
 #'
 #' @format A data frame with 10 columns and 101 rows:
@@ -3469,8 +3316,6 @@
 
 ################################################################################
 #
-#' ppiCOL2018
-#'
 #' Poverty Probability Index (PPI) lookup table for Colombia
 #'
 #' @format A data frame with 19 columns and 101 rows:
@@ -3504,8 +3349,6 @@
 
 ################################################################################
 #
-#' ppiBFA2011
-#'
 #' Poverty Probability Index (PPI) lookup table for Burkina Faso
 #'
 #' @format A data frame with 8 columns and 101 rows:
@@ -3527,8 +3370,6 @@
 
 ################################################################################
 #
-#' ppiBFA2014
-#'
 #' Poverty Probability Index (PPI) lookup table for Burkina Faso
 #'
 #' @format A data frame with 18 columns and 101 rows:
@@ -3561,8 +3402,6 @@
 
 ################################################################################
 #
-#' ppiZMB2017
-#'
 #' Poverty Probability Index (PPI) lookup table for Zambia
 #'
 #' @format A data frame with 17 columns and 101 rows:
@@ -3593,8 +3432,6 @@
 
 ################################################################################
 #
-#' ppiZMB2017_a
-#'
 #' Poverty Probability Index (PPI) lookup table for Zambia
 #'
 #' @format A data frame with 16 columns and 101 rows:
@@ -3625,8 +3462,6 @@
 
 ################################################################################
 #
-#' ppiZMB2013_cso
-#'
 #' Poverty Probability Index (PPI) lookup table for Zambia
 #'
 #' @format A data frame with 9 columns and 101 rows:
@@ -3650,8 +3485,6 @@
 
 ################################################################################
 #
-#' ppiZMB2013_got
-#'
 #' Poverty Probability Index (PPI) lookup table for Zambia
 #'
 #' @format A data frame with 9 columns and 101 rows:
@@ -3675,8 +3508,6 @@
 
 ################################################################################
 #
-#' ppiKEN2018
-#'
 #' Poverty Probability Index (PPI) lookup table for Kenya
 #'
 #' @format A data frame with 17 columns and 101 rows:
@@ -3708,8 +3539,6 @@
 
 ################################################################################
 #
-#' ppiSEN2018
-#'
 #' Poverty Probability Index (PPI) lookup table for Senegal
 #'
 #' @format A data frame with 16 columns and 101 rows:
@@ -3739,8 +3568,6 @@
 
 ################################################################################
 #
-#' ppiDOM2018
-#'
 #' Poverty Probability Index (PPI) lookup table for Dominican Republic
 #'
 #' @format A data frame with 16 columns and 101 rows:
@@ -3771,8 +3598,6 @@
 
 ################################################################################
 #
-#' ppiGHA2019
-#'
 #' Poverty Probability Index (PPI) lookup table for Ghana
 #'
 #' @format A data frame with 20 columns and 101 rows:

@@ -1,7 +1,5 @@
 ################################################################################
 #
-#' find_table
-#'
 #' Search for PPI table by specifying region, country and/or calculation type.
 #'
 #' @param region Region of the world to search PPI table from. Default is
