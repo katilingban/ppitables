@@ -64,7 +64,7 @@ These three components are joined together without any spaces or gaps.
 
 Some country lookup tables may have additional components to their name which are added after the year separated with an underscore. These usually signify that a lookup table released on a particular year has a subset table in which the poverty likelihoods for a given `PPI` score are reported based on a different poverty definition or cut-off. This additional component to the table name is usually a character value or alphanumeric and is usually country-specific. To know more about what this additional component to some `PPI` tables refer to, read the index table below of the `PPI` tables available in this package. 
 
-Following are the available PPI country tables from the `ppitables` package. This is updated as at 11 May 2019 using information from the PPI [site](https://www.povertyindex.org).
+Following are the available PPI country tables from the `ppitables` package. This is updated as at 14 June 2019 using information from the PPI [site](https://www.povertyindex.org).
 
 
 ### List of PPI country tables
@@ -234,6 +234,9 @@ Following are the available PPI country tables from the `ppitables` package. Thi
 +-----+-----------------+-----------------------------------------------------+-----------------+
 | 33. | `ppiMOZ2013`    | PPI for Mozambique based on 2008/9 Household Budget | 2013            |
 |     |                 | Survey                                              |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+|     | `ppiMOZ2019`    | PPI for Mozambqiue based on 2014 Inquerito Sobre    | 2019            |
+|     |                 | Orcamento Familiar (IOF) Survey                     |                 |
 +-----+-----------------+-----------------------------------------------------+-----------------+
 | 34. | `ppiMWI2015`    | PPI for Malawi based on Malawi's 2010/11 Integrated | 2015            |
 |     |                 | Household Survey using legacy poverty definitions   |                 |
