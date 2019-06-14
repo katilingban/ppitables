@@ -1116,6 +1116,30 @@ varList <- c("PPI score",
 
 create_doc(country = "Mozambique", ccode = "MOZ", year = "2013", data = ppiMOZ2013, varList = varList)
 
+################################################################################
+#
+# Mozambique - new 2019 PPI tabes
+#
+################################################################################
+
+varList <- c("PPI score",
+             "National poverty line (100)",
+             "National poverty line (150)",
+             "National poverty line (200)",
+             "Below $1.90 per day purchasing power parity (2011)",
+             "Below $3.20 per day purchasing power parity (2011)",
+             "Below $5.50 per day purchasing power parity (2011)",
+             "Below $8.00 per day purchasing power parity (2011)",
+             "Below $11.00 per day purchasing power parity (2011)",
+             "Below $15.00 per day purchasing power parity (2011)",
+             "Below $21.70 per day purchasing power parity (2011)",
+             "Below 20th percentile poverty line",
+             "Below 40th percentile poverty line",
+             "Below 50th percentile poverty line",
+             "Below 60th percentile poverty line",
+             "Below 80th percentile poverty line")
+
+create_doc(country = "Mozambique", ccode = "MOZ", year = "2019", data = ppiMOZ2019, varList = varList)
 
 ################################################################################
 #
