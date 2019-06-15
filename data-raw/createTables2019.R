@@ -19,7 +19,7 @@ gha <- read_xlsx(path = "data-raw/sources/ghana2019.xlsx", sheet = "Look-up Tabl
 
 gha <- data.frame(gha)
 
-gha[ , 2:ncol(gha)] <- round(gha[ , 2:ncol(gha)] * 100, digits = 1)
+gha[ , 2:ncol(gha)] <- gha[ , 2:ncol(gha)] * 100
 
 names(gha) <- c("score", "nl100", "extreme", "nl150", "nl200",
                 "ppp100", "ppp190", "ppp320", "ppp550", "ppp800", "ppp1100", "ppp1500", "ppp2170",
@@ -29,5 +29,21 @@ names(gha) <- c("score", "nl100", "extreme", "nl150", "nl200",
 ppiGHA2019 <- gha
 
 usethis::use_data(ppiGHA2019, overwrite = TRUE)
+
+## Mozambique PPI
+
+moz <- read_xlsx(path = "data-raw/sources/mozambique2019.xlsx", sheet = "Look-up Tables", range = "A9:O110")
+
+moz <- data.frame(moz)
+
+moz[ , 2:ncol(moz)] <- moz[ , 2:ncol(moz)] * 100
+
+names(moz) <- c("score", "nl100", "nl150", "nl200",
+                "ppp190", "ppp320", "ppp550", "ppp800", "ppp1100", "ppp1500", "ppp2170",
+                "percentile20", "percentile40", "percentile60", "percentile80")
+
+ppiMOZ2019 <- moz
+
+usethis::use_data(ppiMOZ2019, overwrite = TRUE)
 
 
