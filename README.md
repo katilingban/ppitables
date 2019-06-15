@@ -38,8 +38,8 @@ library(ppitables)
 You can install `ppitables` from GitHub with:
 
 ``` r
-# install.packages("devtools")
-devtools::install_github("validmeasures/ppitables")
+if(!require("remotes")) install.packages("remotes")
+remotes::install_github("validmeasures/ppitables")
 library(ppitables)
 ```
 
