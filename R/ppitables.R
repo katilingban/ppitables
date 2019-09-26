@@ -12,12 +12,13 @@
 #' only a narrow margin.
 #'
 #' @docType package
+#' @keywords internal
 #' @name ppitables
 #' @importFrom tibble as.tibble
 #'
 #
 ################################################################################
-NULL
+"_PACKAGE"
 
 
 utils::globalVariables(c("poverty_definition", "ppi"))

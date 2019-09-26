@@ -16,3 +16,16 @@ household’s characteristics and asset ownership are scored to compute the
 likelihood that the household is living below the poverty line – or above by
 only a narrow margin.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/validmeasures/ppitables}
+  \item Report bugs at \url{https://github.com/validmeasures/ppitables/issues}
+}
+
+}
+\author{
+\strong{Maintainer}: Ernest Guevarra \email{ernestgmd@gmail.com} (0000-0002-4887-4415)
+
+}
+\keyword{internal}
