@@ -6,7 +6,7 @@ test_that("output is a tibble", {
 })
 
 test_that("output has correct number of observations", {
-  expect_equal(nrow(get_table(region = "Asia")), 19493)
+  expect_equal(nrow(get_table(region = "Asia")), 21412)
   expect_true(is.null(get_table(region = "asia")))
   expect_equal(nrow(get_table(region = "Asia", country = "Nepal")), 1111)
   expect_true(is.null(get_table(region = "Asia", country = "nepal")))

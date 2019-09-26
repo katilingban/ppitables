@@ -229,6 +229,9 @@ Following are the available PPI country tables from the `ppitables` package. Thi
 | 31. | `ppiMMR2012`    | PPI for Myanmar based on Myanmar’s 2009/10          | 2012            |
 |     |                 | Integrated Household Living Conditions Assessment   |                 |
 +-----+-----------------+-----------------------------------------------------+-----------------+
+|     | `ppiMMR2019`    | PPI for Myanmar based on Myanmar's 2015 Poverty and | 2019            |
+|     |                 | Living Conditions Survey                            |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
 | 32. | `ppiMNG2016`    | PPI for Mongolia based on Mongolia’s 2014 Household | 2016            |
 |     |                 | Socio-Economic Survey                               |                 |
 +-----+-----------------+-----------------------------------------------------+-----------------+

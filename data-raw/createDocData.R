@@ -18,8 +18,6 @@ create_doc <- function(country,
   cat(" \n")
   cat("################################################################################\n")
   cat("# \n")
-  cat(paste("#' ppi", ccode, year, suffix, sep = ""), " \n")
-  cat("#' \n")
   cat(paste("#' Poverty Probability Index (PPI) lookup table for ", country, sep = ""), " \n")
   cat("#' \n")
   cat(paste("#' @format A data frame with ", ncol(data), " columns and ", nrow(data), " rows:", sep = ""), " \n")
@@ -1118,7 +1116,7 @@ create_doc(country = "Mozambique", ccode = "MOZ", year = "2013", data = ppiMOZ20
 
 ################################################################################
 #
-# Mozambique - new 2019 PPI tabes
+# Mozambique - new 2019 PPI tables
 #
 ################################################################################
 
@@ -1157,6 +1155,31 @@ varList <- c("PPI score",
              "Below $2.50 per day purchasing power parity (2005)")
 
 create_doc(country = "Myanmar", ccode = "MMR", year = "2012", data = ppiMMR2012, varList = varList)
+
+################################################################################
+#
+# Myanmar - new 2019 PPI tables
+#
+################################################################################
+
+varList <- c("PPI score",
+             "National poverty line (100)",
+             "National poverty line (150)",
+             "National poverty line (200)",
+             "Below $1.90 per day purchasing power parity (2011)",
+             "Below $3.20 per day purchasing power parity (2011)",
+             "Below $5.50 per day purchasing power parity (2011)",
+             "Below $8.00 per day purchasing power parity (2011)",
+             "Below $11.00 per day purchasing power parity (2011)",
+             "Below $15.00 per day purchasing power parity (2011)",
+             "Below $21.70 per day purchasing power parity (2011)",
+             "Below 20th percentile poverty line",
+             "Below 40th percentile poverty line",
+             "Below 50th percentile poverty line",
+             "Below 60th percentile poverty line",
+             "Below 80th percentile poverty line")
+
+create_doc(country = "Myanmar", ccode = "MMR", year = "2019", data = ppiMMR2019, varList = varList)
 
 ################################################################################
 #
