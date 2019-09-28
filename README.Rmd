@@ -223,7 +223,7 @@ Following are the available PPI country tables from the `ppitables` package. Thi
 |     |                 | de Ingresos y Gastos de los Hogares de 2014 using   |                 |
 |     |                 | new definitions of poverty                          |                 |
 +-----+-----------------+-----------------------------------------------------+-----------------+
-| 30. | `ppiMLI2010`    | PPI for Mali based on Mali's 2001 Poverty Evalution | 2010            |
+| 30. | `ppiMLI2010`    | PPI for Mali based on Mali's 2001 Poverty Evaluation| 2010            |
 |     |                 | Survey                                              |                 |
 +-----+-----------------+-----------------------------------------------------+-----------------+
 | 31. | `ppiMMR2012`    | PPI for Myanmar based on Myanmar’s 2009/10          | 2012            |
@@ -380,5 +380,5 @@ get_table(region = "Africa")
 
 
 ### Notes
-[^1]: Only 60 country PPI tables are shown here and available via the package. There is no lookup table for China because the China Poverty Scorecard is an expert-based scorecard. See [this](https://www.povertyindex.org/china-expert-based-poverty-scorecard) for futher explanation.
+[^1]: Only 60 country PPI tables are shown here and available via the package. There is no lookup table for China because the China Poverty Scorecard is an expert-based scorecard. See [this](https://www.povertyindex.org/china-expert-based-poverty-scorecard) for further explanation.
 
