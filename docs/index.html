@@ -447,7 +447,7 @@
 <td style="text-align: right;"><ol start="30" type="1"><li>
 </li></ol></td>
 <td><code>ppiMLI2010</code></td>
-<td>PPI for Mali based on Mali’s 2001 Poverty Evalution Survey</td>
+<td>PPI for Mali based on Mali’s 2001 Poverty Evaluation Survey</td>
 <td style="text-align: center;">2010</td>
 </tr>
 <tr class="even">
@@ -730,7 +730,7 @@
 </table>
 <p>This list of available PPI country tables can be retrieved in R using the <code><a href="reference/find_table.html">find_table()</a></code> function. View the complete list using the following command in R:</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="kw"><a href="reference/find_table.html">find_table</a></span>()</a>
-<a class="sourceLine" id="cb4-2" data-line-number="2"><span class="co">#&gt; # A tibble: 86 x 7</span></a>
+<a class="sourceLine" id="cb4-2" data-line-number="2"><span class="co">#&gt; # A tibble: 88 x 7</span></a>
 <a class="sourceLine" id="cb4-3" data-line-number="3"><span class="co">#&gt;    region   country  survey_year release_year description    type  filename</span></a>
 <a class="sourceLine" id="cb4-4" data-line-number="4"><span class="co">#&gt;    &lt;fct&gt;    &lt;fct&gt;          &lt;int&gt;        &lt;int&gt; &lt;fct&gt;          &lt;fct&gt; &lt;fct&gt;   </span></a>
 <a class="sourceLine" id="cb4-5" data-line-number="5"><span class="co">#&gt;  1 Asia     Afghani…        2007         2012 PPI for Afgha… sps   ppiAFG2…</span></a>
@@ -743,10 +743,10 @@
 <a class="sourceLine" id="cb4-12" data-line-number="12"><span class="co">#&gt;  8 Africa   Burkina…        2014         2017 PPI for Burki… sps   ppiBFA2…</span></a>
 <a class="sourceLine" id="cb4-13" data-line-number="13"><span class="co">#&gt;  9 Africa   Burkina…        2014         2017 PPI for Burki… ipa   ppiBFA2…</span></a>
 <a class="sourceLine" id="cb4-14" data-line-number="14"><span class="co">#&gt; 10 Asia     Cambodia        2011         2015 PPI for Cambo… sps   ppiKHM2…</span></a>
-<a class="sourceLine" id="cb4-15" data-line-number="15"><span class="co">#&gt; # … with 76 more rows</span></a></code></pre></div>
+<a class="sourceLine" id="cb4-15" data-line-number="15"><span class="co">#&gt; # … with 78 more rows</span></a></code></pre></div>
 <p>View the list of PPI country tables for Africa using the following command in R:</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="kw"><a href="reference/find_table.html">find_table</a></span>(<span class="dt">region =</span> <span class="st">"Africa"</span>)</a>
-<a class="sourceLine" id="cb5-2" data-line-number="2"><span class="co">#&gt; # A tibble: 36 x 7</span></a>
+<a class="sourceLine" id="cb5-2" data-line-number="2"><span class="co">#&gt; # A tibble: 37 x 7</span></a>
 <a class="sourceLine" id="cb5-3" data-line-number="3"><span class="co">#&gt;    region country  survey_year release_year description      type  filename</span></a>
 <a class="sourceLine" id="cb5-4" data-line-number="4"><span class="co">#&gt;    &lt;fct&gt;  &lt;fct&gt;          &lt;int&gt;        &lt;int&gt; &lt;fct&gt;            &lt;fct&gt; &lt;fct&gt;   </span></a>
 <a class="sourceLine" id="cb5-5" data-line-number="5"><span class="co">#&gt;  1 Africa Angola          2008         2015 PPI for Angola … sps   ppiAGO2…</span></a>
@@ -759,7 +759,7 @@
 <a class="sourceLine" id="cb5-12" data-line-number="12"><span class="co">#&gt;  8 Africa Cote d'…        2015         2018 PPI for Ivory C… ipa   ppiCIV2…</span></a>
 <a class="sourceLine" id="cb5-13" data-line-number="13"><span class="co">#&gt;  9 Africa Ethiopia        2010         2016 PPI for Ethiopi… sps   ppiETH2…</span></a>
 <a class="sourceLine" id="cb5-14" data-line-number="14"><span class="co">#&gt; 10 Africa Ghana           2012         2015 PPI for Ghana b… sps   ppiGHA2…</span></a>
-<a class="sourceLine" id="cb5-15" data-line-number="15"><span class="co">#&gt; # … with 26 more rows</span></a></code></pre></div>
+<a class="sourceLine" id="cb5-15" data-line-number="15"><span class="co">#&gt; # … with 27 more rows</span></a></code></pre></div>
 <p>View the list of PPI country tables in Zambia using the the following command in R:</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" data-line-number="1"><span class="kw"><a href="reference/find_table.html">find_table</a></span>(<span class="dt">country =</span> <span class="st">"Zambia"</span>)</a>
 <a class="sourceLine" id="cb6-2" data-line-number="2"><span class="co">#&gt; # A tibble: 4 x 7</span></a>
@@ -772,7 +772,7 @@
 <p>To extract the actual PPI tables, the <code><a href="reference/get_table.html">get_table()</a></code> function can be used. The <code><a href="reference/get_table.html">get_table()</a></code> function wraps around the <code><a href="reference/find_table.html">find_table()</a></code> function to make a search for a specific PPI table and then extracts the table/s and puts them together into a tidy data frame.</p>
 <p>For example, to get the actual PPI tables for all countries with PPI tables, the following command can be used in R:</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" data-line-number="1"><span class="kw"><a href="reference/get_table.html">get_table</a></span>()</a>
-<a class="sourceLine" id="cb7-2" data-line-number="2"><span class="co">#&gt; # A tibble: 84,436 x 7</span></a>
+<a class="sourceLine" id="cb7-2" data-line-number="2"><span class="co">#&gt; # A tibble: 87,769 x 7</span></a>
 <a class="sourceLine" id="cb7-3" data-line-number="3"><span class="co">#&gt;    country     release_year filename   type  score poverty_definition   ppi</span></a>
 <a class="sourceLine" id="cb7-4" data-line-number="4"><span class="co">#&gt;    &lt;fct&gt;       &lt;fct&gt;        &lt;fct&gt;      &lt;fct&gt; &lt;dbl&gt; &lt;chr&gt;              &lt;dbl&gt;</span></a>
 <a class="sourceLine" id="cb7-5" data-line-number="5"><span class="co">#&gt;  1 Afghanistan 2012         ppiAFG2012 sps       0 nl                 100  </span></a>
@@ -785,10 +785,10 @@
 <a class="sourceLine" id="cb7-12" data-line-number="12"><span class="co">#&gt;  8 Afghanistan 2012         ppiAFG2012 sps       7 nl                  68.8</span></a>
 <a class="sourceLine" id="cb7-13" data-line-number="13"><span class="co">#&gt;  9 Afghanistan 2012         ppiAFG2012 sps       8 nl                  68.8</span></a>
 <a class="sourceLine" id="cb7-14" data-line-number="14"><span class="co">#&gt; 10 Afghanistan 2012         ppiAFG2012 sps       9 nl                  68.8</span></a>
-<a class="sourceLine" id="cb7-15" data-line-number="15"><span class="co">#&gt; # … with 84,426 more rows</span></a></code></pre></div>
+<a class="sourceLine" id="cb7-15" data-line-number="15"><span class="co">#&gt; # … with 87,759 more rows</span></a></code></pre></div>
 <p>To get the actual PPI tables for all countries with PPI tables in Africa, the following command can be used in R:</p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb8-1" data-line-number="1"><span class="kw"><a href="reference/get_table.html">get_table</a></span>(<span class="dt">region =</span> <span class="st">"Africa"</span>)</a>
-<a class="sourceLine" id="cb8-2" data-line-number="2"><span class="co">#&gt; # A tibble: 39,289 x 7</span></a>
+<a class="sourceLine" id="cb8-2" data-line-number="2"><span class="co">#&gt; # A tibble: 40,703 x 7</span></a>
 <a class="sourceLine" id="cb8-3" data-line-number="3"><span class="co">#&gt;    country release_year filename   type  score poverty_definition   ppi</span></a>
 <a class="sourceLine" id="cb8-4" data-line-number="4"><span class="co">#&gt;    &lt;fct&gt;   &lt;fct&gt;        &lt;fct&gt;      &lt;fct&gt; &lt;dbl&gt; &lt;chr&gt;              &lt;dbl&gt;</span></a>
 <a class="sourceLine" id="cb8-5" data-line-number="5"><span class="co">#&gt;  1 Angola  2015         ppiAGO2015 sps       0 nl100                100</span></a>
@@ -801,13 +801,13 @@
 <a class="sourceLine" id="cb8-12" data-line-number="12"><span class="co">#&gt;  8 Angola  2015         ppiAGO2015 sps       7 nl100                100</span></a>
 <a class="sourceLine" id="cb8-13" data-line-number="13"><span class="co">#&gt;  9 Angola  2015         ppiAGO2015 sps       8 nl100                100</span></a>
 <a class="sourceLine" id="cb8-14" data-line-number="14"><span class="co">#&gt; 10 Angola  2015         ppiAGO2015 sps       9 nl100                100</span></a>
-<a class="sourceLine" id="cb8-15" data-line-number="15"><span class="co">#&gt; # … with 39,279 more rows</span></a></code></pre></div>
+<a class="sourceLine" id="cb8-15" data-line-number="15"><span class="co">#&gt; # … with 40,693 more rows</span></a></code></pre></div>
 </div>
 <div id="notes" class="section level3">
 <h3 class="hasAnchor">
 <a href="#notes" class="anchor"></a>Notes</h3>
 <ol>
-<li>Only 60 country PPI tables are shown here and available via the package. There is no lookup table for China because the China Poverty Scorecard is an expert-based scorecard. See <a href="https://www.povertyindex.org/china-expert-based-poverty-scorecard">this</a> for futher explanation.</li>
+<li>Only 60 country PPI tables are shown here and available via the package. There is no lookup table for China because the China Poverty Scorecard is an expert-based scorecard. See <a href="https://www.povertyindex.org/china-expert-based-poverty-scorecard">this</a> for further explanation.</li>
 </ol>
 </div>
 </div>
