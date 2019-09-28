@@ -16,7 +16,7 @@
 \item{\code{ppp500}}{Below $5.00 per day purchasing power parity (2005)}
 }}
 \source{
-\url{www.povertyindex.org}
+\url{https://www.povertyindex.org}
 }
 \usage{
 ppiSYR2010

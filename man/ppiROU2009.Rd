@@ -17,7 +17,7 @@
 \item{\code{laeken}}{Laeken poverty line}
 }}
 \source{
-\url{www.povertyindex.org}
+\url{https://www.povertyindex.org}
 }
 \usage{
 ppiROU2009

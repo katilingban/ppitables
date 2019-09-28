@@ -4,26 +4,26 @@
 \name{ppiMOZ2019}
 \alias{ppiMOZ2019}
 \title{Poverty Probability Index (PPI) lookup table for Mozambique}
-\format{A data frame with 15 columns and 101 rows:  
-\describe{ 
-\item{\code{score}}{PPI score}  
-\item{\code{nl100}}{National poverty line (100)}  
-\item{\code{nl150}}{National poverty line (150)}  
-\item{\code{nl200}}{National poverty line (200)}  
-\item{\code{ppp190}}{Below $1.90 per day purchasing power parity (2011)}  
-\item{\code{ppp320}}{Below $3.20 per day purchasing power parity (2011)}  
-\item{\code{ppp550}}{Below $5.50 per day purchasing power parity (2011)}  
-\item{\code{ppp800}}{Below $8.00 per day purchasing power parity (2011)}  
-\item{\code{ppp1100}}{Below $11.00 per day purchasing power parity (2011)}  
-\item{\code{ppp1500}}{Below $15.00 per day purchasing power parity (2011)}  
-\item{\code{ppp2170}}{Below $21.70 per day purchasing power parity (2011)}  
-\item{\code{percentile20}}{Below 20th percentile poverty line}  
-\item{\code{percentile40}}{Below 40th percentile poverty line}  
-\item{\code{percentile60}}{Below 50th percentile poverty line}  
-\item{\code{percentile80}}{Below 60th percentile poverty line}  
+\format{A data frame with 15 columns and 101 rows:
+\describe{
+\item{\code{score}}{PPI score}
+\item{\code{nl100}}{National poverty line (100)}
+\item{\code{nl150}}{National poverty line (150)}
+\item{\code{nl200}}{National poverty line (200)}
+\item{\code{ppp190}}{Below $1.90 per day purchasing power parity (2011)}
+\item{\code{ppp320}}{Below $3.20 per day purchasing power parity (2011)}
+\item{\code{ppp550}}{Below $5.50 per day purchasing power parity (2011)}
+\item{\code{ppp800}}{Below $8.00 per day purchasing power parity (2011)}
+\item{\code{ppp1100}}{Below $11.00 per day purchasing power parity (2011)}
+\item{\code{ppp1500}}{Below $15.00 per day purchasing power parity (2011)}
+\item{\code{ppp2170}}{Below $21.70 per day purchasing power parity (2011)}
+\item{\code{percentile20}}{Below 20th percentile poverty line}
+\item{\code{percentile40}}{Below 40th percentile poverty line}
+\item{\code{percentile60}}{Below 50th percentile poverty line}
+\item{\code{percentile80}}{Below 60th percentile poverty line}
 }}
 \source{
-\url{www.povertyindex.org}
+\url{https://www.povertyindex.org}
 }
 \usage{
 ppiMOZ2019

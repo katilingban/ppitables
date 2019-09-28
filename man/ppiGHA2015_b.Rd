@@ -17,7 +17,7 @@ definitions deflated with the change in 100\% of national poverty line}
 \item{\code{ppp310}}{Below $3.10 per day purchasing power parity (2011)}
 }}
 \source{
-\url{www.povertyindex.org}
+\url{https://www.povertyindex.org}
 }
 \usage{
 ppiGHA2015_b

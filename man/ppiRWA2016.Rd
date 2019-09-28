@@ -19,7 +19,7 @@
 \item{\code{ppp844}}{Below $8.44 per day purchasing power parity (2005)}
 }}
 \source{
-\url{www.povertyindex.org}
+\url{https://www.povertyindex.org}
 }
 \usage{
 ppiRWA2016

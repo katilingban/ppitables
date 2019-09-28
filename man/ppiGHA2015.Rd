@@ -17,7 +17,7 @@ definitions}
 \item{\code{ppp375}}{Below $2.75 per day purchasing power parity (2005)}
 }}
 \source{
-\url{www.povertyindex.org}
+\url{https://www.povertyindex.org}
 }
 \usage{
 ppiGHA2015

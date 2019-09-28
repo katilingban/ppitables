@@ -33,7 +33,7 @@
 #'   ppiScore <- 50
 #'   ppiAFG2012[ppiAFG2012$score == ppiScore, "extreme"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #'
 #
@@ -78,7 +78,7 @@
 #'   ppiScore <- 50
 #'   ppiAGO2015[ppiAGO2015$score == ppiScore, "extreme"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -123,7 +123,7 @@
 #'   ppiScore <- 50
 #'   ppiBGD2013[ppiBGD2013$score == ppiScore, "extreme"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -168,7 +168,7 @@
 #'   ppiScore <- 50
 #'   ppiBOL2015[ppiBOL2015$score == ppiScore, "nlFood"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -210,7 +210,7 @@
 #'   ppiScore <- 50
 #'   ppiBEN2012[ppiBEN2012$score == ppiScore, "extreme"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -255,7 +255,7 @@
 #'   ppiScore <- 50
 #'   ppiBRA2010[ppiBRA2010$score == ppiScore, "extreme"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -305,7 +305,7 @@
 #'   ppiScore <- 50
 #'   ppiBFA2017[ppiBFA2017$score == ppiScore, "nl100"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -348,7 +348,7 @@
 #'   ppiScore <- 50
 #'   ppiCMR2013[ppiCMR2013$score == ppiScore, "extreme"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -394,7 +394,7 @@
 #'   ppiScore <- 50
 #'   ppiDOM2010[ppiDOM2010$score == ppiScore, "extreme"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -440,7 +440,7 @@
 #'   ppiScore <- 50
 #'   ppiECU2015[ppiECU2015$score == ppiScore, "nl100"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -483,7 +483,7 @@
 #'   ppiScore <- 50
 #'   ppiEGY2010[ppiEGY2010$score == ppiScore, "extreme"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -527,7 +527,7 @@
 #'   ppiScore <- 50
 #'   ppiSLV2010[ppiSLV2010$score == ppiScore, "extreme"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -583,7 +583,7 @@
 #'   ppiScore <- 50
 #'   ppiETH2016[ppiETH2016$score == ppiScore, "nl100"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -626,7 +626,7 @@
 #'   ppiScore <- 50
 #'   ppiFJI2014[ppiFJI2014$score == ppiScore, "nl100"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -670,7 +670,7 @@
 #'   ppiScore <- 50
 #'   ppiGHA2015[ppiGHA2015$score == ppiScore, "nl100"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -719,7 +719,7 @@
 #'   ppiScore <- 50
 #'   ppiGHA2015_a[ppiGHA2015_a$score == ppiScore, "nl100"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -762,7 +762,7 @@
 #'   ppiScore <- 50
 #'   ppiGHA2015_b[ppiGHA2015_b$score == ppiScore, "ppp125"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -814,7 +814,7 @@
 #'   ppiScore <- 50
 #'   ppiGTM2016[ppiGTM2016$score == ppiScore, "nl100"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -856,7 +856,7 @@
 #'   ppiScore <- 50
 #'   ppiHND2010[ppiHND2010$score == ppiScore, "extreme"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -901,7 +901,7 @@
 #'   ppiScore <- 50
 #'   ppiHTI2016[ppiHTI2016$score == ppiScore, "nl100"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -941,7 +941,7 @@
 #'   ppiScore <- 50
 #'   ppiIND2016_r59[ppiIND2016_r59$score == ppiScore, "saxena"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -984,7 +984,7 @@
 #'   ppiScore <- 50
 #'   ppiIND2016_r62[ppiIND2016_r62$score == ppiScore, "saxena"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -1028,7 +1028,7 @@
 #'   ppiScore <- 50
 #'   ppiIND2016_r66[ppiIND2016_r66$score == ppiScore, "tendulkar"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -1080,7 +1080,7 @@
 #'   ppiScore <- 50
 #'   ppiIND2016_r68[ppiIND2016_r68$score == ppiScore, "rangarajan100"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -1120,7 +1120,7 @@
 #'   ppiScore <- 50
 #'   ppiIDN2012[ppiIDN2012$score == ppiScore, "nl100"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -1165,7 +1165,7 @@
 #'   ppiScore <- 50
 #'   ppiIDN2012_a[ppiIDN2012_a$score == ppiScore, "extreme"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -1209,7 +1209,7 @@
 #'   ppiScore <- 50
 #'   ppiCIV2013[ppiCIV2013$score == ppiScore, "extreme"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -1254,7 +1254,7 @@
 #'   ppiScore <- 50
 #'   ppiJOR2010[ppiJOR2010$score == ppiScore, "extreme"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -1300,7 +1300,7 @@
 #'   ppiScore <- 50
 #'   ppiKEN2011[ppiKEN2011$score == ppiScore, "extreme"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -1344,7 +1344,7 @@
 #'   ppiScore <- 50
 #'   ppiKGZ2015[ppiKGZ2015$score == ppiScore, "nl100"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -1388,7 +1388,7 @@
 #'   ppiScore <- 50
 #'   ppiMDG2015[ppiMDG2015$score == ppiScore, "nl100"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -1438,7 +1438,7 @@
 #'   ppiScore <- 50
 #'   ppiMWI2015_gov[ppiMWI2015_gov$score == ppiScore, "nl100"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -1477,7 +1477,7 @@
 #'   ppiScore <- 50
 #'   ppiMWI2015[ppiMWI2015$score == ppiScore, "ppp125"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -1526,7 +1526,7 @@
 #'   ppiScore <- 50
 #'   ppiMWI2015_pbm[ppiMWI2015_pbm$score == ppiScore, "nl100"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -1567,7 +1567,7 @@
 #'   ppiScore <- 50
 #'   ppiMLI2010[ppiMLI2010$score == ppiScore, "nl100"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -1620,7 +1620,7 @@
 #'   ppiScore <- 50
 #'   ppiMEX2017_a[ppiMEX2017_a$score == ppiScore, "nl100"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -1664,7 +1664,7 @@
 #'   ppiScore <- 50
 #'   ppiMEX2017[ppiMEX2017$score == ppiScore, "nl100"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -1717,7 +1717,7 @@
 #'   ppiScore <- 50
 #'   ppiMNG2016[ppiMNG2016$score == ppiScore, "nl100"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -1761,7 +1761,7 @@
 #'   ppiScore <- 50
 #'   ppiMAR2013[ppiMAR2013$score == ppiScore, "nl100"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -1804,7 +1804,7 @@
 #'   ppiScore <- 50
 #'   ppiMMR2012[ppiMMR2012$score == ppiScore, "nl100"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -1846,7 +1846,7 @@
 #'   ppiScore <- 50
 #'   ppiMOZ2013[ppiMOZ2013$score == ppiScore, "nl100"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -1890,7 +1890,7 @@
 #'   ppiScore <- 50
 #'   ppiNAM2013[ppiNAM2013$score == ppiScore, "nl100"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -1935,7 +1935,7 @@
 #'   ppiScore <- 50
 #'   ppiNPL2013_a[ppiNPL2013_a$score == ppiScore, "nl100"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -1975,7 +1975,7 @@
 #'   ppiScore <- 50
 #'   ppiNPL2013[ppiNPL2013$score == ppiScore, "nl100"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -2020,7 +2020,7 @@
 #'   ppiScore <- 50
 #'   ppiNIC2013[ppiNIC2013$score == ppiScore, "nl100"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -2064,7 +2064,7 @@
 #'   ppiScore <- 50
 #'   ppiNER2013[ppiNER2013$score == ppiScore, "nl100"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -2112,7 +2112,7 @@
 #'   ppiScore <- 50
 #'   ppiNGA2015[ppiNGA2015$score == ppiScore, "nl100"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -2158,7 +2158,7 @@
 #'   ppiScore <- 50
 #'   ppiPSE2014[ppiPSE2014$score == ppiScore, "nl100"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -2201,7 +2201,7 @@
 #'   ppiScore <- 50
 #'   ppiPRY2012[ppiPRY2012$score == ppiScore, "nl100"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -2245,7 +2245,7 @@
 #'   ppiScore <- 50
 #'   ppiPER2012[ppiPER2012$score == ppiScore, "nl100"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -2287,7 +2287,7 @@
 #'   ppiScore <- 50
 #'   ppiPHL2014[ppiPHL2014$score == ppiScore, "nl100"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -2334,7 +2334,7 @@
 #'   ppiScore <- 50
 #'   ppiPHL2014_a[ppiPHL2014_a$score == ppiScore, "nl100"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -2378,7 +2378,7 @@
 #'   ppiScore <- 50
 #'   ppiROU2009[ppiROU2009$score == ppiScore, "nl100"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -2417,7 +2417,7 @@
 #'   ppiScore <- 50
 #'   ppiRUS2010[ppiRUS2010$score == ppiScore, "nl100"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -2463,7 +2463,7 @@
 #'   ppiScore <- 50
 #'   ppiSEN2009[ppiSEN2009$score == ppiScore, "nl100"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -2509,7 +2509,7 @@
 #'   ppiScore <- 50
 #'   ppiRWA2016[ppiRWA2016$score == ppiScore, "nl100"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -2552,7 +2552,7 @@
 #'   ppiScore <- 50
 #'   ppiSLE2011[ppiSLE2011$score == ppiScore, "nl100"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -2603,7 +2603,7 @@
 #'   ppiScore <- 50
 #'   ppiLKA2016[ppiLKA2016$score == ppiScore, "nl100"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -2646,7 +2646,7 @@
 #'   ppiScore <- 50
 #'   ppiZAF2009[ppiZAF2009$score == ppiScore, "nl100"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -2689,7 +2689,7 @@
 #'   ppiScore <- 50
 #'   ppiSYR2010[ppiSYR2010$score == ppiScore, "nl100"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -2743,7 +2743,7 @@
 #'   ppiScore <- 50
 #'   ppiTZA2016[ppiTZA2016$score == ppiScore, "nl100"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -2787,7 +2787,7 @@
 #'   ppiScore <- 50
 #'   ppiTJK2015[ppiTJK2015$score == ppiScore, "nl100"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -2830,7 +2830,7 @@
 #'   ppiScore <- 50
 #'   ppiTLS2013[ppiTLS2013$score == ppiScore, "nl100"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -2878,7 +2878,7 @@
 #'   ppiScore <- 50
 #'   ppiUGA2015[ppiUGA2015$score == ppiScore, "nl100"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -2921,7 +2921,7 @@
 #'   ppiScore <- 50
 #'   ppiVNM2009[ppiVNM2009$score == ppiScore, "nl100"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -2964,7 +2964,7 @@
 #'   ppiScore <- 50
 #'   ppiYEM2009[ppiYEM2009$score == ppiScore, "nl100"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -3008,7 +3008,7 @@
 #'   ppiScore <- 50
 #'   ppiKHM2015_wb[ppiKHM2015_wb$score == ppiScore, "nl100"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -3051,7 +3051,7 @@
 #'   ppiScore <- 50
 #'   ppiKHM2015_gov[ppiKHM2015_gov$score == ppiScore, "nl100"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -3092,7 +3092,7 @@
 #'   ppiScore <- 50
 #'   ppiKHM2015[ppiKHM2015$score == ppiScore, "nl100"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -3137,7 +3137,7 @@
 #'   ppiScore <- 50
 #'   ppiPAK2009[ppiPAK2009$score == ppiScore, "nl100"]
 #'
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -3166,7 +3166,7 @@
 #' \item{\code{percentile60}}{Below 60th percentile poverty line}
 #' \item{\code{percentile80}}{Below 80th percentile poverty line}
 #' }
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -3200,7 +3200,7 @@
 #' \item{\code{percentile60}}{Below 60th percentile poverty line}
 #' \item{\code{percentile80}}{Below 80th percentile poverty line}
 #' }
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -3232,7 +3232,7 @@
 #' \item{\code{percentile60}}{Below 60th percentile poverty line}
 #' \item{\code{percentile80}}{Below 80th percentile poverty line}
 #' }
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -3260,7 +3260,7 @@
 #' \item{\code{percentile60}}{Below 60th percentile poverty line}
 #' \item{\code{percentile80}}{Below 80th percentile poverty line}
 #' }
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -3285,7 +3285,7 @@
 #' \item{\code{ppp190}}{Below $1.90 per day purchasing power parity (2011)}
 #' \item{\code{ppp310}}{Below $3.10 per day purchasing power parity (2011)}
 #' }
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -3308,7 +3308,7 @@
 #' \item{\code{ppp375}}{Below $3.75 per day purchasing power parity (2005)}
 #' \item{\code{ppp500}}{Below $5.00 per day purchasing power parity (2005)}
 #' }
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -3340,7 +3340,7 @@
 #' \item{\code{percentile60}}{Below 80th percentile poverty line}
 #' \item{\code{percentile80}}{NA}
 #' }
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -3362,7 +3362,7 @@
 #' \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}
 #' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
 #' }
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -3393,7 +3393,7 @@
 #' \item{\code{percentile60}}{Below 60th percentile poverty line}
 #' \item{\code{percentile80}}{Below 80th percentile poverty line}
 #' }
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -3424,7 +3424,7 @@
 #' \item{\code{percentile60}}{Below 60th percentile poverty line}
 #' \item{\code{percentile80}}{Below 80th percentile poverty line}
 #' }
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -3453,7 +3453,7 @@
 #' \item{\code{percentile60}}{Below 60th percentile poverty line}
 #' \item{\code{percentile80}}{Below 80th percentile poverty line}
 #' }
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -3476,7 +3476,7 @@
 #' \item{\code{ppp200}}{Below $2.00 per day purchasing power parity (2005)}
 #' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
 #' }
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -3499,7 +3499,7 @@
 #' \item{\code{ppp200}}{Below $2.00 per day purchasing power parity (2005)}
 #' \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
 #' }
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -3530,7 +3530,7 @@
 #' \item{\code{percentile60}}{Below 50th percentile poverty line}
 #' \item{\code{percentile80}}{Below 60th percentile poverty line}
 #' }
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -3560,7 +3560,7 @@
 #' \item{\code{percentile60}}{Below 60th percentile poverty line}
 #' \item{\code{percentile80}}{Below 80th percentile poverty line}
 #' }
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -3589,7 +3589,7 @@
 #' \item{\code{percentile60}}{Below 60th percentile poverty line}
 #' \item{\code{percentile80}}{Below 80th percentile poverty line}
 #' }
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
@@ -3623,72 +3623,72 @@
 #' \item{\code{percentile60}}{Below 50th percentile poverty line}
 #' \item{\code{percentile80}}{Below 60th percentile poverty line}
 #' }
-#' @source \url{www.povertyindex.org}
+#' @source \url{https://www.povertyindex.org}
 #'
 #
 ################################################################################
 "ppiGHA2019"
 
 
- 
- 
+
+
 ################################################################################
-# 
-#' Poverty Probability Index (PPI) lookup table for Mozambique  
-#' 
-#' @format A data frame with 15 columns and 101 rows:  
-#' \describe{ 
-#' \item{\code{score}}{PPI score}  
-#' \item{\code{nl100}}{National poverty line (100)}  
-#' \item{\code{nl150}}{National poverty line (150)}  
-#' \item{\code{nl200}}{National poverty line (200)}  
-#' \item{\code{ppp190}}{Below $1.90 per day purchasing power parity (2011)}  
-#' \item{\code{ppp320}}{Below $3.20 per day purchasing power parity (2011)}  
-#' \item{\code{ppp550}}{Below $5.50 per day purchasing power parity (2011)}  
-#' \item{\code{ppp800}}{Below $8.00 per day purchasing power parity (2011)}  
-#' \item{\code{ppp1100}}{Below $11.00 per day purchasing power parity (2011)}  
-#' \item{\code{ppp1500}}{Below $15.00 per day purchasing power parity (2011)}  
-#' \item{\code{ppp2170}}{Below $21.70 per day purchasing power parity (2011)}  
-#' \item{\code{percentile20}}{Below 20th percentile poverty line}  
-#' \item{\code{percentile40}}{Below 40th percentile poverty line}  
-#' \item{\code{percentile60}}{Below 50th percentile poverty line}  
-#' \item{\code{percentile80}}{Below 60th percentile poverty line}  
-#' } 
-#' @source \url{www.povertyindex.org}  
-#' 
-# 
-################################################################################ 
-"ppiMOZ2019" 
- 
+#
+#' Poverty Probability Index (PPI) lookup table for Mozambique
+#'
+#' @format A data frame with 15 columns and 101 rows:
+#' \describe{
+#' \item{\code{score}}{PPI score}
+#' \item{\code{nl100}}{National poverty line (100)}
+#' \item{\code{nl150}}{National poverty line (150)}
+#' \item{\code{nl200}}{National poverty line (200)}
+#' \item{\code{ppp190}}{Below $1.90 per day purchasing power parity (2011)}
+#' \item{\code{ppp320}}{Below $3.20 per day purchasing power parity (2011)}
+#' \item{\code{ppp550}}{Below $5.50 per day purchasing power parity (2011)}
+#' \item{\code{ppp800}}{Below $8.00 per day purchasing power parity (2011)}
+#' \item{\code{ppp1100}}{Below $11.00 per day purchasing power parity (2011)}
+#' \item{\code{ppp1500}}{Below $15.00 per day purchasing power parity (2011)}
+#' \item{\code{ppp2170}}{Below $21.70 per day purchasing power parity (2011)}
+#' \item{\code{percentile20}}{Below 20th percentile poverty line}
+#' \item{\code{percentile40}}{Below 40th percentile poverty line}
+#' \item{\code{percentile60}}{Below 50th percentile poverty line}
+#' \item{\code{percentile80}}{Below 60th percentile poverty line}
+#' }
+#' @source \url{https://www.povertyindex.org}
+#'
+#
 ################################################################################
-# 
-#' Poverty Probability Index (PPI) lookup table for Myanmar  
-#' 
-#' @format A data frame with 20 columns and 101 rows:  
-#' \describe{ 
-#' \item{\code{score}}{PPI score}  
-#' \item{\code{nl100}}{National poverty line (100)}  
-#' \item{\code{extreme}}{National poverty line (150)}  
-#' \item{\code{nl150}}{National poverty line (200)}  
-#' \item{\code{nl200}}{Below $1.90 per day purchasing power parity (2011)}  
-#' \item{\code{ppp100}}{Below $3.20 per day purchasing power parity (2011)}  
-#' \item{\code{ppp190}}{Below $5.50 per day purchasing power parity (2011)}  
-#' \item{\code{ppp320}}{Below $8.00 per day purchasing power parity (2011)}  
-#' \item{\code{ppp550}}{Below $11.00 per day purchasing power parity (2011)}  
-#' \item{\code{ppp800}}{Below $15.00 per day purchasing power parity (2011)}  
-#' \item{\code{ppp1100}}{Below $21.70 per day purchasing power parity (2011)}  
-#' \item{\code{ppp1500}}{Below 20th percentile poverty line}  
-#' \item{\code{ppp2170}}{Below 40th percentile poverty line}  
-#' \item{\code{ppp125}}{Below 50th percentile poverty line}  
-#' \item{\code{ppp250}}{Below 60th percentile poverty line}  
-#' \item{\code{ppp500}}{Below 80th percentile poverty line}  
-#' \item{\code{percentile20}}{NA}  
-#' \item{\code{percentile40}}{NA}  
-#' \item{\code{percentile60}}{NA}  
-#' \item{\code{percentile80}}{NA}  
-#' } 
-#' @source \url{www.povertyindex.org}  
-#' 
-# 
-################################################################################ 
+"ppiMOZ2019"
+
+################################################################################
+#
+#' Poverty Probability Index (PPI) lookup table for Myanmar
+#'
+#' @format A data frame with 20 columns and 101 rows:
+#' \describe{
+#' \item{\code{score}}{PPI score}
+#' \item{\code{nl100}}{National poverty line (100)}
+#' \item{\code{extreme}}{National poverty line (150)}
+#' \item{\code{nl150}}{National poverty line (200)}
+#' \item{\code{nl200}}{Below $1.90 per day purchasing power parity (2011)}
+#' \item{\code{ppp100}}{Below $3.20 per day purchasing power parity (2011)}
+#' \item{\code{ppp190}}{Below $5.50 per day purchasing power parity (2011)}
+#' \item{\code{ppp320}}{Below $8.00 per day purchasing power parity (2011)}
+#' \item{\code{ppp550}}{Below $11.00 per day purchasing power parity (2011)}
+#' \item{\code{ppp800}}{Below $15.00 per day purchasing power parity (2011)}
+#' \item{\code{ppp1100}}{Below $21.70 per day purchasing power parity (2011)}
+#' \item{\code{ppp1500}}{Below 20th percentile poverty line}
+#' \item{\code{ppp2170}}{Below 40th percentile poverty line}
+#' \item{\code{ppp125}}{Below 50th percentile poverty line}
+#' \item{\code{ppp250}}{Below 60th percentile poverty line}
+#' \item{\code{ppp500}}{Below 80th percentile poverty line}
+#' \item{\code{percentile20}}{NA}
+#' \item{\code{percentile40}}{NA}
+#' \item{\code{percentile60}}{NA}
+#' \item{\code{percentile80}}{NA}
+#' }
+#' @source \url{https://www.povertyindex.org}
+#'
+#
+################################################################################
 "ppiMMR2019"

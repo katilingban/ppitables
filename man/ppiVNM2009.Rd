@@ -16,7 +16,7 @@
 \item{\code{molisa}}{MOLISA poverty line}
 }}
 \source{
-\url{www.povertyindex.org}
+\url{https://www.povertyindex.org}
 }
 \usage{
 ppiVNM2009
