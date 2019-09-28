@@ -14,7 +14,7 @@
 \item{\code{ppp250}}{Below $2.50 per day purchasing power poverty (2005)}
 }}
 \source{
-\url{www.povertyindex.org}
+\url{https://www.povertyindex.org}
 }
 \usage{
 ppiKHM2015

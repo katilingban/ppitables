@@ -437,7 +437,7 @@ PPI [site](https://www.povertyindex.org).
 <li></li>
 </ol></td>
 <td><code>ppiMLI2010</code></td>
-<td>PPI for Mali based on Mali’s 2001 Poverty Evalution Survey</td>
+<td>PPI for Mali based on Mali’s 2001 Poverty Evaluation Survey</td>
 <td style="text-align: center;">2010</td>
 </tr>
 <tr class="even">
@@ -755,7 +755,7 @@ command in R:
 
 ``` r
 find_table()
-#> # A tibble: 86 x 7
+#> # A tibble: 88 x 7
 #>    region   country  survey_year release_year description    type  filename
 #>    <fct>    <fct>          <int>        <int> <fct>          <fct> <fct>   
 #>  1 Asia     Afghani…        2007         2012 PPI for Afgha… sps   ppiAFG2…
@@ -768,7 +768,7 @@ find_table()
 #>  8 Africa   Burkina…        2014         2017 PPI for Burki… sps   ppiBFA2…
 #>  9 Africa   Burkina…        2014         2017 PPI for Burki… ipa   ppiBFA2…
 #> 10 Asia     Cambodia        2011         2015 PPI for Cambo… sps   ppiKHM2…
-#> # … with 76 more rows
+#> # … with 78 more rows
 ```
 
 View the list of PPI country tables for Africa using the following
@@ -776,7 +776,7 @@ command in R:
 
 ``` r
 find_table(region = "Africa")
-#> # A tibble: 36 x 7
+#> # A tibble: 37 x 7
 #>    region country  survey_year release_year description      type  filename
 #>    <fct>  <fct>          <int>        <int> <fct>            <fct> <fct>   
 #>  1 Africa Angola          2008         2015 PPI for Angola … sps   ppiAGO2…
@@ -789,7 +789,7 @@ find_table(region = "Africa")
 #>  8 Africa Cote d'…        2015         2018 PPI for Ivory C… ipa   ppiCIV2…
 #>  9 Africa Ethiopia        2010         2016 PPI for Ethiopi… sps   ppiETH2…
 #> 10 Africa Ghana           2012         2015 PPI for Ghana b… sps   ppiGHA2…
-#> # … with 26 more rows
+#> # … with 27 more rows
 ```
 
 View the list of PPI country tables in Zambia using the the following
@@ -816,7 +816,7 @@ tables, the following command can be used in R:
 
 ``` r
 get_table()
-#> # A tibble: 84,436 x 7
+#> # A tibble: 87,769 x 7
 #>    country     release_year filename   type  score poverty_definition   ppi
 #>    <fct>       <fct>        <fct>      <fct> <dbl> <chr>              <dbl>
 #>  1 Afghanistan 2012         ppiAFG2012 sps       0 nl                 100  
@@ -829,7 +829,7 @@ get_table()
 #>  8 Afghanistan 2012         ppiAFG2012 sps       7 nl                  68.8
 #>  9 Afghanistan 2012         ppiAFG2012 sps       8 nl                  68.8
 #> 10 Afghanistan 2012         ppiAFG2012 sps       9 nl                  68.8
-#> # … with 84,426 more rows
+#> # … with 87,759 more rows
 ```
 
 To get the actual PPI tables for all countries with PPI tables in
@@ -837,7 +837,7 @@ Africa, the following command can be used in R:
 
 ``` r
 get_table(region = "Africa")
-#> # A tibble: 39,289 x 7
+#> # A tibble: 40,703 x 7
 #>    country release_year filename   type  score poverty_definition   ppi
 #>    <fct>   <fct>        <fct>      <fct> <dbl> <chr>              <dbl>
 #>  1 Angola  2015         ppiAGO2015 sps       0 nl100                100
@@ -850,7 +850,7 @@ get_table(region = "Africa")
 #>  8 Angola  2015         ppiAGO2015 sps       7 nl100                100
 #>  9 Angola  2015         ppiAGO2015 sps       8 nl100                100
 #> 10 Angola  2015         ppiAGO2015 sps       9 nl100                100
-#> # … with 39,279 more rows
+#> # … with 40,693 more rows
 ```
 
 ### Notes
@@ -859,4 +859,4 @@ get_table(region = "Africa")
     package. There is no lookup table for China because the China
     Poverty Scorecard is an expert-based scorecard. See
     [this](https://www.povertyindex.org/china-expert-based-poverty-scorecard)
-    for futher explanation.
+    for further explanation.

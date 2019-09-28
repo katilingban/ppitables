@@ -27,7 +27,7 @@
 \item{\code{percentile80}}{NA}
 }}
 \source{
-\url{www.povertyindex.org}
+\url{https://www.povertyindex.org}
 }
 \usage{
 ppiCOL2018

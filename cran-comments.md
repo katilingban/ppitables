@@ -13,9 +13,9 @@ from the 2015 Poverty and Living Conditions Survey
 PPI tables
 
 ## Test environments
-* local OS X install, R 3.6.0
-* ubuntu 14.04.5 (on travis-ci), release, devel and oldrelease
-* local ubuntu 16.04 install, R 3.6.0
+* local OS X install, R 3.6.1
+* ubuntu 16.04.6 (on travis-ci), release, devel and oldrelease
+* local ubuntu 16.04 install, R 3.6.1
 * win-builder (devel and release)
 * windows (on appveyor), x64 release and devel, i386 release and devel
 

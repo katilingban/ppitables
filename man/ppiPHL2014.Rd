@@ -15,7 +15,7 @@ poverty definitions}
 \item{\code{ppp432}}{Below $4.32 per day purchasing power parity (1993)}
 }}
 \source{
-\url{www.povertyindex.org}
+\url{https://www.povertyindex.org}
 }
 \usage{
 ppiPHL2014

@@ -23,7 +23,7 @@ poverty definitions}
 \item{\code{ppp1000}}{Below $10.00 per day purchasing power parity (2011)}
 }}
 \source{
-\url{www.povertyindex.org}
+\url{https://www.povertyindex.org}
 }
 \usage{
 ppiMWI2015_gov

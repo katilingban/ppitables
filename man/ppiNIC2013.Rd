@@ -18,7 +18,7 @@
 \item{\code{ppp800}}{Below $8.00 per day purchasing power parity (2005)}
 }}
 \source{
-\url{www.povertyindex.org}
+\url{https://www.povertyindex.org}
 }
 \usage{
 ppiNIC2013

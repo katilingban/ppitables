@@ -13,7 +13,7 @@ definitions}
 \item{\code{ppp216}}{Below $2.16 per day purchasing power parity (1993)}
 }}
 \source{
-\url{www.povertyindex.org}
+\url{https://www.povertyindex.org}
 }
 \usage{
 ppiIND2016_r59

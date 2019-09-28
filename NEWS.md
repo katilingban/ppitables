@@ -2,7 +2,7 @@
 
 This is the sixth CRAN release of `ppitables`. In this release, I added:
 
-* new PPI tables for Mozambique using the new PPI calculation apporach developed
+* new PPI tables for Mozambique using the new PPI calculation approach developed
 by the International Poverty Alliance (IPA) based on data from the 2014
 Inquérito Sobre Orçamento Familiar (IOF) Survey
 
@@ -86,5 +86,5 @@ accordingly
 * I have changed LICENSE from MIT to CC0 which is more appropriate
 
 # ppitables 0.1.0
-This is the first relase of `ppitables`
+This is the first release of `ppitables`
 

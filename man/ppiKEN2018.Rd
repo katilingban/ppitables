@@ -25,7 +25,7 @@
 \item{\code{percentile80}}{Below 60th percentile poverty line}
 }}
 \source{
-\url{www.povertyindex.org}
+\url{https://www.povertyindex.org}
 }
 \usage{
 ppiKEN2018

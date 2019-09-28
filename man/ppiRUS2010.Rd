@@ -12,7 +12,7 @@
 \item{\code{ppp625}}{Below $6.25 per day purchasing power parity (2005)}
 }}
 \source{
-\url{www.povertyindex.org}
+\url{https://www.povertyindex.org}
 }
 \usage{
 ppiRUS2010

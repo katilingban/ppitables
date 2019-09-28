@@ -22,7 +22,7 @@ definitions}
 \item{\code{ppp310}}{Below $3.10 per day purchasing power parity (2011)}
 }}
 \source{
-\url{www.povertyindex.org}
+\url{https://www.povertyindex.org}
 }
 \usage{
 ppiMWI2015_pbm

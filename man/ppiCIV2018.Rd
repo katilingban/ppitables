@@ -23,7 +23,7 @@
 \item{\code{percentile80}}{Below 80th percentile poverty line}
 }}
 \source{
-\url{www.povertyindex.org}
+\url{https://www.povertyindex.org}
 }
 \usage{
 ppiCIV2018
