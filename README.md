@@ -35,7 +35,8 @@ install.packages("ppitables")
 library(ppitables)
 ```
 
-You can install `ppitables` from GitHub with:
+You can install the current development version of `ppitables` from
+GitHub with:
 
 ``` r
 if(!require("remotes")) install.packages("remotes")
@@ -77,8 +78,8 @@ this additional component to some `PPI` tables refer to, read the index
 table below of the `PPI` tables available in this package.
 
 Following are the available PPI country tables from the `ppitables`
-package. This is updated as at 14 June 2019 using information from the
-PPI [site](https://www.povertyindex.org).
+package. This is updated as at 26 December 2019 using information from
+the PPI [site](https://www.povertyindex.org).
 
 ### List of PPI country tables
 
