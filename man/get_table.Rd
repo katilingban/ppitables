@@ -4,9 +4,11 @@
 \alias{get_table}
 \title{Get PPI table/s based on a specified PPI table/s search output}
 \usage{
-get_table(region = levels(steer$region),
+get_table(
+  region = levels(steer$region),
   country = as.character(steer$country[steer$region \%in\% region]),
-  type = as.character(steer$type[steer$country \%in\% country]))
+  type = as.character(steer$type[steer$country \%in\% country])
+)
 }
 \arguments{
 \item{region}{Region of the world to search PPI table from. Default is

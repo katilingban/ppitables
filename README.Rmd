@@ -295,6 +295,12 @@ Following are the available PPI country tables from the `ppitables` package. Thi
 | 47. | `ppiRWA2016`    | PPI for Rwanda based on Rwanda’s 2010/11 Integrated | 2016            |
 |     |                 | Household Living Standards Survey                   |                 |
 +-----+-----------------+-----------------------------------------------------+-----------------+
+|     | `ppiRWA2019`    | PPI for Rwanda based on Rwanda's 2016/2017          | 2019            |
+|     |                 | Integrated Household Living Conditions Survey       |                 |
+|     |                 | (EICV5) produced by the National Institute of       |                 |
+|     |                 | Statistics of Rwanda (NISR) and the Ministry of     |                 |
+|     |                 | Finance and Planning                                |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
 | 48. | `ppiSEN2009`    | PPI for Senegal based on Senegal's 2005/6 Enquête de| 2009            |
 |     |                 | Suivi de la Pauvreté au Sénégal (ESPS)              |                 |
 +-----+-----------------+-----------------------------------------------------+-----------------+

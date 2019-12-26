@@ -4,9 +4,11 @@
 \alias{find_table}
 \title{Search for PPI table by specifying region, country and/or calculation type.}
 \usage{
-find_table(region = levels(steer$region),
+find_table(
+  region = levels(steer$region),
   country = as.character(steer$country[steer$region \%in\% region]),
-  type = as.character(steer$type[steer$country \%in\% country]))
+  type = as.character(steer$type[steer$country \%in\% country])
+)
 }
 \arguments{
 \item{region}{Region of the world to search PPI table from. Default is
