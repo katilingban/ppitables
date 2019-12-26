@@ -10,13 +10,13 @@
 |collate  |en_GB.UTF-8                  |
 |ctype    |en_GB.UTF-8                  |
 |tz       |Europe/London                |
-|date     |2019-09-28                   |
+|date     |2019-12-26                   |
 
 # Dependencies
 
-|package   |old   |new   |Δ  |
-|:---------|:-----|:-----|:--|
-|ppitables |0.5.0 |0.5.1 |*  |
+|package   |old   |new        |Δ  |
+|:---------|:-----|:----------|:--|
+|ppitables |0.5.1 |0.5.2.9000 |*  |
 
 # Revdeps
 
