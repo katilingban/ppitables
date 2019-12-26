@@ -619,6 +619,12 @@ PPI [site](https://www.povertyindex.org).
 <td style="text-align: center;">2016</td>
 </tr>
 <tr class="even">
+<td style="text-align: right;"></td>
+<td><code>ppiRWA2019</code></td>
+<td>PPI for Rwanda based on Rwanda’s 2016/2017 Integrated Household Living Conditions Survey (EICV5) produced by the National Institute of Statistics of Rwanda (NISR) and the Ministry of Finance and Planning</td>
+<td style="text-align: center;">2019</td>
+</tr>
+<tr class="odd">
 <td style="text-align: right;"><ol start="48" type="1">
 <li></li>
 </ol></td>
@@ -626,13 +632,13 @@ PPI [site](https://www.povertyindex.org).
 <td>PPI for Senegal based on Senegal’s 2005/6 Enquête de Suivi de la Pauvreté au Sénégal (ESPS)</td>
 <td style="text-align: center;">2009</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"></td>
 <td><code>ppiSEN2018</code></td>
 <td>PPI for Senegal based on Senegal’s 2011 Enquête de Suivi de la Pauvreté au Sénégal (ESPS)</td>
 <td style="text-align: center;">2018</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"><ol start="49" type="1">
 <li></li>
 </ol></td>
@@ -640,7 +646,7 @@ PPI [site](https://www.povertyindex.org).
 <td>PPI for Sierra Leone based on Sierra Leone’s 2003/4 HIS</td>
 <td style="text-align: center;">2011</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"><ol start="50" type="1">
 <li></li>
 </ol></td>
@@ -648,7 +654,7 @@ PPI [site](https://www.povertyindex.org).
 <td>PPI for El Salvador based on the 2008 EHPM</td>
 <td style="text-align: center;">2010</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"><ol start="51" type="1">
 <li></li>
 </ol></td>
@@ -656,7 +662,7 @@ PPI [site](https://www.povertyindex.org).
 <td>PPI for Syria based on Syria’s 2006/7 Household Income and Expenditure Survey</td>
 <td style="text-align: center;">2010</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"><ol start="52" type="1">
 <li></li>
 </ol></td>
@@ -664,7 +670,7 @@ PPI [site](https://www.povertyindex.org).
 <td>PPI for Tajikistan based on 2007 data</td>
 <td style="text-align: center;">2015</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"><ol start="53" type="1">
 <li></li>
 </ol></td>
@@ -672,7 +678,7 @@ PPI [site](https://www.povertyindex.org).
 <td>PPI for Timor Leste based on Timor-Leste’s 2007 Survey of Living Standards</td>
 <td style="text-align: center;">2013</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"><ol start="54" type="1">
 <li></li>
 </ol></td>
@@ -680,7 +686,7 @@ PPI [site](https://www.povertyindex.org).
 <td>PPI for Tanzania based on Tanzania’s 2011/12 Household Budget Survey</td>
 <td style="text-align: center;">2016</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"><ol start="55" type="1">
 <li></li>
 </ol></td>
@@ -688,7 +694,7 @@ PPI [site](https://www.povertyindex.org).
 <td>PPI for Togo based on Togo’s 2015 Questionnaire des Indicateurs de Base du Bien-être (QUIBB)</td>
 <td style="text-align: center;">2018</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"><ol start="56" type="1">
 <li></li>
 </ol></td>
@@ -696,7 +702,7 @@ PPI [site](https://www.povertyindex.org).
 <td>PPI for Uganda based on Uganda’s 2012/13 National Household Survey</td>
 <td style="text-align: center;">2015</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"><ol start="57" type="1">
 <li></li>
 </ol></td>
@@ -704,7 +710,7 @@ PPI [site](https://www.povertyindex.org).
 <td>PPI for Vietnam based on the 2006 VHLSS</td>
 <td style="text-align: center;">2009</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"><ol start="58" type="1">
 <li></li>
 </ol></td>
@@ -712,7 +718,7 @@ PPI [site](https://www.povertyindex.org).
 <td>PPI for Yemen based on 2005/06 HBS</td>
 <td style="text-align: center;">2009</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"><ol start="59" type="1">
 <li></li>
 </ol></td>
@@ -720,7 +726,7 @@ PPI [site](https://www.povertyindex.org).
 <td>PPI for South Africa based on the 2005/6 IES</td>
 <td style="text-align: center;">2009</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"><ol start="60" type="1">
 <li></li>
 </ol></td>
@@ -728,19 +734,19 @@ PPI [site](https://www.povertyindex.org).
 <td>PPI for Zambia based on Zambia’s 2010 Living Conditions Monitoring Survey (LCMS) using Göttingen poverty definitions</td>
 <td style="text-align: center;">2013</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"></td>
 <td><code>ppiZMB2013_cso</code></td>
 <td>PPI for Zambia based on Zambia’s 2010 Living Conditions Monitoring Survey (LCMS) using CSO poverty definitions</td>
 <td style="text-align: center;">2013</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"></td>
 <td><code>ppiZMB2017</code></td>
 <td>PPI for Zambia based on Zambia’s 2015 Living Conditions Monitoring Survey (LCMS) using legacy poverty definitions</td>
 <td style="text-align: center;">2017</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"></td>
 <td><code>ppiZMB2017_a</code></td>
 <td>PPI for Zambia based on Zambia’s 2015 Living Conditions Monitoring Survey (LCMS) using new PPI calculation approach</td>
@@ -756,18 +762,18 @@ command in R:
 ``` r
 find_table()
 #> # A tibble: 88 x 7
-#>    region   country  survey_year release_year description    type  filename
-#>    <fct>    <fct>          <int>        <int> <fct>          <fct> <fct>   
-#>  1 Asia     Afghani…        2007         2012 PPI for Afgha… sps   ppiAFG2…
-#>  2 Africa   Angola          2008         2015 PPI for Angol… sps   ppiAGO2…
-#>  3 Asia     Banglad…        2010         2013 PPI for Benin… sps   ppiBEN2…
-#>  4 Africa   Benin           2010         2012 PPI for Bangl… sps   ppiBGD2…
-#>  5 Latin A… Bolivia         2013         2015 PPI for Boliv… sps   ppiBOL2…
-#>  6 Latin A… Brazil          2008         2010 PPI for Brazi… sps   ppiBRA2…
-#>  7 Africa   Burkina…        2003         2011 PPI for Burki… sps   ppiBFA2…
-#>  8 Africa   Burkina…        2014         2017 PPI for Burki… sps   ppiBFA2…
-#>  9 Africa   Burkina…        2014         2017 PPI for Burki… ipa   ppiBFA2…
-#> 10 Asia     Cambodia        2011         2015 PPI for Cambo… sps   ppiKHM2…
+#>    region    country  survey_year release_year description        type  filename
+#>    <fct>     <fct>          <int>        <int> <fct>              <fct> <fct>   
+#>  1 Asia      Afghani…        2007         2012 PPI for Afghanist… sps   ppiAFG2…
+#>  2 Africa    Angola          2008         2015 PPI for Angola ba… sps   ppiAGO2…
+#>  3 Asia      Banglad…        2010         2013 PPI for Benin bas… sps   ppiBEN2…
+#>  4 Africa    Benin           2010         2012 PPI for Banglades… sps   ppiBGD2…
+#>  5 Latin Am… Bolivia         2013         2015 PPI for Bolivia u… sps   ppiBOL2…
+#>  6 Latin Am… Brazil          2008         2010 PPI for Brazil ba… sps   ppiBRA2…
+#>  7 Africa    Burkina…        2003         2011 PPI for Burkina F… sps   ppiBFA2…
+#>  8 Africa    Burkina…        2014         2017 PPI for Burkina F… sps   ppiBFA2…
+#>  9 Africa    Burkina…        2014         2017 PPI for Burkina F… ipa   ppiBFA2…
+#> 10 Asia      Cambodia        2011         2015 PPI for Cambodia … sps   ppiKHM2…
 #> # … with 78 more rows
 ```
 
@@ -777,18 +783,18 @@ command in R:
 ``` r
 find_table(region = "Africa")
 #> # A tibble: 37 x 7
-#>    region country  survey_year release_year description      type  filename
-#>    <fct>  <fct>          <int>        <int> <fct>            <fct> <fct>   
-#>  1 Africa Angola          2008         2015 PPI for Angola … sps   ppiAGO2…
-#>  2 Africa Benin           2010         2012 PPI for Banglad… sps   ppiBGD2…
-#>  3 Africa Burkina…        2003         2011 PPI for Burkina… sps   ppiBFA2…
-#>  4 Africa Burkina…        2014         2017 PPI for Burkina… sps   ppiBFA2…
-#>  5 Africa Burkina…        2014         2017 PPI for Burkina… ipa   ppiBFA2…
-#>  6 Africa Cameroon        2007         2013 PPI for Cameroo… sps   ppiCMR2…
-#>  7 Africa Cote d'…        2008         2013 PPI for Ivory C… sps   ppiCIV2…
-#>  8 Africa Cote d'…        2015         2018 PPI for Ivory C… ipa   ppiCIV2…
-#>  9 Africa Ethiopia        2010         2016 PPI for Ethiopi… sps   ppiETH2…
-#> 10 Africa Ghana           2012         2015 PPI for Ghana b… sps   ppiGHA2…
+#>    region country  survey_year release_year description           type  filename
+#>    <fct>  <fct>          <int>        <int> <fct>                 <fct> <fct>   
+#>  1 Africa Angola          2008         2015 PPI for Angola based… sps   ppiAGO2…
+#>  2 Africa Benin           2010         2012 PPI for Bangladesh u… sps   ppiBGD2…
+#>  3 Africa Burkina…        2003         2011 PPI for Burkina Faso… sps   ppiBFA2…
+#>  4 Africa Burkina…        2014         2017 PPI for Burkina Faso… sps   ppiBFA2…
+#>  5 Africa Burkina…        2014         2017 PPI for Burkina Faso… ipa   ppiBFA2…
+#>  6 Africa Cameroon        2007         2013 PPI for Cameroon usi… sps   ppiCMR2…
+#>  7 Africa Cote d'…        2008         2013 PPI for Ivory Coast … sps   ppiCIV2…
+#>  8 Africa Cote d'…        2015         2018 PPI for Ivory Coast … ipa   ppiCIV2…
+#>  9 Africa Ethiopia        2010         2016 PPI for Ethiopia bas… sps   ppiETH2…
+#> 10 Africa Ghana           2012         2015 PPI for Ghana based … sps   ppiGHA2…
 #> # … with 27 more rows
 ```
 
@@ -798,12 +804,12 @@ command in R:
 ``` r
 find_table(country = "Zambia")
 #> # A tibble: 4 x 7
-#>   region country survey_year release_year description        type  filename
-#>   <fct>  <fct>         <int>        <int> <fct>              <fct> <fct>   
-#> 1 Africa Zambia         2010         2013 PPI for Zambia ba… sps   ppiZMB2…
-#> 2 Africa Zambia         2010         2013 PPI for Zambia ba… sps   ppiZMB2…
-#> 3 Africa Zambia         2015         2017 PPI for Zambia ba… sps   ppiZMB2…
-#> 4 Africa Zambia         2015         2017 PPI for Zambia ba… ipa   ppiZMB2…
+#>   region country survey_year release_year description             type  filename
+#>   <fct>  <fct>         <int>        <int> <fct>                   <fct> <fct>   
+#> 1 Africa Zambia         2010         2013 PPI for Zambia based o… sps   ppiZMB2…
+#> 2 Africa Zambia         2010         2013 PPI for Zambia based o… sps   ppiZMB2…
+#> 3 Africa Zambia         2015         2017 PPI for Zambia based o… sps   ppiZMB2…
+#> 4 Africa Zambia         2015         2017 PPI for Zambia based o… ipa   ppiZMB2…
 ```
 
 To extract the actual PPI tables, the `get_table()` function can be
