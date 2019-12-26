@@ -70,3 +70,21 @@ ppiMMR2019 <- mmr
 
 usethis::use_data(ppiMMR2019, overwrite = TRUE)
 
+################################ Rwanda 2019 ###################################
+
+rwa <- read_xlsx(path = "data-raw/sources/rwanda2019.xlsx",
+                 sheet = "Look-up Tables",
+                 range = "A10:T111")
+
+rwa <- data.frame(rwa)
+
+rwa[ , 2:ncol(rwa)] <- rwa[ , 2:ncol(rwa)] * 100
+
+names(rwa) <- c("score", "nl100", "extreme", "nl150", "nl200",
+                "ppp100", "ppp190", "ppp320", "ppp550", "ppp800", "ppp1100",
+                "ppp1500", "ppp2170", "ppp125", "ppp250", "ppp500",
+                "percentile20", "percentile40", "percentile60", "percentile80")
+
+ppiRWA2019 <- rwa
+
+usethis::use_data(ppiRWA2019, overwrite = TRUE)
