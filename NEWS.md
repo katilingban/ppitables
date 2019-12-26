@@ -1,3 +1,16 @@
+# ppitable 0.5.2
+
+This is the seventh CRAN release of `ppitables`. In this release, I added:
+
+* new PPI tables for Rwands using the new PPI calculation approach developed
+by the International Poverty Alliance (IPA) based on data from Rwanda's 2016/2017
+Integrated Household Living Conditions Survey (EICV5) produced by the National
+Institute of Statistics Rwanda (NISR) and the Ministry of Finance and Economic
+Planning
+
+* updated `steer` data that serves as an index to the tables to include the new
+Rwanda PPI tables
+
 # ppitables 0.5.1
 
 This is the sixth CRAN release of `ppitables`. In this release, I added:
