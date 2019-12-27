@@ -11,10 +11,10 @@ Planning
 Rwanda PPI tables
 
 ## Test environments
-* local OS X install, R 3.6.1
+* local OS X install, R 3.6.2
 * ubuntu 16.04.6 (on travis-ci), release, devel and oldrelease
-* local ubuntu 16.04 install, R 3.6.1
-* win-builder (devel and release)
+* local ubuntu 16.04 install, R 3.6.2
+* win-builder (devel, release and old release)
 * windows (on appveyor), x64 release and devel, i386 release and devel
 
 ## R CMD check results
