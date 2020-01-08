@@ -7,6 +7,8 @@ Integrated Household Living Conditions Survey (EICV5) produced by the National
 Institute of Statistics Rwanda (NISR) and the Ministry of Finance and Economic
 Planning
 
+* corrected URL source for Rwanda PPI tables
+
 * updated `steer` data that serves as an index to the tables to include the new
 Rwanda PPI tables
 
