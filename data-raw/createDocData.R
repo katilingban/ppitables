@@ -10,7 +10,7 @@ create_doc <- function(country,
                        suffix = NULL,
                        data,
                        varList,
-                       source = "www.povertyindex.org") {
+                       source = "https://www.povertyindex.org") {
 
   sink("R/data.R", append = TRUE, type = "output")
 
