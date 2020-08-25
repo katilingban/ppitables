@@ -7,10 +7,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Lookup Tables to Generate Poverty Likelihoods and Rates using the Poverty 
     Probability Index (PPI) • ppitables</title>
-<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script><!-- Bootstrap --><link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/sandstone/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha256-nAmazAk6vS34Xqo0BSrTb+abbtFlgsFK7NKSi6o7Y78=" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous">
-<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
+<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/sandstone/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="bootstrap-toc.css">
+<script src="bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
+<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
 <script src="pkgdown.js"></script><meta property="og:title" content="Lookup Tables to Generate Poverty Likelihoods and Rates using the Poverty 
     Probability Index (PPI)">
 <meta property="og:description" content="The Poverty Probability Index (PPI) is a poverty measurement tool 
@@ -24,7 +25,6 @@
     tables have been extracted from documentation of the PPI found at 
     &lt;https://www.povertyindex.org&gt; and managed by Innovations for Poverty Action 
     &lt;https://www.poverty-action.org&gt;.">
-<meta name="twitter:card" content="summary">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -36,7 +36,7 @@
   gtag('config', 'UA-102485058-9');
 </script>
 </head>
-<body>
+<body data-spy="scroll" data-target="#toc">
     <div class="container template-home">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -49,7 +49,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">ppitables</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.5.2</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.5.3</span>
       </span>
     </div>
 
@@ -70,7 +70,7 @@
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/validmeasures/ppitables">
+  <a href="https://github.com/katilingban/ppitables/">
     <span class="fab fa fab fa-github fa-lg"></span>
      
   </a>
@@ -87,9 +87,9 @@
 
       </header><div class="row">
   <div class="contents col-md-9">
-<div id="ppitables-lookup-tables-to-generate-poverty-likelihoods-and-rates-using-the-poverty-probability-index-ppi" class="section level1">
+<div id="ppitables-lookup-tables-to-generate-poverty-likelihoods-and-rates-using-the-poverty-probability-index-ppi-" class="section level1">
 <div class="page-header"><h1 class="hasAnchor">
-<a href="#ppitables-lookup-tables-to-generate-poverty-likelihoods-and-rates-using-the-poverty-probability-index-ppi" class="anchor"></a>ppitables: Lookup tables to generate poverty likelihoods and rates using the Poverty Probability Index (PPI) <img src="reference/figures/ppitables.png" width="200" align="right">
+<a href="#ppitables-lookup-tables-to-generate-poverty-likelihoods-and-rates-using-the-poverty-probability-index-ppi-" class="anchor"></a>ppitables: Lookup tables to generate poverty likelihoods and rates using the Poverty Probability Index (PPI) <img src="reference/figures/ppitables.png" width="200" align="right">
 </h1></div>
 
 <p>Lookup tables for estimating the likelihood of poverty using the <code>Poverty Probability Index</code> (previously called <code>Progress out of Poverty Index</code>) or <code>PPI</code> from country-specific indicators collected from cross-sectional surveys. This lookup table is extracted from documentation of the <code>PPI</code> found at <a href="https://www.povertyindex.org" class="uri">https://www.povertyindex.org</a>.</p>
@@ -97,18 +97,18 @@
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
 <p>You can install <code>ppitables</code> from CRAN with:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"ppitables"</span>)</a>
-<a class="sourceLine" id="cb1-2" data-line-number="2"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(ppitables)</a></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="r"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"ppitables"</span>)
+<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">ppitables</span>)</pre></div>
 <p>You can install the current development version of <code>ppitables</code> from GitHub with:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="cf">if</span>(<span class="op">!</span><span class="kw"><a href="https://rdrr.io/r/base/library.html">require</a></span>(<span class="st">"remotes"</span>)) <span class="kw"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"remotes"</span>)</a>
-<a class="sourceLine" id="cb2-2" data-line-number="2">remotes<span class="op">::</span><span class="kw"><a href="https://rdrr.io/pkg/remotes/man/install_github.html">install_github</a></span>(<span class="st">"validmeasures/ppitables"</span>)</a>
-<a class="sourceLine" id="cb2-3" data-line-number="3"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(ppitables)</a></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="r"><span class="kw">if</span>(!<span class="fu"><a href="https://rdrr.io/r/base/library.html">require</a></span>(<span class="st">"remotes"</span>)) <span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"remotes"</span>)
+<span class="kw pkg">remotes</span><span class="kw ns">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span>(<span class="st">"validmeasures/ppitables"</span>)
+<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">ppitables</span>)</pre></div>
 </div>
 <div id="usage" class="section level2">
 <h2 class="hasAnchor">
 <a href="#usage" class="anchor"></a>Usage</h2>
-<p>The <code>ppitables</code> package contains PPI lookup tables for the 61 countries[1] where PPI can currently be calculated. To be able to use the lookup tables in <code>ppitables</code> appropriately, you need to be aware of the naming syntax used for the tables for each country. The name for each table will always have three fixed or constant components as follows:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1">ppiXXXYYYY</a></code></pre></div>
+<p>The <code>ppitables</code> package contains PPI lookup tables for the 61 countries<br><span class="math display">1</span><br> where PPI can currently be calculated. To be able to use the lookup tables in <code>ppitables</code> appropriately, you need to be aware of the naming syntax used for the tables for each country. The name for each table will always have three fixed or constant components as follows:</p>
+<div class="sourceCode" id="cb3"><pre class="r"><span class="no">ppiXXXYYYY</span></pre></div>
 <p>The name of any of the PPI tables contains:</p>
 <ol>
 <li>
@@ -132,682 +132,1492 @@
 <col style="width: 18%">
 </colgroup>
 <thead><tr class="header">
-<th style="text-align: right;"></th>
-<th><strong>PPI Country Table Name</strong></th>
-<th><strong>Description</strong></th>
-<th style="text-align: center;"><strong>PPI Release Date</strong></th>
+<th style="text-align: right;">
+</th>
+<th>
+<strong>PPI Country Table Name</strong>
+</th>
+<th>
+<strong>Description</strong>
+</th>
+<th style="text-align: center;">
+<strong>PPI Release Date</strong>
+</th>
 </tr></thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: right;"><ol type="1"><li>
-</li></ol></td>
-<td><code>ppiAFG2012</code></td>
-<td>PPI for Afghanistan based on 2007/8 National Risk and Vulnerability Survey (NRVA)</td>
-<td style="text-align: center;">2012</td>
+<td style="text-align: right;">
+<ol type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiAFG2012</code>
+</td>
+<td>
+PPI for Afghanistan based on 2007/8 National Risk and Vulnerability Survey (NRVA)
+</td>
+<td style="text-align: center;">
+2012
+</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;"><ol start="2" type="1"><li>
-</li></ol></td>
-<td><code>ppiAGO2015</code></td>
-<td>PPI for Angola based on the 2008/2009 Household Living Standards Survey</td>
-<td style="text-align: center;">2015</td>
+<td style="text-align: right;">
+<ol start="2" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiAGO2015</code>
+</td>
+<td>
+PPI for Angola based on the 2008/2009 Household Living Standards Survey
+</td>
+<td style="text-align: center;">
+2015
+</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;"><ol start="3" type="1"><li>
-</li></ol></td>
-<td><code>ppiBEN2012</code></td>
-<td>PPI for Benin based on 2010 data</td>
-<td style="text-align: center;">2012</td>
+<td style="text-align: right;">
+<ol start="3" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiBEN2012</code>
+</td>
+<td>
+PPI for Benin based on 2010 data
+</td>
+<td style="text-align: center;">
+2012
+</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;"><ol start="4" type="1"><li>
-</li></ol></td>
-<td><code>ppiBFA2011</code></td>
-<td>PPI for Burkina Faso using Burkina Faso’s 2003 Household Living Standards Survey</td>
-<td style="text-align: center;">2011</td>
+<td style="text-align: right;">
+<ol start="4" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiBFA2011</code>
+</td>
+<td>
+PPI for Burkina Faso using Burkina Faso’s 2003 Household Living Standards Survey
+</td>
+<td style="text-align: center;">
+2011
+</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;"></td>
-<td><code>ppiBFA2014</code></td>
-<td>PPI for Burkina Faso using Burkina Faso’s 2014 Permanent Multi-Sector Survey</td>
-<td style="text-align: center;">2017</td>
+<td style="text-align: right;">
+</td>
+<td>
+<code>ppiBFA2014</code>
+</td>
+<td>
+PPI for Burkina Faso using Burkina Faso’s 2014 Permanent Multi-Sector Survey
+</td>
+<td style="text-align: center;">
+2017
+</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;"></td>
-<td><code>ppiBFA2017</code></td>
-<td>PPI for Burkina Faso using Burkina Faso’s 2014 Enquête Multisectorielle Continue (EMC) based on IPA’s new approach to PPI calculation</td>
-<td style="text-align: center;">2017</td>
+<td style="text-align: right;">
+</td>
+<td>
+<code>ppiBFA2017</code>
+</td>
+<td>
+PPI for Burkina Faso using Burkina Faso’s 2014 Enquête Multisectorielle Continue (EMC) based on IPA’s new approach to PPI calculation
+</td>
+<td style="text-align: center;">
+2017
+</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;"><ol start="5" type="1"><li>
-</li></ol></td>
-<td><code>ppiBGD2013</code></td>
-<td>PPI for Bangladesh using Bangaldesh’s 2010 HIES Survey</td>
-<td style="text-align: center;">2013</td>
+<td style="text-align: right;">
+<ol start="5" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiBGD2013</code>
+</td>
+<td>
+PPI for Bangladesh using Bangaldesh’s 2010 HIES Survey
+</td>
+<td style="text-align: center;">
+2013
+</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;"><ol start="6" type="1"><li>
-</li></ol></td>
-<td><code>ppiBOL2015</code></td>
-<td>PPI for Bolivia using Bolivia’s 2013 Household Survey</td>
-<td style="text-align: center;">2015</td>
+<td style="text-align: right;">
+<ol start="6" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiBOL2015</code>
+</td>
+<td>
+PPI for Bolivia using Bolivia’s 2013 Household Survey
+</td>
+<td style="text-align: center;">
+2015
+</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;"><ol start="7" type="1"><li>
-</li></ol></td>
-<td><code>ppiBRA2010</code></td>
-<td>PPI for Brazil based on the 2008 PNAD</td>
-<td style="text-align: center;">2010</td>
+<td style="text-align: right;">
+<ol start="7" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiBRA2010</code>
+</td>
+<td>
+PPI for Brazil based on the 2008 PNAD
+</td>
+<td style="text-align: center;">
+2010
+</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;"><ol start="8" type="1"><li>
-</li></ol></td>
-<td><code>ppiCIV2013</code></td>
-<td>PPI for Ivory Coast using the Ivory Coast’s 2008 Household Living Standards Survey</td>
-<td style="text-align: center;">2013</td>
+<td style="text-align: right;">
+<ol start="8" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiCIV2013</code>
+</td>
+<td>
+PPI for Ivory Coast using the Ivory Coast’s 2008 Household Living Standards Survey
+</td>
+<td style="text-align: center;">
+2013
+</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;"></td>
-<td><code>ppiCIV2018</code></td>
-<td>PPI for Ivory Coast using the Ivory Coast’s 2015 Enquête sur le Niveau de Vie des Ménages</td>
-<td style="text-align: center;">2018</td>
+<td style="text-align: right;">
+</td>
+<td>
+<code>ppiCIV2018</code>
+</td>
+<td>
+PPI for Ivory Coast using the Ivory Coast’s 2015 Enquête sur le Niveau de Vie des Ménages
+</td>
+<td style="text-align: center;">
+2018
+</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;"><ol start="9" type="1"><li>
-</li></ol></td>
-<td><code>ppiCMR2013</code></td>
-<td>PPI for Cameroon using Cameroon’s 2007 Household Survey</td>
-<td style="text-align: center;">2013</td>
+<td style="text-align: right;">
+<ol start="9" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiCMR2013</code>
+</td>
+<td>
+PPI for Cameroon using Cameroon’s 2007 Household Survey
+</td>
+<td style="text-align: center;">
+2013
+</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;"><ol start="10" type="1"><li>
-</li></ol></td>
-<td><code>ppiCOL2012</code></td>
-<td>PPI for Colombia based on Colombia’s 2009 Encuesta Integrada de Hogares. This table uses the old poverty definitions.</td>
-<td style="text-align: center;">2012</td>
+<td style="text-align: right;">
+<ol start="10" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiCOL2012</code>
+</td>
+<td>
+PPI for Colombia based on Colombia’s 2009 Encuesta Integrada de Hogares. This table uses the old poverty definitions.
+</td>
+<td style="text-align: center;">
+2012
+</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;"></td>
-<td><code>ppiCOL2012_a</code></td>
-<td>PPI for Colombia based on Colombia’s 2009 Encuesta Integrada de Hogares. This table uses the new poverty definitions for Colombia.</td>
-<td style="text-align: center;">2012</td>
+<td style="text-align: right;">
+</td>
+<td>
+<code>ppiCOL2012_a</code>
+</td>
+<td>
+PPI for Colombia based on Colombia’s 2009 Encuesta Integrada de Hogares. This table uses the new poverty definitions for Colombia.
+</td>
+<td style="text-align: center;">
+2012
+</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;"></td>
-<td><code>ppiCOL2018</code></td>
-<td>PPI for Colombia based on Colombia’s 2016 Gran Encuesta Integrada de Hogares (GEIH)</td>
-<td style="text-align: center;">2018</td>
+<td style="text-align: right;">
+</td>
+<td>
+<code>ppiCOL2018</code>
+</td>
+<td>
+PPI for Colombia based on Colombia’s 2016 Gran Encuesta Integrada de Hogares (GEIH)
+</td>
+<td style="text-align: center;">
+2018
+</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;"><ol start="11" type="1"><li>
-</li></ol></td>
-<td><code>ppiDOM2010</code></td>
-<td>PPI for Dominican Republic based on the 2007 Encuesta Nacional de Ingresos y Gastos de los Hogares (ENIGH)</td>
-<td style="text-align: center;">2010</td>
+<td style="text-align: right;">
+<ol start="11" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiDOM2010</code>
+</td>
+<td>
+PPI for Dominican Republic based on the 2007 Encuesta Nacional de Ingresos y Gastos de los Hogares (ENIGH)
+</td>
+<td style="text-align: center;">
+2010
+</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;"></td>
-<td><code>ppiDOM2018</code></td>
-<td>PPI for Dominican Republic based on the 2016 Encuesta Nacional de Fuerza de Trabajo (ENFT)</td>
-<td style="text-align: center;">2018</td>
+<td style="text-align: right;">
+</td>
+<td>
+<code>ppiDOM2018</code>
+</td>
+<td>
+PPI for Dominican Republic based on the 2016 Encuesta Nacional de Fuerza de Trabajo (ENFT)
+</td>
+<td style="text-align: center;">
+2018
+</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;"><ol start="12" type="1"><li>
-</li></ol></td>
-<td><code>ppiECU2015</code></td>
-<td>PPI for Ecuador based on the 2013 Living Standards Survey</td>
-<td style="text-align: center;">2015</td>
+<td style="text-align: right;">
+<ol start="12" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiECU2015</code>
+</td>
+<td>
+PPI for Ecuador based on the 2013 Living Standards Survey
+</td>
+<td style="text-align: center;">
+2015
+</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;"><ol start="13" type="1"><li>
-</li></ol></td>
-<td><code>ppiEGY2010</code></td>
-<td>PPI for Egypt based on the 2004/5 HIECS</td>
-<td style="text-align: center;">2010</td>
+<td style="text-align: right;">
+<ol start="13" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiEGY2010</code>
+</td>
+<td>
+PPI for Egypt based on the 2004/5 HIECS
+</td>
+<td style="text-align: center;">
+2010
+</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;"><ol start="14" type="1"><li>
-</li></ol></td>
-<td><code>ppiETH2016</code></td>
-<td>PPI for Ethiopia based on Ethiopia’s 2010/11 Household Consumption and Expenditure Survey</td>
-<td style="text-align: center;">2016</td>
+<td style="text-align: right;">
+<ol start="14" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiETH2016</code>
+</td>
+<td>
+PPI for Ethiopia based on Ethiopia’s 2010/11 Household Consumption and Expenditure Survey
+</td>
+<td style="text-align: center;">
+2016
+</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;"><ol start="15" type="1"><li>
-</li></ol></td>
-<td><code>ppiFJI2014</code></td>
-<td>PPI for Fiji based on Fiji’s 2008/9 Household Income and Expenditure Survey</td>
-<td style="text-align: center;">2014</td>
+<td style="text-align: right;">
+<ol start="15" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiFJI2014</code>
+</td>
+<td>
+PPI for Fiji based on Fiji’s 2008/9 Household Income and Expenditure Survey
+</td>
+<td style="text-align: center;">
+2014
+</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;"><ol start="16" type="1"><li>
-</li></ol></td>
-<td><code>ppiGHA2015</code></td>
-<td>PPI for Ghana based on Ghana’s 2012/13 Living Standards Survey using legacy poverty lines</td>
-<td style="text-align: center;">2015</td>
+<td style="text-align: right;">
+<ol start="16" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiGHA2015</code>
+</td>
+<td>
+PPI for Ghana based on Ghana’s 2012/13 Living Standards Survey using legacy poverty lines
+</td>
+<td style="text-align: center;">
+2015
+</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;"></td>
-<td><code>ppiGHA2015_a</code></td>
-<td>PPI for Ghana based on Ghana’s 2012/13 Living Standards Survey using the new-definition poverty lines deflated with Ghana’s CPI</td>
-<td style="text-align: center;">2015</td>
+<td style="text-align: right;">
+</td>
+<td>
+<code>ppiGHA2015_a</code>
+</td>
+<td>
+PPI for Ghana based on Ghana’s 2012/13 Living Standards Survey using the new-definition poverty lines deflated with Ghana’s CPI
+</td>
+<td style="text-align: center;">
+2015
+</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;"></td>
-<td><code>ppiGHA2015_b</code></td>
-<td>PPI for Ghana based on Ghana’s 2012/13 Living Standards Survey using the new-definition poverty lines deflated with the change in 100% of national poverty line</td>
-<td style="text-align: center;">2015</td>
+<td style="text-align: right;">
+</td>
+<td>
+<code>ppiGHA2015_b</code>
+</td>
+<td>
+PPI for Ghana based on Ghana’s 2012/13 Living Standards Survey using the new-definition poverty lines deflated with the change in 100% of national poverty line
+</td>
+<td style="text-align: center;">
+2015
+</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;"></td>
-<td><code>ppiGHA2019</code></td>
-<td>PPI for Ghana based on Ghana’s 2016/2017 Living Standards Survey</td>
-<td style="text-align: center;">2019</td>
+<td style="text-align: right;">
+</td>
+<td>
+<code>ppiGHA2019</code>
+</td>
+<td>
+PPI for Ghana based on Ghana’s 2016/2017 Living Standards Survey
+</td>
+<td style="text-align: center;">
+2019
+</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;"><ol start="17" type="1"><li>
-</li></ol></td>
-<td><code>ppiGTM2016</code></td>
-<td>PPI for Guatemala based on Guatemala’s 2014 Household Living Standards Survey</td>
-<td style="text-align: center;">2016</td>
+<td style="text-align: right;">
+<ol start="17" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiGTM2016</code>
+</td>
+<td>
+PPI for Guatemala based on Guatemala’s 2014 Household Living Standards Survey
+</td>
+<td style="text-align: center;">
+2016
+</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;"><ol start="18" type="1"><li>
-</li></ol></td>
-<td><code>ppiHND2010</code></td>
-<td>PPI for Honduras based on the 2007 EPHPM</td>
-<td style="text-align: center;">2010</td>
+<td style="text-align: right;">
+<ol start="18" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiHND2010</code>
+</td>
+<td>
+PPI for Honduras based on the 2007 EPHPM
+</td>
+<td style="text-align: center;">
+2010
+</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;"><ol start="19" type="1"><li>
-</li></ol></td>
-<td><code>ppiHTI2016</code></td>
-<td>PPI for Haiti based on Haiti’s 2012 Post-Earthquake Living Standards Survey</td>
-<td style="text-align: center;">2016</td>
+<td style="text-align: right;">
+<ol start="19" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiHTI2016</code>
+</td>
+<td>
+PPI for Haiti based on Haiti’s 2012 Post-Earthquake Living Standards Survey
+</td>
+<td style="text-align: center;">
+2016
+</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;"><ol start="20" type="1"><li>
-</li></ol></td>
-<td><code>ppiIDN2012</code></td>
-<td>PPI for Indonesia based on data from 2010 using legacy poverty lines</td>
-<td style="text-align: center;">2012</td>
+<td style="text-align: right;">
+<ol start="20" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiIDN2012</code>
+</td>
+<td>
+PPI for Indonesia based on data from 2010 using legacy poverty lines
+</td>
+<td style="text-align: center;">
+2012
+</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;"></td>
-<td><code>ppiIDN2012_a</code></td>
-<td>PPI for Indonesia based on data from 2010 using new definition poverty lines</td>
-<td style="text-align: center;">2012</td>
+<td style="text-align: right;">
+</td>
+<td>
+<code>ppiIDN2012_a</code>
+</td>
+<td>
+PPI for Indonesia based on data from 2010 using new definition poverty lines
+</td>
+<td style="text-align: center;">
+2012
+</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;"><ol start="21" type="1"><li>
-</li></ol></td>
-<td><code>ppiIND2016_r59</code></td>
-<td>PPI for India using India’s 2011/12 Socio-Economic using the R59 legacy poverty lines using MRP consumption</td>
-<td style="text-align: center;">2016</td>
+<td style="text-align: right;">
+<ol start="21" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiIND2016_r59</code>
+</td>
+<td>
+PPI for India using India’s 2011/12 Socio-Economic using the R59 legacy poverty lines using MRP consumption
+</td>
+<td style="text-align: center;">
+2016
+</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;"></td>
-<td><code>ppiIND2016_r62</code></td>
-<td>PPI for India using India’s 2011/12 Socio-Economic using the R59 legacy poverty lines using MRP consumption</td>
-<td style="text-align: center;">2016</td>
+<td style="text-align: right;">
+</td>
+<td>
+<code>ppiIND2016_r62</code>
+</td>
+<td>
+PPI for India using India’s 2011/12 Socio-Economic using the R59 legacy poverty lines using MRP consumption
+</td>
+<td style="text-align: center;">
+2016
+</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;"></td>
-<td><code>ppiIND2016_r66</code></td>
-<td>PPI for India using India’s 2011/12 Socio-Economic using the R66 legacy poverty lines using MRP consumption</td>
-<td style="text-align: center;">2016</td>
+<td style="text-align: right;">
+</td>
+<td>
+<code>ppiIND2016_r66</code>
+</td>
+<td>
+PPI for India using India’s 2011/12 Socio-Economic using the R66 legacy poverty lines using MRP consumption
+</td>
+<td style="text-align: center;">
+2016
+</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;"></td>
-<td><code>ppiIND2016_r68</code></td>
-<td>PPI for India using India’s 2011/12 Socio-Economic using the R68 new poverty lines using MRP consumption</td>
-<td style="text-align: center;">2016</td>
+<td style="text-align: right;">
+</td>
+<td>
+<code>ppiIND2016_r68</code>
+</td>
+<td>
+PPI for India using India’s 2011/12 Socio-Economic using the R68 new poverty lines using MRP consumption
+</td>
+<td style="text-align: center;">
+2016
+</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;"><ol start="22" type="1"><li>
-</li></ol></td>
-<td><code>ppiJOR2010</code></td>
-<td>PPI for Jordan using Jordan’s 2006 Household Income and Expenditure Survey</td>
-<td style="text-align: center;">2010</td>
+<td style="text-align: right;">
+<ol start="22" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiJOR2010</code>
+</td>
+<td>
+PPI for Jordan using Jordan’s 2006 Household Income and Expenditure Survey
+</td>
+<td style="text-align: center;">
+2010
+</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;"><ol start="23" type="1"><li>
-</li></ol></td>
-<td><code>ppiKEN2011</code></td>
-<td>PPI for Kenya using Kenya’s 2005/06 Integrated Household Budget Survey</td>
-<td style="text-align: center;">2011</td>
+<td style="text-align: right;">
+<ol start="23" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiKEN2011</code>
+</td>
+<td>
+PPI for Kenya using Kenya’s 2005/06 Integrated Household Budget Survey
+</td>
+<td style="text-align: center;">
+2011
+</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;"></td>
-<td><code>ppiKEN2018</code></td>
-<td>PPI for Kenya using Kenya’s 2015 Integrated Household Budget Survey</td>
-<td style="text-align: center;">2018</td>
+<td style="text-align: right;">
+</td>
+<td>
+<code>ppiKEN2018</code>
+</td>
+<td>
+PPI for Kenya using Kenya’s 2015 Integrated Household Budget Survey
+</td>
+<td style="text-align: center;">
+2018
+</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;"><ol start="24" type="1"><li>
-</li></ol></td>
-<td><code>ppiKGZ2015</code></td>
-<td>PPI for Kyrgyzstan Kyrgyz Republic’s 2012 Integrated Household Survey</td>
-<td style="text-align: center;">2015</td>
+<td style="text-align: right;">
+<ol start="24" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiKGZ2015</code>
+</td>
+<td>
+PPI for Kyrgyzstan Kyrgyz Republic’s 2012 Integrated Household Survey
+</td>
+<td style="text-align: center;">
+2015
+</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;"><ol start="25" type="1"><li>
-</li></ol></td>
-<td><code>ppiKHM2105</code></td>
-<td>PPI for Cambodia using Cambodia’s 2011 Socio-Economic Survey based using legacy poverty lines</td>
-<td style="text-align: center;">2015</td>
+<td style="text-align: right;">
+<ol start="25" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiKHM2105</code>
+</td>
+<td>
+PPI for Cambodia using Cambodia’s 2011 Socio-Economic Survey based using legacy poverty lines
+</td>
+<td style="text-align: center;">
+2015
+</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;"></td>
-<td><code>ppiKHM2015_gov</code></td>
-<td>PPI for Cambodia using Cambodia’s 2011 Socio-Economic Survey based using government definition poverty lines</td>
-<td style="text-align: center;">2015</td>
+<td style="text-align: right;">
+</td>
+<td>
+<code>ppiKHM2015_gov</code>
+</td>
+<td>
+PPI for Cambodia using Cambodia’s 2011 Socio-Economic Survey based using government definition poverty lines
+</td>
+<td style="text-align: center;">
+2015
+</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;"></td>
-<td><code>ppiKHM2015_wb</code></td>
-<td>PPI for Cambodia using Cambodia’s 2011 Socio-Economic Survey based using World Bank definition poverty lines</td>
-<td style="text-align: center;">2015</td>
+<td style="text-align: right;">
+</td>
+<td>
+<code>ppiKHM2015_wb</code>
+</td>
+<td>
+PPI for Cambodia using Cambodia’s 2011 Socio-Economic Survey based using World Bank definition poverty lines
+</td>
+<td style="text-align: center;">
+2015
+</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;"><ol start="26" type="1"><li>
-</li></ol></td>
-<td><code>ppiLKA2016</code></td>
-<td>PPI for Sri Lanka using Sri Lanka’s 2012/13 Household Income and Expenditure Survey</td>
-<td style="text-align: center;">2016</td>
+<td style="text-align: right;">
+<ol start="26" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiLKA2016</code>
+</td>
+<td>
+PPI for Sri Lanka using Sri Lanka’s 2012/13 Household Income and Expenditure Survey
+</td>
+<td style="text-align: center;">
+2016
+</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;"><ol start="27" type="1"><li>
-</li></ol></td>
-<td><code>ppiMAR2013</code></td>
-<td>PPI for Morocco based on Morocco’s 2007 Households Living Standards Survey</td>
-<td style="text-align: center;">2013</td>
+<td style="text-align: right;">
+<ol start="27" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiMAR2013</code>
+</td>
+<td>
+PPI for Morocco based on Morocco’s 2007 Households Living Standards Survey
+</td>
+<td style="text-align: center;">
+2013
+</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;"><ol start="28" type="1"><li>
-</li></ol></td>
-<td><code>ppiMDG2015</code></td>
-<td>PPI for Madagascar based on Madagascar’s 2010 Periodic Household Survey</td>
-<td style="text-align: center;">2015</td>
+<td style="text-align: right;">
+<ol start="28" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiMDG2015</code>
+</td>
+<td>
+PPI for Madagascar based on Madagascar’s 2010 Periodic Household Survey
+</td>
+<td style="text-align: center;">
+2015
+</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;"><ol start="29" type="1"><li>
-</li></ol></td>
-<td><code>ppiMEX2017</code></td>
-<td>PPI for Mexico based on Mexico’s Encuesta Nacional de Ingresos y Gastos de los Hogares de 2014 using legacy definitions of poverty</td>
-<td style="text-align: center;">2017</td>
+<td style="text-align: right;">
+<ol start="29" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiMEX2017</code>
+</td>
+<td>
+PPI for Mexico based on Mexico’s Encuesta Nacional de Ingresos y Gastos de los Hogares de 2014 using legacy definitions of poverty
+</td>
+<td style="text-align: center;">
+2017
+</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;"></td>
-<td><code>ppiMEX2017_a</code></td>
-<td>PPI for Mexico based on Mexico’s Encuesta Nacional de Ingresos y Gastos de los Hogares de 2014 using new definitions of poverty</td>
-<td style="text-align: center;">2017</td>
+<td style="text-align: right;">
+</td>
+<td>
+<code>ppiMEX2017_a</code>
+</td>
+<td>
+PPI for Mexico based on Mexico’s Encuesta Nacional de Ingresos y Gastos de los Hogares de 2014 using new definitions of poverty
+</td>
+<td style="text-align: center;">
+2017
+</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;"><ol start="30" type="1"><li>
-</li></ol></td>
-<td><code>ppiMLI2010</code></td>
-<td>PPI for Mali based on Mali’s 2001 Poverty Evaluation Survey</td>
-<td style="text-align: center;">2010</td>
+<td style="text-align: right;">
+<ol start="30" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiMLI2010</code>
+</td>
+<td>
+PPI for Mali based on Mali’s 2001 Poverty Evaluation Survey
+</td>
+<td style="text-align: center;">
+2010
+</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;"><ol start="31" type="1"><li>
-</li></ol></td>
-<td><code>ppiMMR2012</code></td>
-<td>PPI for Myanmar based on Myanmar’s 2009/10 Integrated Household Living Conditions Assessment</td>
-<td style="text-align: center;">2012</td>
+<td style="text-align: right;">
+<ol start="31" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiMMR2012</code>
+</td>
+<td>
+PPI for Myanmar based on Myanmar’s 2009/10 Integrated Household Living Conditions Assessment
+</td>
+<td style="text-align: center;">
+2012
+</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;"></td>
-<td><code>ppiMMR2019</code></td>
-<td>PPI for Myanmar based on Myanmar’s 2015 Poverty and Living Conditions Survey</td>
-<td style="text-align: center;">2019</td>
+<td style="text-align: right;">
+</td>
+<td>
+<code>ppiMMR2019</code>
+</td>
+<td>
+PPI for Myanmar based on Myanmar’s 2015 Poverty and Living Conditions Survey
+</td>
+<td style="text-align: center;">
+2019
+</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;"><ol start="32" type="1"><li>
-</li></ol></td>
-<td><code>ppiMNG2016</code></td>
-<td>PPI for Mongolia based on Mongolia’s 2014 Household Socio-Economic Survey</td>
-<td style="text-align: center;">2016</td>
+<td style="text-align: right;">
+<ol start="32" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiMNG2016</code>
+</td>
+<td>
+PPI for Mongolia based on Mongolia’s 2014 Household Socio-Economic Survey
+</td>
+<td style="text-align: center;">
+2016
+</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;"><ol start="33" type="1"><li>
-</li></ol></td>
-<td><code>ppiMOZ2013</code></td>
-<td>PPI for Mozambique based on 2008/9 Household Budget Survey</td>
-<td style="text-align: center;">2013</td>
+<td style="text-align: right;">
+<ol start="33" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiMOZ2013</code>
+</td>
+<td>
+PPI for Mozambique based on 2008/9 Household Budget Survey
+</td>
+<td style="text-align: center;">
+2013
+</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;"></td>
-<td><code>ppiMOZ2019</code></td>
-<td>PPI for Mozambqiue based on 2014 Inquerito Sobre Orcamento Familiar (IOF) Survey</td>
-<td style="text-align: center;">2019</td>
+<td style="text-align: right;">
+</td>
+<td>
+<code>ppiMOZ2019</code>
+</td>
+<td>
+PPI for Mozambqiue based on 2014 Inquerito Sobre Orcamento Familiar (IOF) Survey
+</td>
+<td style="text-align: center;">
+2019
+</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;"><ol start="34" type="1"><li>
-</li></ol></td>
-<td><code>ppiMWI2015</code></td>
-<td>PPI for Malawi based on Malawi’s 2010/11 Integrated Household Survey using legacy poverty definitions</td>
-<td style="text-align: center;">2015</td>
+<td style="text-align: right;">
+<ol start="34" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiMWI2015</code>
+</td>
+<td>
+PPI for Malawi based on Malawi’s 2010/11 Integrated Household Survey using legacy poverty definitions
+</td>
+<td style="text-align: center;">
+2015
+</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;"></td>
-<td><code>ppiMWI2015_gov</code></td>
-<td>PPI for Malawi based on Malawi’s 2010/11 Integrated Household Survey using government poverty definitions</td>
-<td style="text-align: center;">2015</td>
+<td style="text-align: right;">
+</td>
+<td>
+<code>ppiMWI2015_gov</code>
+</td>
+<td>
+PPI for Malawi based on Malawi’s 2010/11 Integrated Household Survey using government poverty definitions
+</td>
+<td style="text-align: center;">
+2015
+</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;"></td>
-<td><code>ppiMWI2015_pbm</code></td>
-<td>PPI for Malawi based on Malawi’s 2010/11 Integrated Household Survey using PBM poverty definitions</td>
-<td style="text-align: center;">2015</td>
+<td style="text-align: right;">
+</td>
+<td>
+<code>ppiMWI2015_pbm</code>
+</td>
+<td>
+PPI for Malawi based on Malawi’s 2010/11 Integrated Household Survey using PBM poverty definitions
+</td>
+<td style="text-align: center;">
+2015
+</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;"><ol start="35" type="1"><li>
-</li></ol></td>
-<td><code>ppiNAM2013</code></td>
-<td>PPI for Namibia based on Namibia’s 2009/10 Household Income and Expenditure Survey</td>
-<td style="text-align: center;">2013</td>
+<td style="text-align: right;">
+<ol start="35" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiNAM2013</code>
+</td>
+<td>
+PPI for Namibia based on Namibia’s 2009/10 Household Income and Expenditure Survey
+</td>
+<td style="text-align: center;">
+2013
+</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;"><ol start="36" type="1"><li>
-</li></ol></td>
-<td><code>ppiNER2013</code></td>
-<td>PPI for Niger based on Niger’s 2007/8 National Household Budget and Expenditure Survey</td>
-<td style="text-align: center;">2013</td>
+<td style="text-align: right;">
+<ol start="36" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiNER2013</code>
+</td>
+<td>
+PPI for Niger based on Niger’s 2007/8 National Household Budget and Expenditure Survey
+</td>
+<td style="text-align: center;">
+2013
+</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;"><ol start="37" type="1"><li>
-</li></ol></td>
-<td><code>ppiNGA2015</code></td>
-<td>PPI for Nigeria based on Nigeria’s 2012/13 General Household Panel Survey</td>
-<td style="text-align: center;">2015</td>
+<td style="text-align: right;">
+<ol start="37" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiNGA2015</code>
+</td>
+<td>
+PPI for Nigeria based on Nigeria’s 2012/13 General Household Panel Survey
+</td>
+<td style="text-align: center;">
+2015
+</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;"><ol start="38" type="1"><li>
-</li></ol></td>
-<td><code>ppiNIC2013</code></td>
-<td>PPI for Nicaragua based on Nicaragua’s 2009 Living Standards Measurement Survey</td>
-<td style="text-align: center;">2013</td>
+<td style="text-align: right;">
+<ol start="38" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiNIC2013</code>
+</td>
+<td>
+PPI for Nicaragua based on Nicaragua’s 2009 Living Standards Measurement Survey
+</td>
+<td style="text-align: center;">
+2013
+</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;"><ol start="39" type="1"><li>
-</li></ol></td>
-<td><code>ppiNPL2013</code></td>
-<td>PPI for Nepal using legacy poverty definition lines</td>
-<td style="text-align: center;">2013</td>
+<td style="text-align: right;">
+<ol start="39" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiNPL2013</code>
+</td>
+<td>
+PPI for Nepal using legacy poverty definition lines
+</td>
+<td style="text-align: center;">
+2013
+</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;"></td>
-<td><code>ppiNPL2013_a</code></td>
-<td>PPI for Nepal using new poverty definition lines</td>
-<td style="text-align: center;">2013</td>
+<td style="text-align: right;">
+</td>
+<td>
+<code>ppiNPL2013_a</code>
+</td>
+<td>
+PPI for Nepal using new poverty definition lines
+</td>
+<td style="text-align: center;">
+2013
+</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;"><ol start="40" type="1"><li>
-</li></ol></td>
-<td><code>ppiPAK2009</code></td>
-<td>PPI for Pakistan using Pakistan 2005/6 Social and Living Standards Measurement Survey</td>
-<td style="text-align: center;">2009</td>
+<td style="text-align: right;">
+<ol start="40" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiPAK2009</code>
+</td>
+<td>
+PPI for Pakistan using Pakistan 2005/6 Social and Living Standards Measurement Survey
+</td>
+<td style="text-align: center;">
+2009
+</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;"><ol start="41" type="1"><li>
-</li></ol></td>
-<td><code>ppiPER2012</code></td>
-<td>PPI for Peru based on Peru’s 2010 National Household Survey</td>
-<td style="text-align: center;">2012</td>
+<td style="text-align: right;">
+<ol start="41" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiPER2012</code>
+</td>
+<td>
+PPI for Peru based on Peru’s 2010 National Household Survey
+</td>
+<td style="text-align: center;">
+2012
+</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;"></td>
-<td><code>ppiPER2018</code></td>
-<td>PPI for Peru based on Peru’s 2016 Encuesta Nacional de Hogares sobre Condiciones de Vida y Pobreza (ENAHO)</td>
-<td style="text-align: center;">2018</td>
+<td style="text-align: right;">
+</td>
+<td>
+<code>ppiPER2018</code>
+</td>
+<td>
+PPI for Peru based on Peru’s 2016 Encuesta Nacional de Hogares sobre Condiciones de Vida y Pobreza (ENAHO)
+</td>
+<td style="text-align: center;">
+2018
+</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;"><ol start="42" type="1"><li>
-</li></ol></td>
-<td><code>ppiPHL2014</code></td>
-<td>PPI for the Philippines based on Philippines’ 2009 FIES/LFS.</td>
-<td style="text-align: center;">2014</td>
+<td style="text-align: right;">
+<ol start="42" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiPHL2014</code>
+</td>
+<td>
+PPI for the Philippines based on Philippines’ 2009 FIES/LFS.
+</td>
+<td style="text-align: center;">
+2014
+</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;"></td>
-<td><code>ppiPHL2018</code></td>
-<td>PPI for the Philippines based on Philippines’ 2015 Family Income and Expenditure Survey (FIES)</td>
-<td style="text-align: center;">2018</td>
+<td style="text-align: right;">
+</td>
+<td>
+<code>ppiPHL2018</code>
+</td>
+<td>
+PPI for the Philippines based on Philippines’ 2015 Family Income and Expenditure Survey (FIES)
+</td>
+<td style="text-align: center;">
+2018
+</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;"><ol start="43" type="1"><li>
-</li></ol></td>
-<td><code>ppiPRY2012</code></td>
-<td>PPI for Paraguay based on Paraguay’s 2011 EPH</td>
-<td style="text-align: center;">2012</td>
+<td style="text-align: right;">
+<ol start="43" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiPRY2012</code>
+</td>
+<td>
+PPI for Paraguay based on Paraguay’s 2011 EPH
+</td>
+<td style="text-align: center;">
+2012
+</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;"><ol start="44" type="1"><li>
-</li></ol></td>
-<td><code>ppiPSE2014</code></td>
-<td>PPI for Palestine based on Palestine’s 2011 Expenditure and Consumption Survey</td>
-<td style="text-align: center;">2014</td>
+<td style="text-align: right;">
+<ol start="44" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiPSE2014</code>
+</td>
+<td>
+PPI for Palestine based on Palestine’s 2011 Expenditure and Consumption Survey
+</td>
+<td style="text-align: center;">
+2014
+</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;"><ol start="45" type="1"><li>
-</li></ol></td>
-<td><code>ppiROU2009</code></td>
-<td>PPI for Romania based on the 2007 HBS</td>
-<td style="text-align: center;">2009</td>
+<td style="text-align: right;">
+<ol start="45" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiROU2009</code>
+</td>
+<td>
+PPI for Romania based on the 2007 HBS
+</td>
+<td style="text-align: center;">
+2009
+</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;"><ol start="46" type="1"><li>
-</li></ol></td>
-<td><code>ppiRUS2010</code></td>
-<td>PPI for Russia based on 2007 HBS</td>
-<td style="text-align: center;">2010</td>
+<td style="text-align: right;">
+<ol start="46" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiRUS2010</code>
+</td>
+<td>
+PPI for Russia based on 2007 HBS
+</td>
+<td style="text-align: center;">
+2010
+</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;"><ol start="47" type="1"><li>
-</li></ol></td>
-<td><code>ppiRWA2016</code></td>
-<td>PPI for Rwanda based on Rwanda’s 2010/11 Integrated Household Living Standards Survey</td>
-<td style="text-align: center;">2016</td>
+<td style="text-align: right;">
+<ol start="47" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiRWA2016</code>
+</td>
+<td>
+PPI for Rwanda based on Rwanda’s 2010/11 Integrated Household Living Standards Survey
+</td>
+<td style="text-align: center;">
+2016
+</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;"></td>
-<td><code>ppiRWA2019</code></td>
-<td>PPI for Rwanda based on Rwanda’s 2016/2017 Integrated Household Living Conditions Survey (EICV5) produced by the National Institute of Statistics of Rwanda (NISR) and the Ministry of Finance and Planning</td>
-<td style="text-align: center;">2019</td>
+<td style="text-align: right;">
+</td>
+<td>
+<code>ppiRWA2019</code>
+</td>
+<td>
+PPI for Rwanda based on Rwanda’s 2016/2017 Integrated Household Living Conditions Survey (EICV5) produced by the National Institute of Statistics of Rwanda (NISR) and the Ministry of Finance and Planning
+</td>
+<td style="text-align: center;">
+2019
+</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;"><ol start="48" type="1"><li>
-</li></ol></td>
-<td><code>ppiSEN2009</code></td>
-<td>PPI for Senegal based on Senegal’s 2005/6 Enquête de Suivi de la Pauvreté au Sénégal (ESPS)</td>
-<td style="text-align: center;">2009</td>
+<td style="text-align: right;">
+<ol start="48" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiSEN2009</code>
+</td>
+<td>
+PPI for Senegal based on Senegal’s 2005/6 Enquête de Suivi de la Pauvreté au Sénégal (ESPS)
+</td>
+<td style="text-align: center;">
+2009
+</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;"></td>
-<td><code>ppiSEN2018</code></td>
-<td>PPI for Senegal based on Senegal’s 2011 Enquête de Suivi de la Pauvreté au Sénégal (ESPS)</td>
-<td style="text-align: center;">2018</td>
+<td style="text-align: right;">
+</td>
+<td>
+<code>ppiSEN2018</code>
+</td>
+<td>
+PPI for Senegal based on Senegal’s 2011 Enquête de Suivi de la Pauvreté au Sénégal (ESPS)
+</td>
+<td style="text-align: center;">
+2018
+</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;"><ol start="49" type="1"><li>
-</li></ol></td>
-<td><code>ppiSLE2011</code></td>
-<td>PPI for Sierra Leone based on Sierra Leone’s 2003/4 HIS</td>
-<td style="text-align: center;">2011</td>
+<td style="text-align: right;">
+<ol start="49" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiSLE2011</code>
+</td>
+<td>
+PPI for Sierra Leone based on Sierra Leone’s 2003/4 HIS
+</td>
+<td style="text-align: center;">
+2011
+</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;"><ol start="50" type="1"><li>
-</li></ol></td>
-<td><code>ppiSLV2010</code></td>
-<td>PPI for El Salvador based on the 2008 EHPM</td>
-<td style="text-align: center;">2010</td>
+<td style="text-align: right;">
+<ol start="50" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiSLV2010</code>
+</td>
+<td>
+PPI for El Salvador based on the 2008 EHPM
+</td>
+<td style="text-align: center;">
+2010
+</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;"><ol start="51" type="1"><li>
-</li></ol></td>
-<td><code>ppiSYR2010</code></td>
-<td>PPI for Syria based on Syria’s 2006/7 Household Income and Expenditure Survey</td>
-<td style="text-align: center;">2010</td>
+<td style="text-align: right;">
+<ol start="51" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiSYR2010</code>
+</td>
+<td>
+PPI for Syria based on Syria’s 2006/7 Household Income and Expenditure Survey
+</td>
+<td style="text-align: center;">
+2010
+</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;"><ol start="52" type="1"><li>
-</li></ol></td>
-<td><code>ppiTJK2015</code></td>
-<td>PPI for Tajikistan based on 2007 data</td>
-<td style="text-align: center;">2015</td>
+<td style="text-align: right;">
+<ol start="52" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiTJK2015</code>
+</td>
+<td>
+PPI for Tajikistan based on 2007 data
+</td>
+<td style="text-align: center;">
+2015
+</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;"><ol start="53" type="1"><li>
-</li></ol></td>
-<td><code>ppiTLS2013</code></td>
-<td>PPI for Timor Leste based on Timor-Leste’s 2007 Survey of Living Standards</td>
-<td style="text-align: center;">2013</td>
+<td style="text-align: right;">
+<ol start="53" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiTLS2013</code>
+</td>
+<td>
+PPI for Timor Leste based on Timor-Leste’s 2007 Survey of Living Standards
+</td>
+<td style="text-align: center;">
+2013
+</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;"><ol start="54" type="1"><li>
-</li></ol></td>
-<td><code>ppiTZA2016</code></td>
-<td>PPI for Tanzania based on Tanzania’s 2011/12 Household Budget Survey</td>
-<td style="text-align: center;">2016</td>
+<td style="text-align: right;">
+<ol start="54" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiTZA2016</code>
+</td>
+<td>
+PPI for Tanzania based on Tanzania’s 2011/12 Household Budget Survey
+</td>
+<td style="text-align: center;">
+2016
+</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;"><ol start="55" type="1"><li>
-</li></ol></td>
-<td><code>ppiTGO2018</code></td>
-<td>PPI for Togo based on Togo’s 2015 Questionnaire des Indicateurs de Base du Bien-être (QUIBB)</td>
-<td style="text-align: center;">2018</td>
+<td style="text-align: right;">
+<ol start="55" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiTGO2018</code>
+</td>
+<td>
+PPI for Togo based on Togo’s 2015 Questionnaire des Indicateurs de Base du Bien-être (QUIBB)
+</td>
+<td style="text-align: center;">
+2018
+</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;"><ol start="56" type="1"><li>
-</li></ol></td>
-<td><code>ppiUGA2015</code></td>
-<td>PPI for Uganda based on Uganda’s 2012/13 National Household Survey</td>
-<td style="text-align: center;">2015</td>
+<td style="text-align: right;">
+<ol start="56" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiUGA2015</code>
+</td>
+<td>
+PPI for Uganda based on Uganda’s 2012/13 National Household Survey
+</td>
+<td style="text-align: center;">
+2015
+</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;"><ol start="57" type="1"><li>
-</li></ol></td>
-<td><code>ppiVNM2009</code></td>
-<td>PPI for Vietnam based on the 2006 VHLSS</td>
-<td style="text-align: center;">2009</td>
+<td style="text-align: right;">
+<ol start="57" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiVNM2009</code>
+</td>
+<td>
+PPI for Vietnam based on the 2006 VHLSS
+</td>
+<td style="text-align: center;">
+2009
+</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;"><ol start="58" type="1"><li>
-</li></ol></td>
-<td><code>ppiYEM2009</code></td>
-<td>PPI for Yemen based on 2005/06 HBS</td>
-<td style="text-align: center;">2009</td>
+<td style="text-align: right;">
+<ol start="58" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiYEM2009</code>
+</td>
+<td>
+PPI for Yemen based on 2005/06 HBS
+</td>
+<td style="text-align: center;">
+2009
+</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;"><ol start="59" type="1"><li>
-</li></ol></td>
-<td><code>ppiZAF2009</code></td>
-<td>PPI for South Africa based on the 2005/6 IES</td>
-<td style="text-align: center;">2009</td>
+<td style="text-align: right;">
+<ol start="59" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiZAF2009</code>
+</td>
+<td>
+PPI for South Africa based on the 2005/6 IES
+</td>
+<td style="text-align: center;">
+2009
+</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;"><ol start="60" type="1"><li>
-</li></ol></td>
-<td><code>ppiZMB2013_got</code></td>
-<td>PPI for Zambia based on Zambia’s 2010 Living Conditions Monitoring Survey (LCMS) using Göttingen poverty definitions</td>
-<td style="text-align: center;">2013</td>
+<td style="text-align: right;">
+<ol start="60" type="1">
+<li>
+</li>
+</ol>
+</td>
+<td>
+<code>ppiZMB2013_got</code>
+</td>
+<td>
+PPI for Zambia based on Zambia’s 2010 Living Conditions Monitoring Survey (LCMS) using Göttingen poverty definitions
+</td>
+<td style="text-align: center;">
+2013
+</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;"></td>
-<td><code>ppiZMB2013_cso</code></td>
-<td>PPI for Zambia based on Zambia’s 2010 Living Conditions Monitoring Survey (LCMS) using CSO poverty definitions</td>
-<td style="text-align: center;">2013</td>
+<td style="text-align: right;">
+</td>
+<td>
+<code>ppiZMB2013_cso</code>
+</td>
+<td>
+PPI for Zambia based on Zambia’s 2010 Living Conditions Monitoring Survey (LCMS) using CSO poverty definitions
+</td>
+<td style="text-align: center;">
+2013
+</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;"></td>
-<td><code>ppiZMB2017</code></td>
-<td>PPI for Zambia based on Zambia’s 2015 Living Conditions Monitoring Survey (LCMS) using legacy poverty definitions</td>
-<td style="text-align: center;">2017</td>
+<td style="text-align: right;">
+</td>
+<td>
+<code>ppiZMB2017</code>
+</td>
+<td>
+PPI for Zambia based on Zambia’s 2015 Living Conditions Monitoring Survey (LCMS) using legacy poverty definitions
+</td>
+<td style="text-align: center;">
+2017
+</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;"></td>
-<td><code>ppiZMB2017_a</code></td>
-<td>PPI for Zambia based on Zambia’s 2015 Living Conditions Monitoring Survey (LCMS) using new PPI calculation approach</td>
-<td style="text-align: center;">2017</td>
+<td style="text-align: right;">
+</td>
+<td>
+<code>ppiZMB2017_a</code>
+</td>
+<td>
+PPI for Zambia based on Zambia’s 2015 Living Conditions Monitoring Survey (LCMS) using new PPI calculation approach
+</td>
+<td style="text-align: center;">
+2017
+</td>
 </tr>
 </tbody>
 </table>
 <p>This list of available PPI country tables can be retrieved in R using the <code><a href="reference/find_table.html">find_table()</a></code> function. View the complete list using the following command in R:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="kw"><a href="reference/find_table.html">find_table</a></span>()</a>
-<a class="sourceLine" id="cb4-2" data-line-number="2"><span class="co">#&gt; # A tibble: 88 x 7</span></a>
-<a class="sourceLine" id="cb4-3" data-line-number="3"><span class="co">#&gt;    region    country  survey_year release_year description        type  filename</span></a>
-<a class="sourceLine" id="cb4-4" data-line-number="4"><span class="co">#&gt;    &lt;fct&gt;     &lt;fct&gt;          &lt;int&gt;        &lt;int&gt; &lt;fct&gt;              &lt;fct&gt; &lt;fct&gt;   </span></a>
-<a class="sourceLine" id="cb4-5" data-line-number="5"><span class="co">#&gt;  1 Asia      Afghani…        2007         2012 PPI for Afghanist… sps   ppiAFG2…</span></a>
-<a class="sourceLine" id="cb4-6" data-line-number="6"><span class="co">#&gt;  2 Africa    Angola          2008         2015 PPI for Angola ba… sps   ppiAGO2…</span></a>
-<a class="sourceLine" id="cb4-7" data-line-number="7"><span class="co">#&gt;  3 Asia      Banglad…        2010         2013 PPI for Benin bas… sps   ppiBEN2…</span></a>
-<a class="sourceLine" id="cb4-8" data-line-number="8"><span class="co">#&gt;  4 Africa    Benin           2010         2012 PPI for Banglades… sps   ppiBGD2…</span></a>
-<a class="sourceLine" id="cb4-9" data-line-number="9"><span class="co">#&gt;  5 Latin Am… Bolivia         2013         2015 PPI for Bolivia u… sps   ppiBOL2…</span></a>
-<a class="sourceLine" id="cb4-10" data-line-number="10"><span class="co">#&gt;  6 Latin Am… Brazil          2008         2010 PPI for Brazil ba… sps   ppiBRA2…</span></a>
-<a class="sourceLine" id="cb4-11" data-line-number="11"><span class="co">#&gt;  7 Africa    Burkina…        2003         2011 PPI for Burkina F… sps   ppiBFA2…</span></a>
-<a class="sourceLine" id="cb4-12" data-line-number="12"><span class="co">#&gt;  8 Africa    Burkina…        2014         2017 PPI for Burkina F… sps   ppiBFA2…</span></a>
-<a class="sourceLine" id="cb4-13" data-line-number="13"><span class="co">#&gt;  9 Africa    Burkina…        2014         2017 PPI for Burkina F… ipa   ppiBFA2…</span></a>
-<a class="sourceLine" id="cb4-14" data-line-number="14"><span class="co">#&gt; 10 Asia      Cambodia        2011         2015 PPI for Cambodia … sps   ppiKHM2…</span></a>
-<a class="sourceLine" id="cb4-15" data-line-number="15"><span class="co">#&gt; # … with 78 more rows</span></a></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="r"><span class="fu"><a href="reference/find_table.html">find_table</a></span>()
+<span class="co">#&gt; # A tibble: 88 x 7</span>
+<span class="co">#&gt;    region    country  survey_year release_year description        type  filename</span>
+<span class="co">#&gt;    &lt;fct&gt;     &lt;fct&gt;          &lt;int&gt;        &lt;int&gt; &lt;fct&gt;              &lt;fct&gt; &lt;fct&gt;   </span>
+<span class="co">#&gt;  1 Asia      Afghani…        2007         2012 PPI for Afghanist… sps   ppiAFG2…</span>
+<span class="co">#&gt;  2 Africa    Angola          2008         2015 PPI for Angola ba… sps   ppiAGO2…</span>
+<span class="co">#&gt;  3 Asia      Banglad…        2010         2013 PPI for Benin bas… sps   ppiBEN2…</span>
+<span class="co">#&gt;  4 Africa    Benin           2010         2012 PPI for Banglades… sps   ppiBGD2…</span>
+<span class="co">#&gt;  5 Latin Am… Bolivia         2013         2015 PPI for Bolivia u… sps   ppiBOL2…</span>
+<span class="co">#&gt;  6 Latin Am… Brazil          2008         2010 PPI for Brazil ba… sps   ppiBRA2…</span>
+<span class="co">#&gt;  7 Africa    Burkina…        2003         2011 PPI for Burkina F… sps   ppiBFA2…</span>
+<span class="co">#&gt;  8 Africa    Burkina…        2014         2017 PPI for Burkina F… sps   ppiBFA2…</span>
+<span class="co">#&gt;  9 Africa    Burkina…        2014         2017 PPI for Burkina F… ipa   ppiBFA2…</span>
+<span class="co">#&gt; 10 Asia      Cambodia        2011         2015 PPI for Cambodia … sps   ppiKHM2…</span>
+<span class="co">#&gt; # … with 78 more rows</span></pre></div>
 <p>View the list of PPI country tables for Africa using the following command in R:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="kw"><a href="reference/find_table.html">find_table</a></span>(<span class="dt">region =</span> <span class="st">"Africa"</span>)</a>
-<a class="sourceLine" id="cb5-2" data-line-number="2"><span class="co">#&gt; # A tibble: 37 x 7</span></a>
-<a class="sourceLine" id="cb5-3" data-line-number="3"><span class="co">#&gt;    region country  survey_year release_year description           type  filename</span></a>
-<a class="sourceLine" id="cb5-4" data-line-number="4"><span class="co">#&gt;    &lt;fct&gt;  &lt;fct&gt;          &lt;int&gt;        &lt;int&gt; &lt;fct&gt;                 &lt;fct&gt; &lt;fct&gt;   </span></a>
-<a class="sourceLine" id="cb5-5" data-line-number="5"><span class="co">#&gt;  1 Africa Angola          2008         2015 PPI for Angola based… sps   ppiAGO2…</span></a>
-<a class="sourceLine" id="cb5-6" data-line-number="6"><span class="co">#&gt;  2 Africa Benin           2010         2012 PPI for Bangladesh u… sps   ppiBGD2…</span></a>
-<a class="sourceLine" id="cb5-7" data-line-number="7"><span class="co">#&gt;  3 Africa Burkina…        2003         2011 PPI for Burkina Faso… sps   ppiBFA2…</span></a>
-<a class="sourceLine" id="cb5-8" data-line-number="8"><span class="co">#&gt;  4 Africa Burkina…        2014         2017 PPI for Burkina Faso… sps   ppiBFA2…</span></a>
-<a class="sourceLine" id="cb5-9" data-line-number="9"><span class="co">#&gt;  5 Africa Burkina…        2014         2017 PPI for Burkina Faso… ipa   ppiBFA2…</span></a>
-<a class="sourceLine" id="cb5-10" data-line-number="10"><span class="co">#&gt;  6 Africa Cameroon        2007         2013 PPI for Cameroon usi… sps   ppiCMR2…</span></a>
-<a class="sourceLine" id="cb5-11" data-line-number="11"><span class="co">#&gt;  7 Africa Cote d'…        2008         2013 PPI for Ivory Coast … sps   ppiCIV2…</span></a>
-<a class="sourceLine" id="cb5-12" data-line-number="12"><span class="co">#&gt;  8 Africa Cote d'…        2015         2018 PPI for Ivory Coast … ipa   ppiCIV2…</span></a>
-<a class="sourceLine" id="cb5-13" data-line-number="13"><span class="co">#&gt;  9 Africa Ethiopia        2010         2016 PPI for Ethiopia bas… sps   ppiETH2…</span></a>
-<a class="sourceLine" id="cb5-14" data-line-number="14"><span class="co">#&gt; 10 Africa Ghana           2012         2015 PPI for Ghana based … sps   ppiGHA2…</span></a>
-<a class="sourceLine" id="cb5-15" data-line-number="15"><span class="co">#&gt; # … with 27 more rows</span></a></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="r"><span class="fu"><a href="reference/find_table.html">find_table</a></span>(<span class="kw">region</span> <span class="kw">=</span> <span class="st">"Africa"</span>)
+<span class="co">#&gt; # A tibble: 37 x 7</span>
+<span class="co">#&gt;    region country  survey_year release_year description           type  filename</span>
+<span class="co">#&gt;    &lt;fct&gt;  &lt;fct&gt;          &lt;int&gt;        &lt;int&gt; &lt;fct&gt;                 &lt;fct&gt; &lt;fct&gt;   </span>
+<span class="co">#&gt;  1 Africa Angola          2008         2015 PPI for Angola based… sps   ppiAGO2…</span>
+<span class="co">#&gt;  2 Africa Benin           2010         2012 PPI for Bangladesh u… sps   ppiBGD2…</span>
+<span class="co">#&gt;  3 Africa Burkina…        2003         2011 PPI for Burkina Faso… sps   ppiBFA2…</span>
+<span class="co">#&gt;  4 Africa Burkina…        2014         2017 PPI for Burkina Faso… sps   ppiBFA2…</span>
+<span class="co">#&gt;  5 Africa Burkina…        2014         2017 PPI for Burkina Faso… ipa   ppiBFA2…</span>
+<span class="co">#&gt;  6 Africa Cameroon        2007         2013 PPI for Cameroon usi… sps   ppiCMR2…</span>
+<span class="co">#&gt;  7 Africa Cote d'…        2008         2013 PPI for Ivory Coast … sps   ppiCIV2…</span>
+<span class="co">#&gt;  8 Africa Cote d'…        2015         2018 PPI for Ivory Coast … ipa   ppiCIV2…</span>
+<span class="co">#&gt;  9 Africa Ethiopia        2010         2016 PPI for Ethiopia bas… sps   ppiETH2…</span>
+<span class="co">#&gt; 10 Africa Ghana           2012         2015 PPI for Ghana based … sps   ppiGHA2…</span>
+<span class="co">#&gt; # … with 27 more rows</span></pre></div>
 <p>View the list of PPI country tables in Zambia using the the following command in R:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" data-line-number="1"><span class="kw"><a href="reference/find_table.html">find_table</a></span>(<span class="dt">country =</span> <span class="st">"Zambia"</span>)</a>
-<a class="sourceLine" id="cb6-2" data-line-number="2"><span class="co">#&gt; # A tibble: 4 x 7</span></a>
-<a class="sourceLine" id="cb6-3" data-line-number="3"><span class="co">#&gt;   region country survey_year release_year description             type  filename</span></a>
-<a class="sourceLine" id="cb6-4" data-line-number="4"><span class="co">#&gt;   &lt;fct&gt;  &lt;fct&gt;         &lt;int&gt;        &lt;int&gt; &lt;fct&gt;                   &lt;fct&gt; &lt;fct&gt;   </span></a>
-<a class="sourceLine" id="cb6-5" data-line-number="5"><span class="co">#&gt; 1 Africa Zambia         2010         2013 PPI for Zambia based o… sps   ppiZMB2…</span></a>
-<a class="sourceLine" id="cb6-6" data-line-number="6"><span class="co">#&gt; 2 Africa Zambia         2010         2013 PPI for Zambia based o… sps   ppiZMB2…</span></a>
-<a class="sourceLine" id="cb6-7" data-line-number="7"><span class="co">#&gt; 3 Africa Zambia         2015         2017 PPI for Zambia based o… sps   ppiZMB2…</span></a>
-<a class="sourceLine" id="cb6-8" data-line-number="8"><span class="co">#&gt; 4 Africa Zambia         2015         2017 PPI for Zambia based o… ipa   ppiZMB2…</span></a></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="r"><span class="fu"><a href="reference/find_table.html">find_table</a></span>(<span class="kw">country</span> <span class="kw">=</span> <span class="st">"Zambia"</span>)
+<span class="co">#&gt; # A tibble: 4 x 7</span>
+<span class="co">#&gt;   region country survey_year release_year description             type  filename</span>
+<span class="co">#&gt;   &lt;fct&gt;  &lt;fct&gt;         &lt;int&gt;        &lt;int&gt; &lt;fct&gt;                   &lt;fct&gt; &lt;fct&gt;   </span>
+<span class="co">#&gt; 1 Africa Zambia         2010         2013 PPI for Zambia based o… sps   ppiZMB2…</span>
+<span class="co">#&gt; 2 Africa Zambia         2010         2013 PPI for Zambia based o… sps   ppiZMB2…</span>
+<span class="co">#&gt; 3 Africa Zambia         2015         2017 PPI for Zambia based o… sps   ppiZMB2…</span>
+<span class="co">#&gt; 4 Africa Zambia         2015         2017 PPI for Zambia based o… ipa   ppiZMB2…</span></pre></div>
 <p>To extract the actual PPI tables, the <code><a href="reference/get_table.html">get_table()</a></code> function can be used. The <code><a href="reference/get_table.html">get_table()</a></code> function wraps around the <code><a href="reference/find_table.html">find_table()</a></code> function to make a search for a specific PPI table and then extracts the table/s and puts them together into a tidy data frame.</p>
 <p>For example, to get the actual PPI tables for all countries with PPI tables, the following command can be used in R:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" data-line-number="1"><span class="kw"><a href="reference/get_table.html">get_table</a></span>()</a>
-<a class="sourceLine" id="cb7-2" data-line-number="2"><span class="co">#&gt; # A tibble: 87,769 x 7</span></a>
-<a class="sourceLine" id="cb7-3" data-line-number="3"><span class="co">#&gt;    country     release_year filename   type  score poverty_definition   ppi</span></a>
-<a class="sourceLine" id="cb7-4" data-line-number="4"><span class="co">#&gt;    &lt;fct&gt;       &lt;fct&gt;        &lt;fct&gt;      &lt;fct&gt; &lt;dbl&gt; &lt;chr&gt;              &lt;dbl&gt;</span></a>
-<a class="sourceLine" id="cb7-5" data-line-number="5"><span class="co">#&gt;  1 Afghanistan 2012         ppiAFG2012 sps       0 nl                 100  </span></a>
-<a class="sourceLine" id="cb7-6" data-line-number="6"><span class="co">#&gt;  2 Afghanistan 2012         ppiAFG2012 sps       1 nl                 100  </span></a>
-<a class="sourceLine" id="cb7-7" data-line-number="7"><span class="co">#&gt;  3 Afghanistan 2012         ppiAFG2012 sps       2 nl                 100  </span></a>
-<a class="sourceLine" id="cb7-8" data-line-number="8"><span class="co">#&gt;  4 Afghanistan 2012         ppiAFG2012 sps       3 nl                 100  </span></a>
-<a class="sourceLine" id="cb7-9" data-line-number="9"><span class="co">#&gt;  5 Afghanistan 2012         ppiAFG2012 sps       4 nl                 100  </span></a>
-<a class="sourceLine" id="cb7-10" data-line-number="10"><span class="co">#&gt;  6 Afghanistan 2012         ppiAFG2012 sps       5 nl                  68.8</span></a>
-<a class="sourceLine" id="cb7-11" data-line-number="11"><span class="co">#&gt;  7 Afghanistan 2012         ppiAFG2012 sps       6 nl                  68.8</span></a>
-<a class="sourceLine" id="cb7-12" data-line-number="12"><span class="co">#&gt;  8 Afghanistan 2012         ppiAFG2012 sps       7 nl                  68.8</span></a>
-<a class="sourceLine" id="cb7-13" data-line-number="13"><span class="co">#&gt;  9 Afghanistan 2012         ppiAFG2012 sps       8 nl                  68.8</span></a>
-<a class="sourceLine" id="cb7-14" data-line-number="14"><span class="co">#&gt; 10 Afghanistan 2012         ppiAFG2012 sps       9 nl                  68.8</span></a>
-<a class="sourceLine" id="cb7-15" data-line-number="15"><span class="co">#&gt; # … with 87,759 more rows</span></a></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="r"><span class="fu"><a href="reference/get_table.html">get_table</a></span>()
+<span class="co">#&gt; # A tibble: 87,769 x 7</span>
+<span class="co">#&gt;    country     release_year filename   type  score poverty_definition   ppi</span>
+<span class="co">#&gt;    &lt;fct&gt;       &lt;fct&gt;        &lt;fct&gt;      &lt;fct&gt; &lt;dbl&gt; &lt;chr&gt;              &lt;dbl&gt;</span>
+<span class="co">#&gt;  1 Afghanistan 2012         ppiAFG2012 sps       0 nl                 100  </span>
+<span class="co">#&gt;  2 Afghanistan 2012         ppiAFG2012 sps       1 nl                 100  </span>
+<span class="co">#&gt;  3 Afghanistan 2012         ppiAFG2012 sps       2 nl                 100  </span>
+<span class="co">#&gt;  4 Afghanistan 2012         ppiAFG2012 sps       3 nl                 100  </span>
+<span class="co">#&gt;  5 Afghanistan 2012         ppiAFG2012 sps       4 nl                 100  </span>
+<span class="co">#&gt;  6 Afghanistan 2012         ppiAFG2012 sps       5 nl                  68.8</span>
+<span class="co">#&gt;  7 Afghanistan 2012         ppiAFG2012 sps       6 nl                  68.8</span>
+<span class="co">#&gt;  8 Afghanistan 2012         ppiAFG2012 sps       7 nl                  68.8</span>
+<span class="co">#&gt;  9 Afghanistan 2012         ppiAFG2012 sps       8 nl                  68.8</span>
+<span class="co">#&gt; 10 Afghanistan 2012         ppiAFG2012 sps       9 nl                  68.8</span>
+<span class="co">#&gt; # … with 87,759 more rows</span></pre></div>
 <p>To get the actual PPI tables for all countries with PPI tables in Africa, the following command can be used in R:</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb8-1" data-line-number="1"><span class="kw"><a href="reference/get_table.html">get_table</a></span>(<span class="dt">region =</span> <span class="st">"Africa"</span>)</a>
-<a class="sourceLine" id="cb8-2" data-line-number="2"><span class="co">#&gt; # A tibble: 40,703 x 7</span></a>
-<a class="sourceLine" id="cb8-3" data-line-number="3"><span class="co">#&gt;    country release_year filename   type  score poverty_definition   ppi</span></a>
-<a class="sourceLine" id="cb8-4" data-line-number="4"><span class="co">#&gt;    &lt;fct&gt;   &lt;fct&gt;        &lt;fct&gt;      &lt;fct&gt; &lt;dbl&gt; &lt;chr&gt;              &lt;dbl&gt;</span></a>
-<a class="sourceLine" id="cb8-5" data-line-number="5"><span class="co">#&gt;  1 Angola  2015         ppiAGO2015 sps       0 nl100                100</span></a>
-<a class="sourceLine" id="cb8-6" data-line-number="6"><span class="co">#&gt;  2 Angola  2015         ppiAGO2015 sps       1 nl100                100</span></a>
-<a class="sourceLine" id="cb8-7" data-line-number="7"><span class="co">#&gt;  3 Angola  2015         ppiAGO2015 sps       2 nl100                100</span></a>
-<a class="sourceLine" id="cb8-8" data-line-number="8"><span class="co">#&gt;  4 Angola  2015         ppiAGO2015 sps       3 nl100                100</span></a>
-<a class="sourceLine" id="cb8-9" data-line-number="9"><span class="co">#&gt;  5 Angola  2015         ppiAGO2015 sps       4 nl100                100</span></a>
-<a class="sourceLine" id="cb8-10" data-line-number="10"><span class="co">#&gt;  6 Angola  2015         ppiAGO2015 sps       5 nl100                100</span></a>
-<a class="sourceLine" id="cb8-11" data-line-number="11"><span class="co">#&gt;  7 Angola  2015         ppiAGO2015 sps       6 nl100                100</span></a>
-<a class="sourceLine" id="cb8-12" data-line-number="12"><span class="co">#&gt;  8 Angola  2015         ppiAGO2015 sps       7 nl100                100</span></a>
-<a class="sourceLine" id="cb8-13" data-line-number="13"><span class="co">#&gt;  9 Angola  2015         ppiAGO2015 sps       8 nl100                100</span></a>
-<a class="sourceLine" id="cb8-14" data-line-number="14"><span class="co">#&gt; 10 Angola  2015         ppiAGO2015 sps       9 nl100                100</span></a>
-<a class="sourceLine" id="cb8-15" data-line-number="15"><span class="co">#&gt; # … with 40,693 more rows</span></a></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="r"><span class="fu"><a href="reference/get_table.html">get_table</a></span>(<span class="kw">region</span> <span class="kw">=</span> <span class="st">"Africa"</span>)
+<span class="co">#&gt; # A tibble: 40,703 x 7</span>
+<span class="co">#&gt;    country release_year filename   type  score poverty_definition   ppi</span>
+<span class="co">#&gt;    &lt;fct&gt;   &lt;fct&gt;        &lt;fct&gt;      &lt;fct&gt; &lt;dbl&gt; &lt;chr&gt;              &lt;dbl&gt;</span>
+<span class="co">#&gt;  1 Angola  2015         ppiAGO2015 sps       0 nl100                100</span>
+<span class="co">#&gt;  2 Angola  2015         ppiAGO2015 sps       1 nl100                100</span>
+<span class="co">#&gt;  3 Angola  2015         ppiAGO2015 sps       2 nl100                100</span>
+<span class="co">#&gt;  4 Angola  2015         ppiAGO2015 sps       3 nl100                100</span>
+<span class="co">#&gt;  5 Angola  2015         ppiAGO2015 sps       4 nl100                100</span>
+<span class="co">#&gt;  6 Angola  2015         ppiAGO2015 sps       5 nl100                100</span>
+<span class="co">#&gt;  7 Angola  2015         ppiAGO2015 sps       6 nl100                100</span>
+<span class="co">#&gt;  8 Angola  2015         ppiAGO2015 sps       7 nl100                100</span>
+<span class="co">#&gt;  9 Angola  2015         ppiAGO2015 sps       8 nl100                100</span>
+<span class="co">#&gt; 10 Angola  2015         ppiAGO2015 sps       9 nl100                100</span>
+<span class="co">#&gt; # … with 40,693 more rows</span></pre></div>
 </div>
 <div id="notes" class="section level3">
 <h3 class="hasAnchor">
@@ -820,15 +1630,15 @@
 </div>
   </div>
 
-  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
+  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <div class="links">
 <h2>Links</h2>
 <ul class="list-unstyled">
 <li>Download from CRAN at <br><a href="https://cloud.r-project.org/package=ppitables">https://​cloud.r-project.org/​package=ppitables</a>
 </li>
-<li>Browse source code at <br><a href="https://github.com/validmeasures/ppitables">https://​github.com/​validmeasures/​ppitables</a>
+<li>Browse source code at <br><a href="https://github.com/katilingban/ppitables/">https://​github.com/​katilingban/​ppitables/​</a>
 </li>
-<li>Report a bug at <br><a href="https://github.com/validmeasures/ppitables/issues">https://​github.com/​validmeasures/​ppitables/​issues</a>
+<li>Report a bug at <br><a href="https://github.com/katilingban/ppitables/issues">https://​github.com/​katilingban/​ppitables/​issues</a>
 </li>
 <li>Read more about PPI at <br><a href="https://www.povertyindex.org">https://​www.povertyindex.org</a>
 </li>
@@ -851,7 +1661,7 @@
 <div class="developers">
 <h2>Developers</h2>
 <ul class="list-unstyled">
-<li>Ernest Guevarra <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0002-4887-4415" target="orcid.widget"><img src="https://members.orcid.org/sites/default/files/vector_iD_icon.svg" class="orcid" alt="ORCID"></a> </li>
+<li>Ernest Guevarra <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0002-4887-4415" target="orcid.widget" aria-label="ORCID"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
 </ul>
 </div>
 
@@ -879,7 +1689,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.4.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
 
       </footer>
