@@ -4,7 +4,8 @@
 \name{ppiSEN2018}
 \alias{ppiSEN2018}
 \title{Poverty Probability Index (PPI) lookup table for Senegal}
-\format{A data frame with 16 columns and 101 rows:
+\format{
+A data frame with 16 columns and 101 rows:
 \describe{
 \item{\code{score}}{PPI score}
 \item{\code{nl100}}{National poverty line (100\%)}
@@ -22,7 +23,8 @@
 \item{\code{percentile40}}{Below 40th percentile poverty line}
 \item{\code{percentile60}}{Below 60th percentile poverty line}
 \item{\code{percentile80}}{Below 80th percentile poverty line}
-}}
+}
+}
 \source{
 \url{https://www.povertyindex.org}
 }

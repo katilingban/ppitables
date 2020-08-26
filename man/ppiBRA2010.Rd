@@ -4,7 +4,8 @@
 \name{ppiBRA2010}
 \alias{ppiBRA2010}
 \title{Poverty Probability Index (PPI) lookup table for Brazil}
-\format{A data frame with 10 columns and 101 rows:
+\format{
+A data frame with 10 columns and 101 rows:
 \describe{
 \item{\code{score}}{PPI score}
 \item{\code{belowHalfWage}}{Below the half minimum wage line}
@@ -16,7 +17,8 @@
 \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
 \item{\code{ppp375}}{Below $3.75 per day purchasing power parity (2005)}
 \item{\code{ppp500}}{Below $5.00 per day purchasing power parity (2005)}
-}}
+}
+}
 \source{
 \url{https://www.povertyindex.org}
 }

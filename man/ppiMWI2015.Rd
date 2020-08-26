@@ -5,12 +5,14 @@
 \alias{ppiMWI2015}
 \title{Poverty Probability Index (PPI) lookup table for Malawi using legacy
 poverty definitions}
-\format{A data frame with 3 columns and 101 rows:
+\format{
+A data frame with 3 columns and 101 rows:
 \describe{
 \item{\code{score}}{PPI score}
 \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}
 \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
-}}
+}
+}
 \source{
 \url{https://www.povertyindex.org}
 }

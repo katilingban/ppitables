@@ -4,7 +4,8 @@
 \name{ppiCIV2013}
 \alias{ppiCIV2013}
 \title{Poverty Probability Index (PPI) lookup table for Ivory Coast}
-\format{A data frame with 9 columns and 101 rows:
+\format{
+A data frame with 9 columns and 101 rows:
 \describe{
 \item{\code{score}}{PPI score}
 \item{\code{nl100}}{National poverty line (100\%)}
@@ -15,7 +16,8 @@
 \item{\code{ppp200}}{Below $2.00 per day purchasing power parity (2005)}
 \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2011)}
 \item{\code{ppp800}}{Below $8.00 per day purchasing power parity (2011)}
-}}
+}
+}
 \source{
 \url{https://www.povertyindex.org}
 }

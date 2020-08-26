@@ -5,7 +5,8 @@
 \alias{ppiPHL2014}
 \title{Poverty Probability Index (PPI) lookup table for Philippines using legacy
 poverty definitions}
-\format{A data frame with 6 columns and 101 rows:
+\format{
+A data frame with 6 columns and 101 rows:
 \describe{
 \item{\code{score}}{PPI score}
 \item{\code{nl100}}{National poverty line (100\%)}
@@ -13,7 +14,8 @@ poverty definitions}
 \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
 \item{\code{ppp500}}{Below $5.00 per day purchasing power parity (2005)}
 \item{\code{ppp432}}{Below $4.32 per day purchasing power parity (1993)}
-}}
+}
+}
 \source{
 \url{https://www.povertyindex.org}
 }

@@ -4,7 +4,8 @@
 \name{ppiNAM2013}
 \alias{ppiNAM2013}
 \title{Poverty Probability Index (PPI) lookup table for Namibia}
-\format{A data frame with 9 columns and 101 rows:
+\format{
+A data frame with 9 columns and 101 rows:
 \describe{
 \item{\code{score}}{PPI score}
 \item{\code{nl100}}{National lower poverty line (100\%)}
@@ -15,7 +16,8 @@
 \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}
 \item{\code{ppp200}}{Below $2.00 per day purchasing power parity (2005)}
 \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
-}}
+}
+}
 \source{
 \url{https://www.povertyindex.org}
 }

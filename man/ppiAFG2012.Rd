@@ -4,7 +4,8 @@
 \name{ppiAFG2012}
 \alias{ppiAFG2012}
 \title{Poverty Probability Index (PPI) lookup table for Afghanistan}
-\format{A data frame with 7 columns and 101 rows:
+\format{
+A data frame with 7 columns and 101 rows:
 \describe{
 \item{\code{score}}{PPI score}
 \item{\code{nl}}{National poverty line}
@@ -13,7 +14,8 @@
 \item{\code{extreme}}{USAID extreme poverty}
 \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}
 \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
-}}
+}
+}
 \source{
 \url{https://www.povertyindex.org}
 }

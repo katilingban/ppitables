@@ -5,7 +5,8 @@
 \alias{ppiGHA2015_b}
 \title{Poverty Probability Index (PPI) lookup table for Ghana using poverty
 definitions deflated with the change in 100\% of national poverty line}
-\format{A data frame with 8 columns and 101 rows:
+\format{
+A data frame with 8 columns and 101 rows:
 \describe{
 \item{\code{score}}{PPI score}
 \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}
@@ -15,7 +16,8 @@ definitions deflated with the change in 100\% of national poverty line}
 \item{\code{ppp500}}{Below $5.00 per day purchasing power parity (2005)}
 \item{\code{ppp190}}{Below $1.90 per day purchasing power parity (2011)}
 \item{\code{ppp310}}{Below $3.10 per day purchasing power parity (2011)}
-}}
+}
+}
 \source{
 \url{https://www.povertyindex.org}
 }
