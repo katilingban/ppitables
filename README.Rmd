@@ -44,7 +44,7 @@ You can install the current development version of `ppitables` from GitHub with:
 
 ```{r gh-installation, eval = FALSE}
 if(!require("remotes")) install.packages("remotes")
-remotes::install_github("validmeasures/ppitables")
+remotes::install_github("katilingban/ppitables")
 library(ppitables)
 ```
 

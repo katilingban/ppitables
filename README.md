@@ -43,7 +43,7 @@ GitHub with:
 
 ``` r
 if(!require("remotes")) install.packages("remotes")
-remotes::install_github("validmeasures/ppitables")
+remotes::install_github("katilingban/ppitables")
 library(ppitables)
 ```
 
