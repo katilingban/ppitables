@@ -23,7 +23,8 @@ Imports:
     tidyr
 Suggests: 
     testthat,
-    covr
+    covr,
+    spelling
 License: MIT + file LICENSE
 Encoding: UTF-8
 Language: en-GB
