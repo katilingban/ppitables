@@ -13,6 +13,7 @@ developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repo
 [![CRAN](https://img.shields.io/cran/l/ppitables.svg)](https://github.com/katilingban/ppitables/blob/master/LICENSE.md)
 [![CRAN](http://cranlogs.r-pkg.org/badges/ppitables)](https://CRAN.R-project.org/package=ppitables)
 [![CRAN](http://cranlogs.r-pkg.org/badges/grand-total/ppitables)](https://CRAN.R-project.org/package=ppitables)
+![R-CMD-check](https://github.com/katilingban/ppitables/workflows/R-CMD-check/badge.svg)
 [![Travis-CI Build
 Status](https://travis-ci.org/katilingban/ppitables.svg?branch=master)](https://travis-ci.org/katilingban/ppitables)
 [![AppVeyor Build
