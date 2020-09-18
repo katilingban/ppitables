@@ -5,13 +5,15 @@
 \alias{ppiIND2016_r59}
 \title{Poverty Probability Index (PPI) lookup table for India using r59 poverty
 definitions}
-\format{A data frame with 4 columns and 101 rows:
+\format{
+A data frame with 4 columns and 101 rows:
 \describe{
 \item{\code{score}}{PPI score}
 \item{\code{saxena}}{National saxena}
 \item{\code{ppp108}}{Below $1.08 per day purchasing power parity (1993)}
 \item{\code{ppp216}}{Below $2.16 per day purchasing power parity (1993)}
-}}
+}
+}
 \source{
 \url{https://www.povertyindex.org}
 }

@@ -4,7 +4,8 @@
 \name{ppiMMR2019}
 \alias{ppiMMR2019}
 \title{Poverty Probability Index (PPI) lookup table for Myanmar}
-\format{A data frame with 20 columns and 101 rows:
+\format{
+A data frame with 20 columns and 101 rows:
 \describe{
 \item{\code{score}}{PPI score}
 \item{\code{nl100}}{National poverty line (100)}
@@ -26,7 +27,8 @@
 \item{\code{percentile40}}{NA}
 \item{\code{percentile60}}{NA}
 \item{\code{percentile80}}{NA}
-}}
+}
+}
 \source{
 \url{https://www.povertyindex.org}
 }

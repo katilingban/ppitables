@@ -5,7 +5,8 @@
 \alias{ppiNPL2013_a}
 \title{Poverty Probability Index (PPI) lookup table for Nepal using new poverty
 definitions}
-\format{A data frame with 9 columns and 101 rows:
+\format{
+A data frame with 9 columns and 101 rows:
 \describe{
 \item{\code{score}}{PPI score}
 \item{\code{nlFood}}{Food poverty line}
@@ -16,7 +17,8 @@ definitions}
 \item{\code{ppp125}}{Below $1.25 per day purchasing power parity (2005)}
 \item{\code{ppp200}}{Below $2.00 per day purchasing power parity (2005)}
 \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
-}}
+}
+}
 \source{
 \url{https://www.povertyindex.org}
 }

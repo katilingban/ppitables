@@ -4,13 +4,15 @@
 \name{ppiRUS2010}
 \alias{ppiRUS2010}
 \title{Poverty Probability Index (PPI) lookup table for Russia}
-\format{A data frame with 4 columns and 101 rows:
+\format{
+A data frame with 4 columns and 101 rows:
 \describe{
 \item{\code{score}}{PPI score}
 \item{\code{nl100}}{National poverty line (100\%)}
 \item{\code{extreme}}{USAID extreme poverty}
 \item{\code{ppp625}}{Below $6.25 per day purchasing power parity (2005)}
-}}
+}
+}
 \source{
 \url{https://www.povertyindex.org}
 }

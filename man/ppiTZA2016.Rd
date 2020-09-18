@@ -4,7 +4,8 @@
 \name{ppiTZA2016}
 \alias{ppiTZA2016}
 \title{Poverty Probability Index (PPI) lookup table for Tanzania}
-\format{A data frame with 19 columns and 101 rows:
+\format{
+A data frame with 19 columns and 101 rows:
 \describe{
 \item{\code{score}}{PPI score}
 \item{\code{nlFood}}{Food poverty line}
@@ -25,7 +26,8 @@
 \item{\code{percentile50}}{Below 50th percentile poverty line}
 \item{\code{percentile60}}{Below 60th percentile poverty line}
 \item{\code{percentile80}}{Below 80th percentile poverty line}
-}}
+}
+}
 \source{
 \url{https://www.povertyindex.org}
 }

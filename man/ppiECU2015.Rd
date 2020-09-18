@@ -4,7 +4,8 @@
 \name{ppiECU2015}
 \alias{ppiECU2015}
 \title{Poverty Probability Index (PPI) lookup table for Ecuador}
-\format{A data frame with 11 columns and 101 rows:
+\format{
+A data frame with 11 columns and 101 rows:
 \describe{
 \item{\code{score}}{PPI score}
 \item{\code{nlFood}}{Food poverty line}
@@ -17,7 +18,8 @@
 \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
 \item{\code{ppp500}}{Below $5.00 per day purchasing power parity (2005)}
 \item{\code{ppp844}}{Below $8.44 per day purchasing power parity (2005)}
-}}
+}
+}
 \source{
 \url{https://www.povertyindex.org}
 }

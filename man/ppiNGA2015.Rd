@@ -4,7 +4,8 @@
 \name{ppiNGA2015}
 \alias{ppiNGA2015}
 \title{Poverty Probability Index (PPI) lookup table for Nigeria}
-\format{A data frame with 13 columns and 101 rows:
+\format{
+A data frame with 13 columns and 101 rows:
 \describe{
 \item{\code{score}}{PPI score}
 \item{\code{nlFood}}{Food poverty line}
@@ -19,7 +20,8 @@
 \item{\code{ppp500}}{Below $5.00 per day purchasing power parity (2005)}
 \item{\code{ppp190}}{Below $1.90 per day purchasing power parity (2011)}
 \item{\code{ppp310}}{Below $3.10 per day purchasing power parity (2011)}
-}}
+}
+}
 \source{
 \url{https://www.povertyindex.org}
 }

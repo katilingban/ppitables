@@ -3,22 +3,25 @@
 
 # ppitables: Lookup tables to generate poverty likelihoods and rates using the Poverty Probability Index (PPI) <img src="man/figures/ppitables.png" width="200" align="right" />
 
+<!--- BEGIN BADGES --->
+
 [![Project Status: Active – The project has reached a stable, usable
 state and is being actively
 developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
 [![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
 [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/ppitables)](https://cran.r-project.org/package=ppitables)
-[![CRAN](https://img.shields.io/cran/l/ppitables.svg)](https://github.com/validmeasures/ppitables/blob/master/LICENSE.md)
+[![CRAN](https://img.shields.io/cran/l/ppitables.svg)](https://github.com/katilingban/ppitables/blob/master/LICENSE.md)
 [![CRAN](http://cranlogs.r-pkg.org/badges/ppitables)](https://CRAN.R-project.org/package=ppitables)
 [![CRAN](http://cranlogs.r-pkg.org/badges/grand-total/ppitables)](https://CRAN.R-project.org/package=ppitables)
 [![Travis-CI Build
-Status](https://travis-ci.org/validmeasures/ppitables.svg?branch=master)](https://travis-ci.org/validmeasures/ppitables)
+Status](https://travis-ci.org/katilingban/ppitables.svg?branch=master)](https://travis-ci.org/katilingban/ppitables)
 [![AppVeyor Build
-Status](https://ci.appveyor.com/api/projects/status/github/validmeasures/ppitables?branch=master&svg=true)](https://ci.appveyor.com/project/validmeasures/ppitables)
+Status](https://ci.appveyor.com/api/projects/status/github/katilingban/ppitables?branch=master&svg=true)](https://ci.appveyor.com/project/katilingban/ppitables)
 [![Coverage
-Status](https://img.shields.io/codecov/c/github/validmeasures/ppitables/master.svg)](https://codecov.io/github/validmeasures/ppitables?branch=master)
+Status](https://img.shields.io/codecov/c/github/katilingban/ppitables/master.svg)](https://codecov.io/github/katilingban/ppitables?branch=master)
 [![DOI - All
 Versions](https://zenodo.org/badge/DOI/10.5281/zenodo.1188982.svg)](https://doi.org/10.5281/zenodo.1188982)
+<!--- END BADGES --->
 
 Lookup tables for estimating the likelihood of poverty using the
 `Poverty Probability Index` (previously called `Progress out of Poverty
@@ -40,7 +43,7 @@ GitHub with:
 
 ``` r
 if(!require("remotes")) install.packages("remotes")
-remotes::install_github("validmeasures/ppitables")
+remotes::install_github("katilingban/ppitables")
 library(ppitables)
 ```
 
@@ -474,7 +477,7 @@ the PPI [site](https://www.povertyindex.org).
 <tr class="even">
 <td style="text-align: right;"></td>
 <td><code>ppiMOZ2019</code></td>
-<td>PPI for Mozambqiue based on 2014 Inquerito Sobre Orcamento Familiar (IOF) Survey</td>
+<td>PPI for Mozambique based on 2014 Inquerito Sobre Orcamento Familiar (IOF) Survey</td>
 <td style="text-align: center;">2019</td>
 </tr>
 <tr class="odd">
@@ -762,7 +765,12 @@ command in R:
 
 ``` r
 find_table()
-#> # A tibble: 88 x 7
+#> Warning: `as.tibble()` is deprecated as of tibble 2.0.0.
+#> Please use `as_tibble()` instead.
+#> The signature and semantics have changed, see `?as_tibble`.
+#> This warning is displayed once every 8 hours.
+#> Call `lifecycle::last_warnings()` to see where this warning was generated.
+#> # A tibble: 89 x 7
 #>    region    country  survey_year release_year description        type  filename
 #>    <fct>     <fct>          <int>        <int> <fct>              <fct> <fct>   
 #>  1 Asia      Afghani…        2007         2012 PPI for Afghanist… sps   ppiAFG2…
@@ -775,7 +783,7 @@ find_table()
 #>  8 Africa    Burkina…        2014         2017 PPI for Burkina F… sps   ppiBFA2…
 #>  9 Africa    Burkina…        2014         2017 PPI for Burkina F… ipa   ppiBFA2…
 #> 10 Asia      Cambodia        2011         2015 PPI for Cambodia … sps   ppiKHM2…
-#> # … with 78 more rows
+#> # … with 79 more rows
 ```
 
 View the list of PPI country tables for Africa using the following
@@ -783,7 +791,7 @@ command in R:
 
 ``` r
 find_table(region = "Africa")
-#> # A tibble: 37 x 7
+#> # A tibble: 38 x 7
 #>    region country  survey_year release_year description           type  filename
 #>    <fct>  <fct>          <int>        <int> <fct>                 <fct> <fct>   
 #>  1 Africa Angola          2008         2015 PPI for Angola based… sps   ppiAGO2…
@@ -796,7 +804,7 @@ find_table(region = "Africa")
 #>  8 Africa Cote d'…        2015         2018 PPI for Ivory Coast … ipa   ppiCIV2…
 #>  9 Africa Ethiopia        2010         2016 PPI for Ethiopia bas… sps   ppiETH2…
 #> 10 Africa Ghana           2012         2015 PPI for Ghana based … sps   ppiGHA2…
-#> # … with 27 more rows
+#> # … with 28 more rows
 ```
 
 View the list of PPI country tables in Zambia using the the following
@@ -823,9 +831,9 @@ tables, the following command can be used in R:
 
 ``` r
 get_table()
-#> # A tibble: 87,769 x 7
+#> # A tibble: 89,688 x 7
 #>    country     release_year filename   type  score poverty_definition   ppi
-#>    <fct>       <fct>        <fct>      <fct> <dbl> <chr>              <dbl>
+#>    <chr>       <chr>        <chr>      <chr> <dbl> <chr>              <dbl>
 #>  1 Afghanistan 2012         ppiAFG2012 sps       0 nl                 100  
 #>  2 Afghanistan 2012         ppiAFG2012 sps       1 nl                 100  
 #>  3 Afghanistan 2012         ppiAFG2012 sps       2 nl                 100  
@@ -836,7 +844,7 @@ get_table()
 #>  8 Afghanistan 2012         ppiAFG2012 sps       7 nl                  68.8
 #>  9 Afghanistan 2012         ppiAFG2012 sps       8 nl                  68.8
 #> 10 Afghanistan 2012         ppiAFG2012 sps       9 nl                  68.8
-#> # … with 87,759 more rows
+#> # … with 89,678 more rows
 ```
 
 To get the actual PPI tables for all countries with PPI tables in
@@ -844,9 +852,9 @@ Africa, the following command can be used in R:
 
 ``` r
 get_table(region = "Africa")
-#> # A tibble: 40,703 x 7
+#> # A tibble: 42,622 x 7
 #>    country release_year filename   type  score poverty_definition   ppi
-#>    <fct>   <fct>        <fct>      <fct> <dbl> <chr>              <dbl>
+#>    <chr>   <chr>        <chr>      <chr> <dbl> <chr>              <dbl>
 #>  1 Angola  2015         ppiAGO2015 sps       0 nl100                100
 #>  2 Angola  2015         ppiAGO2015 sps       1 nl100                100
 #>  3 Angola  2015         ppiAGO2015 sps       2 nl100                100
@@ -857,7 +865,7 @@ get_table(region = "Africa")
 #>  8 Angola  2015         ppiAGO2015 sps       7 nl100                100
 #>  9 Angola  2015         ppiAGO2015 sps       8 nl100                100
 #> 10 Angola  2015         ppiAGO2015 sps       9 nl100                100
-#> # … with 40,693 more rows
+#> # … with 42,612 more rows
 ```
 
 ### Notes

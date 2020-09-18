@@ -5,7 +5,8 @@
 \alias{ppiIND2016_r68}
 \title{Poverty Probability Index (PPI) lookup table for India using r68 poverty
 definitions}
-\format{A data frame with 16 columns and 101 rows:
+\format{
+A data frame with 16 columns and 101 rows:
 \describe{
 \item{\code{score}}{PPI score}
 \item{\code{rangarajan100}}{National rangarajan (100\%)}
@@ -23,7 +24,8 @@ definitions}
 \item{\code{percentile50}}{Below 50th percentile poverty line}
 \item{\code{percentile60}}{Below 60th percentile poverty line}
 \item{\code{percentile80}}{Below 80th percentile poverty line}
-}}
+}
+}
 \source{
 \url{https://www.povertyindex.org}
 }

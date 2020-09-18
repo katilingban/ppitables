@@ -4,7 +4,8 @@
 \name{ppiVNM2009}
 \alias{ppiVNM2009}
 \title{Poverty Probability Index (PPI) lookup table for Vietnam}
-\format{A data frame with 8 columns and 101 rows:
+\format{
+A data frame with 8 columns and 101 rows:
 \describe{
 \item{\code{score}}{PPI score}
 \item{\code{nl100}}{National poverty line (100\%)}
@@ -14,7 +15,8 @@
 \item{\code{ppp175}}{Below $1.75 per day purchasing power parity (2005)}
 \item{\code{ppp250}}{Below $2.50 per day purchasing power parity (2005)}
 \item{\code{molisa}}{MOLISA poverty line}
-}}
+}
+}
 \source{
 \url{https://www.povertyindex.org}
 }
