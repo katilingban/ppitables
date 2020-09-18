@@ -19,12 +19,12 @@ library(ppitables)
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
 [![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/ppitables)](https://cran.r-project.org/package=ppitables)
-[![CRAN](https://img.shields.io/cran/l/ppitables.svg)](https://github.com/validmeasures/ppitables/blob/master/LICENSE.md)
+[![CRAN](https://img.shields.io/cran/l/ppitables.svg)](https://github.com/katilingban/ppitables/blob/master/LICENSE.md)
 [![CRAN](http://cranlogs.r-pkg.org/badges/ppitables)](https://CRAN.R-project.org/package=ppitables)
 [![CRAN](http://cranlogs.r-pkg.org/badges/grand-total/ppitables)](https://CRAN.R-project.org/package=ppitables)
-[![Travis-CI Build Status](https://travis-ci.org/validmeasures/ppitables.svg?branch=master)](https://travis-ci.org/validmeasures/ppitables)
-[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/validmeasures/ppitables?branch=master&svg=true)](https://ci.appveyor.com/project/validmeasures/ppitables)
-[![Coverage Status](https://img.shields.io/codecov/c/github/validmeasures/ppitables/master.svg)](https://codecov.io/github/validmeasures/ppitables?branch=master)
+[![Travis-CI Build Status](https://travis-ci.org/katilingban/ppitables.svg?branch=master)](https://travis-ci.org/katilingban/ppitables)
+[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/katilingban/ppitables?branch=master&svg=true)](https://ci.appveyor.com/project/katilingban/ppitables)
+[![Coverage Status](https://img.shields.io/codecov/c/github/katilingban/ppitables/master.svg)](https://codecov.io/github/katilingban/ppitables?branch=master)
 [![DOI - All Versions](https://zenodo.org/badge/DOI/10.5281/zenodo.1188982.svg)](https://doi.org/10.5281/zenodo.1188982)
 <!--- END BADGES --->
 
@@ -241,7 +241,7 @@ Following are the available PPI country tables from the `ppitables` package. Thi
 | 33. | `ppiMOZ2013`    | PPI for Mozambique based on 2008/9 Household Budget | 2013            |
 |     |                 | Survey                                              |                 |
 +-----+-----------------+-----------------------------------------------------+-----------------+
-|     | `ppiMOZ2019`    | PPI for Mozambqiue based on 2014 Inquerito Sobre    | 2019            |
+|     | `ppiMOZ2019`    | PPI for Mozambique based on 2014 Inquerito Sobre    | 2019            |
 |     |                 | Orcamento Familiar (IOF) Survey                     |                 |
 +-----+-----------------+-----------------------------------------------------+-----------------+
 | 34. | `ppiMWI2015`    | PPI for Malawi based on Malawi's 2010/11 Integrated | 2015            |

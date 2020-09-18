@@ -10,15 +10,15 @@ state and is being actively
 developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
 [![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
 [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/ppitables)](https://cran.r-project.org/package=ppitables)
-[![CRAN](https://img.shields.io/cran/l/ppitables.svg)](https://github.com/validmeasures/ppitables/blob/master/LICENSE.md)
+[![CRAN](https://img.shields.io/cran/l/ppitables.svg)](https://github.com/katilingban/ppitables/blob/master/LICENSE.md)
 [![CRAN](http://cranlogs.r-pkg.org/badges/ppitables)](https://CRAN.R-project.org/package=ppitables)
 [![CRAN](http://cranlogs.r-pkg.org/badges/grand-total/ppitables)](https://CRAN.R-project.org/package=ppitables)
 [![Travis-CI Build
-Status](https://travis-ci.org/validmeasures/ppitables.svg?branch=master)](https://travis-ci.org/validmeasures/ppitables)
+Status](https://travis-ci.org/katilingban/ppitables.svg?branch=master)](https://travis-ci.org/katilingban/ppitables)
 [![AppVeyor Build
-Status](https://ci.appveyor.com/api/projects/status/github/validmeasures/ppitables?branch=master&svg=true)](https://ci.appveyor.com/project/validmeasures/ppitables)
+Status](https://ci.appveyor.com/api/projects/status/github/katilingban/ppitables?branch=master&svg=true)](https://ci.appveyor.com/project/katilingban/ppitables)
 [![Coverage
-Status](https://img.shields.io/codecov/c/github/validmeasures/ppitables/master.svg)](https://codecov.io/github/validmeasures/ppitables?branch=master)
+Status](https://img.shields.io/codecov/c/github/katilingban/ppitables/master.svg)](https://codecov.io/github/katilingban/ppitables?branch=master)
 [![DOI - All
 Versions](https://zenodo.org/badge/DOI/10.5281/zenodo.1188982.svg)](https://doi.org/10.5281/zenodo.1188982)
 <!--- END BADGES --->
@@ -477,7 +477,7 @@ the PPI [site](https://www.povertyindex.org).
 <tr class="even">
 <td style="text-align: right;"></td>
 <td><code>ppiMOZ2019</code></td>
-<td>PPI for Mozambqiue based on 2014 Inquerito Sobre Orcamento Familiar (IOF) Survey</td>
+<td>PPI for Mozambique based on 2014 Inquerito Sobre Orcamento Familiar (IOF) Survey</td>
 <td style="text-align: center;">2019</td>
 </tr>
 <tr class="odd">
