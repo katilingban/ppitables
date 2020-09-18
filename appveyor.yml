@@ -17,7 +17,6 @@ cache:
 
 build_script:
   - travis-tool.sh install_deps
-  #- travis-tool.sh install.packages("utf8", tye = "binary")
 
 test_script:
   - travis-tool.sh run_tests
@@ -29,6 +28,7 @@ on_failure:
 environment:
   global:
     USE_RTOOLS: true
+    PKGTYPE: binary
     R_CHECK_ARGS: "--no-manual --as-cran --run-donttest"
     WARNINGS_ARE_ERRORS: 1
 
