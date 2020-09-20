@@ -10,6 +10,8 @@ state and is being actively
 developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
 [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/ppitables)](https://cran.r-project.org/package=ppitables)
+[![cran
+checks](https://cranchecks.info/badges/summary/ppitables)](https://cran.r-project.org/web/checks/check_results_ppitables.html)
 [![CRAN](https://img.shields.io/cran/l/ppitables.svg)](https://github.com/katilingban/ppitables/blob/master/LICENSE.md)
 [![CRAN](http://cranlogs.r-pkg.org/badges/ppitables)](https://CRAN.R-project.org/package=ppitables)
 [![CRAN](http://cranlogs.r-pkg.org/badges/grand-total/ppitables)](https://CRAN.R-project.org/package=ppitables)
