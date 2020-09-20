@@ -17,14 +17,15 @@ Description: The Poverty Probability Index (PPI) is a poverty measurement tool
     tables have been extracted from documentation of the PPI found at 
     <https://www.povertyindex.org> and managed by Innovations for Poverty Action 
     <https://www.poverty-action.org>.
+License: MIT + file LICENSE
 Depends: R (>= 2.10)
 Imports: 
     tibble,
     tidyr
 Suggests: 
     testthat,
-    covr
-License: MIT + file LICENSE
+    covr,
+    spelling
 Encoding: UTF-8
 Language: en-GB
 LazyData: true
