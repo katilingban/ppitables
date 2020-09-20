@@ -82,7 +82,7 @@ this additional component to some `PPI` tables refer to, read the index
 table below of the `PPI` tables available in this package.
 
 Following are the available PPI country tables from the `ppitables`
-package. This is updated as at 26 December 2019 using information from
+package. This is updated as at 20 September 2020 using information from
 the PPI [site](https://www.povertyindex.org).
 
 ### List of PPI country tables
