@@ -23,8 +23,7 @@ Status](https://ci.appveyor.com/api/projects/status/github/katilingban/ppitables
 ![test-coverage](https://github.com/katilingban/ppitables/workflows/test-coverage/badge.svg)
 [![Coverage
 Status](https://img.shields.io/codecov/c/github/katilingban/ppitables/master.svg)](https://codecov.io/github/katilingban/ppitables?branch=master)
-[![DOI - All
-Versions](https://zenodo.org/badge/DOI/10.5281/zenodo.1188982.svg)](https://doi.org/10.5281/zenodo.1188982)
+[![DOI](https://zenodo.org/badge/121277287.svg)](https://zenodo.org/badge/latestdoi/121277287)
 <!--- END BADGES --->
 
 Lookup tables for estimating the likelihood of poverty using the
