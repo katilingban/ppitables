@@ -1,4 +1,6 @@
-# ppitable 0.5.2
+# ppitables
+
+# ppitables 0.5.2
 
 This is the seventh CRAN release of `ppitables`. In this release, I added:
 
