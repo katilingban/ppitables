@@ -1,23 +1,26 @@
 ## Release summary
-This is the seventh CRAN release of `ppitables`. In this release, I added:
+This is the eighth CRAN release of `ppitables`. In this release, I added:
 
-* new PPI tables for Rwands using the new PPI calculation approach developed
-by the International Poverty Alliance (IPA) based on data from Rwanda's 2016/2017
-Integrated Household Living Conditions Survey (EICV5) produced by the National
-Institute of Statistics Rwanda (NISR) and the Ministry of Finance and Economic
-Planning
-
-* corrected URL source for Rwanda PPI tables
+* new PPI tables for Malawi using the new PPI calculation approach developed
+by the International Poverty Alliance (IPA) based on data from Malawi's 2016/2017
+Fourth Integrated Household Survey (IHS4)
 
 * updated `steer` data that serves as an index to the tables to include the new
-Rwanda PPI tables
+Malawi PPI tables
+
+* updated `get_table()` to deal with steering file values not being converted
+into factors anymore in newest R version
+
+* general documentation updates and general checking updates
+
+* converted tables for countries with the new PPI definitions into tibble format
 
 ## Test environments
-* local OS X install, R 3.6.2
+* local OS X install, R 4.0.2
 * ubuntu 16.04.6 (on travis-ci), release, devel and oldrelease
-* local ubuntu 16.04 install, R 3.6.2
+* local ubuntu 16.04 install, R 18.04.5
 * win-builder (devel, release and old release)
-* windows (on appveyor), x64 release and devel, i386 release and devel
+* windows (on appveyor), x64 release, i386 release
 
 ## R CMD check results
 
@@ -25,4 +28,4 @@ Rwanda PPI tables
 
 ## Reverse dependencies
 `ppitables` doesn't have any downstream / reverse dependencies 
-(see https://github.com/validmeasures/ppitables/tree/master/revdep)
+(see https://github.com/katilingban/ppitables/tree/master/revdep)
