@@ -6,6 +6,7 @@
 
 library(readxl)
 library(stringr)
+library(tibble)
 
 ################################################################################
 #
@@ -13,7 +14,7 @@ library(stringr)
 #
 ################################################################################
 
-#################################### Ghana PPI #################################
+## Ghana PPI ###################################################################
 
 gha <- read_xlsx(path = "data-raw/sources/ghana2019.xlsx",
                  sheet = "Look-up Tables",
@@ -28,11 +29,11 @@ names(gha) <- c("score", "nl100", "extreme", "nl150", "nl200",
                 "ppp1500", "ppp2170", "ppp125", "ppp250", "ppp500",
                 "percentile20", "percentile40", "percentile60", "percentile80")
 
-ppiGHA2019 <- gha
+ppiGHA2019 <- tibble::tibble(gha)
 
 usethis::use_data(ppiGHA2019, overwrite = TRUE)
 
-################################## Mozambique PPI ##############################
+## Mozambique PPI ##############################################################
 
 moz <- read_xlsx(path = "data-raw/sources/mozambique2019.xlsx",
                  sheet = "Look-up Tables",
@@ -47,11 +48,11 @@ names(moz) <- c("score", "nl100", "nl150", "nl200",
                 "ppp1500", "ppp2170", "percentile20", "percentile40",
                 "percentile60", "percentile80")
 
-ppiMOZ2019 <- moz
+ppiMOZ2019 <- tibble::tibble(moz)
 
 usethis::use_data(ppiMOZ2019, overwrite = TRUE)
 
-################################ Myanmar 2019 ##################################
+## Myanmar 2019 ################################################################
 
 mmr <- read_xlsx(path = "data-raw/sources/myanmar2019.xlsx",
                  sheet = "Look-up Tables",
@@ -66,11 +67,11 @@ names(mmr) <- c("score", "nl100", "extreme", "nl150", "nl200",
                 "ppp1500", "ppp2170", "ppp125", "ppp250", "ppp500",
                 "percentile20", "percentile40", "percentile60", "percentile80")
 
-ppiMMR2019 <- mmr
+ppiMMR2019 <- tibble::tibble(mmr)
 
 usethis::use_data(ppiMMR2019, overwrite = TRUE)
 
-################################ Rwanda 2019 ###################################
+## Rwanda 2019 #################################################################
 
 rwa <- read_xlsx(path = "data-raw/sources/rwanda2019.xlsx",
                  sheet = "Look-up Tables",
@@ -85,6 +86,26 @@ names(rwa) <- c("score", "nl100", "extreme", "nl150", "nl200",
                 "ppp1500", "ppp2170", "ppp125", "ppp250", "ppp500",
                 "percentile20", "percentile40", "percentile60", "percentile80")
 
-ppiRWA2019 <- rwa
+ppiRWA2019 <- tibble::tibble(rwa)
 
 usethis::use_data(ppiRWA2019, overwrite = TRUE)
+
+## Malawi 2020 #################################################################
+
+mwi <- read_xlsx(path = "data-raw/sources/malawi2020.xlsx",
+                 sheet = "Look-up Tables",
+                 range = "B10:Q110")
+
+mwi <- data.frame(mwi)
+
+mwi[ , 2:ncol(mwi)] <- mwi[ , 2:ncol(mwi)] * 100
+
+names(mwi) <- c("score", "nl100", "extreme", "nl150", "nl200",
+                "ppp100", "ppp190", "ppp320", "ppp550",
+                "ppp125", "ppp250", "ppp500",
+                "percentile20", "percentile40", "percentile60", "percentile80")
+
+ppiMWI2020 <- tibble::tibble(mwi)
+
+usethis::use_data(ppiMWI2020, overwrite = TRUE)
+

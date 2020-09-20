@@ -45,6 +45,7 @@ Africa,Madagascar,2010,2015,PPI for Madagascar based on Madagascar 2010 Periodic
 Africa,Malawi,2010,2015,PPI for Malawi based on Malawi 2010/11 Integrated Household Survey using legacy poverty definitions,sps,ppiMWI2015
 Africa,Malawi,2010,2015,PPI for Malawi based on Malawi 2010/11 Integrated Household Survey using government poverty definitions,sps,ppiMWI2015_gov
 Africa,Malawi,2010,2015,PPI for Malawi based on Malawi 2010/11 Integrated Household Survey using PBM poverty definitions,sps,ppiMWI2015_pbm
+Africa,Malawi,2017,2020,PPI for Malawi based on 2016-2017 Fourth Integrated Household Survey (IHS4) using new PPI definitions,ipa,ppiMWI2020
 Africa,Mali,2001,2010,PPI for Mali based on Mali 2001 Poverty Evalution Survey,sps,ppiMLI2010
 Latin American and the Carribean,Mexico,2014,2017,PPI for Mexico based on Mexico Encuesta Nacional de Ingresos y Gastos de los Hogares de 2014 using legacy definitions of poverty,ipa,ppiMEX2017
 Latin American and the Carribean,Mexico,2014,2017,PPI for Mexico based on Mexico Encuesta Nacional de Ingresos y Gastos de los Hogares de 2014 using new definitions of poverty,ipa,ppiMEX2017_a
