@@ -130,12 +130,12 @@
     <p>Poverty Probability Index (PPI) lookup table for Tajikistan</p>
     </div>
 
-    <pre class="usage"><span class='no'>ppiTJK2015</span></pre>
+    <pre class="usage"><span class='kw'>ppiTJK2015</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 9 columns and 101 rows:</p><dl'>
+    <p>A data frame with 9 columns and 101 rows:</p><dl>
 <dt><code>score</code></dt><dd><p>PPI score</p></dd>
 <dt><code>nlFood</code></dt><dd><p>Food poverty line</p></dd>
 <dt><code>nl100</code></dt><dd><p>National poverty line (100%)</p></dd>
@@ -154,7 +154,8 @@
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>  <span class='co'># Access Tajikistan PPI table</span>
-  <span class='no'>ppiTJK2015</span></div><div class='output co'>#&gt;     score nlFood nl100 nl150 nl200 median ppp125 ppp200 ppp250
+  <span class='kw'>ppiTJK2015</span>
+</div><div class='output co'>#&gt;     score nlFood nl100 nl150 nl200 median ppp125 ppp200 ppp250
 #&gt; 0       0   48.2 100.0 100.0 100.0   70.9   18.2   34.0   54.3
 #&gt; 1       1   48.2 100.0 100.0 100.0   70.9   18.2   34.0   54.3
 #&gt; 2       2   48.2 100.0 100.0 100.0   70.9   18.2   34.0   54.3
@@ -258,19 +259,22 @@
 #&gt; 100   100    0.0   0.0   0.0   8.7    0.0    0.0    0.0    0.0</div><div class='input'>
   <span class='co'># Given a specific PPI score (from 0 - 100), get the row of poverty</span>
   <span class='co'># probabilities from PPI table it corresponds to</span>
-  <span class='no'>ppiScore</span> <span class='kw'>&lt;-</span> <span class='fl'>50</span>
-  <span class='no'>ppiTJK2015</span>[<span class='no'>ppiTJK2015</span>$<span class='no'>score</span> <span class='kw'>==</span> <span class='no'>ppiScore</span>, ]</div><div class='output co'>#&gt;    score nlFood nl100 nl150 nl200 median ppp125 ppp200 ppp250
+  <span class='kw'>ppiScore</span> <span class='op'>&lt;-</span> <span class='fl'>50</span>
+  <span class='kw'>ppiTJK2015</span>[<span class='kw'>ppiTJK2015</span><span class='op'>$</span><span class='kw'>score</span> <span class='op'>==</span> <span class='kw'>ppiScore</span>, ]
+</div><div class='output co'>#&gt;    score nlFood nl100 nl150 nl200 median ppp125 ppp200 ppp250
 #&gt; 50    50    8.2  37.5  72.6    88   13.5    0.5    3.6   11.1</div><div class='input'>
   <span class='co'># Use subset() function to get the row of poverty probabilities corresponding</span>
   <span class='co'># to specific PPI score</span>
-  <span class='no'>ppiScore</span> <span class='kw'>&lt;-</span> <span class='fl'>50</span>
-  <span class='fu'><a href='https://rdrr.io/r/base/subset.html'>subset</a></span>(<span class='no'>ppiTJK2015</span>, <span class='no'>score</span> <span class='kw'>==</span> <span class='no'>ppiScore</span>)</div><div class='output co'>#&gt;    score nlFood nl100 nl150 nl200 median ppp125 ppp200 ppp250
+  <span class='kw'>ppiScore</span> <span class='op'>&lt;-</span> <span class='fl'>50</span>
+  <span class='fu'><a href='https://rdrr.io/r/base/subset.html'>subset</a></span>(<span class='kw'>ppiTJK2015</span>, <span class='kw'>score</span> <span class='op'>==</span> <span class='kw'>ppiScore</span>)
+</div><div class='output co'>#&gt;    score nlFood nl100 nl150 nl200 median ppp125 ppp200 ppp250
 #&gt; 50    50    8.2  37.5  72.6    88   13.5    0.5    3.6   11.1</div><div class='input'>
   <span class='co'># Given a specific PPI score (from 0 - 100), get a poverty probability</span>
   <span class='co'># based on a specific poverty definition. In this example, the national</span>
   <span class='co'># poverty line definition</span>
-  <span class='no'>ppiScore</span> <span class='kw'>&lt;-</span> <span class='fl'>50</span>
-  <span class='no'>ppiTJK2015</span>[<span class='no'>ppiTJK2015</span>$<span class='no'>score</span> <span class='kw'>==</span> <span class='no'>ppiScore</span>, <span class='st'>"nl100"</span>]</div><div class='output co'>#&gt; [1] 37.5</div><div class='input'>
+  <span class='kw'>ppiScore</span> <span class='op'>&lt;-</span> <span class='fl'>50</span>
+  <span class='kw'>ppiTJK2015</span>[<span class='kw'>ppiTJK2015</span><span class='op'>$</span><span class='kw'>score</span> <span class='op'>==</span> <span class='kw'>ppiScore</span>, <span class='st'>"nl100"</span>]
+</div><div class='output co'>#&gt; [1] 37.5</div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
@@ -287,7 +291,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>

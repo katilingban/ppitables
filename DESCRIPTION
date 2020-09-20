@@ -25,7 +25,9 @@ Imports:
 Suggests: 
     testthat,
     covr,
-    spelling
+    spelling,
+    stringr,
+    readxl
 Encoding: UTF-8
 Language: en-GB
 LazyData: true

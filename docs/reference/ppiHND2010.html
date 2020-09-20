@@ -130,12 +130,12 @@
     <p>Poverty Probability Index (PPI) lookup table for Honduras</p>
     </div>
 
-    <pre class="usage"><span class='no'>ppiHND2010</span></pre>
+    <pre class="usage"><span class='kw'>ppiHND2010</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 7 columns and 101 rows:</p><dl'>
+    <p>A data frame with 7 columns and 101 rows:</p><dl>
 <dt><code>score</code></dt><dd><p>PPI score</p></dd>
 <dt><code>nl100</code></dt><dd><p>National poverty line (100%)</p></dd>
 <dt><code>nlFood</code></dt><dd><p>Food poverty line</p></dd>
@@ -152,7 +152,8 @@
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>  <span class='co'># Access Honduras PPI table</span>
-  <span class='no'>ppiHND2010</span></div><div class='output co'>#&gt;      score nl100 nlFood extreme ppp125 ppp250 ppp375
+  <span class='kw'>ppiHND2010</span>
+</div><div class='output co'>#&gt;      score nl100 nlFood extreme ppp125 ppp250 ppp375
 #&gt; 1       NA  66.7   66.7    66.7   66.7   66.7   66.7
 #&gt; 2       NA  66.7   66.7    66.7   66.7   66.7   66.7
 #&gt; 3       NA  66.7   66.7    66.7   66.7   66.7   66.7
@@ -256,8 +257,9 @@
 #&gt; 1001    NA   2.7    0.0     0.0    0.0    0.0    2.7</div><div class='input'>
   <span class='co'># Given a specific PPI score (from 0 - 100), get the row of poverty</span>
   <span class='co'># probabilities from PPI table it corresponds to</span>
-  <span class='no'>ppiScore</span> <span class='kw'>&lt;-</span> <span class='fl'>50</span>
-  <span class='no'>ppiHND2010</span>[<span class='no'>ppiHND2010</span>$<span class='no'>score</span> <span class='kw'>==</span> <span class='no'>ppiScore</span>, ]</div><div class='output co'>#&gt;        score nl100 nlFood extreme ppp125 ppp250 ppp375
+  <span class='kw'>ppiScore</span> <span class='op'>&lt;-</span> <span class='fl'>50</span>
+  <span class='kw'>ppiHND2010</span>[<span class='kw'>ppiHND2010</span><span class='op'>$</span><span class='kw'>score</span> <span class='op'>==</span> <span class='kw'>ppiScore</span>, ]
+</div><div class='output co'>#&gt;        score nl100 nlFood extreme ppp125 ppp250 ppp375
 #&gt; NA        NA    NA     NA      NA     NA     NA     NA
 #&gt; NA.1      NA    NA     NA      NA     NA     NA     NA
 #&gt; NA.2      NA    NA     NA      NA     NA     NA     NA
@@ -361,14 +363,16 @@
 #&gt; NA.100    NA    NA     NA      NA     NA     NA     NA</div><div class='input'>
   <span class='co'># Use subset() function to get the row of poverty probabilities corresponding</span>
   <span class='co'># to specific PPI score</span>
-  <span class='no'>ppiScore</span> <span class='kw'>&lt;-</span> <span class='fl'>50</span>
-  <span class='fu'><a href='https://rdrr.io/r/base/subset.html'>subset</a></span>(<span class='no'>ppiHND2010</span>, <span class='no'>score</span> <span class='kw'>==</span> <span class='no'>ppiScore</span>)</div><div class='output co'>#&gt; [1] score   nl100   nlFood  extreme ppp125  ppp250  ppp375 
+  <span class='kw'>ppiScore</span> <span class='op'>&lt;-</span> <span class='fl'>50</span>
+  <span class='fu'><a href='https://rdrr.io/r/base/subset.html'>subset</a></span>(<span class='kw'>ppiHND2010</span>, <span class='kw'>score</span> <span class='op'>==</span> <span class='kw'>ppiScore</span>)
+</div><div class='output co'>#&gt; [1] score   nl100   nlFood  extreme ppp125  ppp250  ppp375 
 #&gt; &lt;0 rows&gt; (or 0-length row.names)</div><div class='input'>
   <span class='co'># Given a specific PPI score (from 0 - 100), get a poverty probability</span>
   <span class='co'># based on a specific poverty definition. In this example, the USAID</span>
   <span class='co'># extreme poverty definition</span>
-  <span class='no'>ppiScore</span> <span class='kw'>&lt;-</span> <span class='fl'>50</span>
-  <span class='no'>ppiHND2010</span>[<span class='no'>ppiHND2010</span>$<span class='no'>score</span> <span class='kw'>==</span> <span class='no'>ppiScore</span>, <span class='st'>"extreme"</span>]</div><div class='output co'>#&gt;   [1] NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA
+  <span class='kw'>ppiScore</span> <span class='op'>&lt;-</span> <span class='fl'>50</span>
+  <span class='kw'>ppiHND2010</span>[<span class='kw'>ppiHND2010</span><span class='op'>$</span><span class='kw'>score</span> <span class='op'>==</span> <span class='kw'>ppiScore</span>, <span class='st'>"extreme"</span>]
+</div><div class='output co'>#&gt;   [1] NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA
 #&gt;  [26] NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA
 #&gt;  [51] NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA
 #&gt;  [76] NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA
@@ -389,7 +393,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>

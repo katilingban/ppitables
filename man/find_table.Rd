@@ -5,9 +5,9 @@
 \title{Search for PPI table by specifying region, country and/or calculation type.}
 \usage{
 find_table(
-  region = levels(steer$region),
-  country = as.character(steer$country[steer$region \%in\% region]),
-  type = as.character(steer$type[steer$country \%in\% country])
+  region = steer$region,
+  country = steer$country[steer$region \%in\% region],
+  type = steer$type[steer$country \%in\% country]
 )
 }
 \arguments{
@@ -21,7 +21,7 @@ country names from the specified region/s. Allows specification of one
 country name or a vector of country names.}
 
 \item{type}{Type of PPI calculation used. Can be one of two options: \code{"sps"}
-for the Simple Poverty Scorecard calculation or \code{ipa} for the
+for the Simple Poverty Scorecard calculation or \code{"ipa"} for the
 International Poverty Alliance calculation. Default is vector of all
 calculation types available for the specified country/ies.}
 }
@@ -36,9 +36,7 @@ A data frame in \code{tibble} format of corresponding PPI table/s
 Search for PPI table by specifying region, country and/or calculation type.
 }
 \examples{
-#
-# View the full data frame of all the PPI tables available through ppitables
-#
+## View the full data frame of all the PPI tables available through ppitables
 find_table()
 
 }
