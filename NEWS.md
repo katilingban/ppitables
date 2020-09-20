@@ -2,6 +2,19 @@
 
 This is the eighth CRAN release of `ppitables`. In this release, I added:
 
+* new PPI tables for Malawi using the new PPI calculation approach developed
+by the International Poverty Alliance (IPA) based on data from Malawi's 2016/2017
+Fourth Integrated Household Survey (IHS4)
+
+* updated `steer` data that serves as an index to the tables to include the new
+Malawi PPI tables
+
+* updated `get_table()` to deal with steering file values not being converted
+into factors anymore in newest R version
+
+* general documentation updates and general checking updates
+
+* converted tables for countries with the new PPI definitions into tibble format
 
 # ppitables 0.5.2
 

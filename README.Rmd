@@ -75,7 +75,7 @@ Following are the available PPI country tables from the `ppitables` package. Thi
 
 +-----+-----------------+-----------------------------------------------------+-----------------+
 |     | **PPI Country   | **Description**                                     | **PPI Release   |
-|     | Table Name**    |                                                     | Date**          |
+|     | Table Name**    |                                                     | Year**          |
 +====:+=================+=====================================================+:===============:+
 | 1.  | `ppiAFG2012`    | PPI for Afghanistan based on 2007/8 National Risk   | 2012            |
 |     |                 | and Vulnerability Survey (NRVA)                     |                 |
@@ -254,6 +254,10 @@ Following are the available PPI country tables from the `ppitables` package. Thi
 +-----+-----------------+-----------------------------------------------------+-----------------+
 |     | `ppiMWI2015_pbm`| PPI for Malawi based on Malawi's 2010/11 Integrated | 2015            |
 |     |                 | Household Survey using PBM poverty definitions      |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+|     | `ppiMWI2020`    | PPI for Malawi based on Malawi's 2016-2017 Fourth   | 2020            |
+|     |                 | Integrated Household Survey (IHS4) using new PPI    |                 |
+|     |                 | definitions                                         |                 |
 +-----+-----------------+-----------------------------------------------------+-----------------+
 | 35. | `ppiNAM2013`    | PPI for Namibia based on Namibia’s 2009/10 Household| 2013            |
 |     |                 | Income and Expenditure Survey                       |                 |
