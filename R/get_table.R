@@ -17,13 +17,11 @@
 #' @return A data frame in \code{tibble} format of corresponding PPI table/s
 #'     matching the search parameters. The data frame is in \code{tidy} format
 #'     and contains the corresponding poverty probability (\code{ppi}) for a
-#'     specific score (\code{score}) for various poverty definitions \code{poverty_definition})
+#'     specific score (\code{score}) for various poverty definitions)
 #'     for the country (\code{country}) and PPI calculation type (\code{type}).
 #'
 #' @examples
-#' #
-#' # Create a tidy format PPI table for Nepal
-#' #
+#' ## Create a tidy format PPI table for Nepal
 #' get_table(region = "Asia", country = "Nepal")
 #'
 #' @export
@@ -34,44 +32,38 @@
 get_table <- function(region = steer$region,
                       country = steer$country[steer$region %in% region],
                       type = steer$type[steer$country %in% country]){
-  #
-  # Extract information from the selected tables based on the find_table() search
-  #
+  ## Extract information from the selected tables based on the find_table() search
   table_name    <- as.character(find_table(region = region, country = country, type = type)$filename)
   table_country <- as.character(find_table(region = region, country = country, type = type)$country)
   table_year    <- as.character(find_table(region = region, country = country, type = type)$release_year)
   table_type    <- as.character(find_table(region = region, country = country, type = type)$type)
-  #
-  # Create a concatenating object
-  #
+
+  ## Create a concatenating object
   ppi_table <- NULL
-  #
-  # Cycle through the filenames of selected PPI tables
-  #
+
+  ## Cycle through the filenames of selected PPI tables
   for(i in table_name) {
-    #
-    # Get current PPI table
-    #
+    ## Get current PPI table
     temp <- get(i)
-    #
-    # Add contextual information to current PPI table
-    #
+
+    ## Add contextual information to current PPI table
     temp <- data.frame(country = table_country[table_name == i],
                        release_year = table_year[table_name == i],
                        filename = i,
                        type = table_type[table_name == i],
                        temp)
-    #
-    # Convert current PPI table to tidy format
-    #
-    tab <- tidyr::gather(data = temp, key = poverty_definition, value = ppi, names(temp)[6]:names(temp)[ncol(temp)])
-    #
-    # Add current PPI table to concatenating object
-    #
-    ppi_table <- tibble::as.tibble(rbind(ppi_table, tab))
+
+    ## Convert current PPI table to tidy format
+    tab <- tidyr::pivot_longer(data = temp,
+                               cols = names(temp)[6]:names(temp)[ncol(temp)],
+                               names_to = "poverty_definition",
+                               values_to = "ppi",
+                         )
+
+    ## Add current PPI table to concatenating object
+    ppi_table <- tibble::tibble(rbind(ppi_table, tab))
   }
-  #
-  # Return resulting tidy format PPI table
-  #
+
+  ## Return resulting tidy format PPI table
   return(ppi_table)
 }

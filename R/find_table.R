@@ -10,7 +10,7 @@
 #'     country names from the specified region/s. Allows specification of one
 #'     country name or a vector of country names.
 #' @param type Type of PPI calculation used. Can be one of two options: \code{"sps"}
-#'     for the Simple Poverty Scorecard calculation or \code{ipa} for the
+#'     for the Simple Poverty Scorecard calculation or \code{"ipa"} for the
 #'     International Poverty Alliance calculation. Default is vector of all
 #'     calculation types available for the specified country/ies.
 #'
@@ -21,9 +21,7 @@
 #'     returned PPI table/s.
 #'
 #' @examples
-#' #
-#' # View the full data frame of all the PPI tables available through ppitables
-#' #
+#' ## View the full data frame of all the PPI tables available through ppitables
 #' find_table()
 #'
 #' @export
@@ -31,16 +29,14 @@
 #
 ################################################################################
 
-find_table <- function(region = levels(steer$region),
-                       country = as.character(steer$country[steer$region %in% region]),
-                       type = as.character(steer$type[steer$country %in% country])) {
-  #
-  # Check which region is found in the PPI tables list
-  #
-  .region <- region[!region %in% levels(steer$region)]
-  #
-  # Warning message for region/s not found in the PPI tables list
-  #
+find_table <- function(region = steer$region,
+                       country = steer$country[steer$region %in% region],
+                       type = steer$type[steer$country %in% country]) {
+
+  ## Check which region is found in the PPI tables list
+  .region <- region[!region %in% steer$region]
+
+  ## Warning message for region/s not found in the PPI tables list
   if(!is.null(.region)) {
     for(i in .region) {
       warning(paste(i, " not in the list of regions with PPI tables. Check region name spelling and/or check that ",
@@ -49,13 +45,11 @@ find_table <- function(region = levels(steer$region),
               call. = TRUE)
     }
   }
-  #
-  # Check with country is found in the PPI tables list
-  #
-  .country <- country[!country %in% as.character(steer$country[steer$region %in% region])]
-  #
-  # Warning message for country/countries not found in the PPI tables list
-  #
+
+  ## Check with country is found in the PPI tables list
+  .country <- country[!country %in% steer$country[steer$region %in% region]]
+
+  ## Warning message for country/countries not found in the PPI tables list
   if(!is.null(.country)) {
     for(i in .country) {
       warning(paste(i, " not in the list of countries with PPI tables. Check country name spelling and/or check that ",
@@ -64,13 +58,11 @@ find_table <- function(region = levels(steer$region),
               call. = TRUE)
     }
   }
-  #
-  # Check which type is found in the PPI tables list
-  #
-  .type <- type[!type %in% as.character(steer$type[steer$country %in% country])]
-  #
-  # Warning message for type not found in the PPI tables list
-  #
+
+  ## Check which type is found in the PPI tables list
+  .type <- type[!type %in% steer$type[steer$country %in% country]]
+
+  ## Warning message for type not found in the PPI tables list
   if(!is.null(.type)) {
     for(i in .type) {
       warning(paste(i, " not in the list of calculation types for the given country/ies. Check type ",
@@ -79,14 +71,12 @@ find_table <- function(region = levels(steer$region),
               call. = TRUE)
     }
   }
-  #
-  # Create search output of PPI tables list
-  #
-  table_list <- tibble::as.tibble(steer[steer$region %in% region &
-                                  steer$country %in% country &
-                                  steer$type %in% type, ])
-  #
-  # Retrun search output
-  #
+
+  ## Create search output of PPI tables list
+  table_list <- tibble::tibble(steer[steer$region %in% region &
+                                       steer$country %in% country &
+                                       steer$type %in% type, ])
+
+  ## Retrun search output
   return(table_list)
 }
