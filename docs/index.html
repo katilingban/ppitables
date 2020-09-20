@@ -91,6 +91,7 @@
 <div class="page-header"><h1 class="hasAnchor">
 <a href="#ppitables-lookup-tables-to-generate-poverty-likelihoods-and-rates-using-the-poverty-probability-index-ppi-" class="anchor"></a>ppitables: Lookup tables to generate poverty likelihoods and rates using the Poverty Probability Index (PPI) <img src="reference/figures/ppitables.png" width="200" align="right">
 </h1></div>
+<!--- BEGIN BADGES --->
 
 <p>Lookup tables for estimating the likelihood of poverty using the <code>Poverty Probability Index</code> (previously called <code>Progress out of Poverty Index</code>) or <code>PPI</code> from country-specific indicators collected from cross-sectional surveys. This lookup table is extracted from documentation of the <code>PPI</code> found at <a href="https://www.povertyindex.org" class="uri">https://www.povertyindex.org</a>.</p>
 <div id="installation" class="section level2">
@@ -101,7 +102,7 @@
 <span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">ppitables</span>)</pre></div>
 <p>You can install the current development version of <code>ppitables</code> from GitHub with:</p>
 <div class="sourceCode" id="cb2"><pre class="r"><span class="kw">if</span>(!<span class="fu"><a href="https://rdrr.io/r/base/library.html">require</a></span>(<span class="st">"remotes"</span>)) <span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"remotes"</span>)
-<span class="kw pkg">remotes</span><span class="kw ns">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span>(<span class="st">"validmeasures/ppitables"</span>)
+<span class="kw pkg">remotes</span><span class="kw ns">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span>(<span class="st">"katilingban/ppitables"</span>)
 <span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">ppitables</span>)</pre></div>
 </div>
 <div id="usage" class="section level2">
@@ -947,7 +948,7 @@ PPI for Mozambique based on 2008/9 Household Budget Survey
 <code>ppiMOZ2019</code>
 </td>
 <td>
-PPI for Mozambqiue based on 2014 Inquerito Sobre Orcamento Familiar (IOF) Survey
+PPI for Mozambique based on 2014 Inquerito Sobre Orcamento Familiar (IOF) Survey
 </td>
 <td style="text-align: center;">
 2019
@@ -1546,7 +1547,12 @@ PPI for Zambia based on Zambia’s 2015 Living Conditions Monitoring Survey (LCM
 </table>
 <p>This list of available PPI country tables can be retrieved in R using the <code><a href="reference/find_table.html">find_table()</a></code> function. View the complete list using the following command in R:</p>
 <div class="sourceCode" id="cb4"><pre class="r"><span class="fu"><a href="reference/find_table.html">find_table</a></span>()
-<span class="co">#&gt; # A tibble: 88 x 7</span>
+<span class="co">#&gt; Warning: `as.tibble()` is deprecated as of tibble 2.0.0.</span>
+<span class="co">#&gt; Please use `as_tibble()` instead.</span>
+<span class="co">#&gt; The signature and semantics have changed, see `?as_tibble`.</span>
+<span class="co">#&gt; This warning is displayed once every 8 hours.</span>
+<span class="co">#&gt; Call `lifecycle::last_warnings()` to see where this warning was generated.</span>
+<span class="co">#&gt; # A tibble: 89 x 7</span>
 <span class="co">#&gt;    region    country  survey_year release_year description        type  filename</span>
 <span class="co">#&gt;    &lt;fct&gt;     &lt;fct&gt;          &lt;int&gt;        &lt;int&gt; &lt;fct&gt;              &lt;fct&gt; &lt;fct&gt;   </span>
 <span class="co">#&gt;  1 Asia      Afghani…        2007         2012 PPI for Afghanist… sps   ppiAFG2…</span>
@@ -1559,10 +1565,10 @@ PPI for Zambia based on Zambia’s 2015 Living Conditions Monitoring Survey (LCM
 <span class="co">#&gt;  8 Africa    Burkina…        2014         2017 PPI for Burkina F… sps   ppiBFA2…</span>
 <span class="co">#&gt;  9 Africa    Burkina…        2014         2017 PPI for Burkina F… ipa   ppiBFA2…</span>
 <span class="co">#&gt; 10 Asia      Cambodia        2011         2015 PPI for Cambodia … sps   ppiKHM2…</span>
-<span class="co">#&gt; # … with 78 more rows</span></pre></div>
+<span class="co">#&gt; # … with 79 more rows</span></pre></div>
 <p>View the list of PPI country tables for Africa using the following command in R:</p>
 <div class="sourceCode" id="cb5"><pre class="r"><span class="fu"><a href="reference/find_table.html">find_table</a></span>(<span class="kw">region</span> <span class="kw">=</span> <span class="st">"Africa"</span>)
-<span class="co">#&gt; # A tibble: 37 x 7</span>
+<span class="co">#&gt; # A tibble: 38 x 7</span>
 <span class="co">#&gt;    region country  survey_year release_year description           type  filename</span>
 <span class="co">#&gt;    &lt;fct&gt;  &lt;fct&gt;          &lt;int&gt;        &lt;int&gt; &lt;fct&gt;                 &lt;fct&gt; &lt;fct&gt;   </span>
 <span class="co">#&gt;  1 Africa Angola          2008         2015 PPI for Angola based… sps   ppiAGO2…</span>
@@ -1575,7 +1581,7 @@ PPI for Zambia based on Zambia’s 2015 Living Conditions Monitoring Survey (LCM
 <span class="co">#&gt;  8 Africa Cote d'…        2015         2018 PPI for Ivory Coast … ipa   ppiCIV2…</span>
 <span class="co">#&gt;  9 Africa Ethiopia        2010         2016 PPI for Ethiopia bas… sps   ppiETH2…</span>
 <span class="co">#&gt; 10 Africa Ghana           2012         2015 PPI for Ghana based … sps   ppiGHA2…</span>
-<span class="co">#&gt; # … with 27 more rows</span></pre></div>
+<span class="co">#&gt; # … with 28 more rows</span></pre></div>
 <p>View the list of PPI country tables in Zambia using the the following command in R:</p>
 <div class="sourceCode" id="cb6"><pre class="r"><span class="fu"><a href="reference/find_table.html">find_table</a></span>(<span class="kw">country</span> <span class="kw">=</span> <span class="st">"Zambia"</span>)
 <span class="co">#&gt; # A tibble: 4 x 7</span>
@@ -1588,9 +1594,9 @@ PPI for Zambia based on Zambia’s 2015 Living Conditions Monitoring Survey (LCM
 <p>To extract the actual PPI tables, the <code><a href="reference/get_table.html">get_table()</a></code> function can be used. The <code><a href="reference/get_table.html">get_table()</a></code> function wraps around the <code><a href="reference/find_table.html">find_table()</a></code> function to make a search for a specific PPI table and then extracts the table/s and puts them together into a tidy data frame.</p>
 <p>For example, to get the actual PPI tables for all countries with PPI tables, the following command can be used in R:</p>
 <div class="sourceCode" id="cb7"><pre class="r"><span class="fu"><a href="reference/get_table.html">get_table</a></span>()
-<span class="co">#&gt; # A tibble: 87,769 x 7</span>
+<span class="co">#&gt; # A tibble: 89,688 x 7</span>
 <span class="co">#&gt;    country     release_year filename   type  score poverty_definition   ppi</span>
-<span class="co">#&gt;    &lt;fct&gt;       &lt;fct&gt;        &lt;fct&gt;      &lt;fct&gt; &lt;dbl&gt; &lt;chr&gt;              &lt;dbl&gt;</span>
+<span class="co">#&gt;    &lt;chr&gt;       &lt;chr&gt;        &lt;chr&gt;      &lt;chr&gt; &lt;dbl&gt; &lt;chr&gt;              &lt;dbl&gt;</span>
 <span class="co">#&gt;  1 Afghanistan 2012         ppiAFG2012 sps       0 nl                 100  </span>
 <span class="co">#&gt;  2 Afghanistan 2012         ppiAFG2012 sps       1 nl                 100  </span>
 <span class="co">#&gt;  3 Afghanistan 2012         ppiAFG2012 sps       2 nl                 100  </span>
@@ -1601,12 +1607,12 @@ PPI for Zambia based on Zambia’s 2015 Living Conditions Monitoring Survey (LCM
 <span class="co">#&gt;  8 Afghanistan 2012         ppiAFG2012 sps       7 nl                  68.8</span>
 <span class="co">#&gt;  9 Afghanistan 2012         ppiAFG2012 sps       8 nl                  68.8</span>
 <span class="co">#&gt; 10 Afghanistan 2012         ppiAFG2012 sps       9 nl                  68.8</span>
-<span class="co">#&gt; # … with 87,759 more rows</span></pre></div>
+<span class="co">#&gt; # … with 89,678 more rows</span></pre></div>
 <p>To get the actual PPI tables for all countries with PPI tables in Africa, the following command can be used in R:</p>
 <div class="sourceCode" id="cb8"><pre class="r"><span class="fu"><a href="reference/get_table.html">get_table</a></span>(<span class="kw">region</span> <span class="kw">=</span> <span class="st">"Africa"</span>)
-<span class="co">#&gt; # A tibble: 40,703 x 7</span>
+<span class="co">#&gt; # A tibble: 42,622 x 7</span>
 <span class="co">#&gt;    country release_year filename   type  score poverty_definition   ppi</span>
-<span class="co">#&gt;    &lt;fct&gt;   &lt;fct&gt;        &lt;fct&gt;      &lt;fct&gt; &lt;dbl&gt; &lt;chr&gt;              &lt;dbl&gt;</span>
+<span class="co">#&gt;    &lt;chr&gt;   &lt;chr&gt;        &lt;chr&gt;      &lt;chr&gt; &lt;dbl&gt; &lt;chr&gt;              &lt;dbl&gt;</span>
 <span class="co">#&gt;  1 Angola  2015         ppiAGO2015 sps       0 nl100                100</span>
 <span class="co">#&gt;  2 Angola  2015         ppiAGO2015 sps       1 nl100                100</span>
 <span class="co">#&gt;  3 Angola  2015         ppiAGO2015 sps       2 nl100                100</span>
@@ -1617,7 +1623,7 @@ PPI for Zambia based on Zambia’s 2015 Living Conditions Monitoring Survey (LCM
 <span class="co">#&gt;  8 Angola  2015         ppiAGO2015 sps       7 nl100                100</span>
 <span class="co">#&gt;  9 Angola  2015         ppiAGO2015 sps       8 nl100                100</span>
 <span class="co">#&gt; 10 Angola  2015         ppiAGO2015 sps       9 nl100                100</span>
-<span class="co">#&gt; # … with 40,693 more rows</span></pre></div>
+<span class="co">#&gt; # … with 42,612 more rows</span></pre></div>
 </div>
 <div id="notes" class="section level3">
 <h3 class="hasAnchor">
@@ -1654,7 +1660,6 @@ PPI for Zambia based on Zambia’s 2015 Living Conditions Monitoring Survey (LCM
 <div class="community">
 <h2>Community</h2>
 <ul class="list-unstyled">
-<li><a href="CONTRIBUTING.html">Contributing guide</a></li>
 <li><a href="CODE_OF_CONDUCT.html">Code of conduct</a></li>
 </ul>
 </div>
@@ -1671,12 +1676,12 @@ PPI for Zambia based on Zambia’s 2015 Living Conditions Monitoring Survey (LCM
 <li><a href="http://www.repostatus.org/#active"><img src="http://www.repostatus.org/badges/latest/active.svg" alt="Project Status: Active – The project has reached a stable, usable state and is being actively developed."></a></li>
 <li><a href="https://www.tidyverse.org/lifecycle/#maturing"><img src="https://img.shields.io/badge/lifecycle-maturing-blue.svg" alt="lifecycle"></a></li>
 <li><a href="https://cran.r-project.org/package=ppitables"><img src="http://www.r-pkg.org/badges/version/ppitables" alt="CRAN_Status_Badge"></a></li>
-<li><a href="https://github.com/validmeasures/ppitables/blob/master/LICENSE.md"><img src="https://img.shields.io/cran/l/ppitables.svg" alt="CRAN"></a></li>
+<li><a href="https://github.com/katilingban/ppitables/blob/master/LICENSE.md"><img src="https://img.shields.io/cran/l/ppitables.svg" alt="CRAN"></a></li>
 <li><a href="https://CRAN.R-project.org/package=ppitables"><img src="http://cranlogs.r-pkg.org/badges/ppitables" alt="CRAN"></a></li>
 <li><a href="https://CRAN.R-project.org/package=ppitables"><img src="http://cranlogs.r-pkg.org/badges/grand-total/ppitables" alt="CRAN"></a></li>
-<li><a href="https://travis-ci.org/validmeasures/ppitables"><img src="https://travis-ci.org/validmeasures/ppitables.svg?branch=master" alt="Travis-CI Build Status"></a></li>
-<li><a href="https://ci.appveyor.com/project/validmeasures/ppitables"><img src="https://ci.appveyor.com/api/projects/status/github/validmeasures/ppitables?branch=master&amp;svg=true" alt="AppVeyor Build Status"></a></li>
-<li><a href="https://codecov.io/github/validmeasures/ppitables?branch=master"><img src="https://img.shields.io/codecov/c/github/validmeasures/ppitables/master.svg" alt="Coverage Status"></a></li>
+<li><a href="https://travis-ci.org/katilingban/ppitables"><img src="https://travis-ci.org/katilingban/ppitables.svg?branch=master" alt="Travis-CI Build Status"></a></li>
+<li><a href="https://ci.appveyor.com/project/katilingban/ppitables"><img src="https://ci.appveyor.com/api/projects/status/github/katilingban/ppitables?branch=master&amp;svg=true" alt="AppVeyor Build Status"></a></li>
+<li><a href="https://codecov.io/github/katilingban/ppitables?branch=master"><img src="https://img.shields.io/codecov/c/github/katilingban/ppitables/master.svg" alt="Coverage Status"></a></li>
 <li><a href="https://doi.org/10.5281/zenodo.1188982"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.1188982.svg" alt="DOI - All Versions"></a></li>
 </ul>
 </div>
