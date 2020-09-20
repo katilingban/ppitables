@@ -1,9 +1,9 @@
 # Contributing
 
 When contributing to this repository, please first discuss the change you wish to make via issue,
-email, or any other method with [Ernest Guevarra](mailto:ernestgmd@gmail.com) repository before making a change. 
+email, or any other method with [Ernest Guevarra](mailto:ernest@guevarra.io) repository before making a change. 
 
-Please note we have a [code of conduct](https://github.com/validmeasures/ppitables/blob/master/.github/CODE_OF_CONDUCT.md), please follow it in all your interactions with the project.
+Please note we have a [code of conduct](https://github.com/katilingban/ppitables/blob/master/.github/CODE_OF_CONDUCT.md), please follow it in all your interactions with the project.
 
 <br/>
 
@@ -29,13 +29,13 @@ Please note we have a [code of conduct](https://github.com/validmeasures/ppitabl
 
 * Push your branch to your fork on Github, the remote `origin`.
 
-* From your fork open a pull request in the correct branch using the specified [Pull Request Template](https://github.com/validmeasures/bbw/blob/master/.github/PULL_REQUEST_TEMPLATE.md). Target this project's `development` branch. 
+* From your fork open a pull request in the correct branch using the specified [Pull Request Template](https://github.com/katilingban/ppitables/blob/master/.github/PULL_REQUEST_TEMPLATE.md). Target this project's `development` branch. 
 
 * Update the `README.md` with details of changes to the interface particularly changes in how indicators are defined or addition of new indicators.
 
 * Increase the version numbers in any examples files and the `README.md` to the new version that this `Pull Request` would represent. The versioning scheme we use is [SemVer](http://semver.org/).
 
-* You may then request [Ernest Guevarra](mailto:ernestgmd@gmail.com) to merge your `Pull Request` for you.
+* You may then request [Ernest Guevarra](mailto:ernest@guevarra.io) to merge your `Pull Request` for you.
 
 * Once the pull request is approved and merged you can pull the changes from `upstream` to your local repo and delete
 your extra branch(es).
