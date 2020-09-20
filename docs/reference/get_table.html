@@ -131,9 +131,9 @@
     </div>
 
     <pre class="usage"><span class='fu'>get_table</span>(
-  <span class='kw'>region</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/levels.html'>levels</a></span>(<span class='no'>steer</span>$<span class='no'>region</span>),
-  <span class='kw'>country</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/character.html'>as.character</a></span>(<span class='no'>steer</span>$<span class='no'>country</span>[<span class='no'>steer</span>$<span class='no'>region</span> <span class='kw'>%in%</span> <span class='no'>region</span>]),
-  <span class='kw'>type</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/character.html'>as.character</a></span>(<span class='no'>steer</span>$<span class='no'>type</span>[<span class='no'>steer</span>$<span class='no'>country</span> <span class='kw'>%in%</span> <span class='no'>country</span>])
+  <span class='kw'>region</span> <span class='kw'>=</span> <span class='no'>steer</span>$<span class='no'>region</span>,
+  <span class='kw'>country</span> <span class='kw'>=</span> <span class='no'>steer</span>$<span class='no'>country</span>[<span class='no'>steer</span>$<span class='no'>region</span> <span class='kw'>%in%</span> <span class='no'>region</span>],
+  <span class='kw'>type</span> <span class='kw'>=</span> <span class='no'>steer</span>$<span class='no'>type</span>[<span class='no'>steer</span>$<span class='no'>country</span> <span class='kw'>%in%</span> <span class='no'>country</span>]
 )</pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
@@ -173,7 +173,7 @@ calculation types available for the specified country/ies.</p></td>
     <pre class="examples"><div class='input'><span class='co'>#</span>
 <span class='co'># Create a tidy format PPI table for Nepal</span>
 <span class='co'>#</span>
-<span class='fu'>get_table</span>(<span class='kw'>region</span> <span class='kw'>=</span> <span class='st'>"Asia"</span>, <span class='kw'>country</span> <span class='kw'>=</span> <span class='st'>"Nepal"</span>)</div><div class='output co'>#&gt; <span style='color: #949494;'># A tibble: 1,111 x 7</span><span>
+<span class='fu'>get_table</span>(<span class='kw'>region</span> <span class='kw'>=</span> <span class='st'>"Asia"</span>, <span class='kw'>country</span> <span class='kw'>=</span> <span class='st'>"Nepal"</span>)</div><div class='output co'>#&gt; <span class='warning'>Warning: Asia not in the list of regions with PPI tables. Check region name spelling and/or check that Asia is in the list of regions with PPI tables. Returning NULL results for Asia</span></div><div class='output co'>#&gt; <span class='warning'>Warning: Asia not in the list of regions with PPI tables. Check region name spelling and/or check that Asia is in the list of regions with PPI tables. Returning NULL results for Asia</span></div><div class='output co'>#&gt; <span class='warning'>Warning: Asia not in the list of regions with PPI tables. Check region name spelling and/or check that Asia is in the list of regions with PPI tables. Returning NULL results for Asia</span></div><div class='output co'>#&gt; <span class='warning'>Warning: Asia not in the list of regions with PPI tables. Check region name spelling and/or check that Asia is in the list of regions with PPI tables. Returning NULL results for Asia</span></div><div class='output co'>#&gt; <span style='color: #949494;'># A tibble: 1,111 x 7</span><span>
 #&gt;    country release_year filename   type  score poverty_definition   ppi
 #&gt;    </span><span style='color: #949494;font-style: italic;'>&lt;chr&gt;</span><span>   </span><span style='color: #949494;font-style: italic;'>&lt;chr&gt;</span><span>        </span><span style='color: #949494;font-style: italic;'>&lt;chr&gt;</span><span>      </span><span style='color: #949494;font-style: italic;'>&lt;chr&gt;</span><span> </span><span style='color: #949494;font-style: italic;'>&lt;int&gt;</span><span> </span><span style='color: #949494;font-style: italic;'>&lt;chr&gt;</span><span>              </span><span style='color: #949494;font-style: italic;'>&lt;dbl&gt;</span><span>
 #&gt; </span><span style='color: #BCBCBC;'> 1</span><span> Nepal   2013         ppiNPL2013 sps       0 nl100                100
