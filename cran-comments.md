@@ -21,6 +21,9 @@ into factors anymore in newest R version
 * local ubuntu 16.04 install, R 18.04.5
 * win-builder (devel, release and old release)
 * windows (on appveyor), x64 release, i386 release
+* github actions windows-latest, r: release
+* github actions macOS-latest, r: release
+* github actions ubuntu-20.04, r: release, devel
 
 ## R CMD check results
 
