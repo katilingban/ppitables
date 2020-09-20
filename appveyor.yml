@@ -27,6 +27,8 @@ on_failure:
 
 environment:
   global:
+    USE_RTOOLS: true
+    PKGTYPE: binary
     R_CHECK_ARGS: "--no-manual --as-cran --run-donttest"
     WARNINGS_ARE_ERRORS: 1
 
