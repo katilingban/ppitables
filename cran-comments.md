@@ -27,6 +27,9 @@ into factors anymore in newest R version
 * github actions windows-latest, r: release
 * github actions macOS-latest, r: release
 * github actions ubuntu-20.04, r: release, devel
+* rhub windows-latest r devel
+* rhub ubuntu 16.04 r release
+* rhub fedora r devel
 
 ## R CMD check results
 
