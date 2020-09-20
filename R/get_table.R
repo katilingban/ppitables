@@ -31,9 +31,9 @@
 #
 ################################################################################
 
-get_table <- function(region = levels(steer$region),
-                      country = as.character(steer$country[steer$region %in% region]),
-                      type = as.character(steer$type[steer$country %in% country])){
+get_table <- function(region = steer$region,
+                      country = steer$country[steer$region %in% region],
+                      type = steer$type[steer$country %in% country]){
   #
   # Extract information from the selected tables based on the find_table() search
   #
