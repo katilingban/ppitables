@@ -5,9 +5,9 @@
 \title{Get PPI table/s based on a specified PPI table/s search output}
 \usage{
 get_table(
-  region = levels(steer$region),
-  country = as.character(steer$country[steer$region \%in\% region]),
-  type = as.character(steer$type[steer$country \%in\% country])
+  region = steer$region,
+  country = steer$country[steer$region \%in\% region],
+  type = steer$type[steer$country \%in\% country]
 )
 }
 \arguments{
