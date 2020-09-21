@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Lookup Tables to Generate Poverty Likelihoods and Rates using the Poverty 
     Probability Index (PPI) • ppitables</title>
-<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/sandstone/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/cerulean/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="bootstrap-toc.css">
 <script src="bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
@@ -38,7 +38,7 @@
 </head>
 <body data-spy="scroll" data-target="#toc">
     <div class="container template-home">
-      <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <header><div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
@@ -93,7 +93,7 @@
 </h1></div>
 <!--- BEGIN BADGES --->
 
-<p>Lookup tables for estimating the likelihood of poverty using the <code>Poverty Probability Index</code> (previously called <code>Progress out of Poverty Index</code>) or <code>PPI</code> from country-specific indicators collected from cross-sectional surveys. This lookup table is extracted from documentation of the <code>PPI</code> found at <a href="https://www.povertyindex.org" class="uri">https://www.povertyindex.org</a>.</p>
+<p>Lookup tables for estimating the likelihood of poverty using the <code>Poverty Probability Index</code> (previously called <code>Progress out of Poverty Index</code>) or <code>PPI</code> from country-specific indicators collected from cross-sectional surveys. These lookup tables are extracted from documentation of the <code>PPI</code> found at <a href="https://www.povertyindex.org" class="uri">https://www.povertyindex.org</a>.</p>
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
@@ -112,7 +112,7 @@
 <div id="usage" class="section level2">
 <h2 class="hasAnchor">
 <a href="#usage" class="anchor"></a>Usage</h2>
-<p>The <code>ppitables</code> package contains PPI lookup tables for the 61 countries<br><span class="math display">1</span><br> where PPI can currently be calculated. To be able to use the lookup tables in <code>ppitables</code> appropriately, you need to be aware of the naming syntax used for the tables for each country. The name for each table will always have three fixed or constant components as follows:</p>
+<p>The <code>ppitables</code> package contains PPI lookup tables for the 61 countries<sup>1</sup> where PPI can currently be calculated. To be able to use the lookup tables in <code>ppitables</code> appropriately, you need to be aware of the naming syntax used for the tables for each country. The name for each table will always have three fixed or constant components as follows:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit">
 <span class="kw">ppiXXXYYYY</span>
 </pre></div>
@@ -1652,9 +1652,7 @@ PPI for Zambia based on Zambia’s 2015 Living Conditions Monitoring Survey (LCM
 <div id="notes" class="section level3">
 <h3 class="hasAnchor">
 <a href="#notes" class="anchor"></a>Notes</h3>
-<ol>
-<li>Only 60 country PPI tables are shown here and available via the package. There is no lookup table for China because the China Poverty Scorecard is an expert-based scorecard. See <a href="https://www.povertyindex.org/china-expert-based-poverty-scorecard">this</a> for further explanation.</li>
-</ol>
+<p><sup>1</sup> Only 60 country PPI tables are shown here and available via the package. There is no lookup table for China because the China Poverty Scorecard is an expert-based scorecard. See <a href="https://www.povertyindex.org/china-expert-based-poverty-scorecard">this</a> for further explanation.</p>
 </div>
 </div>
 </div>
@@ -1684,7 +1682,6 @@ PPI for Zambia based on Zambia’s 2015 Living Conditions Monitoring Survey (LCM
 <div class="community">
 <h2>Community</h2>
 <ul class="list-unstyled">
-<li><a href="CONTRIBUTING.html">Contributing guide</a></li>
 <li><a href="CODE_OF_CONDUCT.html">Code of conduct</a></li>
 </ul>
 </div>

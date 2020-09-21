@@ -2,8 +2,8 @@ pandoc: 2.7.3
 pkgdown: 1.6.1
 pkgdown_sha: ~
 articles: {}
-last_built: 2020-09-20T13:27Z
+last_built: 2020-09-21T05:47Z
 urls:
-  reference: https://validmeasures.org/ppitables/reference
-  article: https://validmeasures.org/ppitables/articles
+  reference: https://katilingban.io/ppitables/reference
+  article: https://katilingban.io/ppitables/articles
 

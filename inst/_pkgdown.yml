@@ -1,11 +1,14 @@
 title: ppitables
 
-url: https://validmeasures.org/ppitables
+url: https://katilingban.io/ppitables
 
 template:
   params:
-    bootswatch: sandstone
+    bootswatch: cerulean
     ganalytics: UA-102485058-9
+
+navbar:
+  type: inverse
 
 home:
   #strip_header: true

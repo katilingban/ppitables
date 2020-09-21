@@ -29,7 +29,7 @@ Status](https://img.shields.io/codecov/c/github/katilingban/ppitables/master.svg
 Lookup tables for estimating the likelihood of poverty using the
 `Poverty Probability Index` (previously called `Progress out of Poverty
 Index`) or `PPI` from country-specific indicators collected from
-cross-sectional surveys. This lookup table is extracted from
+cross-sectional surveys. These lookup tables are extracted from
 documentation of the `PPI` found at <https://www.povertyindex.org>.
 
 ## Installation
@@ -53,11 +53,11 @@ library(ppitables)
 ## Usage
 
 The `ppitables` package contains PPI lookup tables for the 61
-countries\[1\] where PPI can currently be calculated. To be able to use
-the lookup tables in `ppitables` appropriately, you need to be aware of
-the naming syntax used for the tables for each country. The name for
-each table will always have three fixed or constant components as
-follows:
+countries<sup>1</sup> where PPI can currently be calculated. To be able
+to use the lookup tables in `ppitables` appropriately, you need to be
+aware of the naming syntax used for the tables for each country. The
+name for each table will always have three fixed or constant components
+as follows:
 
 ``` r
 ppiXXXYYYY
@@ -874,8 +874,8 @@ get_table(region = "Africa")
 
 ### Notes
 
-1.  Only 60 country PPI tables are shown here and available via the
-    package. There is no lookup table for China because the China
-    Poverty Scorecard is an expert-based scorecard. See
-    [this](https://www.povertyindex.org/china-expert-based-poverty-scorecard)
-    for further explanation.
+<sup>1</sup> Only 60 country PPI tables are shown here and available via
+the package. There is no lookup table for China because the China
+Poverty Scorecard is an expert-based scorecard. See
+[this](https://www.povertyindex.org/china-expert-based-poverty-scorecard)
+for further explanation.
