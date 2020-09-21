@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# ppitables: Lookup tables to generate poverty likelihoods and rates using the Poverty Probability Index (PPI) <img src="man/figures/ppitables.png" width="200" align="right" />
+# ppitables: Lookup Tables to Generate Poverty Likelihoods and Rates using the Poverty Probability Index (PPI) <img src="man/figures/ppitables.png" width="200" align="right" />
 
 <!--- BEGIN BADGES --->
 
@@ -10,6 +10,8 @@ state and is being actively
 developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
 [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/ppitables)](https://cran.r-project.org/package=ppitables)
+[![cran
+checks](https://cranchecks.info/badges/summary/ppitables)](https://cran.r-project.org/web/checks/check_results_ppitables.html)
 [![CRAN](https://img.shields.io/cran/l/ppitables.svg)](https://github.com/katilingban/ppitables/blob/master/LICENSE.md)
 [![CRAN](http://cranlogs.r-pkg.org/badges/ppitables)](https://CRAN.R-project.org/package=ppitables)
 [![CRAN](http://cranlogs.r-pkg.org/badges/grand-total/ppitables)](https://CRAN.R-project.org/package=ppitables)
@@ -18,10 +20,10 @@ developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.re
 Status](https://travis-ci.org/katilingban/ppitables.svg?branch=master)](https://travis-ci.org/katilingban/ppitables)
 [![AppVeyor Build
 Status](https://ci.appveyor.com/api/projects/status/github/katilingban/ppitables?branch=master&svg=true)](https://ci.appveyor.com/project/katilingban/ppitables)
+![test-coverage](https://github.com/katilingban/ppitables/workflows/test-coverage/badge.svg)
 [![Coverage
 Status](https://img.shields.io/codecov/c/github/katilingban/ppitables/master.svg)](https://codecov.io/github/katilingban/ppitables?branch=master)
-[![DOI - All
-Versions](https://zenodo.org/badge/DOI/10.5281/zenodo.1188982.svg)](https://doi.org/10.5281/zenodo.1188982)
+[![DOI](https://zenodo.org/badge/121277287.svg)](https://zenodo.org/badge/latestdoi/121277287)
 <!--- END BADGES --->
 
 Lookup tables for estimating the likelihood of poverty using the

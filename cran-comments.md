@@ -11,6 +11,9 @@ Malawi PPI tables
 * updated `get_table()` to deal with steering file values not being converted
 into factors anymore in newest R version
 
+* updated `get_table()` and `find_table()` to deal with deprecation of
+`tibble::as.tibble` and `tidyr::gather`
+
 * general documentation updates and general checking updates
 
 * converted tables for countries with the new PPI definitions into tibble format
@@ -24,6 +27,9 @@ into factors anymore in newest R version
 * github actions windows-latest, r: release
 * github actions macOS-latest, r: release
 * github actions ubuntu-20.04, r: release, devel
+* rhub windows-latest r devel
+* rhub ubuntu 16.04 r release
+* rhub fedora r devel
 
 ## R CMD check results
 

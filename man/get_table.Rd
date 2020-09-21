@@ -29,16 +29,14 @@ calculation types available for the specified country/ies.}
 A data frame in \code{tibble} format of corresponding PPI table/s
     matching the search parameters. The data frame is in \code{tidy} format
     and contains the corresponding poverty probability (\code{ppi}) for a
-    specific score (\code{score}) for various poverty definitions \code{poverty_definition})
+    specific score (\code{score}) for various poverty definitions)
     for the country (\code{country}) and PPI calculation type (\code{type}).
 }
 \description{
 Get PPI table/s based on a specified PPI table/s search output
 }
 \examples{
-#
-# Create a tidy format PPI table for Nepal
-#
+## Create a tidy format PPI table for Nepal
 get_table(region = "Asia", country = "Nepal")
 
 }

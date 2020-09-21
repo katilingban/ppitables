@@ -10,7 +10,10 @@ Fourth Integrated Household Survey (IHS4)
 Malawi PPI tables
 
 * updated `get_table()` to deal with steering file values not being converted
-into factors anymore in newest R version
+into factors in newest R version
+
+* updated `get_table()` and `find_table()` to deal with deprecation of
+`tibble::as.tibble` and `tidyr::gather`
 
 * general documentation updates and general checking updates
 
