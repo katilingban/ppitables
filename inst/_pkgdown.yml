@@ -7,6 +7,9 @@ template:
     bootswatch: cerulean
     ganalytics: UA-102485058-9
 
+navbar:
+  type: inverse
+
 home:
   #strip_header: true
   links:
