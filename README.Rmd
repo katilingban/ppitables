@@ -29,8 +29,7 @@ library(ppitables)
 [![DOI - All Versions](https://zenodo.org/badge/DOI/10.5281/zenodo.1188982.svg)](https://doi.org/10.5281/zenodo.1188982)
 <!--- END BADGES --->
 
-Lookup tables for estimating the likelihood of poverty using the `Poverty Probability Index` (previously called `Progress out of Poverty Index`) or `PPI` from country-specific indicators collected from cross-sectional surveys. This lookup table is extracted from documentation of the `PPI` found at [https://www.povertyindex.org](https://www.povertyindex.org).
-
+Lookup tables for estimating the likelihood of poverty using the `Poverty Probability Index` (previously called `Progress out of Poverty Index`) or `PPI` from country-specific indicators collected from cross-sectional surveys. These lookup tables are extracted from documentation of the `PPI` found at [https://www.povertyindex.org](https://www.povertyindex.org).
 
 ## Installation
 

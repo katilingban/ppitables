@@ -27,7 +27,7 @@ Versions](https://zenodo.org/badge/DOI/10.5281/zenodo.1188982.svg)](https://doi.
 Lookup tables for estimating the likelihood of poverty using the
 `Poverty Probability Index` (previously called `Progress out of Poverty
 Index`) or `PPI` from country-specific indicators collected from
-cross-sectional surveys. This lookup table is extracted from
+cross-sectional surveys. These lookup tables are extracted from
 documentation of the `PPI` found at <https://www.povertyindex.org>.
 
 ## Installation
@@ -772,14 +772,9 @@ command in R:
 
 ``` r
 find_table()
-#> Warning: `as.tibble()` is deprecated as of tibble 2.0.0.
-#> Please use `as_tibble()` instead.
-#> The signature and semantics have changed, see `?as_tibble`.
-#> This warning is displayed once every 8 hours.
-#> Call `lifecycle::last_warnings()` to see where this warning was generated.
-#> # A tibble: 89 x 7
+#> # A tibble: 90 x 7
 #>    region    country  survey_year release_year description        type  filename
-#>    <fct>     <fct>          <int>        <int> <fct>              <fct> <fct>   
+#>    <chr>     <chr>          <int>        <int> <chr>              <chr> <chr>   
 #>  1 Asia      Afghani…        2007         2012 PPI for Afghanist… sps   ppiAFG2…
 #>  2 Africa    Angola          2008         2015 PPI for Angola ba… sps   ppiAGO2…
 #>  3 Asia      Banglad…        2010         2013 PPI for Benin bas… sps   ppiBEN2…
@@ -790,7 +785,7 @@ find_table()
 #>  8 Africa    Burkina…        2014         2017 PPI for Burkina F… sps   ppiBFA2…
 #>  9 Africa    Burkina…        2014         2017 PPI for Burkina F… ipa   ppiBFA2…
 #> 10 Asia      Cambodia        2011         2015 PPI for Cambodia … sps   ppiKHM2…
-#> # … with 79 more rows
+#> # … with 80 more rows
 ```
 
 View the list of PPI country tables for Africa using the following
@@ -798,9 +793,9 @@ command in R:
 
 ``` r
 find_table(region = "Africa")
-#> # A tibble: 38 x 7
+#> # A tibble: 39 x 7
 #>    region country  survey_year release_year description           type  filename
-#>    <fct>  <fct>          <int>        <int> <fct>                 <fct> <fct>   
+#>    <chr>  <chr>          <int>        <int> <chr>                 <chr> <chr>   
 #>  1 Africa Angola          2008         2015 PPI for Angola based… sps   ppiAGO2…
 #>  2 Africa Benin           2010         2012 PPI for Bangladesh u… sps   ppiBGD2…
 #>  3 Africa Burkina…        2003         2011 PPI for Burkina Faso… sps   ppiBFA2…
@@ -811,7 +806,7 @@ find_table(region = "Africa")
 #>  8 Africa Cote d'…        2015         2018 PPI for Ivory Coast … ipa   ppiCIV2…
 #>  9 Africa Ethiopia        2010         2016 PPI for Ethiopia bas… sps   ppiETH2…
 #> 10 Africa Ghana           2012         2015 PPI for Ghana based … sps   ppiGHA2…
-#> # … with 28 more rows
+#> # … with 29 more rows
 ```
 
 View the list of PPI country tables in Zambia using the the following
@@ -821,7 +816,7 @@ command in R:
 find_table(country = "Zambia")
 #> # A tibble: 4 x 7
 #>   region country survey_year release_year description             type  filename
-#>   <fct>  <fct>         <int>        <int> <fct>                   <fct> <fct>   
+#>   <chr>  <chr>         <int>        <int> <chr>                   <chr> <chr>   
 #> 1 Africa Zambia         2010         2013 PPI for Zambia based o… sps   ppiZMB2…
 #> 2 Africa Zambia         2010         2013 PPI for Zambia based o… sps   ppiZMB2…
 #> 3 Africa Zambia         2015         2017 PPI for Zambia based o… sps   ppiZMB2…
@@ -838,20 +833,20 @@ tables, the following command can be used in R:
 
 ``` r
 get_table()
-#> # A tibble: 89,688 x 7
+#> # A tibble: 91,188 x 7
 #>    country     release_year filename   type  score poverty_definition   ppi
 #>    <chr>       <chr>        <chr>      <chr> <dbl> <chr>              <dbl>
-#>  1 Afghanistan 2012         ppiAFG2012 sps       0 nl                 100  
-#>  2 Afghanistan 2012         ppiAFG2012 sps       1 nl                 100  
-#>  3 Afghanistan 2012         ppiAFG2012 sps       2 nl                 100  
-#>  4 Afghanistan 2012         ppiAFG2012 sps       3 nl                 100  
-#>  5 Afghanistan 2012         ppiAFG2012 sps       4 nl                 100  
-#>  6 Afghanistan 2012         ppiAFG2012 sps       5 nl                  68.8
-#>  7 Afghanistan 2012         ppiAFG2012 sps       6 nl                  68.8
-#>  8 Afghanistan 2012         ppiAFG2012 sps       7 nl                  68.8
-#>  9 Afghanistan 2012         ppiAFG2012 sps       8 nl                  68.8
-#> 10 Afghanistan 2012         ppiAFG2012 sps       9 nl                  68.8
-#> # … with 89,678 more rows
+#>  1 Afghanistan 2012         ppiAFG2012 sps       0 nl                   100
+#>  2 Afghanistan 2012         ppiAFG2012 sps       0 nu150                100
+#>  3 Afghanistan 2012         ppiAFG2012 sps       0 nu200                100
+#>  4 Afghanistan 2012         ppiAFG2012 sps       0 extreme              100
+#>  5 Afghanistan 2012         ppiAFG2012 sps       0 ppp125               100
+#>  6 Afghanistan 2012         ppiAFG2012 sps       0 ppp250               100
+#>  7 Afghanistan 2012         ppiAFG2012 sps       1 nl                   100
+#>  8 Afghanistan 2012         ppiAFG2012 sps       1 nu150                100
+#>  9 Afghanistan 2012         ppiAFG2012 sps       1 nu200                100
+#> 10 Afghanistan 2012         ppiAFG2012 sps       1 extreme              100
+#> # … with 91,178 more rows
 ```
 
 To get the actual PPI tables for all countries with PPI tables in
@@ -859,20 +854,20 @@ Africa, the following command can be used in R:
 
 ``` r
 get_table(region = "Africa")
-#> # A tibble: 42,622 x 7
+#> # A tibble: 44,122 x 7
 #>    country release_year filename   type  score poverty_definition   ppi
 #>    <chr>   <chr>        <chr>      <chr> <dbl> <chr>              <dbl>
-#>  1 Angola  2015         ppiAGO2015 sps       0 nl100                100
-#>  2 Angola  2015         ppiAGO2015 sps       1 nl100                100
-#>  3 Angola  2015         ppiAGO2015 sps       2 nl100                100
-#>  4 Angola  2015         ppiAGO2015 sps       3 nl100                100
-#>  5 Angola  2015         ppiAGO2015 sps       4 nl100                100
-#>  6 Angola  2015         ppiAGO2015 sps       5 nl100                100
-#>  7 Angola  2015         ppiAGO2015 sps       6 nl100                100
-#>  8 Angola  2015         ppiAGO2015 sps       7 nl100                100
-#>  9 Angola  2015         ppiAGO2015 sps       8 nl100                100
-#> 10 Angola  2015         ppiAGO2015 sps       9 nl100                100
-#> # … with 42,612 more rows
+#>  1 Angola  2015         ppiAGO2015 sps       0 nl100              100  
+#>  2 Angola  2015         ppiAGO2015 sps       0 nl150              100  
+#>  3 Angola  2015         ppiAGO2015 sps       0 nl200              100  
+#>  4 Angola  2015         ppiAGO2015 sps       0 half100             86.5
+#>  5 Angola  2015         ppiAGO2015 sps       0 ppp125             100  
+#>  6 Angola  2015         ppiAGO2015 sps       0 ppp200             100  
+#>  7 Angola  2015         ppiAGO2015 sps       0 ppp250             100  
+#>  8 Angola  2015         ppiAGO2015 sps       0 ppp500             100  
+#>  9 Angola  2015         ppiAGO2015 sps       1 nl100              100  
+#> 10 Angola  2015         ppiAGO2015 sps       1 nl150              100  
+#> # … with 44,112 more rows
 ```
 
 ### Notes
