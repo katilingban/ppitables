@@ -5,16 +5,17 @@ url: https://katilingban.io/ppitables
 template:
   params:
     bootswatch: cerulean
-    ganalytics: UA-102485058-9
+    ganalytics: UA-172103104-2
 
 navbar:
   type: inverse
 
 home:
-  #strip_header: true
   links:
   - text: Read more about PPI
     href: https://www.povertyindex.org
+  - text: Learn more about Katilingban at
+    href: https://katilingban.io
 
 #navbar:
 #  left:
