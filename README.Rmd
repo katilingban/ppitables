@@ -69,7 +69,7 @@ These three components are joined together without any spaces or gaps.
 
 Some country lookup tables may have additional components to their name which are added after the year separated with an underscore. These usually signify that a lookup table released on a particular year has a subset table in which the poverty likelihoods for a given `PPI` score are reported based on a different poverty definition or cut-off. This additional component to the table name is usually a character value or alphanumeric and is usually country-specific. To know more about what this additional component to some `PPI` tables refer to, read the index table below of the `PPI` tables available in this package. 
 
-Following are the available PPI country tables from the `ppitables` package. This is updated as at 20 September 2020 using information from the PPI [site](https://www.povertyindex.org).
+Following are the available PPI country tables from the `ppitables` package. This is updated as at 21 September 2020 using information from the PPI [site](https://www.povertyindex.org).
 
 
 ### List of PPI country tables
@@ -170,6 +170,9 @@ Following are the available PPI country tables from the `ppitables` package. Thi
 +-----+-----------------+-----------------------------------------------------+-----------------+
 |     | `ppiIDN2012_a`  | PPI for Indonesia based on data from 2010 using new | 2012            |
 |     |                 | definition poverty lines                            |                 |
++-----+-----------------+-----------------------------------------------------+-----------------+
+|     | `ppiIDN2020`    | PPI for Indonesia based on data from Indonesia's    | 2020            |
+|     |                 | SUSENA 2016                                         |                 |
 +-----+-----------------+-----------------------------------------------------+-----------------+
 | 21. | `ppiIND2016_r59`| PPI for India using India’s 2011/12 Socio-Economic  | 2016            |
 |     |                 | using the R59 legacy poverty lines using MRP        |                 |
