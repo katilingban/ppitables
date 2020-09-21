@@ -37,6 +37,7 @@ Asia,India,2011,2016,PPI for India using India 2011/12 Socio-Economic using the 
 Asia,India,2011,2016,PPI for India using India 2011/12 Socio-Economic using the R68 new poverty lines using MRP consumption,sps,ppiIND2016_r68
 Asia,Indonesia,2010,2012,PPI for Indonesia based on data from 2010 using legacy poverty lines,sps,ppiIDN2012
 Asia,Indonesia,2010,2012,PPI for Indonesia based on data from 2010 using new definition poverty lines,sps,ppiIDN2012_a
+Asia,Indonesia,2016,2020,PPI for Indonesia based on data from Indonesia's SUSENAS 2016,ipa,ppiIDN2020
 Middle East and North Africa,Jordan,2006,2010,PPI for Jordan using Jordan 2006 Household Income and Expenditure Survey,sps,ppiJOR2010
 Africa,Kenya,2005,2011,PPI for Kenya using Kenya 2005/06 Integrated Household Budget Survey,sps,ppiKEN2011
 Africa,Kenya,2015,2018,PPI for Kenya using Kenya 2015 Integrated Household Budget Survey (KIHBS),ipa,ppiKEN2018
