@@ -14,14 +14,14 @@
 
 # Dependencies
 
-|package   |old   |new        |Δ  |
-|:---------|:-----|:----------|:--|
-|ppitables |0.5.3 |0.5.4.9000 |*  |
-|cli       |NA    |2.1.0      |*  |
-|cpp11     |NA    |0.2.3      |*  |
-|digest    |NA    |0.6.26     |*  |
-|rlang     |NA    |0.4.8      |*  |
-|tibble    |NA    |3.0.4      |*  |
+|package   |old   |new    |Δ  |
+|:---------|:-----|:------|:--|
+|ppitables |0.5.3 |0.5.4  |*  |
+|cli       |NA    |2.1.0  |*  |
+|cpp11     |NA    |0.2.3  |*  |
+|digest    |NA    |0.6.26 |*  |
+|rlang     |NA    |0.4.8  |*  |
+|tibble    |NA    |3.0.4  |*  |
 
 # Revdeps
 
