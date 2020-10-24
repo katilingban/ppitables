@@ -1,3 +1,16 @@
+# ppitables 0.5.4
+
+This is the ninth CRAN release of `ppitables`. In this release, I added:
+
+* new PPI tables for Indonesia using the new PPI calculation approach developed
+by the International Poverty Alliance (IPA) based on data from Indonesia's
+SUSENA 2016
+
+* updated `steer` data that serves as an index to the tables to include the new
+Indonesia PPI tables
+
+* general documentation updates and general checking updates
+
 # ppitables 0.5.3
 
 This is the eighth CRAN release of `ppitables`. In this release, I added:
