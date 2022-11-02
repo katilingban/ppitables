@@ -15,10 +15,11 @@ checks](https://cranchecks.info/badges/summary/ppitables)](https://cran.r-projec
 [![CRAN](https://img.shields.io/cran/l/ppitables.svg)](https://github.com/katilingban/ppitables/blob/master/LICENSE.md)
 [![CRAN](http://cranlogs.r-pkg.org/badges/ppitables)](https://CRAN.R-project.org/package=ppitables)
 [![CRAN](http://cranlogs.r-pkg.org/badges/grand-total/ppitables)](https://CRAN.R-project.org/package=ppitables)
-![R-CMD-check](https://github.com/katilingban/ppitables/workflows/R-CMD-check/badge.svg)
+[![R-CMD-check](https://github.com/katilingban/ppitables/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/katilingban/ppitables/actions/workflows/R-CMD-check.yaml)
 ![test-coverage](https://github.com/katilingban/ppitables/workflows/test-coverage/badge.svg)
 [![Coverage
 Status](https://img.shields.io/codecov/c/github/katilingban/ppitables/master.svg)](https://codecov.io/github/katilingban/ppitables?branch=master)
+[![CodeFactor](https://www.codefactor.io/repository/github/katilingban/ppitables/badge)](https://www.codefactor.io/repository/github/katilingban/ppitables)
 [![DOI](https://zenodo.org/badge/121277287.svg)](https://zenodo.org/badge/latestdoi/121277287)
 <!--- END BADGES --->
 
@@ -863,7 +864,6 @@ find_table()
 #> 10 Asia                            Cambod…    2011    2015 PPI fo… sps   ppiKHM…
 #> # … with 81 more rows, and abbreviated variable names ¹​survey_year,
 #> #   ²​release_year, ³​description, ⁴​filename
-#> # ℹ Use `print(n = ...)` to see more rows
 ```
 
 View the list of PPI country tables for Africa using the following
@@ -885,7 +885,6 @@ find_table(region = "Africa")
 #>  9 Africa Ethiopia             2010         2016 PPI for Ethiopia… sps   ppiETH…
 #> 10 Africa Ghana                2012         2015 PPI for Ghana ba… sps   ppiGHA…
 #> # … with 29 more rows, and abbreviated variable name ¹​filename
-#> # ℹ Use `print(n = ...)` to see more rows
 ```
 
 View the list of PPI country tables in Zambia using the the following
@@ -927,7 +926,6 @@ get_table()
 #>  9 Afghanistan 2012         ppiAFG2012 sps       1 nu200                100
 #> 10 Afghanistan 2012         ppiAFG2012 sps       1 extreme              100
 #> # … with 93,078 more rows
-#> # ℹ Use `print(n = ...)` to see more rows
 ```
 
 To get the actual PPI tables for all countries with PPI tables in
@@ -949,7 +947,6 @@ get_table(region = "Africa")
 #>  9 Angola  2015         ppiAGO2015 sps       1 nl100              100  
 #> 10 Angola  2015         ppiAGO2015 sps       1 nl150              100  
 #> # … with 44,112 more rows
-#> # ℹ Use `print(n = ...)` to see more rows
 ```
 
 ### Notes
