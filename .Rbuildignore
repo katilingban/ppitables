@@ -9,10 +9,8 @@
 ^cran-comments\.md$
 ^LICENSE\.md$
 ^docs$
-^netlify\.toml$
 ^revdep$
 ^codecov\.yml$
-^_pkgdown\.yml$
 ^docs/$
 ^\.github$
 ^pkgdown$
