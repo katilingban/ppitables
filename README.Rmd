@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
 library(ppitables)
 ```
 
-# ppitables: Lookup Tables to Generate Poverty Likelihoods and Rates using the Poverty Probability Index (PPI) <img src="man/figures/ppitables.png" width="200" align="right" />
+# ppitables: Lookup Tables to Generate Poverty Likelihoods and Rates using the Poverty Probability Index (PPI)
 
 <!--- BEGIN BADGES --->
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
