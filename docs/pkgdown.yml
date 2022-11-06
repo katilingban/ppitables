@@ -1,8 +1,8 @@
-pandoc: 2.7.3
-pkgdown: 1.6.1
+pandoc: '2.18'
+pkgdown: 2.0.6
 pkgdown_sha: ~
 articles: {}
-last_built: 2020-10-24T22:53Z
+last_built: 2022-11-06T00:00Z
 urls:
   reference: https://katilingban.io/ppitables/reference
   article: https://katilingban.io/ppitables/articles

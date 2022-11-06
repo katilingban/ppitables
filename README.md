@@ -8,7 +8,8 @@
 [![Project Status: Active – The project has reached a stable, usable
 state and is being actively
 developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
-[![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
+[![Lifecycle:
+stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/ppitables)](https://cran.r-project.org/package=ppitables)
 [![cran
 checks](https://cranchecks.info/badges/summary/ppitables)](https://cran.r-project.org/web/checks/check_results_ppitables.html)
@@ -769,6 +770,13 @@ Survey</td>
 <td style="text-align: center;">2016</td>
 </tr>
 <tr class="odd">
+<td style="text-align: right;"></td>
+<td><code>ppiTZA2022</code></td>
+<td>PPI for Tanzania based on Tanzania’s 2017/2018 Household Budget
+Survey</td>
+<td style="text-align: center;">2022</td>
+</tr>
+<tr class="even">
 <td style="text-align: right;"><ol start="55" type="1">
 <li></li>
 </ol></td>
@@ -777,7 +785,7 @@ Survey</td>
 Base du Bien-être (QUIBB)</td>
 <td style="text-align: center;">2018</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"><ol start="56" type="1">
 <li></li>
 </ol></td>
@@ -785,6 +793,12 @@ Base du Bien-être (QUIBB)</td>
 <td>PPI for Uganda based on Uganda’s 2012/13 National Household
 Survey</td>
 <td style="text-align: center;">2015</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"></td>
+<td><code>ppiUGA2022</code></td>
+<td>PPI for Uganda based on Uganda’s 2020 National Household Survey</td>
+<td style="text-align: center;">2022</td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;"><ol start="57" type="1">
@@ -948,6 +962,38 @@ get_table(region = "Africa")
 #> 10 Angola  2015         ppiAGO2015 sps       1 nl150              100  
 #> # … with 44,112 more rows
 ```
+
+## Disclaimer
+
+The `ppitables` package is an independent development and is separate
+from and not recognised and approved by the *[International Poverty
+Alliance (IPA)](http://www.poverty-action.org/)*, the organisation that
+produces and owns the copyright to the [Poverty Probability
+Index](https://www.povertyindex.org). The author and maintainer of this
+package is not affiliated with *[International Poverty Alliance
+(IPA)](http://www.poverty-action.org/)* but is committed to ensuring
+that the `ppitables` package is compliant with the [Poverty Probability
+Index](https://www.povertyindex.org)’s terms of use.
+
+Any mistakes, problems and issues with the functionality and outputs of
+the `ppitables` package are that of the author and maintainer of the
+package and not of *[International Poverty Alliance
+(IPA)](http://www.poverty-action.org/)*. Hence any problems and issues
+to the usage, functionality and outputs of the `ppitables` package
+should be addressed directly to the author and maintainer
+[here](https://github.com/katilingban/ppitables/issues).
+
+## Community guidelines
+
+Feedback, bug reports and feature requests are welcome; file issues or
+seek support [here](https://github.com/katilingban/ppitables/issues). If
+you would like to contribute to the package, please see our
+[contributing
+guidelines](https://katilingban.io/ppitables/CONTRIBUTING.html).
+
+Please note that the `ppitables` project is released with a [Contributor
+Code of Conduct](https://katilingban.io/ppitables/CODE_OF_CONDUCT.html).
+By contributing to this project, you agree to abide by its terms.
 
 ### Notes
 

@@ -1,13 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://katilingban.io/ppitables/404.html</loc>
+  </url>
+  <url>
+    <loc>https://katilingban.io/ppitables/CODE_OF_CONDUCT.html</loc>
+  </url>
+  <url>
+    <loc>https://katilingban.io/ppitables/ISSUE_TEMPLATE.html</loc>
+  </url>
+  <url>
+    <loc>https://katilingban.io/ppitables/LICENSE-text.html</loc>
+  </url>
+  <url>
+    <loc>https://katilingban.io/ppitables/LICENSE.html</loc>
+  </url>
+  <url>
+    <loc>https://katilingban.io/ppitables/PULL_REQUEST_TEMPLATE.html</loc>
+  </url>
+  <url>
+    <loc>https://katilingban.io/ppitables/authors.html</loc>
+  </url>
+  <url>
     <loc>https://katilingban.io/ppitables/index.html</loc>
+  </url>
+  <url>
+    <loc>https://katilingban.io/ppitables/news/index.html</loc>
   </url>
   <url>
     <loc>https://katilingban.io/ppitables/reference/find_table.html</loc>
   </url>
   <url>
     <loc>https://katilingban.io/ppitables/reference/get_table.html</loc>
+  </url>
+  <url>
+    <loc>https://katilingban.io/ppitables/reference/index.html</loc>
   </url>
   <url>
     <loc>https://katilingban.io/ppitables/reference/ppiAFG2012.html</loc>
@@ -262,7 +289,13 @@
     <loc>https://katilingban.io/ppitables/reference/ppiTZA2016.html</loc>
   </url>
   <url>
+    <loc>https://katilingban.io/ppitables/reference/ppiTZA2022.html</loc>
+  </url>
+  <url>
     <loc>https://katilingban.io/ppitables/reference/ppiUGA2015.html</loc>
+  </url>
+  <url>
+    <loc>https://katilingban.io/ppitables/reference/ppiUGA2022.html</loc>
   </url>
   <url>
     <loc>https://katilingban.io/ppitables/reference/ppiVNM2009.html</loc>

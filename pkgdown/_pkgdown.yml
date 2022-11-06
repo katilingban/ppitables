@@ -1,14 +1,16 @@
 title: ppitables
 
-url: https://katilingban.io/ppitables
+url: https://katilingban.io/ppitables/
 
 template:
   params:
+    bootstrap: 5
     bootswatch: cerulean
     ganalytics: UA-172103104-2
 
 navbar:
   type: inverse
+  bg: dark
 
 home:
   links:
@@ -133,7 +135,9 @@ reference:
   - ppiTJK2015
   - ppiTLS2013
   - ppiTZA2016
+  - ppiTZA2022
   - ppiUGA2015
+  - ppiUGA2022
   - ppiVNM2009
   - ppiYEM2009
   - ppiZAF2009
