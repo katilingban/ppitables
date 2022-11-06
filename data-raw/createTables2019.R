@@ -127,3 +127,40 @@ names(idn) <- c("score", "nl100", "extreme", "nl150", "nl200",
 ppiIDN2020 <- tibble::tibble(idn)
 
 usethis::use_data(ppiIDN2020, overwrite = TRUE)
+
+## Tanzania 2022 ###############################################################
+
+tza <- read_xlsx(path = "data-raw/sources/tanzania2022.xlsx",
+                 sheet = "Look-up Tables",
+                 range = "A10:U110")
+
+tza <- data.frame(tza)
+
+tza[ , 2:ncol(tza)] <- tza[ , 2:ncol(tza)] * 100
+
+names(tza) <- c("score", "nl_upper", "nl_lower", "extreme", "nl150", "nl200",
+                "ppp100", "ppp190", "ppp320", "ppp550", "ppp800", "ppp1100",
+                "ppp1500", "ppp2170", "ppp125", "ppp250", "ppp500",
+                "percentile20", "percentile40", "percentile60", "percentile80")
+
+ppiTZA2022 <- tibble::tibble(tza)
+
+usethis::use_data(ppiTZA2022, overwrite = TRUE)
+
+## Uganda 2022 ###############################################################
+
+uga <- read_xlsx(path = "data-raw/sources/uganda2022.xlsx",
+                 sheet = "Look-up Tables",
+                 range = "B11:N111")
+
+uga <- data.frame(uga)
+
+uga[ , 2:ncol(uga)] <- uga[ , 2:ncol(uga)] * 100
+
+names(uga) <- c("score", "ppp100", "ppp190", "ppp320", "ppp550", "ppp800",
+                "ppp1100", "ppp1500", "ppp2170",
+                "percentile20", "percentile40", "percentile60", "percentile80")
+
+ppiUGA2022 <- tibble::tibble(uga)
+
+usethis::use_data(ppiUGA2022, overwrite = TRUE)

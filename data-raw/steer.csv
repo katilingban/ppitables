@@ -81,9 +81,11 @@ Asia,Sri Lanka,2012,2016,PPI for Sri Lanka using Sri Lanka 2012/13 Household Inc
 Middle East and North Africa,Syria,2006,2010,PPI for Syria based on Syria 2006/7 Household Income and Expenditure Survey,sps,ppiSYR2010
 Asia,Tajikistan,2007,2015,PPI for Tajikistan based on 2007 data,sps,ppiTJK2015
 Africa,Tanzania,2011,2016,PPI for Tanzania based on Tanzania 2011/12 Household Budget Survey,sps,ppiTZA2016
+Africa,Tanzania,2018,2022,PPI for Tanzania based on Tanzania 2017/18 Household Budget Survey,ipa,ppiTZA2022
 Asia,Timor-Leste,2007,2013,PPI for Timor Leste based on Timor-Leste 2007 Survey of Living Standards,sps,ppiTLS2013
 Africa,Togo,2015,2018,PPI for Togo based on Togo 2015 Questionnaire des Indicateurs de Base du Bien-otre (QUIBB),ipa,ppiTGO2018
 Africa,Uganda,2012,2015,PPI for Uganda based on Uganda 2012/13 National Household Survey,sps,ppiUGA2015
+Africa,Uganda,2020,2022,PPI for Uganda based on Uganda National Panel Survey 2018 and the Uganda National Panel Survey 2020 ,ipa,ppiUGA2022
 Asia,Vietnam,2006,2009,PPI for Vietnam based on the 2006 VHLSS,sps,ppiVNM2009
 Middle East and North Africa,Yemen,2005,2009,PPI for Yemen based on 2005/06 HBS,sps,ppiYEM2009
 Africa,Zambia,2010,2013,PPI for Zambia based on Zambia 2010 Living Conditions Monitoring Survey (LCMS) using Gottingen poverty definitions,sps,ppiZMB2013_got
