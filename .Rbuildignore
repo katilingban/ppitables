@@ -14,3 +14,4 @@
 ^docs/$
 ^\.github$
 ^pkgdown$
+^_pkgdown\.yml$

@@ -2,8 +2,8 @@
 % Please edit documentation in R/ppitables.R
 \docType{package}
 \name{ppitables}
-\alias{ppitables}
 \alias{ppitables-package}
+\alias{ppitables}
 \title{Poverty Probability Index (PPI) Lookup Tables}
 \description{
 The Poverty Probability Index (PPI) is a poverty measurement tool for
@@ -16,7 +16,7 @@ only a narrow margin.
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://github.com/katilingban/ppitables}
+  \item \url{https://github.com/katilingban/ppitables,https://katilingban.io/ppitables/}
   \item Report bugs at \url{https://github.com/katilingban/ppitables/issues}
 }
 

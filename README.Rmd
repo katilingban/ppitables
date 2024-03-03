@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
 library(ppitables)
 ```
 
-# ppitables: Lookup Tables to Generate Poverty Likelihoods and Rates using the Poverty Probability Index (PPI)
+# ppitables: Lookup Tables to Generate Poverty Likelihoods and Rates using the Poverty Probability Index (PPI) <img src="man/figures/logo.png" width="200" align="right" />
 
 <!--- BEGIN BADGES --->
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
@@ -25,7 +25,7 @@ library(ppitables)
 [![CRAN](http://cranlogs.r-pkg.org/badges/grand-total/ppitables)](https://CRAN.R-project.org/package=ppitables)
 [![R-CMD-check](https://github.com/katilingban/ppitables/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/katilingban/ppitables/actions/workflows/R-CMD-check.yaml)
 ![test-coverage](https://github.com/katilingban/ppitables/workflows/test-coverage/badge.svg)
-[![Coverage Status](https://img.shields.io/codecov/c/github/katilingban/ppitables/master.svg)](https://codecov.io/github/katilingban/ppitables?branch=master)
+[![Codecov test coverage](https://codecov.io/gh/katilingban/ppitables/branch/main/graph/badge.svg)](https://app.codecov.io/gh/katilingban/ppitables?branch=main)
 [![CodeFactor](https://www.codefactor.io/repository/github/katilingban/ppitables/badge)](https://www.codefactor.io/repository/github/katilingban/ppitables)
 [![DOI](https://zenodo.org/badge/121277287.svg)](https://zenodo.org/badge/latestdoi/121277287)
 <!--- END BADGES --->
