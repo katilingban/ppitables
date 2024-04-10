@@ -16,9 +16,9 @@
 
 # Dependencies
 
-|package   |old |new        |Δ  |
-|:---------|:---|:----------|:--|
-|ppitables |NA  |0.5.4.9000 |*  |
+|package   |old |new   |Δ  |
+|:---------|:---|:-----|:--|
+|ppitables |NA  |0.5.5 |*  |
 
 # Revdeps
 

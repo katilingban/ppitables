@@ -3,7 +3,7 @@
 
 # ppitables: Lookup Tables to Generate Poverty Likelihoods and Rates using the Poverty Probability Index (PPI) <img src="man/figures/logo.png" width="200" align="right" />
 
-<!--- BEGIN BADGES --->
+<!--- badges: start --->
 
 [![Project Status: Active – The project has reached a stable, usable
 state and is being actively
@@ -22,7 +22,7 @@ checks](https://badges.cranchecks.info/worst/ppitables.svg)](https://cran.r-proj
 coverage](https://codecov.io/gh/katilingban/ppitables/branch/main/graph/badge.svg)](https://app.codecov.io/gh/katilingban/ppitables?branch=main)
 [![CodeFactor](https://www.codefactor.io/repository/github/katilingban/ppitables/badge)](https://www.codefactor.io/repository/github/katilingban/ppitables)
 [![DOI](https://zenodo.org/badge/121277287.svg)](https://zenodo.org/badge/latestdoi/121277287)
-<!--- END BADGES --->
+<!--- badges: end --->
 
 Lookup tables for estimating the likelihood of poverty using the
 `Poverty Probability Index` (previously called
@@ -965,20 +965,20 @@ get_table(region = "Africa")
 
 The `ppitables` package is an independent development and is separate
 from and not recognised and approved by the *[International Poverty
-Alliance (IPA)](http://www.poverty-action.org/)*, the organisation that
+Alliance (IPA)](https://poverty-action.org/)*, the organisation that
 produces and owns the copyright to the [Poverty Probability
 Index](https://www.povertyindex.org). The author and maintainer of this
 package is not affiliated with *[International Poverty Alliance
-(IPA)](http://www.poverty-action.org/)* but is committed to ensuring
-that the `ppitables` package is compliant with the [Poverty Probability
+(IPA)](https://poverty-action.org/)* but is committed to ensuring that
+the `ppitables` package is compliant with the [Poverty Probability
 Index](https://www.povertyindex.org)’s terms of use.
 
 Any mistakes, problems and issues with the functionality and outputs of
 the `ppitables` package are that of the author and maintainer of the
 package and not of *[International Poverty Alliance
-(IPA)](http://www.poverty-action.org/)*. Hence any problems and issues
-to the usage, functionality and outputs of the `ppitables` package
-should be addressed directly to the author and maintainer
+(IPA)](https://poverty-action.org/)*. Hence any problems and issues to
+the usage, functionality and outputs of the `ppitables` package should
+be addressed directly to the author and maintainer
 [here](https://github.com/katilingban/ppitables/issues).
 
 ## Citation

@@ -2,7 +2,7 @@ Package: ppitables
 Type: Package
 Title: Lookup Tables to Generate Poverty Likelihoods and Rates using the Poverty 
     Probability Index (PPI)
-Version: 0.5.4.9000
+Version: 0.5.5
 Authors@R: person("Ernest", "Guevarra", 
                   comment = c(ORCID = "0000-0002-4887-4415"), 
                   email = "ernestgmd@gmail.com", role = c("aut", "cre"))
@@ -16,7 +16,7 @@ Description: The Poverty Probability Index (PPI) is a poverty measurement tool
     on their score from the country-specific PPI questionnaire. These lookup 
     tables have been extracted from documentation of the PPI found at 
     <https://www.povertyindex.org> and managed by Innovations for Poverty Action 
-    <https://www.poverty-action.org>.
+    <https://poverty-action.org/>.
 License: MIT + file LICENSE
 Depends: R (>= 2.10)
 Imports: 
