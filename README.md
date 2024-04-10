@@ -3,7 +3,7 @@
 
 # ppitables: Lookup Tables to Generate Poverty Likelihoods and Rates using the Poverty Probability Index (PPI) <img src="man/figures/logo.png" width="200" align="right" />
 
-<!--- BEGIN BADGES --->
+<!--- badges: start --->
 
 [![Project Status: Active – The project has reached a stable, usable
 state and is being actively
@@ -22,7 +22,7 @@ checks](https://badges.cranchecks.info/worst/ppitables.svg)](https://cran.r-proj
 coverage](https://codecov.io/gh/katilingban/ppitables/branch/main/graph/badge.svg)](https://app.codecov.io/gh/katilingban/ppitables?branch=main)
 [![CodeFactor](https://www.codefactor.io/repository/github/katilingban/ppitables/badge)](https://www.codefactor.io/repository/github/katilingban/ppitables)
 [![DOI](https://zenodo.org/badge/121277287.svg)](https://zenodo.org/badge/latestdoi/121277287)
-<!--- END BADGES --->
+<!--- badges: end --->
 
 Lookup tables for estimating the likelihood of poverty using the
 `Poverty Probability Index` (previously called
