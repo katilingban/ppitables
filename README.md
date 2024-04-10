@@ -965,18 +965,18 @@ get_table(region = "Africa")
 
 The `ppitables` package is an independent development and is separate
 from and not recognised and approved by the *[International Poverty
-Alliance (IPA)](http://www.poverty-action.org/)*, the organisation that
+Alliance (IPA)](https://www.poverty-action.org/)*, the organisation that
 produces and owns the copyright to the [Poverty Probability
 Index](https://www.povertyindex.org). The author and maintainer of this
 package is not affiliated with *[International Poverty Alliance
-(IPA)](http://www.poverty-action.org/)* but is committed to ensuring
+(IPA)](https://www.poverty-action.org/)* but is committed to ensuring
 that the `ppitables` package is compliant with the [Poverty Probability
 Index](https://www.povertyindex.org)’s terms of use.
 
 Any mistakes, problems and issues with the functionality and outputs of
 the `ppitables` package are that of the author and maintainer of the
 package and not of *[International Poverty Alliance
-(IPA)](http://www.poverty-action.org/)*. Hence any problems and issues
+(IPA)](https://www.poverty-action.org/)*. Hence any problems and issues
 to the usage, functionality and outputs of the `ppitables` package
 should be addressed directly to the author and maintainer
 [here](https://github.com/katilingban/ppitables/issues).
