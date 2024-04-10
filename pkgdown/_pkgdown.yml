@@ -2,6 +2,9 @@ title: ppitables
 
 url: https://katilingban.io/ppitables/
 
+development:
+  mode: auto
+
 template:
   bootstrap: 5
   bootswatch: sandstone
