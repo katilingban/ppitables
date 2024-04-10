@@ -39,8 +39,8 @@ You can install `ppitables` from CRAN with:
 install.packages("ppitables")
 ```
 
-You can install the current development version from the
-`Katilingban R-universe`\[<https://katilingban.r-universe.dev>\]:
+You can install the current development version from the [Katilingban
+R-universe](https://katilingban.r-universe.dev):
 
 ``` r
 install.packages(
