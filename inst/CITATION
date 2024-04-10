@@ -1,0 +1,10 @@
+bibentry(
+  bibtype  = "Manual",
+  header   = "To cite ppitables in publications use:",
+  title    = "ppitables: Lookup Tables to Generate Poverty Likelihoods and Rates using the Poverty Probability Index (PPI)",
+  author   = person("Ernest Guevarra"),
+  year     = "2024",
+  note     = "R package version 0.5.5",
+  url      = "https://katilingban.io/ppitables/",
+  doi      = "10.5281/zenodo.4129982"
+)

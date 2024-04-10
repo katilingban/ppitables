@@ -12,7 +12,7 @@ developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.re
 stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/ppitables)](https://cran.r-project.org/package=ppitables)
 [![cran
-checks](https://cranchecks.info/badges/summary/ppitables)](https://cran.r-project.org/web/checks/check_results_ppitables.html)
+checks](https://badges.cranchecks.info/worst/ppitables.svg)](https://cran.r-project.org/web/checks/check_results_ppitables.html)
 [![CRAN](https://img.shields.io/cran/l/ppitables.svg)](https://github.com/katilingban/ppitables/blob/master/LICENSE.md)
 [![CRAN](http://cranlogs.r-pkg.org/badges/ppitables)](https://CRAN.R-project.org/package=ppitables)
 [![CRAN](http://cranlogs.r-pkg.org/badges/grand-total/ppitables)](https://CRAN.R-project.org/package=ppitables)
@@ -37,16 +37,16 @@ You can install `ppitables` from CRAN with:
 
 ``` r
 install.packages("ppitables")
-library(ppitables)
 ```
 
-You can install the current development version of `ppitables` from
-GitHub with:
+You can install the current development version from the
+`Katilingban R-universe`\[<https://katilingban.r-universe.dev>\]:
 
 ``` r
-if(!require("remotes")) install.packages("remotes")
-remotes::install_github("katilingban/ppitables")
-library(ppitables)
+install.packages(
+  "ppitables",
+  c('https://nutriverse.r-universe.dev', 'https://cloud.r-project.org')
+)
 ```
 
 ## Usage
@@ -863,7 +863,7 @@ command in R:
 
 ``` r
 find_table()
-#> # A tibble: 91 × 7
+#> # A tibble: 93 × 7
 #>    region            country survey_year release_year description type  filename
 #>    <chr>             <chr>         <int>        <int> <chr>       <chr> <chr>   
 #>  1 Asia              Afghan…        2007         2012 PPI for Af… sps   ppiAFG2…
@@ -876,7 +876,7 @@ find_table()
 #>  8 Africa            Burkin…        2014         2017 PPI for Bu… sps   ppiBFA2…
 #>  9 Africa            Burkin…        2014         2017 PPI for Bu… ipa   ppiBFA2…
 #> 10 Asia              Cambod…        2011         2015 PPI for Ca… sps   ppiKHM2…
-#> # ℹ 81 more rows
+#> # ℹ 83 more rows
 ```
 
 View the list of PPI country tables for Africa using the following
@@ -884,7 +884,7 @@ command in R:
 
 ``` r
 find_table(region = "Africa")
-#> # A tibble: 39 × 7
+#> # A tibble: 41 × 7
 #>    region country       survey_year release_year description      type  filename
 #>    <chr>  <chr>               <int>        <int> <chr>            <chr> <chr>   
 #>  1 Africa Angola               2008         2015 PPI for Angola … sps   ppiAGO2…
@@ -897,7 +897,7 @@ find_table(region = "Africa")
 #>  8 Africa Cote d'Ivoire        2015         2018 PPI for Ivory C… ipa   ppiCIV2…
 #>  9 Africa Ethiopia             2010         2016 PPI for Ethiopi… sps   ppiETH2…
 #> 10 Africa Ghana                2012         2015 PPI for Ghana b… sps   ppiGHA2…
-#> # ℹ 29 more rows
+#> # ℹ 31 more rows
 ```
 
 View the list of PPI country tables in Zambia using the the following
@@ -924,7 +924,7 @@ tables, the following command can be used in R:
 
 ``` r
 get_table()
-#> # A tibble: 93,088 × 7
+#> # A tibble: 96,288 × 7
 #>    country     release_year filename   type  score poverty_definition   ppi
 #>    <chr>       <chr>        <chr>      <chr> <dbl> <chr>              <dbl>
 #>  1 Afghanistan 2012         ppiAFG2012 sps       0 nl                   100
@@ -937,7 +937,7 @@ get_table()
 #>  8 Afghanistan 2012         ppiAFG2012 sps       1 nu150                100
 #>  9 Afghanistan 2012         ppiAFG2012 sps       1 nu200                100
 #> 10 Afghanistan 2012         ppiAFG2012 sps       1 extreme              100
-#> # ℹ 93,078 more rows
+#> # ℹ 96,278 more rows
 ```
 
 To get the actual PPI tables for all countries with PPI tables in
@@ -945,7 +945,7 @@ Africa, the following command can be used in R:
 
 ``` r
 get_table(region = "Africa")
-#> # A tibble: 44,122 × 7
+#> # A tibble: 47,322 × 7
 #>    country release_year filename   type  score poverty_definition   ppi
 #>    <chr>   <chr>        <chr>      <chr> <dbl> <chr>              <dbl>
 #>  1 Angola  2015         ppiAGO2015 sps       0 nl100              100  
@@ -958,7 +958,7 @@ get_table(region = "Africa")
 #>  8 Angola  2015         ppiAGO2015 sps       0 ppp500             100  
 #>  9 Angola  2015         ppiAGO2015 sps       1 nl100              100  
 #> 10 Angola  2015         ppiAGO2015 sps       1 nl150              100  
-#> # ℹ 44,112 more rows
+#> # ℹ 47,312 more rows
 ```
 
 ## Disclaimer
@@ -980,6 +980,33 @@ package and not of *[International Poverty Alliance
 to the usage, functionality and outputs of the `ppitables` package
 should be addressed directly to the author and maintainer
 [here](https://github.com/katilingban/ppitables/issues).
+
+## Citation
+
+If you find the `ppitables` package useful, please cite using the
+suggested citation provided by a call to the `citation` function as
+follows:
+
+``` r
+citation("ppitables")
+#> To cite ppitables in publications use:
+#> 
+#>   Ernest Guevarra (2024). _ppitables: Lookup Tables to Generate Poverty
+#>   Likelihoods and Rates using the Poverty Probability Index (PPI)_.
+#>   doi:10.5281/zenodo.4129982 <https://doi.org/10.5281/zenodo.4129982>,
+#>   R package version 0.5.5, <https://katilingban.io/ppitables/>.
+#> 
+#> A BibTeX entry for LaTeX users is
+#> 
+#>   @Manual{,
+#>     title = {ppitables: Lookup Tables to Generate Poverty Likelihoods and Rates using the Poverty Probability Index (PPI)},
+#>     author = {{Ernest Guevarra}},
+#>     year = {2024},
+#>     note = {R package version 0.5.5},
+#>     url = {https://katilingban.io/ppitables/},
+#>     doi = {10.5281/zenodo.4129982},
+#>   }
+```
 
 ## Community guidelines
 

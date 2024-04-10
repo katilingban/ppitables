@@ -1,5 +1,3 @@
-################################################################################
-#
 #'
 #' Poverty Probability Index (PPI) Lookup Tables
 #'
@@ -16,8 +14,6 @@
 #' @importFrom tibble tibble
 #' @importFrom tidyr pivot_longer
 #'
-#
-################################################################################
 "_PACKAGE"
 
 

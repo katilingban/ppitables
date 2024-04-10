@@ -16,7 +16,8 @@ only a narrow margin.
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://github.com/katilingban/ppitables,https://katilingban.io/ppitables/}
+  \item \url{https://github.com/katilingban/ppitables}
+  \item \url{https://katilingban.io/ppitables/}
   \item Report bugs at \url{https://github.com/katilingban/ppitables/issues}
 }
 
