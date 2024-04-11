@@ -1,15 +1,14 @@
 library(ppitables)
-context("Find PPI tables")
 
 test_that("output is a tibble", {
-  expect_is(find_table(), "tbl_df")
+  expect_s3_class(find_table(), "tbl_df")
 })
 
 test_that("output has correct number of observations", {
-  expect_equal(nrow(find_table(region = "Asia")), 26)
-  expect_equal(nrow(find_table(region = "asia")), 0)
+  expect_equal(nrow(find_table(region = "Asia")), 31)
+  expect_warning(find_table(region = "asia"))
   expect_equal(nrow(find_table(region = "Asia", country = "Nepal")), 2)
-  expect_equal(nrow(find_table(region = "Asia", country = "nepal")), 0)
+  expect_warning(find_table(region = "Asia", country = "nepal"))
 })
 
 

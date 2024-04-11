@@ -83,8 +83,8 @@ this additional component to some `PPI` tables refer to, read the index
 table below of the `PPI` tables available in this package.
 
 Following are the available PPI country tables from the `ppitables`
-package. This is updated as at 21 September 2020 using information from
-the PPI [site](https://www.povertyindex.org).
+package. This is updated as at 11 April 2023 using information from the
+PPI [site](https://www.povertyindex.org).
 
 ### List of PPI country tables
 
@@ -131,6 +131,20 @@ Survey</td>
 <td style="text-align: center;">2012</td>
 </tr>
 <tr class="even">
+<td style="text-align: right;"></td>
+<td><code>ppiBEN2022_11q</code></td>
+<td>PPI for Benin based on 2018/9 Enquete Harmonisée sur le Conditions
+de Vie des Ménages (EHCVM) and using an 11 question score card</td>
+<td style="text-align: center;">2022</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"></td>
+<td><code>ppiBEN2022_6q</code></td>
+<td>PPI for Benin based on 2018/9 Enquete Harmonisée sur le Conditions
+de Vie des Ménages (EHCVM) and using a 6 question score card</td>
+<td style="text-align: center;">2022</td>
+</tr>
+<tr class="even">
 <td style="text-align: right;"><ol start="4" type="1">
 <li></li>
 </ol></td>
@@ -155,6 +169,13 @@ calculation</td>
 <td style="text-align: center;">2017</td>
 </tr>
 <tr class="odd">
+<td style="text-align: right;"></td>
+<td><code>ppiBFA2023</code></td>
+<td>PPI for Burkina FASO based on data from 2018 Enquête Harmonisée sur
+le Conditions de Vie des Ménages (EHCVM)</td>
+<td style="text-align: center;">2023</td>
+</tr>
+<tr class="even">
 <td style="text-align: right;"><ol start="5" type="1">
 <li></li>
 </ol></td>
@@ -162,13 +183,19 @@ calculation</td>
 <td>PPI for Bangladesh using Bangaldesh’s 2010 HIES Survey</td>
 <td style="text-align: center;">2013</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"><ol start="6" type="1">
 <li></li>
 </ol></td>
 <td><code>ppiBOL2015</code></td>
 <td>PPI for Bolivia using Bolivia’s 2013 Household Survey</td>
 <td style="text-align: center;">2015</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"></td>
+<td><code>ppiBOL2023</code></td>
+<td>PPI for Bolivia using data from Encuesta de Hogares 2020</td>
+<td style="text-align: center;">2023</td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;"><ol start="7" type="1">
@@ -250,6 +277,13 @@ Fuerza de Trabajo (ENFT)</td>
 <td style="text-align: center;">2015</td>
 </tr>
 <tr class="odd">
+<td style="text-align: right;"></td>
+<td><code>ppiECU2022</code></td>
+<td>PPI for Ecuador based on data from the Encuesta Nacional de Empleo,
+Desempleo y Subempleo (ENEMDU) from 2019, 2020 and 2021</td>
+<td style="text-align: center;">2022</td>
+</tr>
+<tr class="even">
 <td style="text-align: right;"><ol start="13" type="1">
 <li></li>
 </ol></td>
@@ -257,7 +291,7 @@ Fuerza de Trabajo (ENFT)</td>
 <td>PPI for Egypt based on the 2004/5 HIECS</td>
 <td style="text-align: center;">2010</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"><ol start="14" type="1">
 <li></li>
 </ol></td>
@@ -265,6 +299,13 @@ Fuerza de Trabajo (ENFT)</td>
 <td>PPI for Ethiopia based on Ethiopia’s 2010/11 Household Consumption
 and Expenditure Survey</td>
 <td style="text-align: center;">2016</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"></td>
+<td><code>ppiETH2023</code></td>
+<td>PPI for Ethiopia based on data from the Socioeconomic Survey
+2018/2019”</td>
+<td style="text-align: center;">2023</td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;"><ol start="15" type="1">
@@ -316,12 +357,26 @@ Standards Survey</td>
 <td style="text-align: center;">2016</td>
 </tr>
 <tr class="odd">
+<td style="text-align: right;"></td>
+<td><code>ppiGTM2023</code></td>
+<td>PPI for Guatemala based on data from Encuesta Nacional de Empleo e
+Ingresos of 2021</td>
+<td style="text-align: center;">2023</td>
+</tr>
+<tr class="even">
 <td style="text-align: right;"><ol start="18" type="1">
 <li></li>
 </ol></td>
 <td><code>ppiHND2010</code></td>
 <td>PPI for Honduras based on the 2007 EPHPM</td>
 <td style="text-align: center;">2010</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"></td>
+<td><code>ppiHND2023</code></td>
+<td>PPI for Honduras based on data from the Encuesta Permanente de
+Hogares de Propósitos Múltiples (EPHPM) 2019</td>
+<td style="text-align: center;">2023</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;"><ol start="19" type="1">
@@ -355,6 +410,13 @@ poverty lines</td>
 <td style="text-align: center;">2020</td>
 </tr>
 <tr class="even">
+<td style="text-align: right;"></td>
+<td><code>ppiIDN2023</code></td>
+<td>PPI for Indonesia based on data from the 2022 National Socioeconomic
+Survey (SUSENAS)</td>
+<td style="text-align: center;">2023</td>
+</tr>
+<tr class="odd">
 <td style="text-align: right;"><ol start="21" type="1">
 <li></li>
 </ol></td>
@@ -363,28 +425,28 @@ poverty lines</td>
 legacy poverty lines using MRP consumption</td>
 <td style="text-align: center;">2016</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"></td>
 <td><code>ppiIND2016_r62</code></td>
 <td>PPI for India using India’s 2011/12 Socio-Economic using the R59
 legacy poverty lines using MRP consumption</td>
 <td style="text-align: center;">2016</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"></td>
 <td><code>ppiIND2016_r66</code></td>
 <td>PPI for India using India’s 2011/12 Socio-Economic using the R66
 legacy poverty lines using MRP consumption</td>
 <td style="text-align: center;">2016</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"></td>
 <td><code>ppiIND2016_r68</code></td>
 <td>PPI for India using India’s 2011/12 Socio-Economic using the R68 new
 poverty lines using MRP consumption</td>
 <td style="text-align: center;">2016</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"><ol start="22" type="1">
 <li></li>
 </ol></td>
@@ -393,7 +455,7 @@ poverty lines using MRP consumption</td>
 Survey</td>
 <td style="text-align: center;">2010</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"><ol start="23" type="1">
 <li></li>
 </ol></td>
@@ -402,14 +464,14 @@ Survey</td>
 Survey</td>
 <td style="text-align: center;">2011</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"></td>
 <td><code>ppiKEN2018</code></td>
 <td>PPI for Kenya using Kenya’s 2015 Integrated Household Budget
 Survey</td>
 <td style="text-align: center;">2018</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"><ol start="24" type="1">
 <li></li>
 </ol></td>
@@ -418,7 +480,7 @@ Survey</td>
 Survey</td>
 <td style="text-align: center;">2015</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"><ol start="25" type="1">
 <li></li>
 </ol></td>
@@ -427,19 +489,26 @@ Survey</td>
 using legacy poverty lines</td>
 <td style="text-align: center;">2015</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"></td>
 <td><code>ppiKHM2015_gov</code></td>
 <td>PPI for Cambodia using Cambodia’s 2011 Socio-Economic Survey based
 using government definition poverty lines</td>
 <td style="text-align: center;">2015</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"></td>
 <td><code>ppiKHM2015_wb</code></td>
 <td>PPI for Cambodia using Cambodia’s 2011 Socio-Economic Survey based
 using World Bank definition poverty lines</td>
 <td style="text-align: center;">2015</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"></td>
+<td><code>ppiKHM2023</code></td>
+<td>PPI for Cambodia using data from 2020 Living Standards Measurement
+Study - Plus (LSMS+)</td>
+<td style="text-align: center;">2023</td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;"><ol start="26" type="1">
@@ -563,6 +632,13 @@ Household Survey (IHS4) using new PPI definitions</td>
 <td style="text-align: center;">2020</td>
 </tr>
 <tr class="even">
+<td style="text-align: right;"></td>
+<td><code>ppiMWI2023</code></td>
+<td>PPI for Malawi based on data from the Fifth Integrated Household
+Survey 2019</td>
+<td style="text-align: center;">2023</td>
+</tr>
+<tr class="odd">
 <td style="text-align: right;"><ol start="35" type="1">
 <li></li>
 </ol></td>
@@ -571,7 +647,7 @@ Household Survey (IHS4) using new PPI definitions</td>
 Expenditure Survey</td>
 <td style="text-align: center;">2013</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"><ol start="36" type="1">
 <li></li>
 </ol></td>
@@ -580,7 +656,7 @@ Expenditure Survey</td>
 Expenditure Survey</td>
 <td style="text-align: center;">2013</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"><ol start="37" type="1">
 <li></li>
 </ol></td>
@@ -589,7 +665,7 @@ Expenditure Survey</td>
 Survey</td>
 <td style="text-align: center;">2015</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"><ol start="38" type="1">
 <li></li>
 </ol></td>
@@ -598,7 +674,7 @@ Survey</td>
 Measurement Survey</td>
 <td style="text-align: center;">2013</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"><ol start="39" type="1">
 <li></li>
 </ol></td>
@@ -606,13 +682,13 @@ Measurement Survey</td>
 <td>PPI for Nepal using legacy poverty definition lines</td>
 <td style="text-align: center;">2013</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"></td>
 <td><code>ppiNPL2013_a</code></td>
 <td>PPI for Nepal using new poverty definition lines</td>
 <td style="text-align: center;">2013</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"><ol start="40" type="1">
 <li></li>
 </ol></td>
@@ -621,7 +697,7 @@ Measurement Survey</td>
 Measurement Survey</td>
 <td style="text-align: center;">2009</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"><ol start="41" type="1">
 <li></li>
 </ol></td>
@@ -629,14 +705,14 @@ Measurement Survey</td>
 <td>PPI for Peru based on Peru’s 2010 National Household Survey</td>
 <td style="text-align: center;">2012</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"></td>
 <td><code>ppiPER2018</code></td>
 <td>PPI for Peru based on Peru’s 2016 Encuesta Nacional de Hogares sobre
 Condiciones de Vida y Pobreza (ENAHO)</td>
 <td style="text-align: center;">2018</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"><ol start="42" type="1">
 <li></li>
 </ol></td>
@@ -644,23 +720,39 @@ Condiciones de Vida y Pobreza (ENAHO)</td>
 <td>PPI for the Philippines based on Philippines’ 2009 FIES/LFS.</td>
 <td style="text-align: center;">2014</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"></td>
 <td><code>ppiPHL2018</code></td>
 <td>PPI for the Philippines based on Philippines’ 2015 Family Income and
 Expenditure Survey (FIES)</td>
 <td style="text-align: center;">2018</td>
 </tr>
+<tr class="even">
+<td style="text-align: right;"></td>
+<td><code>ppiPHL2023</code></td>
+<td>PPI for the Philippines based on data from the 2018 Family Income
+and Expenditure Survey (FIES)</td>
+<td style="text-align: center;">2023</td>
+</tr>
 <tr class="odd">
 <td style="text-align: right;"><ol start="43" type="1">
+<li></li>
+</ol></td>
+<td><code>ppiPNG2023</code></td>
+<td>PPI for Papua New Guinea based on data from 2016-2018 Demographic
+and Health Survey (DHS)</td>
+<td style="text-align: center;">2023</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><ol start="44" type="1">
 <li></li>
 </ol></td>
 <td><code>ppiPRY2012</code></td>
 <td>PPI for Paraguay based on Paraguay’s 2011 EPH</td>
 <td style="text-align: center;">2012</td>
 </tr>
-<tr class="even">
-<td style="text-align: right;"><ol start="44" type="1">
+<tr class="odd">
+<td style="text-align: right;"><ol start="45" type="1">
 <li></li>
 </ol></td>
 <td><code>ppiPSE2014</code></td>
@@ -668,24 +760,24 @@ Expenditure Survey (FIES)</td>
 Consumption Survey</td>
 <td style="text-align: center;">2014</td>
 </tr>
-<tr class="odd">
-<td style="text-align: right;"><ol start="45" type="1">
+<tr class="even">
+<td style="text-align: right;"><ol start="46" type="1">
 <li></li>
 </ol></td>
 <td><code>ppiROU2009</code></td>
 <td>PPI for Romania based on the 2007 HBS</td>
 <td style="text-align: center;">2009</td>
 </tr>
-<tr class="even">
-<td style="text-align: right;"><ol start="46" type="1">
+<tr class="odd">
+<td style="text-align: right;"><ol start="47" type="1">
 <li></li>
 </ol></td>
 <td><code>ppiRUS2010</code></td>
 <td>PPI for Russia based on 2007 HBS</td>
 <td style="text-align: center;">2010</td>
 </tr>
-<tr class="odd">
-<td style="text-align: right;"><ol start="47" type="1">
+<tr class="even">
+<td style="text-align: right;"><ol start="48" type="1">
 <li></li>
 </ol></td>
 <td><code>ppiRWA2016</code></td>
@@ -693,7 +785,7 @@ Consumption Survey</td>
 Standards Survey</td>
 <td style="text-align: center;">2016</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"></td>
 <td><code>ppiRWA2019</code></td>
 <td>PPI for Rwanda based on Rwanda’s 2016/2017 Integrated Household
@@ -702,8 +794,8 @@ Statistics of Rwanda (NISR) and the Ministry of Finance and
 Planning</td>
 <td style="text-align: center;">2019</td>
 </tr>
-<tr class="odd">
-<td style="text-align: right;"><ol start="48" type="1">
+<tr class="even">
+<td style="text-align: right;"><ol start="49" type="1">
 <li></li>
 </ol></td>
 <td><code>ppiSEN2009</code></td>
@@ -711,31 +803,38 @@ Planning</td>
 Pauvreté au Sénégal (ESPS)</td>
 <td style="text-align: center;">2009</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"></td>
 <td><code>ppiSEN2018</code></td>
 <td>PPI for Senegal based on Senegal’s 2011 Enquête de Suivi de la
 Pauvreté au Sénégal (ESPS)</td>
 <td style="text-align: center;">2018</td>
 </tr>
-<tr class="odd">
-<td style="text-align: right;"><ol start="49" type="1">
+<tr class="even">
+<td style="text-align: right;"><ol start="50" type="1">
 <li></li>
 </ol></td>
 <td><code>ppiSLE2011</code></td>
 <td>PPI for Sierra Leone based on Sierra Leone’s 2003/4 HIS</td>
 <td style="text-align: center;">2011</td>
 </tr>
-<tr class="even">
-<td style="text-align: right;"><ol start="50" type="1">
+<tr class="odd">
+<td style="text-align: right;"><ol start="51" type="1">
 <li></li>
 </ol></td>
 <td><code>ppiSLV2010</code></td>
 <td>PPI for El Salvador based on the 2008 EHPM</td>
 <td style="text-align: center;">2010</td>
 </tr>
+<tr class="even">
+<td style="text-align: right;"></td>
+<td><code>ppiSLV2021</code></td>
+<td>PPI for El Salvador based on data from 2019 Encuesta de Hogares de
+Propósitos Múltiples</td>
+<td style="text-align: center;">2021</td>
+</tr>
 <tr class="odd">
-<td style="text-align: right;"><ol start="51" type="1">
+<td style="text-align: right;"><ol start="52" type="1">
 <li></li>
 </ol></td>
 <td><code>ppiSYR2010</code></td>
@@ -744,7 +843,7 @@ Expenditure Survey</td>
 <td style="text-align: center;">2010</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;"><ol start="52" type="1">
+<td style="text-align: right;"><ol start="53" type="1">
 <li></li>
 </ol></td>
 <td><code>ppiTJK2015</code></td>
@@ -752,7 +851,7 @@ Expenditure Survey</td>
 <td style="text-align: center;">2015</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;"><ol start="53" type="1">
+<td style="text-align: right;"><ol start="54" type="1">
 <li></li>
 </ol></td>
 <td><code>ppiTLS2013</code></td>
@@ -761,7 +860,7 @@ Standards</td>
 <td style="text-align: center;">2013</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;"><ol start="54" type="1">
+<td style="text-align: right;"><ol start="55" type="1">
 <li></li>
 </ol></td>
 <td><code>ppiTZA2016</code></td>
@@ -777,7 +876,7 @@ Survey</td>
 <td style="text-align: center;">2022</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;"><ol start="55" type="1">
+<td style="text-align: right;"><ol start="56" type="1">
 <li></li>
 </ol></td>
 <td><code>ppiTGO2018</code></td>
@@ -786,7 +885,14 @@ Base du Bien-être (QUIBB)</td>
 <td style="text-align: center;">2018</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;"><ol start="56" type="1">
+<td style="text-align: right;"></td>
+<td><code>ppiTGO2023</code></td>
+<td>PPI for Togo based on data from the 2018 Enquête Harmonisée sur le
+Conditions de Vie des Ménages (EHCVM)</td>
+<td style="text-align: center;">2023</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><ol start="57" type="1">
 <li></li>
 </ol></td>
 <td><code>ppiUGA2015</code></td>
@@ -794,22 +900,29 @@ Base du Bien-être (QUIBB)</td>
 Survey</td>
 <td style="text-align: center;">2015</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"></td>
 <td><code>ppiUGA2022</code></td>
 <td>PPI for Uganda based on Uganda’s 2020 National Household Survey</td>
 <td style="text-align: center;">2022</td>
 </tr>
-<tr class="odd">
-<td style="text-align: right;"><ol start="57" type="1">
+<tr class="even">
+<td style="text-align: right;"><ol start="58" type="1">
 <li></li>
 </ol></td>
 <td><code>ppiVNM2009</code></td>
 <td>PPI for Vietnam based on the 2006 VHLSS</td>
 <td style="text-align: center;">2009</td>
 </tr>
+<tr class="odd">
+<td style="text-align: right;"></td>
+<td><code>ppiVNM2023</code></td>
+<td>PPI for Vietnam based on data from the 2021 Multiple Indicator
+Cluster Survey</td>
+<td style="text-align: center;">2023</td>
+</tr>
 <tr class="even">
-<td style="text-align: right;"><ol start="58" type="1">
+<td style="text-align: right;"><ol start="59" type="1">
 <li></li>
 </ol></td>
 <td><code>ppiYEM2009</code></td>
@@ -817,7 +930,7 @@ Survey</td>
 <td style="text-align: center;">2009</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;"><ol start="59" type="1">
+<td style="text-align: right;"><ol start="60" type="1">
 <li></li>
 </ol></td>
 <td><code>ppiZAF2009</code></td>
@@ -825,7 +938,14 @@ Survey</td>
 <td style="text-align: center;">2009</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;"><ol start="60" type="1">
+<td style="text-align: right;"></td>
+<td><code>ppiZAF2023</code></td>
+<td>PPI for South Africa based on data from the 2019 General Household
+Survey</td>
+<td style="text-align: center;">2023</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><ol start="61" type="1">
 <li></li>
 </ol></td>
 <td><code>ppiZMB2013_got</code></td>
@@ -833,21 +953,21 @@ Survey</td>
 Survey (LCMS) using Göttingen poverty definitions</td>
 <td style="text-align: center;">2013</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"></td>
 <td><code>ppiZMB2013_cso</code></td>
 <td>PPI for Zambia based on Zambia’s 2010 Living Conditions Monitoring
 Survey (LCMS) using CSO poverty definitions</td>
 <td style="text-align: center;">2013</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"></td>
 <td><code>ppiZMB2017</code></td>
 <td>PPI for Zambia based on Zambia’s 2015 Living Conditions Monitoring
 Survey (LCMS) using legacy poverty definitions</td>
 <td style="text-align: center;">2017</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"></td>
 <td><code>ppiZMB2017_a</code></td>
 <td>PPI for Zambia based on Zambia’s 2015 Living Conditions Monitoring
