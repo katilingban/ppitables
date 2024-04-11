@@ -2,13 +2,8 @@
 
 This is the tenth CRAN release of `ppitables`. In this release, I added:
 
-* new PPI tables for Uganda using the new PPI calculation approach developed
-by the International Poverty Alliance (IPA) based on data from the Uganda
-National Panel Survey of 2020
-
-* new PPI tables for Tanzania using the new PPI calculation approach developed
-by the International Poverty Alliance (IPA) based on data from the Tanzania
-Household Budget Survey of 2017/2018
+* new PPI tables for multiple countries released during the period of 2021 to
+2023
 
 * updated `steer` data that serves as an index to the tables to include the new
 Indonesia PPI tables

@@ -1,0 +1,43 @@
+################################################################################
+#
+#' Poverty Probability Index (PPI) lookup table for Papua New Guinea 2023
+#'
+#' @format A data frame with 9 columns and 101 rows:
+#' \describe{
+#' \item{\code{score}}{PPI score}
+#' \item{\code{percentile20_wi}}{Below 20th percentile wealth index}
+#' \item{\code{percentile40_wi}}{Below 40th percentile wealth index}
+#' \item{\code{percentile60_wi}}{Below 60th percentile wealth index}
+#' \item{\code{percentile80_wi}}{Below 80th percentile wealth index}
+#' \item{\code{percentile20_wi_ur}}{Below 20th percentile wealth index urban/rural}
+#' \item{\code{percentile40_wi_ur}}{Below 40th percentile wealth index urban/rural}
+#' \item{\code{percentile60_wi_ur}}{Below 60th percentile wealth index urban/rural}
+#' \item{\code{percentile80_wi_ur}}{Below 80th percentile wealth index urban/rural}
+#' }
+#'
+#' @examples
+#'   # Access Papua New Guinea PPI table
+#'   ppiPNG2023
+#'
+#'   # Given a specific PPI score (from 0 - 100), get the row of poverty
+#'   # probabilities from PPI table it corresponds to
+#'   ppiScore <- 50
+#'   ppiPNG2023[ppiPNG2023$score == ppiScore, ]
+#'
+#'   # Use subset() function to get the row of poverty probabilities corresponding
+#'   # to specific PPI score
+#'   ppiScore <- 50
+#'   subset(ppiPNG2023, score == ppiScore)
+#'
+#'   # Given a specific PPI score (from 0 - 100), get a poverty probability
+#'   # based on a specific poverty definition. In this example, the USAID
+#'   # extreme poverty definition
+#'   ppiScore <- 50
+#'   ppiPNG2023[ppiPNG2023$score == ppiScore, "percentile20_wi"]
+#'
+#' @source \url{https://www.povertyindex.org}
+#'
+#
+################################################################################
+"ppiPNG2023"
+

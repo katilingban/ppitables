@@ -1,36 +1,46 @@
 region,country,survey_year,release_year,description,type,filename
 Asia,Afghanistan,2007,2012,PPI for Afghanistan based on 2007/8 National Risk and Vulnerability Survey (NRVA),sps,ppiAFG2012
 Africa,Angola,2008,2015,PPI for Angola based on the 2008/2009 Household Living Standards Survey,sps,ppiAGO2015
-Asia,Bangladesh,2010,2013,PPI for Benin based on 2010 data,sps,ppiBEN2012
-Africa,Benin,2010,2012,PPI for Bangladesh using Bangaldesh 2010 HIES Survey,sps,ppiBGD2013
-Latin American and the Carribean,Bolivia,2013,2015,PPI for Bolivia using Bolivia 2013 Household Survey,sps,ppiBOL2015
-Latin American and the Carribean,Brazil,2008,2010,PPI for Brazil based on the 2008 PNAD,sps,ppiBRA2010
+Asia,Bangladesh,2010,2013,PPI for Bangladesh using Bangaldesh 2010 HIES Survey,sps,ppiBEN2012
+Africa,Benin,2010,2012,PPI for Benin based on 2010 data,sps,ppiBGD2013
+Africa,Benin,2018,2022,PPI for Benin based on 2018 data from Benin 2018/9 Enquête Harmonisée sur le Conditions de Vie des Ménages (EHCVM) and using a 6 question score card,ipa,ppiBEN2022_6q
+Africa,Benin,2018,2022,PPI for Benin based on 2018 data from Benin 2018/9 Enquête Harmonisée sur le Conditions de Vie des Ménages (EHCVM) and using an 11 question score card,ipa,ppiBEN2022_11q
+Latin American and the Caribbean,Bolivia,2013,2015,PPI for Bolivia using Bolivia 2013 Household Survey,sps,ppiBOL2015
+Latin American and the Caribbean,Bolivia,2020,2023,PPI for Bolivia using Bolivia's Encuesta de Hogares 2020,ipa,ppiBOL2023
+Latin American and the Caribbean,Brazil,2008,2010,PPI for Brazil based on the 2008 PNAD,sps,ppiBRA2010
 Africa,Burkina Faso,2003,2011,PPI for Burkina Faso using Burkina Faso 2003 Household Living Standards Survey,sps,ppiBFA2011
 Africa,Burkina Faso,2014,2017,PPI for Burkina Faso using Burkina Faso 2014 Permanent Multi-Sector Survey,sps,ppiBFA2014
 Africa,Burkina Faso,2014,2017,PPI for Burkina Faso using Burkina Faso 2014 Enquete Multisectorielle Continue (EMC) based on the IPS new approach to PPI calculation,ipa,ppiBFA2017
+Africa,Burkina Faso,2018,2023,PPI for Burkina Faso using 2018 Enquête Harmonisée sur le Conditions de Vie des Ménages (EHCVM),ipa,ppiBFA2023
 Asia,Cambodia,2011,2015,PPI for Cambodia using Cambodia 2011 Socio-Economic Survey based using legacy poverty lines,sps,ppiKHM2015
 Asia,Cambodia,2011,2015,PPI for Cambodia using Cambodia 2011 Socio-Economic Survey based using government definition poverty lines,sps,ppiKHM2015_gov
 Asia,Cambodia,2011,2015,PPI for Cambodia using Cambodia 2011 Socio-Economic Survey based using World Bank definition poverty lines,sps,ppiKHM2015_wb
+Asia,Cambodia,2020,2023,PPI for Cambodia using 2020 Living Standards Measurement Study - Plus (LSMS+),ipa,ppiKHM2023
 Africa,Cameroon,2007,2013,PPI for Cameroon using Cameroon 2007 Household Survey,sps,ppiCMR2013
-Latin American and the Carribean,Colombia,2009,2012,PPI for Colombia based on Colombia 2009 Encuesta Integrada de Hogares. This table uses the old poverty definitions.,sps,ppiCOL2012
-Latin American and the Carribean,Colombia,2009,2012,PPI for Colombia based on Colombia 2009 Encuesta Integrada de Hogares. This table uses the new poverty definitions for Colombia.,sps,ppiCOL2012_a
-Latin American and the Carribean,Colombia,2016,2018,PPI for Colombia based on Colombia 2016 Gran Encuesta Integrada de Hogares (GEIH),ipa,ppiCOL2018
+Latin American and the Caribbean,Colombia,2009,2012,PPI for Colombia based on Colombia 2009 Encuesta Integrada de Hogares. This table uses the old poverty definitions.,sps,ppiCOL2012
+Latin American and the Caribbean,Colombia,2009,2012,PPI for Colombia based on Colombia 2009 Encuesta Integrada de Hogares. This table uses the new poverty definitions for Colombia.,sps,ppiCOL2012_a
+Latin American and the Caribbean,Colombia,2016,2018,PPI for Colombia based on Colombia 2016 Gran Encuesta Integrada de Hogares (GEIH),ipa,ppiCOL2018
 Africa,Cote d'Ivoire,2008,2013,PPI for Ivory Coast using the Ivory Coast 2008 Household Living Standards Survey,sps,ppiCIV2013
 Africa,Cote d'Ivoire,2015,2018,PPI for Ivory Coast using the Ivory Coast 2015 Enquete sur le Niveau de Vie des Menages,ipa,ppiCIV2018
-Latin American and the Carribean,Dominican Republic,2007,2010,PPI for Dominican Republic based on the 2007 Encuesta Nacional de Ingresos y Gastos de los Hogares (ENIGH),sps,ppiDOM2010
-Latin American and the Carribean,Dominican Republic,2016,2018,PPI for Dominican Republic based on the 2016 Encuesta Nacional de Fuerza de Trabajo (ENFT),ipa,ppiDOM2018
-Latin American and the Carribean,Ecuador,2013,2015,PPI for Ecuador based on the 2013 Living Standards Survey,sps,ppiECU2015
+Latin American and the Caribbean,Dominican Republic,2007,2010,PPI for Dominican Republic based on the 2007 Encuesta Nacional de Ingresos y Gastos de los Hogares (ENIGH),sps,ppiDOM2010
+Latin American and the Caribbean,Dominican Republic,2016,2018,PPI for Dominican Republic based on the 2016 Encuesta Nacional de Fuerza de Trabajo (ENFT),ipa,ppiDOM2018
+Latin American and the Caribbean,Ecuador,2013,2015,PPI for Ecuador based on the 2013 Living Standards Survey,sps,ppiECU2015
+Latin American and the Caribbean,Ecuador,2021,2022,"PPI for Ecuador based on Encuesta Nacional de Empleo, Desempleo y Subempleo (ENEMDU) from 2019, 2020 and 2021",ipa,ppiECU2022
 Middle East and North Africa,Egypt,2004,2010,PPI for Egypt based on the 2004/5 HIECS,sps,ppiEGY2010
-Latin American and the Carribean,El Salvador,2008,2010,PPI for El Salvador based on the 2008 EHPM,sps,ppiSLV2010
+Latin American and the Caribbean,El Salvador,2008,2010,PPI for El Salvador based on the 2008 EHPM,sps,ppiSLV2010
+Latin American and the Caribbean,El Salvador,2019,2021,PPI for El Salvador based on the 2019 Encuesta de Hogares de Propósitos Múltiples,ipa,ppiSLV2021
 Africa,Ethiopia,2010,2016,PPI for Ethiopia based on Ethiopia 2010/11 Household Consumption and Expenditure Survey,sps,ppiETH2016
+Africa,Ethiopia,2019,2023,PPI for Ethiopia based on Ethiopia Socioeconomic Survey 2018/2019,ipa,ppiETH2023
 Asia,Fiji,2008,2014,PPI for Fiji based on Fiji 2008/9 Household Income and Expenditure Survey,sps,ppiFJI2014
 Africa,Ghana,2012,2015,PPI for Ghana based on Ghana 2012/13 Living Standards Survey using legacy poverty lines,sps,ppiGHA2015
 Africa,Ghana,2012,2015,PPI for Ghana based on Ghana 2012/13 Living Standards Survey using the new-definition poverty lines deflated with Ghana CPI,sps,ppiGHA2015_a
 Africa,Ghana,2012,2015,PPI for Ghana based on Ghana 2012/13 Living Standards Survey using the new-definition poverty | lines deflated with the change in 100% of national poverty line,sps,ppiGHA2015_b
 Africa,Ghana,2016,2019,PPI for Ghana based on Ghana 2016/2017 Living Standards Survey,ipa,ppiGHA2019
-Latin American and the Carribean,Guatemala,2014,2016,PPI for Guatemala based on Guatemala 2014 Household Living Standards Survey,sps,ppiGTM2016
-Latin American and the Carribean,Haiti,2012,2016,PPI for Haiti based on Haiti 2012 Post-Earthquake Living Standards Survey,sps,ppiHTI2016
-Latin American and the Carribean,Honduras,2007,2010,PPI for Honduras based on the 2007 EPHPM,sps,ppiHND2010
+Latin American and the Caribbean,Guatemala,2014,2016,PPI for Guatemala based on Guatemala 2014 Household Living Standards Survey,sps,ppiGTM2016
+Latin American and the Caribbean,Guatemala,2021,2023,PPI for Guatemala based on Encuesta Nacional de Empleo e Ingresos of 2021,ipa,ppiGTM2023
+Latin American and the Caribbean,Haiti,2012,2016,PPI for Haiti based on Haiti 2012 Post-Earthquake Living Standards Survey,sps,ppiHTI2016
+Latin American and the Caribbean,Honduras,2007,2010,PPI for Honduras based on the 2007 EPHPM,sps,ppiHND2010
+Latin American and the Caribbean,Honduras,2019,2023,PPI for Honduras based on the Encuesta Permanente de Hogares de Propósitos Múltiples (EPHPM) 2019,ipa,ppiHND2023
 Asia,India,2011,2016,PPI for India using India 2011/12 Socio-Economic using the R59 legacy poverty lines using MRP consumption,sps,ppiIND2016_r59
 Asia,India,2011,2016,PPI for India using India 2011/12 Socio-Economic using the R59 legacy poverty lines using MRP consumption,sps,ppiIND2016_r62
 Asia,India,2011,2016,PPI for India using India 2011/12 Socio-Economic using the R66 legacy poverty lines using MRP consumption,sps,ppiIND2016_r66
@@ -38,6 +48,7 @@ Asia,India,2011,2016,PPI for India using India 2011/12 Socio-Economic using the 
 Asia,Indonesia,2010,2012,PPI for Indonesia based on data from 2010 using legacy poverty lines,sps,ppiIDN2012
 Asia,Indonesia,2010,2012,PPI for Indonesia based on data from 2010 using new definition poverty lines,sps,ppiIDN2012_a
 Asia,Indonesia,2016,2020,PPI for Indonesia based on data from Indonesia's SUSENAS 2016,ipa,ppiIDN2020
+Asia,Indonesia,2022,2023,PPI for Indonesia based on data from 2022 National Socioeconomic Survey (SUSENAS),ipa,ppiIDN2023
 Middle East and North Africa,Jordan,2006,2010,PPI for Jordan using Jordan 2006 Household Income and Expenditure Survey,sps,ppiJOR2010
 Africa,Kenya,2005,2011,PPI for Kenya using Kenya 2005/06 Integrated Household Budget Survey,sps,ppiKEN2011
 Africa,Kenya,2015,2018,PPI for Kenya using Kenya 2015 Integrated Household Budget Survey (KIHBS),ipa,ppiKEN2018
@@ -47,9 +58,10 @@ Africa,Malawi,2010,2015,PPI for Malawi based on Malawi 2010/11 Integrated Househ
 Africa,Malawi,2010,2015,PPI for Malawi based on Malawi 2010/11 Integrated Household Survey using government poverty definitions,sps,ppiMWI2015_gov
 Africa,Malawi,2010,2015,PPI for Malawi based on Malawi 2010/11 Integrated Household Survey using PBM poverty definitions,sps,ppiMWI2015_pbm
 Africa,Malawi,2017,2020,PPI for Malawi based on 2016-2017 Fourth Integrated Household Survey (IHS4) using new PPI definitions,ipa,ppiMWI2020
+Africa,Malawi,2019,2023,PPI for Malawi based on data from the Fifth Integrated Household Survey 2019,ipa,ppiMWI2023
 Africa,Mali,2001,2010,PPI for Mali based on Mali 2001 Poverty Evalution Survey,sps,ppiMLI2010
-Latin American and the Carribean,Mexico,2014,2017,PPI for Mexico based on Mexico Encuesta Nacional de Ingresos y Gastos de los Hogares de 2014 using legacy definitions of poverty,ipa,ppiMEX2017
-Latin American and the Carribean,Mexico,2014,2017,PPI for Mexico based on Mexico Encuesta Nacional de Ingresos y Gastos de los Hogares de 2014 using new definitions of poverty,ipa,ppiMEX2017_a
+Latin American and the Caribbean,Mexico,2014,2017,PPI for Mexico based on Mexico Encuesta Nacional de Ingresos y Gastos de los Hogares de 2014 using legacy definitions of poverty,ipa,ppiMEX2017
+Latin American and the Caribbean,Mexico,2014,2017,PPI for Mexico based on Mexico Encuesta Nacional de Ingresos y Gastos de los Hogares de 2014 using new definitions of poverty,ipa,ppiMEX2017_a
 Asia,Mongolia,2014,2016,PPI for Mongolia based on Mongolia 2014 Household Socio-Economic Survey,sps,ppiMNG2016
 Middle East and North Africa,Morocco,2007,2013,PPI for Morocco based on Morocco 2007 Households Living Standards Survey,sps,ppiMAR2013
 Africa,Mozambique,2008,2013,PPI for Mozambique based on 2008/9 Household Budget Survey,sps,ppiMOZ2013
@@ -59,16 +71,18 @@ Asia,Myanmar,2015,2019,PPI for Myanmar based on Myanmar 2015 Poverty and Living 
 Africa,Namibia,2009,2013,PPI for Namibia based on Namibia 2009/10 Household Income and Expenditure Survey,sps,ppiNAM2013
 Asia,Nepal,2010,2013,PPI for Nepal using legacy poverty definition lines,sps,ppiNPL2013
 Asia,Nepal,2010,2013,PPI for Nepal using new poverty definition lines,sps,ppiNPL2013_a
-Latin American and the Carribean,Nicaragua,2009,2013,PPI for Nicaragua based on Nicaragua 2009 Living Standards Measurement Survey,sps,ppiNIC2013
+Latin American and the Caribbean,Nicaragua,2009,2013,PPI for Nicaragua based on Nicaragua 2009 Living Standards Measurement Survey,sps,ppiNIC2013
 Africa,Niger,2007,2013,PPI for Niger based on Niger 2007/8 National Household Budget and Expenditure Survey,sps,ppiNER2013
 Africa,Nigeria,2012,2015,PPI for Nigeria based on Nigeria 2012/13 General Household Panel Survey,sps,ppiNGA2015
 Asia,Pakistan,2005,2009,PPI for Pakistan using Pakistan 2005/6 Social and Living Standards Measurement Survey,sps,ppiPAK2009
 Middle East and North Africa,Palestine,2011,2014,PPI for Palestine based on Palestine 2011 Expenditure and Consumption Survey,sps,ppiPSE2014
-Latin American and the Carribean,Paraguay,2011,2012,PPI for Paraguay based on Paraguay 2011 EPH,sps,ppiPRY2012
-Latin American and the Carribean,Peru,2010,2012,PPI for Peru based on Peru 2010 National Household Survey,sps,ppiPER2012
-Latin American and the Carribean,Peru,2016,2018,PPI for Peru based on Peru 2016 Encuesta Nacional de Hogares sobre Condiciones de Vida y Pobreza (ENAHO),ipa,ppiPER2018
+Asia,Papua New Guinea,2018,2023,PPI for Papua New Guinea based on data from 2016-2018 Demographic and Health Survey (DHS),ipa,ppiPNG2023
+Latin American and the Caribbean,Paraguay,2011,2012,PPI for Paraguay based on Paraguay 2011 EPH,sps,ppiPRY2012
+Latin American and the Caribbean,Peru,2010,2012,PPI for Peru based on Peru 2010 National Household Survey,sps,ppiPER2012
+Latin American and the Caribbean,Peru,2016,2018,PPI for Peru based on Peru 2016 Encuesta Nacional de Hogares sobre Condiciones de Vida y Pobreza (ENAHO),ipa,ppiPER2018
 Asia,Philippines,2009,2012,PPI for the Philippines based on Philippines 2009 FIES/LFS.,sps,ppiPHL2014
 Asia,Philippines,2015,2018,PPI for the Philippines based on Philippines 2015 Family Income and Expenditure Survey (FIES),ipa,ppiPHL2018
+Asia,Philippines,2018,2023,PPI for the Philippines based on data from the 2018 Family Income and Expenditure Survey (FIES),ipa,ppiPHL2023
 Eastern Europe and Central Asia,Romania,2007,2009,PPI for Romania based on the 2007 HBS,sps,ppiROU2009
 Eastern Europe and Central Asia,Russia,2007,2010,PPI for Russia based on 2007 HBS,sps,ppiRUS2010
 Africa,Rwanda,2010,2016,PPI for Rwanda based on Rwanda 2010/11 Integrated Household Living Standards Survey,sps,ppiRWA2016
@@ -77,6 +91,7 @@ Africa,Senegal,2005,2009,PPI for Senegal based on Senegal 2005/6 Enquete de Suiv
 Africa,Senegal,2011,2018,PPI for Senegal based on Senegal 2011 Enguete de Suivi de la Pauvrete au Senegal (ESPS),ipa,ppiSEN2018
 Africa,Sierra Leone,2003,2011,PPI for Sierra Leone based on Sierra Leone 2003/4 HIS,sps,ppiSLE2011
 Africa,South Africa,2005,2009,PPI for South Africa based on the 2005/6 IES,sps,ppiZAF2009
+Africa,South Africa,2019,2023,PPI for South Africa based on the 2019 General Household Survey,ipa,ppiZAF2023
 Asia,Sri Lanka,2012,2016,PPI for Sri Lanka using Sri Lanka 2012/13 Household Income and Expenditure Survey,sps,ppiLKA2016
 Middle East and North Africa,Syria,2006,2010,PPI for Syria based on Syria 2006/7 Household Income and Expenditure Survey,sps,ppiSYR2010
 Asia,Tajikistan,2007,2015,PPI for Tajikistan based on 2007 data,sps,ppiTJK2015
@@ -84,9 +99,11 @@ Africa,Tanzania,2011,2016,PPI for Tanzania based on Tanzania 2011/12 Household B
 Africa,Tanzania,2018,2022,PPI for Tanzania based on Tanzania 2017/18 Household Budget Survey,ipa,ppiTZA2022
 Asia,Timor-Leste,2007,2013,PPI for Timor Leste based on Timor-Leste 2007 Survey of Living Standards,sps,ppiTLS2013
 Africa,Togo,2015,2018,PPI for Togo based on Togo 2015 Questionnaire des Indicateurs de Base du Bien-otre (QUIBB),ipa,ppiTGO2018
+Africa,Togo,2018,2023,PPI for Togo based on data from the 2018 Enquête Harmonisée sur le Conditions de Vie des Ménages (EHCVM),ipa,ppiTGO2023
 Africa,Uganda,2012,2015,PPI for Uganda based on Uganda 2012/13 National Household Survey,sps,ppiUGA2015
 Africa,Uganda,2020,2022,PPI for Uganda based on Uganda National Panel Survey 2018 and the Uganda National Panel Survey 2020 ,ipa,ppiUGA2022
 Asia,Vietnam,2006,2009,PPI for Vietnam based on the 2006 VHLSS,sps,ppiVNM2009
+Asia,Vietnam,2021,2023,PPI for Vietnam based on data from the 2021 Multiple Indicator Cluster Survey,ipa,ppiVNM2023
 Middle East and North Africa,Yemen,2005,2009,PPI for Yemen based on 2005/06 HBS,sps,ppiYEM2009
 Africa,Zambia,2010,2013,PPI for Zambia based on Zambia 2010 Living Conditions Monitoring Survey (LCMS) using Gottingen poverty definitions,sps,ppiZMB2013_got
 Africa,Zambia,2010,2013,PPI for Zambia based on Zambia 2010 Living Conditions Monitoring Survey (LCMS) using CSO poverty definitions,sps,ppiZMB2013_cso

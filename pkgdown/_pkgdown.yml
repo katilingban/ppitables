@@ -50,11 +50,15 @@ reference:
   - ppiAFG2012
   - ppiAGO2015
   - ppiBEN2012
+  - ppiBEN2022_11q
+  - ppiBEN2022_6q
   - ppiBFA2011
   - ppiBFA2014
   - ppiBFA2017
+  - ppiBFA2023
   - ppiBGD2013
   - ppiBOL2015
+  - ppiBOL2023
   - ppiBRA2010
   - ppiCIV2013
   - ppiCIV2018
@@ -65,19 +69,24 @@ reference:
   - ppiDOM2010
   - ppiDOM2018
   - ppiECU2015
+  - ppiECU2022
   - ppiEGY2010
   - ppiETH2016
+  - ppiETH2023
   - ppiFJI2014
   - ppiGHA2015
   - ppiGHA2015_a
   - ppiGHA2015_b
   - ppiGHA2019
   - ppiGTM2016
+  - ppiGTM2023
   - ppiHND2010
+  - ppiHND2023
   - ppiHTI2016
   - ppiIDN2012
   - ppiIDN2012_a
   - ppiIDN2020
+  - ppiIDN2023
   - ppiIND2016_r59
   - ppiIND2016_r62
   - ppiIND2016_r66
@@ -89,6 +98,7 @@ reference:
   - ppiKHM2015
   - ppiKHM2015_gov
   - ppiKHM2015_wb
+  - ppiKHM2023
   - ppiLKA2016
   - ppiMAR2013
   - ppiMDG2015
@@ -104,6 +114,7 @@ reference:
   - ppiMWI2015_gov
   - ppiMWI2015_pbm
   - ppiMWI2020
+  - ppiMWI2023
   - ppiNAM2013
   - ppiNER2013
   - ppiNGA2015
@@ -116,6 +127,8 @@ reference:
   - ppiPHL2014
   - ppiPHL2014_a
   - ppiPHL2018
+  - ppiPHL2023
+  - ppiPNG2023
   - ppiPRY2012
   - ppiPSE2014
   - ppiROU2009
@@ -126,8 +139,10 @@ reference:
   - ppiSEN2018
   - ppiSLE2011
   - ppiSLV2010
+  - ppiSLV2021
   - ppiSYR2010
   - ppiTGO2018
+  - ppiTGO2023
   - ppiTJK2015
   - ppiTLS2013
   - ppiTZA2016
@@ -135,8 +150,10 @@ reference:
   - ppiUGA2015
   - ppiUGA2022
   - ppiVNM2009
+  - ppiVNM2023
   - ppiYEM2009
   - ppiZAF2009
+  - ppiZAF2023
   - ppiZMB2013_cso
   - ppiZMB2013_got
   - ppiZMB2017

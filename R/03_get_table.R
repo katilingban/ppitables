@@ -1,5 +1,4 @@
-################################################################################
-#
+#'
 #' Get PPI table/s based on a specified PPI table/s search output
 #'
 #' @param region Region of the world to search PPI table from. Default is
@@ -26,8 +25,6 @@
 #'
 #' @export
 #'
-#
-################################################################################
 
 get_table <- function(region = steer$region,
                       country = steer$country[steer$region %in% region],
