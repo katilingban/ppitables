@@ -6,7 +6,7 @@
     <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
     
 
-    <nav class="navbar fixed-top navbar-light navbar-expand-lg bg-primary"><div class="container">
+    <nav class="navbar fixed-top navbar-light navbar-expand-lg bg-primary" data-bs-theme="light"><div class="container">
     
     <a class="navbar-brand me-2" href="../index.html">ppitables</a>
 
@@ -53,7 +53,7 @@
 <div class="row">
   <main id="main" class="col-md-9"><div class="page-header">
       <img src="../logo.png" class="logo" alt=""><h1>Search for PPI table by specifying region, country and/or calculation type.</h1>
-      <small class="dont-index">Source: <a href="https://github.com/katilingban/ppitables/blob/HEAD/R/find_table.R" class="external-link"><code>R/find_table.R</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/katilingban/ppitables/blob/HEAD/R/02_find_table.R" class="external-link"><code>R/02_find_table.R</code></a></small>
       <div class="d-none name"><code>find_table.Rd</code></div>
     </div>
 
@@ -109,20 +109,20 @@ calculation types available for the specified country/ies.</p></dd>
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co">## View the full data frame of all the PPI tables available through ppitables</span></span></span>
 <span class="r-in"><span><span class="fu">find_table</span><span class="op">(</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 93 × 7</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 110 × 7</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    region            country survey_year release_year description type  filename</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>             <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>         <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> Asia              Afghan…        <span style="text-decoration: underline;">2</span>007         <span style="text-decoration: underline;">2</span>012 PPI for Af… sps   ppiAFG2…</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> Africa            Angola         <span style="text-decoration: underline;">2</span>008         <span style="text-decoration: underline;">2</span>015 PPI for An… sps   ppiAGO2…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> Asia              Bangla…        <span style="text-decoration: underline;">2</span>010         <span style="text-decoration: underline;">2</span>013 PPI for Be… sps   ppiBEN2…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> Africa            Benin          <span style="text-decoration: underline;">2</span>010         <span style="text-decoration: underline;">2</span>012 PPI for Ba… sps   ppiBGD2…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> Latin American a… Bolivia        <span style="text-decoration: underline;">2</span>013         <span style="text-decoration: underline;">2</span>015 PPI for Bo… sps   ppiBOL2…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> Latin American a… Brazil         <span style="text-decoration: underline;">2</span>008         <span style="text-decoration: underline;">2</span>010 PPI for Br… sps   ppiBRA2…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> Africa            Burkin…        <span style="text-decoration: underline;">2</span>003         <span style="text-decoration: underline;">2</span>011 PPI for Bu… sps   ppiBFA2…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> Africa            Burkin…        <span style="text-decoration: underline;">2</span>014         <span style="text-decoration: underline;">2</span>017 PPI for Bu… sps   ppiBFA2…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> Africa            Burkin…        <span style="text-decoration: underline;">2</span>014         <span style="text-decoration: underline;">2</span>017 PPI for Bu… ipa   ppiBFA2…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> Asia              Cambod…        <span style="text-decoration: underline;">2</span>011         <span style="text-decoration: underline;">2</span>015 PPI for Ca… sps   ppiKHM2…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 83 more rows</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> Asia              Bangla…        <span style="text-decoration: underline;">2</span>010         <span style="text-decoration: underline;">2</span>013 PPI for Ba… sps   ppiBEN2…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> Africa            Benin          <span style="text-decoration: underline;">2</span>010         <span style="text-decoration: underline;">2</span>012 PPI for Be… sps   ppiBGD2…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> Africa            Benin          <span style="text-decoration: underline;">2</span>018         <span style="text-decoration: underline;">2</span>022 PPI for Be… ipa   ppiBEN2…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> Africa            Benin          <span style="text-decoration: underline;">2</span>018         <span style="text-decoration: underline;">2</span>022 PPI for Be… ipa   ppiBEN2…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> Latin American a… Bolivia        <span style="text-decoration: underline;">2</span>013         <span style="text-decoration: underline;">2</span>015 PPI for Bo… sps   ppiBOL2…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> Latin American a… Bolivia        <span style="text-decoration: underline;">2</span>020         <span style="text-decoration: underline;">2</span>023 PPI for Bo… ipa   ppiBOL2…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> Latin American a… Brazil         <span style="text-decoration: underline;">2</span>008         <span style="text-decoration: underline;">2</span>010 PPI for Br… sps   ppiBRA2…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> Africa            Burkin…        <span style="text-decoration: underline;">2</span>003         <span style="text-decoration: underline;">2</span>011 PPI for Bu… sps   ppiBFA2…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 100 more rows</span></span>
 <span class="r-in"><span></span></span>
 </code></pre></div>
     </div>
@@ -135,7 +135,7 @@ calculation types available for the specified country/ies.</p></dd>
 </div>
 
 <div class="pkgdown-footer-right">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.8.</p>
 </div>
 
     </footer></div>
