@@ -22,7 +22,7 @@ Indonesia PPI tables
 * ubuntu-latest (on GitHub Actions), release, devel, and oldrelease
 * mac-builder (release)
 * win-builder (devel, release, oldrelease)
-* rhub (windows-devel, fedora-devel, ubuntu-release)
+* rhub (windows-devel, fedora-devel, linux-devel, macos-devel)
 
 ## R CMD check results
 

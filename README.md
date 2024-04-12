@@ -16,6 +16,7 @@ checks](https://badges.cranchecks.info/worst/ppitables.svg)](https://cran.r-proj
 [![CRAN](https://img.shields.io/cran/l/ppitables.svg)](https://github.com/katilingban/ppitables/blob/master/LICENSE.md)
 [![CRAN](http://cranlogs.r-pkg.org/badges/ppitables)](https://CRAN.R-project.org/package=ppitables)
 [![CRAN](http://cranlogs.r-pkg.org/badges/grand-total/ppitables)](https://CRAN.R-project.org/package=ppitables)
+[![R-hub](https://github.com/katilingban/ppitables/actions/workflows/rhub.yaml/badge.svg)](https://github.com/katilingban/ppitables/actions/workflows/rhub.yaml)
 [![R-CMD-check](https://github.com/katilingban/ppitables/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/katilingban/ppitables/actions/workflows/R-CMD-check.yaml)
 ![test-coverage](https://github.com/katilingban/ppitables/workflows/test-coverage/badge.svg)
 [![Codecov test
