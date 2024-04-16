@@ -43,6 +43,12 @@
     <loc>https://katilingban.io/ppitables/dev/reference/ppiBEN2012.html</loc>
   </url>
   <url>
+    <loc>https://katilingban.io/ppitables/dev/reference/ppiBEN2022_11q.html</loc>
+  </url>
+  <url>
+    <loc>https://katilingban.io/ppitables/dev/reference/ppiBEN2022_6q.html</loc>
+  </url>
+  <url>
     <loc>https://katilingban.io/ppitables/dev/reference/ppiBFA2011.html</loc>
   </url>
   <url>
@@ -52,10 +58,16 @@
     <loc>https://katilingban.io/ppitables/dev/reference/ppiBFA2017.html</loc>
   </url>
   <url>
+    <loc>https://katilingban.io/ppitables/dev/reference/ppiBFA2023.html</loc>
+  </url>
+  <url>
     <loc>https://katilingban.io/ppitables/dev/reference/ppiBGD2013.html</loc>
   </url>
   <url>
     <loc>https://katilingban.io/ppitables/dev/reference/ppiBOL2015.html</loc>
+  </url>
+  <url>
+    <loc>https://katilingban.io/ppitables/dev/reference/ppiBOL2023.html</loc>
   </url>
   <url>
     <loc>https://katilingban.io/ppitables/dev/reference/ppiBRA2010.html</loc>
@@ -88,10 +100,16 @@
     <loc>https://katilingban.io/ppitables/dev/reference/ppiECU2015.html</loc>
   </url>
   <url>
+    <loc>https://katilingban.io/ppitables/dev/reference/ppiECU2022.html</loc>
+  </url>
+  <url>
     <loc>https://katilingban.io/ppitables/dev/reference/ppiEGY2010.html</loc>
   </url>
   <url>
     <loc>https://katilingban.io/ppitables/dev/reference/ppiETH2016.html</loc>
+  </url>
+  <url>
+    <loc>https://katilingban.io/ppitables/dev/reference/ppiETH2023.html</loc>
   </url>
   <url>
     <loc>https://katilingban.io/ppitables/dev/reference/ppiFJI2014.html</loc>
@@ -112,7 +130,13 @@
     <loc>https://katilingban.io/ppitables/dev/reference/ppiGTM2016.html</loc>
   </url>
   <url>
+    <loc>https://katilingban.io/ppitables/dev/reference/ppiGTM2023.html</loc>
+  </url>
+  <url>
     <loc>https://katilingban.io/ppitables/dev/reference/ppiHND2010.html</loc>
+  </url>
+  <url>
+    <loc>https://katilingban.io/ppitables/dev/reference/ppiHND2023.html</loc>
   </url>
   <url>
     <loc>https://katilingban.io/ppitables/dev/reference/ppiHTI2016.html</loc>
@@ -125,6 +149,9 @@
   </url>
   <url>
     <loc>https://katilingban.io/ppitables/dev/reference/ppiIDN2020.html</loc>
+  </url>
+  <url>
+    <loc>https://katilingban.io/ppitables/dev/reference/ppiIDN2023.html</loc>
   </url>
   <url>
     <loc>https://katilingban.io/ppitables/dev/reference/ppiIND2016_r59.html</loc>
@@ -158,6 +185,9 @@
   </url>
   <url>
     <loc>https://katilingban.io/ppitables/dev/reference/ppiKHM2015_wb.html</loc>
+  </url>
+  <url>
+    <loc>https://katilingban.io/ppitables/dev/reference/ppiKHM2023.html</loc>
   </url>
   <url>
     <loc>https://katilingban.io/ppitables/dev/reference/ppiLKA2016.html</loc>
@@ -205,6 +235,9 @@
     <loc>https://katilingban.io/ppitables/dev/reference/ppiMWI2020.html</loc>
   </url>
   <url>
+    <loc>https://katilingban.io/ppitables/dev/reference/ppiMWI2023.html</loc>
+  </url>
+  <url>
     <loc>https://katilingban.io/ppitables/dev/reference/ppiNAM2013.html</loc>
   </url>
   <url>
@@ -241,6 +274,12 @@
     <loc>https://katilingban.io/ppitables/dev/reference/ppiPHL2018.html</loc>
   </url>
   <url>
+    <loc>https://katilingban.io/ppitables/dev/reference/ppiPHL2023.html</loc>
+  </url>
+  <url>
+    <loc>https://katilingban.io/ppitables/dev/reference/ppiPNG2023.html</loc>
+  </url>
+  <url>
     <loc>https://katilingban.io/ppitables/dev/reference/ppiPRY2012.html</loc>
   </url>
   <url>
@@ -271,10 +310,16 @@
     <loc>https://katilingban.io/ppitables/dev/reference/ppiSLV2010.html</loc>
   </url>
   <url>
+    <loc>https://katilingban.io/ppitables/dev/reference/ppiSLV2021.html</loc>
+  </url>
+  <url>
     <loc>https://katilingban.io/ppitables/dev/reference/ppiSYR2010.html</loc>
   </url>
   <url>
     <loc>https://katilingban.io/ppitables/dev/reference/ppiTGO2018.html</loc>
+  </url>
+  <url>
+    <loc>https://katilingban.io/ppitables/dev/reference/ppiTGO2023.html</loc>
   </url>
   <url>
     <loc>https://katilingban.io/ppitables/dev/reference/ppiTJK2015.html</loc>
@@ -298,10 +343,16 @@
     <loc>https://katilingban.io/ppitables/dev/reference/ppiVNM2009.html</loc>
   </url>
   <url>
+    <loc>https://katilingban.io/ppitables/dev/reference/ppiVNM2023.html</loc>
+  </url>
+  <url>
     <loc>https://katilingban.io/ppitables/dev/reference/ppiYEM2009.html</loc>
   </url>
   <url>
     <loc>https://katilingban.io/ppitables/dev/reference/ppiZAF2009.html</loc>
+  </url>
+  <url>
+    <loc>https://katilingban.io/ppitables/dev/reference/ppiZAF2023.html</loc>
   </url>
   <url>
     <loc>https://katilingban.io/ppitables/dev/reference/ppiZMB2013_cso.html</loc>
