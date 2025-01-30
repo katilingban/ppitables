@@ -1,8 +1,10 @@
-# ppitables (development version)
+# ppitables 0.5.6
+
+This is the eleventh CRAN release of `{ppitables}`
 
 # ppitables 0.5.5
 
-This is the tenth CRAN release of `ppitables`. In this release, I added:
+This is the tenth CRAN release of `{ppitables}`. In this release, I added:
 
 * new PPI tables for multiple countries released during the period of 2021 to
 2023
@@ -14,7 +16,7 @@ Indonesia PPI tables
 
 # ppitables 0.5.4
 
-This is the ninth CRAN release of `ppitables`. In this release, I added:
+This is the ninth CRAN release of `{ppitables}`. In this release, I added:
 
 * new PPI tables for Indonesia using the new PPI calculation approach developed
 by the International Poverty Alliance (IPA) based on data from Indonesia's
@@ -27,7 +29,7 @@ Indonesia PPI tables
 
 # ppitables 0.5.3
 
-This is the eighth CRAN release of `ppitables`. In this release, I added:
+This is the eighth CRAN release of `{ppitables}`. In this release, I added:
 
 * new PPI tables for Malawi using the new PPI calculation approach developed
 by the International Poverty Alliance (IPA) based on data from Malawi's 2016/2017
@@ -48,7 +50,7 @@ into factors in newest R version
 
 # ppitables 0.5.2
 
-This is the seventh CRAN release of `ppitables`. In this release, I added:
+This is the seventh CRAN release of `{ppitables}`. In this release, I added:
 
 * new PPI tables for Rwanda using the new PPI calculation approach developed
 by the International Poverty Alliance (IPA) based on data from Rwanda's 2016/2017
@@ -61,7 +63,7 @@ Rwanda PPI tables
 
 # ppitables 0.5.1
 
-This is the sixth CRAN release of `ppitables`. In this release, I added:
+This is the sixth CRAN release of `{ppitables}`. In this release, I added:
 
 * new PPI tables for Mozambique using the new PPI calculation approach developed
 by the International Poverty Alliance (IPA) based on data from the 2014
@@ -76,7 +78,7 @@ PPI tables
 
 # ppitables 0.5.0
 
-This is the fifth CRAN release of `ppitables`. In this release, I added:
+This is the fifth CRAN release of `{ppitables}`. In this release, I added:
 
 * new PPI tables for Ghana using the new PPI calculation approach developed by 
 the International Poverty Alliance (IPA) based on data from the 2016/2017 Ghana
@@ -87,7 +89,7 @@ PPI tables
 
 # ppitables 0.4.0
 
-This is the fourth CRAN release of `ppitables`. In this release, I added:
+This is the fourth CRAN release of `{ppitables}`. In this release, I added:
 
 * new PPI tables for Dominican Republic using the new PPI calculation approach
 developed by the International Poverty Alliance (IPA) based on data from the
@@ -100,7 +102,7 @@ PPI tables
 
 # ppitables 0.3.0
 
-This is the third CRAN release of `ppitables`. In this release, I added:
+This is the third CRAN release of `{ppitables}`. In this release, I added:
 
 * new PPI tables for Kenya and Senegal using the new PPI calculation approach 
 developed by the International Poverty Alliance (IPA)
@@ -113,7 +115,7 @@ PPI tables
 
 # ppitables 0.2.0
 
-This is the second CRAN release of `ppitables`. In this release, I added:
+This is the second CRAN release of `{ppitables}`. In this release, I added:
 
 * updates to documentation
 
@@ -130,10 +132,10 @@ PPI tables.
 
 
 # ppitables 0.1.2
-This is an updated release of `ppitables` as part of the CRAN submission process. In this release, I have added examples of usage for each of the country PPI table.
+This is an updated release of `{ppitables}` as part of the CRAN submission process. In this release, I have added examples of usage for each of the country PPI table.
 
 # ppitables 0.1.1
-This is an updated release of `ppitables` as part of the CRAN submission process. I have implemented the following changes:
+This is an updated release of `{ppitables}` as part of the CRAN submission process. I have implemented the following changes:
 
 * I have changed nomenclature of PPI tables in the package as suggested. I have also added the naming syntax in the README to describe the nomenclature
 accordingly
@@ -147,5 +149,5 @@ accordingly
 * I have changed LICENSE from MIT to CC0 which is more appropriate
 
 # ppitables 0.1.0
-This is the first release of `ppitables`
+This is the first release of `{ppitables}`
 
