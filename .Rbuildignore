@@ -16,3 +16,4 @@
 ^pkgdown$
 ^_pkgdown\.yml$
 ^CRAN-SUBMISSION$
+^CITATION\.cff$
