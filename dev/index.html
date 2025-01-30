@@ -98,11 +98,11 @@
 <div class="section level3">
 <h3 id="list-of-ppi-country-tables">List of PPI country tables<a class="anchor" aria-label="anchor" href="#list-of-ppi-country-tables"></a>
 </h3>
-<table style="width:98%;" class="table">
+<table class="table">
 <colgroup>
 <col style="width: 6%">
 <col style="width: 18%">
-<col style="width: 55%">
+<col style="width: 56%">
 <col style="width: 18%">
 </colgroup>
 <thead><tr class="header">
@@ -1798,37 +1798,37 @@ PPI for Zambia based on Zambia’s 2015 Living Conditions Monitoring Survey (LCM
 <p>This list of available PPI country tables can be retrieved in R using the <code><a href="reference/find_table.html">find_table()</a></code> function. View the complete list using the following command in R:</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/find_table.html">find_table</a></span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="co">#&gt; # A tibble: 93 × 7</span></span>
+<span><span class="co">#&gt; # A tibble: 110 × 7</span></span>
 <span><span class="co">#&gt;    region            country survey_year release_year description type  filename</span></span>
 <span><span class="co">#&gt;    &lt;chr&gt;             &lt;chr&gt;         &lt;int&gt;        &lt;int&gt; &lt;chr&gt;       &lt;chr&gt; &lt;chr&gt;   </span></span>
 <span><span class="co">#&gt;  1 Asia              Afghan…        2007         2012 PPI for Af… sps   ppiAFG2…</span></span>
 <span><span class="co">#&gt;  2 Africa            Angola         2008         2015 PPI for An… sps   ppiAGO2…</span></span>
-<span><span class="co">#&gt;  3 Asia              Bangla…        2010         2013 PPI for Be… sps   ppiBEN2…</span></span>
-<span><span class="co">#&gt;  4 Africa            Benin          2010         2012 PPI for Ba… sps   ppiBGD2…</span></span>
-<span><span class="co">#&gt;  5 Latin American a… Bolivia        2013         2015 PPI for Bo… sps   ppiBOL2…</span></span>
-<span><span class="co">#&gt;  6 Latin American a… Brazil         2008         2010 PPI for Br… sps   ppiBRA2…</span></span>
-<span><span class="co">#&gt;  7 Africa            Burkin…        2003         2011 PPI for Bu… sps   ppiBFA2…</span></span>
-<span><span class="co">#&gt;  8 Africa            Burkin…        2014         2017 PPI for Bu… sps   ppiBFA2…</span></span>
-<span><span class="co">#&gt;  9 Africa            Burkin…        2014         2017 PPI for Bu… ipa   ppiBFA2…</span></span>
-<span><span class="co">#&gt; 10 Asia              Cambod…        2011         2015 PPI for Ca… sps   ppiKHM2…</span></span>
-<span><span class="co">#&gt; # ℹ 83 more rows</span></span></code></pre></div>
+<span><span class="co">#&gt;  3 Asia              Bangla…        2010         2013 PPI for Ba… sps   ppiBEN2…</span></span>
+<span><span class="co">#&gt;  4 Africa            Benin          2010         2012 PPI for Be… sps   ppiBGD2…</span></span>
+<span><span class="co">#&gt;  5 Africa            Benin          2018         2022 PPI for Be… ipa   ppiBEN2…</span></span>
+<span><span class="co">#&gt;  6 Africa            Benin          2018         2022 PPI for Be… ipa   ppiBEN2…</span></span>
+<span><span class="co">#&gt;  7 Latin American a… Bolivia        2013         2015 PPI for Bo… sps   ppiBOL2…</span></span>
+<span><span class="co">#&gt;  8 Latin American a… Bolivia        2020         2023 PPI for Bo… ipa   ppiBOL2…</span></span>
+<span><span class="co">#&gt;  9 Latin American a… Brazil         2008         2010 PPI for Br… sps   ppiBRA2…</span></span>
+<span><span class="co">#&gt; 10 Africa            Burkin…        2003         2011 PPI for Bu… sps   ppiBFA2…</span></span>
+<span><span class="co">#&gt; # ℹ 100 more rows</span></span></code></pre></div>
 <p>View the list of PPI country tables for Africa using the following command in R:</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/find_table.html">find_table</a></span><span class="op">(</span>region <span class="op">=</span> <span class="st">"Africa"</span><span class="op">)</span></span>
-<span><span class="co">#&gt; # A tibble: 41 × 7</span></span>
+<span><span class="co">#&gt; # A tibble: 48 × 7</span></span>
 <span><span class="co">#&gt;    region country       survey_year release_year description      type  filename</span></span>
 <span><span class="co">#&gt;    &lt;chr&gt;  &lt;chr&gt;               &lt;int&gt;        &lt;int&gt; &lt;chr&gt;            &lt;chr&gt; &lt;chr&gt;   </span></span>
 <span><span class="co">#&gt;  1 Africa Angola               2008         2015 PPI for Angola … sps   ppiAGO2…</span></span>
-<span><span class="co">#&gt;  2 Africa Benin                2010         2012 PPI for Banglad… sps   ppiBGD2…</span></span>
-<span><span class="co">#&gt;  3 Africa Burkina Faso         2003         2011 PPI for Burkina… sps   ppiBFA2…</span></span>
-<span><span class="co">#&gt;  4 Africa Burkina Faso         2014         2017 PPI for Burkina… sps   ppiBFA2…</span></span>
-<span><span class="co">#&gt;  5 Africa Burkina Faso         2014         2017 PPI for Burkina… ipa   ppiBFA2…</span></span>
-<span><span class="co">#&gt;  6 Africa Cameroon             2007         2013 PPI for Cameroo… sps   ppiCMR2…</span></span>
-<span><span class="co">#&gt;  7 Africa Cote d'Ivoire        2008         2013 PPI for Ivory C… sps   ppiCIV2…</span></span>
-<span><span class="co">#&gt;  8 Africa Cote d'Ivoire        2015         2018 PPI for Ivory C… ipa   ppiCIV2…</span></span>
-<span><span class="co">#&gt;  9 Africa Ethiopia             2010         2016 PPI for Ethiopi… sps   ppiETH2…</span></span>
-<span><span class="co">#&gt; 10 Africa Ghana                2012         2015 PPI for Ghana b… sps   ppiGHA2…</span></span>
-<span><span class="co">#&gt; # ℹ 31 more rows</span></span></code></pre></div>
+<span><span class="co">#&gt;  2 Africa Benin                2010         2012 PPI for Benin b… sps   ppiBGD2…</span></span>
+<span><span class="co">#&gt;  3 Africa Benin                2018         2022 PPI for Benin b… ipa   ppiBEN2…</span></span>
+<span><span class="co">#&gt;  4 Africa Benin                2018         2022 PPI for Benin b… ipa   ppiBEN2…</span></span>
+<span><span class="co">#&gt;  5 Africa Burkina Faso         2003         2011 PPI for Burkina… sps   ppiBFA2…</span></span>
+<span><span class="co">#&gt;  6 Africa Burkina Faso         2014         2017 PPI for Burkina… sps   ppiBFA2…</span></span>
+<span><span class="co">#&gt;  7 Africa Burkina Faso         2014         2017 PPI for Burkina… ipa   ppiBFA2…</span></span>
+<span><span class="co">#&gt;  8 Africa Burkina Faso         2018         2023 PPI for Burkina… ipa   ppiBFA2…</span></span>
+<span><span class="co">#&gt;  9 Africa Cameroon             2007         2013 PPI for Cameroo… sps   ppiCMR2…</span></span>
+<span><span class="co">#&gt; 10 Africa Cote d'Ivoire        2008         2013 PPI for Ivory C… sps   ppiCIV2…</span></span>
+<span><span class="co">#&gt; # ℹ 38 more rows</span></span></code></pre></div>
 <p>View the list of PPI country tables in Zambia using the the following command in R:</p>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/find_table.html">find_table</a></span><span class="op">(</span>country <span class="op">=</span> <span class="st">"Zambia"</span><span class="op">)</span></span>
@@ -1843,7 +1843,7 @@ PPI for Zambia based on Zambia’s 2015 Living Conditions Monitoring Survey (LCM
 <p>For example, to get the actual PPI tables for all countries with PPI tables, the following command can be used in R:</p>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/get_table.html">get_table</a></span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="co">#&gt; # A tibble: 96,288 × 7</span></span>
+<span><span class="co">#&gt; # A tibble: 117,902 × 7</span></span>
 <span><span class="co">#&gt;    country     release_year filename   type  score poverty_definition   ppi</span></span>
 <span><span class="co">#&gt;    &lt;chr&gt;       &lt;chr&gt;        &lt;chr&gt;      &lt;chr&gt; &lt;dbl&gt; &lt;chr&gt;              &lt;dbl&gt;</span></span>
 <span><span class="co">#&gt;  1 Afghanistan 2012         ppiAFG2012 sps       0 nl                   100</span></span>
@@ -1856,11 +1856,11 @@ PPI for Zambia based on Zambia’s 2015 Living Conditions Monitoring Survey (LCM
 <span><span class="co">#&gt;  8 Afghanistan 2012         ppiAFG2012 sps       1 nu150                100</span></span>
 <span><span class="co">#&gt;  9 Afghanistan 2012         ppiAFG2012 sps       1 nu200                100</span></span>
 <span><span class="co">#&gt; 10 Afghanistan 2012         ppiAFG2012 sps       1 extreme              100</span></span>
-<span><span class="co">#&gt; # ℹ 96,278 more rows</span></span></code></pre></div>
+<span><span class="co">#&gt; # ℹ 117,892 more rows</span></span></code></pre></div>
 <p>To get the actual PPI tables for all countries with PPI tables in Africa, the following command can be used in R:</p>
 <div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/get_table.html">get_table</a></span><span class="op">(</span>region <span class="op">=</span> <span class="st">"Africa"</span><span class="op">)</span></span>
-<span><span class="co">#&gt; # A tibble: 47,322 × 7</span></span>
+<span><span class="co">#&gt; # A tibble: 56,210 × 7</span></span>
 <span><span class="co">#&gt;    country release_year filename   type  score poverty_definition   ppi</span></span>
 <span><span class="co">#&gt;    &lt;chr&gt;   &lt;chr&gt;        &lt;chr&gt;      &lt;chr&gt; &lt;dbl&gt; &lt;chr&gt;              &lt;dbl&gt;</span></span>
 <span><span class="co">#&gt;  1 Angola  2015         ppiAGO2015 sps       0 nl100              100  </span></span>
@@ -1873,19 +1873,19 @@ PPI for Zambia based on Zambia’s 2015 Living Conditions Monitoring Survey (LCM
 <span><span class="co">#&gt;  8 Angola  2015         ppiAGO2015 sps       0 ppp500             100  </span></span>
 <span><span class="co">#&gt;  9 Angola  2015         ppiAGO2015 sps       1 nl100              100  </span></span>
 <span><span class="co">#&gt; 10 Angola  2015         ppiAGO2015 sps       1 nl150              100  </span></span>
-<span><span class="co">#&gt; # ℹ 47,312 more rows</span></span></code></pre></div>
+<span><span class="co">#&gt; # ℹ 56,200 more rows</span></span></code></pre></div>
 </div>
 </div>
 <div class="section level2">
 <h2 id="disclaimer">Disclaimer<a class="anchor" aria-label="anchor" href="#disclaimer"></a>
 </h2>
-<p>The <code>ppitables</code> package is an independent development and is separate from and not recognised and approved by the <em><a href="https://poverty-action.org/" class="external-link">International Poverty Alliance (IPA)</a></em>, the organisation that produces and owns the copyright to the <a href="https://www.povertyindex.org" class="external-link">Poverty Probability Index</a>. The author and maintainer of this package is not affiliated with <em><a href="https://poverty-action.org/" class="external-link">International Poverty Alliance (IPA)</a></em> but is committed to ensuring that the <code>ppitables</code> package is compliant with the <a href="https://www.povertyindex.org" class="external-link">Poverty Probability Index</a>’s terms of use.</p>
-<p>Any mistakes, problems and issues with the functionality and outputs of the <code>ppitables</code> package are that of the author and maintainer of the package and not of <em><a href="https://poverty-action.org/" class="external-link">International Poverty Alliance (IPA)</a></em>. Hence any problems and issues to the usage, functionality and outputs of the <code>ppitables</code> package should be addressed directly to the author and maintainer <a href="https://github.com/katilingban/ppitables/issues" class="external-link">here</a>.</p>
+<p>The <a href="https://github.com/katilingban/ppitables" class="external-link">ppitables</a> package is an independent development and is separate from and not recognised and approved by the <em><a href="https://poverty-action.org/" class="external-link">International Poverty Alliance (IPA)</a></em>, the organisation that produces and owns the copyright to the <a href="https://www.povertyindex.org" class="external-link">Poverty Probability Index</a>. The author and maintainer of this package is not affiliated with <em><a href="https://poverty-action.org/" class="external-link">International Poverty Alliance (IPA)</a></em> but is committed to ensuring that the <a href="https://github.com/katilingban/ppitables" class="external-link">ppitables</a> package is compliant with the <a href="https://www.povertyindex.org" class="external-link">Poverty Probability Index</a>’s terms of use.</p>
+<p>Any mistakes, problems and issues with the functionality and outputs of the <a href="https://github.com/katilingban/ppitables" class="external-link">ppitables</a> package are that of the author and maintainer of the package and not of <em><a href="https://poverty-action.org/" class="external-link">International Poverty Alliance (IPA)</a></em>. Hence any problems and issues to the usage, functionality and outputs of the <a href="https://github.com/katilingban/ppitables" class="external-link">ppitables</a> package should be addressed directly to the author and maintainer <a href="https://github.com/katilingban/ppitables/issues" class="external-link">here</a>.</p>
 </div>
 <div class="section level2">
 <h2 id="citation">Citation<a class="anchor" aria-label="anchor" href="#citation"></a>
 </h2>
-<p>If you find the <code>ppitables</code> package useful, please cite using the suggested citation provided by a call to the <code>citation</code> function as follows:</p>
+<p>If you find the <a href="https://github.com/katilingban/ppitables" class="external-link">ppitables</a> package useful, please cite using the suggested citation provided by a call to the <code>citation</code> function as follows:</p>
 <div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/citation.html" class="external-link">citation</a></span><span class="op">(</span><span class="st">"ppitables"</span><span class="op">)</span></span>
 <span><span class="co">#&gt; To cite ppitables in publications use:</span></span>
@@ -1910,7 +1910,7 @@ PPI for Zambia based on Zambia’s 2015 Living Conditions Monitoring Survey (LCM
 <h2 id="community-guidelines">Community guidelines<a class="anchor" aria-label="anchor" href="#community-guidelines"></a>
 </h2>
 <p>Feedback, bug reports and feature requests are welcome; file issues or seek support <a href="https://github.com/katilingban/ppitables/issues" class="external-link">here</a>. If you would like to contribute to the package, please see our <a href="https://katilingban.io/ppitables/CONTRIBUTING.html">contributing guidelines</a>.</p>
-<p>Please note that the <code>ppitables</code> project is released with a <a href="https://katilingban.io/ppitables/CODE_OF_CONDUCT.html">Contributor Code of Conduct</a>. By contributing to this project, you agree to abide by its terms.</p>
+<p>Please note that the <a href="https://github.com/katilingban/ppitables" class="external-link">ppitables</a> project is released with a <a href="https://katilingban.io/ppitables/CODE_OF_CONDUCT.html">Contributor Code of Conduct</a>. By contributing to this project, you agree to abide by its terms.</p>
 <div class="section level3">
 <h3 id="notes">Notes<a class="anchor" aria-label="anchor" href="#notes"></a>
 </h3>
