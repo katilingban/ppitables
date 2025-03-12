@@ -615,3 +615,27 @@ ppiMOZ2024 <- moz
 usethis::use_data(ppiMOZ2024, overwrite = TRUE, compress = "xz")
 
 
+## Colombia PPI ################################################################
+
+col <- read_xlsx(
+  path = "data-raw/sources/colombia2024.xlsx",
+  sheet = "Look-up Tables -  10Q",
+  range = "A9:O110"
+) |>
+  dplyr::mutate(
+    dplyr::across(
+      .cols = `National Povert Line`:`Below 80th percentile`,
+      .fns = ~.x * 100
+    )
+  )
+
+names(col) <- c(
+  "score",
+  "nl100", "nl_extreme", "nl150", "nl200",
+  "ppp215", "ppp365", "ppp685", "ppp190", "ppp320", "ppp550", 
+  "percentile20", "percentile40", "percentile60", "percentile80"
+)
+
+ppiCOL2024 <- col
+
+usethis::use_data(ppiCOL2024, overwrite = TRUE, compress = "xz")
