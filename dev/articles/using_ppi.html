@@ -27,7 +27,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">ppitables</a>
 
-    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="In-development version">0.5.7.9000</small>
+    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="In-development version">0.5.8.9000</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -116,7 +116,7 @@ the <code><a href="../reference/find_table.html">find_table()</a></code> functio
 following command in R:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/find_table.html">find_table</a></span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 112 × 7</span></span></span>
+<span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 113 × 7</span></span></span>
 <span><span class="co">#&gt;    region            country survey_year release_year description type  filename</span></span>
 <span><span class="co">#&gt;    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>             <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>         <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   </span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span> Asia              Afghan…        <span style="text-decoration: underline;">2</span>007         <span style="text-decoration: underline;">2</span>012 PPI for Af… sps   ppiAFG2…</span></span>
@@ -129,7 +129,7 @@ following command in R:</p>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span> Latin American a… Bolivia        <span style="text-decoration: underline;">2</span>020         <span style="text-decoration: underline;">2</span>023 PPI for Bo… ipa   ppiBOL2…</span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span> Latin American a… Brazil         <span style="text-decoration: underline;">2</span>008         <span style="text-decoration: underline;">2</span>010 PPI for Br… sps   ppiBRA2…</span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;">10</span> Africa            Burkin…        <span style="text-decoration: underline;">2</span>003         <span style="text-decoration: underline;">2</span>011 PPI for Bu… sps   ppiBFA2…</span></span>
-<span><span class="co">#&gt; <span style="color: #949494;"># ℹ 102 more rows</span></span></span></code></pre></div>
+<span><span class="co">#&gt; <span style="color: #949494;"># ℹ 103 more rows</span></span></span></code></pre></div>
 <p>View the list of PPI country tables for Africa using the following
 command in R:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
@@ -168,7 +168,7 @@ tidy data frame.</p>
 tables, the following command can be used in R:</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/get_table.html">get_table</a></span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 119,821 × 7</span></span></span>
+<span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 120,629 × 7</span></span></span>
 <span><span class="co">#&gt;    country     release_year filename   type  score poverty_definition   ppi</span></span>
 <span><span class="co">#&gt;    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>              <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span> Afghanistan 2012         ppiAFG2012 sps       0 nl                   100</span></span>
@@ -181,7 +181,7 @@ tables, the following command can be used in R:</p>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span> Afghanistan 2012         ppiAFG2012 sps       1 nu150                100</span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span> Afghanistan 2012         ppiAFG2012 sps       1 nu200                100</span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;">10</span> Afghanistan 2012         ppiAFG2012 sps       1 extreme              100</span></span>
-<span><span class="co">#&gt; <span style="color: #949494;"># ℹ 119,811 more rows</span></span></span></code></pre></div>
+<span><span class="co">#&gt; <span style="color: #949494;"># ℹ 120,619 more rows</span></span></span></code></pre></div>
 <p>To get the actual PPI tables for all countries with PPI tables in
 Africa, the following command can be used in R:</p>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">

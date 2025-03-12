@@ -30,7 +30,7 @@
 
     <a class="navbar-brand me-2" href="index.html">ppitables</a>
 
-    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="In-development version">0.5.7.9000</small>
+    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="In-development version">0.5.8.9000</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -104,7 +104,7 @@
 </ol>
 <p>These three components are joined together without any spaces or gaps.</p>
 <p>Some country lookup tables may have additional components to their name which are added after the year separated with an underscore. These usually signify that a lookup table released on a particular year has a subset table in which the poverty likelihoods for a given <code>PPI</code> score are reported based on a different poverty definition or cut-off. This additional component to the table name is usually a character value or alphanumeric and is usually country-specific. To know more about what this additional component to some <code>PPI</code> tables refer to, read the index table below of the <code>PPI</code> tables available in this package.</p>
-<p>Following are the available PPI country tables from the <a href="https://github.com/katilingban/ppitables" class="external-link">ppitables</a> package. This is updated as at 11 April 2023 using information from the PPI <a href="https://www.povertyindex.org" class="external-link">website</a>.</p>
+<p>Following are the available PPI country tables from the <a href="https://github.com/katilingban/ppitables" class="external-link">ppitables</a> package. This is updated as at 12 March 2025 using information from the PPI <a href="https://www.povertyindex.org" class="external-link">website</a>.</p>
 <div class="section level3">
 <h3 id="list-of-ppi-country-tables">List of PPI country tables<a class="anchor" aria-label="anchor" href="#list-of-ppi-country-tables"></a>
 </h3>
@@ -418,6 +418,19 @@ PPI for Colombia based on Colombia’s 2016 Gran Encuesta Integrada de Hogares (
 </tr>
 <tr class="even">
 <td style="text-align: right;">
+</td>
+<td>
+<code>ppiCOL2024</code>
+</td>
+<td>
+PPI for Colombia based on data from the 2022 Gran Encuesta Integrada de Hogares (GEIH).
+</td>
+<td style="text-align: center;">
+2024
+</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">
 <ol start="11" type="1">
 <li>
 </li>
@@ -433,7 +446,7 @@ PPI for Dominican Republic based on the 2007 Encuesta Nacional de Ingresos y Gas
 2010
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;">
 </td>
 <td>
@@ -444,6 +457,19 @@ PPI for Dominican Republic based on the 2016 Encuesta Nacional de Fuerza de Trab
 </td>
 <td style="text-align: center;">
 2018
+</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">
+</td>
+<td>
+<code>ppiDOM2024</code>
+</td>
+<td>
+PPI for Dominican Republic constructed in October 2024 based on data from the 2022 Encuesta Continua de Fuerza de Trabajo - ENCFT conducted by the National Statistics Office (ONE)
+</td>
+<td style="text-align: center;">
+2024
 </td>
 </tr>
 <tr class="even">
@@ -1821,7 +1847,7 @@ PPI for Zambia based on Zambia’s 2015 Living Conditions Monitoring Survey (LCM
 <p>This list of available PPI country tables can be retrieved in R using the <code><a href="reference/find_table.html">find_table()</a></code> function. View the complete list using the following command in R:</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/find_table.html">find_table</a></span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="co">#&gt; # A tibble: 111 × 7</span></span>
+<span><span class="co">#&gt; # A tibble: 113 × 7</span></span>
 <span><span class="co">#&gt;    region            country survey_year release_year description type  filename</span></span>
 <span><span class="co">#&gt;    &lt;chr&gt;             &lt;chr&gt;         &lt;int&gt;        &lt;int&gt; &lt;chr&gt;       &lt;chr&gt; &lt;chr&gt;   </span></span>
 <span><span class="co">#&gt;  1 Asia              Afghan…        2007         2012 PPI for Af… sps   ppiAFG2…</span></span>
@@ -1834,7 +1860,7 @@ PPI for Zambia based on Zambia’s 2015 Living Conditions Monitoring Survey (LCM
 <span><span class="co">#&gt;  8 Latin American a… Bolivia        2020         2023 PPI for Bo… ipa   ppiBOL2…</span></span>
 <span><span class="co">#&gt;  9 Latin American a… Brazil         2008         2010 PPI for Br… sps   ppiBRA2…</span></span>
 <span><span class="co">#&gt; 10 Africa            Burkin…        2003         2011 PPI for Bu… sps   ppiBFA2…</span></span>
-<span><span class="co">#&gt; # ℹ 101 more rows</span></span></code></pre></div>
+<span><span class="co">#&gt; # ℹ 103 more rows</span></span></code></pre></div>
 <p>View the list of PPI country tables for Africa using the following command in R:</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/find_table.html">find_table</a></span><span class="op">(</span>region <span class="op">=</span> <span class="st">"Africa"</span><span class="op">)</span></span>
@@ -1866,7 +1892,7 @@ PPI for Zambia based on Zambia’s 2015 Living Conditions Monitoring Survey (LCM
 <p>For example, to get the actual PPI tables for all countries with PPI tables, the following command can be used in R:</p>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/get_table.html">get_table</a></span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="co">#&gt; # A tibble: 118,407 × 7</span></span>
+<span><span class="co">#&gt; # A tibble: 120,629 × 7</span></span>
 <span><span class="co">#&gt;    country     release_year filename   type  score poverty_definition   ppi</span></span>
 <span><span class="co">#&gt;    &lt;chr&gt;       &lt;chr&gt;        &lt;chr&gt;      &lt;chr&gt; &lt;dbl&gt; &lt;chr&gt;              &lt;dbl&gt;</span></span>
 <span><span class="co">#&gt;  1 Afghanistan 2012         ppiAFG2012 sps       0 nl                   100</span></span>
@@ -1879,7 +1905,7 @@ PPI for Zambia based on Zambia’s 2015 Living Conditions Monitoring Survey (LCM
 <span><span class="co">#&gt;  8 Afghanistan 2012         ppiAFG2012 sps       1 nu150                100</span></span>
 <span><span class="co">#&gt;  9 Afghanistan 2012         ppiAFG2012 sps       1 nu200                100</span></span>
 <span><span class="co">#&gt; 10 Afghanistan 2012         ppiAFG2012 sps       1 extreme              100</span></span>
-<span><span class="co">#&gt; # ℹ 118,397 more rows</span></span></code></pre></div>
+<span><span class="co">#&gt; # ℹ 120,619 more rows</span></span></code></pre></div>
 <p>To get the actual PPI tables for all countries with PPI tables in Africa, the following command can be used in R:</p>
 <div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/get_table.html">get_table</a></span><span class="op">(</span>region <span class="op">=</span> <span class="st">"Africa"</span><span class="op">)</span></span>
