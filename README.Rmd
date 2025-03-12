@@ -157,6 +157,10 @@ Following are the available PPI country tables from the `{ppitables}` package. T
 |     |                 | Colombia's 2016 Gran Encuesta      |                 |
 |     |                 | Integrada de Hogares (GEIH)        |                 |
 +-----+-----------------+------------------------------------+-----------------+
+|     | `ppiCOL2024`    | PPI for Colombia based on data     | 2024            |
+|     |                 | from the 2022 Gran Encuesta        |                 |
+|     |                 | Integrada de Hogares (GEIH).       |                 |
++-----+-----------------+------------------------------------+-----------------+
 | 11. | `ppiDOM2010`    | PPI for Dominican Republic based   | 2010            |
 |     |                 | on the 2007 Encuesta Nacional de   |                 |
 |     |                 | Ingresos y Gastos de los Hogares   |                 |
