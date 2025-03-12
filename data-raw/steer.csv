@@ -54,6 +54,7 @@ Asia,Indonesia,2022,2023,PPI for Indonesia based on data from 2022 National Soci
 Middle East and North Africa,Jordan,2006,2010,PPI for Jordan using Jordan 2006 Household Income and Expenditure Survey,sps,ppiJOR2010
 Africa,Kenya,2005,2011,PPI for Kenya using Kenya 2005/06 Integrated Household Budget Survey,sps,ppiKEN2011
 Africa,Kenya,2015,2018,PPI for Kenya using Kenya 2015 Integrated Household Budget Survey (KIHBS),ipa,ppiKEN2018
+Africa,Kenya,2021,2024,PPI for Kenya based on data from the 2021 Kenya Integrated Household Budget Survey (KIHBS),ipa,ppiKEN2024
 Asia,Kyrgyz Republic,2012,2015,PPI for Kyrgyzstan Kyrgyz Republic 2012 Integrated Household Survey,sps,ppiKGZ2015
 Africa,Madagascar,2010,2015,PPI for Madagascar based on Madagascar 2010 Periodic Household Survey,sps,ppiMDG2015
 Africa,Malawi,2010,2015,PPI for Malawi based on Malawi 2010/11 Integrated Household Survey using legacy poverty definitions,sps,ppiMWI2015

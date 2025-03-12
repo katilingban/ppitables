@@ -27,9 +27,9 @@ coverage](https://codecov.io/gh/katilingban/ppitables/branch/main/graph/badge.sv
 
 Lookup tables for estimating the likelihood of poverty using the
 `Poverty Probability Index` (previously called `Progress out of Poverty
-Index`) or `PPI` from country-specific indicators collected from
+Index`) or PPI from country-specific indicators collected from
 cross-sectional surveys. These lookup tables are extracted from
-documentation of the `PPI` found at <https://www.povertyindex.org>.
+documentation of the PPI found at <https://www.povertyindex.org>.
 
 ## Installation
 
@@ -46,7 +46,7 @@ Universe](https://katilingban.r-universe.dev):
 install.packages(
   "ppitables",
   repos = c(
-    'https://nutriverse.r-universe.dev', 'https://cloud.r-project.org'
+    'https://katilingban.r-universe.dev', 'https://cloud.r-project.org'
   )
 )
 ```
@@ -54,11 +54,11 @@ install.packages(
 ## Usage
 
 The `{ppitables}` package contains PPI lookup tables for the 61
-countries<sup>1</sup> where PPI can currently be calculated. To be able
-to use the lookup tables in `{ppitables}` appropriately, you need to be
-aware of the naming syntax used for the tables for each country. The
-name for each table will always have three fixed or constant components
-as follows:
+countries\[1\] where PPI can currently be calculated. To be able to use
+the lookup tables in `{ppitables}` appropriately, you need to be aware
+of the naming syntax used for the tables for each country. The name for
+each table will always have three fixed or constant components as
+follows:
 
 ``` r
 ppiXXXYYYY
@@ -77,12 +77,12 @@ These three components are joined together without any spaces or gaps.
 Some country lookup tables may have additional components to their name
 which are added after the year separated with an underscore. These
 usually signify that a lookup table released on a particular year has a
-subset table in which the poverty likelihoods for a given `PPI` score
-are reported based on a different poverty definition or cut-off. This
+subset table in which the poverty likelihoods for a given PPI score are
+reported based on a different poverty definition or cut-off. This
 additional component to the table name is usually a character value or
 alphanumeric and is usually country-specific. To know more about what
-this additional component to some `PPI` tables refer to, read the index
-table below of the `PPI` tables available in this package.
+this additional component to some PPI tables refer to, read the index
+table below of the PPI tables available in this package.
 
 Following are the available PPI country tables from the `{ppitables}`
 package. This is updated as at 12 March 2025 using information from the
@@ -447,6 +447,12 @@ PPI [website](https://www.povertyindex.org).
 <td style="text-align: center;">2018</td>
 </tr>
 <tr class="even">
+<td style="text-align: right;"></td>
+<td><code>ppiKEN2024</code></td>
+<td>PPI for Kenya based on data from the 2021 Kenya Integrated Household Budget Survey (KIHBS)</td>
+<td style="text-align: center;">2024</td>
+</tr>
+<tr class="odd">
 <td style="text-align: right;"><ol start="24" type="1">
 <li></li>
 </ol></td>
@@ -454,7 +460,7 @@ PPI [website](https://www.povertyindex.org).
 <td>PPI for Kyrgyzstan Kyrgyz Republic’s 2012 Integrated Household Survey</td>
 <td style="text-align: center;">2015</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"><ol start="25" type="1">
 <li></li>
 </ol></td>
@@ -462,25 +468,25 @@ PPI [website](https://www.povertyindex.org).
 <td>PPI for Cambodia using Cambodia’s 2011 Socio-Economic Survey based using legacy poverty lines</td>
 <td style="text-align: center;">2015</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"></td>
 <td><code>ppiKHM2015_gov</code></td>
 <td>PPI for Cambodia using Cambodia’s 2011 Socio-Economic Survey based using government definition poverty lines</td>
 <td style="text-align: center;">2015</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"></td>
 <td><code>ppiKHM2015_wb</code></td>
 <td>PPI for Cambodia using Cambodia’s 2011 Socio-Economic Survey based using World Bank definition poverty lines</td>
 <td style="text-align: center;">2015</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"></td>
 <td><code>ppiKHM2023</code></td>
 <td>PPI for Cambodia using data from 2020 Living Standards Measurement Study - Plus (LSMS+)</td>
 <td style="text-align: center;">2023</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"><ol start="26" type="1">
 <li></li>
 </ol></td>
@@ -488,7 +494,7 @@ PPI [website](https://www.povertyindex.org).
 <td>PPI for Sri Lanka using Sri Lanka’s 2012/13 Household Income and Expenditure Survey</td>
 <td style="text-align: center;">2016</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"><ol start="27" type="1">
 <li></li>
 </ol></td>
@@ -496,7 +502,7 @@ PPI [website](https://www.povertyindex.org).
 <td>PPI for Morocco based on Morocco’s 2007 Households Living Standards Survey</td>
 <td style="text-align: center;">2013</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"><ol start="28" type="1">
 <li></li>
 </ol></td>
@@ -504,7 +510,7 @@ PPI [website](https://www.povertyindex.org).
 <td>PPI for Madagascar based on Madagascar’s 2010 Periodic Household Survey</td>
 <td style="text-align: center;">2015</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"><ol start="29" type="1">
 <li></li>
 </ol></td>
@@ -512,13 +518,13 @@ PPI [website](https://www.povertyindex.org).
 <td>PPI for Mexico based on Mexico’s Encuesta Nacional de Ingresos y Gastos de los Hogares de 2014 using legacy definitions of poverty</td>
 <td style="text-align: center;">2017</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"></td>
 <td><code>ppiMEX2017_a</code></td>
 <td>PPI for Mexico based on Mexico’s Encuesta Nacional de Ingresos y Gastos de los Hogares de 2014 using new definitions of poverty</td>
 <td style="text-align: center;">2017</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"><ol start="30" type="1">
 <li></li>
 </ol></td>
@@ -526,7 +532,7 @@ PPI [website](https://www.povertyindex.org).
 <td>PPI for Mali based on Mali’s 2001 Poverty Evaluation Survey</td>
 <td style="text-align: center;">2010</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"><ol start="31" type="1">
 <li></li>
 </ol></td>
@@ -534,13 +540,13 @@ PPI [website](https://www.povertyindex.org).
 <td>PPI for Myanmar based on Myanmar’s 2009/10 Integrated Household Living Conditions Assessment</td>
 <td style="text-align: center;">2012</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"></td>
 <td><code>ppiMMR2019</code></td>
 <td>PPI for Myanmar based on Myanmar’s 2015 Poverty and Living Conditions Survey</td>
 <td style="text-align: center;">2019</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"><ol start="32" type="1">
 <li></li>
 </ol></td>
@@ -548,7 +554,7 @@ PPI [website](https://www.povertyindex.org).
 <td>PPI for Mongolia based on Mongolia’s 2014 Household Socio-Economic Survey</td>
 <td style="text-align: center;">2016</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"><ol start="33" type="1">
 <li></li>
 </ol></td>
@@ -556,19 +562,19 @@ PPI [website](https://www.povertyindex.org).
 <td>PPI for Mozambique based on 2008/9 Household Budget Survey</td>
 <td style="text-align: center;">2013</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"></td>
 <td><code>ppiMOZ2019</code></td>
 <td>PPI for Mozambique based on 2014 Inquerito Sobre Orcamento Familiar (IOF) Survey</td>
 <td style="text-align: center;">2019</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"></td>
 <td><code>ppiMOZ2024</code></td>
 <td>PPI for Mozambique based on data from the 2022 Demographic and Health Survey (DHS)</td>
 <td style="text-align: center;">2024</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"><ol start="34" type="1">
 <li></li>
 </ol></td>
@@ -576,31 +582,31 @@ PPI [website](https://www.povertyindex.org).
 <td>PPI for Malawi based on Malawi’s 2010/11 Integrated Household Survey using legacy poverty definitions</td>
 <td style="text-align: center;">2015</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"></td>
 <td><code>ppiMWI2015_gov</code></td>
 <td>PPI for Malawi based on Malawi’s 2010/11 Integrated Household Survey using government poverty definitions</td>
 <td style="text-align: center;">2015</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"></td>
 <td><code>ppiMWI2015_pbm</code></td>
 <td>PPI for Malawi based on Malawi’s 2010/11 Integrated Household Survey using PBM poverty definitions</td>
 <td style="text-align: center;">2015</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"></td>
 <td><code>ppiMWI2020</code></td>
 <td>PPI for Malawi based on Malawi’s 2016-2017 Fourth Integrated Household Survey (IHS4) using new PPI definitions</td>
 <td style="text-align: center;">2020</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"></td>
 <td><code>ppiMWI2023</code></td>
 <td>PPI for Malawi based on data from the Fifth Integrated Household Survey 2019</td>
 <td style="text-align: center;">2023</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"><ol start="35" type="1">
 <li></li>
 </ol></td>
@@ -608,7 +614,7 @@ PPI [website](https://www.povertyindex.org).
 <td>PPI for Namibia based on Namibia’s 2009/10 Household Income and Expenditure Survey</td>
 <td style="text-align: center;">2013</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"><ol start="36" type="1">
 <li></li>
 </ol></td>
@@ -616,7 +622,7 @@ PPI [website](https://www.povertyindex.org).
 <td>PPI for Niger based on Niger’s 2007/8 National Household Budget and Expenditure Survey</td>
 <td style="text-align: center;">2013</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"><ol start="37" type="1">
 <li></li>
 </ol></td>
@@ -624,7 +630,7 @@ PPI [website](https://www.povertyindex.org).
 <td>PPI for Nigeria based on Nigeria’s 2012/13 General Household Panel Survey</td>
 <td style="text-align: center;">2015</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"><ol start="38" type="1">
 <li></li>
 </ol></td>
@@ -632,7 +638,7 @@ PPI [website](https://www.povertyindex.org).
 <td>PPI for Nicaragua based on Nicaragua’s 2009 Living Standards Measurement Survey</td>
 <td style="text-align: center;">2013</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"><ol start="39" type="1">
 <li></li>
 </ol></td>
@@ -640,13 +646,13 @@ PPI [website](https://www.povertyindex.org).
 <td>PPI for Nepal using legacy poverty definition lines</td>
 <td style="text-align: center;">2013</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"></td>
 <td><code>ppiNPL2013_a</code></td>
 <td>PPI for Nepal using new poverty definition lines</td>
 <td style="text-align: center;">2013</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"><ol start="40" type="1">
 <li></li>
 </ol></td>
@@ -654,7 +660,7 @@ PPI [website](https://www.povertyindex.org).
 <td>PPI for Pakistan using Pakistan 2005/6 Social and Living Standards Measurement Survey</td>
 <td style="text-align: center;">2009</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"><ol start="41" type="1">
 <li></li>
 </ol></td>
@@ -662,13 +668,13 @@ PPI [website](https://www.povertyindex.org).
 <td>PPI for Peru based on Peru’s 2010 National Household Survey</td>
 <td style="text-align: center;">2012</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"></td>
 <td><code>ppiPER2018</code></td>
 <td>PPI for Peru based on Peru’s 2016 Encuesta Nacional de Hogares sobre Condiciones de Vida y Pobreza (ENAHO)</td>
 <td style="text-align: center;">2018</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"><ol start="42" type="1">
 <li></li>
 </ol></td>
@@ -676,19 +682,19 @@ PPI [website](https://www.povertyindex.org).
 <td>PPI for the Philippines based on Philippines’ 2009 FIES/LFS.</td>
 <td style="text-align: center;">2014</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"></td>
 <td><code>ppiPHL2018</code></td>
 <td>PPI for the Philippines based on Philippines’ 2015 Family Income and Expenditure Survey (FIES)</td>
 <td style="text-align: center;">2018</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"></td>
 <td><code>ppiPHL2023</code></td>
 <td>PPI for the Philippines based on data from the 2018 Family Income and Expenditure Survey (FIES)</td>
 <td style="text-align: center;">2023</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"><ol start="43" type="1">
 <li></li>
 </ol></td>
@@ -696,7 +702,7 @@ PPI [website](https://www.povertyindex.org).
 <td>PPI for Papua New Guinea based on data from 2016-2018 Demographic and Health Survey (DHS)</td>
 <td style="text-align: center;">2023</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"><ol start="44" type="1">
 <li></li>
 </ol></td>
@@ -704,7 +710,7 @@ PPI [website](https://www.povertyindex.org).
 <td>PPI for Paraguay based on Paraguay’s 2011 EPH</td>
 <td style="text-align: center;">2012</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"><ol start="45" type="1">
 <li></li>
 </ol></td>
@@ -712,7 +718,7 @@ PPI [website](https://www.povertyindex.org).
 <td>PPI for Palestine based on Palestine’s 2011 Expenditure and Consumption Survey</td>
 <td style="text-align: center;">2014</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"><ol start="46" type="1">
 <li></li>
 </ol></td>
@@ -720,7 +726,7 @@ PPI [website](https://www.povertyindex.org).
 <td>PPI for Romania based on the 2007 HBS</td>
 <td style="text-align: center;">2009</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"><ol start="47" type="1">
 <li></li>
 </ol></td>
@@ -728,7 +734,7 @@ PPI [website](https://www.povertyindex.org).
 <td>PPI for Russia based on 2007 HBS</td>
 <td style="text-align: center;">2010</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"><ol start="48" type="1">
 <li></li>
 </ol></td>
@@ -736,13 +742,13 @@ PPI [website](https://www.povertyindex.org).
 <td>PPI for Rwanda based on Rwanda’s 2010/11 Integrated Household Living Standards Survey</td>
 <td style="text-align: center;">2016</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"></td>
 <td><code>ppiRWA2019</code></td>
 <td>PPI for Rwanda based on Rwanda’s 2016/2017 Integrated Household Living Conditions Survey (EICV5) produced by the National Institute of Statistics of Rwanda (NISR) and the Ministry of Finance and Planning</td>
 <td style="text-align: center;">2019</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"><ol start="49" type="1">
 <li></li>
 </ol></td>
@@ -750,13 +756,13 @@ PPI [website](https://www.povertyindex.org).
 <td>PPI for Senegal based on Senegal’s 2005/6 Enquête de Suivi de la Pauvreté au Sénégal (ESPS)</td>
 <td style="text-align: center;">2009</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"></td>
 <td><code>ppiSEN2018</code></td>
 <td>PPI for Senegal based on Senegal’s 2011 Enquête de Suivi de la Pauvreté au Sénégal (ESPS)</td>
 <td style="text-align: center;">2018</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"><ol start="50" type="1">
 <li></li>
 </ol></td>
@@ -764,7 +770,7 @@ PPI [website](https://www.povertyindex.org).
 <td>PPI for Sierra Leone based on Sierra Leone’s 2003/4 HIS</td>
 <td style="text-align: center;">2011</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"><ol start="51" type="1">
 <li></li>
 </ol></td>
@@ -772,13 +778,13 @@ PPI [website](https://www.povertyindex.org).
 <td>PPI for El Salvador based on the 2008 EHPM</td>
 <td style="text-align: center;">2010</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"></td>
 <td><code>ppiSLV2021</code></td>
 <td>PPI for El Salvador based on data from 2019 Encuesta de Hogares de Propósitos Múltiples</td>
 <td style="text-align: center;">2021</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"><ol start="52" type="1">
 <li></li>
 </ol></td>
@@ -786,7 +792,7 @@ PPI [website](https://www.povertyindex.org).
 <td>PPI for Syria based on Syria’s 2006/7 Household Income and Expenditure Survey</td>
 <td style="text-align: center;">2010</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"><ol start="53" type="1">
 <li></li>
 </ol></td>
@@ -794,7 +800,7 @@ PPI [website](https://www.povertyindex.org).
 <td>PPI for Tajikistan based on 2007 data</td>
 <td style="text-align: center;">2015</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"><ol start="54" type="1">
 <li></li>
 </ol></td>
@@ -802,7 +808,7 @@ PPI [website](https://www.povertyindex.org).
 <td>PPI for Timor Leste based on Timor-Leste’s 2007 Survey of Living Standards</td>
 <td style="text-align: center;">2013</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"><ol start="55" type="1">
 <li></li>
 </ol></td>
@@ -810,13 +816,13 @@ PPI [website](https://www.povertyindex.org).
 <td>PPI for Tanzania based on Tanzania’s 2011/12 Household Budget Survey</td>
 <td style="text-align: center;">2016</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"></td>
 <td><code>ppiTZA2022</code></td>
 <td>PPI for Tanzania based on Tanzania’s 2017/2018 Household Budget Survey</td>
 <td style="text-align: center;">2022</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"><ol start="56" type="1">
 <li></li>
 </ol></td>
@@ -824,13 +830,13 @@ PPI [website](https://www.povertyindex.org).
 <td>PPI for Togo based on Togo’s 2015 Questionnaire des Indicateurs de Base du Bien-être (QUIBB)</td>
 <td style="text-align: center;">2018</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"></td>
 <td><code>ppiTGO2023</code></td>
 <td>PPI for Togo based on data from the 2018 Enquête Harmonisée sur le Conditions de Vie des Ménages (EHCVM)</td>
 <td style="text-align: center;">2023</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"><ol start="57" type="1">
 <li></li>
 </ol></td>
@@ -838,13 +844,13 @@ PPI [website](https://www.povertyindex.org).
 <td>PPI for Uganda based on Uganda’s 2012/13 National Household Survey</td>
 <td style="text-align: center;">2015</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"></td>
 <td><code>ppiUGA2022</code></td>
 <td>PPI for Uganda based on Uganda’s 2020 National Household Survey</td>
 <td style="text-align: center;">2022</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"><ol start="58" type="1">
 <li></li>
 </ol></td>
@@ -852,13 +858,13 @@ PPI [website](https://www.povertyindex.org).
 <td>PPI for Vietnam based on the 2006 VHLSS</td>
 <td style="text-align: center;">2009</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"></td>
 <td><code>ppiVNM2023</code></td>
 <td>PPI for Vietnam based on data from the 2021 Multiple Indicator Cluster Survey</td>
 <td style="text-align: center;">2023</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"><ol start="59" type="1">
 <li></li>
 </ol></td>
@@ -866,7 +872,7 @@ PPI [website](https://www.povertyindex.org).
 <td>PPI for Yemen based on 2005/06 HBS</td>
 <td style="text-align: center;">2009</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"><ol start="60" type="1">
 <li></li>
 </ol></td>
@@ -874,13 +880,13 @@ PPI [website](https://www.povertyindex.org).
 <td>PPI for South Africa based on the 2005/6 IES</td>
 <td style="text-align: center;">2009</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"></td>
 <td><code>ppiZAF2023</code></td>
 <td>PPI for South Africa based on data from the 2019 General Household Survey</td>
 <td style="text-align: center;">2023</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"><ol start="61" type="1">
 <li></li>
 </ol></td>
@@ -888,19 +894,19 @@ PPI [website](https://www.povertyindex.org).
 <td>PPI for Zambia based on Zambia’s 2010 Living Conditions Monitoring Survey (LCMS) using Göttingen poverty definitions</td>
 <td style="text-align: center;">2013</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"></td>
 <td><code>ppiZMB2013_cso</code></td>
 <td>PPI for Zambia based on Zambia’s 2010 Living Conditions Monitoring Survey (LCMS) using CSO poverty definitions</td>
 <td style="text-align: center;">2013</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"></td>
 <td><code>ppiZMB2017</code></td>
 <td>PPI for Zambia based on Zambia’s 2015 Living Conditions Monitoring Survey (LCMS) using legacy poverty definitions</td>
 <td style="text-align: center;">2017</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"></td>
 <td><code>ppiZMB2017_a</code></td>
 <td>PPI for Zambia based on Zambia’s 2015 Living Conditions Monitoring Survey (LCMS) using new PPI calculation approach</td>
@@ -915,7 +921,7 @@ command in R:
 
 ``` r
 find_table()
-#> # A tibble: 113 × 7
+#> # A tibble: 114 × 7
 #>    region            country survey_year release_year description type  filename
 #>    <chr>             <chr>         <int>        <int> <chr>       <chr> <chr>   
 #>  1 Asia              Afghan…        2007         2012 PPI for Af… sps   ppiAFG2…
@@ -928,7 +934,7 @@ find_table()
 #>  8 Latin American a… Bolivia        2020         2023 PPI for Bo… ipa   ppiBOL2…
 #>  9 Latin American a… Brazil         2008         2010 PPI for Br… sps   ppiBRA2…
 #> 10 Africa            Burkin…        2003         2011 PPI for Bu… sps   ppiBFA2…
-#> # ℹ 103 more rows
+#> # ℹ 104 more rows
 ```
 
 View the list of PPI country tables for Africa using the following
@@ -936,7 +942,7 @@ command in R:
 
 ``` r
 find_table(region = "Africa")
-#> # A tibble: 49 × 7
+#> # A tibble: 50 × 7
 #>    region country       survey_year release_year description      type  filename
 #>    <chr>  <chr>               <int>        <int> <chr>            <chr> <chr>   
 #>  1 Africa Angola               2008         2015 PPI for Angola … sps   ppiAGO2…
@@ -949,7 +955,7 @@ find_table(region = "Africa")
 #>  8 Africa Burkina Faso         2018         2023 PPI for Burkina… ipa   ppiBFA2…
 #>  9 Africa Cameroon             2007         2013 PPI for Cameroo… sps   ppiCMR2…
 #> 10 Africa Cote d'Ivoire        2008         2013 PPI for Ivory C… sps   ppiCIV2…
-#> # ℹ 39 more rows
+#> # ℹ 40 more rows
 ```
 
 View the list of PPI country tables in Zambia using the the following
@@ -976,7 +982,7 @@ tables, the following command can be used in R:
 
 ``` r
 get_table()
-#> # A tibble: 120,629 × 7
+#> # A tibble: 121,841 × 7
 #>    country     release_year filename   type  score poverty_definition   ppi
 #>    <chr>       <chr>        <chr>      <chr> <dbl> <chr>              <dbl>
 #>  1 Afghanistan 2012         ppiAFG2012 sps       0 nl                   100
@@ -989,7 +995,7 @@ get_table()
 #>  8 Afghanistan 2012         ppiAFG2012 sps       1 nu150                100
 #>  9 Afghanistan 2012         ppiAFG2012 sps       1 nu200                100
 #> 10 Afghanistan 2012         ppiAFG2012 sps       1 extreme              100
-#> # ℹ 120,619 more rows
+#> # ℹ 121,831 more rows
 ```
 
 To get the actual PPI tables for all countries with PPI tables in
@@ -997,7 +1003,7 @@ Africa, the following command can be used in R:
 
 ``` r
 get_table(region = "Africa")
-#> # A tibble: 56,715 × 7
+#> # A tibble: 57,927 × 7
 #>    country release_year filename   type  score poverty_definition   ppi
 #>    <chr>   <chr>        <chr>      <chr> <dbl> <chr>              <dbl>
 #>  1 Angola  2015         ppiAGO2015 sps       0 nl100              100  
@@ -1010,7 +1016,7 @@ get_table(region = "Africa")
 #>  8 Angola  2015         ppiAGO2015 sps       0 ppp500             100  
 #>  9 Angola  2015         ppiAGO2015 sps       1 nl100              100  
 #> 10 Angola  2015         ppiAGO2015 sps       1 nl150              100  
-#> # ℹ 56,705 more rows
+#> # ℹ 57,917 more rows
 ```
 
 ## Disclaimer
@@ -1073,10 +1079,8 @@ Please note that the `{ppitables}` project is released with a
 Conduct](https://katilingban.io/ppitables/CODE_OF_CONDUCT.html). By
 contributing to this project, you agree to abide by its terms.
 
-### Notes
-
-<sup>1</sup> Only 60 country PPI tables are shown here and available via
-the package. There is no lookup table for China because the China
-Poverty Scorecard is an expert-based scorecard. See
-[this](https://www.povertyindex.org/china-expert-based-poverty-scorecard)
-for further explanation.
+1.  Only 60 country PPI tables are shown here and available via the
+    package. There is no lookup table for China because the China
+    Poverty Scorecard is an expert-based scorecard. See
+    [this](https://www.povertyindex.org/china-expert-based-poverty-scorecard)
+    for further explanation.
