@@ -48,120 +48,300 @@ reference:
   contents:
   - ppitables
 
-- title: Lookup Tables
+- title: Lookup Tables (IPA)
+- subtitle: Benin
   contents:
-  - ppiAFG2012
-  - ppiAGO2015
-  - ppiBEN2012
   - ppiBEN2022_11q
   - ppiBEN2022_6q
-  - ppiBFA2011
-  - ppiBFA2014
+- subtitle: Burkina Faso
+  contents:
   - ppiBFA2017
   - ppiBFA2023
-  - ppiBGD2013
-  - ppiBOL2015
+- subtitle: Bolivia
+  contents:
   - ppiBOL2023
-  - ppiBRA2010
-  - ppiCIV2013
+- subtitle: Côte d'Ivoire
+  contents:
   - ppiCIV2018
+- subtitle: Colombia
+  contents:
+  - ppiCOL2018
+- subtitle: Dominican Republic
+  contents:
+  - ppiDOM2018
+- subtitle: Ecuador
+  contents:
+  - ppiECU2022
+- subtitle: Ethiopia
+  contents:
+  - ppiETH2023
+- subtitle: Ghana
+  contents:
+  - ppiGHA2019
+- subtitle: Guatemala
+  contents:
+  - ppiGTM2023
+- subtitle: Honduras
+  contents:
+  - ppiHND2023
+- subtitle?: Indonesia
+  contents:
+  - ppiIDN2020
+  - ppiIDN2023
+- subtitle: Kenya
+  contents:
+  - ppiKEN2018
+- subtitle: Cambodia
+  contents:
+  - ppiKHM2023
+- subtitle: Myanmar
+  contents:
+  - ppiMMR2019
+- subtitle: Mozambique
+  contents:
+  - ppiMOZ2019
+  - ppiMOZ2024
+- subtitle: Malawi
+  contents:
+  - ppiMWI2020
+  - ppiMWI2023
+- subtitle: Peru
+  contents:
+  - ppiPER2018
+- subtitle: Philippines
+  contents:
+  - ppiPHL2018
+  - ppiPHL2023
+- subtitle: Papua New Guinea
+  contents:
+  - ppiPNG2023
+- subtitle: Rwanda
+  contents:
+  - ppiRWA2019
+- subtitle: Senegal
+  contents:
+  - ppiSEN2018
+- subtitle: Sierra Leone
+  contents:
+  - ppiSLE2011
+- subtitle: El Salvador
+  contents:
+  - ppiSLV2021
+- subtitle: Togo
+  contents:
+  - ppiTGO2018
+  - ppiTGO2023
+- subtitle: Tanzania
+  contents:
+  - ppiTZA2022
+- subtitle: Uganda
+  contents:
+  - ppiUGA2022
+- subtitle: Vietnam
+  contents:
+  - ppiVNM2023
+- subtitle: South Africa
+  contents:
+  - ppiZAF2023
+- subtitle: Zambia
+  contents:
+  - ppiZMB2017
+  - ppiZMB2017_a
+
+- title: Lookup Tables (legacy pre-2016)
+- subtitle: Afghanistan
+  contents:
+  - ppiAFG2012
+- subtitle: Angola
+  contents:
+  - ppiAGO2015
+- subtitle: Benin
+  contents:
+  - ppiBEN2012
+- subtitle: Burkina Faso
+  contents:
+  - ppiBFA2011
+  - ppiBFA2014
+- subtitle: Bangladesh
+  contents:
+  - ppiBGD2013
+- subtitle: Bolivia
+  contents:
+  - ppiBOL2015
+- subtitle: Brazil
+  contents:
+  - ppiBRA2010
+- subtitle: Côte d'Ivoire
+  contents:
+  - ppiCIV2013
+- subtitle: Cameroon
+  contents:
   - ppiCMR2013
+- subtitle: Colombia
+  contents:
   - ppiCOL2012
   - ppiCOL2012_a
-  - ppiCOL2018
+- subtitle: Dominican Republic
+  contents:
   - ppiDOM2010
-  - ppiDOM2018
+- subtitle: Ecuador
+  contents:
   - ppiECU2015
-  - ppiECU2022
+- subtitle: Egypt
+  contents:
   - ppiEGY2010
+- subtitle: Ethiopia
+  contents:
   - ppiETH2016
-  - ppiETH2023
+- subtitle: Fiji
+  contents:
   - ppiFJI2014
+- subtitle: Ghana
+  contents:
   - ppiGHA2015
   - ppiGHA2015_a
   - ppiGHA2015_b
-  - ppiGHA2019
+- subtitle: Guatemala
+  contents:
   - ppiGTM2016
-  - ppiGTM2023
+- subtitle: Honduras
+  contents:
   - ppiHND2010
-  - ppiHND2023
+- subtitle: Haiti
+  contents:
   - ppiHTI2016
+- subtitle?: Indonesia
+  contents:
   - ppiIDN2012
   - ppiIDN2012_a
-  - ppiIDN2020
-  - ppiIDN2023
+- subtitle: India
+  contents:
   - ppiIND2016_r59
   - ppiIND2016_r62
   - ppiIND2016_r66
   - ppiIND2016_r68
+- subtitle: Jordan
+  contents:
   - ppiJOR2010
+- subtitle: Kenya
+  contents:
   - ppiKEN2011
-  - ppiKEN2018
+- subtitle: Kyryzstan
+  contents:
   - ppiKGZ2015
+- subtitle: Cambodia
+  contents:
   - ppiKHM2015
   - ppiKHM2015_gov
   - ppiKHM2015_wb
-  - ppiKHM2023
+- subtitle: Sri Lanka
+  contents:
   - ppiLKA2016
+- subtitle: Morocco
+  contents:
   - ppiMAR2013
+- sutitle: Madagascar
+  contents:
   - ppiMDG2015
+- subtitle: Mexico
+  contents:
   - ppiMEX2017
   - ppiMEX2017_a
+- subtitle: Mali
+  contents:
   - ppiMLI2010
+- subtitle: Myanmar
+  contents:
   - ppiMMR2012
-  - ppiMMR2019
+- subtitle: Mongolia
+  contents:
   - ppiMNG2016
+- subtitle: Mozambique
+  contents:
   - ppiMOZ2013
-  - ppiMOZ2019
-  - ppiMOZ2024
+- subtitle: Malawi
+  contents:
   - ppiMWI2015
   - ppiMWI2015_gov
   - ppiMWI2015_pbm
-  - ppiMWI2020
-  - ppiMWI2023
+- subtitle: Namibia
+  contents:
   - ppiNAM2013
+- subtitle: Niger
+  contents:
   - ppiNER2013
+- subtitle: Nigeria
+  contents:
   - ppiNGA2015
+- subtitle: Nicaragua
+  contents:
   - ppiNIC2013
+- subtitle: Nepal
+  contents:
   - ppiNPL2013
   - ppiNPL2013_a
+- subtitle: Pakistan
+  contents:
   - ppiPAK2009
+- subtitle: Peru
+  contents:
   - ppiPER2012
-  - ppiPER2018
+- subtitle: Philippines
+  contents:
   - ppiPHL2014
   - ppiPHL2014_a
-  - ppiPHL2018
-  - ppiPHL2023
-  - ppiPNG2023
+- subtitle: Paraguay
+  contents:
   - ppiPRY2012
+- subtitle: Palestine
+  contents:
   - ppiPSE2014
+- subtitle: Romania
+  contents:
   - ppiROU2009
+- subtitle: Russia
+  contents:
   - ppiRUS2010
+- subtitle: Rwanda
+  contents:
   - ppiRWA2016
-  - ppiRWA2019
+- subtitle: Senegal
+  contents:
   - ppiSEN2009
-  - ppiSEN2018
+- subtitle: Sierra Leone
+  contents:
   - ppiSLE2011
+- subtitle: El Salvador
+  contents:
   - ppiSLV2010
-  - ppiSLV2021
+- subtitle: Syria
+  contents:
   - ppiSYR2010
-  - ppiTGO2018
-  - ppiTGO2023
+- subtitle: Tajikistan
+  contents:
   - ppiTJK2015
+- subtitle: Timor-Leste
+  contents:
   - ppiTLS2013
+- subtitle: Tanzania
+  contents:
   - ppiTZA2016
-  - ppiTZA2022
+- subtitle: Uganda
+  contents:
   - ppiUGA2015
-  - ppiUGA2022
+- subtitle: Vietnam
+  contents:
   - ppiVNM2009
-  - ppiVNM2023
+- subtitle: Yemen
+  contents:
   - ppiYEM2009
+- subtitle: South Africa
+  contents:
   - ppiZAF2009
-  - ppiZAF2023
+- subtitle: Zambia
+  contents:
   - ppiZMB2013_cso
   - ppiZMB2013_got
-  - ppiZMB2017
-  - ppiZMB2017_a
 
 - title: Support functions
   contents:

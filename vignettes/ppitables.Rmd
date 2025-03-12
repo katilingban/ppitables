@@ -1,0 +1,46 @@
+---
+title: "The Poverty Probability Index"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{The Poverty Probability Index}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+
+library(ppitables)
+```
+
+
+The Poverty Probability Index (PPI®) is a straightforward yet statistically robust tool designed for organisations and businesses dedicated to serving impoverished communities. By posing 10 simple questions regarding a household's characteristics and asset ownership, the PPI calculates the probability of that household living below a specific poverty line. This enables organisations to objectively identify clients, customers, or employees who are likely experiencing poverty, facilitating informed assessments and strategic decisions.
+
+## The Importance of Measuring Poverty
+
+Operating in areas with high poverty rates doesn't automatically provide insights into the specific households an organisation reaches. Collecting objective poverty data from all or a representative sample of these households allows organisations to:
+
+- Determine the percentage of customers, clients, or employees living below the poverty line.
+- Enhance the effectiveness of interventions targeting impoverished populations.
+- Monitor changes in poverty levels over time.
+
+Armed with this data, organisations can make strategic decisions and offer stakeholders concrete evidence of the organization's impact on poverty alleviation.
+
+## Functionality of the PPI
+
+The PPI is tailored to align with the operational realities and budgets of diverse organisations, ensuring ease of use without compromising accuracy. A household member can answer the 10 questions in approximately 5 to 10 minutes, covering topics like roofing material and children's school attendance. The responses are scored to indicate the likelihood of the household living below national and international poverty thresholds.
+
+### Example 
+
+An organisation in Colombia offering vocational training to the nation's poorest citizens employs the PPI to assess if they are effectively reaching their target demographic. If a client scores 30 on the PPI, the corresponding look-up table indicates a 42.6% chance that the household lives below the $2.50/day poverty line. Surveying a representative sample of clients revealed an average likelihood of 60.7% living below this threshold, providing valuable insights for the organisation's outreach efforts.
+
+## History, development, and management of the PPI
+
+The PPI is currently managed by Innovations for Poverty Action (IPA), with a dedicated team overseeing its development and daily operations.
+
+Innovations for Poverty Action (IPA) is a non-profit organization dedicated to identifying and promoting effective solutions to global poverty. By collaborating with researchers and decision-makers, IPA designs, evaluates, and refines evidence-based programs and policies. Their approach focuses on generating high-quality, policy-relevant evidence, effectively communicating findings, and equipping decision-makers to apply the insights through strong partnerships.  
+
+In July 2016, the Poverty Probability Index (PPI) transitioned from Grameen Foundation to IPA for long-term sustainability, accompanied by a new construction methodology. In October 2017, the tool was rebranded from the *Progress out of Poverty Index* to better reflect its purpose and broader applications.
