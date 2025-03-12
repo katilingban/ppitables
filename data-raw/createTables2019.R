@@ -639,3 +639,27 @@ names(col) <- c(
 ppiCOL2024 <- col
 
 usethis::use_data(ppiCOL2024, overwrite = TRUE, compress = "xz")
+
+
+## Dominican Republic PPI ######################################################
+
+dom <- read_xlsx(
+  path = "data-raw/sources/dominican2024.xlsx",
+  sheet = "Look-up Tables -  10Q",
+  range = "A9:I110"
+) |>
+  dplyr::mutate(
+    dplyr::across(
+      .cols = `National Povert Line`:`Below 80th percentile`,
+      .fns = ~.x * 100
+    )
+  )
+
+names(dom) <- c(
+  "score", "nl100", "nl150", "nl200", "ppp685",
+  "percentile20", "percentile40", "percentile60", "percentile80"
+)
+
+ppiDOM2024 <- dom
+
+usethis::use_data(ppiDOM2024, overwrite = TRUE, compress = "xz")

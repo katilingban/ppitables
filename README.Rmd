@@ -70,12 +70,12 @@ These three components are joined together without any spaces or gaps.
 
 Some country lookup tables may have additional components to their name which are added after the year separated with an underscore. These usually signify that a lookup table released on a particular year has a subset table in which the poverty likelihoods for a given `PPI` score are reported based on a different poverty definition or cut-off. This additional component to the table name is usually a character value or alphanumeric and is usually country-specific. To know more about what this additional component to some `PPI` tables refer to, read the index table below of the `PPI` tables available in this package. 
 
-Following are the available PPI country tables from the `{ppitables}` package. This is updated as at 11 April 2023 using information from the PPI [website](https://www.povertyindex.org).
+Following are the available PPI country tables from the `{ppitables}` package. This is updated as at 12 March 2025 using information from the PPI [website](https://www.povertyindex.org).
 
 
 ### List of PPI country tables
 
-+-----+---------+--------------------------------------------+-----------------+
++-----+-----------------+------------------------------------+-----------------+
 |     | **PPI Country   | **Description**                    | **PPI Release   |
 |     | Table Name**    |                                    | Year**          |
 +====:+=================+====================================+:===============:+
@@ -170,6 +170,13 @@ Following are the available PPI country tables from the `{ppitables}` package. T
 |     |                 | based on the 2016 Encuesta         |                 |
 |     |                 | Nacional de Fuerza de Trabajo      |                 |
 |     |                 | (ENFT)                             |                 | 
++-----+-----------------+------------------------------------+-----------------+
+|     | `ppiDOM2024`    | PPI for Dominican Republic         | 2024            |
+|     |                 | constructed in October 2024 based  |                 |
+|     |                 | on data from the 2022 Encuesta     |                 |
+|     |                 | Continua de Fuerza de Trabajo -    |                 |
+|     |                 | ENCFT conducted by the National    |                 |
+|     |                 | Statistics Office (ONE)            |                 |
 +-----+-----------------+------------------------------------+-----------------+
 | 12. | `ppiECU2015`    | PPI for Ecuador based on the       | 2015            |
 |     |                 | 2013 Living Standards Survey       |                 |

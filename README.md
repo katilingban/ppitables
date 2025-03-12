@@ -85,7 +85,7 @@ this additional component to some `PPI` tables refer to, read the index
 table below of the `PPI` tables available in this package.
 
 Following are the available PPI country tables from the `{ppitables}`
-package. This is updated as at 11 April 2023 using information from the
+package. This is updated as at 12 March 2025 using information from the
 PPI [website](https://www.povertyindex.org).
 
 ### List of PPI country tables
@@ -241,6 +241,12 @@ PPI [website](https://www.povertyindex.org).
 <td style="text-align: center;">2018</td>
 </tr>
 <tr class="even">
+<td style="text-align: right;"></td>
+<td><code>ppiCOL2024</code></td>
+<td>PPI for Colombia based on data from the 2022 Gran Encuesta Integrada de Hogares (GEIH).</td>
+<td style="text-align: center;">2024</td>
+</tr>
+<tr class="odd">
 <td style="text-align: right;"><ol start="11" type="1">
 <li></li>
 </ol></td>
@@ -248,11 +254,17 @@ PPI [website](https://www.povertyindex.org).
 <td>PPI for Dominican Republic based on the 2007 Encuesta Nacional de Ingresos y Gastos de los Hogares (ENIGH)</td>
 <td style="text-align: center;">2010</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"></td>
 <td><code>ppiDOM2018</code></td>
 <td>PPI for Dominican Republic based on the 2016 Encuesta Nacional de Fuerza de Trabajo (ENFT)</td>
 <td style="text-align: center;">2018</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"></td>
+<td><code>ppiDOM2024</code></td>
+<td>PPI for Dominican Republic constructed in October 2024 based on data from the 2022 Encuesta Continua de Fuerza de Trabajo - ENCFT conducted by the National Statistics Office (ONE)</td>
+<td style="text-align: center;">2024</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;"><ol start="12" type="1">
@@ -903,7 +915,7 @@ command in R:
 
 ``` r
 find_table()
-#> # A tibble: 111 × 7
+#> # A tibble: 113 × 7
 #>    region            country survey_year release_year description type  filename
 #>    <chr>             <chr>         <int>        <int> <chr>       <chr> <chr>   
 #>  1 Asia              Afghan…        2007         2012 PPI for Af… sps   ppiAFG2…
@@ -916,7 +928,7 @@ find_table()
 #>  8 Latin American a… Bolivia        2020         2023 PPI for Bo… ipa   ppiBOL2…
 #>  9 Latin American a… Brazil         2008         2010 PPI for Br… sps   ppiBRA2…
 #> 10 Africa            Burkin…        2003         2011 PPI for Bu… sps   ppiBFA2…
-#> # ℹ 101 more rows
+#> # ℹ 103 more rows
 ```
 
 View the list of PPI country tables for Africa using the following
@@ -964,7 +976,7 @@ tables, the following command can be used in R:
 
 ``` r
 get_table()
-#> # A tibble: 118,407 × 7
+#> # A tibble: 120,629 × 7
 #>    country     release_year filename   type  score poverty_definition   ppi
 #>    <chr>       <chr>        <chr>      <chr> <dbl> <chr>              <dbl>
 #>  1 Afghanistan 2012         ppiAFG2012 sps       0 nl                   100
@@ -977,7 +989,7 @@ get_table()
 #>  8 Afghanistan 2012         ppiAFG2012 sps       1 nu150                100
 #>  9 Afghanistan 2012         ppiAFG2012 sps       1 nu200                100
 #> 10 Afghanistan 2012         ppiAFG2012 sps       1 extreme              100
-#> # ℹ 118,397 more rows
+#> # ℹ 120,619 more rows
 ```
 
 To get the actual PPI tables for all countries with PPI tables in
