@@ -23,25 +23,25 @@ navbar:
   type: light
   structure:
     left:  [home, intro, reference, articles, news]
-    right: [search, mastodon, linkedin, github]
+    right: [search, mastodon, bluesky, linkedin, github]
   components:
-    # articles:
-    #   text: Articles
-    #   menu:
-    #   - text: "Africa CDC"
-    #     href: articles/africa-cdc.html
+    articles:
+      text: Articles
+      menu:
+      - text: "Using the Poverty Probability Index"
+        href: articles/using_ppi.html
     mastodon:
       icon: "fab fa-mastodon fa-lg"
       href: https://fosstodon.org/@katilingban
       aria-label: Mastodon
+    bluesky:
+      icon: "fab fa-bluesky fa-lg"
+      aria-label: Bluesky
+      href: https://bsky.app/profile/katilingban.io
     linkedin:
       icon: "fab fa-linkedin fa-lg"
       href: https://www.linkedin.com/company/katilingban
       aria-label: Mastodon
-    github:
-      icon: "fab fa-github fa-lg"
-      href: https://github.com/katilingban
-      aria-label: GitHub
 
 reference:
 - title: Description

@@ -35,17 +35,17 @@ Lookup tables for estimating the likelihood of poverty using the `Poverty Probab
 
 ## Installation
 
-You can install `ppitables` from CRAN with:
+You can install `{ppitables}` from CRAN with:
 
 ```{r cran, eval = FALSE}
 install.packages("ppitables")
 ```
 
-You can install the current development version from the [Katilingban R-universe](https://katilingban.r-universe.dev):
+You can install the current development version from the [Katilingban R Universe](https://katilingban.r-universe.dev):
 
 ```{r gh-installation, eval = FALSE}
 install.packages(
-  "pakete",
+  "ppitables",
   repos = c(
     'https://nutriverse.r-universe.dev', 'https://cloud.r-project.org'
   )
@@ -54,7 +54,7 @@ install.packages(
 
 ## Usage
 
-The `ppitables` package contains PPI lookup tables for the 61 countries<sup>1</sup> where PPI can currently be calculated. To be able to use the lookup tables in `ppitables` appropriately, you need to be aware of the naming syntax used for the tables for each country. The name for each table will always have three fixed or constant components as follows:
+The `{ppitables}` package contains PPI lookup tables for the 61 countries<sup>1</sup> where PPI can currently be calculated. To be able to use the lookup tables in `{ppitables}` appropriately, you need to be aware of the naming syntax used for the tables for each country. The name for each table will always have three fixed or constant components as follows:
 
 ```{r naming, eval = FALSE}
 ppiXXXYYYY
@@ -70,7 +70,7 @@ These three components are joined together without any spaces or gaps.
 
 Some country lookup tables may have additional components to their name which are added after the year separated with an underscore. These usually signify that a lookup table released on a particular year has a subset table in which the poverty likelihoods for a given `PPI` score are reported based on a different poverty definition or cut-off. This additional component to the table name is usually a character value or alphanumeric and is usually country-specific. To know more about what this additional component to some `PPI` tables refer to, read the index table below of the `PPI` tables available in this package. 
 
-Following are the available PPI country tables from the `ppitables` package. This is updated as at 11 April 2023 using information from the PPI [site](https://www.povertyindex.org).
+Following are the available PPI country tables from the `{ppitables}` package. This is updated as at 11 April 2023 using information from the PPI [website](https://www.povertyindex.org).
 
 
 ### List of PPI country tables
@@ -78,7 +78,6 @@ Following are the available PPI country tables from the `ppitables` package. Thi
 +-----+---------+--------------------------------------------+-----------------+
 |     | **PPI Country   | **Description**                    | **PPI Release   |
 |     | Table Name**    |                                    | Year**          |
-|     | Name**          |                                    |                 |
 +====:+=================+====================================+:===============:+
 | 1.  | `ppiAFG2012`    | PPI for Afghanistan based on       | 2012            | 
 |     |                 | 2007/8 National Risk and           |                 |
@@ -487,7 +486,7 @@ Following are the available PPI country tables from the `ppitables` package. Thi
 |     | `ppiTGO2023`    | PPI for Togo based on data from    | 2023            |
 |     |                 | the 2018 Enquête Harmonisée sur le |                 |
 |     |                 | Conditions de Vie des Ménages      |                 |
-|     |                 | (EHCVM)                            |                 |              
+|     |                 | (EHCVM)                            |                 |
 +-----+-----------------+------------------------------------+-----------------+
 | 57. | `ppiUGA2015`    | PPI for Uganda based on Uganda's   | 2015            |
 |     |                 | 2012/13 National Household Survey  |                 |
@@ -572,7 +571,7 @@ Any mistakes, problems and issues with the functionality and outputs of the `{pp
 
 ## Citation
 
-If you find the `{ppitables}` package useful, please cite using the suggested citation provided by a call to the `citation` function as follows:
+If you use the `{ppitables}` package in publications, please cite using the suggested citation provided by a call to the `citation` function as follows:
 
 ```{r citation, echo = TRUE, eval = TRUE}
 citation("ppitables")

@@ -1,0 +1,98 @@
+---
+title: "Using the Poverty Probability Index"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Using the Poverty Probability Index}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+
+library(ppitables)
+```
+
+The `{ppitables}` package contains PPI lookup tables for the 61 countries^[Only 60 country PPI tables are shown here and available via the package. There is no lookup table for China because the China Poverty Scorecard is an expert-based scorecard. See [this](https://www.povertyindex.org/china-expert-based-poverty-scorecard) for further explanation.] where PPI can currently be calculated. To be able to use the lookup tables in `{ppitables}` appropriately, you need to be aware of the naming syntax used for the tables for each country. The name for each table will always have three fixed or constant components as follows:
+
+```{r naming, eval = FALSE}
+ppiXXXYYYY
+```
+
+The name of any of the PPI tables contains:
+
+1. `ppi` in lower case letters;
+2. `XXX` which is the the three letter `ISO code` of the country of interest (all capitals); and, 
+3. `YYYY` which is the specific year at which the country PPI table was released. 
+
+These three components are joined together without any spaces or gaps.
+
+Some country lookup tables may have additional components to their name which are added after the year separated with an underscore. These usually signify that a lookup table released on a particular year has a subset table in which the poverty likelihoods for a given **PPI score** are reported based on a different poverty definition or cut-off. This additional component to the table name is usually a character value or alphanumeric and is usually country-specific. To know more about what this additional component to some **PPI** tables refer to, read the index table [here](https://katilingban.io/ppitables/#list-of-ppi-country-tables).
+
+## Retrieving PPI tables
+
+This list of available PPI country tables can be retrieved in R using the `find_table()` function. View the complete list using the following command in R:
+
+```{r, eval = TRUE}
+find_table()
+```
+
+View the list of PPI country tables for Africa using the following command in R:
+
+```{r, eval = TRUE}
+find_table(region = "Africa")
+```
+
+View the list of PPI country tables in Zambia using the the following command in R:
+
+```{r, eval = TRUE}
+find_table(country = "Zambia")
+```
+
+To extract the actual PPI tables, the `get_table()` function can be used. The `get_table()` function wraps around the `find_table()` function to make a search for a specific PPI table and then extracts the table/s and puts them together into a tidy data frame.
+
+For example, to get the actual PPI tables for all countries with PPI tables, the following command can be used in R:
+
+```{r, eval = TRUE}
+get_table()
+```
+
+To get the actual PPI tables for all countries with PPI tables in Africa, the following command can be used in R:
+
+```{r, eval = TRUE}
+get_table(region = "Africa")
+```
+
+## Retrieving poverty probabilities
+
+>  **Example 1:** An organisation in Colombia offering vocational training to the nation's poorest citizens employs the **PPI** to assess if they are effectively reaching their target demographic. If a client scores 30 on the PPI, the corresponding look-up table indicates a 42.6% chance that the household lives below the $2.50/day poverty line. 
+
+In **Example 1**, using the 2012 release version of the lookup **PPI** table for Colombia (`ppiCOL2012`) to arrive at the client's poverty probability, we use:
+
+
+```{r ppi-example1}
+ppiCOL2012$ppp250[ppiCOL2018$score == 30]
+```
+
+
+> **Example 2:** Surveying a sample of 10 clients in the same area of Colombia showed poverty scores of 25, 26, 25, 27, 26, 29, 28, 29, 25, 28. Based on $2.50/day poverty threshold, the survey revealed an average likelihood of 60.7% living below this threshold, providing valuable insights for the organisation's outreach efforts.
+
+In **Example 2**, using the 2012 release version of the lookup **PPI** table for Colombia (`ppiCOL2012`) to arrive at the average poverty probability across these 10 clients, we use:
+
+```{r ppi-example2}
+ppi_scores <- c("25", "26", "25", "27", "26", "29", "28", "29", "25", "28")
+
+poverty_prob <- lapply(
+  X = ppi_scores,
+  FUN = function(x) ppiCOL2012$ppp250[ppiCOL2018$score == x]
+)
+
+poverty_prob <- unlist(poverty_prob)
+mean(poverty_prob)
+```
+
+
+

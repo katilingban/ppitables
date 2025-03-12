@@ -33,18 +33,18 @@ documentation of the `PPI` found at <https://www.povertyindex.org>.
 
 ## Installation
 
-You can install `ppitables` from CRAN with:
+You can install `{ppitables}` from CRAN with:
 
 ``` r
 install.packages("ppitables")
 ```
 
-You can install the current development version from the [Katilingban
-R-universe](https://katilingban.r-universe.dev):
+You can install the current development version from the [Katilingban R
+Universe](https://katilingban.r-universe.dev):
 
 ``` r
 install.packages(
-  "pakete",
+  "ppitables",
   repos = c(
     'https://nutriverse.r-universe.dev', 'https://cloud.r-project.org'
   )
@@ -53,9 +53,9 @@ install.packages(
 
 ## Usage
 
-The `ppitables` package contains PPI lookup tables for the 61
+The `{ppitables}` package contains PPI lookup tables for the 61
 countries<sup>1</sup> where PPI can currently be calculated. To be able
-to use the lookup tables in `ppitables` appropriately, you need to be
+to use the lookup tables in `{ppitables}` appropriately, you need to be
 aware of the naming syntax used for the tables for each country. The
 name for each table will always have three fixed or constant components
 as follows:
@@ -84,9 +84,9 @@ alphanumeric and is usually country-specific. To know more about what
 this additional component to some `PPI` tables refer to, read the index
 table below of the `PPI` tables available in this package.
 
-Following are the available PPI country tables from the `ppitables`
+Following are the available PPI country tables from the `{ppitables}`
 package. This is updated as at 11 April 2023 using information from the
-PPI [site](https://www.povertyindex.org).
+PPI [website](https://www.povertyindex.org).
 
 ### List of PPI country tables
 
@@ -100,7 +100,7 @@ PPI [site](https://www.povertyindex.org).
 <thead>
 <tr class="header">
 <th style="text-align: right;"></th>
-<th><strong>PPI Country Table Name</strong> Name**</th>
+<th><strong>PPI Country Table Name</strong></th>
 <th><strong>Description</strong></th>
 <th style="text-align: center;"><strong>PPI Release Year</strong></th>
 </tr>
@@ -903,21 +903,20 @@ command in R:
 
 ``` r
 find_table()
-#> # A tibble: 110 × 7
-#>    region      country survey_year release_year description type 
-#>    <chr>       <chr>         <int>        <int> <chr>       <chr>
-#>  1 Asia        Afghan…        2007         2012 PPI for Af… sps  
-#>  2 Africa      Angola         2008         2015 PPI for An… sps  
-#>  3 Asia        Bangla…        2010         2013 PPI for Ba… sps  
-#>  4 Africa      Benin          2010         2012 PPI for Be… sps  
-#>  5 Africa      Benin          2018         2022 PPI for Be… ipa  
-#>  6 Africa      Benin          2018         2022 PPI for Be… ipa  
-#>  7 Latin Amer… Bolivia        2013         2015 PPI for Bo… sps  
-#>  8 Latin Amer… Bolivia        2020         2023 PPI for Bo… ipa  
-#>  9 Latin Amer… Brazil         2008         2010 PPI for Br… sps  
-#> 10 Africa      Burkin…        2003         2011 PPI for Bu… sps  
-#> # ℹ 100 more rows
-#> # ℹ 1 more variable: filename <chr>
+#> # A tibble: 111 × 7
+#>    region            country survey_year release_year description type  filename
+#>    <chr>             <chr>         <int>        <int> <chr>       <chr> <chr>   
+#>  1 Asia              Afghan…        2007         2012 PPI for Af… sps   ppiAFG2…
+#>  2 Africa            Angola         2008         2015 PPI for An… sps   ppiAGO2…
+#>  3 Asia              Bangla…        2010         2013 PPI for Ba… sps   ppiBEN2…
+#>  4 Africa            Benin          2010         2012 PPI for Be… sps   ppiBGD2…
+#>  5 Africa            Benin          2018         2022 PPI for Be… ipa   ppiBEN2…
+#>  6 Africa            Benin          2018         2022 PPI for Be… ipa   ppiBEN2…
+#>  7 Latin American a… Bolivia        2013         2015 PPI for Bo… sps   ppiBOL2…
+#>  8 Latin American a… Bolivia        2020         2023 PPI for Bo… ipa   ppiBOL2…
+#>  9 Latin American a… Brazil         2008         2010 PPI for Br… sps   ppiBRA2…
+#> 10 Africa            Burkin…        2003         2011 PPI for Bu… sps   ppiBFA2…
+#> # ℹ 101 more rows
 ```
 
 View the list of PPI country tables for Africa using the following
@@ -925,21 +924,20 @@ command in R:
 
 ``` r
 find_table(region = "Africa")
-#> # A tibble: 48 × 7
-#>    region country      survey_year release_year description type 
-#>    <chr>  <chr>              <int>        <int> <chr>       <chr>
-#>  1 Africa Angola              2008         2015 PPI for An… sps  
-#>  2 Africa Benin               2010         2012 PPI for Be… sps  
-#>  3 Africa Benin               2018         2022 PPI for Be… ipa  
-#>  4 Africa Benin               2018         2022 PPI for Be… ipa  
-#>  5 Africa Burkina Faso        2003         2011 PPI for Bu… sps  
-#>  6 Africa Burkina Faso        2014         2017 PPI for Bu… sps  
-#>  7 Africa Burkina Faso        2014         2017 PPI for Bu… ipa  
-#>  8 Africa Burkina Faso        2018         2023 PPI for Bu… ipa  
-#>  9 Africa Cameroon            2007         2013 PPI for Ca… sps  
-#> 10 Africa Cote d'Ivoi…        2008         2013 PPI for Iv… sps  
-#> # ℹ 38 more rows
-#> # ℹ 1 more variable: filename <chr>
+#> # A tibble: 49 × 7
+#>    region country       survey_year release_year description      type  filename
+#>    <chr>  <chr>               <int>        <int> <chr>            <chr> <chr>   
+#>  1 Africa Angola               2008         2015 PPI for Angola … sps   ppiAGO2…
+#>  2 Africa Benin                2010         2012 PPI for Benin b… sps   ppiBGD2…
+#>  3 Africa Benin                2018         2022 PPI for Benin b… ipa   ppiBEN2…
+#>  4 Africa Benin                2018         2022 PPI for Benin b… ipa   ppiBEN2…
+#>  5 Africa Burkina Faso         2003         2011 PPI for Burkina… sps   ppiBFA2…
+#>  6 Africa Burkina Faso         2014         2017 PPI for Burkina… sps   ppiBFA2…
+#>  7 Africa Burkina Faso         2014         2017 PPI for Burkina… ipa   ppiBFA2…
+#>  8 Africa Burkina Faso         2018         2023 PPI for Burkina… ipa   ppiBFA2…
+#>  9 Africa Cameroon             2007         2013 PPI for Cameroo… sps   ppiCMR2…
+#> 10 Africa Cote d'Ivoire        2008         2013 PPI for Ivory C… sps   ppiCIV2…
+#> # ℹ 39 more rows
 ```
 
 View the list of PPI country tables in Zambia using the the following
@@ -948,13 +946,12 @@ command in R:
 ``` r
 find_table(country = "Zambia")
 #> # A tibble: 4 × 7
-#>   region country survey_year release_year description       type 
-#>   <chr>  <chr>         <int>        <int> <chr>             <chr>
-#> 1 Africa Zambia         2010         2013 PPI for Zambia b… sps  
-#> 2 Africa Zambia         2010         2013 PPI for Zambia b… sps  
-#> 3 Africa Zambia         2015         2017 PPI for Zambia b… sps  
-#> 4 Africa Zambia         2015         2017 PPI for Zambia b… ipa  
-#> # ℹ 1 more variable: filename <chr>
+#>   region country survey_year release_year description             type  filename
+#>   <chr>  <chr>         <int>        <int> <chr>                   <chr> <chr>   
+#> 1 Africa Zambia         2010         2013 PPI for Zambia based o… sps   ppiZMB2…
+#> 2 Africa Zambia         2010         2013 PPI for Zambia based o… sps   ppiZMB2…
+#> 3 Africa Zambia         2015         2017 PPI for Zambia based o… sps   ppiZMB2…
+#> 4 Africa Zambia         2015         2017 PPI for Zambia based o… ipa   ppiZMB2…
 ```
 
 To extract the actual PPI tables, the `get_table()` function can be
@@ -967,21 +964,20 @@ tables, the following command can be used in R:
 
 ``` r
 get_table()
-#> # A tibble: 117,902 × 7
-#>    country   release_year filename type  score poverty_definition
-#>    <chr>     <chr>        <chr>    <chr> <dbl> <chr>             
-#>  1 Afghanis… 2012         ppiAFG2… sps       0 nl                
-#>  2 Afghanis… 2012         ppiAFG2… sps       0 nu150             
-#>  3 Afghanis… 2012         ppiAFG2… sps       0 nu200             
-#>  4 Afghanis… 2012         ppiAFG2… sps       0 extreme           
-#>  5 Afghanis… 2012         ppiAFG2… sps       0 ppp125            
-#>  6 Afghanis… 2012         ppiAFG2… sps       0 ppp250            
-#>  7 Afghanis… 2012         ppiAFG2… sps       1 nl                
-#>  8 Afghanis… 2012         ppiAFG2… sps       1 nu150             
-#>  9 Afghanis… 2012         ppiAFG2… sps       1 nu200             
-#> 10 Afghanis… 2012         ppiAFG2… sps       1 extreme           
-#> # ℹ 117,892 more rows
-#> # ℹ 1 more variable: ppi <dbl>
+#> # A tibble: 118,407 × 7
+#>    country     release_year filename   type  score poverty_definition   ppi
+#>    <chr>       <chr>        <chr>      <chr> <dbl> <chr>              <dbl>
+#>  1 Afghanistan 2012         ppiAFG2012 sps       0 nl                   100
+#>  2 Afghanistan 2012         ppiAFG2012 sps       0 nu150                100
+#>  3 Afghanistan 2012         ppiAFG2012 sps       0 nu200                100
+#>  4 Afghanistan 2012         ppiAFG2012 sps       0 extreme              100
+#>  5 Afghanistan 2012         ppiAFG2012 sps       0 ppp125               100
+#>  6 Afghanistan 2012         ppiAFG2012 sps       0 ppp250               100
+#>  7 Afghanistan 2012         ppiAFG2012 sps       1 nl                   100
+#>  8 Afghanistan 2012         ppiAFG2012 sps       1 nu150                100
+#>  9 Afghanistan 2012         ppiAFG2012 sps       1 nu200                100
+#> 10 Afghanistan 2012         ppiAFG2012 sps       1 extreme              100
+#> # ℹ 118,397 more rows
 ```
 
 To get the actual PPI tables for all countries with PPI tables in
@@ -989,21 +985,20 @@ Africa, the following command can be used in R:
 
 ``` r
 get_table(region = "Africa")
-#> # A tibble: 56,210 × 7
-#>    country release_year filename   type  score poverty_definition
-#>    <chr>   <chr>        <chr>      <chr> <dbl> <chr>             
-#>  1 Angola  2015         ppiAGO2015 sps       0 nl100             
-#>  2 Angola  2015         ppiAGO2015 sps       0 nl150             
-#>  3 Angola  2015         ppiAGO2015 sps       0 nl200             
-#>  4 Angola  2015         ppiAGO2015 sps       0 half100           
-#>  5 Angola  2015         ppiAGO2015 sps       0 ppp125            
-#>  6 Angola  2015         ppiAGO2015 sps       0 ppp200            
-#>  7 Angola  2015         ppiAGO2015 sps       0 ppp250            
-#>  8 Angola  2015         ppiAGO2015 sps       0 ppp500            
-#>  9 Angola  2015         ppiAGO2015 sps       1 nl100             
-#> 10 Angola  2015         ppiAGO2015 sps       1 nl150             
-#> # ℹ 56,200 more rows
-#> # ℹ 1 more variable: ppi <dbl>
+#> # A tibble: 56,715 × 7
+#>    country release_year filename   type  score poverty_definition   ppi
+#>    <chr>   <chr>        <chr>      <chr> <dbl> <chr>              <dbl>
+#>  1 Angola  2015         ppiAGO2015 sps       0 nl100              100  
+#>  2 Angola  2015         ppiAGO2015 sps       0 nl150              100  
+#>  3 Angola  2015         ppiAGO2015 sps       0 nl200              100  
+#>  4 Angola  2015         ppiAGO2015 sps       0 half100             86.5
+#>  5 Angola  2015         ppiAGO2015 sps       0 ppp125             100  
+#>  6 Angola  2015         ppiAGO2015 sps       0 ppp200             100  
+#>  7 Angola  2015         ppiAGO2015 sps       0 ppp250             100  
+#>  8 Angola  2015         ppiAGO2015 sps       0 ppp500             100  
+#>  9 Angola  2015         ppiAGO2015 sps       1 nl100              100  
+#> 10 Angola  2015         ppiAGO2015 sps       1 nl150              100  
+#> # ℹ 56,705 more rows
 ```
 
 ## Disclaimer
@@ -1028,20 +1023,18 @@ be addressed directly to the author and maintainer
 
 ## Citation
 
-If you find the `{ppitables}` package useful, please cite using the
-suggested citation provided by a call to the `citation` function as
+If you use the `{ppitables}` package in publications, please cite using
+the suggested citation provided by a call to the `citation` function as
 follows:
 
 ``` r
 citation("ppitables")
 #> To cite ppitables in publications use:
 #> 
-#>   Ernest Guevarra (2024). _ppitables: Lookup Tables to
-#>   Generate Poverty Likelihoods and Rates using the
-#>   Poverty Probability Index (PPI)_.
-#>   doi:10.5281/zenodo.4129982
-#>   <https://doi.org/10.5281/zenodo.4129982>, R package
-#>   version 0.5.5, <https://katilingban.io/ppitables/>.
+#>   Ernest Guevarra (2024). _ppitables: Lookup Tables to Generate Poverty
+#>   Likelihoods and Rates using the Poverty Probability Index (PPI)_.
+#>   doi:10.5281/zenodo.4129982 <https://doi.org/10.5281/zenodo.4129982>,
+#>   R package version 0.5.5, <https://katilingban.io/ppitables/>.
 #> 
 #> A BibTeX entry for LaTeX users is
 #> 
