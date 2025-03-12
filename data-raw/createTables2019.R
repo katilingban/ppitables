@@ -663,3 +663,29 @@ names(dom) <- c(
 ppiDOM2024 <- dom
 
 usethis::use_data(ppiDOM2024, overwrite = TRUE, compress = "xz")
+
+
+## Kenya PPI ###################################################################
+
+ken <- read_xlsx(
+  path = "data-raw/sources/kenya2024.xlsx",
+  sheet = "Look-up Tables 10Q",
+  range = "B9:N110"
+) |>
+  dplyr::mutate(
+    dplyr::across(
+      .cols = `Food Poverty Line`:`Bottom 80th Percentile`,
+      .fns = ~.x * 100
+    )
+  )
+
+names(ken) <- c(
+  "score", "nlFood", "nlAbsolute", 
+  "ppp190", "ppp320", "ppp550",  
+  "ppp215", "ppp365", "ppp685",
+  "percentile20", "percentile40", "percentile60", "percentile80"
+)
+
+ppiKEN2024 <- ken
+
+usethis::use_data(ppiKEN2024, overwrite = TRUE, compress = "xz")

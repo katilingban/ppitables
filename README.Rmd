@@ -31,7 +31,7 @@ library(ppitables)
 [![DOI](https://zenodo.org/badge/121277287.svg)](https://zenodo.org/badge/latestdoi/121277287)
 <!--- badges: end --->
 
-Lookup tables for estimating the likelihood of poverty using the `Poverty Probability Index` (previously called `Progress out of Poverty Index`) or `PPI` from country-specific indicators collected from cross-sectional surveys. These lookup tables are extracted from documentation of the `PPI` found at [https://www.povertyindex.org](https://www.povertyindex.org).
+Lookup tables for estimating the likelihood of poverty using the `Poverty Probability Index` (previously called `Progress out of Poverty Index`) or PPI from country-specific indicators collected from cross-sectional surveys. These lookup tables are extracted from documentation of the PPI found at [https://www.povertyindex.org](https://www.povertyindex.org).
 
 ## Installation
 
@@ -47,14 +47,14 @@ You can install the current development version from the [Katilingban R Universe
 install.packages(
   "ppitables",
   repos = c(
-    'https://nutriverse.r-universe.dev', 'https://cloud.r-project.org'
+    'https://katilingban.r-universe.dev', 'https://cloud.r-project.org'
   )
 )
 ```
 
 ## Usage
 
-The `{ppitables}` package contains PPI lookup tables for the 61 countries<sup>1</sup> where PPI can currently be calculated. To be able to use the lookup tables in `{ppitables}` appropriately, you need to be aware of the naming syntax used for the tables for each country. The name for each table will always have three fixed or constant components as follows:
+The `{ppitables}` package contains PPI lookup tables for the 61 countries^[Only 60 country PPI tables are shown here and available via the package. There is no lookup table for China because the China Poverty Scorecard is an expert-based scorecard. See [this](https://www.povertyindex.org/china-expert-based-poverty-scorecard) for further explanation.] where PPI can currently be calculated. To be able to use the lookup tables in `{ppitables}` appropriately, you need to be aware of the naming syntax used for the tables for each country. The name for each table will always have three fixed or constant components as follows:
 
 ```{r naming, eval = FALSE}
 ppiXXXYYYY
@@ -68,7 +68,7 @@ The name of any of the PPI tables contains:
 
 These three components are joined together without any spaces or gaps.
 
-Some country lookup tables may have additional components to their name which are added after the year separated with an underscore. These usually signify that a lookup table released on a particular year has a subset table in which the poverty likelihoods for a given `PPI` score are reported based on a different poverty definition or cut-off. This additional component to the table name is usually a character value or alphanumeric and is usually country-specific. To know more about what this additional component to some `PPI` tables refer to, read the index table below of the `PPI` tables available in this package. 
+Some country lookup tables may have additional components to their name which are added after the year separated with an underscore. These usually signify that a lookup table released on a particular year has a subset table in which the poverty likelihoods for a given PPI score are reported based on a different poverty definition or cut-off. This additional component to the table name is usually a character value or alphanumeric and is usually country-specific. To know more about what this additional component to some PPI tables refer to, read the index table below of the PPI tables available in this package. 
 
 Following are the available PPI country tables from the `{ppitables}` package. This is updated as at 12 March 2025 using information from the PPI [website](https://www.povertyindex.org).
 
@@ -284,6 +284,10 @@ Following are the available PPI country tables from the `{ppitables}` package. T
 +-----+-----------------+------------------------------------+-----------------+
 |     | `ppiKEN2018`    | PPI for Kenya using Kenya's 2015   | 2018            |
 |     |                 | Integrated Household Budget Survey |                 |
++-----+-----------------+------------------------------------+-----------------+
+|     | `ppiKEN2024`    | PPI for Kenya based on data from   | 2024            |
+|     |                 | the 2021 Kenya Integrated Household|                 |
+|     |                 | Budget Survey (KIHBS)              |                 |
 +-----+-----------------+------------------------------------+-----------------+
 | 24. | `ppiKGZ2015`    | PPI for Kyrgyzstan Kyrgyz          | 2015            |
 |     |                 | Republic’s 2012 Integrated         |                 |
@@ -593,7 +597,3 @@ citation("ppitables")
 Feedback, bug reports and feature requests are welcome; file issues or seek support [here](https://github.com/katilingban/ppitables/issues). If you would like to contribute to the package, please see our [contributing guidelines](https://katilingban.io/ppitables/CONTRIBUTING.html).
 
 Please note that the `{ppitables}` project is released with a [Contributor Code of Conduct](https://katilingban.io/ppitables/CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms.
-
-### Notes
-<sup>1</sup> Only 60 country PPI tables are shown here and available via the package. There is no lookup table for China because the China Poverty Scorecard is an expert-based scorecard. See [this](https://www.povertyindex.org/china-expert-based-poverty-scorecard) for further explanation.
-
