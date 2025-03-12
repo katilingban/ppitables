@@ -589,3 +589,29 @@ names(mwi) <- c(
 ppiMWI2023 <- mwi
 
 usethis::use_data(ppiMWI2023, overwrite = TRUE, compress = "xz")
+
+
+## Mozambique PPI ##############################################################
+
+moz <- read_xlsx(
+  path = "data-raw/sources/mozambique2024.xlsx",
+  sheet = "Look-up Tables 10Q",
+  range = "B9:G110"
+) |>
+  dplyr::mutate(
+    dplyr::across(
+      .cols = `Bottom 20th percentile Wealth Index`:`Bottom 80th percentile Wealth Index`,
+      .fns = ~.x * 100
+    )
+  )
+
+names(moz) <- c(
+  "score",
+  "percentile20", "percentile40", "percentile50", "percentile60", "percentile80"
+)
+
+ppiMOZ2024 <- moz
+
+usethis::use_data(ppiMOZ2024, overwrite = TRUE, compress = "xz")
+
+
