@@ -689,3 +689,29 @@ names(ken) <- c(
 ppiKEN2024 <- ken
 
 usethis::use_data(ppiKEN2024, overwrite = TRUE, compress = "xz")
+
+
+## Mexico PPI ###################################################################
+
+mex <- read_xlsx(
+  path = "data-raw/sources/mexico2024.xlsx",
+  sheet = "Tarjeta de Probabilidades-10Q",
+  range = "A9:M110"
+) |>
+  dplyr::mutate(
+    dplyr::across(
+      .cols = `Línea Nacional de Pobreza`:`Debajo del percentil 80`,
+      .fns = ~.x * 100
+    )
+  )
+
+names(mex) <- c(
+  "score", "nl100", "nl150", "nl200",
+  "ppp550", "ppp800", "ppp1100",
+  "ppp365", "ppp685",
+  "percentile20", "percentile40", "percentile60", "percentile80"
+)
+
+ppiMEX2024 <- mex
+
+usethis::use_data(ppiMEX2024, overwrite = TRUE, compress = "xz")

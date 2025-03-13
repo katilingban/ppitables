@@ -1079,6 +1079,10 @@ Please note that the `{ppitables}` project is released with a
 Conduct](https://katilingban.io/ppitables/CODE_OF_CONDUCT.html). By
 contributing to this project, you agree to abide by its terms.
 
+<br/>
+
+### Notes
+
 1.  Only 60 country PPI tables are shown here and available via the
     package. There is no lookup table for China because the China
     Poverty Scorecard is an expert-based scorecard. See

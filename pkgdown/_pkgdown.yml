@@ -97,6 +97,9 @@ reference:
 - subtitle: Cambodia
   contents:
   - ppiKHM2023
+- subtitle: Mexico
+  contents:
+  - ppiMEX2024
 - subtitle: Myanmar
   contents:
   - ppiMMR2019
@@ -246,13 +249,13 @@ reference:
 - sutitle: Madagascar
   contents:
   - ppiMDG2015
+- subtitle: Mali
+  contents:
+  - ppiMLI2010
 - subtitle: Mexico
   contents:
   - ppiMEX2017
   - ppiMEX2017_a
-- subtitle: Mali
-  contents:
-  - ppiMLI2010
 - subtitle: Myanmar
   contents:
   - ppiMMR2012
