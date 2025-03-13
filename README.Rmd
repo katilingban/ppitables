@@ -425,6 +425,10 @@ Following are the available PPI country tables from the `{ppitables}` package. T
 |     |                 | Condiciones de Vida y Pobreza      |                 |
 |     |                 | (ENAHO)                            |                 |
 +-----+-----------------+------------------------------------+-----------------+
+|     | `ppiPER2024`    | PPI for Peru based on data from the| 2024            |
+|     |                 | 2022 Encuesta Nacional de Hogares  |                 |
+|     |                 | (ENAHO)                            |                 |
++-----+-----------------+------------------------------------+-----------------+
 | 42. | `ppiPHL2014`    | PPI for the Philippines based on   | 2014            |
 |     |                 | Philippines' 2009 FIES/LFS.        |                 |
 +-----+-----------------+------------------------------------+-----------------+

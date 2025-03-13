@@ -715,3 +715,28 @@ names(mex) <- c(
 ppiMEX2024 <- mex
 
 usethis::use_data(ppiMEX2024, overwrite = TRUE, compress = "xz")
+
+
+## Peru PPI ####################################################################
+
+per <- read_xlsx(
+  path = "data-raw/sources/peru2024.xlsx",
+  sheet = "Look-up Tables -  10Q",
+  range = "A9:O110"
+) |>
+  dplyr::mutate(
+    dplyr::across(
+      .cols = `National Povert Line`:`Below 80th percentile`,
+      .fns = ~.x * 100
+    )
+  )
+
+names(per) <- c(
+  "score", "nlFood", "nl100", "nl150", "nl200",
+  "ppp215", "ppp365", "ppp685", "ppp190", "ppp320", "ppp550", 
+  "percentile20", "percentile40", "percentile60", "percentile80"
+)
+
+ppiPER2024 <- per
+
+usethis::use_data(ppiPER2024, overwrite = TRUE, compress = "xz")
