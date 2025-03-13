@@ -597,7 +597,9 @@ Any mistakes, problems and issues with the functionality and outputs of the `{pp
 
 ## Citation
 
-If you use the `{ppitables}` package in publications, please cite using the suggested citation provided by a call to the `citation` function as follows:
+If you use the `{ppitables}` package in your work, please cite both the `{ppitables}` package and the authors and creators of the **Poverty Probability Index** itself.
+
+A suggested citation for both is provided by a call to the `citation()` function as follows:
 
 ```{r citation, echo = TRUE, eval = TRUE}
 citation("ppitables")

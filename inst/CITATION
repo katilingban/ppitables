@@ -8,3 +8,16 @@ bibentry(
   url      = "https://katilingban.io/ppitables/",
   doi      = "10.5281/zenodo.4129982"
 )
+
+bibentry(
+  bibtype       = "Misc",
+  header        = "To cite the Poverty Probability Index in publications use:",
+  title         = "Household poverty classification in data-scarce environments: a machine learning approach",
+  author        = c(person("Varun Kshirsagar"), person("Jerzy Wieczorek"), person("Sharada Ramanathan"), person("Rachel Wells")),
+  year          = "2017",
+  eprint        = "1711.06813",
+  archivePrefix = "arXiv",
+  primaryClass  = "stat.ML",
+  url           = "https://arxiv.org/abs/1711.06813"
+)
+
