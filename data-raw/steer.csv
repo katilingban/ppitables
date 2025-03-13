@@ -65,6 +65,7 @@ Africa,Malawi,2019,2023,PPI for Malawi based on data from the Fifth Integrated H
 Africa,Mali,2001,2010,PPI for Mali based on Mali 2001 Poverty Evalution Survey,sps,ppiMLI2010
 Latin American and the Caribbean,Mexico,2014,2017,PPI for Mexico based on Mexico Encuesta Nacional de Ingresos y Gastos de los Hogares de 2014 using legacy definitions of poverty,ipa,ppiMEX2017
 Latin American and the Caribbean,Mexico,2014,2017,PPI for Mexico based on Mexico Encuesta Nacional de Ingresos y Gastos de los Hogares de 2014 using new definitions of poverty,ipa,ppiMEX2017_a
+Latin American and the Caribbean,Mexico,2022,2024,PPI for Mexico based on data from Encuesta Nacional de Ingresos y Gastos de los Hogares (ENIGH) from 2022 produced by the Instituto Nacional de Estadística y Geografía (INEGI),ipa,ppiMEX2024
 Asia,Mongolia,2014,2016,PPI for Mongolia based on Mongolia 2014 Household Socio-Economic Survey,sps,ppiMNG2016
 Middle East and North Africa,Morocco,2007,2013,PPI for Morocco based on Morocco 2007 Households Living Standards Survey,sps,ppiMAR2013
 Africa,Mozambique,2008,2013,PPI for Mozambique based on 2008/9 Household Budget Survey,sps,ppiMOZ2013

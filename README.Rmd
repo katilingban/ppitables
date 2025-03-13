@@ -334,6 +334,13 @@ Following are the available PPI country tables from the `{ppitables}` package. T
 |     |                 | Gastos de los Hogares de 2014 using|                 |
 |     |                 | new definitions of poverty         |                 |
 +-----+-----------------+------------------------------------+-----------------+
+|     | `ppiMEX2024`    | PPI for Mexico based on data from  | 2024            |
+|     |                 | Encuesta Nacional de Ingresos y    |                 |
+|     |                 | Gastos de los Hogares (ENIGH) from |                 |
+|     |                 | 2022 produced by the Instituto     |                 |
+|     |                 | Nacional de Estadística y Geografía|                 |
+|     |                 | (INEGI)                            |                 |
++-----+-----------------+------------------------------------+-----------------+
 | 30. | `ppiMLI2010`    | PPI for Mali based on Mali's 2001  | 2010            |
 |     |                 | Poverty Evaluation Survey          |                 |
 +-----+-----------------+------------------------------------+-----------------+
@@ -597,3 +604,7 @@ citation("ppitables")
 Feedback, bug reports and feature requests are welcome; file issues or seek support [here](https://github.com/katilingban/ppitables/issues). If you would like to contribute to the package, please see our [contributing guidelines](https://katilingban.io/ppitables/CONTRIBUTING.html).
 
 Please note that the `{ppitables}` project is released with a [Contributor Code of Conduct](https://katilingban.io/ppitables/CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms.
+
+<br/>
+
+### Notes
