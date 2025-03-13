@@ -12,3 +12,4 @@
 docs
 README.html
 inst/doc
+/data-raw/sources/.~lock*

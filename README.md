@@ -1053,9 +1053,12 @@ be addressed directly to the author and maintainer
 
 ## Citation
 
-If you use the `{ppitables}` package in publications, please cite using
-the suggested citation provided by a call to the `citation` function as
-follows:
+If you use the `{ppitables}` package in your work, please cite both the
+`{ppitables}` package and the authors and creators of the **Poverty
+Probability Index** itself.
+
+A suggested citation for both is provided by a call to the `citation()`
+function as follows:
 
 ``` r
 citation("ppitables")
@@ -1066,16 +1069,16 @@ citation("ppitables")
 #>   doi:10.5281/zenodo.4129982 <https://doi.org/10.5281/zenodo.4129982>,
 #>   R package version 0.5.5, <https://katilingban.io/ppitables/>.
 #> 
-#> A BibTeX entry for LaTeX users is
+#> To cite the Poverty Probability Index in publications use:
 #> 
-#>   @Manual{,
-#>     title = {ppitables: Lookup Tables to Generate Poverty Likelihoods and Rates using the Poverty Probability Index (PPI)},
-#>     author = {{Ernest Guevarra}},
-#>     year = {2024},
-#>     note = {R package version 0.5.5},
-#>     url = {https://katilingban.io/ppitables/},
-#>     doi = {10.5281/zenodo.4129982},
-#>   }
+#>   Varun Kshirsagar, Jerzy Wieczorek, Sharada Ramanathan, Rachel Wells
+#>   (2017). "Household poverty classification in data-scarce
+#>   environments: a machine learning approach." 1711.06813,
+#>   <https://arxiv.org/abs/1711.06813>.
+#> 
+#> To see these entries in BibTeX format, use 'print(<citation>,
+#> bibtex=TRUE)', 'toBibtex(.)', or set
+#> 'options(citation.bibtex.max=999)'.
 ```
 
 ## Community guidelines
