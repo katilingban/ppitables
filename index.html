@@ -5,7 +5,6 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="The Poverty Probability Index (PPI) is a poverty measurement tool for organizations and businesses with a mission to serve the poor. The PPI is statistically-sound, yet simple to use: the answers to 10 questions about a household’s characteristics and asset ownership are scored to compute the likelihood that the household is living below the poverty line – or above by only a narrow margin. This package contains country-specific lookup data tables used as reference to determine the poverty likelihood of a household based on their score from the country-specific PPI questionnaire. These lookup tables have been extracted from documentation of the PPI found at &lt;https://www.povertyindex.org&gt; and managed by Innovations for Poverty Action &lt;https://poverty-action.org/&gt;.">
 <title>Lookup Tables to Generate Poverty Likelihoods and Rates using the Poverty Probability Index (PPI) • ppitables</title>
 <!-- favicons --><link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -15,67 +14,52 @@
 <link rel="apple-touch-icon" type="image/png" sizes="60x60" href="apple-touch-icon-60x60.png">
 <script src="deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="deps/bootstrap-5.3.1/bootstrap.min.css" rel="stylesheet">
-<script src="deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
-<!-- bootstrap-toc --><script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@v1.0.1/dist/bootstrap-toc.min.js" integrity="sha256-4veVQbu7//Lk5TSmc7YV48MxtMy98e26cf5MrgZYnwo=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="Lookup Tables to Generate Poverty Likelihoods and Rates using the Poverty Probability Index (PPI)">
-<meta property="og:description" content="The Poverty Probability Index (PPI) is a poverty measurement tool for organizations and businesses with a mission to serve the poor. The PPI is statistically-sound, yet simple to use: the answers to 10 questions about a household’s characteristics and asset ownership are scored to compute the likelihood that the household is living below the poverty line – or above by only a narrow margin. This package contains country-specific lookup data tables used as reference to determine the poverty likelihood of a household based on their score from the country-specific PPI questionnaire. These lookup tables have been extracted from documentation of the PPI found at &lt;https://www.povertyindex.org&gt; and managed by Innovations for Poverty Action &lt;https://poverty-action.org/&gt;.">
+<script src="deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><link href="deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
+<link href="deps/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
+<script src="deps/headroom-0.11.0/headroom.min.js"></script><script src="deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="deps/search-1.0.0/fuse.min.js"></script><script src="deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="Lookup Tables to Generate Poverty Likelihoods and Rates using the Poverty Probability Index (PPI)">
+<meta name="description" content="The Poverty Probability Index (PPI) is a poverty measurement tool for organizations and businesses with a mission to serve the poor. The PPI is statistically-sound, yet simple to use: the answers to 10 questions about a household's characteristics and asset ownership are scored to compute the likelihood that the household is living below the poverty line - or above by only a narrow margin. This package contains country-specific lookup data tables used as reference to determine the poverty likelihood of a household based on their score from the country-specific PPI questionnaire. These lookup tables have been extracted from documentation of the PPI found at &lt;https://www.povertyindex.org&gt; and managed by Innovations for Poverty Action &lt;https://poverty-action.org/&gt;.">
+<meta property="og:description" content="The Poverty Probability Index (PPI) is a poverty measurement tool for organizations and businesses with a mission to serve the poor. The PPI is statistically-sound, yet simple to use: the answers to 10 questions about a household's characteristics and asset ownership are scored to compute the likelihood that the household is living below the poverty line - or above by only a narrow margin. This package contains country-specific lookup data tables used as reference to determine the poverty likelihood of a household based on their score from the country-specific PPI questionnaire. These lookup tables have been extracted from documentation of the PPI found at &lt;https://www.povertyindex.org&gt; and managed by Innovations for Poverty Action &lt;https://poverty-action.org/&gt;.">
 <meta property="og:image" content="https://katilingban.io/ppitables/logo.png">
-<!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
 </head>
 <body>
     <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
-    
 
-    <nav class="navbar fixed-top navbar-light navbar-expand-lg bg-primary" data-bs-theme="light"><div class="container">
-    
+
+    <nav class="navbar navbar-expand-lg fixed-top bg-primary" data-bs-theme="light" aria-label="Site navigation"><div class="container">
+
     <a class="navbar-brand me-2" href="index.html">ppitables</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.5.5</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.6.0</small>
 
-    
+
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div id="navbar" class="collapse navbar-collapse ms-3">
       <ul class="navbar-nav me-auto">
-<li class="nav-item">
-  <a class="nav-link" href="reference/index.html">Reference</a>
+<li class="nav-item"><a class="nav-link" href="articles/ppitables.html">Get started</a></li>
+<li class="nav-item"><a class="nav-link" href="reference/index.html">Reference</a></li>
+<li class="nav-item dropdown">
+  <button class="nav-link dropdown-toggle" type="button" id="dropdown-articles" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Articles</button>
+  <ul class="dropdown-menu" aria-labelledby="dropdown-articles">
+<li><a class="dropdown-item" href="articles/using_ppi.html">Using the Poverty Probability Index</a></li>
+  </ul>
 </li>
-<li class="nav-item">
-  <a class="nav-link" href="news/index.html">Changelog</a>
-</li>
+<li class="nav-item"><a class="nav-link" href="news/index.html">Changelog</a></li>
       </ul>
-<form class="form-inline my-2 my-lg-0" role="search">
-        <input type="search" class="form-control me-sm-2" aria-label="Toggle navigation" name="search-input" data-search-index="search.json" id="search-input" placeholder="Search for" autocomplete="off">
-</form>
-
-      <ul class="navbar-nav">
-<li class="nav-item">
-  <a class="external-link nav-link" href="https://fosstodon.org/@katilingban">
-    <span class="fab fa fab fa-mastodon fa-lg"></span>
-     
-  </a>
-</li>
-<li class="nav-item">
-  <a class="external-link nav-link" href="https://www.linkedin.com/company/katilingban">
-    <span class="fab fa fab fa-linkedin fa-lg"></span>
-     
-  </a>
-</li>
-<li class="nav-item">
-  <a class="external-link nav-link" href="https://github.com/katilingban">
-    <span class="fab fa fab fa-github fa-lg"></span>
-     
-  </a>
-</li>
+<ul class="navbar-nav">
+<li class="nav-item"><form class="form-inline" role="search">
+ <input class="form-control" type="search" name="search-input" id="search-input" autocomplete="off" aria-label="Search site" placeholder="Search for" data-search-index="search.json">
+</form></li>
+<li class="nav-item"><a class="external-link nav-link" href="https://fosstodon.org/@katilingban" aria-label="Mastodon"><span class="fa fab fa-mastodon fa-lg"></span></a></li>
+<li class="nav-item"><a class="external-link nav-link" href="https://bsky.app/profile/katilingban.io" aria-label="Bluesky"><span class="fa fab fa-bluesky fa-lg"></span></a></li>
+<li class="nav-item"><a class="external-link nav-link" href="https://www.linkedin.com/company/katilingban" aria-label="Mastodon"><span class="fa fab fa-linkedin fa-lg"></span></a></li>
+<li class="nav-item"><a class="external-link nav-link" href="https://github.com/katilingban/ppitables/" aria-label="GitHub"><span class="fa fab fa-github fa-lg"></span></a></li>
       </ul>
 </div>
 
-    
+
   </div>
 </nav><div class="container template-home">
 <div class="row">
@@ -86,24 +70,26 @@
 </div>
 <!--- badges: start --->
 
-<p>Lookup tables for estimating the likelihood of poverty using the <code>Poverty Probability Index</code> (previously called <code>Progress out of Poverty Index</code>) or <code>PPI</code> from country-specific indicators collected from cross-sectional surveys. These lookup tables are extracted from documentation of the <code>PPI</code> found at <a href="https://www.povertyindex.org" class="external-link uri">https://www.povertyindex.org</a>.</p>
+<p>Lookup tables for estimating the likelihood of poverty using the <code>Poverty Probability Index</code> (previously called <code>Progress out of Poverty Index</code>) or PPI from country-specific indicators collected from cross-sectional surveys. These lookup tables are extracted from documentation of the PPI found at <a href="https://www.povertyindex.org" class="external-link uri">https://www.povertyindex.org</a>.</p>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
-<p>You can install <code>ppitables</code> from CRAN with:</p>
+<p>You can install <a href="https://github.com/katilingban/ppitables" class="external-link">ppitables</a> from CRAN with:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"ppitables"</span><span class="op">)</span></span></code></pre></div>
-<p>You can install the current development version from the <a href="https://katilingban.r-universe.dev" class="external-link">Katilingban R-universe</a>:</p>
+<p>You can install the current development version from the <a href="https://katilingban.r-universe.dev" class="external-link">Katilingban R Universe</a>:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span></span>
 <span>  <span class="st">"ppitables"</span>,</span>
-<span>  <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">'https://nutriverse.r-universe.dev'</span>, <span class="st">'https://cloud.r-project.org'</span><span class="op">)</span></span>
+<span>  repos <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span></span>
+<span>    <span class="st">'https://katilingban.r-universe.dev'</span>, <span class="st">'https://cloud.r-project.org'</span></span>
+<span>  <span class="op">)</span></span>
 <span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="usage">Usage<a class="anchor" aria-label="anchor" href="#usage"></a>
 </h2>
-<p>The <code>ppitables</code> package contains PPI lookup tables for the 61 countries<sup>1</sup> where PPI can currently be calculated. To be able to use the lookup tables in <code>ppitables</code> appropriately, you need to be aware of the naming syntax used for the tables for each country. The name for each table will always have three fixed or constant components as follows:</p>
+<p>The <a href="https://github.com/katilingban/ppitables" class="external-link">ppitables</a> package contains PPI lookup tables for the 61 countries[1] where PPI can currently be calculated. To be able to use the lookup tables in <a href="https://github.com/katilingban/ppitables" class="external-link">ppitables</a> appropriately, you need to be aware of the naming syntax used for the tables for each country. The name for each table will always have three fixed or constant components as follows:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">ppiXXXYYYY</span></span></code></pre></div>
 <p>The name of any of the PPI tables contains:</p>
@@ -116,17 +102,17 @@
 <code>YYYY</code> which is the specific year at which the country PPI table was released.</li>
 </ol>
 <p>These three components are joined together without any spaces or gaps.</p>
-<p>Some country lookup tables may have additional components to their name which are added after the year separated with an underscore. These usually signify that a lookup table released on a particular year has a subset table in which the poverty likelihoods for a given <code>PPI</code> score are reported based on a different poverty definition or cut-off. This additional component to the table name is usually a character value or alphanumeric and is usually country-specific. To know more about what this additional component to some <code>PPI</code> tables refer to, read the index table below of the <code>PPI</code> tables available in this package.</p>
-<p>Following are the available PPI country tables from the <code>ppitables</code> package. This is updated as at 11 April 2023 using information from the PPI <a href="https://www.povertyindex.org" class="external-link">site</a>.</p>
+<p>Some country lookup tables may have additional components to their name which are added after the year separated with an underscore. These usually signify that a lookup table released on a particular year has a subset table in which the poverty likelihoods for a given PPI score are reported based on a different poverty definition or cut-off. This additional component to the table name is usually a character value or alphanumeric and is usually country-specific. To know more about what this additional component to some PPI tables refer to, read the index table below of the PPI tables available in this package.</p>
+<p>Following are the available PPI country tables from the <a href="https://github.com/katilingban/ppitables" class="external-link">ppitables</a> package. This is updated as at 12 March 2025 using information from the PPI <a href="https://www.povertyindex.org" class="external-link">website</a>.</p>
 <div class="section level3">
 <h3 id="list-of-ppi-country-tables">List of PPI country tables<a class="anchor" aria-label="anchor" href="#list-of-ppi-country-tables"></a>
 </h3>
-<table style="width:98%;" class="table">
+<table class="table">
 <colgroup>
-<col style="width: 6%">
-<col style="width: 18%">
-<col style="width: 55%">
-<col style="width: 18%">
+<col style="width: 7%">
+<col style="width: 22%">
+<col style="width: 46%">
+<col style="width: 22%">
 </colgroup>
 <thead><tr class="header">
 <th style="text-align: right;">
@@ -243,10 +229,10 @@ PPI for Burkina Faso using Burkina Faso’s 2003 Household Living Standards Surv
 <code>ppiBFA2014</code>
 </td>
 <td>
-PPI for Burkina Faso using Burkina Faso’s 2014 Permanent Multi-Sector Survey
+PPI for Burkina Faso using Burkina Faso’s Permanent Multi-Sector Survey
 </td>
 <td style="text-align: center;">
-2017
+2014
 </td>
 </tr>
 <tr class="even">
@@ -256,7 +242,7 @@ PPI for Burkina Faso using Burkina Faso’s 2014 Permanent Multi-Sector Survey
 <code>ppiBFA2017</code>
 </td>
 <td>
-PPI for Burkina Faso using Burkina Faso’s 2014 Enquête Multisectorielle Continue (EMC) based on IPA’s new approach to PPI calculation
+PPI for Burkina Faso using Burkina Faso’s Enquête Multisectorielle Continue (EMC) based on IPA’s new approach to PPI calculation
 </td>
 <td style="text-align: center;">
 2017
@@ -286,7 +272,7 @@ PPI for Burkina FASO based on data from 2018 Enquête Harmonisée sur le Conditi
 <code>ppiBGD2013</code>
 </td>
 <td>
-PPI for Bangladesh using Bangaldesh’s 2010 HIES Survey
+PPI for Bangladesh using the Bangaldesh’s 2010 HIES Survey
 </td>
 <td style="text-align: center;">
 2013
@@ -397,7 +383,7 @@ PPI for Cameroon using Cameroon’s 2007 Household Survey
 <code>ppiCOL2012</code>
 </td>
 <td>
-PPI for Colombia based on Colombia’s 2009 Encuesta Integrada de Hogares. This table uses the old poverty definitions.
+PPI for Colombia based on Colombia’s 2009 Encuesta Integrada de Hogares. This uses the old poverty definitions.
 </td>
 <td style="text-align: center;">
 2012
@@ -431,6 +417,19 @@ PPI for Colombia based on Colombia’s 2016 Gran Encuesta Integrada de Hogares (
 </tr>
 <tr class="even">
 <td style="text-align: right;">
+</td>
+<td>
+<code>ppiCOL2024</code>
+</td>
+<td>
+PPI for Colombia based on data from the 2022 Gran Encuesta Integrada de Hogares (GEIH).
+</td>
+<td style="text-align: center;">
+2024
+</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">
 <ol start="11" type="1">
 <li>
 </li>
@@ -446,7 +445,7 @@ PPI for Dominican Republic based on the 2007 Encuesta Nacional de Ingresos y Gas
 2010
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;">
 </td>
 <td>
@@ -457,6 +456,19 @@ PPI for Dominican Republic based on the 2016 Encuesta Nacional de Fuerza de Trab
 </td>
 <td style="text-align: center;">
 2018
+</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">
+</td>
+<td>
+<code>ppiDOM2024</code>
+</td>
+<td>
+PPI for Dominican Republic constructed in October 2024 based on data from the 2022 Encuesta Continua de Fuerza de Trabajo - ENCFT conducted by the National Statistics Office (ONE)
+</td>
+<td style="text-align: center;">
+2024
 </td>
 </tr>
 <tr class="even">
@@ -530,7 +542,7 @@ PPI for Ethiopia based on Ethiopia’s 2010/11 Household Consumption and Expendi
 <code>ppiETH2023</code>
 </td>
 <td>
-PPI for Ethiopia based on data from the Socioeconomic Survey 2018/2019”
+PPI for Ethiopia based on data from the Socioeconomic Survey 2018/2019
 </td>
 <td style="text-align: center;">
 2023
@@ -847,6 +859,19 @@ PPI for Kenya using Kenya’s 2015 Integrated Household Budget Survey
 </tr>
 <tr class="even">
 <td style="text-align: right;">
+</td>
+<td>
+<code>ppiKEN2024</code>
+</td>
+<td>
+PPI for Kenya based on data from the 2021 Kenya Integrated Household Budget Survey (KIHBS)
+</td>
+<td style="text-align: center;">
+2024
+</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">
 <ol start="24" type="1">
 <li>
 </li>
@@ -862,7 +887,7 @@ PPI for Kyrgyzstan Kyrgyz Republic’s 2012 Integrated Household Survey
 2015
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;">
 <ol start="25" type="1">
 <li>
@@ -879,7 +904,7 @@ PPI for Cambodia using Cambodia’s 2011 Socio-Economic Survey based using legac
 2015
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;">
 </td>
 <td>
@@ -892,7 +917,7 @@ PPI for Cambodia using Cambodia’s 2011 Socio-Economic Survey based using gover
 2015
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;">
 </td>
 <td>
@@ -905,7 +930,7 @@ PPI for Cambodia using Cambodia’s 2011 Socio-Economic Survey based using World
 2015
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;">
 </td>
 <td>
@@ -918,7 +943,7 @@ PPI for Cambodia using data from 2020 Living Standards Measurement Study - Plus 
 2023
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;">
 <ol start="26" type="1">
 <li>
@@ -935,7 +960,7 @@ PPI for Sri Lanka using Sri Lanka’s 2012/13 Household Income and Expenditure S
 2016
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;">
 <ol start="27" type="1">
 <li>
@@ -952,7 +977,7 @@ PPI for Morocco based on Morocco’s 2007 Households Living Standards Survey
 2013
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;">
 <ol start="28" type="1">
 <li>
@@ -969,7 +994,7 @@ PPI for Madagascar based on Madagascar’s 2010 Periodic Household Survey
 2015
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;">
 <ol start="29" type="1">
 <li>
@@ -986,7 +1011,7 @@ PPI for Mexico based on Mexico’s Encuesta Nacional de Ingresos y Gastos de los
 2017
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;">
 </td>
 <td>
@@ -997,6 +1022,19 @@ PPI for Mexico based on Mexico’s Encuesta Nacional de Ingresos y Gastos de los
 </td>
 <td style="text-align: center;">
 2017
+</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">
+</td>
+<td>
+<code>ppiMEX2024</code>
+</td>
+<td>
+PPI for Mexico based on data from Encuesta Nacional de Ingresos y Gastos de los Hogares (ENIGH) from 2022 produced by the Instituto Nacional de Estadística y Geografía (INEGI)
+</td>
+<td style="text-align: center;">
+2024
 </td>
 </tr>
 <tr class="even">
@@ -1095,6 +1133,19 @@ PPI for Mozambique based on 2014 Inquerito Sobre Orcamento Familiar (IOF) Survey
 </tr>
 <tr class="even">
 <td style="text-align: right;">
+</td>
+<td>
+<code>ppiMOZ2024</code>
+</td>
+<td>
+PPI for Mozambique based on data from the 2022 Demographic and Health Survey (DHS)
+</td>
+<td style="text-align: center;">
+2024
+</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">
 <ol start="34" type="1">
 <li>
 </li>
@@ -1110,7 +1161,7 @@ PPI for Malawi based on Malawi’s 2010/11 Integrated Household Survey using leg
 2015
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;">
 </td>
 <td>
@@ -1123,7 +1174,7 @@ PPI for Malawi based on Malawi’s 2010/11 Integrated Household Survey using gov
 2015
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;">
 </td>
 <td>
@@ -1136,7 +1187,7 @@ PPI for Malawi based on Malawi’s 2010/11 Integrated Household Survey using PBM
 2015
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;">
 </td>
 <td>
@@ -1149,7 +1200,7 @@ PPI for Malawi based on Malawi’s 2016-2017 Fourth Integrated Household Survey 
 2020
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;">
 </td>
 <td>
@@ -1162,7 +1213,7 @@ PPI for Malawi based on data from the Fifth Integrated Household Survey 2019
 2023
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;">
 <ol start="35" type="1">
 <li>
@@ -1179,7 +1230,7 @@ PPI for Namibia based on Namibia’s 2009/10 Household Income and Expenditure Su
 2013
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;">
 <ol start="36" type="1">
 <li>
@@ -1196,7 +1247,7 @@ PPI for Niger based on Niger’s 2007/8 National Household Budget and Expenditur
 2013
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;">
 <ol start="37" type="1">
 <li>
@@ -1213,7 +1264,7 @@ PPI for Nigeria based on Nigeria’s 2012/13 General Household Panel Survey
 2015
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;">
 <ol start="38" type="1">
 <li>
@@ -1230,7 +1281,7 @@ PPI for Nicaragua based on Nicaragua’s 2009 Living Standards Measurement Surve
 2013
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;">
 <ol start="39" type="1">
 <li>
@@ -1247,7 +1298,7 @@ PPI for Nepal using legacy poverty definition lines
 2013
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;">
 </td>
 <td>
@@ -1260,7 +1311,7 @@ PPI for Nepal using new poverty definition lines
 2013
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;">
 <ol start="40" type="1">
 <li>
@@ -1277,7 +1328,7 @@ PPI for Pakistan using Pakistan 2005/6 Social and Living Standards Measurement S
 2009
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;">
 <ol start="41" type="1">
 <li>
@@ -1294,7 +1345,7 @@ PPI for Peru based on Peru’s 2010 National Household Survey
 2012
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;">
 </td>
 <td>
@@ -1305,6 +1356,19 @@ PPI for Peru based on Peru’s 2016 Encuesta Nacional de Hogares sobre Condicion
 </td>
 <td style="text-align: center;">
 2018
+</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">
+</td>
+<td>
+<code>ppiPER2024</code>
+</td>
+<td>
+PPI for Peru based on data from the 2022 Encuesta Nacional de Hogares (ENAHO)
+</td>
+<td style="text-align: center;">
+2024
 </td>
 </tr>
 <tr class="even">
@@ -1821,37 +1885,37 @@ PPI for Zambia based on Zambia’s 2015 Living Conditions Monitoring Survey (LCM
 <p>This list of available PPI country tables can be retrieved in R using the <code><a href="reference/find_table.html">find_table()</a></code> function. View the complete list using the following command in R:</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/find_table.html">find_table</a></span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="co">#&gt; # A tibble: 93 × 7</span></span>
+<span><span class="co">#&gt; # A tibble: 116 × 7</span></span>
 <span><span class="co">#&gt;    region            country survey_year release_year description type  filename</span></span>
 <span><span class="co">#&gt;    &lt;chr&gt;             &lt;chr&gt;         &lt;int&gt;        &lt;int&gt; &lt;chr&gt;       &lt;chr&gt; &lt;chr&gt;   </span></span>
 <span><span class="co">#&gt;  1 Asia              Afghan…        2007         2012 PPI for Af… sps   ppiAFG2…</span></span>
 <span><span class="co">#&gt;  2 Africa            Angola         2008         2015 PPI for An… sps   ppiAGO2…</span></span>
-<span><span class="co">#&gt;  3 Asia              Bangla…        2010         2013 PPI for Be… sps   ppiBEN2…</span></span>
-<span><span class="co">#&gt;  4 Africa            Benin          2010         2012 PPI for Ba… sps   ppiBGD2…</span></span>
-<span><span class="co">#&gt;  5 Latin American a… Bolivia        2013         2015 PPI for Bo… sps   ppiBOL2…</span></span>
-<span><span class="co">#&gt;  6 Latin American a… Brazil         2008         2010 PPI for Br… sps   ppiBRA2…</span></span>
-<span><span class="co">#&gt;  7 Africa            Burkin…        2003         2011 PPI for Bu… sps   ppiBFA2…</span></span>
-<span><span class="co">#&gt;  8 Africa            Burkin…        2014         2017 PPI for Bu… sps   ppiBFA2…</span></span>
-<span><span class="co">#&gt;  9 Africa            Burkin…        2014         2017 PPI for Bu… ipa   ppiBFA2…</span></span>
-<span><span class="co">#&gt; 10 Asia              Cambod…        2011         2015 PPI for Ca… sps   ppiKHM2…</span></span>
-<span><span class="co">#&gt; # ℹ 83 more rows</span></span></code></pre></div>
+<span><span class="co">#&gt;  3 Asia              Bangla…        2010         2013 PPI for Ba… sps   ppiBEN2…</span></span>
+<span><span class="co">#&gt;  4 Africa            Benin          2010         2012 PPI for Be… sps   ppiBGD2…</span></span>
+<span><span class="co">#&gt;  5 Africa            Benin          2018         2022 PPI for Be… ipa   ppiBEN2…</span></span>
+<span><span class="co">#&gt;  6 Africa            Benin          2018         2022 PPI for Be… ipa   ppiBEN2…</span></span>
+<span><span class="co">#&gt;  7 Latin American a… Bolivia        2013         2015 PPI for Bo… sps   ppiBOL2…</span></span>
+<span><span class="co">#&gt;  8 Latin American a… Bolivia        2020         2023 PPI for Bo… ipa   ppiBOL2…</span></span>
+<span><span class="co">#&gt;  9 Latin American a… Brazil         2008         2010 PPI for Br… sps   ppiBRA2…</span></span>
+<span><span class="co">#&gt; 10 Africa            Burkin…        2003         2011 PPI for Bu… sps   ppiBFA2…</span></span>
+<span><span class="co">#&gt; # ℹ 106 more rows</span></span></code></pre></div>
 <p>View the list of PPI country tables for Africa using the following command in R:</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/find_table.html">find_table</a></span><span class="op">(</span>region <span class="op">=</span> <span class="st">"Africa"</span><span class="op">)</span></span>
-<span><span class="co">#&gt; # A tibble: 41 × 7</span></span>
+<span><span class="co">#&gt; # A tibble: 50 × 7</span></span>
 <span><span class="co">#&gt;    region country       survey_year release_year description      type  filename</span></span>
 <span><span class="co">#&gt;    &lt;chr&gt;  &lt;chr&gt;               &lt;int&gt;        &lt;int&gt; &lt;chr&gt;            &lt;chr&gt; &lt;chr&gt;   </span></span>
 <span><span class="co">#&gt;  1 Africa Angola               2008         2015 PPI for Angola … sps   ppiAGO2…</span></span>
-<span><span class="co">#&gt;  2 Africa Benin                2010         2012 PPI for Banglad… sps   ppiBGD2…</span></span>
-<span><span class="co">#&gt;  3 Africa Burkina Faso         2003         2011 PPI for Burkina… sps   ppiBFA2…</span></span>
-<span><span class="co">#&gt;  4 Africa Burkina Faso         2014         2017 PPI for Burkina… sps   ppiBFA2…</span></span>
-<span><span class="co">#&gt;  5 Africa Burkina Faso         2014         2017 PPI for Burkina… ipa   ppiBFA2…</span></span>
-<span><span class="co">#&gt;  6 Africa Cameroon             2007         2013 PPI for Cameroo… sps   ppiCMR2…</span></span>
-<span><span class="co">#&gt;  7 Africa Cote d'Ivoire        2008         2013 PPI for Ivory C… sps   ppiCIV2…</span></span>
-<span><span class="co">#&gt;  8 Africa Cote d'Ivoire        2015         2018 PPI for Ivory C… ipa   ppiCIV2…</span></span>
-<span><span class="co">#&gt;  9 Africa Ethiopia             2010         2016 PPI for Ethiopi… sps   ppiETH2…</span></span>
-<span><span class="co">#&gt; 10 Africa Ghana                2012         2015 PPI for Ghana b… sps   ppiGHA2…</span></span>
-<span><span class="co">#&gt; # ℹ 31 more rows</span></span></code></pre></div>
+<span><span class="co">#&gt;  2 Africa Benin                2010         2012 PPI for Benin b… sps   ppiBGD2…</span></span>
+<span><span class="co">#&gt;  3 Africa Benin                2018         2022 PPI for Benin b… ipa   ppiBEN2…</span></span>
+<span><span class="co">#&gt;  4 Africa Benin                2018         2022 PPI for Benin b… ipa   ppiBEN2…</span></span>
+<span><span class="co">#&gt;  5 Africa Burkina Faso         2003         2011 PPI for Burkina… sps   ppiBFA2…</span></span>
+<span><span class="co">#&gt;  6 Africa Burkina Faso         2014         2017 PPI for Burkina… sps   ppiBFA2…</span></span>
+<span><span class="co">#&gt;  7 Africa Burkina Faso         2014         2017 PPI for Burkina… ipa   ppiBFA2…</span></span>
+<span><span class="co">#&gt;  8 Africa Burkina Faso         2018         2023 PPI for Burkina… ipa   ppiBFA2…</span></span>
+<span><span class="co">#&gt;  9 Africa Cameroon             2007         2013 PPI for Cameroo… sps   ppiCMR2…</span></span>
+<span><span class="co">#&gt; 10 Africa Cote d'Ivoire        2008         2013 PPI for Ivory C… sps   ppiCIV2…</span></span>
+<span><span class="co">#&gt; # ℹ 40 more rows</span></span></code></pre></div>
 <p>View the list of PPI country tables in Zambia using the the following command in R:</p>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/find_table.html">find_table</a></span><span class="op">(</span>country <span class="op">=</span> <span class="st">"Zambia"</span><span class="op">)</span></span>
@@ -1866,7 +1930,7 @@ PPI for Zambia based on Zambia’s 2015 Living Conditions Monitoring Survey (LCM
 <p>For example, to get the actual PPI tables for all countries with PPI tables, the following command can be used in R:</p>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/get_table.html">get_table</a></span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="co">#&gt; # A tibble: 96,288 × 7</span></span>
+<span><span class="co">#&gt; # A tibble: 124,467 × 7</span></span>
 <span><span class="co">#&gt;    country     release_year filename   type  score poverty_definition   ppi</span></span>
 <span><span class="co">#&gt;    &lt;chr&gt;       &lt;chr&gt;        &lt;chr&gt;      &lt;chr&gt; &lt;dbl&gt; &lt;chr&gt;              &lt;dbl&gt;</span></span>
 <span><span class="co">#&gt;  1 Afghanistan 2012         ppiAFG2012 sps       0 nl                   100</span></span>
@@ -1879,11 +1943,11 @@ PPI for Zambia based on Zambia’s 2015 Living Conditions Monitoring Survey (LCM
 <span><span class="co">#&gt;  8 Afghanistan 2012         ppiAFG2012 sps       1 nu150                100</span></span>
 <span><span class="co">#&gt;  9 Afghanistan 2012         ppiAFG2012 sps       1 nu200                100</span></span>
 <span><span class="co">#&gt; 10 Afghanistan 2012         ppiAFG2012 sps       1 extreme              100</span></span>
-<span><span class="co">#&gt; # ℹ 96,278 more rows</span></span></code></pre></div>
+<span><span class="co">#&gt; # ℹ 124,457 more rows</span></span></code></pre></div>
 <p>To get the actual PPI tables for all countries with PPI tables in Africa, the following command can be used in R:</p>
 <div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/get_table.html">get_table</a></span><span class="op">(</span>region <span class="op">=</span> <span class="st">"Africa"</span><span class="op">)</span></span>
-<span><span class="co">#&gt; # A tibble: 47,322 × 7</span></span>
+<span><span class="co">#&gt; # A tibble: 57,927 × 7</span></span>
 <span><span class="co">#&gt;    country release_year filename   type  score poverty_definition   ppi</span></span>
 <span><span class="co">#&gt;    &lt;chr&gt;   &lt;chr&gt;        &lt;chr&gt;      &lt;chr&gt; &lt;dbl&gt; &lt;chr&gt;              &lt;dbl&gt;</span></span>
 <span><span class="co">#&gt;  1 Angola  2015         ppiAGO2015 sps       0 nl100              100  </span></span>
@@ -1896,19 +1960,20 @@ PPI for Zambia based on Zambia’s 2015 Living Conditions Monitoring Survey (LCM
 <span><span class="co">#&gt;  8 Angola  2015         ppiAGO2015 sps       0 ppp500             100  </span></span>
 <span><span class="co">#&gt;  9 Angola  2015         ppiAGO2015 sps       1 nl100              100  </span></span>
 <span><span class="co">#&gt; 10 Angola  2015         ppiAGO2015 sps       1 nl150              100  </span></span>
-<span><span class="co">#&gt; # ℹ 47,312 more rows</span></span></code></pre></div>
+<span><span class="co">#&gt; # ℹ 57,917 more rows</span></span></code></pre></div>
 </div>
 </div>
 <div class="section level2">
 <h2 id="disclaimer">Disclaimer<a class="anchor" aria-label="anchor" href="#disclaimer"></a>
 </h2>
-<p>The <code>ppitables</code> package is an independent development and is separate from and not recognised and approved by the <em><a href="https://poverty-action.org/" class="external-link">International Poverty Alliance (IPA)</a></em>, the organisation that produces and owns the copyright to the <a href="https://www.povertyindex.org" class="external-link">Poverty Probability Index</a>. The author and maintainer of this package is not affiliated with <em><a href="https://poverty-action.org/" class="external-link">International Poverty Alliance (IPA)</a></em> but is committed to ensuring that the <code>ppitables</code> package is compliant with the <a href="https://www.povertyindex.org" class="external-link">Poverty Probability Index</a>’s terms of use.</p>
-<p>Any mistakes, problems and issues with the functionality and outputs of the <code>ppitables</code> package are that of the author and maintainer of the package and not of <em><a href="https://poverty-action.org/" class="external-link">International Poverty Alliance (IPA)</a></em>. Hence any problems and issues to the usage, functionality and outputs of the <code>ppitables</code> package should be addressed directly to the author and maintainer <a href="https://github.com/katilingban/ppitables/issues" class="external-link">here</a>.</p>
+<p>The <a href="https://github.com/katilingban/ppitables" class="external-link">ppitables</a> package is an independent development and is separate from and not recognised and approved by the <em><a href="https://poverty-action.org/" class="external-link">International Poverty Alliance (IPA)</a></em>, the organisation that produces and owns the copyright to the <a href="https://www.povertyindex.org" class="external-link">Poverty Probability Index</a>. The author and maintainer of this package is not affiliated with <em><a href="https://poverty-action.org/" class="external-link">International Poverty Alliance (IPA)</a></em> but is committed to ensuring that the <a href="https://github.com/katilingban/ppitables" class="external-link">ppitables</a> package is compliant with the <a href="https://www.povertyindex.org" class="external-link">Poverty Probability Index</a>’s terms of use.</p>
+<p>Any mistakes, problems and issues with the functionality and outputs of the <a href="https://github.com/katilingban/ppitables" class="external-link">ppitables</a> package are that of the author and maintainer of the package and not of <em><a href="https://poverty-action.org/" class="external-link">International Poverty Alliance (IPA)</a></em>. Hence any problems and issues to the usage, functionality and outputs of the <a href="https://github.com/katilingban/ppitables" class="external-link">ppitables</a> package should be addressed directly to the author and maintainer <a href="https://github.com/katilingban/ppitables/issues" class="external-link">here</a>.</p>
 </div>
 <div class="section level2">
 <h2 id="citation">Citation<a class="anchor" aria-label="anchor" href="#citation"></a>
 </h2>
-<p>If you find the <code>ppitables</code> package useful, please cite using the suggested citation provided by a call to the <code>citation</code> function as follows:</p>
+<p>If you use the <a href="https://github.com/katilingban/ppitables" class="external-link">ppitables</a> package in your work, please cite both the <a href="https://github.com/katilingban/ppitables" class="external-link">ppitables</a> package and the authors and creators of the <strong>Poverty Probability Index</strong> itself.</p>
+<p>A suggested citation for both is provided by a call to the <code><a href="https://rdrr.io/r/utils/citation.html" class="external-link">citation()</a></code> function as follows:</p>
 <div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/citation.html" class="external-link">citation</a></span><span class="op">(</span><span class="st">"ppitables"</span><span class="op">)</span></span>
 <span><span class="co">#&gt; To cite ppitables in publications use:</span></span>
@@ -1918,26 +1983,29 @@ PPI for Zambia based on Zambia’s 2015 Living Conditions Monitoring Survey (LCM
 <span><span class="co">#&gt;   doi:10.5281/zenodo.4129982 &lt;https://doi.org/10.5281/zenodo.4129982&gt;,</span></span>
 <span><span class="co">#&gt;   R package version 0.5.5, &lt;https://katilingban.io/ppitables/&gt;.</span></span>
 <span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; A BibTeX entry for LaTeX users is</span></span>
+<span><span class="co">#&gt; To cite the Poverty Probability Index in publications use:</span></span>
 <span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt;   @Manual{,</span></span>
-<span><span class="co">#&gt;     title = {ppitables: Lookup Tables to Generate Poverty Likelihoods and Rates using the Poverty Probability Index (PPI)},</span></span>
-<span><span class="co">#&gt;     author = {{Ernest Guevarra}},</span></span>
-<span><span class="co">#&gt;     year = {2024},</span></span>
-<span><span class="co">#&gt;     note = {R package version 0.5.5},</span></span>
-<span><span class="co">#&gt;     url = {https://katilingban.io/ppitables/},</span></span>
-<span><span class="co">#&gt;     doi = {10.5281/zenodo.4129982},</span></span>
-<span><span class="co">#&gt;   }</span></span></code></pre></div>
+<span><span class="co">#&gt;   Varun Kshirsagar, Jerzy Wieczorek, Sharada Ramanathan, Rachel Wells</span></span>
+<span><span class="co">#&gt;   (2017). "Household poverty classification in data-scarce</span></span>
+<span><span class="co">#&gt;   environments: a machine learning approach." 1711.06813,</span></span>
+<span><span class="co">#&gt;   &lt;https://arxiv.org/abs/1711.06813&gt;.</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; To see these entries in BibTeX format, use 'print(&lt;citation&gt;,</span></span>
+<span><span class="co">#&gt; bibtex=TRUE)', 'toBibtex(.)', or set</span></span>
+<span><span class="co">#&gt; 'options(citation.bibtex.max=999)'.</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="community-guidelines">Community guidelines<a class="anchor" aria-label="anchor" href="#community-guidelines"></a>
 </h2>
 <p>Feedback, bug reports and feature requests are welcome; file issues or seek support <a href="https://github.com/katilingban/ppitables/issues" class="external-link">here</a>. If you would like to contribute to the package, please see our <a href="https://katilingban.io/ppitables/CONTRIBUTING.html">contributing guidelines</a>.</p>
-<p>Please note that the <code>ppitables</code> project is released with a <a href="https://katilingban.io/ppitables/CODE_OF_CONDUCT.html">Contributor Code of Conduct</a>. By contributing to this project, you agree to abide by its terms.</p>
+<p>Please note that the <a href="https://github.com/katilingban/ppitables" class="external-link">ppitables</a> project is released with a <a href="https://katilingban.io/ppitables/CODE_OF_CONDUCT.html">Contributor Code of Conduct</a>. By contributing to this project, you agree to abide by its terms.</p>
+<p><br></p>
 <div class="section level3">
 <h3 id="notes">Notes<a class="anchor" aria-label="anchor" href="#notes"></a>
 </h3>
-<p><sup>1</sup> Only 60 country PPI tables are shown here and available via the package. There is no lookup table for China because the China Poverty Scorecard is an expert-based scorecard. See <a href="https://www.povertyindex.org/china-expert-based-poverty-scorecard" class="external-link">this</a> for further explanation.</p>
+<ol style="list-style-type: decimal">
+<li>Only 60 country PPI tables are shown here and available via the package. There is no lookup table for China because the China Poverty Scorecard is an expert-based scorecard. See <a href="https://www.povertyindex.org/china-expert-based-poverty-scorecard" class="external-link">this</a> for further explanation.</li>
+</ol>
 </div>
 </div>
 </div>
@@ -1989,21 +2057,19 @@ PPI for Zambia based on Zambia’s 2015 Living Conditions Monitoring Survey (LCM
 
 
     <footer><div class="pkgdown-footer-left">
-  <p></p>
-<p>Developed by Ernest Guevarra.</p>
+  <p>Developed by Ernest Guevarra.</p>
 </div>
 
 <div class="pkgdown-footer-right">
-  <p></p>
-<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.8.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.1.</p>
 </div>
 
     </footer>
 </div>
 
-  
 
-  
+
+
 
   </body>
 </html>
