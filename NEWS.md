@@ -1,6 +1,14 @@
-# ppitables 0.5.6
+# ppitables 0.6.0
 
-This is the eleventh CRAN release of `{ppitables}`
+This is the eleventh CRAN release of `{ppitables}`. In this release:
+
+* added new PPI tables for multiple countries (Colombia, Dominican Republic, Kenya, Mexico, Mozambique, and Peru) release in 2024
+
+* added vignettes introducing the Poverty Probability Index and how to use the `{ppitables}` package
+
+* added citation for IPA's pre-print article on the validation of the new statistical/machine learning approach creating the per country PPI
+
+* general documentation updates and general checking updates
 
 # ppitables 0.5.5
 
