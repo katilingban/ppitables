@@ -1,3 +1,7 @@
+# ppitables 0.6.1
+
+This is the twelfth CRAN release of `{ppitables}`. This release contains general upkeep and maintenance updates.
+
 # ppitables 0.6.0
 
 This is the eleventh CRAN release of `{ppitables}`. In this release:

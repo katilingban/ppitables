@@ -18,7 +18,7 @@ library(ppitables)
 <!--- badges: start --->
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
-[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/ppitables)](https://cran.r-project.org/package=ppitables)
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/ppitables)](https://cran.r-project.org/package=ppitables){.pkgdown-release}
 [![cran checks](https://badges.cranchecks.info/worst/ppitables.svg)](https://cran.r-project.org/web/checks/check_results_ppitables.html)
 [![CRAN](https://img.shields.io/cran/l/ppitables.svg)](https://github.com/katilingban/ppitables/blob/master/LICENSE.md)
 [![CRAN](http://cranlogs.r-pkg.org/badges/ppitables)](https://CRAN.R-project.org/package=ppitables)
@@ -26,24 +26,34 @@ library(ppitables)
 [![R-hub](https://github.com/katilingban/ppitables/actions/workflows/rhub.yaml/badge.svg)](https://github.com/katilingban/ppitables/actions/workflows/rhub.yaml)
 [![R-CMD-check](https://github.com/katilingban/ppitables/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/katilingban/ppitables/actions/workflows/R-CMD-check.yaml)
 ![test-coverage](https://github.com/katilingban/ppitables/workflows/test-coverage/badge.svg)
-[![Codecov test coverage](https://codecov.io/gh/katilingban/ppitables/branch/main/graph/badge.svg)](https://app.codecov.io/gh/katilingban/ppitables?branch=main)
+[![Codecov test coverage](https://codecov.io/gh/katilingban/ppitables/graph/badge.svg)](https://app.codecov.io/gh/katilingban/ppitables)
 [![CodeFactor](https://www.codefactor.io/repository/github/katilingban/ppitables/badge)](https://www.codefactor.io/repository/github/katilingban/ppitables)
-[![DOI](https://zenodo.org/badge/121277287.svg)](https://zenodo.org/badge/latestdoi/121277287)
+[![DOI](https://zenodo.org/badge/121277287.svg)](https://zenodo.org/badge/latestdoi/121277287){.pkgdown-release}
+[![DOI](https://img.shields.io/badge/DOI-10.32614/CRAN.package.ppitables-blue)](https://doi.org/10.32614/CRAN.package.ppitables){.pkgdown-release}
 <!--- badges: end --->
 
 Lookup tables for estimating the likelihood of poverty using the `Poverty Probability Index` (previously called `Progress out of Poverty Index`) or PPI from country-specific indicators collected from cross-sectional surveys. These lookup tables are extracted from documentation of the PPI found at [https://www.povertyindex.org](https://www.povertyindex.org).
 
 ## Installation
 
-You can install `{ppitables}` from CRAN with:
+You can install `{ppitables}` from [CRAN](https://cran.r-project.org) with:
 
-```{r cran, eval = FALSE}
+```R
 install.packages("ppitables")
 ```
 
-You can install the current development version from the [Katilingban R Universe](https://katilingban.r-universe.dev):
+::: {.pkgdown-devel}
+You can install the development version of `{ppitables}` from [GitHub](https://github.com/panukatan/bagyo) using `pak` with:
 
-```{r gh-installation, eval = FALSE}
+```R
+## Install pak as needed ----
+## install.packages("pak")
+pak::pak("katilingban/ppitables")
+```
+
+You can also install `{ppitables}` from the [Katilingban R Universe](https://katilingban.r-universe.dev):
+
+```R
 install.packages(
   "ppitables",
   repos = c(
@@ -51,6 +61,7 @@ install.packages(
   )
 )
 ```
+:::
 
 ## Usage
 

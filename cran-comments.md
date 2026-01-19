@@ -1,18 +1,10 @@
 ## Release summary
 
-This is a minor release of the `{ppitables}` package.
-
-* added new PPI tables for multiple countries (Colombia, Dominican Republic, Kenya, Mexico, Mozambique, and Peru) release in 2024
-
-* added vignettes introducing the Poverty Probability Index and how to use the `{ppitables}` package
-
-* added citation for IPA's pre-print article on the validation of the new statistical/machine learning approach creating the per country PPI
-
-* general documentation updates and general checking updates
+This is a minor release of the `{ppitables}` package. This includes general package maintenance and upkeep changes and updates.
 
 ## Test environments
-* local OS X install, R 4.4.3
-* local ubuntu 22.04 install, R 4.4.3
+* local OS X install, R 4.5.2
+* local ubuntu 22.04 install, R 4.5.2
 * win-builder (devel, release, and old release)
 * github actions windows-latest, r: release
 * github actions macOS-latest, r: release
@@ -21,6 +13,7 @@ This is a minor release of the `{ppitables}` package.
 * rhub ubuntu 24.04 r devel
 * rhub macos r devel
 * rhub macos-arm64 r devel
+* macbuilder (devel)
 
 ## R CMD check results
 
@@ -37,6 +30,10 @@ This is a minor release of the `{ppitables}` package.
 0 errors | 0 warnings | 0 notes
 
 ### rhub checks
+
+0 errors | 0 warnings | 0 notes
+
+### macbuilder checks
 
 0 errors | 0 warnings | 0 notes
 
