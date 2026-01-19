@@ -2,6 +2,8 @@
 
 ## ppitables 0.6.1
 
+CRAN release: 2026-01-19
+
 This is the twelfth CRAN release of
 [ppitables](https://github.com/katilingban/ppitables). This release
 contains general upkeep and maintenance updates.

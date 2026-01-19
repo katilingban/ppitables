@@ -8,7 +8,7 @@
 ## Citation
 
 Source:
-[`inst/CITATION`](https://github.com/katilingban/ppitables/blob/main/inst/CITATION)
+[`inst/CITATION`](https://github.com/katilingban/ppitables/blob/v0.6.1/inst/CITATION)
 
 Ernest Guevarra (2026). *ppitables: Lookup Tables to Generate Poverty
 Likelihoods and Rates using the Poverty Probability Index (PPI)*.
