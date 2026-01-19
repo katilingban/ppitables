@@ -74,6 +74,6 @@ find_table <- function(region = steer$region,
                                        steer$country %in% country &
                                        steer$type %in% type, ])
 
-  ## Retrun search output
-  return(table_list)
+  ## Return search output
+  table_list
 }

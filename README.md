@@ -30,7 +30,9 @@ src="https://zenodo.org/badge/121277287.svg" alt="DOI" /></a>
 <a href="https://doi.org/10.32614/CRAN.package.ppitables"
 class="pkgdown-release"><img
 src="https://img.shields.io/badge/DOI-10.32614/CRAN.package.ppitables-blue"
-alt="DOI" /></a> <!--- badges: end --->
+alt="DOI" /></a>
+
+<!--- badges: end --->
 
 Lookup tables for estimating the likelihood of poverty using the
 `Poverty Probability Index` (previously called

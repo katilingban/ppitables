@@ -16,6 +16,7 @@ library(ppitables)
 # ppitables: Lookup Tables to Generate Poverty Likelihoods and Rates using the Poverty Probability Index (PPI) <img src="man/figures/logo.png" width="200" align="right" />
 
 <!--- badges: start --->
+
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/ppitables)](https://cran.r-project.org/package=ppitables){.pkgdown-release}
@@ -30,6 +31,7 @@ library(ppitables)
 [![CodeFactor](https://www.codefactor.io/repository/github/katilingban/ppitables/badge)](https://www.codefactor.io/repository/github/katilingban/ppitables)
 [![DOI](https://zenodo.org/badge/121277287.svg)](https://zenodo.org/badge/latestdoi/121277287){.pkgdown-release}
 [![DOI](https://img.shields.io/badge/DOI-10.32614/CRAN.package.ppitables-blue)](https://doi.org/10.32614/CRAN.package.ppitables){.pkgdown-release}
+
 <!--- badges: end --->
 
 Lookup tables for estimating the likelihood of poverty using the `Poverty Probability Index` (previously called `Progress out of Poverty Index`) or PPI from country-specific indicators collected from cross-sectional surveys. These lookup tables are extracted from documentation of the PPI found at [https://www.povertyindex.org](https://www.povertyindex.org).

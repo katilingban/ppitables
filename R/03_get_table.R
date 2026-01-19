@@ -62,5 +62,5 @@ get_table <- function(region = steer$region,
   }
 
   ## Return resulting tidy format PPI table
-  return(ppi_table)
+  ppi_table
 }
