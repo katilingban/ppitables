@@ -31,7 +31,7 @@ This is a minor release of the `{ppitables}` package. This includes general pack
 
 Author field differs from that derived from Authors@R     
   Author:    'Ernest Guevarra [aut, cre] (ORCID: <https://orcid.org/0000-0002-4887-4415>)'     
-  Authors@R: 'Ernest Guevarra [aut, cre] (<https://orcid.org/0000-0002-4887-4415>'     
+  Authors@R: 'Ernest Guevarra [aut, cre] (<https://orcid.org/0000-0002-4887-4415>)'     
 
 Both ORCID information are the same but formatted differently.
 
